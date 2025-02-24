@@ -10,6 +10,8 @@ permalink: /teaching/2025/math211/
 Announcements
 -------------
 
+* (2/24) [Here is the worksheet from today.]({{ page.url }}ws-2.24.pdf)
+
 * (2/20) [Here is the study guide for midterm 1.]({{ page.url }}sg1.pdf)
 
 * (2/17) [Here is the worksheet from today.]({{ page.url }}ws-2.17.pdf)
