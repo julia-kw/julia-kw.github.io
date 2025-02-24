@@ -64,9 +64,9 @@ The schedule below is tentative; we might have small adjustments in the dates. F
 	
 * Unit 2 (3/3–4/16): **Advanced integration, series**
 
-    * Week 6: Integration by parts, trig integrals [7.4, 7.5]
+    * Week 6: Integration by parts, rational functions  [7.4, 8.8]
 	
-    * Week 7: Trig substitution, rational functions [7.6, 8.8]
+    * Week 7: Trig integrals, trig substitution,  [7.5, 7.6]
 
     * *Spring break!*
 	
