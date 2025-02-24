@@ -29,6 +29,8 @@ Announcements
 Homework
 --------
 
+* Week 5 **Due Monday 3/7**: Chapter 18 exercies A, C.
+
 * Week 4 *No homework this week!*
 
 * Week 3 **Due Monday 2/17:** Chapter 11 exercises A, C, D; Chapter 12 exercises A, C, D, E. Read Chapter 13 of the textbook, and write a paragraph or two about the meaning of the conditional in truth-functional logic; do you think it is unproblematic? or is it flawed?
@@ -52,13 +54,15 @@ The schedule below is tentative; we might have small adjustments in the dates. F
 	
     * Week 2: Part II
 	
-    * Week 3: Chater III
+    * Week 3: Part III
 	
     * Week 4: Part IV
 	
     * Week 5: Part IV, quiz
 
-    * **Quiz 1 Feb 28**, journal due by end of weekend.
+    * ~~**Quiz 1 Feb 28**, journal due by end of weekend.~~
+
+    * **Quiz 1 Mar 7**, journal due by end of weekend.
 	
 * *First-Order Logic* (3/3–4/11)
 
