@@ -10,6 +10,8 @@ permalink: /teaching/2025/math211/
 Announcements
 -------------
 
+* (3/3) [Here is the answer key for midterm 1.]({{ page.url }}e1answers.pdf)
+
 * (2/24) [Here is the worksheet from today.]({{ page.url }}ws-2.24.pdf)
 
 * (2/20) [Here is the study guide for midterm 1.]({{ page.url }}sg1.pdf)
