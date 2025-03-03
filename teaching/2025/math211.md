@@ -29,7 +29,11 @@ Announcements
 Homework
 --------
 
-* **Week 4 (Due Wednesday 2/26)** Section 6.6: (only find the mass and center of mass) #1, 2, 3, 39, 40, 41, 42; Section 6.7: 1, 2, 3, 6, 14, 16, 23, 33. 
+* **Week 6** (Due Monday 3/10)** Section 7.4: #1, 2, 3, 5, 11, 29, 34; Section 8.8: #1, 2, 12, 13, 21, 25
+
+    Writing: Can you use integration by parts to evaluate $\int x^{1000}e^x \,\mathrm{d}x$? If so, explain what the process would be and why you know your process would eventually give an answer. If not, explain why the process won't ever give an answer. (Please don't actually try to compute this integral!) Do the same for $\int e^x \ln x \,\mathrm{d}x$. (Again, please don't try to actually compute it!) Extra Credit: Write a computer program to do partial fraction decomposition for you.
+
+* **Week 4 (Due Wednesday 2/26)** Section 6.6: (only find the mass and center of mass) #1, 2, 3, 39, 40, 41, 42; Section 6.7: #1, 2, 3, 6, 14, 16, 23, 33. 
 
     Writing: The *exponential distribution* with parameter $\lambda$ is the probability distribution with density function $\rho_\lambda(x) = \lambda e^{-\lambda x}$, where $x \ge 0$. Confirm this really is a probability density function and determine its mean. [Hint: what is the derivative of $-e^{-x} - xe^{-x}$?] (Extra Credit) The *Cauchy distribution* with parameter $\gamma$ is the probability distribution with density function $\rho_\gamma(x) = \frac{1}{\pi\gamma[1 + (\frac{x}{\gamma})^2]}$, where $x$ can be any value. Confirm that this really is a probability density function and determine its mean. Explain.
     
