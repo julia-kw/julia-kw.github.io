@@ -10,6 +10,10 @@ permalink: /teaching/2025/math113/
 Announcements
 -------------
 
+* (3/3) [Here is some advice on how to prepare for Friday's quiz.]({{ page.url }}sg1.pdf)
+
+* (3/3) [Here is the worksheet from today.]({{ page.url }}ws3-3.pdf)
+
 * (2/28) [Here is the worksheet from today.]({{ page.url }}ws2-28.pdf)
 
 * (2/14) [Here is the worksheet from today.]({{ page.url }}ws2-14.pdf)
@@ -31,7 +35,9 @@ Announcements
 Homework
 --------
 
-* Week 5 **Due Monday 3/7**: Chapter 18 exercies A, C.
+* Week 6 **Due Friday 3/7**: Make up your note sheet (one standard sheet of paper, front and back) and bring it with you to the quiz.
+
+* Week 5 **Due Monday 3/3**: Chapter 18 exercies A, C.
 
 * Week 4 *No homework this week!*
 
