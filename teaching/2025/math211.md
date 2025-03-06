@@ -35,7 +35,7 @@ Homework
 
     Writing: Can you use integration by parts to evaluate $\int x^{1000}e^x \,\mathrm{d}x$? If so, explain what the process would be and why you know your process would eventually give an answer. If not, explain why the process won't ever give an answer. (Please don't actually try to compute this integral!) Do the same for $\int e^x \ln x \,\mathrm{d}x$. (Again, please don't try to actually compute it!) Extra Credit: Consider the following seemingly paradoxical argument and explain what's going on:
 
-    "Use integration by parts on the integral $\int \frac{\mathrm{d}x}{x}$, with $u = \frac 1x$ and $\mathrm d v = \mathrm d x$. We get that $\mathrm d u = -\frac{1}{x^2}$ and $v = x$. Plugging those into the integration by parts formula and simplifying we get $\int \frac{\mathrm{d}x}{x} = 1 + \int \frac{\mathrm{d}x}{x}$. Cancel out the integrals on the two sides and conclude $0 = 1$.
+    "Use integration by parts on the integral $\int \frac{\mathrm{d}x}{x}$, with $u = \frac 1x$ and $\mathrm d v = \mathrm d x$. We get that $\mathrm d u = -\frac{1}{x^2}$ and $v = x$. Plugging those into the integration by parts formula and simplifying we get $\int \frac{\mathrm{d}x}{x} = 1 + \int \frac{\mathrm{d}x}{x}$. Cancel out the integrals on the two sides and conclude $0 = 1$."
     
 * **Week 4 (Due Wednesday 2/26)** Section 6.6: (only find the mass and center of mass) #1, 2, 3, 39, 40, 41, 42; Section 6.7: #1, 2, 3, 6, 14, 16, 23, 33. 
 
