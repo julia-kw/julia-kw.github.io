@@ -31,7 +31,7 @@ Announcements
 Homework
 --------
 
-* **Week 6** (Due Monday 3/10)** Section 7.4: #1, 2, 3, 5, 11, 29, 34; Section 8.8: #1, 2, 12, 13, 21, 25
+* **Week 6 (Due Monday 3/10)** Section 7.4: #1, 2, 3, 5, 11, 29, 34; Section 8.8: #1, 2, 12, 13, 21, 25
 
     Writing: Can you use integration by parts to evaluate $\int x^{1000}e^x \,\mathrm{d}x$? If so, explain what the process would be and why you know your process would eventually give an answer. If not, explain why the process won't ever give an answer. (Please don't actually try to compute this integral!) Do the same for $\int e^x \ln x \,\mathrm{d}x$. (Again, please don't try to actually compute it!) Extra Credit: Consider the following seemingly paradoxical argument and explain what's going on:
 
