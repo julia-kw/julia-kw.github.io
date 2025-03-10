@@ -10,6 +10,8 @@ permalink: /teaching/2025/math113/
 Announcements
 -------------
 
+* (3/10) [Here is the answer key to quiz 1.]({{ page.url }}q1answers.pdf)
+
 * (3/3) [Here is some advice on how to prepare for Friday's quiz.]({{ page.url }}sg1.pdf)
 
 * (3/3) [Here is the worksheet from today.]({{ page.url }}ws3-3.pdf)
