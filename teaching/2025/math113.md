@@ -35,6 +35,8 @@ Announcements
 Homework
 --------
 
+* Week 7 **Due Monday 3/24**: Read Chapters 28 and 29. Write a one paragraph summary of each chapter and do Chapter 29 exercise B.
+
 * Week 6 **Due Friday 3/7**: Make up your note sheet (one standard sheet of paper, front and back) and bring it with you to the quiz.
 
 * Week 5 **Due Monday 3/3**: Chapter 18 exercies A, C.
