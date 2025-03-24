@@ -10,6 +10,8 @@ permalink: /teaching/2025/math113/
 Announcements
 -------------
 
+* (3/24) [Here is the worksheet from today.]({{ page.url }}ws3-24.pdf)
+
 * (3/14) [Here is the worksheet from today.]({{ page.url }}ws3-14.pdf)
 
 * (3/12) [Here is the worksheet from today.]({{ page.url }}ws3-12.pdf)
@@ -40,6 +42,8 @@ Announcements
 
 Homework
 --------
+
+* Week 8 **Due Monday 3/31**: Chapter 31 exercises A, C.
 
 * Week 7 **Due Monday 3/24**: Read Chapters 28 and 29. Write a one paragraph summary of each chapter and do Chapter 29 exercise B.
 
