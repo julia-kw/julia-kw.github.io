@@ -10,6 +10,8 @@ permalink: /teaching/2025/math211/
 Announcements
 -------------
 
+* (3/28) [Here is the worksheet from today.]({{ page.url }}ws-3.28.pdf)
+
 * (3/14) [Here is the worksheet from today.]({{ page.url }}ws-3.14.pdf)
 
 * (3/7) [Here is the worksheet from today.]({{ page.url }}ws-3.7.pdf)
