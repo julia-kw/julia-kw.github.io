@@ -74,7 +74,7 @@ The schedule below is tentative; we might have small adjustments in the dates. F
 
     * Week 1: Part I
 
-* *Truth-Function Logic* (2/3–2/28)
+* *Truth-Functional Logic* (2/3–3/7)
 	
     * Week 2: Part II
 	
@@ -82,25 +82,25 @@ The schedule below is tentative; we might have small adjustments in the dates. F
 	
     * Week 4: Part IV
 	
-    * Week 5: Part IV, quiz
+    * Week 5: Part IV
+
+    * Week 6: Part IV, quiz
 
     * ~~**Quiz 1 Feb 28**, journal due by end of weekend.~~
 
     * **Quiz 1 Mar 7**, journal due by end of weekend.
 	
-* *First-Order Logic* (3/3–4/11)
+* *First-Order Logic* (3/10–4/11)
 
-    * Week 6: Part V
-	
-    * Week 7: Part VI
+    * Week 7: Part V
 	
     * *Spring break!*
 	
     * Week 8: Part VI
 	
-    * Week 9: Part VII
+    * Week 9: Part VI
 	
-    * Week 10: Part VII, quiz
+    * Week 10: Part VI
 
     * **Quiz 2 Apr 11**, journal due by end of weekend.
 	
