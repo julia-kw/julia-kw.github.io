@@ -10,6 +10,8 @@ permalink: /teaching/2025/math211/
 Announcements
 -------------
 
+* (3/31) [Here is the worksheet from today.]({{ page.url }}ws-3.31.pdf)
+
 * (3/28) [Here is the worksheet from today.]({{ page.url }}ws-3.28.pdf)
 
 * (3/14) [Here is the worksheet from today.]({{ page.url }}ws-3.14.pdf)
@@ -34,6 +36,10 @@ Announcements
 
 Homework
 --------
+
+* **Week 9 (Due Monday 4/7)** Section 9.4 #2, 4, 5, 7, 23, 33, 40; Section 9.5 #1, 2, 4, 10, 11, 12, 15; Section 9.6 #1, 2, 4, 10, 11, 12, 15.
+
+    Writing: Pick one of the convergence rules from this week and explain why it works. (Extra Credit) Pick two more convergence rules from this week and explain why they work.
 
 * **Week 8 (Due Monday 3/31)** Section 9.1 #9, 10, 12, 16, 27; Section 9.2 #1, 2, 5, 8, 14, 16; Section 9.3 #1, 3, 4, 6, 7.
 
