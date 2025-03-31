@@ -47,6 +47,8 @@ Announcements
 Homework
 --------
 
+* Week 9 **Due Monday 4/7**: Chapter 33 three parts from each of exercises A, B, C, D; Chapter 35 exercise A.
+
 * Week 8 **Due Monday 3/31**: Chapter 31 exercises A, C.
 
 * Week 7 **Due Monday 3/24**: Read Chapters 28 and 29. Write a one paragraph summary of each chapter and do Chapter 29 exercise B.
