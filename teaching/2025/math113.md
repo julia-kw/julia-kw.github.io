@@ -53,6 +53,8 @@ Announcements
 Homework
 --------
 
+* Week 10 **Due Monady 4/14**: Read chapter 36 and write a brief summary of what needs to be done to extend the formal proofs for TFL to FOL. Read chapter 41 and write a one to two paragraph summary.
+
 * Week 9 **Due Monday 4/7**: Chapter 33 three parts from each of exercises A, B, C, D; Chapter 35 exercise A.
 
 * Week 8 **Due Monday 3/31**: Chapter 31 exercises A, C.
