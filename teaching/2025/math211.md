@@ -41,6 +41,10 @@ Announcements
 Homework
 --------
 
+* **Week 10 (Due Monday 4/14)** Section 9.7 #1, 2, 5, 6, 27; Section 9.8 #1, 5, 12, 17, 18, 23; Section 9.10 #9, 10, 12; Section 9.11 #3, 7, 8, 11, 25.
+
+    Writing: Derive the power series for $\sin x$ and $\cos x$. (Extra Credit) Use the formula $e^{iy} = \cos y + i \sin y$ to derive the angle sum formulas for sine and cosine.
+
 * **Week 9 (Due Monday 4/7)** Section 9.4 #2, 4, 5, 7, 23, 33, 40; Section 9.5 #1, 2, 4, 10, 11, 12, 15; Section 9.6 #1, 2, 4, 10, 11, 12, 15.
 
     Writing: Pick one of the convergence rules from this week and explain why it works. (Extra Credit) Pick two more convergence rules from this week and explain why they work.
