@@ -114,21 +114,15 @@ The schedule below is tentative; we might have small adjustments in the dates. F
 	
     * Week 10: Part VI
 
-    * **Quiz 2 Apr 11**, journal due by end of weekend.
-	
-* *Modal Logic* (4/14–4/25)
+* *Modal Logic* (4/14–5/7)
 
     * Week 11: Part VIII
 
-    * *No class Friday 4/18*
-
     * Week 12: Part VIII
 	
-* *Metatheory* (4/28–5/7)
-
-    * Week 13: Part IX
+    * Week 13: Part VIII
 	
-    * Week 14: Exam
+    * Week 14: Quiz
 
-    * **Exam May 7**, journal due by Friday.
+    * **Quiz on May 7**, journal due by Friday.
 	

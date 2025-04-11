@@ -57,11 +57,11 @@ I reserve the right to use +'s or -'s for borderline cases.
 
 Here's the overview of how each category is graded. Details about the categories are later in the syllabus.
 
-* **Assessments.** There are two quizzes and one exam. Each is graded on a numerical scale.
+* **Assessments.** There are two quizzes.
 
-    * *High Pass.* $90\%$ on the exam and $70\%$ average on quizzes; OR $80\%$ on exam and $90\%$ average on quizzes.
+    * *High Pass.* $90\%$ average on the quizzes.
 
-    * *Pass.* $80\%$ on exam; OR $70\%$ average on exam and $70\%$ average on quizzes; OR $60\%$ on exam and $80\%$ average on quizzes.
+    * *Pass.* $65\%$ average on the quizzes.
 	
     * *Fail.* Don't meet the requirements for a Pass.
 
@@ -95,10 +95,8 @@ Dates:
 
 * Quiz 1: **Friday, Feb 28**
 
-* Quiz 2: **Friday, Apr 11**
+* Quiz 2: **Wednesday, May 7**
 
-* Exam: **Wednesday, May 7**
-	
 Homework
 ========
 
@@ -149,9 +147,7 @@ Dates:
 
 * First Submission: **By end of weekend of Friday, Feb 28**
 
-* Second Submission: **By end of weekend of Friday, Apr 11**
-
-* Final Submission: **By Friday, May 9**
+* Second Submission: **By Friday, May 9**
 
 Participation
 =============
@@ -215,3 +211,5 @@ Notice of Changes
 ======
 
 This syllabus is subject to change. If this happens, you will be informed of any additions or changes.
+
+* (4/11) Changed details for the Assessment portion of the grade based on class decision to only have the two quizzes. Updated the schedule accordingly.
