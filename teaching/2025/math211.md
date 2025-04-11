@@ -10,6 +10,8 @@ permalink: /teaching/2025/math211/
 Announcements
 -------------
 
+* (4/11) [Here is the worksheet from today.]({{ page.url }}ws-4.11.pdf)
+
 * (4/9) [Here is the study guide for midterm 2.]({{ page.url }}sg2.pdf) The midterm is next Wednesday, April 16th.
 
 * (4/4) [Here is the worksheet from today.]({{ page.url }}ws-4.4.pdf)
