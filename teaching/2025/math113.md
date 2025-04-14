@@ -55,7 +55,9 @@ Announcements
 Homework
 --------
 
-* Week 10 **Due Monady 4/14**: Read chapter 36 and write a brief summary of what needs to be done to extend the formal proofs for TFL to FOL. Read chapter 41 and write a one to two paragraph summary.
+* Week 10 **Due Monday 4/21**: Read chapter 43 and write a paragraph or two about how the different systems for modal logic differ. Do you have a preference on which you think best captures the idea of possibility?
+
+* Week 10 **Due Monday 4/14**: Read chapter 36 and write a brief summary of what needs to be done to extend the formal proofs for TFL to FOL. Read chapter 41 and write a one to two paragraph summary.
 
 * Week 9 **Due Monday 4/7**: Chapter 33 three parts from each of exercises A, B, C, D; Chapter 35 exercise A.
 
