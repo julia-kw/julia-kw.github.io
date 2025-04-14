@@ -55,7 +55,7 @@ Announcements
 Homework
 --------
 
-* Week 10 **Due Monday 4/21**: Read chapter 43 of the textbook and [section 2 of this Stanford Encyclopedia of Philosophy page](https://plato.stanford.edu/entries/logic-modal/) and write a paragraph or two about how the different systems for modal logic differ. Do you have a preference on which you think best captures the idea of possibility?
+* Week 11 **Due Monday 4/21**: Read chapter 43 of the textbook and [section 2 of this Stanford Encyclopedia of Philosophy page](https://plato.stanford.edu/entries/logic-modal/) and write a paragraph or two about how the different systems for modal logic differ. Do you have a preference on which you think best captures the idea of possibility?
 
 * Week 10 **Due Monday 4/14**: Read chapter 36 and write a brief summary of what needs to be done to extend the formal proofs for TFL to FOL. Read chapter 41 and write a one to two paragraph summary.
 
