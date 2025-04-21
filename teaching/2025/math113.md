@@ -10,6 +10,10 @@ permalink: /teaching/2025/math113/
 Announcements
 -------------
 
+* (4/25) [Here is the worksheet from today.]({{ page.url }}ws4-25.pdf)
+
+* (4/21) [Here is the worksheet from today.]({{ page.url }}ws4-21.pdf)
+
 * (4/18) [Here is the worksheet from today.]({{ page.url }}ws4-18.pdf)
 
 * (4/16) [Here is the worksheet from today.]({{ page.url }}ws4-16.pdf)
@@ -58,6 +62,8 @@ Announcements
 
 Homework
 --------
+
+* Week 12 **Due Monday 4/28**: Do each problem from Friday's (4/25) worksheet.
 
 * Week 11 **Due Monday 4/21**: Read chapter 43 of the textbook and [section 2 of this Stanford Encyclopedia of Philosophy page](https://plato.stanford.edu/entries/logic-modal/) and write a paragraph or two about how the different systems for modal logic differ. Do you have a preference on which you think best captures the idea of possibility?
 
