@@ -10,6 +10,8 @@ permalink: /teaching/2025/math211/
 Announcements
 -------------
 
+* (4/25) [Here is the worksheet from today.]({{ page.url }}ws-4.25.pdf)
+
 * (4/18) [Here is the answer key for midterm 2.]({{ page.url }}e2answers.pdf)
 
 * (4/11) [Here is the worksheet from today.]({{ page.url }}ws-4.11.pdf)
@@ -46,6 +48,10 @@ Announcements
 
 Homework
 --------
+
+* **Week 12 (Due Monday 4/28)** Section 7.7 #2, 3, 5, 10, 12; Friday's (4/25) worksheet Slopes #1–4, Area #1–3.
+
+    Writing: Read section 7.10, about how to find the length of a curve given by a polar function. Write up an intuitive explanation for the formula given in that section. A picture goes a long way, but you should also use words! (Extra Credit) Give a rigorous, symbolic explanation for the formula.
 
 * **Week 10 (Due Monday 4/14)** Section 9.7 #1, 2, 5, 6, 27; Section 9.8 #1, 5, 12, 17, 18, 23; Section 9.10 #9, 10, 12; Section 9.11 #3, 7, 8, 11, 25.
 
