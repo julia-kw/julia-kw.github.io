@@ -12,6 +12,8 @@ Announcements
 
 * (4/25) **Class does not meet today because I am out of town.**
 
+* (4/23) [Here is the worksheet from today.]({{ page.url }}ws4-23.pdf)
+
 * (4/21) [Here is the worksheet from today.]({{ page.url }}ws4-21.pdf)
 
 * (4/18) [Here is the worksheet from today.]({{ page.url }}ws4-18.pdf)
