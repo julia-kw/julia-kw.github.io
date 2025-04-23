@@ -10,7 +10,9 @@ permalink: /teaching/2025/math211/
 Announcements
 -------------
 
-* (4/25) [Here is the worksheet from today.]({{ page.url }}ws-4.25.pdf)
+* (4/25) [Here is the worksheet for today.]({{ page.url }}ws-4.25.pdf) **Class does not meet today because I am out of town. You are welcome to use the classroom to work together on homework.**
+
+* (4/23) [Here are the questions and instructions for the oral final.]({{ page.url }}final.pdf) You must sign up for a time slot; check your email for the link to the google sheets sign up form.
 
 * (4/18) [Here is the answer key for midterm 2.]({{ page.url }}e2answers.pdf)
 
