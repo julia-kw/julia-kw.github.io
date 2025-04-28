@@ -51,6 +51,10 @@ Announcements
 Homework
 --------
 
+* **Week 13 (Drop off at my office Monday 5/5)** Section 10.1 #9, 10, 12, 13, 21, 36, 37; Section 10.6 #1, 2, 9; Section 10.7 #1, 2, 3, 17, 26.
+
+    Writing: Pick one of the final exam problems and write a full explanation for it. (Extra Credit) Do the same for two more problems.
+
 * **Week 12 (Due Monday 4/28)** Section 7.7 #2, 3, 5, 10, 12; Friday's (4/25) worksheet Slopes #1–4, Area #1–3.
 
     Writing: Read section 7.10, about how to find the length of a curve given by a polar function. Write up an intuitive explanation for the formula given in that section. A picture goes a long way, but you should also use words! (Extra Credit) Give a rigorous, symbolic explanation for the formula.
