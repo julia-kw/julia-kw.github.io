@@ -65,6 +65,8 @@ Announcements
 Homework
 --------
 
+* Week 13 **Due Monday 5/5**: Section 44 of the textbook, practice exercises A, B, C.
+
 * Week 12 *No homework.*
 
 * Week 11 **Due Monday 4/21**: Read chapter 43 of the textbook and [section 2 of this Stanford Encyclopedia of Philosophy page](https://plato.stanford.edu/entries/logic-modal/) and write a paragraph or two about how the different systems for modal logic differ. Do you have a preference on which you think best captures the idea of possibility?
