@@ -10,6 +10,10 @@ permalink: /teaching/2025/math113/
 Announcements
 -------------
 
+* (5/2) [Here is some advice on how to prepare for next week's quiz.]({{ page.url }}sg2.pdf)
+
+* (5/2) [Here is the worksheet from today.]({{ page.url }}ws5-2.pdf)
+
 * (4/25) **Class does not meet today because I am out of town.**
 
 * (4/23) [Here is the worksheet from today.]({{ page.url }}ws4-23.pdf)
