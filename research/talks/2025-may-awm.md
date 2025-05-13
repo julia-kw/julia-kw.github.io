@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "How hard is it to compute a failure of the continuum hypothesis?"
-permalink: /research/talks/2024-nov-conn/
+permalink: /research/talks/2025-may-awm/
 excerption: "This is an talk at the 2025 AWM Research Symposium..."	
 ---
 
