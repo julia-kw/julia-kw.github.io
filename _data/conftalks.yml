@@ -1,6 +1,11 @@
 
 # conference talks to display in talks.md
 
+- href: "2025-may-awm"
+  title: "How hard is it to compute a failure of the continuum hypothesis"
+  other: "invited talk, Logic Across Mathematics, 2025 AWM Research Symposium"
+  date: "May 2025"
+
 - href: "2024-nov-nerds"
   title: "Solid, neat, tight: toward charting the boundary of definability"
   other: "invited talk, NERDS 25.0"
