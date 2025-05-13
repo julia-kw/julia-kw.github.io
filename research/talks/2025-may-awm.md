@@ -5,7 +5,7 @@ permalink: /research/talks/2025-may-awm/
 excerption: "This is an talk at the 2025 AWM Research Symposium..."	
 ---
 
-This is an talk at the [2025 AWM Research Symposium](https://awm.org/meetings/awm-reserach-symposium/) on 17 May 2025
+This is an invited talk at the Logic Across Mathematics section of the [2025 AWM Research Symposium](https://awm-math.org/meetings/awm-research-symposium/) on 17 May 2025
 
 [[Slides.]({{ page.url }}computable-forcing.pdf)]
 
