@@ -4,19 +4,15 @@ title: Teaching
 permalink: /teaching/
 ---
 
-Current Semester (Spring 2025)
-=======
+Spring 2025
+======
 
 [Math 113: Logic]({{ page.url }}2025/math113/)
 
 [Math 211: Calculus II]({{ page.url }}2025/math211/)
 
-
-Previous Semesters 
-==================
-
 Fall 2024
----------
+=========
 
 [Math 210: Calculus I]({{ page.url }}2024/math210/)
 
@@ -28,7 +24,7 @@ Fall 2024
 
 
 Spring 2024
------------
+===========
 
 [Math 335: Set Theory]({{ page.url }}2024/math335/)
 
@@ -37,7 +33,7 @@ Spring 2024
 [Math 01B: Algebra II]({{ page.url }}2024/math01b/)
 
 Fall 2023
----------
+=========
 
 [Math 210: Calculus I]({{ page.url }}2023/math210/)
 
@@ -45,7 +41,7 @@ Fall 2023
 
 
 Spring 2023
------------
+===========
 
 [Math 1410: Elementary Functions]({{ page.url }}2023/math1410/)
 
@@ -53,7 +49,7 @@ Spring 2023
 
 
 Fall 2022
----------
+=========
 
 [Math 1316: Plane Trigonometry]({{ page.url }}2022/math1316fall/)
 
@@ -61,13 +57,13 @@ Fall 2022
 
 
 Spring 2022
------------
+===========
 
 [Math 1316: Plane Trigonometry]({{ page.url }}2022/math1316/)
 
 
 Fall 2021
----------
+=========
 
 [Math 1332: College Mathematics]({{ page.url }}2021/math1332/)
 
@@ -75,7 +71,7 @@ Fall 2021
 
 
 Spring 2021
------------
+===========
 
 [Math 321: Introduction to Advanced Mathematics]({{ page.url }}2021/math321/)
 
@@ -83,7 +79,7 @@ Spring 2021
 
 
 Fall 2020
----------
+=========
 
 [Math 321: Introduction to Advanced Mathematics]({{ page.url }}2020/math321/)
 
@@ -91,7 +87,7 @@ Fall 2020
 
 
 Spring 2020
------------
+===========
 
 [Math 455: Logic]({{ page.url }}2020/math455/)
 
@@ -99,7 +95,7 @@ Spring 2020
 
 
 Fall 2019
----------
+=========
 
 [Math 454: Axiomatic Set Theory]({{ page.url }}2019/math454/)
 
@@ -107,14 +103,14 @@ Fall 2019
 
 
 Spring 2019
------------
+===========
 
 [Math 655: Set Theory — Large Cardinals and Forcing]({{ page.url }}2019/math655/)
 
 [Math 244: Calculus IV]({{ page.url }}2019/math244/)
 
 Fall 2018
----------
+=========
 
 [Math 302: Differential Equations]({{ page.url }}2018/math302/)
 

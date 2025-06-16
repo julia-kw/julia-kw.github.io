@@ -4,25 +4,20 @@ title: About Me
 permalink: /about-me/
 ---
 
-Hi! I am Julia Kameryn Williams, a logician and mathematician at Bard College at Simon's Rock.
+My name is Julia Kameryn Williams. I am a mathematician and data scientist. I have experience in academia as a research mathematician and experience in industry as a software engineer. I am passionate about using mathematics and algorithmic thinking to solve problems and improve people's lives.
+
+I am currently based in the Boston area.
 
 <center>
-<img src="/pics/kj-chalkboard.jpg" width="347" height="300" alt="A picture of me.">
+<img src="/pics/julia-blackboard.jpg" width="225" height="300" alt="A picture of me.">
 
-<p><small>the logician in front of some posets</small></p>
-</center>
+<p><small>a logician in front of the Yoneda lemma</small></p>
+</center>     
 
-My research interests specialize in set theory, with much of my work motivated by aspects of the multiversist view of set theory, advocated by Hamkins and others. Outside of pure set theory, I'm interested in its connections to other areas of logic and to philosophy of mathematics. 
+My academic scholarship was in set theory, a branch of mathematical logic. At a broad level, the major guiding question of the area is, what are the boundaries of what mathematics can do? Specifically, much of my work was on aspects of Joel David Hamkins's "multiverse" perspective on set theory, investigating possibilities for the universe of mathematics. Logic is an interdisciplinary field with practitioners spanning mathematics, computer science, and philosophy. This experience sharpened my interest in working with diverse teams from different backgrounds. 
 
-Some miscellaneous factoids:
+Between undergraduate and graduate school I worked as a software engineer. I wrote java and python for the backend of a web-based SaaS accounting package. I began my education majoring in computer science, before moving to mathematics and graduating a semester shy of a second major in CS.
 
-* My favorite mathematical object is the ultrafilter.
-
-* My favorite theorem is Barwise's extension theorem—see [this blog post]({{ site.url }}/2018/04/26/barwise.html).
-
-* When I was a child I memorized the first 100 digits of pi, and I'm ashamed that I have yet to forget them.
-
-* Prior to starting grad school I worked as a software engineer.
 
 
 

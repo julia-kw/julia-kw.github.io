@@ -1,11 +1,8 @@
 ---
 layout: page
-title: Online CV
+title: Online Academic CV
 permalink: /cv/
 ---
-
-See [here]({{ page.url }}kwilliams-cv.pdf) for a pdf CV with fuller details.
-
 
 Academic History
 ====
@@ -13,7 +10,9 @@ Academic History
 Bard College at Simon's Rock
 ----
 
-Faculty of Mathematics, Division of Science, Computing, and Mathematics
+Assist Professor of Mathematics, Division of Science, Computing, and Mathematics
+
+Fall 2023 to Spring 2025
 
 Sam Houston State University
 ----
@@ -54,7 +53,7 @@ Publications
 Teaching and Educational Experience
 ====
 
-* (2023–present) Bard College at Simon's Rock. Faculty of Mathematics. 
+* (2023–2025) Bard College at Simon's Rock. Assistant Professor. 
 
 * (2021–2023) Sam Houston State University. Visiting Assistant Professor.
 
@@ -78,9 +77,3 @@ Seminar Talks
 * [{{ talk.title }}]({{ site.baseurl }}/research/talks/{{ talk.href }}), {{ talk.other }} ({{ talk.date }}).
 {% endfor %}
 
-Technical Experience
-====
-
-* Winter to Summer 2013, I was a software engineer at Clearwater Analytics, LLC in Boise, Idaho. 
-
-* Technical Skills: LaTeX, Linux, Java, Python, SQL.
