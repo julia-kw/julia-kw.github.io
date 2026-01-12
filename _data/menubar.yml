@@ -1,15 +1,15 @@
 
 # main navigation menu bar
 
+ - title: "Research"
+   href: "/research/"
+
+ - title: "Teaching"
+   href: "/teaching/"
+
  - title: "Blog"
    href: "/blog/"
 
- - title: "Bio"
-   href: "/about-me/"
-
- - title: "Contact"
+- title: "Contact"
    href: "/contact/"
-
- - title: "Academic Work"
-   href: "/academic/"
    

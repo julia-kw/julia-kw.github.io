@@ -7,10 +7,17 @@ permalink: /cv/
 Academic History
 ====
 
+Cape Cod Community College
+
+Assistant Professor of Mathematics, Department of Mathematics
+
+Spring 2026 to Present
+
+
 Bard College at Simon's Rock
 ----
 
-Assist Professor of Mathematics, Division of Science, Computing, and Mathematics
+Assistant Professor of Mathematics, Division of Science, Computing, and Mathematics
 
 Fall 2023 to Spring 2025
 
