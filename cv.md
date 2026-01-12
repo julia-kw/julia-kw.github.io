@@ -4,12 +4,12 @@ title: Online Academic CV
 permalink: /cv/
 ---
 
-Academic History
+Academic Historyn
 ====
 
 Cape Cod Community College
 
-Assistant Professor of Mathematics, Department of Mathematics
+Assistant Professor of Mathematics, Division of Science, Technology, Engineering, and Mathematics
 
 Spring 2026 to Present
 
