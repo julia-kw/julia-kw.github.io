@@ -7,6 +7,11 @@ permalink: /teaching/
 Current Semester (Spring 2026)
 =======
 
+Math 013: Support Topics for MAT130
+
+Math 130: Quantitative Reasoning
+
+Math 195: Precalculus with Trigonometry
 
 
 Previous Semesters
