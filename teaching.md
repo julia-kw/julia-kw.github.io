@@ -11,7 +11,7 @@ Math 013: Support Topics for MAT130
 
 Math 130: Quantitative Reasoning
 
-[Math 195: Precalculus with Trigonometry]({{ page.url}}2026/math196/)
+[Math 195: Precalculus with Trigonometry]({{ page.url}}2026/math195/)
 
 
 Previous Semesters
