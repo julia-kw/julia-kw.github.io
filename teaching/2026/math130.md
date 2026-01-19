@@ -32,7 +32,11 @@ Important dates:
 
 * **Thursday, Feb 19**: Quiz 1
 
+* **Week of March 2**: Oral check-in 1
+
 * **Thursday, April 2**: Quiz 2
+
+* **Week of April 27**: Oral check-in 2
 
 * **Thursday, April 30**: Quiz 3
 

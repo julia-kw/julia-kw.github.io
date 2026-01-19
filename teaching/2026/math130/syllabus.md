@@ -45,7 +45,7 @@ Grading Policy
 
 Your learning outcomes for this class will be assessed with quizzes, homework, and in-class writing exercises. The breakdown for your grade is as follows:
 
-* **30%**: Homework
+* **20%**: Homework
 
 * **20%**: Unit 1 Quiz
 
@@ -54,6 +54,8 @@ Your learning outcomes for this class will be assessed with quizzes, homework, a
 * **20%**: Unit 3 Quiz
 
 * **10%**: In-Class Writing Exercises
+
+* **10%**: Oral Check-Ins
 
 Additionally, there will be an optional exam at the end of the semester. You may choose to take this exam to have it replace your lowest quiz score.
 
@@ -88,7 +90,7 @@ Homework grades are based on completion and my selection of two problems.
 
 You are encouraged to work together on homework, but the work you turn in is expected to be your own. If you do collaborate with classmates, please say so and give their names with your submitted work.
 
-I will not accept late work. Instead, I will drop your two lowest homework scores from consideration for your final grade.
+I will not accept late work. Instead, I will drop your three lowest homework scores from consideration for your final grade.
 
 
 
@@ -113,6 +115,20 @@ In-Class Writing Exercises
 ========
 
 Every class period will begin with a 5 minute focused free write. You will write in response to a prompt, and turn it in at the end of the class. These writing exercises will be used as a basis for class discussions.
+
+
+Oral Check-Ins
+====
+
+Twice during the semester you are required to stop by my office hours to have an oral check-in on how the class has been going. This is an opportunity for us to ensure we are on the same page with your class progress. For each of these weeks I will provide some class time for these check-ins, in case my usual office hours don't work for you.
+
+* **Week of March 2**: Oral check-in 1
+
+* **Week of April 27**: Oral check-in 2
+
+These check-ins are graded based on participation.
+
+You are encouraged to come by office hours at other times when you have questions about the class.
 
 
 Textbook Information

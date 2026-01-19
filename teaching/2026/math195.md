@@ -62,7 +62,7 @@ The schedule below is tentative; we might have small adjustments in the dates. F
 	
     * Week 14: Rational functions (3.7)
 	
-    * Week 15: Final review.
+    * Week 15: Oral Finals.
 	
 Important dates:
 
@@ -70,4 +70,4 @@ Important dates:
 	
 * **Wednesday, Apr 15**: Midterm 2
 	
-
+* **Week of May 4**: Oral Finals

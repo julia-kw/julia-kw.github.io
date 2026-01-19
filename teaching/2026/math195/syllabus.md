@@ -51,7 +51,7 @@ Your learning outcomes for this class will be assessed with exams, homework, and
 
 * **25%**: Midterm 2
 
-* **25%**: Cumulative Final
+* **25%**: Oral Final
 
 * **5%**: In-Class Writing Exercises
 
@@ -95,10 +95,13 @@ For this class you should expect to spend roughly two hours out of class for eac
 Exams
 =====
 
-There will be two midterm exams. These are in-class, written, individual exams. The course will end with a cumulative final exam, assessing your mastery of the material across the entire semester.
+There will be two midterm exams. These are in-class, written, individual exams. 
 
+**No calculators nor notes are allowed for midterm exams, unless otherwise stated.**
 
-**No calculators nor notes are allowed for exams, unless otherwise stated.**
+Additionally, the course will conclude with an oral final. These will be individually scheduled, one-on-one sessions in my office. You will demonstrate how you work through a few problems, and we will discuss how the class went overall.
+
+I will provide a problem list before the sessions. You will be asked to present one problem of your choice with me choosing the remainder.
 
 Exam dates:
 
@@ -106,7 +109,7 @@ Exam dates:
 
 * Midterm 2: Wednesday, April 15th
 
-* Final: TBA
+* Oral Final: Week of May 4th
 
 
 In-Class Writing Exercises
