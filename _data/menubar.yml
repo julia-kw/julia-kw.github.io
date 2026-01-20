@@ -7,19 +7,9 @@
  - title: "Teaching"
    href: "/teaching/"
 
- - title: "Seminars"
-   href: "/seminars/"
-
- - title: "Web Log"
+ - title: "Blog"
    href: "/blog/"
 
- - title: "CV"
-   href: "/cv/"
-
-# - title: "Bio"
-#   href: "/bio/"
-
- - title: "Contact"
+- title: "Contact"
    href: "/contact/"
-
-
+   

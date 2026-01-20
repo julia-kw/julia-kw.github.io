@@ -4,16 +4,25 @@ title: Teaching
 permalink: /teaching/
 ---
 
-Current Semester (Spring 2025)
+Current Semester (Spring 2026)
 =======
+
+[Math 013: Support Topics for MAT130]({{ page.url}}2026/math013/)
+
+[Math 130: Quantitative Reasoning]({{ page.url}}2026/math130/)
+
+[Math 195: Precalculus with Trigonometry]({{ page.url}}2026/math195/)
+
+
+Previous Semesters
+========
+
+Spring 2025
+------
 
 [Math 113: Logic]({{ page.url }}2025/math113/)
 
 [Math 211: Calculus II]({{ page.url }}2025/math211/)
-
-
-Previous Semesters 
-==================
 
 Fall 2024
 ---------
