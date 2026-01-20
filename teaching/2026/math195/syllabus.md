@@ -21,7 +21,7 @@ Class Information
 
 **Class Hours and Room** MW 11:00–1:15, Building 4 Room 106
 
-**Office Hours** Building 6 Room 119, times TBA
+**Office Hours** MW 10:00–11:00, TR 1:00–2:00, Building 6 Room 119
 
 **Textbook** *Precalculus* 2e, Openstax. ([Available freely online](https://openstax.org/details/books/precalculus-2e))
 

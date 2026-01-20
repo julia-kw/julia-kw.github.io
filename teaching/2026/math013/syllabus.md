@@ -21,7 +21,7 @@ Class Information
 
 **Class Hours and Room** TR 11:00–11:50 Building 4 Room 105
 
-**Office Hours** Building 6 Room 119, times TBA
+**Office Hours** MW 10:00–11:00, TR 1:00–2:00, Building 6 Room 119
 
 **Textbook** *None*
 

@@ -21,7 +21,7 @@ Class Information
 
 **Class Hours and Room** TR 9:30–10:45 Building 4 Room 105
 
-**Office Hours** Building 6 Room 119, times TBA
+**Office Hours** MW 10:00–11:00, TR 1:00–2:00, Building 6 Room 119
 
 **Textbook** *Mathematics for Liberal Arts*, May 2024 edition. [[PDF]({{ page.parentlink }}math-for-lib-arts.pdf)] (Copyright 2024 by Erica Hotsinpiller, Jackie Kraus, Rita Patel, and Christy Peterson. [<img src="{{ page.parentlink }}cc-by-nc-sa-4.0.png" width="88" alt="Creative Commons Attribution-Non-Commercial-ShareAlike 4.0  License.">](https://creativecommons.org/licenses/by-nc-sa/4.0/))
 
