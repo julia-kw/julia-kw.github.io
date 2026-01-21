@@ -17,6 +17,8 @@ Class Information
 
 **Email** `jwilliams@capecod.edu`
 
+**Phone** (774) 330-4260
+
 **Primary out of class contact** course website or email me
 
 **Class Hours and Room** MW 11:00–1:15, Building 4 Room 106
