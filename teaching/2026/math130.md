@@ -10,7 +10,7 @@ permalink: /teaching/2026/math130/
 Announcements
 -------------
 
-* (1/22) [Here]({{ page.url }}ws-01-22.pdf) is the worksheet for today's class.
+* (1/22) [Here]({{ page.url }}ws-01.22.pdf) is the worksheet for today's class.
 
 Homework
 --------
