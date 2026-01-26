@@ -10,10 +10,16 @@ permalink: /teaching/2026/math130/
 Announcements
 -------------
 
+* (1/29) [Here]({{ page.url }}ws-01.29.pdf) is the worksheet for today's class.
+
+* (1/27) [Here]({{ page.url }}ws-01.27.pdf) is the worksheet for today's class.
+  
 * (1/22) [Here]({{ page.url }}ws-01.22.pdf) is the worksheet for today's class.
 
 Homework
 --------
+
+* **Week 2 (Due Thursday, 2/5) Practice problems #1–8 from the 1/27 worksheet and practice problems #1–10 from the 1/29 worksheet.
 
 * *Week 1 no homework!*
 

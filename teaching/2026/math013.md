@@ -10,7 +10,10 @@ permalink: /teaching/2026/math013/
 Announcements
 -------------
 
-(Nothing yet!)
+
+* (1/29) [Here]({{ page.url }}ws-01.29.pdf) is the worksheet for today's class.
+
+* (1/27) [Here]({{ page.url }}ws-01.27.pdf) is the worksheet for today's class.
 
 Schedule
 --------
