@@ -4,9 +4,11 @@ title: Research
 permalink: /research/
 ---
 
-My research interests are in mathematical logic, specializing in set theory. Much of my set theoretic work is motivated by the multiversist view of Hamkins and others. There are many different universes of set theory. What are the possibilities? What is the structure of the set theoretic multiverse? For instance, I have work in set theoretic geology, in models of set theory, including nonstandard models, and in the foundations of forcing.
+I am no longer active in producing research, though I still referee papers.
 
-Outside of pure set theory, I am interested in set theory's connections to other areas of logic and to philosophy of mathematics. My work has touched upon model theory, computability theory, the study of modal logics, and the philosophy of set theory.
+My research interests were in mathematical logic, specializing in set theory. Much of my set theoretic work was motivated by the multiversist view of Hamkins and others. There are many different universes of set theory. What are the possibilities? What is the structure of the set theoretic multiverse? For instance, I have work in set theoretic geology, in models of set theory, including nonstandard models, and in the foundations of forcing.
+
+Outside of pure set theory, I was interested in set theory's connections to other areas of logic and to philosophy of mathematics. My work touched upon model theory, computability theory, the study of modal logics, and the philosophy of set theory.
 
 
 My Publications
