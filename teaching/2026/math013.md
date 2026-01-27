@@ -26,5 +26,22 @@ This course follows the schedule for Math 130, reproduced below.
 
 * Unit 3: Statistics (4/7–4/30)
 
+Here is a (partial) schedule of topics.
+
+* (1/27) Counting and exponentiation.
+
+* (1/29) Factorials, permutations, and combinations.
+
+* (2/3) *Class canceled.*
+
+* (2/5) Khayyam's triangle.
+
+* (2/10) Number classes.
+
+* (2/12) Fractions.
+
+* (2/17) More about fractions.
+
+* (2/19) Extra time for Math 130 quiz.
 
 
