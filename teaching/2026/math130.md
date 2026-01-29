@@ -10,9 +10,13 @@ permalink: /teaching/2026/math130/
 Announcements
 -------------
 
-* (1/29) [Here]({{ page.url }}ws-01.29.pdf) is the worksheet for today's class.
+* (2/5) [Here]({{ page.url }}ws-01.29.pdf) is the worksheet for today's class.
 
-* (1/27) [Here]({{ page.url }}ws-01.27.pdf) is the worksheet for today's class.
+* (2/3) *Class canceled today due to instructor having a medical appointment.*
+
+* (1/29) [Here]({{ page.url }}ws-01.27.pdf) is the worksheet for today's class.
+
+* (1/27) *Class canceled today due to snow day.* Due to the cancellation, the date for the first quiz has been pushed back by one class period.
   
 * (1/22) [Here]({{ page.url }}ws-01.22.pdf) is the worksheet for today's class.
 
@@ -36,7 +40,7 @@ This course is broken up into three units.
 
 Important dates:
 
-* **Thursday, Feb 19**: Quiz 1
+* **Tuesday, Feb 24**: Quiz 1 (*Note date change*)
 
 * **Week of March 2**: Oral check-in 1
 
