@@ -23,7 +23,7 @@ Announcements
 Homework
 --------
 
-* **Week 2 (Due Thursday, 2/5)** Practice problems #1–8 from the 1/27 worksheet and practice problems #1–10 from the 1/29 worksheet.
+* **Week 2 (Due Thursday, 2/5)** Practice problems #1–10 from the 1/29 worksheet.
 
 * *Week 1 no homework!*
 
