@@ -10,6 +10,10 @@ permalink: /teaching/2026/math195/
 Announcements
 -------------
 
+* (2/4) Today's worksheet is [here]({{ page.url }}ws-02.04.pdf).
+
+* (2/2) Today's worksheet is [here]({{ page.url }}ws-02.02.pdf).
+
 * (1/28) Today's worksheet is [here]({{ page.url }}ws-01.28.pdf).
 
 * (1/21) Today's worksheet is [here]({{ page.url }}ws-01.21.pdf).
@@ -18,6 +22,8 @@ Homework
 --------
 
 Unless otherwise stated, homework problems come from the course textbook, which can be found on the syllabus.
+
+* **Week 3 (due Monday, 2/9)** Practice problem 3 from the 2/2 worksheet; Section 3.3 #3, 17–20, Section 3.8 #2, 5, 6, 13, 14, 15, 17, 21, 35, 36.
 
 * **Week 2 (due Monday, 2/2)** Section 3.2 #3, 21–25, 53, 54, 55, 91, 92; practice problem 8 from the 1/28 worksheet.
 
