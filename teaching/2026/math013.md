@@ -10,7 +10,9 @@ permalink: /teaching/2026/math013/
 Announcements
 -------------
 
-* (2/3) * (2/3) *Class canceled today due to instructor having a medical appointment.*
+* (2/5) [Here]({{ page.url }}ws-02.05.pdf) is the worksheet for today's class.
+
+* (2/3) *Class canceled today due to instructor having a medical appointment.*
 
 * (1/29) [Here]({{ page.url }}ws-01.29.pdf) is the worksheet for today's class.
 
