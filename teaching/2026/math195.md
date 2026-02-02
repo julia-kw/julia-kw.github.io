@@ -12,6 +12,8 @@ Announcements
 
 * (2/4) Today's worksheet is [here]({{ page.url }}ws-02.04.pdf).
 
+* (2/2) Office hours tomorrow, Tuesday 2/3, are canceled.
+
 * (2/2) Today's worksheet is [here]({{ page.url }}ws-02.02.pdf).
 
 * (1/28) Today's worksheet is [here]({{ page.url }}ws-01.28.pdf).
