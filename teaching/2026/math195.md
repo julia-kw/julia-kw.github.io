@@ -10,6 +10,8 @@ permalink: /teaching/2026/math195/
 Announcements
 -------------
 
+* (2/4) Office hours today, Wednesday 2/4, are moved to after class, 1:15–2:00.
+
 * (2/4) Today's worksheet is [here]({{ page.url }}ws-02.04.pdf).
 
 * (2/2) Office hours tomorrow, Tuesday 2/3, are canceled.
