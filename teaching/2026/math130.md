@@ -10,7 +10,9 @@ permalink: /teaching/2026/math130/
 Announcements
 -------------
 
-* (2/5) [Here]({{ page.url }}ws-01.29.pdf) is the worksheet for today's class.
+* (2/10) [Here]({{ page.url }}ws-01.29.pdf) is the worksheet for today's class.
+
+* (2/5) Today's class was used for extra time for math 130 practice.
 
 * (2/3) *Class canceled today due to instructor having a medical appointment.*
 
