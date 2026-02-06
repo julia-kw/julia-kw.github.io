@@ -10,6 +10,10 @@ permalink: /teaching/2026/math130/
 Announcements
 -------------
 
+* (2/12) [Here]({{ page.url }}ws-02.12.pdf) is the worksheet for today's class.
+
+* (2/10) [Here]({{ page.url }}ws-02.10.pdf) is the worksheet for today's class.
+
 * (2/5) [Here]({{ page.url }}ws-01.29.pdf) is the worksheet for today's class.
 
 * (2/3) *Class canceled today due to instructor having a medical appointment.*
@@ -22,6 +26,8 @@ Announcements
 
 Homework
 --------
+
+* **Week 4 (due Tuesday, 2/17)** Practice problems #1–3 from the 2/10 worksheet and #1–5 from the 2/12 worksheet.
 
 * **Week 3 (due Tuesday, 2/10)** Practice problems #1–8 from the 2/5 worksheet.
 
