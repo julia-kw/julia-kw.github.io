@@ -10,7 +10,13 @@ permalink: /teaching/2026/math195/
 Announcements
 -------------
 
-* (2/4) Today's worksheet is [here]({{ page.url }}ws-02.04.pdf).
+* (2/16) *Class canceled today because campus is closed for Presidents' Day.*
+
+* (2/11) Today's worksheet is [here]({{ page.url }}ws-02.11.pdf).
+
+* (2/9) Today's worksheet is [here]({{ page.url }}ws-02.09.pdf).
+
+* (2/4) Today's worksheet is [here]({{ page.url }}ws-02.04.pdf).	
 
 * (2/2) Office hours tomorrow, Tuesday 2/3, are canceled.
 
@@ -24,6 +30,8 @@ Homework
 --------
 
 Unless otherwise stated, homework problems come from the course textbook, which can be found on the syllabus.
+
+* **Week 4 (due Wednesday, 2/18)** Practice problems 8, 10, 11, 12 from the 2/9 worksheet; Practice problems 5–8 from the 2/11 worksheet; Section 4.2 #1, 2, 3, 5, 9, 10, 26, 30, 31; Section 4.4 #6, 10, 12, 20, 41, 43, 45, 56, 59. 
 
 * **Week 3 (due Monday, 2/9)** Practice problem 3 from the 2/2 worksheet; Section 3.3 #3, 17–20, Section 3.8 #2, 5, 6, 13, 14, 15, 17, 21, 35, 36.
 
