@@ -12,7 +12,7 @@ Announcements
 
 * (2/16) *Class canceled today because campus is closed for Presidents' Day.*
 
-* (2/11) Today's worksheet is [here]({{ page.url }}ws-02.11.pdf).
+* (2/11) *Class today is remote. Check your email for the zoom link.* Today's worksheet is [here]({{ page.url }}ws-02.11.pdf).
 
 * (2/9) Today's worksheet is [here]({{ page.url }}ws-02.09.pdf).
 
