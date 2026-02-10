@@ -10,7 +10,7 @@ permalink: /teaching/2026/math013/
 Announcements
 -------------
 
-* (2/12) Class today will be used for extra math 130 practice.
+* (2/12) [Here]({{ page.url }}ws-02.12.pdf) is the worksheet for today's class.
 
 * (2/10) [Here]({{ page.url }}ws-02.05.pdf) is the worksheet for today's class.
 
