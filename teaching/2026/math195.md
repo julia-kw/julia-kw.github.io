@@ -10,6 +10,10 @@ permalink: /teaching/2026/math195/
 Announcements
 -------------
 
+* (2/18) **Exam 1 is Wednesday, 2/25.** The study guide can be found [here]({{ page.url }}sg1.pdf).
+
+* (2/18) Today's worksheet is [here]({{ page.url }}ws-02.18.pdf).
+
 * (2/16) *Class canceled today because campus is closed for Presidents' Day.*
 
 * (2/11) *Class today is remote. Check your email for the zoom link.* Today's worksheet is [here]({{ page.url }}ws-02.11.pdf). The slides are [here]({{ page.url }}logs.pdf).
@@ -30,6 +34,8 @@ Homework
 --------
 
 Unless otherwise stated, homework problems come from the course textbook, which can be found on the syllabus.
+
+* **Week 5 (due Monday, 2/23)** Practice problems 6, 7, 9, 10 from the 2/18 worksheet; Section 4.6 #11, 14, 16, 44, 46, 50, 58.
 
 * **Week 4 (due Wednesday, 2/18)** Practice problems 8, 10, 11, 12 from the 2/9 worksheet; Practice problems 5–8 from the 2/11 worksheet; Section 4.2 #1, 2, 3, 5, 9, 10, 26, 30, 31; Section 4.4 #6, 10, 12, 20, 41, 43, 45, 56, 59. 
 

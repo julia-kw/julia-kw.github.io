@@ -10,6 +10,10 @@ permalink: /teaching/2026/math130/
 Announcements
 -------------
 
+* (2/19) **Quiz 1 is Tuesday, 2/24.** The study guide can be found [here]({{ page.url }}sg1.pdf).
+
+* (2/17) [Here]({{ page.url }}ws-02.17.pdf) is the worksheet for today's class.
+
 * (2/12) [Here]({{ page.url }}ws-02.12.pdf) is the worksheet for today's class.
 
 * (2/10) [Here]({{ page.url }}ws-02.10.pdf) is the worksheet for today's class.
