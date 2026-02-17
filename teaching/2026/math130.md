@@ -31,6 +31,8 @@ Announcements
 Homework
 --------
 
+* **Week 5 (due Tuesday, 2/24)** Practice problem #1–9 from the 2/17 worksheet.
+
 * **Week 4 (due Tuesday, 2/17)** Practice problems #1–3 from the 2/10 worksheet and #1–5 from the 2/12 worksheet.
 
 * **Week 3 (due Tuesday, 2/10)** Practice problems #1–8 from the 2/5 worksheet.
