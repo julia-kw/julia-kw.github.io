@@ -35,6 +35,8 @@ Homework
 
 Unless otherwise stated, homework problems come from the course textbook, which can be found on the syllabus.
 
+* *Week 6 no homework! Study for the exam!*
+
 * **Week 5 (due Monday, 2/23)** Practice problems 6, 7, 9, 10 from the 2/18 worksheet; Section 4.6 #11, 14, 16, 44, 46, 50, 58.
 
 * **Week 4 (due Wednesday, 2/18)** Practice problems 8, 10, 11, 12 from the 2/9 worksheet; Practice problems 5–8 from the 2/11 worksheet; Section 4.2 #1, 2, 3, 5, 9, 10, 26, 30, 31; Section 4.4 #6, 10, 12, 20, 41, 43, 45, 56, 59. 
