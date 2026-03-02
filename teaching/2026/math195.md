@@ -10,6 +10,8 @@ permalink: /teaching/2026/math195/
 Announcements
 -------------
 
+* (3/2) You have [a chance to make up some lost points from exam 1]({{ page.url }}mu1.pdf). Submit the makeup work by Monday 3/16.
+
 * (2/18) **Exam 1 is Monday, 3/2.** The study guide can be found [here]({{ page.url }}sg1.pdf).
 
 * (2/18) Today's worksheet is [here]({{ page.url }}ws-02.18.pdf).
