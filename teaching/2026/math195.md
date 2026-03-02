@@ -10,7 +10,7 @@ permalink: /teaching/2026/math195/
 Announcements
 -------------
 
-* (2/18) **Exam 1 is Wednesday, 2/25.** The study guide can be found [here]({{ page.url }}sg1.pdf).
+* (2/18) **Exam 1 is Monday, 3/2.** The study guide can be found [here]({{ page.url }}sg1.pdf).
 
 * (2/18) Today's worksheet is [here]({{ page.url }}ws-02.18.pdf).
 
@@ -35,7 +35,9 @@ Homework
 
 Unless otherwise stated, homework problems come from the course textbook, which can be found on the syllabus.
 
-* *Week 6 no homework! Study for the exam!*
+* *Week 7 no homework! Study for the exam.*
+
+* *Week 6 no homework due to blizzard!*
 
 * **Week 5 (due Monday, 2/23)** Practice problems 6, 7, 9, 10 from the 2/18 worksheet; Section 4.6 #11, 14, 16, 44, 46, 50, 58.
 
@@ -54,7 +56,7 @@ This course is broken up into two major units, followed by one minor unit. The m
 
 The schedule below is tentative; we might have small adjustments in the dates. For each week I've included which sections from the textbook we will be covering.
 
-* Unit 1 (1/21–2/25)
+* Unit 1 (1/21–3/2)
 
     * Week 1: Intro, linear functions (2.1, 2.2)
 	
@@ -65,18 +67,18 @@ The schedule below is tentative; we might have small adjustments in the dates. F
     * Week 4: Exponential and logarithmic functions (4.1–4.4)
 	
     * Week 5: More exponential and logarithmic functions (4.5, 4.6) [No class Monday.]
-
-    * Week 6: Review, **Midterm 1: Wednesday 2/25**
 	
-* Unit 2 (3/2–4/15): 
+	* *Campus closure due to blizzard.*
 
-    * Week 7: Trigonometry: circles and right triangles (5.1–5.4)
+    * Week 7: **Midterm 1: Monday 3/2**, Trigonemetry: circles (5.1–5.2)
 
-    * *Spring break!*
+* *Spring break!*
 	
-    * Week 8: Trigonometry: Graphs (6.1—6.3)
-	
-    * Week 9: Trigonometry: Equations and Identities (7.1, 7.5, 7.6)
+* Unit 2 (3/4–4/15): 
+
+    * Week 8: Trigonometry: right triangles, graphs (5.3–5.4, 6.1–6.3)
+
+    * Week 9: Trigonometry: equations and Identities (7.1, 7.5, 7.6)
 	
     * Week 10: Polynomials (3.4)
 	
@@ -94,7 +96,7 @@ The schedule below is tentative; we might have small adjustments in the dates. F
 	
 Important dates:
 
-* **Wednesday, Feb 25**: Midterm 1
+* **Monday, Mar 2**: Midterm 1
 	
 * **Wednesday, Apr 15**: Midterm 2
 	

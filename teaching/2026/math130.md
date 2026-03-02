@@ -10,7 +10,7 @@ permalink: /teaching/2026/math130/
 Announcements
 -------------
 
-* (2/19) **Quiz 1 is Tuesday, 2/24.** The study guide can be found [here]({{ page.url }}sg1.pdf).
+* (2/19) **Quiz 1 is Tuesday, 3/3.** The study guide can be found [here]({{ page.url }}sg1.pdf).
 
 * (2/17) [Here]({{ page.url }}ws-02.17.pdf) is the worksheet for today's class.
 
@@ -31,7 +31,11 @@ Announcements
 Homework
 --------
 
-* **Week 5 (due Tuesday, 2/24)** Practice problem #1–9 from the 2/17 worksheet.
+* *Week 7 no homework due to exam!*
+
+* *Week 6 no homework due to blizzard!*
+
+* **Week 5 (due Tuesday, 3/3)** Practice problem #1–9 from the 2/17 worksheet.
 
 * **Week 4 (due Tuesday, 2/17)** Practice problems #1–3 from the 2/10 worksheet and #1–5 from the 2/12 worksheet.
 
@@ -46,17 +50,17 @@ Schedule
 
 This course is broken up into three units.
 
-* Unit 1: Logic and Sets (1/22–2/19)
+* Unit 1: Logic and Sets (1/22–3/3)
 
-* Unit 2: Probability (2/24–4/2)
+* Unit 2: Probability (3/5–4/2)
 
 * Unit 3: Statistics (4/7–4/30)
 
 Important dates:
 
-* **Tuesday, Feb 24**: Quiz 1 (*Note date change*)
+* **Tuesday, Mar 3**: Quiz 1 (*Note date change*)
 
-* **Week of March 2**: Oral check-in 1
+* **Week of March 16**: Oral check-in 1
 
 * **Thursday, April 2**: Quiz 2
 
