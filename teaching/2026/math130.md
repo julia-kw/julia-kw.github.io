@@ -10,6 +10,8 @@ permalink: /teaching/2026/math130/
 Announcements
 -------------
 
+* (3/5) [Here]({{ page.url }}ws-03.05.pdf) is the activity sheet for today's class.
+
 * (2/19) **Quiz 1 is Tuesday, 3/3.** The study guide can be found [here]({{ page.url }}sg1.pdf).
 
 * (2/17) [Here]({{ page.url }}ws-02.17.pdf) is the worksheet for today's class.

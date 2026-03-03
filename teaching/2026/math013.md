@@ -10,6 +10,10 @@ permalink: /teaching/2026/math013/
 Announcements
 -------------
 
+* (3/5) [Here]({{ page.url }}ws-03.05.pdf) is the worksheet for today's class.
+
+* (3/2) Class today is being used for extra time for quiz 1.
+
 * (2/19) Class today is being used for extra review time for math 130.
 
 * (2/17) [Here]({{ page.url }}ws-02.17.pdf) is the worksheet for today's class.
