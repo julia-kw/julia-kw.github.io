@@ -10,6 +10,10 @@ permalink: /teaching/2026/math130/
 Announcements
 -------------
 
+* (3/19) [Here]({{ page.url }}ws-03.19.pdf) is the worksheet for today's class.
+
+* (3/17) [Here]({{ page.url }}ws-03.17.pdf) is the worksheet for today's class.
+
 * (3/5) [Here]({{ page.url }}ws-03.05.pdf) is the activity sheet for today's class.
 
 * (2/19) **Quiz 1 is Tuesday, 3/3.** The study guide can be found [here]({{ page.url }}sg1.pdf).
@@ -32,6 +36,8 @@ Announcements
 
 Homework
 --------
+
+* **Week 8 (due Tuesday, 3/24)** Practice problems #1–7 from the 3/17 worksheet and #1–8 from the 3/19 worksheet.
 
 * *Week 7 no homework due to exam!*
 
