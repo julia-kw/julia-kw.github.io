@@ -10,6 +10,8 @@ permalink: /teaching/2026/math195/
 Announcements
 -------------
 
+* (3/16) [Here]({{ page.url }}trig-ref.pdf) is a short reference sheet for trigonometry.
+
 * (3/2) You have [a chance to make up some lost points from exam 1]({{ page.url }}mu1.pdf). Submit the makeup work by Monday 3/16.
 
 * (2/18) **Exam 1 is Monday, 3/2.** The study guide can be found [here]({{ page.url }}sg1.pdf).
@@ -36,6 +38,8 @@ Homework
 --------
 
 Unless otherwise stated, homework problems come from the course textbook, which can be found on the syllabus.
+
+* **Week 8 (due Monday 3/23)** Section 5.2 #6–9, 50–53, 58, 59, 76–79; Section 5.3 #38, 39; Section 6.1 #1, 2, 3; Section 6.2 #3, 6.
 
 * *Week 7 no homework! Study for the exam.*
 
