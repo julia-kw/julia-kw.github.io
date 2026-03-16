@@ -39,7 +39,7 @@ Homework
 
 Unless otherwise stated, homework problems come from the course textbook, which can be found on the syllabus.
 
-* **Week 8 (due Monday 3/23)** Section 5.2 #6–9, 50–53, 58, 59, 76–79; Section 5.3 #38, 39; Section 6.1 #1, 2, 3; Section 6.2 #3, 6.
+* **Week 8 (due Monday 3/23)** Section 5.2 #6–9, 50–53, 58, 59, 76–79; Section 5.3 #38, 39; Section 6.1 #1–4, 6, 9, 11, 24; Section 6.2 #3, 6.
 
 * *Week 7 no homework! Study for the exam.*
 
