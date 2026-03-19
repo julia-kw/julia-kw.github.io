@@ -10,6 +10,10 @@ permalink: /teaching/2026/math130/
 Announcements
 -------------
 
+* (3/26) [Here]({{ page.url }}ws-03.26.pdf) is the worksheet for today's class.
+
+* (3/24) [Here]({{ page.url }}ws-03.24.pdf) is the worksheet for today's class.
+
 * (3/19) [Here]({{ page.url }}ws-03.19.pdf) is the worksheet for today's class.
 
 * (3/17) [Here]({{ page.url }}ws-03.17.pdf) is the worksheet for today's class.
@@ -36,6 +40,8 @@ Announcements
 
 Homework
 --------
+
+* **Week 9 (Due Tuesday, 3/31)** Practice problems #1–7 from the 3/24 worksheet.
 
 * **Week 8 (due Tuesday, 3/24)** Practice problems #1–7 from the 3/17 worksheet and #1–8 from the 3/19 worksheet.
 
