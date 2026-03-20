@@ -10,6 +10,8 @@ permalink: /teaching/2026/math195/
 Announcements
 -------------
 
+* (3/23) [Here]({{ page.url }}trig-ref2.pdf) is a second short reference sheet for trigonometry.
+
 * (3/16) [Here]({{ page.url }}trig-ref.pdf) is a short reference sheet for trigonometry.
 
 * (3/2) You have [a chance to make up some lost points from exam 1]({{ page.url }}mu1.pdf). Submit the makeup work by Monday 3/16.
