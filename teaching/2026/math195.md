@@ -41,6 +41,8 @@ Homework
 
 Unless otherwise stated, homework problems come from the course textbook, which can be found on the syllabus.
 
+* **Week 9 (due Monday 3/30)** Section 6.3 #1, 2, 5, 6, 24, 25, 28; Section 7.5 #1, 3, 4–11, 17–22 [find all solutions, not just the ones in the interval $[0,2\pi)$]
+
 * **Week 8 (due Monday 3/23)** Section 5.2 #6–9, 50–53, 58, 59, 76–79; Section 5.3 #38, 39; Section 6.1 #1–4, 6, 9, 11, 24; Section 6.2 #3, 6.
 
 * *Week 7 no homework! Study for the exam.*
