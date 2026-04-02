@@ -10,6 +10,8 @@ permalink: /teaching/2026/math130/
 Announcements
 -------------
 
+* (4/2) **Quiz 1 is Thursday, 4/9.** The study guide can be found [here]({{ page.url }}sg2.pdf).
+
 * (4/2) [Here]({{ page.url }}ws-04.02.pdf) is the worksheet for today's class.
 
 * (3/31) [Here]({{ page.url }}ws-03.31.pdf) is the worksheet for today's class.
@@ -82,7 +84,7 @@ Important dates:
 
 * **Week of March 16**: Oral check-in 1
 
-* **Thursday, April 2**: Quiz 2
+* **Thursday, April 9**: Quiz 2
 
 * **Week of April 27**: Oral check-in 2
 
