@@ -10,6 +10,8 @@ permalink: /teaching/2026/math195/
 Announcements
 -------------
 
+* (4/7) **Exam 2 is Wednesday, 4/15.** The study guide can be found [here]({{ page.url }}sg2.pdf).
+
 * (4/6) Today's worksheet is [here]({{ page.url }}ws-04.06.pdf).
 
 * (3/30) [Here]({{ page.url }}problems.pdf) are some practice problems for solving trig equations.
