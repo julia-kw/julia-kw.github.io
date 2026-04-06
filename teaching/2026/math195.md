@@ -10,6 +10,8 @@ permalink: /teaching/2026/math195/
 Announcements
 -------------
 
+* (4/6) Today's worksheet is [here]({{ page.url }}ws-04.06.pdf).
+
 * (3/30) [Here]({{ page.url }}problems.pdf) are some practice problems for solving trig equations.
 
 * (3/23) [Here]({{ page.url }}trig-ref2.pdf) is a second short reference sheet for trigonometry.
