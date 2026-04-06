@@ -43,6 +43,8 @@ Homework
 
 Unless otherwise stated, homework problems come from the course textbook, which can be found on the syllabus.
 
+* **Week 11 (due Monday 4/13)** Section 3.3 #25, 27, 30; Section 3.4 #4, 5, 30, 31, 33, 35, 42, 43, 44, 45, 60, 62, 65.
+
 * **Week 10 (due Monday 4/6)** 3/30 practice problems #6–11; Section 3.3 #2, 3, 5, 13, 14, 15, 16, 21–24.
 
 * **Week 9 (due Monday 3/30)** Section 6.3 #1, 2, 5, 6, 24, 25, 28; Section 7.5 #1, 3, 4–10 [find all solutions, not just the ones in the interval $[0,2\pi)$]
