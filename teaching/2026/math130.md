@@ -10,6 +10,10 @@ permalink: /teaching/2026/math130/
 Announcements
 -------------
 
+* (4/16) [Here]({{ page.url }}ws-04.16.pdf) is the worksheet for today's class.
+
+* (4/14) [Here]({{ page.url }}ws-04.14.pdf) is the worksheet for today's class.
+
 * (4/2) **Quiz 1 is Thursday, 4/9.** The study guide can be found [here]({{ page.url }}sg2.pdf).
 
 * (4/2) [Here]({{ page.url }}ws-04.02.pdf) is the worksheet for today's class.
@@ -46,6 +50,8 @@ Announcements
 
 Homework
 --------
+
+* **Week 12 (Due Tuesday 4/21)** Practice problems #1–8 from the 4/16 worksheet.
 
 * **Week 10 (Due Tuesday, 4/7)** Practice problems #1–8 from the 3/31 worksheet and #1–4 from the 4/2 worksheet.
 
