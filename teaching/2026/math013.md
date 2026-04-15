@@ -10,6 +10,8 @@ permalink: /teaching/2026/math013/
 Announcements
 -------------
 
+* (4/16) [Here]({{ page.url }}ws-04.16.pdf) is the worksheet for today's class.
+
 * (3/31) [Here]({{ page.url }}ws-03.31.pdf) is the worksheet for today's class.
 
 * (3/26) Class today is being used for extra math 130 practice.
