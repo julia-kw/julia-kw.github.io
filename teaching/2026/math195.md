@@ -10,6 +10,10 @@ permalink: /teaching/2026/math195/
 Announcements
 -------------
 
+* (4/22) Today's worksheet is [here]({{ page.url }}ws-04.22.pdf).
+
+* (4/20) **No class today on account of the holiday.**
+
 * (4/8) Today's worksheet is [here]({{ page.url }}ws-04.08.pdf).
 
 * (4/7) **Exam 2 is Wednesday, 4/15.** The study guide can be found [here]({{ page.url }}sg2.pdf).
@@ -48,6 +52,10 @@ Homework
 --------
 
 Unless otherwise stated, homework problems come from the course textbook, which can be found on the syllabus.
+
+* **Week 13 (due Monday 4/27)** Questions #1–5 and 9–15 from the 4/22 worksheet.
+
+* *Week 12 no homework! Study for the exam.*
 
 * **Week 11 (due Monday 4/13)** Section 3.3 #25, 27, 30; Section 3.4 #4, 5, 30, 31, 33, 35, 42, 43, 44, 45, 60, 62, 65.
 
