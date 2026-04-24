@@ -10,6 +10,12 @@ permalink: /teaching/2026/math195/
 Announcements
 -------------
 
+* (4/29) Today's worksheet is [here]({{ page.url }}ws-04.29.pdf).
+
+* (4/27) Today's worksheet is [here]({{ page.url }}ws-04.27.pdf).
+
+* (4/24) The questions for the oral final are [here]({{ page.url }}final.pdf).
+
 * (4/22) Today's worksheet is [here]({{ page.url }}ws-04.22.pdf).
 
 * (4/20) **No class today on account of the holiday.**
@@ -52,6 +58,8 @@ Homework
 --------
 
 Unless otherwise stated, homework problems come from the course textbook, which can be found on the syllabus.
+
+* **Week 14 (due Monday 5/4, turn in at my office)** Questions #1–10 from the 4/27 worksheet and #1–7 from the 4/29 worksheet.
 
 * **Week 13 (due Monday 4/27)** Questions #1–5 and 9–15 from the 4/22 worksheet.
 

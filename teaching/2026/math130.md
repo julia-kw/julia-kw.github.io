@@ -10,6 +10,8 @@ permalink: /teaching/2026/math130/
 Announcements
 -------------
 
+* (4/24) **Quiz 3 is Thursday, 4/30.** The study guide can be found [here]({{ page.url }}sg3.pdf).
+
 * (4/23) [Here]({{ page.url }}ws-04.23.pdf) is the worksheet for today's class.
 
 * (4/21) [Here]({{ page.url }}ws-04.21.pdf) is the worksheet for today's class.
@@ -18,7 +20,7 @@ Announcements
 
 * (4/14) [Here]({{ page.url }}ws-04.14.pdf) is the worksheet for today's class.
 
-* (4/2) **Quiz 1 is Thursday, 4/9.** The study guide can be found [here]({{ page.url }}sg2.pdf).
+* (4/2) **Quiz 2 is Thursday, 4/9.** The study guide can be found [here]({{ page.url }}sg2.pdf).
 
 * (4/2) [Here]({{ page.url }}ws-04.02.pdf) is the worksheet for today's class.
 
