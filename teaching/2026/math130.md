@@ -10,6 +10,8 @@ permalink: /teaching/2026/math130/
 Announcements
 -------------
 
+* (4/27) **The final exam is Thursday, 5/7 at 9am.** We will meet in the usual classroom. As a reminder, the final exam is technically optional. If you take it, I will replace your lowest quiz grade with your grade on the final exam. The exam is cumulative, covering material from all three quizzes. You are allowed one page of notes to bring.
+
 * (4/24) **Quiz 3 is Thursday, 4/30.** The study guide can be found [here]({{ page.url }}sg3.pdf).
 
 * (4/23) [Here]({{ page.url }}ws-04.23.pdf) is the worksheet for today's class.
