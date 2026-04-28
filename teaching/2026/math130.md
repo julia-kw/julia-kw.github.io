@@ -10,6 +10,8 @@ permalink: /teaching/2026/math130/
 Announcements
 -------------
 
+* (4/28) Oral check-in 2 is this week. Stop by my office so we can briefly chat about how the class went for you. Either stop by during office hours, or I will provide additional time during the 013 class slot.
+
 * (4/27) **The final exam is Thursday, 5/7 at 9am.** We will meet in the usual classroom. As a reminder, the final exam is technically optional. If you take it, I will replace your lowest quiz grade with your grade on the final exam. The exam is cumulative, covering material from all three quizzes. You are allowed one page of notes to bring.
 
 * (4/24) **Quiz 3 is Thursday, 4/30.** The study guide can be found [here]({{ page.url }}sg3.pdf).
