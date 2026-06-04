@@ -15,6 +15,10 @@ excerpt_separator: <!--more-->
 markdown: kramdown
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
 
+# Need to include _static to make pretext css display
+include: ["_static", "**/_static"] #, "/web/_static", "/web/_static/pretext/css/theme.css"]
+keep_files: ["_static", "**/_static"] #, "/web/_static", "/web/_static/pretext/css/theme.css"]
+
 # plugins:
 #    - jekyll/scholar
 
