@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Algorithms for adding, subtracting, and multiplying</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "textmacros",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[tex]/textmacros",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Explorations in Elementary Mathematics">
+<meta property="book:author" content="Julia Kameryn Williams">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.2';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.d0616b3d72ab3b06.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.af9055d29ed602c4.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="ece-book.html"><span class="title">Explorations in Elementary Mathematics</span></a></h1>
+<p class="byline">Julia Kameryn Williams</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec2-hindu-arabic.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch2.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec2-bases.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\Nbb}{\mathbb N} \newcommand{\Zbb}{\mathbb Z} \newcommand{\Qbb}{\mathbb Q} \newcommand{\Rbb}{\mathbb R} \newcommand{\Cbb}{\mathbb C} \newcommand\mand{\text{ and }} \newcommand\mor{\text{ or }} \newcommand\abs[1]{\lvert #1 \rvert} \newcommand\card[1]{\abs{#1}} \DeclareMathOperator\lcm{lcm}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="prefaceX.html" class="internal"><span class="title">Preface: To the student</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch0.html" class="internal"><span class="codenumber">0</span> <span class="title">Critical Thinking</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec0-howto.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Reading mathematics</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec0-problems.html" class="internal"><span class="codenumber">0.2</span> <span class="title">Problem solving</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec0-exercises.html" class="internal"><span class="codenumber">0.3</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec0-exercises.html#sec0-exercises-2" class="internal"><span class="codenumber">0.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch1.html" class="internal"><span class="codenumber">1</span> <span class="title">The Natural Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-what-is.html" class="internal"><span class="codenumber">1.1</span> <span class="title">What even is counting?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-sets.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Sets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-counting.html" class="internal"><span class="codenumber">1.3</span> <span class="title">The meaning of the natural numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-operations.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Operations on sets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-numbers.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Number classes</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-arithmetic.html" class="internal"><span class="codenumber">1.6</span> <span class="title">The arithmetic of natural numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-div.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Division</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-ooo.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Order of Operations</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec1-exercises.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec1-exercises.html#sec1-exercises-2" class="internal"><span class="codenumber">1.9</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch2.html" class="internal"><span class="codenumber">2</span> <span class="title">Numeration</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-roman.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Roman Numerals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-hindu-arabic.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The Hindu–Arabic numeral system</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec2-algorithms.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Algorithms for adding, subtracting, and multiplying</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-bases.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Other bases</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec2-exercises.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec2-exercises.html#sec2-exercises-2" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch3.html" class="internal"><span class="codenumber">3</span> <span class="title">Number Theory</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec3-blah.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Prime numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec3-blahblah.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Divisibility Rules</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec3-gcd.html" class="internal"><span class="codenumber">3.3</span> <span class="title">GCD and LCM</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec3-exercises.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec3-exercises.html#sec3-exercises-2" class="internal"><span class="codenumber">3.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch4.html" class="internal"><span class="codenumber">4</span> <span class="title">The Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-motivation.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Some motivation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-definition.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Defining the integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-geometry.html" class="internal"><span class="codenumber">4.3</span> <span class="title">The geometric meaning of integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-arithmetic.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Arithmetic with integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-clocks.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Clocks and modular arithmetic</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec4-exercises.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec4-exercises.html#sec4-exercises-2" class="internal"><span class="codenumber">4.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch5.html" class="internal"><span class="codenumber">5</span> <span class="title">The Rational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-motivation.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Motivating the rational numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-definition.html" class="internal"><span class="codenumber">5.2</span> <span class="title">The definition of the rational numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-arithmetic.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Arithmetic of fractions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-percents.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Percents</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec5-exercises.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec5-exercises.html#sec5-exercises-2" class="internal"><span class="codenumber">5.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch6.html" class="internal"><span class="codenumber">6</span> <span class="title">The Real Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-decimal.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Writing fractions in decimal</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-arithmetic.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The arithmetic of Hindu–Arabic numerals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-approx.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Approximations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-definition.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Defining the real numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-characterizations.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Characterizing rational and irrational numbers</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec6-exercises.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec6-exercises.html#sec6-exercises-2" class="internal"><span class="codenumber">6.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec2-algorithms">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Algorithms for adding, subtracting, and multiplying</span>
+</h2>
+<div class="para" id="sec2-algorithms-2">Now that we know how to write any natural number, we want to be able to do arithmetic with them. In this section we will talk about how to use Hindu-Arabic numerals to do addition, subtraction, and multiplication.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec2-algorithms-3">A key thing a positional numeral system does is allow us to break down a large calculation into small pieces, which can be individually tackled. All of our arithmetic algorithms will be carried out digit by digit. Rather than having to memorize what <span class="process-math">\(342 + 596\)</span> is you can break it down into three single digit problems.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec2-algorithms-4">Before seeing the general algorithm, let’s see an example to illustrate what’s going on.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec2-algorithms-5" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="sec2-algorithms-5-1">Consider the sum <span class="process-math">\(342 + 596\text{.}\)</span> We will work from the units digit to the left. For the units digit, we compute the sum <span class="process-math">\(2 + 6 = 8\text{.}\)</span> We know that will be the units digit of the sum because the rest of the digits of the summands are too large to affect the units digit. Next we handle the tens digit. We compute <span class="process-math">\(4 + 9 = 13\text{.}\)</span> That is, the tens from the two summands add up to <span class="process-math">\(13\)</span> tens in the sum. We will keep <span class="process-math">\(3\)</span> as the tens digit of the sum, carrying the <span class="process-math">\(1\)</span> over to be part of the hundreds digit. Finally, for the hundreds digit we do <span class="process-math">\(3 + 5 + 1 = 9\text{.}\)</span> Altogether, the sum is <span class="process-math">\(938\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.3.1"><a href="#sec2-algorithms-5" title="Copy heading and permalink for Example 2.3.1" aria-label="Copy heading and permalink for Example 2.3.1">🔗</a></div>
+</article></details>
+<div class="para" id="sec2-algorithms-6">A few points. First, this example was intentionally wordy to emphasize the process. The algorithm you remember from elementary school is the same idea, but in a compact and efficient form. Second, note that the number of steps in the process was the number of digits in the summands. Each extra digit adds one more step. In other words, you can solve a problem ten times as large with just one extra step. That is very efficient. Third, for each step we had to do a sum of one-digit numbers. For this to be fast we relied on having the one-digit sums memorized. You can do this process without having them memorized, but it will be a slower process.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec2-algorithms-7" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary>
+<aside class="aside aside-like knowl__content">
+<div class="para" id="sec2-algorithms-7-1">This explains the reason for making children learn times tables and similar for addition/subtraction. Certainly one can critique the implementation—for example, timed quizzes creating counterproductive stress for students. But larger calculations consist of multiple single digit calculations done in succession. For example, multiplying two three digit numbers requires nine one-digit multiplications. Besides the speed advantage of automatic recall of these one-digit results, it reduces the cognitive load on the student. This allows them to focus their attention on mastering the new concepts.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec2-algorithms-7-2">This is a pattern that recurs in mathematics education. A student who needs to spend a lot of mental energy on arithmetic will have a harder time picking up algebra. A student who needs to spend a lot of mental energy on algebra will have a harder time picking up calculus. This is why elementary educators—people like you!—play such an important role in math education. What you teach is the foundation for the rest of their education.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</aside></details>
+<div class="para" id="sec2-algorithms-8">This example done, let’s move on to the general algorithm. First I’ll verbally describe it, then I’ll show a compact way to visually organize the calculation.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="sec2-algorithms-9"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Algorithm for addition.</span>
+</h3>
+<div class="para logical" id="sec2-algorithms-9-2-1">
+<div class="para">To add two numbers written in the Hindu–Arabic numeral system, use the following procedure, starting at the units digit and moving to the left.</div>
+<ul class="disc" id="sec2-algorithms-9-2-1-1">
+<li id="sec2-algorithms-9-2-1-1-1">
+<div class="para" id="sec2-algorithms-9-2-1-1-1-1">Add the two digits together to get the total for the corresponding digit of the sum. If the total is <span class="process-math">\(\lt 10\text{,}\)</span> that is the digit for the sum. If the total is <span class="process-math">\(\ge 10\text{,}\)</span> the units digit becomes the digit for the sum and the <span class="process-math">\(1\)</span> in the tens digit gets carried left to be added to the next digit.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-9-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec2-algorithms-9-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec2-algorithms-9-2-1-1-2">
+<div class="para" id="sec2-algorithms-9-2-1-1-2-1">If one number has more digits than the other, treat the empty digits as <span class="process-math">\(0\)</span>s. That is, the digit for the sum is just the lone digit copied, possibly with <span class="process-math">\(+1\)</span> carried from the previous digit.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-9-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec2-algorithms-9-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec2-algorithms-9-2-1-1-3">
+<div class="para" id="sec2-algorithms-9-2-1-1-3-1">Stop when you have exhausted all digits for both numbers. If there is a <span class="process-math">\(+1\)</span> being carried, put it in the next digit for the sum.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-9-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec2-algorithms-9-2-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.3.2: Algorithm for addition"><a href="#sec2-algorithms-9" title="Copy heading and permalink for Definition 2.3.2: Algorithm for addition" aria-label="Copy heading and permalink for Definition 2.3.2: Algorithm for addition">🔗</a></div>
+</article>
+<div class="para" id="sec2-algorithms-10">Now let’s see a visual representation of a sum.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="sec2-algorithms-11"><div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;">
+<img src="generated/latex-image/sec2-algorithms-11-2.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="sec2-algorithms-11-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec2-algorithms-11-2-description">The algorithm for computing the sum 342 + 596. The numbers are written on top of each other so that the digits line up column by column. In this way, you can start at the rightmost column, do the one-digit sum there, and move left to the next column, possibly carrying a <span class="process-math">\(+1\text{.}\)</span> You can write the <span class="process-math">\(1\)</span> above the column to denote the carrying, or you might prefer to keep it in your head. In each column, the digit of the sum is written below a horizontal bar, so that it is easy to read off the final answer.</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The sum <span class="process-math">\(342 + 596\text{.}\)</span> This is the same example as before, but with a compact representation rather than a short essay.<div class="autopermalink" data-description="Figure 2.3.3"><a href="#sec2-algorithms-11" title="Copy heading and permalink for Figure 2.3.3" aria-label="Copy heading and permalink for Figure 2.3.3">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="sec2-algorithms-12">This algorithm is flexible and can be modified to handle adding more than two numbers. To do so, rather than add two digits per column, you add more than that. This has the extra complication that carrying is more common and it’s possible to have to carry <span class="process-math">\(+2\)</span> or more. (If you add a truly absurd volume of numbers you might have to carry forward two digits, but there’s a simple solution to that: don’t add so many numbers at once. If you must, break it up into smaller sums and combine them.) Here’s an example.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="sec2-algorithms-13"><div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;">
+<img src="generated/latex-image/sec2-algorithms-13-2.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="sec2-algorithms-13-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec2-algorithms-13-2-description">The algorithm for computing the sum 123 + 456 + 789. Like with the previous example, the numbers are written on top of each other so that the digits line up column by column. The only difference is now there are three digits in each column, plus the digit for the sum. Note that there’s a carrying of <span class="process-math">\(+2\)</span> happening from the units to the tens digit in this sum. Carries are not shown.</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The sum <span class="process-math">\(123 + 369 + 789\text{.}\)</span><div class="autopermalink" data-description="Figure 2.3.4"><a href="#sec2-algorithms-13" title="Copy heading and permalink for Figure 2.3.4" aria-label="Copy heading and permalink for Figure 2.3.4">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="sec2-algorithms-14">Let’s move on now to subtraction. Like with addition, we proceed digit by digit, starting at the units digit moving to the left. An example before the general algorithm.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec2-algorithms-15" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="sec2-algorithms-15-1">We compute the difference <span class="process-math">\(437 - 182\text{.}\)</span> For the units digit we do <span class="process-math">\(7 - 2 = 5\)</span> to get the units digit of the difference. For the tens digit, we first try <span class="process-math">\(3 - 8\text{,}\)</span> but that’s a problem because <span class="process-math">\(3 \lt 8\text{.}\)</span> To make this work, we have to borrow a <span class="process-math">\(1\)</span> from the hundreds column. Then the subtraction is <span class="process-math">\(13 - 8 = 5\text{,}\)</span> giving us the tens digit of the difference. Finally, for the hundreds digit we borrowed a <span class="process-math">\(1\)</span> so we have to reduce our minuend by one: <span class="process-math">\(4 - 1 = 3\text{.}\)</span> We then do <span class="process-math">\(3 - 1 = 2\)</span> to get the hundreds of the difference. Altogether, this gives <span class="process-math">\(255\)</span> as the difference.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-15-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 2.3.5"><a href="#sec2-algorithms-15" title="Copy heading and permalink for Example 2.3.5" aria-label="Copy heading and permalink for Example 2.3.5">🔗</a></div>
+</article></details>
+<div class="para" id="sec2-algorithms-16">With addition, we sometimes had extra value spill over and be carried to the next column. Subtraction, being the opposite of addition, has the opposite phenomenon—we have to borrow extra value from the next column. You might worry that we borrow so much that eventually there’s not enough left. That’s what would happen if you tried to subtract a larger number from a smaller. But as long as we keep where subtraction is defined on the natural numbers—subtracting a smaller number from a larger—this will not be a problem.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec2-algorithms-17" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary>
+<aside class="aside aside-like knowl__content">
+<div class="para" id="sec2-algorithms-17-1">Remember the terminology. It’s minuend – subtrahend = difference!<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-17-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</aside></details>
+<article class="definition definition-like" id="sec2-algorithms-18"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Algorithm for subtraction.</span>
+</h3>
+<div class="para logical" id="sec2-algorithms-18-2-1">
+<div class="para">To subtract a subtrahend from a larger minuend, both written in the Hindu–Arabic numeral system, use the following procedure, starting at the units digit and moving to the left.</div>
+<ul class="disc" id="sec2-algorithms-18-2-1-1">
+<li id="sec2-algorithms-18-2-1-1-1">
+<div class="para" id="sec2-algorithms-18-2-1-1-1-1">Subtract the two digits together to get the corresponding digit of the difference. If you are subtracting a smaller digit, there is no complication. If you are subtracting a larger digit, you need to borrow a <span class="process-math">\(1\)</span> from the next digit so that you are subtracting a smaller number.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-18-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec2-algorithms-18-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec2-algorithms-18-2-1-1-2">
+<div class="para" id="sec2-algorithms-18-2-1-1-2-1">If the previous digit had to borrow a <span class="process-math">\(1\text{,}\)</span> subtract <span class="process-math">\(1\)</span> from the digit of the minuend before subtracting digits. This might require you to borrow from the next digit.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-18-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec2-algorithms-18-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec2-algorithms-18-2-1-1-3">
+<div class="para" id="sec2-algorithms-18-2-1-1-3-1">If the minuend has more digits than the subtrahend, treat the empty digits as <span class="process-math">\(0\)</span>s. That is, the digit for the difference is just the lone digit copied, possibly with <span class="process-math">\(1\)</span> borrowed by the previous digit.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-18-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec2-algorithms-18-2-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec2-algorithms-18-2-1-1-4">
+<div class="para" id="sec2-algorithms-18-2-1-1-4-1">Stop when you have exhausted all digits for both numbers.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-18-2-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec2-algorithms-18-2-1-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-18-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.3.6: Algorithm for subtraction"><a href="#sec2-algorithms-18" title="Copy heading and permalink for Definition 2.3.6: Algorithm for subtraction" aria-label="Copy heading and permalink for Definition 2.3.6: Algorithm for subtraction">🔗</a></div>
+</article>
+<figure class="figure figure-like" id="sec2-algorithms-19"><div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;">
+<img src="generated/latex-image/sec2-algorithms-19-2.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="sec2-algorithms-19-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec2-algorithms-19-2-description">The algorithm for computing the difference 437 - 182. The numbers are written on top of each other so that the digits line up column by column. In this way, you can start at the rightmost column, do the one-digit difference there, and move left to the next column, possibly borrowing  <span class="process-math">\(1\text{.}\)</span> To represent borrowing, you can cross out the digit and replace it with one lower, or you might prefer to keep it in your head. In each column, the digit of the difference is written below a horizontal bar, so that it is easy to read off the final answer.</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The difference <span class="process-math">\(437 - 182\text{.}\)</span> This is the same example as before, but with a compact representation rather than a short essay.<div class="autopermalink" data-description="Figure 2.3.7"><a href="#sec2-algorithms-19" title="Copy heading and permalink for Figure 2.3.7" aria-label="Copy heading and permalink for Figure 2.3.7">🔗</a></div></figcaption>
+</figure>
+<div class="para logical" id="sec2-algorithms-20">
+<div class="para">Now let’s discuss multiplication. Algorithms from multiplication are built on an algebra fact, namely the <dfn class="terminology">distributive</dfn> property of multiplication:</div>
+<div class="displaymath process-math" id="sec2-algorithms-20-2">
+\begin{equation*}
+x \cdot (y + z) = xy + xz.
+\end{equation*}
+</div>
+<div class="para">If <span class="process-math">\(x\)</span> is itself a sum, you can distribute twice:</div>
+<div class="displaymath process-math" id="sec2-algorithms-20-4">
+\begin{align*}
+(a + b) \cdot (y + z) \amp= (a+b)y + (a+b)z\\
+\amp= ay + by + az + bz.
+\end{align*}
+</div>
+<div class="para">You can visualize this double distributivity by drawing it as a <span class="process-math">\(2 \times 2\)</span> box. The two columns represent <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> while the two rows represent <span class="process-math">\(y\)</span> and <span class="process-math">\(z\text{.}\)</span> Each square in the box represents the product of the two, and the overall product is the sum of all four squares.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="sec2-algorithms-21"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The multiplication box for <span class="process-math">\((a+b) \cdot (y + z)\text{.}\)</span><div class="autopermalink" data-description="Table 2.3.8: The multiplication box for (a+b) \cdot (y + z)"><a href="#sec2-algorithms-21" title="Copy heading and permalink for Table 2.3.8: The multiplication box for (a+b) \cdot (y + z)" aria-label="Copy heading and permalink for Table 2.3.8: The multiplication box for (a+b) \cdot (y + z)">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(a\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(b\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines"><span class="process-math">\(y\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(ay\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(by\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines"><span class="process-math">\(z\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(az\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(bz\)</span></td>
+</tr>
+</table></div>
+</figure>
+<div class="para logical" id="sec2-algorithms-22">
+<div class="para">If each of <span class="process-math">\(a,b,y,z\)</span> represents a single digit, then to carry out the multiplications inside the squares only requires you to know the one-digit products, similar to how we reduced the algorithms for addition and subtraction to knowing the one-digit sums and differences. For example consider the multiplication</div>
+<div class="displaymath process-math" id="sec2-algorithms-22-2">
+\begin{equation*}
+13 \cdot 27.
+\end{equation*}
+</div>
+<div class="para">We think of this as <span class="process-math">\((10 + 3) \cdot (20 + 7)\text{,}\)</span> and we can use a multiplication box.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="sec2-algorithms-23"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The multiplication box for <span class="process-math">\(13 \cdot 27\text{.}\)</span><div class="autopermalink" data-description="Table 2.3.9: The multiplication box for 13 \cdot 27"><a href="#sec2-algorithms-23" title="Copy heading and permalink for Table 2.3.9: The multiplication box for 13 \cdot 27" aria-label="Copy heading and permalink for Table 2.3.9: The multiplication box for 13 \cdot 27">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(10\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines"><span class="process-math">\(20\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(200\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(60\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines"><span class="process-math">\(7\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(70\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(21\)</span></td>
+</tr>
+</table></div>
+</figure>
+<div class="para logical" id="sec2-algorithms-24">
+<div class="para">To get the overall product we add up these four numbers:</div>
+<div class="displaymath process-math" id="sec2-algorithms-24-1">
+\begin{equation*}
+200 + 60 + 70 + 21 = 351.
+\end{equation*}
+</div>
+<div class="para">And thus we have calculated <span class="process-math">\(13 \cdot 27\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec2-algorithms-25" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="sec2-algorithms-25-1">Use the box method to calculate the product <span class="process-math">\(52 \cdot 29\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-25-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 2.3.10"><a href="#sec2-algorithms-25" title="Copy heading and permalink for Checkpoint 2.3.10" aria-label="Copy heading and permalink for Checkpoint 2.3.10">🔗</a></div>
+</article></details>
+<div class="para" id="sec2-algorithms-26">This box method can be used for any two digit multiplication. If you do enough of them, you’ll start to notice that the upper left number always has two <span class="process-math">\(0s\text{,}\)</span> the upper right and lower left squares have one <span class="process-math">\(0\text{,}\)</span> and the bottom right square has none. (Caveat: you may have extra zeros from the one-digit multiplication, for example if its <span class="process-math">\(4 \cdot 5 = 20\text{.}\)</span>) You may find it convenient to not write the extra zeroes and only write the value of the one-digit product, knowing where to put zeroes when adding them up. Or you may prefer to always write out the zeroes.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec2-algorithms-27">You can adjust the box method to work with more two digits of multiplication. For example, to multiply two three-digit numbers you would need a <span class="process-math">\(3 \times 3\)</span> box with <span class="process-math">\(9\)</span> squares in it. You would do the multiplication for each square, then add up all nine numbers. In general, to multiply an <span class="process-math">\(m\)</span>-digit number by an <span class="process-math">\(n\)</span>-digit number you need a <span class="process-math">\(m \times n\)</span> box with <span class="process-math">\(mn\)</span> many squares to add up.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec2-algorithms-28">Larger boxes can get unwieldy, so let’s look at a different presentation of the same idea. This looks more like the presentation of the algorithms for addition and subtraction. It essentially amounts to collapsing the box into a single column. Accordingly, as a stepping stone we will first look at multiplying by a one-digit number.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec2-algorithms-29" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="sec2-algorithms-29-1">Let’s do the multiplication <span class="process-math">\(37 \times 3\text{.}\)</span> We think of this as <span class="process-math">\(30 \times 3 + 7 \times 3\text{.}\)</span> Do each one-digit multiplication separately and then add the answers. We can organize this into a box.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-29-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="sec2-algorithms-29-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The multiplication box for <span class="process-math">\(37 \cdot 3\text{.}\)</span><div class="autopermalink" data-description="Table 2.3.12: The multiplication box for 37 \cdot 3"><a href="#sec2-algorithms-29-2" title="Copy heading and permalink for Table 2.3.12: The multiplication box for 37 \cdot 3" aria-label="Copy heading and permalink for Table 2.3.12: The multiplication box for 37 \cdot 3">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(30\)</span></td>
+<td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(7\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r1 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(90\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(21\)</span></td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="sec2-algorithms-29-3">Adding up the values we get that the product is <span class="process-math">\(90 + 21 = 111\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-29-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec2-algorithms-29-4">You could also write this in the column format similar to the algorithms for addition and multiplication. First compute <span class="process-math">\(7 \times 3\)</span> to get <span class="process-math">\(21\text{,}\)</span> which means <span class="process-math">\(1\)</span> in the units place and carry the <span class="process-math">\(2\)</span> to the tens digit. Then in the tens digit we do <span class="process-math">\(3 \times 3\)</span> and add in the carried <span class="process-math">\(2\)</span> to get <span class="process-math">\(11\text{.}\)</span> That means <span class="process-math">\(1\)</span> in the tens column and carry the other <span class="process-math">\(1\)</span> to the hundreds place.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-29-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="sec2-algorithms-29-5"><div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;">
+<img src="generated/latex-image/sec2-algorithms-29-5-2.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="sec2-algorithms-29-5-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec2-algorithms-29-5-2-description">The algorithm for computing the product <span class="process-math">\(37 \times 3\text{,}\)</span> following the process in the above paragraph. Carries are not shown explicitly.</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The product <span class="process-math">\(37 \times 3\text{.}\)</span><div class="autopermalink" data-description="Figure 2.3.13"><a href="#sec2-algorithms-29-5" title="Copy heading and permalink for Figure 2.3.13" aria-label="Copy heading and permalink for Figure 2.3.13">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Example 2.3.11"><a href="#sec2-algorithms-29" title="Copy heading and permalink for Example 2.3.11" aria-label="Copy heading and permalink for Example 2.3.11">🔗</a></div>
+</article></details>
+<div class="para" id="sec2-algorithms-30">This process lets us do a multiplication by a one-digit number as a single row. To do a multiplication by a multi-digit number we do this process for each digit, then add everything together. When we do this, we offset the multiplication by a number of tens to account for the position shift given by the ten. Let’s see an example.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec2-algorithms-31" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="sec2-algorithms-31-1">Let’s do the multiplication <span class="process-math">\(28 \times 52\text{.}\)</span> We think of this as <span class="process-math">\(28 \times 2 + 28 \times 50\text{.}\)</span> Each of these multiplications requires computing two one-digit products. For the first, <span class="process-math">\(8 \times 2 = 16\text{,}\)</span> and we must remember to carry the one to the next column, and <span class="process-math">\(2 \times 2 = 4\text{,}\)</span> so the overall product is <span class="process-math">\(56\text{.}\)</span> For the second, <span class="process-math">\(8 \times 50= 400\)</span> (carry the four) and <span class="process-math">\(2 \times 5 = 10\)</span> (carry the one again). So the overall product is <span class="process-math">\(1400\text{.}\)</span> Note the extra zero, which came from the zero in <span class="process-math">\(50\text{.}\)</span> We then add up these two numbers to get an overall product of <span class="process-math">\(1456\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-31-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec2-algorithms-31-2">This description of the algorithm can be organized neatly.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-31-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="sec2-algorithms-31-3"><div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;">
+<img src="generated/latex-image/sec2-algorithms-31-3-2.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="sec2-algorithms-31-3-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec2-algorithms-31-3-2-description">The algorithm for computing the product <span class="process-math">\(28 \times 52\text{.}\)</span> The numbers are written on top of each other so that the digits line up column by column. Each row below the first horizontal bar represents one of the two products: <span class="process-math">\(28 \times 2\)</span> then <span class="process-math">\(28 \times 50\text{.}\)</span> We then add these up to get the overall product, which we write below the second horizontal bar. Excess zeroes from position are left blank for ease of reading and writing. Carries are not shown explicitly.</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The product <span class="process-math">\(28 \times 52\text{.}\)</span><div class="autopermalink" data-description="Figure 2.3.15"><a href="#sec2-algorithms-31-3" title="Copy heading and permalink for Figure 2.3.15" aria-label="Copy heading and permalink for Figure 2.3.15">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Example 2.3.14"><a href="#sec2-algorithms-31" title="Copy heading and permalink for Example 2.3.14" aria-label="Copy heading and permalink for Example 2.3.14">🔗</a></div>
+</article></details>
+<details id="sec2-algorithms-32" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="sec2-algorithms-32-1">Use the box method to compute <span class="process-math">\(28 \times 52\text{.}\)</span> Compare the two methods.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-32-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 2.3.16"><a href="#sec2-algorithms-32" title="Copy heading and permalink for Checkpoint 2.3.16" aria-label="Copy heading and permalink for Checkpoint 2.3.16">🔗</a></div>
+</article></details>
+<div class="para" id="sec2-algorithms-33">Both methods require four one-digit multiplications. The box method organizes it into four different squares while the columns method does them two at a time, organizing them into rows. This makes it more compact, which is convenient when doing larger multiplications. For instance, to multiply two three-digit numbers it would have three rows to add up for the overall product, while the box method would have nine squares to add.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="sec2-algorithms-34"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Algorithm for multiplication..</span>
+</h3>
+<div class="para logical" id="sec2-algorithms-34-2-1">
+<div class="para">To multiply two multi-digit numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> do the following.</div>
+<ol class="decimal" id="sec2-algorithms-34-2-1-3">
+<li id="sec2-algorithms-34-2-1-3-1">
+<div class="para" id="sec2-algorithms-34-2-1-3-1-1">Write <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> aligned so that the units, tens, etc. places are in the same columns.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-34-2-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec2-algorithms-34-2-1-3-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec2-algorithms-34-2-1-3-2">
+<div class="para" id="sec2-algorithms-34-2-1-3-2-1">Multiply <span class="process-math">\(a\)</span> by the units digit of <span class="process-math">\(b\text{,}\)</span> according to the above method. Write this product aligned with the units digits of the inputs.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-34-2-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec2-algorithms-34-2-1-3-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec2-algorithms-34-2-1-3-3">
+<div class="para" id="sec2-algorithms-34-2-1-3-3-1">Multiply <span class="process-math">\(a\)</span> by the next digit of <span class="process-math">\(b\text{.}\)</span> Write this product aligned with the next column of the inputs.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-34-2-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sec2-algorithms-34-2-1-3-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="sec2-algorithms-34-2-1-3-4">
+<div class="para" id="sec2-algorithms-34-2-1-3-4-1">Repeat this process until all digits of <span class="process-math">\(b\)</span> are used up. Finally, sum up the partial products to get the overall product.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-34-2-1-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#sec2-algorithms-34-2-1-3-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-34-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 2.3.17: Algorithm for multiplication."><a href="#sec2-algorithms-34" title="Copy heading and permalink for Definition 2.3.17: Algorithm for multiplication." aria-label="Copy heading and permalink for Definition 2.3.17: Algorithm for multiplication.">🔗</a></div>
+</article>
+<div class="para" id="sec2-algorithms-35">This algorithm works fine if <span class="process-math">\(b\)</span> has more digits than <span class="process-math">\(a\text{.}\)</span> But it’s nicer to organize it so the second multiplicand is the one with fewer digits. This way there’s fewer rows to write down and add up.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-35" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec2-algorithms-36">Let’s see an example. We will multiply <span class="process-math">\(347 \times 72\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-36" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="sec2-algorithms-37"><div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;">
+<img src="generated/latex-image/sec2-algorithms-37-2.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="sec2-algorithms-37-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec2-algorithms-37-2-description">The algorithm for computing the product <span class="process-math">\(347 \times 2\text{.}\)</span> The numbers are written on top of each other so that the digits line up column by column. Each row below the first horizontal bar represents one of the two products: <span class="process-math">\(347 \times 2\)</span> then <span class="process-math">\(347 \times 70\text{.}\)</span> We then add these up to get the overall product, which we write below the second horizontal bar. Excess zeroes from position are left blank for ease of reading and writing. Carries are not shown explicitly.</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The product <span class="process-math">\(347 \times 72\text{.}\)</span><div class="autopermalink" data-description="Figure 2.3.18"><a href="#sec2-algorithms-37" title="Copy heading and permalink for Figure 2.3.18" aria-label="Copy heading and permalink for Figure 2.3.18">🔗</a></div></figcaption>
+</figure>
+<details id="sec2-algorithms-38" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="sec2-algorithms-38-1">Use a version of the box method to calculate <span class="process-math">\(347 \times 72\text{.}\)</span> (You will need a <span class="process-math">\(3 \times 2\)</span> box.) Compare the two methods.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-38-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 2.3.19"><a href="#sec2-algorithms-38" title="Copy heading and permalink for Checkpoint 2.3.19" aria-label="Copy heading and permalink for Checkpoint 2.3.19">🔗</a></div>
+</article></details>
+<div class="para" id="sec2-algorithms-39">The box method and the columns method are essentially the same algorithm. At base, each reduces the multi-digit multiplication into many one-digit multiplications. And both rely on the same algebric property to work, namely the distributivity of multiplication over addition. In a sense, it’s not quite right to say they are two different methods. Rather, they are two different ways of organizing the same method. A common trick in mathematics education is to present multiple views on the same concept. Different lenses work better for different people, and the flexibility to see the same thing in different ways is valuable for future learning.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-39" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec2-algorithms-40">For certain products you can optimize the space the column method takes up. Namely, if a digit is <span class="process-math">\(0\)</span> then multiplying by it gives <span class="process-math">\(0\text{,}\)</span> so you can just not write down the row corresponding to multiplication by that digit. For example, the multiplication <span class="process-math">\(273 \times 30020\)</span> can be done with only two rows.<div class="autopermalink" data-description="Paragraph"><a href="#sec2-algorithms-40" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="sec2-algorithms-41"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;">
+<img src="generated/latex-image/sec2-algorithms-41-2.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="sec2-algorithms-41-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec2-algorithms-41-2-description">The algorithm for computing the product <span class="process-math">\(20703 \times 30020\text{.}\)</span> On the left, only the rows corresponding to multiplication by a nonzero digit are shown. On the right, all rows are shown. Three of them are all zeroes and don’t contribute anything to the overall product.</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">2.3.20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The product <span class="process-math">\(20703 \times 30020\text{.}\)</span><div class="autopermalink" data-description="Figure 2.3.20"><a href="#sec2-algorithms-41" title="Copy heading and permalink for Figure 2.3.20" aria-label="Copy heading and permalink for Figure 2.3.20">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Section 2.3: Algorithms for adding, subtracting, and multiplying"><a href="#sec2-algorithms" title="Copy heading and permalink for Section 2.3: Algorithms for adding, subtracting, and multiplying" aria-label="Copy heading and permalink for Section 2.3: Algorithms for adding, subtracting, and multiplying">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec2-hindu-arabic.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec2-bases.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

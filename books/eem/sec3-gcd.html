@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GCD and LCM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "textmacros",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[tex]/textmacros",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Explorations in Elementary Mathematics">
+<meta property="book:author" content="Julia Kameryn Williams">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.2';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.d0616b3d72ab3b06.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.af9055d29ed602c4.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="ece-book.html"><span class="title">Explorations in Elementary Mathematics</span></a></h1>
+<p class="byline">Julia Kameryn Williams</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec3-blahblah.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch3.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec3-exercises.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\Nbb}{\mathbb N} \newcommand{\Zbb}{\mathbb Z} \newcommand{\Qbb}{\mathbb Q} \newcommand{\Rbb}{\mathbb R} \newcommand{\Cbb}{\mathbb C} \newcommand\mand{\text{ and }} \newcommand\mor{\text{ or }} \newcommand\abs[1]{\lvert #1 \rvert} \newcommand\card[1]{\abs{#1}} \DeclareMathOperator\lcm{lcm}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="prefaceX.html" class="internal"><span class="title">Preface: To the student</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch0.html" class="internal"><span class="codenumber">0</span> <span class="title">Critical Thinking</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec0-howto.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Reading mathematics</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec0-problems.html" class="internal"><span class="codenumber">0.2</span> <span class="title">Problem solving</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec0-exercises.html" class="internal"><span class="codenumber">0.3</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec0-exercises.html#sec0-exercises-2" class="internal"><span class="codenumber">0.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch1.html" class="internal"><span class="codenumber">1</span> <span class="title">The Natural Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-what-is.html" class="internal"><span class="codenumber">1.1</span> <span class="title">What even is counting?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-sets.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Sets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-counting.html" class="internal"><span class="codenumber">1.3</span> <span class="title">The meaning of the natural numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-operations.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Operations on sets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-numbers.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Number classes</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-arithmetic.html" class="internal"><span class="codenumber">1.6</span> <span class="title">The arithmetic of natural numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-div.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Division</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-ooo.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Order of Operations</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec1-exercises.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec1-exercises.html#sec1-exercises-2" class="internal"><span class="codenumber">1.9</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch2.html" class="internal"><span class="codenumber">2</span> <span class="title">Numeration</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-roman.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Roman Numerals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-hindu-arabic.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The Hindu–Arabic numeral system</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-algorithms.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Algorithms for adding, subtracting, and multiplying</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-bases.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Other bases</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec2-exercises.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec2-exercises.html#sec2-exercises-2" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch3.html" class="internal"><span class="codenumber">3</span> <span class="title">Number Theory</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec3-blah.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Prime numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec3-blahblah.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Divisibility Rules</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec3-gcd.html" class="internal"><span class="codenumber">3.3</span> <span class="title">GCD and LCM</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec3-exercises.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec3-exercises.html#sec3-exercises-2" class="internal"><span class="codenumber">3.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch4.html" class="internal"><span class="codenumber">4</span> <span class="title">The Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-motivation.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Some motivation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-definition.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Defining the integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-geometry.html" class="internal"><span class="codenumber">4.3</span> <span class="title">The geometric meaning of integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-arithmetic.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Arithmetic with integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-clocks.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Clocks and modular arithmetic</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec4-exercises.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec4-exercises.html#sec4-exercises-2" class="internal"><span class="codenumber">4.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch5.html" class="internal"><span class="codenumber">5</span> <span class="title">The Rational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-motivation.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Motivating the rational numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-definition.html" class="internal"><span class="codenumber">5.2</span> <span class="title">The definition of the rational numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-arithmetic.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Arithmetic of fractions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-percents.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Percents</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec5-exercises.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec5-exercises.html#sec5-exercises-2" class="internal"><span class="codenumber">5.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch6.html" class="internal"><span class="codenumber">6</span> <span class="title">The Real Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-decimal.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Writing fractions in decimal</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-arithmetic.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The arithmetic of Hindu–Arabic numerals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-approx.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Approximations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-definition.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Defining the real numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-characterizations.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Characterizing rational and irrational numbers</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec6-exercises.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Exercises</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec6-exercises.html#sec6-exercises-2" class="internal"><span class="codenumber">6.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec3-gcd">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">GCD and LCM</span>
+</h2>
+<div class="para" id="sec3-gcd-2">Let’s talk about some other topics regarding divisibility. Given two integers, they will have some divisors in common. For example, consider <span class="process-math">\(24\)</span> and <span class="process-math">\(30\text{.}\)</span> Their common divisors are <span class="process-math">\(1, 2, 3,\)</span> and <span class="process-math">\(6\text{.}\)</span> It can be useful to know about common divisors. This is used, for instance, in fraction arithmetic; see <a href="ch5.html" class="internal" title="Chapter 5: The Rational Numbers">Chapter 5</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="sec3-gcd-3"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Greatest common divisor (GCD).</span>
+</h3>
+<div class="para" id="sec3-gcd-3-2-1">Given two numbers <span class="process-math">\(a,b\text{,}\)</span> their <dfn class="terminology">greatest common divisor</dfn> (GCD) is the largest number which divides both of them. It also makes sense to talk about the GCD of a list of more than two numbers; it is the largest number which divides all of them. We write <span class="process-math">\(\gcd(a,b)\)</span> for the GCD of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 3.3.1: Greatest common divisor (GCD)"><a href="#sec3-gcd-3" title="Copy heading and permalink for Definition 3.3.1: Greatest common divisor (GCD)" aria-label="Copy heading and permalink for Definition 3.3.1: Greatest common divisor (GCD)">🔗</a></div>
+</article>
+<div class="para" id="sec3-gcd-4">Note that <span class="process-math">\(\gcd(a,0)\)</span> is always <span class="process-math">\(a\text{.}\)</span> This is because any number divides <span class="process-math">\(0\)</span>—after all, <span class="process-math">\(0 \cdot n = 0\)</span> for any <span class="process-math">\(n\)</span>—and so the largest common divisor is the largest divisor of <span class="process-math">\(a\text{,}\)</span> namely <span class="process-math">\(a\)</span> itself. On the other hand, <span class="process-math">\(\gcd(0,0)\)</span> is undefined; every number divides both <span class="process-math">\(0\)</span> and <span class="process-math">\(0\text{,}\)</span> so there isn’t a largest one.<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec3-gcd-5">One way to determine the GCD of a group of numbers is to write out all of their prime factorizations, look for the primes common to all, and then multiply them together.<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec3-gcd-6" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="sec3-gcd-6-1-1">Find the GCD of <span class="process-math">\(168\)</span> and <span class="process-math">\(180\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec3-gcd-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec3-gcd-6-2-1">
+<div class="para">First find the prime factorizations, by the methods of the last section.</div>
+<div class="displaymath process-math" id="sec3-gcd-6-2-1-1">
+\begin{align*}
+168 \amp= 2^3 \cdot 3 \cdot 7 \\
+180 \amp= 2^2 \cdot 3^2 \cdot 5
+\end{align*}
+</div>
+<div class="para">Looking at these factorizations, we see that they have in common <span class="process-math">\(2^2\)</span> and <span class="process-math">\(3\text{.}\)</span> We multiply those together to get <span class="process-math">\(\gcd(168,180) = 12\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.3.2.1"><a href="#sec3-gcd-6-2" title="Copy heading and permalink for Solution 3.3.2.1" aria-label="Copy heading and permalink for Solution 3.3.2.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 3.3.2"><a href="#sec3-gcd-6" title="Copy heading and permalink for Checkpoint 3.3.2" aria-label="Copy heading and permalink for Checkpoint 3.3.2">🔗</a></div>
+</article></details>
+<div class="para" id="sec3-gcd-7">This method works, but it ranges from tedious to practically impossible, because it first requires you to find the prime factorizations of all the numbers. This is reasonable for two digit numbers, but it quickly gets awful. Surely, one hopes, there is a better way. If you are like me, then in elementary school you were not taught a better way. This happened because math teachers hate their students and want them to suffer. You can break the cycle of violence, however. You can teach your own students to use the Euclidean algorithm.<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="sec3-gcd-8"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec3-gcd-8-1-1">If <span class="process-math">\(a \gt b\)</span> are positive numbers then <span class="process-math">\(\gcd(a,b) = \gcd(b, a - b)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 3.3.3"><a href="#sec3-gcd-8" title="Copy heading and permalink for Theorem 3.3.3" aria-label="Copy heading and permalink for Theorem 3.3.3">🔗</a></div>
+</article>
+<details id="sec3-gcd-8-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
+<article class="hiddenproof knowl__content">
+<div class="para" id="sec3-gcd-8-2-1">Suppose <span class="process-math">\(d\)</span> is a divisor of both <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span> That is, <span class="process-math">\(a = md\)</span> and <span class="process-math">\(b = nd\)</span> for some numbers <span class="process-math">\(m,n\text{.}\)</span> Then <span class="process-math">\(a - b = md - nd = (m - n) d\text{,}\)</span> so <span class="process-math">\(d \mid a - b\text{.}\)</span> A similar argument shows that if <span class="process-math">\(d\)</span> is a divisor of both <span class="process-math">\(b\)</span> and <span class="process-math">\(a - b\text{,}\)</span> then <span class="process-math">\(d \mid a\text{.}\)</span> Together, these show that the common divisors of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are the same as the common divisors of <span class="process-math">\(b\)</span> and <span class="process-math">\(a - b\text{.}\)</span> Since they have the same set of common divisors, they have the same largest common divisor.<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 3.3.3.1"><a href="#sec3-gcd-8-2" title="Copy heading and permalink for Proof 3.3.3.1" aria-label="Copy heading and permalink for Proof 3.3.3.1">🔗</a></div>
+</article></details>
+<article class="definition definition-like" id="sec3-gcd-9"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Euclidean algorithm for finding the GCD, first version.</span>
+</h3>
+<div class="para logical" id="sec3-gcd-9-2-1">
+<div class="para">To find the GCD of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> where we assume <span class="process-math">\(a \ge b\text{,}\)</span> follow this process.</div>
+<ol class="decimal" id="sec3-gcd-9-2-1-4">
+<li id="sec3-gcd-9-2-1-4-1">
+<div class="para" id="sec3-gcd-9-2-1-4-1-1">If <span class="process-math">\(a = b\text{,}\)</span> then we are done. Return that value as the GCD.<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-9-2-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec3-gcd-9-2-1-4-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec3-gcd-9-2-1-4-2">
+<div class="para" id="sec3-gcd-9-2-1-4-2-1">If <span class="process-math">\(a \gt b\text{,}\)</span> then instead compute <span class="process-math">\(\gcd(b, a - b)\text{,}\)</span> using this same process.<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-9-2-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec3-gcd-9-2-1-4-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="para">While this algorithm may look circular, at each stage you have decreased one of the two numbers you are looking at. You can’t keep decreasing numbers forever—you eventually hit bottom at <span class="process-math">\(1\)</span>—so this process will eventually stop.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 3.3.4: The Euclidean algorithm for finding the GCD, first version"><a href="#sec3-gcd-9" title="Copy heading and permalink for Definition 3.3.4: The Euclidean algorithm for finding the GCD, first version" aria-label="Copy heading and permalink for Definition 3.3.4: The Euclidean algorithm for finding the GCD, first version">🔗</a></div>
+</article>
+<div class="para" id="sec3-gcd-10">An algorithm like this, which reduces a problem to a smaller or easier case until it eventually bottoms out, is called a <dfn class="terminology">recursive</dfn> algorithm.<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec3-gcd-11" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="sec3-gcd-11-1-1">Find <span class="process-math">\(\gcd(30,18)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec3-gcd-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec3-gcd-11-2-1">
+<div class="para">We recursively apply the Euclidean algorithm (first version).</div>
+<div class="displaymath process-math" id="sec3-gcd-11-2-1-1">
+\begin{align*}
+\gcd(30, 18) \amp= \gcd(18, 30 - 18) = \gcd(18,12)\\
+\amp= \gcd(12, 18 - 12) = \gcd(12, 6)\\
+\amp= \gcd(6, 12 - 6) = \gcd(6,6)\\
+\amp= 6
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.3.5.1"><a href="#sec3-gcd-11-2" title="Copy heading and permalink for Solution 3.3.5.1" aria-label="Copy heading and permalink for Solution 3.3.5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 3.3.5"><a href="#sec3-gcd-11" title="Copy heading and permalink for Checkpoint 3.3.5" aria-label="Copy heading and permalink for Checkpoint 3.3.5">🔗</a></div>
+</article></details>
+<div class="para" id="sec3-gcd-12">This algorithm is fastest when one number is approximately half as big as the other. When one is much bigger than the other or they are close in size it can take a long time for the subtraction process to bottom out. There is a faster version of the Euclidean algorithm using a different operation from subtraction.<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="sec3-gcd-13"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The mod operation.</span>
+</h3>
+<div class="para" id="sec3-gcd-13-2-1">Let <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> be natural numbers. Then <span class="process-math">\(a \bmod b\)</span> is the remainder when <span class="process-math">\(a\)</span> is divided by <span class="process-math">\(b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-13-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 3.3.6: The mod operation"><a href="#sec3-gcd-13" title="Copy heading and permalink for Definition 3.3.6: The mod operation" aria-label="Copy heading and permalink for Definition 3.3.6: The mod operation">🔗</a></div>
+</article>
+<div class="para" id="sec3-gcd-14">Mod is short for “modulo”, which is a Latinate word meaning “up to this specified difference”. This use comes from its use in phrases like “<span class="process-math">\(7\)</span> and <span class="process-math">\(37\)</span> are equivalent modulo <span class="process-math">\(10\)</span>”, meaning that <span class="process-math">\(7\)</span> and <span class="process-math">\(37\)</span> are equivalent after you divide out by <span class="process-math">\(10\)</span> and only look at the remainder. A slightly more informal use would be “<span class="process-math">\(3.5\)</span> and <span class="process-math">\(8.5\)</span> are the same modulo the whole number part”. If you want your friends to think you’re a nerd, you can sprinkle this word into your everday vocabulary.<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec3-gcd-15">For an example, <span class="process-math">\(39 \bmod 4 = 3\)</span> because <span class="process-math">\(39 = 4 \cdot 9 + 3\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec3-gcd-16" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary>
+<aside class="aside aside-like knowl__content">
+<div class="para logical" id="sec3-gcd-16-1">
+<div class="para">When calculating mods by hand, often the quickest way is to repeatedly subtract until you can see the remainder. For example, to compute <span class="process-math">\(13 \bmod 7\)</span> you can just do <span class="process-math">\(13 - 7 = 6\text{.}\)</span> Or to compute <span class="process-math">\(13 \bmod 4\)</span> you repeatedly subtract <span class="process-math">\(4\)</span> until you get a result smaller than <span class="process-math">\(4\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec3-gcd-16-1-6">
+\begin{align*}
+13 - 4 \amp= 9\\
+9 - 4 \amp= 5\\
+5 - 4 \amp= 1,
+\end{align*}
+</div>
+<div class="para">so <span class="process-math">\(13 \bmod 4 = 1\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-16-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec3-gcd-16-2">This method is reasonable when there aren’t many subtractions to do, but is clunky when calculating <span class="process-math">\(a \bmod b\)</span> for <span class="process-math">\(a\)</span> much larger than <span class="process-math">\(b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-16-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec3-gcd-16-3">If you are using a calculator, a trick to calculate mods is do the division then multiply the fractional part by the divisor. For example, to calculate <span class="process-math">\(13 \bmod 4\)</span> you’d calculate <span class="process-math">\(13 / 4 = 3.25\)</span> and then you’d mulitply <span class="process-math">\(0.25 \times 4 = 1\)</span> to get the remainder. Some calculators and most programming languages will have a mod function to calculate it directly, in which case you can just use that.<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-16-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</aside></details>
+<details id="sec3-gcd-17" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="sec3-gcd-17-1-1">Explain why <span class="process-math">\(a \bmod 10\)</span> is always the units digit of <span class="process-math">\(a\text{.}\)</span> How do you quickly see <span class="process-math">\(a \bmod 100\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-17-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 3.3.7"><a href="#sec3-gcd-17" title="Copy heading and permalink for Checkpoint 3.3.7" aria-label="Copy heading and permalink for Checkpoint 3.3.7">🔗</a></div>
+</article></details>
+<article class="theorem theorem-like" id="sec3-gcd-18"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec3-gcd-18-1-1">If <span class="process-math">\(a \gt b\)</span> are positive numbers then <span class="process-math">\(\gcd(a,b) = \gcd(b, a \bmod b)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-18-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 3.3.8"><a href="#sec3-gcd-18" title="Copy heading and permalink for Theorem 3.3.8" aria-label="Copy heading and permalink for Theorem 3.3.8">🔗</a></div>
+</article>
+<details id="sec3-gcd-18-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
+<article class="hiddenproof knowl__content">
+<div class="para logical" id="sec3-gcd-18-2-1">
+<div class="para">The idea is much the same as before. Suppose that <span class="process-math">\(d\)</span> is a divisor of both <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span> That is, <span class="process-math">\(a = md\)</span> and <span class="process-math">\(b = nd\)</span> for some numbers <span class="process-math">\(m,n\text{.}\)</span> Doing division with remainder, <span class="process-math">\(a = qb + r\text{,}\)</span> where <span class="process-math">\(q\)</span> is the quotient and the remainder <span class="process-math">\(r = a \bmod b\text{.}\)</span> Then,</div>
+<div class="displaymath process-math" id="sec3-gcd-18-2-1-10">
+\begin{align*}
+r \amp= a - qb\\
+\amp= md - qnd\\
+\amp= (m - qn)d,
+\end{align*}
+</div>
+<div class="para">showing that <span class="process-math">\(d \mid r\text{.}\)</span> A similar argument shows that if <span class="process-math">\(d\)</span> is a divisor of both <span class="process-math">\(b\)</span> and <span class="process-math">\(a \bmod b\)</span> then <span class="process-math">\(d \mid a\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-18-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec3-gcd-18-2-2">Like before, this shows that the common divisors of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> are the same as the common divisors of <span class="process-math">\(b\)</span> and <span class="process-math">\(a \bmod b\text{,}\)</span> and so they have the same greatest common divisor.<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-18-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 3.3.8.1"><a href="#sec3-gcd-18-2" title="Copy heading and permalink for Proof 3.3.8.1" aria-label="Copy heading and permalink for Proof 3.3.8.1">🔗</a></div>
+</article></details>
+<article class="definition definition-like" id="sec3-gcd-19"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Euclidean algorithm for finding the GCD, fast version.</span>
+</h3>
+<div class="para logical" id="sec3-gcd-19-2-1">
+<div class="para">To find the GCD of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> where we assume <span class="process-math">\(a \ge b\text{,}\)</span> follow this process.</div>
+<ol class="decimal" id="sec3-gcd-19-2-1-4">
+<li id="sec3-gcd-19-2-1-4-1">
+<div class="para" id="sec3-gcd-19-2-1-4-1-1">If <span class="process-math">\(b = 0\text{,}\)</span> then we are done. Return <span class="process-math">\(a = \gcd(a,0)\)</span> as the GCD.<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-19-2-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sec3-gcd-19-2-1-4-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec3-gcd-19-2-1-4-2">
+<div class="para" id="sec3-gcd-19-2-1-4-2-1">If <span class="process-math">\(a \gt b\text{,}\)</span> then instead compute <span class="process-math">\(\gcd(b, a \bmod b)\text{,}\)</span> using this same process.<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-19-2-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sec3-gcd-19-2-1-4-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="para">Like before, this recursive process eventually bottoms out because we’re dealing with smaller numbers at each step</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-19-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 3.3.9: The Euclidean algorithm for finding the GCD, fast version"><a href="#sec3-gcd-19" title="Copy heading and permalink for Definition 3.3.9: The Euclidean algorithm for finding the GCD, fast version" aria-label="Copy heading and permalink for Definition 3.3.9: The Euclidean algorithm for finding the GCD, fast version">🔗</a></div>
+</article>
+<div class="para" id="sec3-gcd-20">Repeatedly computing <span class="process-math">\(a \bmod b\)</span> instead of <span class="process-math">\(a - b\)</span> will give you a much faster decreasing sequence, and so this version of the algorithm will take fewer steps to bottom out. The trade-off is that computing mod is usually slower than computing subtraction. You can use a calculator to help you.<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec3-gcd-21" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="sec3-gcd-21-1-1">Find the GCD of <span class="process-math">\(168\)</span> and <span class="process-math">\(180\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-21-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec3-gcd-21-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec3-gcd-21-2-1">
+<div class="para">We repeatedly apply the Euclidean algorithm (fast version).</div>
+<div class="displaymath process-math" id="sec3-gcd-21-2-1-1">
+\begin{align*}
+\gcd(180, 168) \amp= \gcd(180, 180 \bmod 168) = \gcd(168,12)\\
+\amp= \gcd(12, 168 \bmod 12) = \gcd(12, 0)\\
+\amp= 12
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-21-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 3.3.10.1"><a href="#sec3-gcd-21-2" title="Copy heading and permalink for Solution 3.3.10.1" aria-label="Copy heading and permalink for Solution 3.3.10.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Checkpoint 3.3.10"><a href="#sec3-gcd-21" title="Copy heading and permalink for Checkpoint 3.3.10" aria-label="Copy heading and permalink for Checkpoint 3.3.10">🔗</a></div>
+</article></details>
+<div class="para logical" id="sec3-gcd-22">
+<div class="para">Going in the opposite direction, given two integers you can talk about their common multiples. For instance, the common multiples of <span class="process-math">\(4\)</span> and <span class="process-math">\(6\)</span> are</div>
+<div class="displaymath process-math" id="sec3-gcd-22-3">
+\begin{equation*}
+12, 24, 36, \ldots
+\end{equation*}
+</div>
+<div class="para">Just like two numbers have a largest common divisor, they also have a smallest common multiple.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="sec3-gcd-23"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Least common multiple (LCM) <span class="process-math">\(\lcm\)</span>.</span>
+</h3>
+<div class="para" id="sec3-gcd-23-2-1">Given two numbers <span class="process-math">\(a,b\)</span> their <dfn class="terminology">least common multiple</dfn>, written <span class="process-math">\(\lcm(a,b)\)</span> is the smallest number which is a multiple of both of them. In symbols, <span class="process-math">\(\lcm(a,b)\)</span> is the smallest number <span class="process-math">\(\ell\)</span> so that <span class="process-math">\(a \mid \ell\)</span> and <span class="process-math">\(b \mid \ell\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-23-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 3.3.11: Least common multiple (LCM) \lcm"><a href="#sec3-gcd-23" title="Copy heading and permalink for Definition 3.3.11: Least common multiple (LCM) \lcm" aria-label="Copy heading and permalink for Definition 3.3.11: Least common multiple (LCM) \lcm">🔗</a></div>
+</article>
+<article class="theorem theorem-like" id="sec3-gcd-24"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="sec3-gcd-24-1-1">
+<div class="para">The least common multiple can be calculated as follows:</div>
+<div class="displaymath process-math" id="sec3-gcd-24-1-1-1">
+\begin{equation*}
+\lcm(a,b) = \frac{ab}{\gcd(a,b)}.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-24-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 3.3.12"><a href="#sec3-gcd-24" title="Copy heading and permalink for Theorem 3.3.12" aria-label="Copy heading and permalink for Theorem 3.3.12">🔗</a></div>
+</article>
+<details id="sec3-gcd-25" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para logical" id="sec3-gcd-25-1">
+<div class="para">The LCM of <span class="process-math">\(8\)</span> and <span class="process-math">\(10\)</span> can be calculated as</div>
+<div class="displaymath process-math" id="sec3-gcd-25-1-3">
+\begin{equation*}
+\lcm(8,10) = \frac{8 \cdot 10}{\gcd(8,10)} = \frac{80}{2} = 40,
+\end{equation*}
+</div>
+<div class="para">where you can use any of the previously described methods for finding the GCD. In this example, the numbers are small enough that you might immediately see that their GCD is <span class="process-math">\(2\text{.}\)</span> (And if you didn’t immediately see that then you can look at their prime factorizations or use the Euclidean algorithm.)</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-25-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.3.13"><a href="#sec3-gcd-25" title="Copy heading and permalink for Example 3.3.13" aria-label="Copy heading and permalink for Example 3.3.13">🔗</a></div>
+</article></details>
+<div class="para" id="sec3-gcd-26">An alternative way to compute the LCM goes through prime factorizations. The smallest common multiple of two numbers must contain the prime factors of both of them, but without anything else. So to find the LCM list out the numbers’ prime factorizations. Then grab all the primes which occur in at least one of the two factorizations, with the largest exponent that occurs.<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec3-gcd-27" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="example example-like knowl__content">
+<div class="para logical" id="sec3-gcd-27-1">
+<div class="para">To calculate the LCM of <span class="process-math">\(84\)</span> and <span class="process-math">\(120\text{,}\)</span> first find their prime factorizations.</div>
+<div class="displaymath process-math" id="sec3-gcd-27-1-3">
+\begin{align*}
+120 \amp= 2^3 \cdot 3 \cdot 5\\
+84 \amp= 2^2 \cdot 3 \cdot 7
+\end{align*}
+</div>
+<div class="para">We now go through the factorizations, grabbing the largest exponent which occurs on one side or the other. Thus we get</div>
+<div class="displaymath process-math" id="sec3-gcd-27-1-4">
+\begin{equation*}
+\lcm(84,120) = 2^3 \cdot 3 \cdot 5 \cdot 7 = 840.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-27-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 3.3.14"><a href="#sec3-gcd-27" title="Copy heading and permalink for Example 3.3.14" aria-label="Copy heading and permalink for Example 3.3.14">🔗</a></div>
+</article></details>
+<div class="para logical" id="sec3-gcd-28">
+<div class="para">This method also can be used to explain why the division by the GCD method works. Namely, in the formula</div>
+<div class="displaymath process-math" id="sec3-gcd-28-1">
+\begin{equation*}
+\lcm(a,b) = \frac{ab}{\gcd(a,b)}
+\end{equation*}
+</div>
+<div class="para">the numerator <span class="process-math">\(ab\)</span> says to take the prime factorization of <span class="process-math">\(a\)</span> and add in the prime factorization of <span class="process-math">\(b\text{.}\)</span> But some primes are added in twice, namely the ones that are common to both factorization. So to throw out the excess we divide by the common prime factors, which is the same as dividing by the GCD.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec3-gcd-29" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="sec3-gcd-29-1-1">What is <span class="process-math">\(\lcm(5,0)\text{?}\)</span> What about <span class="process-math">\(\lcm(a,0)\)</span> for any positive number <span class="process-math">\(a\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec3-gcd-29-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Checkpoint 3.3.15"><a href="#sec3-gcd-29" title="Copy heading and permalink for Checkpoint 3.3.15" aria-label="Copy heading and permalink for Checkpoint 3.3.15">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Section 3.3: GCD and LCM"><a href="#sec3-gcd" title="Copy heading and permalink for Section 3.3: GCD and LCM" aria-label="Copy heading and permalink for Section 3.3: GCD and LCM">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec3-blahblah.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec3-exercises.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
