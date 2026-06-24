@@ -763,7 +763,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.9",
   "title": "Exercises",
-  "body": " Exercises   For these counting exercises, write your answer as a formula, not as a number. For example, write instead of .   A date night special at a restaurant lets you pick either a soup or salad as a starter, then an entree, and finally a dessert. If there are three soups, two salads, five entrees, and four desserts, how many different meals can you choose? If you and your date independently choose your own meals, how many combinations are there for how the two of you can order?    In a race with racers, how many different outcomes are there for who gets first through sixth place?  Think of choosing an outcome as first picking who comes in first, then picking a different person for second, and so on to sixth place. How many options do you have for first? Then how many for second? And so on.    How many ways are there to pick a digit PIN? A digit PIN. A digit PIN for any positive whole number ?  Think of picking each digit as an independent choice. How many options for one digit? Now put it together for multiple digits.   In more advanced uses of sets, it's helpful to talk about mappings or correspondances between them. How do you assign each element of the input set an element of the output set?  Functions  Let and be sets. A function  from to , which we write as is a way of assigning each input to an output .   Consider and . Give an example of a function by specifying the three outputs .   We can use functions to give an alternative definition of exponentiation. Namely, counts the number of functions from a set of size to a set of size .   Confirm the two definitions of exponentiation are equivalent for a specific case by counting how many functions there are from a set with elements to a set with elements.  Think of choosing a function as choosing an output for the first element of , then the next one, and so on until you've picked an output for every function.    Confirm that this is in general equivalent to the definition by iterated multiplication by explaining why there are functions from a set of size to a set of size .  Same hint as before, but now instead of having a specific value for and you have to think a step more abstractly.   A function is called one-to-one if different inputs get sent to different outputs. It is called onto if every element of is the output for some input . If is both one-to-one and onto it is called bijective .   Let and . Come up with a function which is one-to-one by specifying the outputs for every input . Also come up with a function which is onto. Can you come up with a function which is onto but not one-to-one? Either demonstrate such a function or explain why you think it's impossible.    Consider defined as . Explain why is one-to-one but not onto. Also consider defined as is the whole number you get rounding down from . Explain why is onto but not one-to-one.   One use of functions is to give a way to compare sizes of sets. If and are sets, then if there is a one-to-one function and if there is a bijective function .   Demonstrate that your left hand and right hand have the same number of fingers by describing a bijection from the set of fingers on your left hand to the set of fingers on your right hand.    Demonstrate that any two singletons and have the same cardinality by giving a bijective function between them.    "
+  "body": " Exercises   For these counting exercises, write your answer as a formula, not as a number. For example, write instead of .   A date night special at a restaurant lets you pick either a soup or salad as a starter, then an entree, and finally a dessert. If there are three soups, two salads, five entrees, and four desserts, how many different meals can you choose? If you and your date independently choose your own meals, how many combinations are there for how the two of you can order?    In a race with racers, how many different outcomes are there for who gets first through sixth place?  Think of choosing an outcome as first picking who comes in first, then picking a different person for second, and so on to sixth place. How many options do you have for first? Then how many for second? And so on.    How many ways are there to pick a digit PIN? A digit PIN. A digit PIN for any positive whole number ?  Think of picking each digit as an independent choice. How many options for one digit? Now put it together for multiple digits.   In more advanced uses of sets, it's helpful to talk about mappings or correspondances between them. How do you assign each element of the input set an element of the output set?  Functions  Let and be sets. A function  from to , which we write as is a way of assigning each input to an output .   Consider and . Give an example of a function by specifying the three outputs .   We can use functions to give an alternative definition of exponentiation. Namely, counts the number of functions from a set of size to a set of size .   Confirm the two definitions of exponentiation are equivalent for a specific case by counting how many functions there are from a set with elements to a set with elements.  Think of choosing a function as choosing an output for the first element of , then the next one, and so on until you've picked an output for every element.    Confirm that this is in general equivalent to the definition by iterated multiplication by explaining why there are functions from a set of size to a set of size .  Same hint as before, but now instead of having a specific value for and you have to think a step more abstractly.   A function is called one-to-one if different inputs get sent to different outputs. It is called onto if every element of is the output for some input . If is both one-to-one and onto it is called bijective .   Let and . Come up with a function which is one-to-one by specifying the outputs for every input . Also come up with a function which is onto. Can you come up with a function which is onto but not one-to-one? Either demonstrate such a function or explain why you think it's impossible.    Consider defined as . Explain why is one-to-one but not onto. Also consider defined as is the whole number you get rounding down from . Explain why is onto but not one-to-one.   One use of functions is to give a way to compare sizes of sets. If and are sets, then if there is a one-to-one function and if there is a bijective function . Phrased in ordinary language, two sets have the same number of elements if and only if there is a bijective function between them.   A question mathematicians grappled with as the nineteenth century was turning into the twentieth century was, how do you make precise and formal what a number is? One approach, pioneered by the German logician Gottlob Frege, was to take this notion of bijective correspondence as the fundamental concept on top of which to say what numbers are. You can think of this approach as saying, more fundamental than counting a collection of things is telling whether two collections have the same number of things in them. Counting—pointing at things in order and saying one, two, … is a special case of this. When you count the fingers on a hand you are demonstrating a bijective function from the set and the set of fingers on that hand.  For this book, that formal approach isn't appropriate and so it's relegated to a short detour in the exercises. There are yet other approaches to try to make precise sense of what numbers are, but those require concepts beyond the scope of this course.    Demonstrate that your left hand and right hand have the same number of fingers by describing a bijective function from the set of fingers on your left hand to the set of fingers on your right hand.    Demonstrate that any two singletons and have the same cardinality by giving a bijective function between them.    "
 },
 {
   "id": "sec1-exercises-2-2",
@@ -817,7 +817,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "1.9.5",
   "title": "",
-  "body": " Confirm the two definitions of exponentiation are equivalent for a specific case by counting how many functions there are from a set with elements to a set with elements.  Think of choosing a function as choosing an output for the first element of , then the next one, and so on until you've picked an output for every function.  "
+  "body": " Confirm the two definitions of exponentiation are equivalent for a specific case by counting how many functions there are from a set with elements to a set with elements.  Think of choosing a function as choosing an output for the first element of , then the next one, and so on until you've picked an output for every element.  "
 },
 {
   "id": "sec1-exercises-2-10",
@@ -856,18 +856,18 @@ var ptx_lunr_docs = [
   "body": " Consider defined as . Explain why is one-to-one but not onto. Also consider defined as is the whole number you get rounding down from . Explain why is onto but not one-to-one.  "
 },
 {
-  "id": "sec1-exercises-2-15",
-  "level": "2",
-  "url": "sec1-exercises.html#sec1-exercises-2-15",
-  "type": "Exercise",
-  "number": "1.9.9",
-  "title": "",
-  "body": " Demonstrate that your left hand and right hand have the same number of fingers by describing a bijection from the set of fingers on your left hand to the set of fingers on your right hand.  "
-},
-{
   "id": "sec1-exercises-2-16",
   "level": "2",
   "url": "sec1-exercises.html#sec1-exercises-2-16",
+  "type": "Exercise",
+  "number": "1.9.9",
+  "title": "",
+  "body": " Demonstrate that your left hand and right hand have the same number of fingers by describing a bijective function from the set of fingers on your left hand to the set of fingers on your right hand.  "
+},
+{
+  "id": "sec1-exercises-2-17",
+  "level": "2",
+  "url": "sec1-exercises.html#sec1-exercises-2-17",
   "type": "Exercise",
   "number": "1.9.10",
   "title": "",
@@ -1270,54 +1270,54 @@ var ptx_lunr_docs = [
   "body": " Modify the multiplication method—your choice of the box version of the column version—to do the binary multiplication Show all your work.  "
 },
 {
-  "id": "sec3-blah",
+  "id": "sec3-prime",
   "level": "1",
-  "url": "sec3-blah.html",
+  "url": "sec3-prime.html",
   "type": "Section",
   "number": "3.1",
   "title": "Prime numbers",
   "body": " Prime numbers  If we think of natural numbers as being formed by multiplication, then the building blocks are those numbers we can't split up any further. These are what we call the prime numbers. For example, we can break up as , but there's no way to break up into a multiplication of two smaller numbers.  Divisibility  Let and be natural numbers. We say that  divides  if is a multiple of , that is if for some natural number . Symbolically we write this as . This concept has many synonyms; you also hear is a divisor of , is a factor of , or is a multiple of .  For example, is a factor of because .  A useful fact is that the divisibility relation is what mathematicians call transitive : if and then . For example, if you know that then you can automatically conclude that , because .  Primes and composites  A natural number is called prime if it has exactly two divisors, itself and . A natural number is called composite if it has more than two divisors. Equivalently, is composite if it can be written as a product of two smaller numbers: where .  A few comments are in order. First, observe that is neither prime nor composite. This is intentional. One practical reason is that allowing to be prime means we'd have to awkwardly exclude it in important results about prime numbers; see and the discussion afterward. Lurking behind this is the fact that multiplying by doesn't change a number. If we allowed as a basic building block of forming numbers by multiplication we'd always be able to add more blocks. One way to think about this is, is the value you get before you start doing any multiplying; we want to think of as what you get by multiplying together many numbers. Thus it doesn't make sense to consider as a prime number.  Second, let's see why the two definitions of composite are equivalent. For one direction, think of a number like with more than two divisors. Since it has itself and and divisors, that means it has a divisor between and itself. But if, say, is a divisor of that means you can split into a product of two smaller numbers: . For the other direction, if you can write, for example, then that gives more divisors on top of and , so has more than two divisors.   List the first ten prime numbers.   A prime factorization of a number is a complete factorization of it down to primes. For example, is not a prime factorization, because is not prime. But is a prime factorization, since you can't factor any further. An important result is every number has a prime factorization.  The fundamental theorem of arithmetic  Every positive natural number has a unique prime factorization.  Note that this theorem says two things. First, it says that for any number there is some way to write a prime factorization of it. Second, it says that there is only one way to do so. To be more clear, you can write a prime factorization in different orders. For instance, Rearranging the order of the multiplication doesn't count as a different factorization; as we know, order doesn't matter for multiplication. Also, let me highlight the role of . If we had decided that counted as a prime number then we would have many different prime factorizations for any number: So we would've had to pharse the result like, every positive natural number has a unique prime factorization where we exclude s . Thus we see the practical utility in excluding from the prime numbers.  Second, you might wonder whether itself has a prime factorization. It does. Namely, is what you get when you multiply zero primes together. If this bothers you, feel free to imagine the fundamental theorem of algebra saying that every number has a prime factorization.  To close out this section, let me mention another fundamental result about prime numbers. This theorem dates back at least as far as the ancient Greek mathematician Euclid (circa 300 BCE).  The infinitude of primes  There are infinitely many prime numbers. Phrase differently, for any natural number there is a prime number .  A more recent result, from 1896, tells us more about where the prime numbers are. By Euclid, no matter how far out you go there's always more prime numbers. The prime number theorem says that they get more and more sparse; there's more prime numbers to be found but you will have to look further and further out. (The precise statement of the prime number theorem requires both logarithms and ideas from calculus, so let me leave you with this gloss.)  The fundamental theorem of arithmetic tells us that every number has a prime factorization. Euclid's theorem tells us that these factorizations aren't composed of just a few small prime numbers. In general, the prime factorization of a number can include primes at the same order of magnitude of the number itself. As such, you might not be surprised to hear that the problem of finding the prime factorization for a number is in general very hard. Indeed, it can be so hard that it is used as the basis of the RSA cryptosystem . Put crudely, if you've ever wondered how you can access your bank info over the internet without anyone stealing it, that is because it can be really hard to factor numbers.  Nonetheless, for some small numbers there are rules you can learn to determine divisibility. This is the topic we turn to in the next section.  "
 },
 {
-  "id": "sec3-blah-3",
+  "id": "sec3-prime-3",
   "level": "2",
-  "url": "sec3-blah.html#sec3-blah-3",
+  "url": "sec3-prime.html#sec3-prime-3",
   "type": "Definition",
   "number": "3.1.1",
   "title": "Divisibility.",
   "body": "Divisibility  Let and be natural numbers. We say that  divides  if is a multiple of , that is if for some natural number . Symbolically we write this as . This concept has many synonyms; you also hear is a divisor of , is a factor of , or is a multiple of . "
 },
 {
-  "id": "sec3-blah-5",
+  "id": "sec3-prime-5",
   "level": "2",
-  "url": "sec3-blah.html#sec3-blah-5",
+  "url": "sec3-prime.html#sec3-prime-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "transitive "
 },
 {
-  "id": "sec3-blah-6",
+  "id": "sec3-prime-6",
   "level": "2",
-  "url": "sec3-blah.html#sec3-blah-6",
+  "url": "sec3-prime.html#sec3-prime-6",
   "type": "Definition",
   "number": "3.1.2",
   "title": "Primes and composites.",
   "body": "Primes and composites  A natural number is called prime if it has exactly two divisors, itself and . A natural number is called composite if it has more than two divisors. Equivalently, is composite if it can be written as a product of two smaller numbers: where . "
 },
 {
-  "id": "sec3-blah-9",
+  "id": "sec3-prime-9",
   "level": "2",
-  "url": "sec3-blah.html#sec3-blah-9",
+  "url": "sec3-prime.html#sec3-prime-9",
   "type": "Checkpoint",
   "number": "3.1.3",
   "title": "",
   "body": " List the first ten prime numbers.  "
 },
 {
-  "id": "sec3-blah-10",
+  "id": "sec3-prime-10",
   "level": "2",
-  "url": "sec3-blah.html#sec3-blah-10",
+  "url": "sec3-prime.html#sec3-prime-10",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1326,142 +1326,142 @@ var ptx_lunr_docs = [
 {
   "id": "thm3-fta",
   "level": "2",
-  "url": "sec3-blah.html#thm3-fta",
+  "url": "sec3-prime.html#thm3-fta",
   "type": "Theorem",
   "number": "3.1.4",
   "title": "The fundamental theorem of arithmetic.",
   "body": "The fundamental theorem of arithmetic  Every positive natural number has a unique prime factorization. "
 },
 {
-  "id": "sec3-blah-15",
+  "id": "sec3-prime-15",
   "level": "2",
-  "url": "sec3-blah.html#sec3-blah-15",
+  "url": "sec3-prime.html#sec3-prime-15",
   "type": "Theorem",
   "number": "3.1.5",
   "title": "The infinitude of primes.",
   "body": "The infinitude of primes  There are infinitely many prime numbers. Phrase differently, for any natural number there is a prime number . "
 },
 {
-  "id": "sec3-blah-16",
+  "id": "sec3-prime-16",
   "level": "2",
-  "url": "sec3-blah.html#sec3-blah-16",
+  "url": "sec3-prime.html#sec3-prime-16",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "prime number theorem "
 },
 {
-  "id": "sec3-blah-17",
+  "id": "sec3-prime-17",
   "level": "2",
-  "url": "sec3-blah.html#sec3-blah-17",
+  "url": "sec3-prime.html#sec3-prime-17",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "RSA cryptosystem "
 },
 {
-  "id": "sec3-blahblah",
+  "id": "sec3-divisibility",
   "level": "1",
-  "url": "sec3-blahblah.html",
+  "url": "sec3-divisibility.html",
   "type": "Section",
   "number": "3.2",
   "title": "Divisibility Rules",
   "body": " Divisibility Rules  In this section we learn rules for checking divisibility by a small number. Let's start with the easiest and, for that reason, the least useful.  Rule for divisibility by  A natural number is always divisible by .  Because .  Let's see a more useful rule.  Rule for divisibility by  A natural number is divisible by if the last digit of is .  Every other digit of represents times something, so the only way could fail to be a multiple of is if the units digit is nonzero.  Knowing the rule for divisibility by lets us also know rules for divisibility by and , because .  Rule for divisibility by  A natural number is divisible by if and only if its last digit is even: or .  The other digits of represent a number divisible by , and hence also divisible by . So all that remains is to check that the quantity represented by the units digit is divisible by . Those are the five even numbers which are one digit.  Rule for divisibility by  A natural number is divisible by if and only if its last digit is either or .  Same logic as the rule for . The only possible issue is the units digit, so check if the units digit is one of the two one-digit numbers divisible by .  Before we see the rule for , let's look at an example. Consider the number . You can break this apart as follows. When you expand out the multiplications, everything with a as a term is a multiple of . The remainder are , , and . So is a multiple of if and only if these remainders sum to a multiple of . But this is just looking at the sum of the digits.  Rule for divisibility by  A natural number is divisible by if and only if the sum of its digits is a multiple of . (To check if the sum of the digits is a multiple of , repeat this process until you get to a small enough number you don't need to check.)  Do what we did with , except you have to write it abstractly to work for any number.  The same idea gives us a divisibility rule for . What we used in the breakdown for was s, and those will also give divisibility by .  Rule for divisibility by  A natural number is divisible by if and only if the sum of its digits is a multiple of .  Same as with .  We can get a rule for by combining the rules for and . This is because and so checking divisibility by is the same as checking divisibility by both and .  Rule for divisibility by  A natural number is divisible by if and only if its last digit is even and the sum of its digits is a multiple of .  Explained above.  The rules for and are maybe a little less convenient, but they are the best we can do.  Rule for divisibility by  A natural number is divisible by if and only if its last two digits form a number divisible by .  The rest of the digits represent a quantity divisible by , and is a multiple of . So the only thing to check is that the last two digits are divisible by .  Rule for divisibility by  A natural number is divisible by if and only if its last three digits form a number divisible by .  Similar to the rule for . Namely, the rest of the digits represent a quantity divisible by , and . So the only thing to check is that the last three digits are divisible by .  There's too many two digit and three digit numbers to memorize which of them are divisible by and . But at least checking a two or three digit number is easier than many digit number.  Conspicuously missing from this list is a divisibility rule for . This is not because there is no rule for , but because any rule for is too complicated to be practically useful. You will discover this in an exercise for this chapter.  Putting these rules together, we have a method to get the prime factorization of a number , provided its only prime factors are small. Namely, run through the rules. If you determine is divisible by, say, , then divide it by . Keep going with this process until all the rules fail. At that point, you may have to manually check if you can divide by small primes like or , until you recognize that what's left cannot be factored any further.   Find the prime factorization of .   Immediately you can see that is divisible by . You might further notice that it's divisible by , because . Divide out by : This number is even so we can pull out another : We now see we cannot factor out any more s. Next we check divisibility by : , and repeating the summing the digits rule we get . This is a multiple of , so in fact we can pull out two copies of : We repeat the rule for with : . Thus we can pull out yet another : At this point, all that is left over is , which is small enough that we can recognize it as a prime. We can't go any further, so we have the final prime factorization.    Find the prime factorization of .   "
 },
 {
-  "id": "sec3-blahblah-3",
+  "id": "sec3-divisibility-3",
   "level": "2",
-  "url": "sec3-blahblah.html#sec3-blahblah-3",
+  "url": "sec3-divisibility.html#sec3-divisibility-3",
   "type": "Theorem",
   "number": "3.2.1",
   "title": "Rule for divisibility by <span class=\"process-math\">\\(1\\)<\/span>.",
   "body": "Rule for divisibility by  A natural number is always divisible by .  Because . "
 },
 {
-  "id": "sec3-blahblah-5",
+  "id": "sec3-divisibility-5",
   "level": "2",
-  "url": "sec3-blahblah.html#sec3-blahblah-5",
+  "url": "sec3-divisibility.html#sec3-divisibility-5",
   "type": "Theorem",
   "number": "3.2.2",
   "title": "Rule for divisibility by <span class=\"process-math\">\\(10\\)<\/span>.",
   "body": "Rule for divisibility by  A natural number is divisible by if the last digit of is .  Every other digit of represents times something, so the only way could fail to be a multiple of is if the units digit is nonzero. "
 },
 {
-  "id": "sec3-blahblah-7",
+  "id": "sec3-divisibility-7",
   "level": "2",
-  "url": "sec3-blahblah.html#sec3-blahblah-7",
+  "url": "sec3-divisibility.html#sec3-divisibility-7",
   "type": "Theorem",
   "number": "3.2.3",
   "title": "Rule for divisibility by <span class=\"process-math\">\\(2\\)<\/span>.",
   "body": "Rule for divisibility by  A natural number is divisible by if and only if its last digit is even: or .  The other digits of represent a number divisible by , and hence also divisible by . So all that remains is to check that the quantity represented by the units digit is divisible by . Those are the five even numbers which are one digit. "
 },
 {
-  "id": "sec3-blahblah-8",
+  "id": "sec3-divisibility-8",
   "level": "2",
-  "url": "sec3-blahblah.html#sec3-blahblah-8",
+  "url": "sec3-divisibility.html#sec3-divisibility-8",
   "type": "Theorem",
   "number": "3.2.4",
   "title": "Rule for divisibility by <span class=\"process-math\">\\(5\\)<\/span>.",
   "body": "Rule for divisibility by  A natural number is divisible by if and only if its last digit is either or .  Same logic as the rule for . The only possible issue is the units digit, so check if the units digit is one of the two one-digit numbers divisible by . "
 },
 {
-  "id": "sec3-blahblah-10",
+  "id": "sec3-divisibility-10",
   "level": "2",
-  "url": "sec3-blahblah.html#sec3-blahblah-10",
+  "url": "sec3-divisibility.html#sec3-divisibility-10",
   "type": "Theorem",
   "number": "3.2.5",
   "title": "Rule for divisibility by <span class=\"process-math\">\\(3\\)<\/span>.",
   "body": "Rule for divisibility by  A natural number is divisible by if and only if the sum of its digits is a multiple of . (To check if the sum of the digits is a multiple of , repeat this process until you get to a small enough number you don't need to check.)  Do what we did with , except you have to write it abstractly to work for any number. "
 },
 {
-  "id": "sec3-blahblah-12",
+  "id": "sec3-divisibility-12",
   "level": "2",
-  "url": "sec3-blahblah.html#sec3-blahblah-12",
+  "url": "sec3-divisibility.html#sec3-divisibility-12",
   "type": "Theorem",
   "number": "3.2.6",
   "title": "Rule for divisibility by <span class=\"process-math\">\\(9\\)<\/span>.",
   "body": "Rule for divisibility by  A natural number is divisible by if and only if the sum of its digits is a multiple of .  Same as with . "
 },
 {
-  "id": "sec3-blahblah-14",
+  "id": "sec3-divisibility-14",
   "level": "2",
-  "url": "sec3-blahblah.html#sec3-blahblah-14",
+  "url": "sec3-divisibility.html#sec3-divisibility-14",
   "type": "Theorem",
   "number": "3.2.7",
   "title": "Rule for divisibility by <span class=\"process-math\">\\(6\\)<\/span>.",
   "body": "Rule for divisibility by  A natural number is divisible by if and only if its last digit is even and the sum of its digits is a multiple of .  Explained above. "
 },
 {
-  "id": "sec3-blahblah-16",
+  "id": "sec3-divisibility-16",
   "level": "2",
-  "url": "sec3-blahblah.html#sec3-blahblah-16",
+  "url": "sec3-divisibility.html#sec3-divisibility-16",
   "type": "Theorem",
   "number": "3.2.8",
   "title": "Rule for divisibility by <span class=\"process-math\">\\(4\\)<\/span>.",
   "body": "Rule for divisibility by  A natural number is divisible by if and only if its last two digits form a number divisible by .  The rest of the digits represent a quantity divisible by , and is a multiple of . So the only thing to check is that the last two digits are divisible by . "
 },
 {
-  "id": "sec3-blahblah-17",
+  "id": "sec3-divisibility-17",
   "level": "2",
-  "url": "sec3-blahblah.html#sec3-blahblah-17",
+  "url": "sec3-divisibility.html#sec3-divisibility-17",
   "type": "Theorem",
   "number": "3.2.9",
   "title": "Rule for divisibility by <span class=\"process-math\">\\(8\\)<\/span>.",
   "body": "Rule for divisibility by  A natural number is divisible by if and only if its last three digits form a number divisible by .  Similar to the rule for . Namely, the rest of the digits represent a quantity divisible by , and . So the only thing to check is that the last three digits are divisible by . "
 },
 {
-  "id": "sec3-blahblah-21",
+  "id": "sec3-divisibility-21",
   "level": "2",
-  "url": "sec3-blahblah.html#sec3-blahblah-21",
+  "url": "sec3-divisibility.html#sec3-divisibility-21",
   "type": "Checkpoint",
   "number": "3.2.10",
   "title": "",
   "body": " Find the prime factorization of .   Immediately you can see that is divisible by . You might further notice that it's divisible by , because . Divide out by : This number is even so we can pull out another : We now see we cannot factor out any more s. Next we check divisibility by : , and repeating the summing the digits rule we get . This is a multiple of , so in fact we can pull out two copies of : We repeat the rule for with : . Thus we can pull out yet another : At this point, all that is left over is , which is small enough that we can recognize it as a prime. We can't go any further, so we have the final prime factorization.  "
 },
 {
-  "id": "sec3-blahblah-22",
+  "id": "sec3-divisibility-22",
   "level": "2",
-  "url": "sec3-blahblah.html#sec3-blahblah-22",
+  "url": "sec3-divisibility.html#sec3-divisibility-22",
   "type": "Checkpoint",
   "number": "3.2.11",
   "title": "",
