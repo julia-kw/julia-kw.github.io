@@ -21,7 +21,7 @@ Class Information
 
 **Primary out of class contact** course website or email me
 
-**Class Hours and Room** 
+**Class Hours and Room** TODO
 
 **Office Hours** TBA
 
@@ -62,65 +62,57 @@ Grades will be assigned on the standard A through F scale, with +'s or –'s for
 Homework
 ========
 
-TODO
+Homework is assigned weekly, due Tuesday the following week. Homework problems will be taken from the textbook.
 
 **Show your work on homework!** You do not need to show every minor step, but I need to be able to follow your thought process. More important than arriving at a correct final answer is being able to explain how you obtained it. Think of showing your work as communicating your process so others can follow it.
 
-Homework grades are based on completion and my selection of two problems. TODO redo this
+Homework grades are based on completion and my selection of two problems. Here is the rubric for how you will be graded.
 
 * Rubric for completion
 
-    * 10/10: you did all problems.
+    * 20/20: you did all problems.
 	
-    * 5/10: you did most problems.
+    * 10/20: you did most problems.
 	
-    * 0/10: you did only a few problems.
+    * 0/20: you did only a few problems.
 	
 * Rubric for individual problems
 
-    * 30/30: you gave a full correct solution.
+    * 40/40: you gave a full correct solution.
 
-    * 29/30: you made a minor error.
+    * 35/40: you gave a complete solution but made a minor error along the way.
 	
-    * 15/30: you were on the right track but were unable to finish or made significant errors.
+    * 20/40: you were on the right track but were unable to finish or made significant errors.
 	
-    * 0/30: you didn't make meaningful progress toward a correct solution.
+    * 0/40: you didn't make meaningful progress toward a correct solution.
 
 You are encouraged to work together on homework, but the work you turn in is expected to be your own. If you do collaborate with classmates, please say so and give their names with your submitted work.
 
 I will not accept late work. Instead, I will drop your two lowest homework scores from consideration for your final grade.
 
 
-Quizzes and Exam
-========
+Exams
+=====
 
-This class is divided into three units, each of which ends with a quiz. These are in-person, individual assessments.
+This class is divided into three units, each of which ends with an exam. These are in-person, individual assessments.
 
 You will be allowed use of a note sheet and a calculator on the quizzes. Other resources or electronic devices are not permitted.
-
-Quiz dates:
-
-* Unit 1 Quiz: Thursday, 
-
-* Unit 2 Quiz: Thursday, 
-
-* Unit 3 Quiz: Thursday, 
 
 There will be a cumulative exam during the final exam period, covering material from all three units. If it helps your grade, I will replace your lowest quiz grade with your final grade.
 
 Textbook Information
 ========
 
-TODO
+The textbook for this class is *Mathematics: The Science of Reasoning*, 0th edition, Julia K Williams. It is freely available online. TODO: add link once I put that up. The textbook and class material go hand-in-hand. If you ever have to miss class you should read the corresponding section of the textbook.
+
+I will assign homework out of the textbook.
 
 Attendance and Class Participation Guidelines
 ==========
 
-TODO
+You are expected to attend class sessions. In each unit, the material builds upon itself. If you skip class and fall behind it is difficult to get back on track. If you miss a class, it is your responsibility to ensure you make up the missed lesson, which you can do with the corresponding textbook chapter. If you know in advance you will have to miss a class, please email me.
 
-You are expected to attend class sessions, and this is factored into your grade via the in-class writing exercises. Like most math classes the material in this class builds upon itself. If you skip class and fall behind it is difficult to get back on track. If you miss a class, it is your responsibility to ensure you make up the missed lesson. The schedule on the course website gives the textbook sections we will cover each week, and any worksheets or handouts will be posted on the course website. If you know in advance you will have to miss a class, please email me.
-
-Class time will be spent on a combination of in-class writing exercises, lecture, and group work/discussion. 
+Class time will be spent on a combination of lecture and group work/discussion. 
 
 You are expected to participate in all parts of class sessions. For lecture you should be actively listening, taking notes, and asking questions as appropriate. For group work/discussion you should engage in the work, sharing ideas with your classmates.
 
