@@ -63,6 +63,14 @@ To enable the goals of this class, we are as low tech as possible. I ask that yo
 
 These exercises are graded based on participation. To earn credit for this support class you must show up and you must actively participate.
 
+Each writing exercise will follow this format.
+
+* Private Free Write (5 min). Everyone writes about whatever is on their mind. You do not share what you wrote; this is a chance for you to clear your mind and transition from the outside world to the classroom.
+
+* Loop Writing (15 min). We do a series of focused free writes, where you write in response to a prompt, and share what we wrote. This is a way to introduce the topic of the day and share input on what we already know about it.
+
+* Substance Writing (30 min). We explore the topic of the day. Depending on the topic this might be a process write, where you reflect on your own thinking process. Or it might be a believing and doubting write, where you have to think through multiple perspectives. Or it might be a dialectical response write, where you pass a paper between classmates to collaborate on exploring the ideas.
+
 Textbook Information
 ========
 
