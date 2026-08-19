@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Quantifiers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="Mathematics, the Science of Reasoning">
+<meta property="og:title" content="Mathematics, the Science of Reasoning">
+<meta property="book:title" content="Mathematics, the Science of Reasoning">
+<meta name="twitter:description" content="A survey of some topics in using mathematics as a tool to better one's reasoning.">
+<meta property="og:description" content="A survey of some topics in using mathematics as a tool to better one's reasoning.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.44"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.6';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.86d8a68ed7481f7e.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.bb5ac777721d4056.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="reas-book.html"><span class="title">Mathematics, the Science of Reasoning</span></a></div>
+<p class="byline">Julia Kameryn Williams</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="sec1-semantic.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch1.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec1-models.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\Nbb}{\mathbb N} \newcommand{\Zbb}{\mathbb Z} \newcommand{\Qbb}{\mathbb Q} \newcommand{\Rbb}{\mathbb R} \newcommand{\Cbb}{\mathbb C} \newcommand\mand{\text{ and }} \newcommand\mor{\text{ or }} \newcommand\abs[1]{\lvert #1 \rvert} \newcommand\card[1]{\abs{#1}} \DeclareMathOperator\lcm{lcm} \newcommand\impl{\Rightarrow}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface.html" class="internal"><span class="title">Preface: To the student</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch1.html" class="internal"><span class="codenumber">1</span> <span class="title">Logic</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-ch1">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec1-arguments.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Arguments</span></a></div>
+<ul id="ptx-toc-group-sec1-arguments" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec1-arguments.html#sec1-arguments-21" class="internal"><span class="codenumber">1.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec1-language.html" class="internal"><span class="codenumber">1.2</span> <span class="title">The language of propositional logic</span></a></div>
+<ul id="ptx-toc-group-sec1-language" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec1-language.html#sec1-language-24" class="internal"><span class="codenumber">1.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec1-tt.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Truth tables</span></a></div>
+<ul id="ptx-toc-group-sec1-tt" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec1-tt.html#sec1-tt-24" class="internal"><span class="codenumber">1.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec1-entailment.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Entailment</span></a></div>
+<ul id="ptx-toc-group-sec1-entailment" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec1-entailment.html#sec1-entailment-10" class="internal"><span class="codenumber">1.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec1-semantic.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Other semantic notions</span></a></div>
+<ul id="ptx-toc-group-sec1-semantic" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec1-semantic.html#sec1-semantic-11" class="internal"><span class="codenumber">1.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec1-quantifiers.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Quantifiers</span></a></div>
+<ul class="structural toc-item-list active" id="ptx-toc-group-sec1-quantifiers"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec1-quantifiers.html#sec1-quantifiers-17" class="internal"><span class="codenumber">1.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec1-models.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Models and the semantics of quantifier logic</span></a></div>
+<ul id="ptx-toc-group-sec1-models" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec1-models.html#sec1-models-20" class="internal"><span class="codenumber">1.7</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch2.html" class="internal"><span class="codenumber">2</span> <span class="title">Statistics</span></a></div>
+<ul id="ptx-toc-group-ch2" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec2-data.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Visualizing data</span></a></div>
+<ul id="ptx-toc-group-sec2-data" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec2-data.html#sec2-data-3" class="internal"><span class="codenumber">2.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec2-average.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Averages</span></a></div>
+<ul id="ptx-toc-group-sec2-average" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec2-average.html#sec2-average-3" class="internal"><span class="codenumber">2.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec2-range.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Range and quantiles</span></a></div>
+<ul id="ptx-toc-group-sec2-range" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec2-range.html#sec2-range-3" class="internal"><span class="codenumber">2.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec2-box.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Box and whisker plots</span></a></div>
+<ul id="ptx-toc-group-sec2-box" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec2-box.html#sec2-box-3" class="internal"><span class="codenumber">2.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec2-stddev.html" class="internal"><span class="codenumber">2.5</span> <span class="title">The standard deviation</span></a></div>
+<ul id="ptx-toc-group-sec2-stddev" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec2-stddev.html#sec2-stddev-3" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec2-normal.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Normal distributions</span></a></div>
+<ul id="ptx-toc-group-sec2-normal" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec2-normal.html#sec2-normal-3" class="internal"><span class="codenumber">2.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec2-test.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Hypothesis testing</span></a></div>
+<ul id="ptx-toc-group-sec2-test" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec2-test.html#sec2-test-3" class="internal"><span class="codenumber">2.7</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch3.html" class="internal"><span class="codenumber">3</span> <span class="title">Modeling</span></a></div>
+<ul id="ptx-toc-group-ch3" class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec3-functions.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Functions</span></a></div>
+<ul id="ptx-toc-group-sec3-functions" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec3-functions.html#sec3-functions-3" class="internal"><span class="codenumber">3.1</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec3-linear.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Linear models</span></a></div>
+<ul id="ptx-toc-group-sec3-linear" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec3-linear.html#sec3-linear-3" class="internal"><span class="codenumber">3.2</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec3-exp.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Exponential functions</span></a></div>
+<ul id="ptx-toc-group-sec3-exp" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec3-exp.html#sec3-exp-3" class="internal"><span class="codenumber">3.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec3-exponential.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Exponential models</span></a></div>
+<ul id="ptx-toc-group-sec3-exponential" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec3-exponential.html#sec3-exponential-3" class="internal"><span class="codenumber">3.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec3-logistic.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Logistic models</span></a></div>
+<ul id="ptx-toc-group-sec3-logistic" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec3-logistic.html#sec3-logistic-3" class="internal"><span class="codenumber">3.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec1-quantifiers">
+<h1 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Quantifiers</span>
+</h1>
+<div class="para" id="sec1-quantifiers-2">Previously we’ve looked at <dfn class="terminology">propositional logic</dfn>. This logic has limited expressiveness, and there’s many natural arguments it can’t talk about. Consider these two examples.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec1-quantifiers-3" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="example example-like knowl__content">
+<div class="para logical" id="sec1-quantifiers-3-1">
+<div class="para">This is a classical argument going back to Aristotle.</div>
+<ul class="disc" id="sec1-quantifiers-3-1-1">
+<li id="sec1-quantifiers-3-1-1-1">
+<div class="para" id="sec1-quantifiers-3-1-1-1-1">All humans are mortal. Socrates is a human. Therefore, Socrates is mortal.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-3-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec1-quantifiers-3-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">If you try to cast this into propositional logic, you’d have to treat each sentence as its own atomic proposition. There’s no way to break them down further using the concepts of propositional logic. Thus the argument becomes</div>
+<div class="displaymath process-math" id="sec1-quantifiers-3-1-2">
+\begin{equation*}
+A, B, \therefore C.
+\end{equation*}
+</div>
+<div class="para">Doing this erases the logical inference being made. That is, we don’t want to treat these statements as atomic, we want to treat them as saying something about connections between properties of things.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec1-quantifiers-3-2">
+<div class="para">This kind of reasoning shows up all the time in mathematics.</div>
+<ul class="disc" id="sec1-quantifiers-3-2-1">
+<li id="sec1-quantifiers-3-2-1-1">
+<div class="para" id="sec1-quantifiers-3-2-1-1-1">Every positive number has a square root. <span class="process-math">\(2\)</span> is positive. Therefore, <span class="process-math">\(2\)</span> has a square root.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-3-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec1-quantifiers-3-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">Again, casting this into propositional logic would destroy all meaning. These aren’t unconnected atomic statements, they are statements about how properties of numbers relate.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 1.6.1"><a tabindex="-1" href="#sec1-quantifiers-3" title="Copy heading and permalink for Example 1.6.1" aria-label="Copy heading and permalink for Example 1.6.1">🔗</a></div>
+</article></details>
+<div class="para" id="sec1-quantifiers-4">We need to introduce some new ideas to be able to make logical sense of these arguments. This will give us the system known as <dfn class="terminology">predicate logic</dfn>. The first new idea is we want to have names for individuals, not for atomic propositions. A name might be a <dfn class="terminology">variable</dfn> like <span class="process-math">\(x\)</span> or <span class="process-math">\(y\)</span> standard for an unspecified individual. We use lowercase letters for variables for individuals. Or a name might pick out a specified individual, such as Socrates or the number <span class="process-math">\(2\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec1-quantifiers-5">With propositional logic, our logical arena was just about sentences. Is this sentence true or false? That was all we cared about. In this new arena we have a <dfn class="terminology">domain</dfn> of individuals we are talking about. Your choice of domain will be determined by what you want to look at. If you want to argue that Socrates is mortal, it makes sense to take humanity as your domain. If you want to talk about square roots, it makes sense to take the real numbers (the numbers which measure continuous quantities) as your domain.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec1-quantifiers-6">In this context our atomic statements are statements about individuals, which leads to our next new idea. We need <dfn class="terminology">predicate</dfn> symbols to stand for statements that individuals have such-and-such property. We use capital letters for predicates to distinguish them from names for individuals. For example, we might write <span class="process-math">\(M(x)\)</span> to mean “<span class="process-math">\(x\)</span> is mortal”, so that <span class="process-math">\(M(\text{Socrates})\)</span> is true. Or we might write <span class="process-math">\(R(x)\)</span> to mean “<span class="process-math">\(x\)</span> has a square root”. Then <span class="process-math">\(R(2)\)</span> is true.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec1-quantifiers-7">Those two examples are what we call <dfn class="terminology">unary</dfn> predicates, meaning they are about a single individual. Predicates can also be <dfn class="terminology">binary</dfn>, about two individuals, or <dfn class="terminology">ternary</dfn> (about three individuals), or even more. For example, if you want to talk about a property like “<span class="process-math">\(x\)</span> is a square root of <span class="process-math">\(y\)</span>” this isn’t about just one individual but about how two relate. So you’d need a binary predicate like <span class="process-math">\(R(x,y)\)</span> and then <span class="process-math">\(R(2,4)\)</span> and <span class="process-math">\(R(-2,4)\)</span> would both be true. Or consider the relation “<span class="process-math">\(x\)</span> is the mother of <span class="process-math">\(y\)</span>”. This isn’t about just <span class="process-math">\(x\)</span> or just <span class="process-math">\(y\text{,}\)</span> but about both of them. You could write it as <span class="process-math">\(M(x,y)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec1-quantifiers-8">When using predicate symbols that stand for something you should include a translation key that explains their meanings.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec1-quantifiers-9">These two concepts are enough to make sense of sentences like “Socrates is mortal”. But we need one more thing to make sense of “all humans are mortal”. This isn’t a statement about a specified individual, but rather a general state about all individuals. When making general statements about the entire domain there’s multiple things you might want to say. Two of them stand out as particularly useful.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec1-quantifiers-10">The first is saying “all individuals have property <span class="process-math">\(P\)</span>”. This is a general statement about the domain as a whole, which doesn’t reduce to a statement about a single individual. The second is saying “some individuals, at least one, have property <span class="process-math">\(P\)</span>”. Again, this is a statement about the domain as a whole. We introduce <dfn class="terminology">quantifiers</dfn> to allow us to make these general statements.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec1-quantifiers-11">
+<div class="para">The <dfn class="terminology">universal quantifier</dfn> is how we say “all individuals have <span class="process-math">\(P\)</span>”. We write</div>
+<div class="displaymath process-math" id="sec1-quantifiers-11-3">
+\begin{equation*}
+\forall x\ P(x)
+\end{equation*}
+</div>
+<div class="para">to mean “every individual <span class="process-math">\(x\)</span> has property <span class="process-math">\(P\)</span>”. The variable <span class="process-math">\(x\)</span> is the <dfn class="terminology">bound variable</dfn> of the quantifier. Think of it as a pronoun; we introduce an ad-hoc way to refer to the unstated individuals we are looking at.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec1-quantifiers-12" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="example example-like knowl__content">
+<div class="para logical" id="sec1-quantifiers-12-1">
+<div class="para">We could express “all men are mortal” as</div>
+<div class="displaymath process-math" id="sec1-quantifiers-12-1-2">
+\begin{equation*}
+\forall x\ M(x)
+\end{equation*}
+</div>
+<div class="para">where our domain is humanity and <span class="process-math">\(M(x)\)</span> means “<span class="process-math">\(x\)</span> is mortal”.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-12-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 1.6.2"><a tabindex="-1" href="#sec1-quantifiers-12" title="Copy heading and permalink for Example 1.6.2" aria-label="Copy heading and permalink for Example 1.6.2">🔗</a></div>
+</article></details>
+<div class="para logical" id="sec1-quantifiers-13">
+<div class="para">The <dfn class="terminology">existential quantifier</dfn> is how we say “some individuals have <span class="process-math">\(P\)</span>”. We write</div>
+<div class="displaymath process-math" id="sec1-quantifiers-13-3">
+\begin{equation*}
+\exists x\ P(x)
+\end{equation*}
+</div>
+<div class="para">to mean “there exists at least one individual <span class="process-math">\(x\)</span> which has property <span class="process-math">\(P\)</span>”. Again, the bound variable <span class="process-math">\(x\)</span> functions as a way to refer to the unstated individuals we are looking at.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec1-quantifiers-14" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">1.6.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="example example-like knowl__content">
+<div class="para logical" id="sec1-quantifiers-14-1">
+<div class="para">You could formalize “<span class="process-math">\(2\)</span> has a square root” as a single predicate. But it’s more natural to use the existential quantifier. After all, this statement is saying there is some number which squared gives <span class="process-math">\(2\text{.}\)</span> With that in mind, let’s write <span class="process-math">\(S(x,y)\)</span> to mean <span class="process-math">\(x^2 = y\text{.}\)</span> Then we can express “<span class="process-math">\(2\)</span> has a square root” as</div>
+<div class="displaymath process-math" id="sec1-quantifiers-14-1-6">
+\begin{equation*}
+\exists x\ S(x,2)
+\end{equation*}
+</div>
+<div class="para">where our domain is the real numbers.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-14-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec1-quantifiers-14-2">
+<div class="para">Let’s consider another statement, namely “every positive number has a square root”. To express this we need a new predicate <span class="process-math">\(P(x)\)</span> meaning “<span class="process-math">\(x\)</span> is positive”. This is a statement we need two quantifiers to express. Namely, we can do it as</div>
+<div class="displaymath process-math" id="sec1-quantifiers-14-2-4">
+\begin{equation*}
+\forall y\ P(y) \impl \exists x\ S(x,y).
+\end{equation*}
+</div>
+<div class="para">You can cast this into English as: “for every number <span class="process-math">\(y\)</span> if <span class="process-math">\(y\)</span> is positive then there is a number <span class="process-math">\(x\)</span> which is the square root of <span class="process-math">\(y\text{.}\)</span>”</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-14-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec1-quantifiers-14-3">This second example illustrates why we want quantifiers to have bound variables attached. When you are making complicated statements about multiple objects it’s convenient to have different names so you can distinguish which you are talking about.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-14-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 1.6.3"><a tabindex="-1" href="#sec1-quantifiers-14" title="Copy heading and permalink for Example 1.6.3" aria-label="Copy heading and permalink for Example 1.6.3">🔗</a></div>
+</article></details>
+<div class="para" id="sec1-quantifiers-15">
+<em class="alert">Warning!</em> Two different variables can refer to the same individual. Take the square root example where <span class="process-math">\(S(x,y)\)</span> means <span class="process-math">\(x^2 = y\text{.}\)</span> For most numbers, their square root must be different. But there’s a couple numbers which are their own square root, namely <span class="process-math">\(0\)</span> and <span class="process-math">\(1\text{.}\)</span> If we plug in <span class="process-math">\(1\)</span> for both <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> then <span class="process-math">\(S(x,y)\)</span>—that is, <span class="process-math">\(1^2 = 1\)</span>—is a true statement.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec1-quantifiers-16">We can combine quantifiers with the connectives from propositional logic. These connectives can occur inside or outside of quantifiers. Carefully note that their exact position affects the meaning of a sentence. With that in mind, it’s never a bad idea to put in parentheses to make clear the order of things.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="exercises" id="sec1-quantifiers-17">
+<h2 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h2>
+<article class="exercise exercise-like" id="sec1-quantifiers-17-1"><h3 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="sec1-quantifiers-17-1-1-1">
+<div class="para">Use the following translation key.</div>
+<div class="displaymath process-math" id="sec1-quantifiers-17-1-1-1-1">
+\begin{align*}
+R(x) \amp = x \text{ is a rational number}\\
+0 \amp = \text{ the number 0}\\
+\pi \amp = \text{ the circle constant}
+\end{align*}
+</div>
+<div class="para">Use this translation key with the real numbers as domain to translate the following sentences into formal logic.</div>
+<ol class="lower-alpha lower-alpha-level-1" id="sec1-quantifiers-17-1-1-1-2">
+<li id="sec1-quantifiers-17-1-1-1-2-1">
+<div class="para" id="sec1-quantifiers-17-1-1-1-2-1-1">
+<span class="process-math">\(0\)</span> is rational but <span class="process-math">\(\pi\)</span> is irrational. (Note: irrational means not rational.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-17-1-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.6.1.a"><a tabindex="-1" href="#sec1-quantifiers-17-1-1-1-2-1" title="Copy heading and permalink for Item 1.6.1.a" aria-label="Copy heading and permalink for Item 1.6.1.a">🔗</a></div>
+</li>
+<li id="sec1-quantifiers-17-1-1-1-2-2">
+<div class="para" id="sec1-quantifiers-17-1-1-1-2-2-1">There is a number which is irrational.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-17-1-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.6.1.b"><a tabindex="-1" href="#sec1-quantifiers-17-1-1-1-2-2" title="Copy heading and permalink for Item 1.6.1.b" aria-label="Copy heading and permalink for Item 1.6.1.b">🔗</a></div>
+</li>
+<li id="sec1-quantifiers-17-1-1-1-2-3">
+<div class="para" id="sec1-quantifiers-17-1-1-1-2-3-1">There is a number which is irrational and there is a number which is rational.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-17-1-1-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.6.1.c"><a tabindex="-1" href="#sec1-quantifiers-17-1-1-1-2-3" title="Copy heading and permalink for Item 1.6.1.c" aria-label="Copy heading and permalink for Item 1.6.1.c">🔗</a></div>
+</li>
+<li id="sec1-quantifiers-17-1-1-1-2-4">
+<div class="para" id="sec1-quantifiers-17-1-1-1-2-4-1">Every number is either rational or irrational.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-17-1-1-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.6.1.d"><a tabindex="-1" href="#sec1-quantifiers-17-1-1-1-2-4" title="Copy heading and permalink for Item 1.6.1.d" aria-label="Copy heading and permalink for Item 1.6.1.d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-17-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.6.1"><a tabindex="-1" href="#sec1-quantifiers-17-1" title="Copy heading and permalink for Exercise 1.6.1" aria-label="Copy heading and permalink for Exercise 1.6.1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="sec1-quantifiers-17-2"><h3 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="sec1-quantifiers-17-2-1-1">If you’ve ever ridden a subway you may have heard the announcer say “all doors will not open” at a stop. What they actually mean is “not all doors will open”. Translate both sentences into formal logic. As part of this, state what your domain is and give your translation key. Explain why the two sentences have different meaning.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-17-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.6.2"><a tabindex="-1" href="#sec1-quantifiers-17-2" title="Copy heading and permalink for Exercise 1.6.2" aria-label="Copy heading and permalink for Exercise 1.6.2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="sec1-quantifiers-17-3"><h3 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="sec1-quantifiers-17-3-1-1">
+<div class="para">Use the following translation key.</div>
+<div class="displaymath process-math" id="sec1-quantifiers-17-3-1-1-1">
+\begin{align*}
+P(x) \amp = x \text{ is prime}\\
+M(x,y) \amp = x \text{ is a multiple of } y\\
+E(x,y) \amp = x \mand y \text{ are equal}\\
+2 \amp = \text{the number two}\\
+9 \amp = \text{the number nine}
+\end{align*}
+</div>
+<div class="para">Use the positive whole numbers as your domain. Translate the following sentences of formal logic into ordinary language. As much as possible, try to write ordinary sentences that don’t have variables in them.</div>
+<ol class="lower-alpha lower-alpha-level-1" id="sec1-quantifiers-17-3-1-1-2">
+<li id="sec1-quantifiers-17-3-1-1-2-1">
+<div class="para" id="sec1-quantifiers-17-3-1-1-2-1-1">
+<span class="process-math">\(\displaystyle P(2) \land \neg P(9)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-17-3-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.6.3.a"><a tabindex="-1" href="#sec1-quantifiers-17-3-1-1-2-1" title="Copy heading and permalink for Item 1.6.3.a" aria-label="Copy heading and permalink for Item 1.6.3.a">🔗</a></div>
+</li>
+<li id="sec1-quantifiers-17-3-1-1-2-2">
+<div class="para" id="sec1-quantifiers-17-3-1-1-2-2-1">
+<span class="process-math">\(\displaystyle \neg \forall x\ P(x)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-17-3-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.6.3.b"><a tabindex="-1" href="#sec1-quantifiers-17-3-1-1-2-2" title="Copy heading and permalink for Item 1.6.3.b" aria-label="Copy heading and permalink for Item 1.6.3.b">🔗</a></div>
+</li>
+<li id="sec1-quantifiers-17-3-1-1-2-3">
+<div class="para" id="sec1-quantifiers-17-3-1-1-2-3-1">
+<span class="process-math">\(\displaystyle \neg M(2,9) \land \neg M(9,2)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-17-3-1-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.6.3.c"><a tabindex="-1" href="#sec1-quantifiers-17-3-1-1-2-3" title="Copy heading and permalink for Item 1.6.3.c" aria-label="Copy heading and permalink for Item 1.6.3.c">🔗</a></div>
+</li>
+<li id="sec1-quantifiers-17-3-1-1-2-4">
+<div class="para" id="sec1-quantifiers-17-3-1-1-2-4-1">
+<span class="process-math">\(\displaystyle \forall x\ \exists y\ M(y,x)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-17-3-1-1-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.6.3.d"><a tabindex="-1" href="#sec1-quantifiers-17-3-1-1-2-4" title="Copy heading and permalink for Item 1.6.3.d" aria-label="Copy heading and permalink for Item 1.6.3.d">🔗</a></div>
+</li>
+<li id="sec1-quantifiers-17-3-1-1-2-5">
+<div class="para" id="sec1-quantifiers-17-3-1-1-2-5-1">
+<span class="process-math">\(\displaystyle \forall x\ \forall y\ [(M(x,y) \land M(y,x)) \impl E(x,y)]\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-17-3-1-1-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1.6.3.e"><a tabindex="-1" href="#sec1-quantifiers-17-3-1-1-2-5" title="Copy heading and permalink for Item 1.6.3.e" aria-label="Copy heading and permalink for Item 1.6.3.e">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-17-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.6.3"><a tabindex="-1" href="#sec1-quantifiers-17-3" title="Copy heading and permalink for Exercise 1.6.3" aria-label="Copy heading and permalink for Exercise 1.6.3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="sec1-quantifiers-17-4"><h3 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para logical" id="sec1-quantifiers-17-4-1-1">
+<div class="para">The order of quantifiers affects the meaning of a sentence. If you swap a universal and existential quantifier you get a different meaning. To illustrate, let <span class="process-math">\(M(x,y)\)</span> mean “<span class="process-math">\(x\)</span> is the mother of <span class="process-math">\(y\)</span>”. Translate the following two sentences into ordinary language and explain why they mean different things. Please in your translations don’t refer to variables; that’s not how ordinary people talk.</div>
+<div class="displaymath process-math" id="sec1-quantifiers-17-4-1-1-3">
+\begin{align*}
+\forall y\ \exists x\ \amp M(x,y) \\
+\exists x\ \forall y \amp M(x,y)
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec1-quantifiers-17-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1.6.4"><a tabindex="-1" href="#sec1-quantifiers-17-4" title="Copy heading and permalink for Exercise 1.6.4" aria-label="Copy heading and permalink for Exercise 1.6.4">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercises 1.6"><a tabindex="-1" href="#sec1-quantifiers-17" title="Copy heading and permalink for Exercises 1.6" aria-label="Copy heading and permalink for Exercises 1.6">🔗</a></div>
+</section><div class="autopermalink" aria-hidden="true" data-description="Section 1.6: Quantifiers"><a tabindex="-1" href="#sec1-quantifiers" title="Copy heading and permalink for Section 1.6: Quantifiers" aria-label="Copy heading and permalink for Section 1.6: Quantifiers">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec1-semantic.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec1-models.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

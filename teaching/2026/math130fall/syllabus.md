@@ -3,6 +3,7 @@ layout: page
 title: "Math 130 Syllabus (Fall 2026)"
 permalink: /teaching/2026/math130fall/syllabus/
 parentlink: /teaching/2026/math130fall/
+booklink: /books/reasoning
 ---
 
 
@@ -25,7 +26,7 @@ Class Information
 
 **Office Hours** TBA
 
-**Textbook** *Mathematics: The Science of Reasoning*, 0th edition, Julia K Williams.
+**Textbook** [*Mathematics: The Science of Reasoning*]({{ page.booklink }}), 0th edition, Julia K Williams.
 
 **Course Description** This course explores connections between mathematics and various aspects of modern life.
 Topics in this course include logic, unit analysis, percentages, personal finance, statistics, probability, linear
@@ -103,7 +104,7 @@ There will be a cumulative exam during the final exam period, covering material 
 Textbook Information
 ========
 
-The textbook for this class is *Mathematics: The Science of Reasoning*, 0th edition, Julia K Williams. It is freely available online. TODO: add link once I put that up. The textbook and class material go hand-in-hand. If you ever have to miss class you should read the corresponding section of the textbook.
+The textbook for this class is *Mathematics: The Science of Reasoning*, 0th edition, Julia K Williams. It is [freely available online]({{ page.booklink }}) ([pdf version]({{ page.booklink }}.pdf)). The textbook and class material go hand-in-hand. If you ever have to miss class you should read the corresponding section of the textbook.
 
 I will assign homework out of the textbook.
 
