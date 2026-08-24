@@ -2,6 +2,7 @@
 layout: page
 title: "Math 130: Quantitative Reasoning (Fall 2026)"
 permalink: /teaching/2026/math130fall/
+booklink: /books/reasoning
 ---
 
 * See [here]({{ page.url }}syllabus) for the syllabus and [here]({{ page.url }}013syllabus) for the 013 syllabus.
