@@ -10,12 +10,17 @@ permalink: /teaching/2026/math130fall/
 Announcements
 -------------
 
-*Nothing yet!*
+* (9/8) [Here]({{ page.url }}day1.pdf) are the slides from day 1 of unit 1.
 
 Homework
 --------
 
-*Nothing yet!*
+* Week 1 *Due Monday 9/15*: Section 1.1 Exercises 1–4.
+
+Textbook
+--------
+
+[Here.]({{ page.booklink }}) ([Pdf version]({{ page.booklink }}.pdf))
 
 Schedule
 --------
