@@ -10,12 +10,12 @@ permalink: /teaching/2026/math195fall/
 Announcements
 -------------
 
-(Nothing yet!)
+* (9/8) [Here]({{ page.url }}ws09.08.pdf) is today's review worksheet.
 
 Homework
 --------
 
-(Nothing yet!)
+* Week 1 *Due Monday 9/15*: All problems from the 9/8 worksheet; Section 3.2 #1, 3, 5, 6, 8, 10, 14, 16, 22, 54, 56, 60, 92.
 
 Schedule
 --------
