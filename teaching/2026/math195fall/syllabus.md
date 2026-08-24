@@ -21,9 +21,11 @@ Class Information
 
 **Primary out of class contact** course website or email me
 
-**Class Hours and Room** TODO
+**Class Hours and Room** Tuesdays/Thursdays 2:00–4:15, Bldg. 6 Room 121
 
-**Office Hours** TBA
+**Office Hours** In-person Tuesdays/Thursdays 9:00–10:00, virtual Mondays/Wednesdays 1:00–2:00
+
+**Office** Bldg. 6 Room 119
 
 **Textbook** *Precalculus* 2e, Openstax. ([Available freely online](https://openstax.org/details/books/precalculus-2e))
 
@@ -107,7 +109,7 @@ Each class period, not including exam days and a few other exceptions, will begi
 
 **Show your work!** Like with homework, think of showing your work as communicating your process so others can follow it. Also note that, by the rubric, if you don't show your work you cannot get partial credit.
 
-I will not accept make-ups for quizzes. I will drop your lowest two quiz scores from consideration for your final grade.
+If you miss a quiz you may take during the next in-person office hours, before the next class meeting. I will not offer any further make-up nor extension. Additionally, I will drop your lowest quiz score from consideration for your final grade.
 
 Exams
 =====

@@ -7,6 +7,8 @@ permalink: /teaching/
 Current Semester (Fall 2026)
 =======
 
+*Math 120: Mathematics for Elementary and Early Childhood Educators I* (On Moodle)
+
 [Math 130: Quantitative Reasoning + Math 013]({{ page.url }}2026/math130fall/)
 
 [Math 195: Precalculus with Trigonometry]({{ page.url }}2026/math195fall/)

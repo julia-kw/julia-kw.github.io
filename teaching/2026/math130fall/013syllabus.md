@@ -20,9 +20,11 @@ Class Information
 
 **Primary out of class contact** course website or email me
 
-**Class Hours and Room** TODO
+**Class Hours and Room** Tuesdays/Thursdays 10:00–10:50, Bldg. 6 Room 121
 
-**Office Hours** TBA
+**Office Hours** In-person Tuesdays/Thursdays 9:00–10:00, virtual Mondays/Wednesdays 1:00–2:00
+
+**Office** Bldg. 6 Room 119
 
 **Textbook** *None*
 
