@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Congruent triangles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="Explorations in Elementary Mathematics">
+<meta property="og:title" content="Explorations in Elementary Mathematics">
+<meta property="book:title" content="Explorations in Elementary Mathematics">
+<meta name="twitter:description" content="An exploration of the mathematical ideas behind elementary school mathematics, intended for those who plan to teach elementary school.">
+<meta property="og:description" content="An exploration of the mathematical ideas behind elementary school mathematics, intended for those who plan to teach elementary school.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.44"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.10';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="jwilliams-ece" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="ece-book.html"><span class="title">Explorations in Elementary Mathematics</span></a></div>
+<p class="byline">Julia Kameryn Williams</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="ch10.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch10.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec10-similar.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\drm}{\mathrm d} \newcommand{\Nbb}{\mathbb N} \newcommand{\Zbb}{\mathbb Z} \newcommand{\Qbb}{\mathbb Q} \newcommand{\Rbb}{\mathbb R} \newcommand{\Cbb}{\mathbb C} \newcommand\mand{\text{ and }} \newcommand\mor{\text{ or }} \newcommand\abs[1]{\lvert #1 \rvert} \newcommand\card[1]{\abs{#1}} \DeclareMathOperator\lcm{lcm}
+ \newcommand\simplecuboid[3]{
+ \fill[gray!80!white] (tpp cs:x=0,y=0,z=#3)
+   -- (tpp cs:x=0,y=#2,z=#3)
+   -- (tpp cs:x=#1,y=#2,z=#3)
+   -- (tpp cs:x=#1,y=0,z=#3) -- cycle;
+ \fill[gray]  (tpp cs:x=0,y=0,z=0)
+   -- (tpp cs:x=0,y=0,z=#3)
+   -- (tpp cs:x=0,y=#2,z=#3)
+   -- (tpp cs:x=0,y=#2,z=0) -- cycle;
+ \fill[gray!50!white] (tpp cs:x=0,y=0,z=0)
+   -- (tpp cs:x=0,y=0,z=#3)
+   -- (tpp cs:x=#1,y=0,z=#3)
+   -- (tpp cs:x=#1,y=0,z=0) -- cycle;}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth3 parts focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="prefaceX.html" class="internal"><span class="title">Preface: To the student</span></a></div></li>
+<li class="toc-item toc-part">
+<div class="toc-title-box"><a href="part1.html" class="internal"><span class="codenumber">I</span> <span class="title">Arithmetic</span></a></div>
+<ul id="ptx-toc-group-part1" class="structural toc-item-list">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch0.html" class="internal"><span class="codenumber">0</span> <span class="title">Critical Thinking</span></a></div>
+<ul id="ptx-toc-group-ch0" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec0-howto.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Reading mathematics</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec0-problems.html" class="internal"><span class="codenumber">0.2</span> <span class="title">Problem solving</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec0-exercises.html" class="internal"><span class="codenumber">0.3</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec0-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec0-exercises.html#sec0-exercises-2" class="internal"><span class="codenumber">0.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch1.html" class="internal"><span class="codenumber">1</span> <span class="title">The Natural Numbers</span></a></div>
+<ul id="ptx-toc-group-ch1" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-what-is.html" class="internal"><span class="codenumber">1.1</span> <span class="title">What even is counting?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-sets.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Sets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-counting.html" class="internal"><span class="codenumber">1.3</span> <span class="title">The meaning of the natural numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-operations.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Operations on sets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-numbers.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Number classes</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-arithmetic.html" class="internal"><span class="codenumber">1.6</span> <span class="title">The arithmetic of natural numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-div.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Division</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-ooo.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Order of Operations</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec1-exercises.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec1-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec1-exercises.html#sec1-exercises-2" class="internal"><span class="codenumber">1.9</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch2.html" class="internal"><span class="codenumber">2</span> <span class="title">Numeration</span></a></div>
+<ul id="ptx-toc-group-ch2" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-roman.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Roman Numerals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-hindu-arabic.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The Hindu–Arabic numeral system</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-algorithms.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Algorithms for adding, subtracting, and multiplying</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-bases.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Other bases</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec2-exercises.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec2-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec2-exercises.html#sec2-exercises-2" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch3.html" class="internal"><span class="codenumber">3</span> <span class="title">Number Theory</span></a></div>
+<ul id="ptx-toc-group-ch3" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec3-prime.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Prime numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec3-divisibility.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Divisibility Rules</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec3-gcd.html" class="internal"><span class="codenumber">3.3</span> <span class="title">GCD and LCM</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec3-exercises.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec3-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec3-exercises.html#sec3-exercises-2" class="internal"><span class="codenumber">3.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch4.html" class="internal"><span class="codenumber">4</span> <span class="title">The Integers</span></a></div>
+<ul id="ptx-toc-group-ch4" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-motivation.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Some motivation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-definition.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Defining the integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-geometry.html" class="internal"><span class="codenumber">4.3</span> <span class="title">The geometric meaning of integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-arithmetic.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Arithmetic with integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-clocks.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Clocks and modular arithmetic</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec4-exercises.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec4-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec4-exercises.html#sec4-exercises-2" class="internal"><span class="codenumber">4.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch5.html" class="internal"><span class="codenumber">5</span> <span class="title">The Rational Numbers</span></a></div>
+<ul id="ptx-toc-group-ch5" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-motivation.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Motivating the rational numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-definition.html" class="internal"><span class="codenumber">5.2</span> <span class="title">The definition of the rational numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-arithmetic.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Arithmetic of fractions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-percents.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Percents</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec5-exercises.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec5-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec5-exercises.html#sec5-exercises-2" class="internal"><span class="codenumber">5.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch6.html" class="internal"><span class="codenumber">6</span> <span class="title">The Real Numbers</span></a></div>
+<ul id="ptx-toc-group-ch6" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-decimal.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Writing fractions in decimal</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-arithmetic.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The arithmetic of Hindu–Arabic numerals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-approx.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Approximations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-definition.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Defining the real numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-characterizations.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Characterizing rational and irrational numbers</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec6-exercises.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec6-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec6-exercises.html#sec6-exercises-2" class="internal"><span class="codenumber">6.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-part contains-active">
+<div class="toc-title-box"><a href="part2.html" class="internal"><span class="codenumber">II</span> <span class="title">Geometry</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-part2">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch7.html" class="internal"><span class="codenumber">7</span> <span class="title">Shapes and solids</span></a></div>
+<ul id="ptx-toc-group-ch7" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec7-shapes.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Shapes on a plane</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec7-triangles.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Triangles and quadrilaterals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec7-polygons.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Polygons</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec7-solids.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Solids and three-dimensional space</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec7-exercises.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec7-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec7-exercises.html#sec7-exercises-2" class="internal"><span class="codenumber">7.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch8.html" class="internal"><span class="codenumber">8</span> <span class="title">Measurement.</span></a></div>
+<ul id="ptx-toc-group-ch8" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec8-length.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Length and perimeter</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec8-pythagorean.html" class="internal"><span class="codenumber">8.2</span> <span class="title">The Pythagorean theorem</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec8-area.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Area</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec8-volume.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Volume and surface area</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec8-exercises.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec8-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec8-exercises.html#sec8-exercises-2" class="internal"><span class="codenumber">8.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch9.html" class="internal"><span class="codenumber">9</span> <span class="title">Symmetry and transformations</span></a></div>
+<ul id="ptx-toc-group-ch9" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec9-rigid.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Rigid motions: translations and rotations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec9-symmetry.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Symmetry and reflection</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec9-tilings.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Tilings</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec9-exercises.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec9-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec9-exercises.html#sec9-exercises-2" class="internal"><span class="codenumber">9.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch10.html" class="internal"><span class="codenumber">10</span> <span class="title">Congruence and Similarity</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-ch10">
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec10-congruent.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Congruent triangles</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec10-similar.html" class="internal"><span class="codenumber">10.2</span> <span class="title">Similar triangles</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec10-shapes.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Other shapes</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec10-exercises.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec10-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec10-exercises.html#sec10-exercises-2" class="internal"><span class="codenumber">10.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-part">
+<div class="toc-title-box"><a href="part3.html" class="internal"><span class="codenumber">III</span> <span class="title">Statistics</span></a></div>
+<ul id="ptx-toc-group-part3" class="structural toc-item-list">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch11.html" class="internal"><span class="codenumber">11</span> <span class="title">Interpreting Data</span></a></div>
+<ul id="ptx-toc-group-ch11" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec11-data.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Representing data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec11-center.html" class="internal"><span class="codenumber">11.2</span> <span class="title">Measures of center</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec11-spread.html" class="internal"><span class="codenumber">11.3</span> <span class="title">Measures of spread</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec11-inference.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Statistical inference</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec11-exercises.html" class="internal"><span class="codenumber">11.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec11-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec11-exercises.html#sec11-exercises-2" class="internal"><span class="codenumber">11.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch12.html" class="internal"><span class="codenumber">12</span> <span class="title">Probability</span></a></div>
+<ul id="ptx-toc-group-ch12" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec12-frequentism.html" class="internal"><span class="codenumber">12.1</span> <span class="title">The meaning of probability: frequentism</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec12-counting.html" class="internal"><span class="codenumber">12.2</span> <span class="title">Counting and probability</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec12-perm.html" class="internal"><span class="codenumber">12.3</span> <span class="title">Permutations and combinations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec12-bayes.html" class="internal"><span class="codenumber">12.4</span> <span class="title">The meaning of probability: Bayesianism</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec12-exercises.html" class="internal"><span class="codenumber">12.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec12-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec12-exercises.html#sec12-exercises-2" class="internal"><span class="codenumber">12.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec10-congruent">
+<h1 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Congruent triangles</span>
+</h1>
+<div class="para" id="sec10-congruent-2">Most of this chapter will be focused on the question “when are two triangles the same?” One reason for this is that triangles are a top three most important shape (only the circle and the rectangle compete). Another is that triangles are in the sweet spot where there’s enough variety that you can make useful inferences but not so much complexity that everything is hopeless. Compare to other shapes. Some are too simple; for example, all circles look the same just zoomed in or out. Others are too wild; it’s hopeless to try to classify all possible species of heptakaidecagons (<span class="process-math">\(17\)</span>-gons). Triangles are just right.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec10-congruent-3">Before we talk about how to tell when two triangles are the same, we need to make clear what we mean by two things being the same. There’s more than one way to answer this question. Two answers are mathematically useful. We will look at them in this section and the next.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec10-congruent-4">One answer to this question is, if you move a shape around it’s the same shape. If you rotate it then it’s the same shape. If you reflect it then it’s still the same shape. As long as what you are doing isn’t stretching it or warping it or changing distances then it’s the same shape. This idea can be phrased in mathematician language.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="sec10-congruent-5"><h2 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Congruency.</span>
+</h2>
+<div class="para" id="sec10-congruent-5-2-1">Two triangles are <dfn class="terminology">congruent</dfn> if one shape can be sent to the other by a Euclidean transformation. That is, two triangles are congruent if doing some series of translations, reflections, and rotations makes the two shapes exactly overlap.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 10.1.1: Congruency"><a tabindex="-1" href="#sec10-congruent-5" title="Copy heading and permalink for Definition 10.1.1: Congruency" aria-label="Copy heading and permalink for Definition 10.1.1: Congruency">🔗</a></div>
+</article>
+<div class="para" id="sec10-congruent-6">Note that stretching and resizing is not allowed. As a consequence, two congruent shapes will always have the same area. This immediately gives us an easy criterion to check for when two shapes are different (meaning non-congruent).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="sec10-congruent-7"><h2 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2>
+<div class="para" id="sec10-congruent-7-1-1">If two shapes have different area then they are non-congruent.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 10.1.2"><a tabindex="-1" href="#sec10-congruent-7" title="Copy heading and permalink for Theorem 10.1.2" aria-label="Copy heading and permalink for Theorem 10.1.2">🔗</a></div>
+</article>
+<div class="para" id="sec10-congruent-8">Caution! Two shapes can have the same area but not be congruent.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec10-congruent-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="sec10-congruent-9-1-1">Come up with two non-congruent triangles which both have an area of <span class="process-math">\(1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec10-congruent-9-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="para" id="sec10-congruent-9-2-1">If you’re not sure how to tell that two triangles are congruent, peak ahead to the next theorem.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Hint 10.1.3.1"><a tabindex="-1" href="#sec10-congruent-9-2" title="Copy heading and permalink for Hint 10.1.3.1" aria-label="Copy heading and permalink for Hint 10.1.3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 10.1.3"><a tabindex="-1" href="#sec10-congruent-9" title="Copy heading and permalink for Checkpoint 10.1.3" aria-label="Copy heading and permalink for Checkpoint 10.1.3">🔗</a></div>
+</article></details>
+<div class="para" id="sec10-congruent-10">The following is a useful way to think about what congruence means for triangles.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="sec10-congruent-11"><h2 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2>
+<div class="para logical" id="sec10-congruent-11-1-1">
+<div class="para">Suppose two triangles are congruent. Then they have the same angles and side lengths. That is, there is a way to label their angles A,B,C and <span class="process-math">\(A',B',C'\)</span> and opposite sides <span class="process-math">\(a,b,c\)</span> and <span class="process-math">\(a',b',c'\)</span> so that:</div>
+<ul class="disc" id="sec10-congruent-11-1-1-5">
+<li id="sec10-congruent-11-1-1-5-1">
+<div class="para" id="sec10-congruent-11-1-1-5-1-1">The corresponding angles are the same: <span class="process-math">\(A = A'\text{,}\)</span> <span class="process-math">\(B = B'\text{,}\)</span> and <span class="process-math">\(C = C'\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-11-1-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec10-congruent-11-1-1-5-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec10-congruent-11-1-1-5-2">
+<div class="para" id="sec10-congruent-11-1-1-5-2-1">The corresponding sides have the same length: <span class="process-math">\(a = a'\text{,}\)</span> <span class="process-math">\(b = b'\text{,}\)</span> and <span class="process-math">\(c = c'\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-11-1-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec10-congruent-11-1-1-5-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">The converse is also true. If two triangles have the same angles and sides then the two triangles are congruent.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;">
+<img src="generated/latex-image/sec10-congruent-11-1-2.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="sec10-congruent-11-1-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec10-congruent-11-1-2-description">
+<div class="para" id="sec10-congruent-11-1-2-1-1">Two congruent isosceles right triangles. The three corresponding sides are labeled <span class="process-math">\(a,b,c\)</span> and <span class="process-math">\(a',b',c'\text{.}\)</span> Note that in this case there is more than one way the label could be done; these are isoceles triangles, so we could swap labels on two equal sides and still have everything line up between the two triangles.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-11-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 10.1.4"><a tabindex="-1" href="#sec10-congruent-11" title="Copy heading and permalink for Theorem 10.1.4" aria-label="Copy heading and permalink for Theorem 10.1.4">🔗</a></div>
+</article>
+<details id="sec10-congruent-11-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h2 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2></summary>
+<article class="hiddenproof knowl__content">
+<div class="para" id="sec10-congruent-11-2-1">For the first statement, translations, rotations, and reflections don’t change angles nor distances. For the converse, if two triangles have the same angles and sides then you can make them exactly overlap. Namely, translate, reflect, and/or rotate as necessary to make the angles <span class="process-math">\(A\)</span> and <span class="process-math">\(A'\)</span> exactly overlap, with <span class="process-math">\(B\)</span> and <span class="process-math">\(B'\)</span> both on, say, the left side of the angle. Because the side lengths are the same the angles <span class="process-math">\(B\)</span> and <span class="process-math">\(B'\)</span> and <span class="process-math">\(C\)</span> and <span class="process-math">\(C'\)</span> will exactly overlap. So the three vertices are in the locations, so the triangles exactly overlap.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Proof 10.1.4.1"><a tabindex="-1" href="#sec10-congruent-11-2" title="Copy heading and permalink for Proof 10.1.4.1" aria-label="Copy heading and permalink for Proof 10.1.4.1">🔗</a></div>
+</article></details>
+<div class="para" id="sec10-congruent-12">One thing this theorem says if that you know all six data about a triangle—the three side lengths and the three angles—then that data uniquely specifies the triangle. Any triangle with the same data must be the same (congruent).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec10-congruent-13">Surely you don’t need all six data. If you know two angles, then the third is determined. This is because the three angles must add up to <span class="process-math">\(180^\circ\text{.}\)</span> For example, if you know a triangle has angles of measure <span class="process-math">\(90^\circ\)</span> and <span class="process-math">\(30^\circ\)</span> then you can calculate the remaining angle is <span class="process-math">\(180^\circ - 90^\circ - 30^\circ = 60^\circ\text{.}\)</span> So five data is enough to uniquely specify a triangle.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec10-congruent-14">Can you go lower? How few of these six data are needed to identify a triangle?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec10-congruent-15">It turns that, with a couple exceptions, any specification of three data is enough to identify a triangle up to congruence.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec10-congruent-16">It’s helpful to have a notation for talking about data to specify a triangle.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="sec10-congruent-17"><h2 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2>
+<div class="para" id="sec10-congruent-17-1-1">We can specify a triangle by (most) three letter sequences of ‘A’s and ‘S’s. ‘A’ stands for angle and ‘S’ stands for side. This specification starts at an angle or a side, depending on the first letter, and proceeds either counterclockwise or clockwise. As you go around the second then the third letter specify either the next angle or side length.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-17-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="sec10-congruent-17-1-2">For example, AAS specifies that you know an angle, then the next angle, then side, all going in the same direction from the start. Or SSS specifies that you know one side, then the next, then the next (that is, you know all three sides).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-17-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 10.1.5"><a tabindex="-1" href="#sec10-congruent-17" title="Copy heading and permalink for Definition 10.1.5" aria-label="Copy heading and permalink for Definition 10.1.5">🔗</a></div>
+</article>
+<div class="para" id="sec10-congruent-18">Because order doesn’t matter—you can go either counterclockwise or clockwise—if you reverse the order of the letters you get the same specification. This only applies to two cases: AAS is the same specification as SAA and ASS is the same specification as SSA. All other specifications are palindromes, so reversing the order gives the same thing. Knowing this redundancy, there are six different specifications.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="sec10-congruent-19"><h2 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Specifying triangles up to congruence.</span>
+</h2>
+<div class="para logical" id="sec10-congruent-19-2-1">
+<div class="para">The following data each specify a triangle up to congruence.</div>
+<ul class="disc" id="sec10-congruent-19-2-1-1">
+<li id="sec10-congruent-19-2-1-1-1">
+<div class="para" id="sec10-congruent-19-2-1-1-1-1">SSS<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-19-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec10-congruent-19-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec10-congruent-19-2-1-1-2">
+<div class="para" id="sec10-congruent-19-2-1-1-2-1">SAS<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-19-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec10-congruent-19-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec10-congruent-19-2-1-1-3">
+<div class="para" id="sec10-congruent-19-2-1-1-3-1">SAA<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-19-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec10-congruent-19-2-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec10-congruent-19-2-1-1-4">
+<div class="para" id="sec10-congruent-19-2-1-1-4-1">ASA<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-19-2-1-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec10-congruent-19-2-1-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">The following data do not specify a triangle up to congruence.</div>
+<ul class="disc" id="sec10-congruent-19-2-1-2">
+<li id="sec10-congruent-19-2-1-2-1">
+<div class="para" id="sec10-congruent-19-2-1-2-1-1">AAA<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-19-2-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec10-congruent-19-2-1-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec10-congruent-19-2-1-2-2">
+<div class="para" id="sec10-congruent-19-2-1-2-2-1">ASS<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-19-2-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec10-congruent-19-2-1-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-19-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 10.1.6: Specifying triangles up to congruence"><a tabindex="-1" href="#sec10-congruent-19" title="Copy heading and permalink for Theorem 10.1.6: Specifying triangles up to congruence" aria-label="Copy heading and permalink for Theorem 10.1.6: Specifying triangles up to congruence">🔗</a></div>
+</article>
+<details id="sec10-congruent-19-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h2 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2></summary>
+<article class="hiddenproof knowl__content">
+<div class="para" id="sec10-congruent-19-3-1">Most of these can be explained by drawing pictures. I will give you two positive cases and the negative cases, with the remanining two positive cases left as homework.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-19-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec10-congruent-19-3-2">Let’s start with the easiest. AAA doesn’t specify a triangle up to congruence because you can scale a triangle to be larger or smaller and not change the angles.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-19-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec10-congruent-19-3-3">Now let’s do a positive instance, namely SAS. The data that SAS gives is two fixed lengths of line with a fixed angle between them. If you draw this, it is immediate that there’s only one possible triangle they could form, namely the one you get by connecting the opposite ends of the line segments.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-19-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;">
+<img src="generated/latex-image/sec10-congruent-19-3-4.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="sec10-congruent-19-3-4-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec10-congruent-19-3-4-description">
+<div class="para" id="sec10-congruent-19-3-4-1-1">SAS data specifying a triangle up to congruence. An explained in the preceeding paragraph, two fixed lines with a fixed angle are drawn. There’s only one possible third side, which is represented as a dashed line between the opposite endpoints of the two fixed lines.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-19-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="para" id="sec10-congruent-19-3-5">Next let’s do SSS. You can think of what this tells you this way. You know the length of one side, which you may as well fix as the reference point for the other two sides. You don’t know the angles for the other two sides, but you know their lengths. So you can draw circles at the vertices of your fixed side representing where those other sides can point. It’s a standard fact about plane geometry that two circles intersect in at most two points. Those two points are the possible third vertex for the triangle. That may look like there’s two possible triangles. But whichever you pick, they are reflections of each other. So they are the same (meaning congruent).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-19-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;">
+<img src="generated/latex-image/sec10-congruent-19-3-6.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="sec10-congruent-19-3-6-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec10-congruent-19-3-6-description">
+<div class="para" id="sec10-congruent-19-3-6-1-1">SSS data specifying a triangle up to congruence. One side is fixed in space. The possible endpoints for the other two are represented by circles centered at each endpoint of the fixed side. Radii are drawn to meet at one of the two points the circle intersect, above the fixed line. The second point of intersection is the mirror of this one below the circle, so if we had instead connected to there we’d get a congruent triangle.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-19-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="para" id="sec10-congruent-19-3-7">The remaining two positive cases—ASA and AAS—are left as homework for you. They can be handled by similar geometric reasoning. Think about what the data tells you and draw a corresponding picture.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-19-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec10-congruent-19-3-8">To close this out, let’s do the negative case of ASS. I saved it for last because it’s the trickiest. We know an angle and in succession two side lengths coming out from it. But we are missing one side length attached to that angle. Fix the angle as our reference point for everything else. We can represent the possible missing side lengths as a ray coming out from the angle. The side we know adjacent to the angle has no choice on where to go; it’s a known angle from our reference point and a known distance. The second side, however, we don’t know where to place. We know its length but not which direction it’s going. It must, however, connect to the ray representing the possible lengths for the third side. But we run into a problem here, as there can be more than one place it hits that ray.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-19-3-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;">
+<img src="generated/latex-image/sec10-congruent-19-3-9.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="sec10-congruent-19-3-9-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec10-congruent-19-3-9-description">
+<div class="para" id="sec10-congruent-19-3-9-1-1">ASS data that admits two possible triangles. As described in the preceeding paragraph, the direction of the unknown side is shown as a dashed ray going out from the fixed angle. The side adjacent to the fixed angle has its location entirely fixed. The next side is swinging from it, as represented by a circle showing its possbile locations. Two of those locations intersect the dashed ray, with the corresponding possible sides shown in red and blue.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-19-3-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="para" id="sec10-congruent-19-3-10">The two possible triangles are clearly not congruent; the angles are different. As such, this data did not uniquely determine a triangle.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-19-3-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec10-congruent-19-3-11">Except, sometimes it does. If the known angle is right or obtuse, then there is only one possible place to attach to the third side. So sometimes ASS does uniquely specify a triangle.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-19-3-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;">
+<img src="generated/latex-image/sec10-congruent-19-3-12.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="sec10-congruent-19-3-12-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec10-congruent-19-3-12-description">
+<div class="para" id="sec10-congruent-19-3-12-1-1">ASS data for a right triangle. Very similar to the previous picture. But unlike it there’s only one place the circle for possible second side locations intersects the ray for possible third side locations. The corresponding location of the second side is drawn there in red.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-19-3-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="para" id="sec10-congruent-19-3-13">Note that the special case in this picture is what you are facing if you know one leg and the hypotenuse of a right triangle. In this case you can use the Pythagorean theorem to find the length of the remaining leg, and this picture confirms that there is a unique thing you are solving for.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-19-3-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Proof 10.1.6.1"><a tabindex="-1" href="#sec10-congruent-19-3" title="Copy heading and permalink for Proof 10.1.6.1" aria-label="Copy heading and permalink for Proof 10.1.6.1">🔗</a></div>
+</article></details>
+<div class="para" id="sec10-congruent-20">That one of the negative cases is ASS lends itself to mnemonics. This is especially when teaching children, who almost always will giggle at their teaching saying that word. Here’s one of many possible mnemonics to remember which cases are negative: “AAA video games are ASS.”<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec10-congruent-21">It should be noted that in the SSS case, some triples of side lengths don’t specify any triangle. Namely, the side lengths of a triangle must obey what’s known as the <dfn class="terminology">triangle inequality</dfn>: any side length must be less than the sum of the other two. (Think of it this way. You can take a direct route—one side of the triangle—or a detour—go along the other two lines. The triangle inequality says you can’t get a shorter route by taking a detour.) So if one side is too much larger than the other two then you aren’t specifying any triangle at all. For example, the side lengths <span class="process-math">\(2, 3, 12\)</span> don’t specify a triangle at all, because <span class="process-math">\(12\)</span> is too large to fit the other two sides on.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec10-congruent-22">Unlike the ASS case, however, the SSS case will never admit more than one possible triangle. It’s either a unique triangle, or else it doesn’t specify any triangle at all.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;">
+<img src="generated/latex-image/sec10-congruent-23.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="sec10-congruent-23-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec10-congruent-23-description">
+<div class="para" id="sec10-congruent-23-1-1">A failure of an SSS triple of data to specify a triangle. The long horizontal side labeled with a length of <span class="process-math">\(12\)</span> is simply too big for the arms of length <span class="process-math">\(2\)</span> and <span class="process-math">\(3\)</span> to touch. You can see by the dashed circles representing their possible endpoints that no angle will do to get them close enough. They are doomed to be forever apart, like star-crossed lovers.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-23-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="para" id="sec10-congruent-24">You should be familiar with using partial information about a triangle to know you can get the rest of the data from the Pythagorean theorem. If you know you’re dealing with a right triangle—that is, you know one angle—and you know two sides, you can calculate the remaining side. Indeed, using the <dfn class="terminology">law of sines</dfn> and <dfn class="terminology">law of cosines</dfn> from trigonemetry, you can do a similar process with non-right triangles. This process requires, of course, that you know trigonometry, which is a more difficult area of mathematics than what we are looking at. So we won’t talk about how you actually calculate the missing info. Suffice it to say, the four triples of data SSS, SAS, ASA, and SAA are enough to both uniquely specify a triangle and allow you to calculate the missing information. It’s not just a theoretical fact, it’s also a practical one.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec10-congruent-25">In general in mathematics, the questions of “does an answer exist?” and “if so, can you calculate it?” are not the same. Often answering the second question is much harder than answering the first and requires more advanced techniques. This is one reason mathematics can be frustrating; it is easy to run into questions without having the tools to answer them.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec10-congruent-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Section 10.1: Congruent triangles"><a tabindex="-1" href="#sec10-congruent" title="Copy heading and permalink for Section 10.1: Congruent triangles" aria-label="Copy heading and permalink for Section 10.1: Congruent triangles">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="ch10.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec10-similar.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

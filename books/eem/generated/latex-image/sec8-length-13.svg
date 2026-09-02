@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="174" height="174" viewBox="0 0 174 174">
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(1.00002,0,0,-1,87.33537,87.038)" d="M85.04042 0C85.04042 46.96713 46.96713 85.04042 0 85.04042-46.96713 85.04042-85.04042 46.96713-85.04042 0-85.04042-46.96713-46.96713-85.04042 0-85.04042 46.96713-85.04042 85.04042-46.96713 85.04042 0"/>
+</clipPath>
+<g id="pattern_tile_2">
+<path transform="matrix(1,0,0,-1,-153,736)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M3.08846 0 0 3.08846M0 0 3.08846 3.08846"/>
+</g>
+<pattern id="pattern_2" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse" x="0" y="0" width="2.98883" height="2.98883">
+<clipPath id="clip_3">
+<path d="M -.99628 -.99628 L 3.9851 -.99628 L 3.9851 3.9851 L -.99628 3.9851 Z"/>
+</clipPath>
+<g clip-path="url(#clip_3)">
+<g transform="matrix(1,0,0,-1,153,736)">
+<use x="0" y="0" xlink:href="#pattern_tile_2"/>
+<use x="0" y="-2.98883" xlink:href="#pattern_tile_2"/>
+<use x="-2.98883" y="0" xlink:href="#pattern_tile_2"/>
+<use x="-2.98883" y="-2.98883" xlink:href="#pattern_tile_2"/>
+</g>
+</g>
+</pattern>
+</defs>
+<g clip-path="url(#clip_1)">
+<rect transform="matrix(1,0,0,-1,-153,736)" fill="url(#pattern_2)" x="147.323" y="555.9513" width="186.02478" height="186.02136"/>
+</g>
+<path transform="matrix(1.00002,0,0,-1,87.33537,87.038)" stroke-width=".79701" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M85.04042 0C85.04042 46.96713 46.96713 85.04042 0 85.04042-46.96713 85.04042-85.04042 46.96713-85.04042 0-85.04042-46.96713-46.96713-85.04042 0-85.04042 46.96713-85.04042 85.04042-46.96713 85.04042 0"/>
+<path transform="matrix(1.00002,0,0,-1,87.33537,87.038)" d="M60.0951 60.0951V-60.0951H-60.0951V60.0951Z" fill="#ffffff"/>
+<path transform="matrix(1.00002,0,0,-1,87.33537,87.038)" stroke-width=".79701" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M60.0951 60.0951V-60.0951H-60.0951V60.0951Z"/>
+<path transform="matrix(1.00002,0,0,-1,87.33537,87.038)" stroke-width=".79701" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M85.04042 85.04042V-85.04042H-85.04042V85.04042Z"/>
+</svg>

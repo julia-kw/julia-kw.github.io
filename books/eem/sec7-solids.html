@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Solids and three-dimensional space</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="Explorations in Elementary Mathematics">
+<meta property="og:title" content="Explorations in Elementary Mathematics">
+<meta property="book:title" content="Explorations in Elementary Mathematics">
+<meta name="twitter:description" content="An exploration of the mathematical ideas behind elementary school mathematics, intended for those who plan to teach elementary school.">
+<meta property="og:description" content="An exploration of the mathematical ideas behind elementary school mathematics, intended for those who plan to teach elementary school.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.44"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.10';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="jwilliams-ece" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="ece-book.html"><span class="title">Explorations in Elementary Mathematics</span></a></div>
+<p class="byline">Julia Kameryn Williams</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="sec7-polygons.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch7.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec7-exercises.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\drm}{\mathrm d} \newcommand{\Nbb}{\mathbb N} \newcommand{\Zbb}{\mathbb Z} \newcommand{\Qbb}{\mathbb Q} \newcommand{\Rbb}{\mathbb R} \newcommand{\Cbb}{\mathbb C} \newcommand\mand{\text{ and }} \newcommand\mor{\text{ or }} \newcommand\abs[1]{\lvert #1 \rvert} \newcommand\card[1]{\abs{#1}} \DeclareMathOperator\lcm{lcm}
+ \newcommand\simplecuboid[3]{
+ \fill[gray!80!white] (tpp cs:x=0,y=0,z=#3)
+   -- (tpp cs:x=0,y=#2,z=#3)
+   -- (tpp cs:x=#1,y=#2,z=#3)
+   -- (tpp cs:x=#1,y=0,z=#3) -- cycle;
+ \fill[gray]  (tpp cs:x=0,y=0,z=0)
+   -- (tpp cs:x=0,y=0,z=#3)
+   -- (tpp cs:x=0,y=#2,z=#3)
+   -- (tpp cs:x=0,y=#2,z=0) -- cycle;
+ \fill[gray!50!white] (tpp cs:x=0,y=0,z=0)
+   -- (tpp cs:x=0,y=0,z=#3)
+   -- (tpp cs:x=#1,y=0,z=#3)
+   -- (tpp cs:x=#1,y=0,z=0) -- cycle;}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth3 parts focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="prefaceX.html" class="internal"><span class="title">Preface: To the student</span></a></div></li>
+<li class="toc-item toc-part">
+<div class="toc-title-box"><a href="part1.html" class="internal"><span class="codenumber">I</span> <span class="title">Arithmetic</span></a></div>
+<ul id="ptx-toc-group-part1" class="structural toc-item-list">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch0.html" class="internal"><span class="codenumber">0</span> <span class="title">Critical Thinking</span></a></div>
+<ul id="ptx-toc-group-ch0" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec0-howto.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Reading mathematics</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec0-problems.html" class="internal"><span class="codenumber">0.2</span> <span class="title">Problem solving</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec0-exercises.html" class="internal"><span class="codenumber">0.3</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec0-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec0-exercises.html#sec0-exercises-2" class="internal"><span class="codenumber">0.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch1.html" class="internal"><span class="codenumber">1</span> <span class="title">The Natural Numbers</span></a></div>
+<ul id="ptx-toc-group-ch1" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-what-is.html" class="internal"><span class="codenumber">1.1</span> <span class="title">What even is counting?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-sets.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Sets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-counting.html" class="internal"><span class="codenumber">1.3</span> <span class="title">The meaning of the natural numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-operations.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Operations on sets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-numbers.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Number classes</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-arithmetic.html" class="internal"><span class="codenumber">1.6</span> <span class="title">The arithmetic of natural numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-div.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Division</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-ooo.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Order of Operations</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec1-exercises.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec1-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec1-exercises.html#sec1-exercises-2" class="internal"><span class="codenumber">1.9</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch2.html" class="internal"><span class="codenumber">2</span> <span class="title">Numeration</span></a></div>
+<ul id="ptx-toc-group-ch2" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-roman.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Roman Numerals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-hindu-arabic.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The Hindu–Arabic numeral system</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-algorithms.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Algorithms for adding, subtracting, and multiplying</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-bases.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Other bases</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec2-exercises.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec2-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec2-exercises.html#sec2-exercises-2" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch3.html" class="internal"><span class="codenumber">3</span> <span class="title">Number Theory</span></a></div>
+<ul id="ptx-toc-group-ch3" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec3-prime.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Prime numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec3-divisibility.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Divisibility Rules</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec3-gcd.html" class="internal"><span class="codenumber">3.3</span> <span class="title">GCD and LCM</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec3-exercises.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec3-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec3-exercises.html#sec3-exercises-2" class="internal"><span class="codenumber">3.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch4.html" class="internal"><span class="codenumber">4</span> <span class="title">The Integers</span></a></div>
+<ul id="ptx-toc-group-ch4" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-motivation.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Some motivation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-definition.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Defining the integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-geometry.html" class="internal"><span class="codenumber">4.3</span> <span class="title">The geometric meaning of integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-arithmetic.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Arithmetic with integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-clocks.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Clocks and modular arithmetic</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec4-exercises.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec4-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec4-exercises.html#sec4-exercises-2" class="internal"><span class="codenumber">4.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch5.html" class="internal"><span class="codenumber">5</span> <span class="title">The Rational Numbers</span></a></div>
+<ul id="ptx-toc-group-ch5" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-motivation.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Motivating the rational numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-definition.html" class="internal"><span class="codenumber">5.2</span> <span class="title">The definition of the rational numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-arithmetic.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Arithmetic of fractions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-percents.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Percents</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec5-exercises.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec5-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec5-exercises.html#sec5-exercises-2" class="internal"><span class="codenumber">5.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch6.html" class="internal"><span class="codenumber">6</span> <span class="title">The Real Numbers</span></a></div>
+<ul id="ptx-toc-group-ch6" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-decimal.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Writing fractions in decimal</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-arithmetic.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The arithmetic of Hindu–Arabic numerals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-approx.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Approximations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-definition.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Defining the real numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-characterizations.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Characterizing rational and irrational numbers</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec6-exercises.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec6-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec6-exercises.html#sec6-exercises-2" class="internal"><span class="codenumber">6.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-part contains-active">
+<div class="toc-title-box"><a href="part2.html" class="internal"><span class="codenumber">II</span> <span class="title">Geometry</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-part2">
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch7.html" class="internal"><span class="codenumber">7</span> <span class="title">Shapes and solids</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-ch7">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec7-shapes.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Shapes on a plane</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec7-triangles.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Triangles and quadrilaterals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec7-polygons.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Polygons</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec7-solids.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Solids and three-dimensional space</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec7-exercises.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec7-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec7-exercises.html#sec7-exercises-2" class="internal"><span class="codenumber">7.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch8.html" class="internal"><span class="codenumber">8</span> <span class="title">Measurement.</span></a></div>
+<ul id="ptx-toc-group-ch8" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec8-length.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Length and perimeter</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec8-pythagorean.html" class="internal"><span class="codenumber">8.2</span> <span class="title">The Pythagorean theorem</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec8-area.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Area</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec8-volume.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Volume and surface area</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec8-exercises.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec8-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec8-exercises.html#sec8-exercises-2" class="internal"><span class="codenumber">8.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch9.html" class="internal"><span class="codenumber">9</span> <span class="title">Symmetry and transformations</span></a></div>
+<ul id="ptx-toc-group-ch9" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec9-rigid.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Rigid motions: translations and rotations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec9-symmetry.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Symmetry and reflection</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec9-tilings.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Tilings</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec9-exercises.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec9-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec9-exercises.html#sec9-exercises-2" class="internal"><span class="codenumber">9.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch10.html" class="internal"><span class="codenumber">10</span> <span class="title">Congruence and Similarity</span></a></div>
+<ul id="ptx-toc-group-ch10" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec10-congruent.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Congruent triangles</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec10-similar.html" class="internal"><span class="codenumber">10.2</span> <span class="title">Similar triangles</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec10-shapes.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Other shapes</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec10-exercises.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec10-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec10-exercises.html#sec10-exercises-2" class="internal"><span class="codenumber">10.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-part">
+<div class="toc-title-box"><a href="part3.html" class="internal"><span class="codenumber">III</span> <span class="title">Statistics</span></a></div>
+<ul id="ptx-toc-group-part3" class="structural toc-item-list">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch11.html" class="internal"><span class="codenumber">11</span> <span class="title">Interpreting Data</span></a></div>
+<ul id="ptx-toc-group-ch11" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec11-data.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Representing data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec11-center.html" class="internal"><span class="codenumber">11.2</span> <span class="title">Measures of center</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec11-spread.html" class="internal"><span class="codenumber">11.3</span> <span class="title">Measures of spread</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec11-inference.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Statistical inference</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec11-exercises.html" class="internal"><span class="codenumber">11.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec11-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec11-exercises.html#sec11-exercises-2" class="internal"><span class="codenumber">11.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch12.html" class="internal"><span class="codenumber">12</span> <span class="title">Probability</span></a></div>
+<ul id="ptx-toc-group-ch12" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec12-frequentism.html" class="internal"><span class="codenumber">12.1</span> <span class="title">The meaning of probability: frequentism</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec12-counting.html" class="internal"><span class="codenumber">12.2</span> <span class="title">Counting and probability</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec12-perm.html" class="internal"><span class="codenumber">12.3</span> <span class="title">Permutations and combinations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec12-bayes.html" class="internal"><span class="codenumber">12.4</span> <span class="title">The meaning of probability: Bayesianism</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec12-exercises.html" class="internal"><span class="codenumber">12.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec12-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec12-exercises.html#sec12-exercises-2" class="internal"><span class="codenumber">12.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec7-solids">
+<h1 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solids and three-dimensional space</span>
+</h1>
+<div class="para" id="sec7-solids-2">In this section we make a move many a flagging movie series has resorted to in desperation: we go to space. Specifically, we stop talking about shapes in the two-dimensional plane and start talking about shapes in three-dimensional space. We call them <dfn class="terminology">solids</dfn>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec7-solids-3">An example of a solid is a <dfn class="terminology">sphere</dfn>. This is the same idea as a circle, but one dimension up. Remember that a circle’s boundary consists of all the points in the plane with the same distance from its center. Similarly, a sphere’s boundary consists of all the points in space the same distance from its center. As with circles, we call this distance the <dfn class="terminology">radius</dfn>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;">
+<img src="generated/latex-image/sec7-solids-4.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="sec7-solids-4-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec7-solids-4-description">
+<div class="para" id="sec7-solids-4-1-1">A sphere. More honestly, we are looking at a two-dimensional representation and not really a three dimensional object. It looks like a circle, except some shading was done to give the illusion of three dimensionality.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="para" id="sec7-solids-5">Imagine living on the surface of a sphere, for example as many humans on earth do. Locally, the surface looks like a plane. You can move independently in two different directions. The surface eventually curves around, but on the local level it looks flat.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec7-solids-6">This is a general fact about solids. Their boundaries are two-dimensional <dfn class="terminology">surfaces</dfn>, one dimension lower than their interior. Compare to how shapes in the plane have a two-dimensional interior and a one-dimensional boundary.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec7-solids-7">Another example of a solid is a <dfn class="terminology">cube</dfn>. This is like like a square but in three dimensions. The surface of a cube consists of multiple polygonal <dfn class="terminology">faces</dfn>, namely six squares of equal side length positioned at right angles to each other. Two squares meet at an <dfn class="terminology">edge</dfn> and the <dfn class="terminology">vertices</dfn> are the corners where edges meet. In this case, three edges with the three faces between them meet at a vertex.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;">
+<img src="generated/latex-image/sec7-solids-8.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="sec7-solids-8-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec7-solids-8-description">
+<div class="para" id="sec7-solids-8-1-1">A cube. More accurately, a two dimensional representation of a cube. It takes the form of four parallelograms joined at a common vertex. One represents the top of the cube and the other two represent two of the the vertical sides of the cube. The remaining two vertical sides and the bottom side are not visible, as they are blocked by the three sides we can see. The sides are colored different shades of gray to suggest a light source and help sell the illusion that this is a three dimensional object.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<details id="sec7-solids-9" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.4.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="sec7-solids-9-1-1">You already know a cube has six faces. Count how many edges and vertices it has.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec7-solids-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="sec7-solids-9-2-1">Twelve edges and eight vertices.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.4.1.1"><a tabindex="-1" href="#sec7-solids-9-2" title="Copy heading and permalink for Solution 7.4.1.1" aria-label="Copy heading and permalink for Solution 7.4.1.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 7.4.1"><a tabindex="-1" href="#sec7-solids-9" title="Copy heading and permalink for Checkpoint 7.4.1" aria-label="Copy heading and permalink for Checkpoint 7.4.1">🔗</a></div>
+</article></details>
+<div class="para" id="sec7-solids-10">Those are the two most important solids. Before we look at more let’s mention an important bifurcation of solids. A <dfn class="terminology">polyhedron</dfn> (plural polyhedra) is a solid whose faces are all polygons. That is, a polyhedron consists only of flat faces with straight edges between them. They are the higher dimensional analogue of polygons. A cube is an example of a polyhedron. On the other hand, a sphere is not a polyhedron.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec7-solids-11">Both spheres and cubes, however, are <dfn class="terminology">convex</dfn>. The easiest way to say this in three dimensions is, if you take two points in their interior and draw a line between them the line is entirely in the interior. It doesn’t pass outside. Consider on the other hand a bean-shaped solid whose curve leaves an indent through which such a line could pass. This solid would not be convex.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec7-solids-12">Some solids you can think of as being like three dimensional versions of two dimensional shapes you know and love. For example, in two dimensions a rectangle is like a square but you don’t require all sides to be the same length. You can similarly relax the definition of a cube. A <dfn class="terminology">cuboid</dfn> is a solid whose faces are rectangles that all meet at right angles. It’s like a cube but you can stretch out the faces. Note that opposite faces must be same-sized rectangles. Like a rectangle is composed of two pairs of equal sides, a cuboid is composed of three pairs of equal faces.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec7-solids-13">Cuboids go by other names. You may also see them called <dfn class="terminology">rectangular cuboids</dfn>, <dfn class="terminology">rectangular prisms</dfn>, or <dfn class="terminology">rectangular parallelepipeds</dfn>. In this book we go by cuboid for reason that it is the shortest name.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;">
+<img src="generated/latex-image/sec7-solids-14.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="sec7-solids-14-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec7-solids-14-description">
+<div class="para" id="sec7-solids-14-1-1">A cuboid. Continuing a theme, I will elaborate that actually this is a two dimensional representation of a cuboid. It looks much like the earlier cube, except the three dimensions aren’t all the same length. Again, the sides are shaded to help sell the illusion of a three dimensional object.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="para" id="sec7-solids-15">Another way to think about a cuboid is you start with a horizontal rectangle as a base. You grab the base and raise it upward, thickening it to have a height. A way to think of this is, imagine having many copies of the rectangle cut in paper and you stack them to have a three dimensional shape. If the paper copies are infinitely thin and you stack them perfectly to have straight vertical sides, that is a cuboid.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec7-solids-16">This same idea can be applied to any two dimensional shape to produce a three dimensional solid. Such solids are variously called <dfn class="terminology">prisms</dfn>—think like a prism used to separate white light into its constituent colors—or <dfn class="terminology">cylinders</dfn>. However, we will reserve the word cylinder to refer just to these solids formed with a circle as base.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec7-solids-17">A <dfn class="terminology">cylinder</dfn> is a solid formed by taking a circle and thickening it in a perpendicular direction to create a three dimensional shape.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;">
+<img src="generated/latex-image/sec7-solids-18.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="sec7-solids-18-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec7-solids-18-description">
+<div class="para" id="sec7-solids-18-1-1">Two (two dimensional representations of) cylinders. One is oriented vertically, as when we think of the circular sides as being the top and bottom of the shape. The second is diagonal, so as to warn against the mistake of thinking orientation matters. They are both cylinders no matter their orientation.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-18-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="sec7-solids-18-1-2">Neither cylinder is shaded. Perhaps by now we are confident in using our imaginations to see them in three dimensions without artistic aid. Or perhaps the author’s artistic skills have surpassed their limits.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-18-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="para" id="sec7-solids-19">We can tweak this idea for building solids. Again we start with a two dimensional shape as the base, and we want to thicken it into the third dimension to create a solid. But now instead of keeping the same shape as we go up we will gradually shrink it down to a point. That is, instead of vertical sides rising to a top side identical to the bottom, diagonal sides rise to a point at the top. Often the point is in the middle so that things are symmetric, but that isn’t necessary. A shape like this formed from a circular base is called a <dfn class="terminology">cone</dfn>. A shape like this formed from a polygonal base is called a <dfn class="terminology">pyramid</dfn>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;">
+<img src="generated/latex-image/sec7-solids-20.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="sec7-solids-20-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec7-solids-20-description">
+<div class="para" id="sec7-solids-20-1-1">A cone, inverted so its point is at the bottom. To reiterate a repeated point: the orientation doesn’t matter for classifying a shape. Tilt your head upside down if you must see the circle on the bottom. Also present is a pyramid with a rectangular base. It is oriented with the base on the bottom.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-20-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="sec7-solids-20-1-2">You didn’t need to be told that these were not a cone and a pyramid but rather two dimensional representations thereof.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-20-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="para" id="sec7-solids-21">In plane geometry the most symmetric polygons were the regular polygons. Their solid counterparts are called the <dfn class="terminology">regular polyhedra</dfn>. The convex regular polyhedra are called <dfn class="terminology">platonic solids</dfn>. To be maximally symmetric their faces must be regular polygons of the same size, and how the faces meet at each vertex look the same.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-21" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec7-solids-22">Unlike with the two dimensional plane where there’s a regular <span class="process-math">\(n\)</span>-gon for every <span class="process-math">\(n \ge 3\text{,}\)</span> there are only five platonic solids. Namely they are the regular <dfn class="terminology">tetrahedron</dfn> with four faces, <dfn class="terminology">hexahedron</dfn> with six faces, <dfn class="terminology">octahedron</dfn> with eight faces, <dfn class="terminology">dodecahedron</dfn> with twelve faces, and <dfn class="terminology">icosahedron</dfn> with twenty faces. The regular tetrahedron, octahedron, and icosahedron have triangular faces, the hexahedron has square faces, and the dodecahedron has regular pentagonal faces.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;">
+<img src="external/images/mathrocks.jpg" class="contained" alt="described in detail following the image" aria-describedby="sec7-solids-23-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec7-solids-23-description">
+<div class="para" id="sec7-solids-23-1-1">The five platonic solids. Starting at one o’clock and going clockwise, there is the icosahedron, the octahedron, the dedecahedron, the hexahedron, and the tetrahedron. The solids are a pleasant dark green with gold numbers etched on the surface, on account of the author being exactly the sort of nerd to own polyhedral dice.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-23-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="para logical" id="sec7-solids-24">
+<div class="para">You can describe the platonic solids by giving two numbers, together known as their <dfn class="terminology">Schläfli symbols</dfn>: the number of sides of their faces and the number of faces which meet at each vertex.</div>
+<ul class="disc" id="sec7-solids-24-2">
+<li id="sec7-solids-24-2-1">
+<div class="para" id="sec7-solids-24-2-1-1">The regular tetrahedron has Schläfli symbol <span class="process-math">\(\{3,3\}\text{:}\)</span> triangular faces with three meeting at each vertex.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-24-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec7-solids-24-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec7-solids-24-2-2">
+<div class="para" id="sec7-solids-24-2-2-1">
+<div class="para" id="sec7-solids-24-2-2-1-1-1"><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-24-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>The regular hexahedron has Schläfli symbol <span class="process-math">\(\{4,3\}\text{:}\)</span> square faces with three meeting at each vertex.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-24-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec7-solids-24-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec7-solids-24-2-3">
+<div class="para" id="sec7-solids-24-2-3-1">
+<div class="para" id="sec7-solids-24-2-3-1-1-1"><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-24-2-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>The regular octahedron has Schläfli symbol <span class="process-math">\(\{3,4\}\text{:}\)</span> triangular faces with four meeting at each vertex.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-24-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec7-solids-24-2-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec7-solids-24-2-4">
+<div class="para" id="sec7-solids-24-2-4-1">
+<div class="para" id="sec7-solids-24-2-4-1-1-1"><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-24-2-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>The regular dodecahedron has Schläfli symbol <span class="process-math">\(\{5,3\}\text{:}\)</span> pentagonal faces with three meeting at each vertex.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-24-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec7-solids-24-2-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec7-solids-24-2-5">
+<div class="para" id="sec7-solids-24-2-5-1">
+<div class="para" id="sec7-solids-24-2-5-1-1-1"><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-24-2-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>The regular icosahedron has Schläfli symbol <span class="process-math">\(\{3,5\}\text{:}\)</span> triangular faces with five meeting at each vertex.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-24-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec7-solids-24-2-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec7-solids-25" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.4.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="sec7-solids-25-1-1">You know another name for the regular hexahedron. What is it? Explain.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-25-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 7.4.2"><a tabindex="-1" href="#sec7-solids-25" title="Copy heading and permalink for Checkpoint 7.4.2" aria-label="Copy heading and permalink for Checkpoint 7.4.2">🔗</a></div>
+</article></details>
+<div class="para" id="sec7-solids-26">There is an interesting fact about platonic solids and, more generally, convex polyhedra. Let’s close the section with it.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-26" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="sec7-solids-27"><h2 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.4.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Euler characteristic.</span>
+</h2>
+<div class="para logical" id="sec7-solids-27-2-1">
+<div class="para">Given a convex polyhedron you can compute its <dfn class="terminology">Euler characteristic</dfn>
+</div>
+<div class="displaymath process-math" id="sec7-solids-27-2-1-2">
+\begin{equation*}
+V - E + F,
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(V\)</span> is the number of vertices, <span class="process-math">\(E\)</span> is the number of edges, and <span class="process-math">\(F\)</span> is the number of faces. No matter which convex polyhedron you pick, its Euler characteristic will always be <span class="process-math">\(2\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-27-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Theorem 7.4.3: Euler characteristic"><a tabindex="-1" href="#sec7-solids-27" title="Copy heading and permalink for Theorem 7.4.3: Euler characteristic" aria-label="Copy heading and permalink for Theorem 7.4.3: Euler characteristic">🔗</a></div>
+</article>
+<div class="para" id="sec7-solids-28">Explaining why you always get <span class="process-math">\(2\)</span> is too difficult and involved for us to go into. Another cool fact is, you can also compute Euler characteristic for non-convex polyhedra. For instance, if you cut a hole through a cube from one side to the opposite the resulting solid is no longer convex, but you can still calculate <span class="process-math">\(V - E + F\)</span> for it, with a new number of vertices, edges, and faces coming from the hole you bored through. It will be <span class="process-math">\(0\text{.}\)</span> If you cut two holes through a cube the Euler characteristic will be <span class="process-math">\(-2\text{.}\)</span> In fact, the Euler characteristic is counting holes.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec7-solids-29">This is quite amazing. You take a counting problem about a solid—do a little calculation based on the number of vertices, edges, and faces—and it somehow tells you large scale geometric features about the solid. Whoa.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec7-solids-30" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.4.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="sec7-solids-30-1">Of the various solids we’ve seen in this section, which ones are polyhedra and which are not?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-30-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 7.4.4"><a tabindex="-1" href="#sec7-solids-30" title="Copy heading and permalink for Checkpoint 7.4.4" aria-label="Copy heading and permalink for Checkpoint 7.4.4">🔗</a></div>
+</article></details>
+<div class="para" id="sec7-solids-31">To close out this section, let’s spend time on a point that’s been repeatedly emphasized in the image descriptions. Three dimensional solids are three dimensional. Any time you see one on a two dimensional surface like a computer monitor or a piece of paper, you are really seeing a representation of the solid, not the solid itself.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-31" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec7-solids-32">There’s a few ways to do these representations. One is a <dfn class="terminology">perspective drawing</dfn>, such as many of the images in this section have been. This technique, innovated in Renaissance Italy, aims to represent an image how it would look to the human eye. There is a lot of geometry know-how that goes into getting perspective correct, and it’s a rich subject for exploring the connection between mathematics and art.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-32" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec7-solids-33">Related to perspective drawing is <dfn class="terminology">isometric projection</dfn>. This is a simplified variation to make things clearer for technical and engineering drawings. There are three axes for three directions, usually called the <span class="process-math">\(x\)</span>- and <span class="process-math">\(y\)</span>-axes in the horizontal plane and the <span class="process-math">\(z\)</span>-axis facing vertically. Things are drawn in line with these axes. This differs from perspective drawing in that parallel edges of the solid appear parallel. Whereas with perspective drawing they aren’t actually parallel, because that’s not how our vision works.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec7-solids-34">Another example of where you see isometric projection is in 2D video games. Originally, it was computationally expensive to do true 3D graphics, and this was a way to make things look 3D while keeping everything 2D. With advances in technology now this is more an artistic choice than one forced by hardware limitations.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-34" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec7-solids-35">In hand with isometric projection comes other projections onto planes. Specifically, the idea is you imagine a plane and you smoosh down the shape to lie flat on the plane. If the plane is horizontal you get a top-down view of the solid. Also useful are front and side views, such as you might see with architectural drawings.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-35" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec7-solids-36">These various kinds of projections don’t show you the full picture of a solid, but are useful simplifications to represent complex shapes in an understandable way. Perhaps it’d be better to have a 3D model of the shape, but that won’t fit on a piece of paper.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-36" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec7-solids-37">Another, more abstract representation of a solid, especially used for polyhedra, is to draw a network of how the vertices are connected by edges. These <dfn class="terminology">vertex graphs</dfn> can look a lot like a perspective or projection drawing of the shape, but sometimes it helps to stretch and move things to make them clearer.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-37" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec7-solids-38" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.4.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="sec7-solids-38-1">Suppose a projection of a solid has a curved line in it. Can you draw any conclusion about whether the solid is a polyhedron? Explain.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec7-solids-38-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 7.4.5"><a tabindex="-1" href="#sec7-solids-38" title="Copy heading and permalink for Checkpoint 7.4.5" aria-label="Copy heading and permalink for Checkpoint 7.4.5">🔗</a></div>
+</article></details><div class="autopermalink" aria-hidden="true" data-description="Section 7.4: Solids and three-dimensional space"><a tabindex="-1" href="#sec7-solids" title="Copy heading and permalink for Section 7.4: Solids and three-dimensional space" aria-label="Copy heading and permalink for Section 7.4: Solids and three-dimensional space">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec7-polygons.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec7-exercises.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

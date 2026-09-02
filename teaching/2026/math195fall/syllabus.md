@@ -21,7 +21,7 @@ Class Information
 
 **Primary out of class contact** course website or email me
 
-**Class Hours and Room** Tuesdays/Thursdays 2:00–4:15, Bldg. 6 Room 121
+**Class Hours and Room** Tuesdays/Thursdays 2:00–4:15, Bldg. 4 Room 114
 
 **Office Hours** In-person Tuesdays/Thursdays 9:00–10:00, virtual Mondays/Wednesdays 1:00–2:00
 

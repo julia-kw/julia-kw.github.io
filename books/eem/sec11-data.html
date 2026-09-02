@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Representing data</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="Explorations in Elementary Mathematics">
+<meta property="og:title" content="Explorations in Elementary Mathematics">
+<meta property="book:title" content="Explorations in Elementary Mathematics">
+<meta name="twitter:description" content="An exploration of the mathematical ideas behind elementary school mathematics, intended for those who plan to teach elementary school.">
+<meta property="og:description" content="An exploration of the mathematical ideas behind elementary school mathematics, intended for those who plan to teach elementary school.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.44"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.10';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="jwilliams-ece" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="ece-book.html"><span class="title">Explorations in Elementary Mathematics</span></a></div>
+<p class="byline">Julia Kameryn Williams</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="ch11.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch11.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec11-center.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\drm}{\mathrm d} \newcommand{\Nbb}{\mathbb N} \newcommand{\Zbb}{\mathbb Z} \newcommand{\Qbb}{\mathbb Q} \newcommand{\Rbb}{\mathbb R} \newcommand{\Cbb}{\mathbb C} \newcommand\mand{\text{ and }} \newcommand\mor{\text{ or }} \newcommand\abs[1]{\lvert #1 \rvert} \newcommand\card[1]{\abs{#1}} \DeclareMathOperator\lcm{lcm}
+ \newcommand\simplecuboid[3]{
+ \fill[gray!80!white] (tpp cs:x=0,y=0,z=#3)
+   -- (tpp cs:x=0,y=#2,z=#3)
+   -- (tpp cs:x=#1,y=#2,z=#3)
+   -- (tpp cs:x=#1,y=0,z=#3) -- cycle;
+ \fill[gray]  (tpp cs:x=0,y=0,z=0)
+   -- (tpp cs:x=0,y=0,z=#3)
+   -- (tpp cs:x=0,y=#2,z=#3)
+   -- (tpp cs:x=0,y=#2,z=0) -- cycle;
+ \fill[gray!50!white] (tpp cs:x=0,y=0,z=0)
+   -- (tpp cs:x=0,y=0,z=#3)
+   -- (tpp cs:x=#1,y=0,z=#3)
+   -- (tpp cs:x=#1,y=0,z=0) -- cycle;}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth3 parts focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="prefaceX.html" class="internal"><span class="title">Preface: To the student</span></a></div></li>
+<li class="toc-item toc-part">
+<div class="toc-title-box"><a href="part1.html" class="internal"><span class="codenumber">I</span> <span class="title">Arithmetic</span></a></div>
+<ul id="ptx-toc-group-part1" class="structural toc-item-list">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch0.html" class="internal"><span class="codenumber">0</span> <span class="title">Critical Thinking</span></a></div>
+<ul id="ptx-toc-group-ch0" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec0-howto.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Reading mathematics</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec0-problems.html" class="internal"><span class="codenumber">0.2</span> <span class="title">Problem solving</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec0-exercises.html" class="internal"><span class="codenumber">0.3</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec0-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec0-exercises.html#sec0-exercises-2" class="internal"><span class="codenumber">0.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch1.html" class="internal"><span class="codenumber">1</span> <span class="title">The Natural Numbers</span></a></div>
+<ul id="ptx-toc-group-ch1" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-what-is.html" class="internal"><span class="codenumber">1.1</span> <span class="title">What even is counting?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-sets.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Sets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-counting.html" class="internal"><span class="codenumber">1.3</span> <span class="title">The meaning of the natural numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-operations.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Operations on sets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-numbers.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Number classes</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-arithmetic.html" class="internal"><span class="codenumber">1.6</span> <span class="title">The arithmetic of natural numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-div.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Division</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-ooo.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Order of Operations</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec1-exercises.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec1-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec1-exercises.html#sec1-exercises-2" class="internal"><span class="codenumber">1.9</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch2.html" class="internal"><span class="codenumber">2</span> <span class="title">Numeration</span></a></div>
+<ul id="ptx-toc-group-ch2" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-roman.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Roman Numerals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-hindu-arabic.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The Hindu–Arabic numeral system</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-algorithms.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Algorithms for adding, subtracting, and multiplying</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-bases.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Other bases</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec2-exercises.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec2-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec2-exercises.html#sec2-exercises-2" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch3.html" class="internal"><span class="codenumber">3</span> <span class="title">Number Theory</span></a></div>
+<ul id="ptx-toc-group-ch3" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec3-prime.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Prime numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec3-divisibility.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Divisibility Rules</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec3-gcd.html" class="internal"><span class="codenumber">3.3</span> <span class="title">GCD and LCM</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec3-exercises.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec3-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec3-exercises.html#sec3-exercises-2" class="internal"><span class="codenumber">3.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch4.html" class="internal"><span class="codenumber">4</span> <span class="title">The Integers</span></a></div>
+<ul id="ptx-toc-group-ch4" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-motivation.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Some motivation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-definition.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Defining the integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-geometry.html" class="internal"><span class="codenumber">4.3</span> <span class="title">The geometric meaning of integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-arithmetic.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Arithmetic with integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-clocks.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Clocks and modular arithmetic</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec4-exercises.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec4-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec4-exercises.html#sec4-exercises-2" class="internal"><span class="codenumber">4.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch5.html" class="internal"><span class="codenumber">5</span> <span class="title">The Rational Numbers</span></a></div>
+<ul id="ptx-toc-group-ch5" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-motivation.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Motivating the rational numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-definition.html" class="internal"><span class="codenumber">5.2</span> <span class="title">The definition of the rational numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-arithmetic.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Arithmetic of fractions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-percents.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Percents</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec5-exercises.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec5-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec5-exercises.html#sec5-exercises-2" class="internal"><span class="codenumber">5.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch6.html" class="internal"><span class="codenumber">6</span> <span class="title">The Real Numbers</span></a></div>
+<ul id="ptx-toc-group-ch6" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-decimal.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Writing fractions in decimal</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-arithmetic.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The arithmetic of Hindu–Arabic numerals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-approx.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Approximations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-definition.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Defining the real numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-characterizations.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Characterizing rational and irrational numbers</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec6-exercises.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec6-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec6-exercises.html#sec6-exercises-2" class="internal"><span class="codenumber">6.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-part">
+<div class="toc-title-box"><a href="part2.html" class="internal"><span class="codenumber">II</span> <span class="title">Geometry</span></a></div>
+<ul id="ptx-toc-group-part2" class="structural toc-item-list">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch7.html" class="internal"><span class="codenumber">7</span> <span class="title">Shapes and solids</span></a></div>
+<ul id="ptx-toc-group-ch7" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec7-shapes.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Shapes on a plane</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec7-triangles.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Triangles and quadrilaterals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec7-polygons.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Polygons</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec7-solids.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Solids and three-dimensional space</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec7-exercises.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec7-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec7-exercises.html#sec7-exercises-2" class="internal"><span class="codenumber">7.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch8.html" class="internal"><span class="codenumber">8</span> <span class="title">Measurement.</span></a></div>
+<ul id="ptx-toc-group-ch8" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec8-length.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Length and perimeter</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec8-pythagorean.html" class="internal"><span class="codenumber">8.2</span> <span class="title">The Pythagorean theorem</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec8-area.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Area</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec8-volume.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Volume and surface area</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec8-exercises.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec8-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec8-exercises.html#sec8-exercises-2" class="internal"><span class="codenumber">8.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch9.html" class="internal"><span class="codenumber">9</span> <span class="title">Symmetry and transformations</span></a></div>
+<ul id="ptx-toc-group-ch9" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec9-rigid.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Rigid motions: translations and rotations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec9-symmetry.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Symmetry and reflection</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec9-tilings.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Tilings</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec9-exercises.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec9-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec9-exercises.html#sec9-exercises-2" class="internal"><span class="codenumber">9.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch10.html" class="internal"><span class="codenumber">10</span> <span class="title">Congruence and Similarity</span></a></div>
+<ul id="ptx-toc-group-ch10" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec10-congruent.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Congruent triangles</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec10-similar.html" class="internal"><span class="codenumber">10.2</span> <span class="title">Similar triangles</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec10-shapes.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Other shapes</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec10-exercises.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec10-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec10-exercises.html#sec10-exercises-2" class="internal"><span class="codenumber">10.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-part contains-active">
+<div class="toc-title-box"><a href="part3.html" class="internal"><span class="codenumber">III</span> <span class="title">Statistics</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-part3">
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch11.html" class="internal"><span class="codenumber">11</span> <span class="title">Interpreting Data</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-ch11">
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec11-data.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Representing data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec11-center.html" class="internal"><span class="codenumber">11.2</span> <span class="title">Measures of center</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec11-spread.html" class="internal"><span class="codenumber">11.3</span> <span class="title">Measures of spread</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec11-inference.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Statistical inference</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec11-exercises.html" class="internal"><span class="codenumber">11.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec11-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec11-exercises.html#sec11-exercises-2" class="internal"><span class="codenumber">11.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch12.html" class="internal"><span class="codenumber">12</span> <span class="title">Probability</span></a></div>
+<ul id="ptx-toc-group-ch12" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec12-frequentism.html" class="internal"><span class="codenumber">12.1</span> <span class="title">The meaning of probability: frequentism</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec12-counting.html" class="internal"><span class="codenumber">12.2</span> <span class="title">Counting and probability</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec12-perm.html" class="internal"><span class="codenumber">12.3</span> <span class="title">Permutations and combinations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec12-bayes.html" class="internal"><span class="codenumber">12.4</span> <span class="title">The meaning of probability: Bayesianism</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec12-exercises.html" class="internal"><span class="codenumber">12.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec12-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec12-exercises.html#sec12-exercises-2" class="internal"><span class="codenumber">12.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec11-data">
+<h1 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Representing data</span>
+</h1>
+<div class="para" id="sec11-data-2">Many interesting <dfn class="terminology">data sets</dfn>—qualitative and quantitative information about a group of people or things—are large. For example, maybe you are a sociologist who wants to understand how poverty impacts relationships. You are studying a population that consists of millions of people. Each of them has various relevant data attached—income, debt, marriage status, number of children, occupation, etc. If you had this entire data set arrayed in front of you it would be unsurveyable. What you want is some way to make what these data say understandable to humans.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec11-data-3" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading"><span class="type">Aside</span></h2></summary>
+<aside class="aside aside-like knowl__content">
+<div class="para" id="sec11-data-3-1">This is a point only pedantic nerds care about, but “data” is a plural noun, with “datum” being the singular. Hence pedantic nerds write “these data say” instead of “this data says”.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</aside></details>
+<div class="para logical" id="sec11-data-4">
+<div class="para">There’s many aspects of making data understandable to humans. Here are a few.</div>
+<ul class="disc" id="sec11-data-4-1">
+<li id="sec11-data-4-1-1">
+<div class="para" id="sec11-data-4-1-1-1">You want ways to visualize the data or represent it graphically. Tables of numbers are great for calculations, but how do you get an overview? If you want your sociological research to move policymakers, you need to make it quick for them to understand what it shows.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec11-data-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec11-data-4-1-2">
+<div class="para" id="sec11-data-4-1-2-1">You want ways to measure a typical member of your data set. There’s variation, but can you locate where the data are centered? What does the average person in your data set look like?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec11-data-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec11-data-4-1-3">
+<div class="para" id="sec11-data-4-1-3-1">You want ways to measure how much variation there is. Are different members close, or are they far apart? How spread out are the data?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-4-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec11-data-4-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec11-data-4-1-4">
+<div class="para" id="sec11-data-4-1-4-1">You want ways to test hypotheses. Perhaps you expect that poverty will correlate with lower marriage rates. Does your data support that hypothesis?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-4-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec11-data-4-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">In this chapter we will talk about all of these. We begin in this section by talking about how you can represent data.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-data-5">A useful distinction to draw is between <dfn class="terminology">quantitative</dfn> data, those which can be expressed numerically, versus <dfn class="terminology">qualitative</dfn> data, those which merely categorize. For example, suppose your school district is looking at trends in student performance. This data set would consist of information about students. Each student would have various data associated with them. Quantitative data could include scores on standardized exams, number of absences, and grade level. Qualitative data could include gender, race, and whether their overall performace is satisfactory.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-data-6">Note that quantitative data can be used to categorize; for instance, for this example it makes a lot of sense to categorize students by grade level. This is most useful, however, when there are relatively few values the data might have. If you were looking at exam scores, it would be more sensible to categorize by ranges of scores, rather than by individual scores.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-data-7">On the other hand, qualitative data can’t meaningfully be made quantitites. You might assign numbers to the various options for the race of a student, but those numbers don’t have any meaning. It doesn’t make sense to add them, compare them, multiply them. Good practice when you see data represented as numbers is to ask yourself, do these make sense as numbers? Does it make sense to say one is larger or smaller than another? Does it makes sense to add them? Does it make sense to multiply them?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec11-data-8" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="sec11-data-8-1">An example where numbers can be misleading is with satisfaction surveys, like those “rank the quality of <span class="process-math">\(X\)</span> on a <span class="process-math">\(1\)</span> to <span class="process-math">\(5\)</span> scale”. You see this used in many places, from movie reviews to student evaluations of teaching. These are numbers, but are they truly quantitative data? Some properties of numbers make sense. It makes sense to say that a four star movie is better than a two star movie. But other properties of numbers don’t make sense. It doesn’t make sense to say that a four star movie is twice as good as a two star movie.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-data-8-2">So these are in an in-between space. It makes sense to order them, but not add them nor measure distance between them. These kinds of in-between data show the limit of the quantitative versus qualitative categorization of data. For this reason, a more careful analysis would include more data types. In this case, these would be <dfn class="terminology">ordinal</dfn> data—they have a meaningful order but not further numerical properties.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-data-8-3">Here’s an example of a different flavor. Consider temperature, as expressed in degrees centigrade or degrees Fahrenheit. These data are ordinal; it’s sensible to talk about colder versus warmer temperatures. And it makes sense to talk about distances between temperatures, for instance if you say the temperature dropped <span class="process-math">\(10^\circ\)</span> C overnight. But it doesn’t make sense to multiply. It doesn’t have any physical meaning to say that <span class="process-math">\(64^\circ\)</span> F is twice as warm as <span class="process-math">\(32^\circ\)</span> F. (If you think this does make sense, consider that <span class="process-math">\(64^\circ\)</span> F is approximately <span class="process-math">\(18^\circ\)</span> C and <span class="process-math">\(32^\circ\)</span> F is the same as <span class="process-math">\(0^\circ\)</span> C but <span class="process-math">\(18\)</span> is not twice <span class="process-math">\(0\text{.}\)</span>)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-8-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-data-8-4">(The problem here is that <span class="process-math">\(0^\circ\)</span> on these temperature scales doesn’t refer to zero temperature. Instead, they’re just positions to be the start of the scale. In contrast, there are temperature scale where <span class="process-math">\(0\)</span> represents absolute zero, the absence of temperature, such as Kelvin. For these scales, there is physical meaning to say that <span class="process-math">\(200\)</span> Kelvin is twice the temperature as <span class="process-math">\(100\)</span> Kelvin.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-8-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-data-8-5">As these examples show, one place it is useful to think critically about data is what the meaning of numbers are. Just because someone reports a number to you means that all the mathematics you can do with numbers makes sense to do with that datum.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-8-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 11.1.1"><a tabindex="-1" href="#sec11-data-8" title="Copy heading and permalink for Example 11.1.1" aria-label="Copy heading and permalink for Example 11.1.1">🔗</a></div>
+</article></details>
+<div class="para" id="sec11-data-9">You can visualize a data set as a big spread sheet. Each row corresponds to an individual in the data set with the columns representing the values of the various data associate to that individual. With our student example, each row would represent a student. Then there would be columns for grade level, exam performance, etc.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-data-10">This representation of data is useful for doing calculations, especially with computers. But if you’re communicating to a human, they probably want something easier to comprehend.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-data-11">One option is to stick with tables, but have them be summaries. For example, if you are at a pre-semester all-staff meeting and your principal is presenting on student success rates, she’s not going to show you a raw spreadsheet. Instead you’ll get a summary table like the following.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="table table-like" id="sec11-data-12"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.1.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Number of students passing standardized exams by teacher<div class="autopermalink" aria-hidden="true" data-description="Table 11.1.2: Number of students passing standardized exams by teacher"><a tabindex="-1" href="#sec11-data-12" title="Copy heading and permalink for Table 11.1.2: Number of students passing standardized exams by teacher" aria-label="Copy heading and permalink for Table 11.1.2: Number of students passing standardized exams by teacher">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Teacher</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Number passing</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Ms. Adams</td>
+<td class="c m b0 r0 l0 t0 lines">21</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Mr. Baker</td>
+<td class="c m b0 r0 l0 t0 lines">24</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Ms. Chan</td>
+<td class="c m b0 r0 l0 t0 lines">26</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Ms. Diaz</td>
+<td class="c m b0 r0 l0 t0 lines">25</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Mr. Edwards</td>
+<td class="c m b0 r0 l0 t0 lines">19</td>
+</tr>
+</table></div>
+</figure>
+<details id="sec11-data-13" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading"><span class="type">Aside</span></h2></summary>
+<aside class="aside aside-like knowl__content">
+<div class="para" id="sec11-data-13-1">This example—hopefully!—isn’t realistic. If you ever have a boss who singles out specific teachers for critique in a meeting you should look for a new job elsewhere.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-13-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</aside></details>
+<div class="para" id="sec11-data-14">Tables can be useful, but they are often slow to read. You can take advantage of humans’ evolved ability to quickly compare lengths by representing data visually. A table summarizing the number of instances of each category can be straightforwardly turned into a <dfn class="terminology">bar graph</dfn> where the length of a bar gives the number for each category. A longer bar means more and a shorter bar means fewer. This enables a viewer to easily see the relative rates at which they occur. The downside is method of summarizing data doesn’t give precise values. This downside can be mitigated by using both summarization methods.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-data-15">You can present the bars either vertically or horizontally. For consistency I will orient everything vertically. That is, the horizontal axis will represent the different categories and the vertical axis will represent the quantities. For a horizontal orientation you merely swap the role of the two axes.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;">
+<img src="external/images/plots/barplot.png" class="contained" alt="described in detail following the image" aria-describedby="sec11-data-16-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec11-data-16-description">
+<div class="para" id="sec11-data-16-1-1">The same data as in the above table, but presented in a bar plot. The plot has five bars, for the five teachers Adams, Baker, Chan, Diaz, and Edwards. The heights of the bars correspond to the number of passing students for each teacher.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-16-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="sec11-data-16-1-2">The visual pizazz is at a minimum. The bars alternate colors to ease readability, but otherwise things are basic.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-16-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="para" id="sec11-data-17">The same summary can be visually presented in different ways. Some people like bars, but it’s not the only way to do it. For example, you could instead use a <dfn class="terminology">dot graph</dfn>. Rather than representing quantities by lengths of bars, you represent them by the height of a dot.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;">
+<img src="external/images/plots/dotplot.png" class="contained" alt="described in detail following the image" aria-describedby="sec11-data-18-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec11-data-18-description">
+<div class="para" id="sec11-data-18-1-1">The same data as in the above table, but presented in a dot plot. Rather than five bars for the five teachers there are five dots.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-18-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="para" id="sec11-data-19">In this case, there isn’t a meaningful order for the data on the <span class="process-math">\(x\)</span>-axis. The names are ordered alphabetically, but that isn’t relevant to the data being presented. In cases where there is a meaningful order, it makes sense to connect the dots with lines to make a <dfn class="terminology">line graph</dfn>. A common example is when the categories are dates. If the categories aren’t ordered then the lines between dots can wrongly suggest trends, and it’s better to simply graph disconnected points.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-data-20">Regardless, here’s the same data as a line graph. You can tell the lines aren’t providing meaningful info because they suggest a connection between adjacent names. But the meaning of the data would be the same if you shuffled the order of the names.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;">
+<img src="external/images/plots/lineplot.png" class="contained" alt="described in detail following the image" aria-describedby="sec11-data-21-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec11-data-21-description">
+<div class="para" id="sec11-data-21-1-1">The same data as in the above dot plot, but now with lines connecting the dots. It’s not a good graph, the lines aren’t adding any useful visual information.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-21-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="para" id="sec11-data-22">Another kind of chart you sometimes see is a <dfn class="terminology">circle chart</dfn>, also called a <dfn class="terminology">pie chart</dfn>. Rather than represent quantitis by distances or lengths, a circle represents the overall population and it is divided into wedges based on the proportions of the population. For example, if <span class="process-math">\(54\%\)</span> fall into category <span class="process-math">\(X\)</span> then the wedge for <span class="process-math">\(X\)</span> would claim just over half the pie.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;">
+<img src="external/images/plots/pieplot.png" class="contained" alt="described in detail following the image" aria-describedby="sec11-data-23-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec11-data-23-description">
+<div class="para" id="sec11-data-23-1-1">The same data as in the above table, but presented in a circle chart. There are five wedges for the five teachers corresponding to their share of the passing students.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-23-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="sec11-data-23-1-2">This is an awful visualization of this data. But that is typical of circle charts.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-23-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="para" id="sec11-data-24">Presumably there is someone out there who likes circle charts. But they are morally and objectively wrong. Human vision is good at comparing distances; it is quick to see which of two bars are longer. But it’s not so good at comparing angular measures. Converting a circle chart to an equivalent bar chart will make things easier for your audience. An exception is if there are only two categories. In that case, the circle is divided into two pieces so it’s easy to compare them.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-data-25">In this example, the circle chart is especially nonsense. Circle charts are at their best when you want to see what proportion of a total population fits into each category. That’s not what these data are about. What’s relevant, if anything, is how many passing students each teacher has from among those they teach, not from among the total population of passing students.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec11-data-26" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading"><span class="type">Aside</span></h2></summary>
+<aside class="aside aside-like knowl__content">
+<div class="para" id="sec11-data-26-1">The theme of this chapter is thinking critically about data. With that in mind, a good rule of thumb is, when you see a circle chart ask yourself, what would this look like if presented as a bar or line graph?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-26-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</aside></details>
+<details id="sec11-data-27" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="sec11-data-27-1-1">Consider the summary given in the following table. Which type of chart do you think is the best way to visualize these data? Explain your choice. Sketch a version of your favored chart, as well as one other kind of chart for comparison. 
+<figure class="table table-like" id="sec11-data-27-1-1-1"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.1.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Survey of people’s favorite music genre<div class="autopermalink" aria-hidden="true" data-description="Table 11.1.4: Survey of people’s favorite music genre"><a tabindex="-1" href="#sec11-data-27-1-1-1" title="Copy heading and permalink for Table 11.1.4: Survey of people’s favorite music genre" aria-label="Copy heading and permalink for Table 11.1.4: Survey of people’s favorite music genre">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines">Genre</th>
+<th scope="col" class="c m b1 r0 l0 t0 lines">Number</th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Pop</td>
+<td class="c m b0 r0 l0 t0 lines">2131</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Rock</td>
+<td class="c m b0 r0 l0 t0 lines">1940</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Rap</td>
+<td class="c m b0 r0 l0 t0 lines">2056</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Country</td>
+<td class="c m b0 r0 l0 t0 lines">1659</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Jazz</td>
+<td class="c m b0 r0 l0 t0 lines">1141</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Dance</td>
+<td class="c m b0 r0 l0 t0 lines">1457</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">Classical</td>
+<td class="c m b0 r0 l0 t0 lines">319</td>
+</tr>
+</table></div>
+</figure><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-27-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 11.1.3"><a tabindex="-1" href="#sec11-data-27" title="Copy heading and permalink for Checkpoint 11.1.3" aria-label="Copy heading and permalink for Checkpoint 11.1.3">🔗</a></div>
+</article></details>
+<div class="para" id="sec11-data-28">Earlier data visualizations focused on a single type of quantity. Also important is how two different types of quantities are related. For example, maybe you want to analyze how student grades correspond to performance on standardized exams. You don’t want to look at two different data sets of grades and and exam scores. Instead, you want to look at the correlation between students’ numbers for the two kinds of quantities.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-28" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-data-29">We can use a two dimensional coordinate grid for this. The horizontal axis, also called the <span class="process-math">\(x\)</span>-axis, is used to represent one of the kinds of qantities. The vertical axis, also called the <span class="process-math">\(y\)</span>-axis, represents the other. Often but not always we pick the <span class="process-math">\(x\)</span>-axis to represent the <dfn class="terminology">independent variable</dfn> and the <span class="process-math">\(y\)</span>-axis to represent the <dfn class="terminology">dependent variable</dfn>, meaning that that we think of the dependent variable as being a function of the independent variable.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-29" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-data-30">We use <dfn class="terminology">cartesian coordinates</dfn>, such as you may have seen in high school algebra. That is, each point in the two dimensional space represents a pair <span class="process-math">\((x,y)\)</span> of numbers. We fix a starting point, which we usually draw as where the axes intersect. Here, <span class="process-math">\(x\)</span> is the left-right distance and represents the value on the <span class="process-math">\(x\)</span>-axis and <span class="process-math">\(y\)</span> is up-down distance and represents the value on the <span class="process-math">\(y\)</span>-axis.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-30" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-data-31">One way to represent correspondence of data in cartesian coordinates is via a <dfn class="terminology">scatter plot</dfn>. The data are pairs of numbers <span class="process-math">\((x,y)\)</span> plotted as points. One type of quantity gets represented with <span class="process-math">\(x\)</span>-coordinates and the other with <span class="process-math">\(y\)</span>-coordinates, so that you can see relations between the two types of data.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-31" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;">
+<img src="external/images/plots/scatterplot.png" class="contained" alt="described in detail following the image" aria-describedby="sec11-data-32-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec11-data-32-description">
+<div class="para" id="sec11-data-32-1-1">Two scatter plots showing the same data. Both show class sizes of various classes versus the percentage of passing students from those classes. The difference between the two scatter plots is how the axes are drawn. The first plot has both axes start at <span class="process-math">\(0\text{.}\)</span> This creates a lot of empty space in the graph, since the data are not near <span class="process-math">\(0\text{.}\)</span> The second has the axes start at larger numbers so there’s less empty space.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-32-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="sec11-data-32-1-2">Whichever one you look at, it probably appears that there is a negative correlation between class size and pass rates. That is, smaller classes tend to have higher pass rates and larger classes tend to have lower pass rates.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-32-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="para" id="sec11-data-33">In the above image the same scatter plot is shown twice to illustrate the effect choosing your axes has on the visualization. In the top plot, the axes both start at <span class="process-math">\(0\text{.}\)</span> This way, proportions on the graph are accurate; if a dot is twice as high as another it represents twice the value. In the bottom plot, the axes start at <span class="process-math">\(20\)</span> and <span class="process-math">\(70\text{.}\)</span> In this way we get a zoomed in view of the plot, and can more easily see distances between points. However, we lose the meaning of proportions. For instance, there is a dot near the bottom at <span class="process-math">\(x = 30\text{.}\)</span> Above it are two more dots, about three or four times high on the graph. But they don’t represent values three or four times higher.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-data-34">The lesson is, the choice of where axes starts can affect the visualization. You should be careful to look at the axes to make sure you are correctly interpreting the graph. You can also think about this from a defensive posture. One way to present a misleading graph is to choose where the axes start. If you want to make differences look negligible, pick a far away starting point. If you want to magnify them, don’t start the axis at <span class="process-math">\(0\text{.}\)</span> When reading and interpreting others’ graphs you should critically engage with the presentation. Ask yourself: what purpose is there for the choice of presentation? Is it misleading? Or does it let me better understand the data?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-34" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec11-data-35" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="sec11-data-35-1">Look again at the two graphs about class size and pass rate. Which one do you think gives you a better, more honest view into the data? Explain your answer.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-data-35-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 11.1.5"><a tabindex="-1" href="#sec11-data-35" title="Copy heading and permalink for Checkpoint 11.1.5" aria-label="Copy heading and permalink for Checkpoint 11.1.5">🔗</a></div>
+</article></details><div class="autopermalink" aria-hidden="true" data-description="Section 11.1: Representing data"><a tabindex="-1" href="#sec11-data" title="Copy heading and permalink for Section 11.1: Representing data" aria-label="Copy heading and permalink for Section 11.1: Representing data">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="ch11.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec11-center.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

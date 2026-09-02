@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Measures of spread</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="Explorations in Elementary Mathematics">
+<meta property="og:title" content="Explorations in Elementary Mathematics">
+<meta property="book:title" content="Explorations in Elementary Mathematics">
+<meta name="twitter:description" content="An exploration of the mathematical ideas behind elementary school mathematics, intended for those who plan to teach elementary school.">
+<meta property="og:description" content="An exploration of the mathematical ideas behind elementary school mathematics, intended for those who plan to teach elementary school.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.44"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.10';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="jwilliams-ece" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="ece-book.html"><span class="title">Explorations in Elementary Mathematics</span></a></div>
+<p class="byline">Julia Kameryn Williams</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="sec11-center.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch11.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec11-inference.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\drm}{\mathrm d} \newcommand{\Nbb}{\mathbb N} \newcommand{\Zbb}{\mathbb Z} \newcommand{\Qbb}{\mathbb Q} \newcommand{\Rbb}{\mathbb R} \newcommand{\Cbb}{\mathbb C} \newcommand\mand{\text{ and }} \newcommand\mor{\text{ or }} \newcommand\abs[1]{\lvert #1 \rvert} \newcommand\card[1]{\abs{#1}} \DeclareMathOperator\lcm{lcm}
+ \newcommand\simplecuboid[3]{
+ \fill[gray!80!white] (tpp cs:x=0,y=0,z=#3)
+   -- (tpp cs:x=0,y=#2,z=#3)
+   -- (tpp cs:x=#1,y=#2,z=#3)
+   -- (tpp cs:x=#1,y=0,z=#3) -- cycle;
+ \fill[gray]  (tpp cs:x=0,y=0,z=0)
+   -- (tpp cs:x=0,y=0,z=#3)
+   -- (tpp cs:x=0,y=#2,z=#3)
+   -- (tpp cs:x=0,y=#2,z=0) -- cycle;
+ \fill[gray!50!white] (tpp cs:x=0,y=0,z=0)
+   -- (tpp cs:x=0,y=0,z=#3)
+   -- (tpp cs:x=#1,y=0,z=#3)
+   -- (tpp cs:x=#1,y=0,z=0) -- cycle;}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth3 parts focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="prefaceX.html" class="internal"><span class="title">Preface: To the student</span></a></div></li>
+<li class="toc-item toc-part">
+<div class="toc-title-box"><a href="part1.html" class="internal"><span class="codenumber">I</span> <span class="title">Arithmetic</span></a></div>
+<ul id="ptx-toc-group-part1" class="structural toc-item-list">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch0.html" class="internal"><span class="codenumber">0</span> <span class="title">Critical Thinking</span></a></div>
+<ul id="ptx-toc-group-ch0" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec0-howto.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Reading mathematics</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec0-problems.html" class="internal"><span class="codenumber">0.2</span> <span class="title">Problem solving</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec0-exercises.html" class="internal"><span class="codenumber">0.3</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec0-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec0-exercises.html#sec0-exercises-2" class="internal"><span class="codenumber">0.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch1.html" class="internal"><span class="codenumber">1</span> <span class="title">The Natural Numbers</span></a></div>
+<ul id="ptx-toc-group-ch1" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-what-is.html" class="internal"><span class="codenumber">1.1</span> <span class="title">What even is counting?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-sets.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Sets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-counting.html" class="internal"><span class="codenumber">1.3</span> <span class="title">The meaning of the natural numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-operations.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Operations on sets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-numbers.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Number classes</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-arithmetic.html" class="internal"><span class="codenumber">1.6</span> <span class="title">The arithmetic of natural numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-div.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Division</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-ooo.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Order of Operations</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec1-exercises.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec1-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec1-exercises.html#sec1-exercises-2" class="internal"><span class="codenumber">1.9</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch2.html" class="internal"><span class="codenumber">2</span> <span class="title">Numeration</span></a></div>
+<ul id="ptx-toc-group-ch2" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-roman.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Roman Numerals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-hindu-arabic.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The Hindu–Arabic numeral system</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-algorithms.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Algorithms for adding, subtracting, and multiplying</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-bases.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Other bases</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec2-exercises.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec2-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec2-exercises.html#sec2-exercises-2" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch3.html" class="internal"><span class="codenumber">3</span> <span class="title">Number Theory</span></a></div>
+<ul id="ptx-toc-group-ch3" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec3-prime.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Prime numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec3-divisibility.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Divisibility Rules</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec3-gcd.html" class="internal"><span class="codenumber">3.3</span> <span class="title">GCD and LCM</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec3-exercises.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec3-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec3-exercises.html#sec3-exercises-2" class="internal"><span class="codenumber">3.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch4.html" class="internal"><span class="codenumber">4</span> <span class="title">The Integers</span></a></div>
+<ul id="ptx-toc-group-ch4" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-motivation.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Some motivation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-definition.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Defining the integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-geometry.html" class="internal"><span class="codenumber">4.3</span> <span class="title">The geometric meaning of integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-arithmetic.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Arithmetic with integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-clocks.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Clocks and modular arithmetic</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec4-exercises.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec4-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec4-exercises.html#sec4-exercises-2" class="internal"><span class="codenumber">4.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch5.html" class="internal"><span class="codenumber">5</span> <span class="title">The Rational Numbers</span></a></div>
+<ul id="ptx-toc-group-ch5" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-motivation.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Motivating the rational numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-definition.html" class="internal"><span class="codenumber">5.2</span> <span class="title">The definition of the rational numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-arithmetic.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Arithmetic of fractions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-percents.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Percents</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec5-exercises.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec5-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec5-exercises.html#sec5-exercises-2" class="internal"><span class="codenumber">5.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch6.html" class="internal"><span class="codenumber">6</span> <span class="title">The Real Numbers</span></a></div>
+<ul id="ptx-toc-group-ch6" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-decimal.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Writing fractions in decimal</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-arithmetic.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The arithmetic of Hindu–Arabic numerals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-approx.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Approximations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-definition.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Defining the real numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-characterizations.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Characterizing rational and irrational numbers</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec6-exercises.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec6-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec6-exercises.html#sec6-exercises-2" class="internal"><span class="codenumber">6.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-part">
+<div class="toc-title-box"><a href="part2.html" class="internal"><span class="codenumber">II</span> <span class="title">Geometry</span></a></div>
+<ul id="ptx-toc-group-part2" class="structural toc-item-list">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch7.html" class="internal"><span class="codenumber">7</span> <span class="title">Shapes and solids</span></a></div>
+<ul id="ptx-toc-group-ch7" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec7-shapes.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Shapes on a plane</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec7-triangles.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Triangles and quadrilaterals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec7-polygons.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Polygons</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec7-solids.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Solids and three-dimensional space</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec7-exercises.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec7-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec7-exercises.html#sec7-exercises-2" class="internal"><span class="codenumber">7.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch8.html" class="internal"><span class="codenumber">8</span> <span class="title">Measurement.</span></a></div>
+<ul id="ptx-toc-group-ch8" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec8-length.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Length and perimeter</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec8-pythagorean.html" class="internal"><span class="codenumber">8.2</span> <span class="title">The Pythagorean theorem</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec8-area.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Area</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec8-volume.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Volume and surface area</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec8-exercises.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec8-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec8-exercises.html#sec8-exercises-2" class="internal"><span class="codenumber">8.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch9.html" class="internal"><span class="codenumber">9</span> <span class="title">Symmetry and transformations</span></a></div>
+<ul id="ptx-toc-group-ch9" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec9-rigid.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Rigid motions: translations and rotations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec9-symmetry.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Symmetry and reflection</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec9-tilings.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Tilings</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec9-exercises.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec9-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec9-exercises.html#sec9-exercises-2" class="internal"><span class="codenumber">9.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch10.html" class="internal"><span class="codenumber">10</span> <span class="title">Congruence and Similarity</span></a></div>
+<ul id="ptx-toc-group-ch10" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec10-congruent.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Congruent triangles</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec10-similar.html" class="internal"><span class="codenumber">10.2</span> <span class="title">Similar triangles</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec10-shapes.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Other shapes</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec10-exercises.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec10-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec10-exercises.html#sec10-exercises-2" class="internal"><span class="codenumber">10.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-part contains-active">
+<div class="toc-title-box"><a href="part3.html" class="internal"><span class="codenumber">III</span> <span class="title">Statistics</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-part3">
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch11.html" class="internal"><span class="codenumber">11</span> <span class="title">Interpreting Data</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-ch11">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec11-data.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Representing data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec11-center.html" class="internal"><span class="codenumber">11.2</span> <span class="title">Measures of center</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec11-spread.html" class="internal"><span class="codenumber">11.3</span> <span class="title">Measures of spread</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec11-inference.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Statistical inference</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec11-exercises.html" class="internal"><span class="codenumber">11.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec11-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec11-exercises.html#sec11-exercises-2" class="internal"><span class="codenumber">11.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch12.html" class="internal"><span class="codenumber">12</span> <span class="title">Probability</span></a></div>
+<ul id="ptx-toc-group-ch12" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec12-frequentism.html" class="internal"><span class="codenumber">12.1</span> <span class="title">The meaning of probability: frequentism</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec12-counting.html" class="internal"><span class="codenumber">12.2</span> <span class="title">Counting and probability</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec12-perm.html" class="internal"><span class="codenumber">12.3</span> <span class="title">Permutations and combinations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec12-bayes.html" class="internal"><span class="codenumber">12.4</span> <span class="title">The meaning of probability: Bayesianism</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec12-exercises.html" class="internal"><span class="codenumber">12.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec12-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec12-exercises.html#sec12-exercises-2" class="internal"><span class="codenumber">12.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec11-spread">
+<h1 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Measures of spread</span>
+</h1>
+<div class="para logical" id="sec11-spread-2">
+<div class="para">In the last section we discussed how to summarize a complicated data set by measuring where its center is. But that’s not the full story. To illustrate this, consider the following three data sets.</div>
+<div class="displaymath process-math" id="sec11-spread-2-1">
+\begin{equation*}
+-2,0,2 \qquad\qquad -10,0,10 \qquad\qquad -2000,0,2000
+\end{equation*}
+</div>
+<div class="para">These data sets all have the same mean, namely <span class="process-math">\(0\text{.}\)</span> (They also have median <span class="process-math">\(0\text{.}\)</span>) But they are quite different in terms of spread. With the first one you know the values are all close to <span class="process-math">\(0\text{,}\)</span> but with the last one some of the values are quite far from <span class="process-math">\(0\text{.}\)</span> Just the mean alone isn’t a good summary of the data.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec11-spread-3" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading"><span class="type">Aside</span></h2></summary>
+<aside class="aside aside-like knowl__content">
+<div class="para logical" id="sec11-spread-3-1">
+<div class="para">A quick way to calculate the mean on these: instead of using the sum formula, think about mean as being the balancing point. Looking at <span class="process-math">\(-10,0,10\)</span> you can see that it’s balanced at <span class="process-math">\(0\text{,}\)</span> with the other two points each being <span class="process-math">\(10\)</span> away. In general, if you notice that a collection of three numbers has the form</div>
+<div class="displaymath process-math" id="sec11-spread-3-1-4">
+\begin{equation*}
+m - d, m, m + d
+\end{equation*}
+</div>
+<div class="para">then you can immediately tell that their mean is <span class="process-math">\(m\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</aside></details>
+<div class="para" id="sec11-spread-4">In this section we discuss some measures for how spread out a data set is.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="sec11-spread-5"><h2 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Maximum, minimum, and range.</span>
+</h2>
+<div class="para logical" id="sec11-spread-5-2-1">
+<div class="para">Consider a data set of numbers</div>
+<div class="displaymath process-math" id="sec11-spread-5-2-1-1">
+\begin{equation*}
+x_1, x_2, \ldots, x_n.
+\end{equation*}
+</div>
+<div class="para">The <dfn class="terminology">minimum</dfn> of the data set is the least number in it and the <dfn class="terminology">maximum</dfn> of the data set is the greatest number in it. That is, the minimum is the value <span class="process-math">\(x_m\)</span> so that <span class="process-math">\(x_m \le x_i\)</span> for every <span class="process-math">\(x_i\)</span> and the maximum is the value <span class="process-math">\(x_M\)</span> so that <span class="process-math">\(x_M \ge x_i\)</span> for every <span class="process-math">\(x_i\text{.}\)</span> The <dfn class="terminology">range</dfn> of the data set is the maximum minus the minimum. The range is the total distance of the interval in which values from the data set lie.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 11.3.1: Maximum, minimum, and range"><a tabindex="-1" href="#sec11-spread-5" title="Copy heading and permalink for Definition 11.3.1: Maximum, minimum, and range" aria-label="Copy heading and permalink for Definition 11.3.1: Maximum, minimum, and range">🔗</a></div>
+</article>
+<div class="para" id="sec11-spread-6">Using the same three data sets above, we can distinguish them via their ranges. Though they all have a mean of <span class="process-math">\(0\text{,}\)</span> the ranges are, in order, <span class="process-math">\(4\text{,}\)</span> <span class="process-math">\(20\text{,}\)</span> <span class="process-math">\(4000\text{.}\)</span> In that way we can distinguish how spread out they are.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec11-spread-7" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="example example-like knowl__content">
+<div class="para logical" id="sec11-spread-7-1">
+<div class="para">You give students an exam and they get the following scores:</div>
+<div class="displaymath process-math" id="sec11-spread-7-1-1">
+\begin{equation*}
+92, 87, 81, 82, 73, 75, 67, 59, 93, 96, 88, 70, 77.
+\end{equation*}
+</div>
+<div class="para">The maximum is <span class="process-math">\(96\text{,}\)</span> the minimum is <span class="process-math">\(59\text{.}\)</span> Thus the range is <span class="process-math">\(96 - 59 = 37\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 11.3.2"><a tabindex="-1" href="#sec11-spread-7" title="Copy heading and permalink for Example 11.3.2" aria-label="Copy heading and permalink for Example 11.3.2">🔗</a></div>
+</article></details>
+<details id="sec11-spread-8" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para logical" id="sec11-spread-8-1">
+<div class="para">Explain the following facts.</div>
+<ul class="disc" id="sec11-spread-8-1-1">
+<li id="sec11-spread-8-1-1-1">
+<div class="para" id="sec11-spread-8-1-1-1-1">If a list of numbers <span class="process-math">\(x_1, x_2, \ldots, x_n\)</span> is given in increasing order, then the minimum is the first number <span class="process-math">\(x_1\)</span> and the maximum is the last number <span class="process-math">\(x_n\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-8-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec11-spread-8-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec11-spread-8-1-1-2">
+<div class="para" id="sec11-spread-8-1-1-2-1">The range of a data set is always <span class="process-math">\(\ge 0\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-8-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec11-spread-8-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec11-spread-8-1-1-3">
+<div class="para" id="sec11-spread-8-1-1-3-1">The range of a data set can be <span class="process-math">\(0\text{.}\)</span> When does this happen?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-8-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec11-spread-8-1-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 11.3.3"><a tabindex="-1" href="#sec11-spread-8" title="Copy heading and permalink for Checkpoint 11.3.3" aria-label="Copy heading and permalink for Checkpoint 11.3.3">🔗</a></div>
+</article></details>
+<div class="para" id="sec11-spread-9">While the range gives some information about how spread out a data set is, it has some severe limitations.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec11-spread-10" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="example example-like knowl__content">
+<div class="para logical" id="sec11-spread-10-1">
+<div class="para">Consider the following two data sets.</div>
+<div class="displaymath process-math" id="sec11-spread-10-1-1">
+\begin{align*}
+10, 11, 12, 13, 14, 15, 16, 17, 18, 19, \amp20\\
+10, 11, 12, 13, 14, 15, 16, 17, 18, 19, \amp200
+\end{align*}
+</div>
+<div class="para">They are very similar, differing only in one of the eleven values. However, their ranges are quite different. The first has a range of <span class="process-math">\(10\)</span> and the second has a range of <span class="process-math">\(190\text{,}\)</span> almost twenty times as much. If you were just looking at range as a summary you’d think these data sets are much more different than they actually are.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-spread-10-2">This is similar to the issue, discussed in the last section, of how the mean is affected by outliers. Indeed, for this example both data sets have the same median of <span class="process-math">\(15\text{.}\)</span> On the other hand, the first data set has its mean as also <span class="process-math">\(15\)</span> but the mean of the second data set is approximately <span class="process-math">\(31\text{.}\)</span> Just like the outlier of <span class="process-math">\(200\)</span> blew up the range it also increased the mean.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 11.3.4"><a tabindex="-1" href="#sec11-spread-10" title="Copy heading and permalink for Example 11.3.4" aria-label="Copy heading and permalink for Example 11.3.4">🔗</a></div>
+</article></details>
+<div class="para" id="sec11-spread-11">For a measure of spread which isn’t so sensitive to outliers, we don’t want to look at the minimum and the maximum.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="sec11-spread-12"><h2 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Quartiles.</span>
+</h2>
+<div class="para" id="sec11-spread-12-2-1">
+<dfn class="terminology">Quartiles</dfn> are a measure of where a data set is broken up into four equally sized chunks. That is, the <dfn class="terminology">first quartile</dfn> is where <span class="process-math">\(25\%\)</span> of values are to its left, the <dfn class="terminology">second quartile</dfn> is another name for the mean, where <span class="process-math">\(50\%\)</span> of values are to the left and <span class="process-math">\(50\%\)</span> are to the right, and the <dfn class="terminology">third quartile</dfn> is where <span class="process-math">\(25\%\)</span> of values are to the right.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-12-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="sec11-spread-12-2-2">We can make this a bit more precise, like we did with the mean. One way to do this is, to uniquely specify the locations of the first and third quantile we can order the values in the data set and look for the two values closest to <span class="process-math">\(25\%\)</span> of the way through and <span class="process-math">\(75\%\)</span> of the way through, and define the quartiles to be the average of those two values.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-12-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 11.3.5: Quartiles"><a tabindex="-1" href="#sec11-spread-12" title="Copy heading and permalink for Definition 11.3.5: Quartiles" aria-label="Copy heading and permalink for Definition 11.3.5: Quartiles">🔗</a></div>
+</article>
+<details id="sec11-spread-13" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading"><span class="type">Aside</span></h2></summary>
+<aside class="aside aside-like knowl__content">
+<div class="para" id="sec11-spread-13-1">Annoyingly, different statistical software will use slightly different methods to determine the quartiles of a discrete data set, not all the same as how I described above. For the data set consisting of whole numbers from <span class="process-math">\(10\)</span> to <span class="process-math">\(20\text{,}\)</span> the statistical programming language R computes the first and third quartiles as <span class="process-math">\(12.5\)</span> and <span class="process-math">\(17.5\)</span> while the spreadsheet program Excel computes them as <span class="process-math">\(12\)</span> and <span class="process-math">\(18\text{.}\)</span> In either case, changing <span class="process-math">\(20\)</span> to the outlier <span class="process-math">\(200\)</span> doesn’t affect the calculation.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-13-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-spread-13-2">This is the sort of annoying detail that you might have to care about if you are using computer tools to do statistics. You need some specified method for giving quartiles, but different programs pick different methods. However, for normal use of interpreting statistics this detail doesn’t matter. Except on very small data sets, the different methods give very close answers and the slight variation doesn’t matter. For example, if you want to know about the first and third quartiles for incomes in Massachusetts, you are looking at a data set of millions of values. It doesn’t matter any for interpreting that data if a different method would produce a number differing by a fraction of a dollar.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-13-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</aside></details>
+<div class="para" id="sec11-spread-14">Now that we know about quartiles and medians, we can talk about a convenient visual device for summarizing a data set. A <dfn class="terminology">box and whisker plot</dfn> is a visual that shows the median, first and third quartiles, and minimum and maximum of a data set. In this way you can quickly see the center and spread of the data.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-spread-15">In this example, box and whisker plots are given for a data set of exam performance by students in various grade levels. A different box and whisker is given for each grade, so that you can easily compare them. A second version of the plot is given to the side, with dots representing the various exam scores for each grade level. This extra level of information is only sometimes helpful. Here, it’s included to help you visualize what a box and whisker plot is showing.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;">
+<img src="external/images/plots/bwplots.png" class="contained" alt="described in detail following the image" aria-describedby="sec11-spread-16-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="sec11-spread-16-description">
+<div class="para" id="sec11-spread-16-1-1">Two box and whisker plots, as described in the paragraph before the image.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-16-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
+</div>
+<div class="para" id="sec11-spread-17">These various notions tell us something about the spread of a data set, but it’d be nice to have a single quantity we could point to. Here’s an idea of how you might go about that. First identify the center of the data set. Next, determine the average distance of a datum from the center. This will give you a single number which represents how spread out the data are. A small value says that the average distance to the center is small while a large value says the average distance to the center is large.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-spread-18">At core, this is a good idea for a measure of spread. However, for technical reasons we want to slightly tweak it to get something that is better behaved mathematically. Instead of looking at the average distance to the center we get the average of the <em class="emphasis">squares</em> of the distances. Then to get back to the correct units we take the square root.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="sec11-spread-19"><h2 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Standard deviation.</span>
+</h2>
+<div class="para logical" id="sec11-spread-19-2-1">
+<div class="para">Consider a data set</div>
+<div class="displaymath process-math" id="sec11-spread-19-2-1-1">
+\begin{equation*}
+x_1, x_2, \ldots, x_n
+\end{equation*}
+</div>
+<div class="para">of <span class="process-math">\(n\)</span> many data with mean <span class="process-math">\(\bar x\text{.}\)</span> The <dfn class="terminology">variance</dfn> <span class="process-math">\(\mathrm{Var}\)</span> of the data set is the average of the squares of the distances from the mean, and the <dfn class="terminology">standard deviation</dfn> <span class="process-math">\(s\)</span> is the square root of that. As formulas:</div>
+<div class="displaymath process-math" id="sec11-spread-19-2-1-8">
+\begin{align*}
+\mathrm{Var} \amp= \frac{(x_1 - \bar x)^2 + (x_2 - \bar x)^2 + \cdots + (x_n - \bar x)^2}{n} = \frac{ \sum (x_i - \bar x)^2}{n},\\
+s \amp= \sqrt{\mathrm{Var}} = \sqrt{\frac{ \sum (x_i - \bar x)^2}{n}}.
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-19-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 11.3.6: Standard deviation"><a tabindex="-1" href="#sec11-spread-19" title="Copy heading and permalink for Definition 11.3.6: Standard deviation" aria-label="Copy heading and permalink for Definition 11.3.6: Standard deviation">🔗</a></div>
+</article>
+<div class="para" id="sec11-spread-20">The more important of these two notions is the standard deviation. You can think of the variance as a step to computing the standard deviation—first compute the variance, that is the average of the squares of the distances from the mean, and then take its square root to get the standard deviation. As said earlier, the reason to take squares of distances instead of distances is that it has nicer mathematical properties which eases more advanced uses. Taking the square root at the end returns us to the original unit. If, for example, our data are weights of fish in pounds, then the mean is also in pounds. Because we square, the units for the variance is square pounds. Taking a square root gets us back to pounds, the same units we started with.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec11-spread-21" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="example example-like knowl__content">
+<div class="para logical" id="sec11-spread-21-1">
+<div class="para">Consider the three data sets from earlier:</div>
+<div class="displaymath process-math" id="sec11-spread-21-1-1">
+\begin{equation*}
+-2,0,2 \qquad\qquad -10,0,10 \qquad\qquad -2000,0,2000.
+\end{equation*}
+</div>
+<div class="para">Let’s compute their standard deviations in turn. We do the first in detail. Before you can do anything else you need to know the mean, in this case we already saw that <span class="process-math">\(\bar x = 0\text{.}\)</span> Now we need to take the average of the squares of the distances from the mean:</div>
+<div class="displaymath process-math" id="sec11-spread-21-1-3">
+\begin{equation*}
+2^2 + 0^2 + 2^2 = 4 + 0 + 4 = 8.
+\end{equation*}
+</div>
+<div class="para">We then divide that by the number of data and take the square root, to get the standard deviation is</div>
+<div class="displaymath process-math" id="sec11-spread-21-1-4">
+\begin{equation*}
+s = \sqrt{\frac 83} \approx 1.63.
+\end{equation*}
+</div>
+<div class="para">For the other two data sets we do the same process. The second data set has standard deviation <span class="process-math">\(\approx 8.16\)</span> and the third data set has standard devation <span class="process-math">\(\approx 1633\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-21-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 11.3.7"><a tabindex="-1" href="#sec11-spread-21" title="Copy heading and permalink for Example 11.3.7" aria-label="Copy heading and permalink for Example 11.3.7">🔗</a></div>
+</article></details>
+<div class="para" id="sec11-spread-22">
+<em class="alert">Warning!</em> Due to technical considerations (the keyword to search is “Bessel’s correction”) most statistical software packages will use a slightly different formula for their standard deviation function. Namely, they will divide by <span class="process-math">\(n-1\)</span> instead of <span class="process-math">\(n\text{.}\)</span> This is the so-called <dfn class="terminology">corrected</dfn> standard deviation or <dfn class="terminology">unbiased estimator</dfn> of the standard deviation, as upposed to the <dfn class="terminology">uncorrected</dfn> standard deviation I gave. This is something to watch out for if you use computer tools to check your work. They might give a slightly different answer because they used a slightly different formula.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec11-spread-23" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading"><span class="type">Aside</span></h2></summary>
+<aside class="aside aside-like knowl__content">
+<div class="para" id="sec11-spread-23-1">This is an example of something that will likely come up when you are teaching elementary school mathematics. Mostly it can be avoided, but occasionally you touch on some detail that is difficult to explain without a lengthy diversion to teach a later, more advanced math class. What do you say to a student who asks about the detail?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-23-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-spread-23-2">It is unsatisfying to simply say “I can’t explain that”—both for the instructor and the student. You can give a brief, high-level gloss. In this case, something like “the correction makes it so the formula gives a more accurate estimation of the true statistic when sampling from a real world distribution”. That’s maybe enough to satisfy the casually curious. If that doesn’t suffice, you can engage the student in a one-on-one conversation to give more information. (This is an invitation, to be clear: if you want to know more, talk to me).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-23-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-spread-23-3">To bring it back to a lesson for teaching: to effectively teach class <span class="process-math">\(X\)</span> you have to understand the subject at a deeper level than what one gets leaving the class.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-23-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</aside></details>
+<div class="para logical" id="sec11-spread-24">
+<div class="para">I promised you that the standard deviation has some nice mathematical properties. Let me mention one. Consider the following two data sets:</div>
+<div class="displaymath process-math" id="sec11-spread-24-1">
+\begin{equation*}
+-8, 8 \qquad\text{and}\qquad -80,80.
+\end{equation*}
+</div>
+<div class="para">Note that the second data set came from the first one by multiplying everything by <span class="process-math">\(10\text{.}\)</span> Both data sets have the same mean, namely <span class="process-math">\(0\text{.}\)</span> If you compute their standard deviations you get <span class="process-math">\(8\)</span> and <span class="process-math">\(80\text{.}\)</span> That is, multiplying everything by <span class="process-math">\(10\)</span> gave you a standard deviation <span class="process-math">\(10\)</span> times as large.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec11-spread-25">In general, if a data set has standard deviation <span class="process-math">\(s\text{,}\)</span> then if you multiply every datum by <span class="process-math">\(k\)</span> the new data set has standard deviation <span class="process-math">\(ks\text{.}\)</span> This is similar to a property enjoyed by the mean—multiplying all values by <span class="process-math">\(k\)</span> multiplies the mean by <span class="process-math">\(k\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec11-spread-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Section 11.3: Measures of spread"><a tabindex="-1" href="#sec11-spread" title="Copy heading and permalink for Section 11.3: Measures of spread" aria-label="Copy heading and permalink for Section 11.3: Measures of spread">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec11-center.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec11-inference.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

@@ -16,12 +16,12 @@ var ptx_lunr_docs = [
   "type": "Preface",
   "number": "",
   "title": "Preface: To the student",
-  "body": " Preface: To the student  This book is designed for students pursuing a career in early childhood or elementary education. Its aim is for you to understand the mathematics you will teach to your students.  When teaching, you should understand the topic more deeply than your students. This is for many reasons. One is that later learning builds on earlier education, and you need to know where students are going to better prepare them. This is especially the case in mathematics education, due to the cumulative nature of the discipline. Another reason is that you will occasionally get advanced students who quickly pick up the material and want more. You want to know enough to be able to guide them to further self-study. Yet another reason is that methods and fads in pedagogy change over time. A deeper understanding of the material enables you to better adapt to these changes and see how they are new looks at the same concepts.  For these reasons, this book is not organized the same as the elementary mathematics curriculum. Instead, chapters are broken up by topic, with each chapter covering material that is spread across multiple years in an elementary school. The goal is for you to understand the unifying mathematical concepts and see how topics across multiple years are aspects of a larger pattern.   is an introduction covering how to read mathematics and how to think about problem solving. The next chapters are organized around different number systems. introduces the natural numbers , those numbers used for counting. then covers how to write natural numbers and how to do arithmetical calculations with them, and goes into a different perspective on the natural numbers. In expand the natural numbers to build the integers , then the rational numbers in and the real numbers in .  "
+  "body": " Preface: To the student  This book is designed for students pursuing a career in early childhood or elementary education. Its aim is for you to understand the mathematics you will teach to your students.  When teaching, you should understand the topic more deeply than your students. This is for many reasons. One is that later learning builds on earlier education, and you need to know where students are going to better prepare them. This is especially the case in mathematics education, due to the cumulative nature of the discipline. Another reason is that you will occasionally get advanced students who quickly pick up the material and want more. You want to know enough to be able to guide them to further self-study. Yet another reason is that methods and fads in pedagogy change over time. A deeper understanding of the material enables you to better adapt to these changes and see how they are new looks at the same concepts.  For these reasons, this book is not organized the same as the elementary mathematics curriculum. Instead, chapters are broken up by topic, with each chapter covering material that is spread across multiple years in an elementary school. The goal is for you to understand the unifying mathematical concepts and see how topics across multiple years are aspects of a larger pattern.  This book is broken up into three parts, intended to be covered over the course of a year-long sequence. is about arithmetic, the mathematics of quantities.   is an introduction covering how to read mathematics and how to think about problem solving. The next chapters are organized around different number systems. introduces the natural numbers , those numbers used for counting. then covers how to write natural numbers and how to do arithmetical calculations with them, and goes into a different perspective on the natural numbers. In expand the natural numbers to build the integers , then the rational numbers in and the real numbers in .   is about geometry, the mathematics of shapes.   is an introduction, surveying many kinds of shapes in both two and three dimensions. is about measurement. How do we measure and calculate distance, area, volume? is about symmetry. How do we mathematically precise the idea that a shape is symmetric? covers the notions of congruence and similarity, making precise the idea when two shapes are the same.   is about statistics, the mathematics of dealing with data, uncertainty, and making predictions. This is the shortest part.   is about data and how you interpret it, summarize it, and use it to make predicitons. is about probability, the quantification of uncertainty.  "
 },
 {
-  "id": "prefaceX-5",
+  "id": "prefaceX-6",
   "level": "2",
-  "url": "prefaceX.html#prefaceX-5",
+  "url": "prefaceX.html#prefaceX-6",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1807,7 +1807,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.3",
   "title": "The geometric meaning of integers",
-  "body": " The geometric meaning of integers  In the last section we talked about how we build the integers from the natural numbers, namely throwing in additive inverses. Now we talk about a geometric interpretation of , which will give us a way to understand the meaning of addition and multiplication.  Think of as a line of dots, stretching infinitely far in both directions. One dot represents . Moving right from it you count up in the positive numbers and moving left from it you count down in the negative numbers . Call this picture the integer line .  In this picture, absolute value represents the number of steps to get to a number starting from . For example, and have the same absolute value—namely —because they are the same distance from .   What this picture tells us is that positive versus negative is about direction. With the natural numbers, you could get bigger and bigger forever, but if you tried going the other way you'd eventually get stuck at . With the integers, we add in an opposite direction which you can also travel infinitely.  This direction also tells us how to define order for the integers.  Order on integers  For two integers and , we say if is to the left of on the number line. Put explicitly: Any negative number is less than any positive number.  If and are both then if and only if .  If and are both then if and only if .   As we did with natural numbers, we use , and .  The use of left for the negative direction and right for the positive direction is merely a convention. If your native language is, like English, written left-to-right this probably makes sense. Going forward means going to the right, going backward means going to the left. If your native language is written right-to-left, such as Arabic, then this might seem wrong, and you might ask if you could draw it differently. Everything would work just as well. What is important is that the negative direction and the positive direction are opposites.  This picture and the idea of positive versus negative as directions tells us the meaning of addition. Consider . Think of this as meaning you start at and you take steps to the right. (Right because that is the positive direction.) Then you would end at . Or consider . This means starting at and taking steps to the left (the negative direction). Counting them off you see .  In general, adding means taking steps, where you go to th eright if is positive and to the left if is negative. (Adding is taking no steps, which doesn't change your position.)  You can think about in terms of a single starting and ending point, but it's also useful to think about what addition does to the entire line. No matter your starting point, adding means taking steps to the left. This is the entire line stepping to the left.   Adding, for instance, is the etnire line stepping to the right.   Mathematicians liking to have too many names for things, we call these translations or shifts . In summary, the geometric meaning is translation. Adding by shifts the entire number line units, with the sign of telling which direction—left for negative, right for positive.  Now let's think about multiplication. Consider . This takes the starting position at and moves it times as far away from , namely to . Or consider . Like before, this moves the starting position times as far away from , ending at . Before this movement, our two starting points were only steps apart, but at the end they were steps apart. Multiplying stretched the number line so the points become farther apart.  In general, multiplying by a positive number stretches out the number line. If you multiply by the positive number you stretch the line so points are times farther apart. More formally, we call this a scaling .  How should we understand multiplication by a negative number? Let's focus on the simplest case, namely multiplication by . Multiplying by should be the same as putting a minus sign in front of the number; more formally, multiplying by should give you the additive inverse of . What this amounts to is changing which side of the number line you are on. For example, , so it gets moved from the right side to the left, while , so it gets moved from the left side to the right.  Altogether, what multiplication by does is flip the number line, swapping the left and right sides. More formally, we call this a reflection . You should think of this as swapping the two directions.   Here's an algebraic way to convince yourself that multiplying by should give the additive inverse. Consider the formula . On the one hand, and so the product will be . On the other hand, the distributivity property lets us rewrite this as . Putting those together we get , whence we get that is the thing you add to to get —in other words, its additive inverse.  Consider now mulitplication by, say, . Think of this multiplication as a two-step process: . Geometrically, we reflect the number line and then scale by a factor of .  Multiplication by is a special case. Anything multiplied by becomes , so multiplying by collapses the entire number line down to a point. This usually isn't interesting or useful.    To sum up this section, addition corresponds to translation , where the magnitude tells you how far to translate and the sign tells you what direction. Multiplication corresponds to scaling and reflection , where the magnitude tells you how much to scale by and the sign tells you whether to reflect.  "
+  "body": " The geometric meaning of integers  In the last section we talked about how we build the integers from the natural numbers, namely throwing in additive inverses. Now we talk about a geometric interpretation of , which will give us a way to understand the meaning of addition and multiplication.  Think of as a line of dots, stretching infinitely far in both directions. One dot represents . Moving right from it you count up in the positive numbers and moving left from it you count down in the negative numbers . Call this picture the integer line .  In this picture, absolute value represents the number of steps to get to a number starting from . For example, and have the same absolute value—namely —because they are the same distance from .   The integer number line. Numbers, represented here as dots, march out infinitely in both directions. Infinitely many dots is a lot to draw, so arrows are placed on the line to encourage the viewer to imagine this finite image continuing on forever.    What this picture tells us is that positive versus negative is about direction. With the natural numbers, you could get bigger and bigger forever, but if you tried going the other way you'd eventually get stuck at . With the integers, we add in an opposite direction which you can also travel infinitely.  This direction also tells us how to define order for the integers.  Order on integers  For two integers and , we say if is to the left of on the number line. Put explicitly: Any negative number is less than any positive number.  If and are both then if and only if .  If and are both then if and only if .   As we did with natural numbers, we use , and .  The use of left for the negative direction and right for the positive direction is merely a convention. If your native language is, like English, written left-to-right this probably makes sense. Going forward means going to the right, going backward means going to the left. If your native language is written right-to-left, such as Arabic, then this might seem wrong, and you might ask if you could draw it differently. Everything would work just as well. What is important is that the negative direction and the positive direction are opposites.  This picture and the idea of positive versus negative as directions tells us the meaning of addition. Consider . Think of this as meaning you start at and you take steps to the right. (Right because that is the positive direction.) Then you would end at . Or consider . This means starting at and taking steps to the left (the negative direction). Counting them off you see .  In general, adding means taking steps, where you go to th eright if is positive and to the left if is negative. (Adding is taking no steps, which doesn't change your position.)  You can think about in terms of a single starting and ending point, but it's also useful to think about what addition does to the entire line. No matter your starting point, adding means taking steps to the left. This is the entire line stepping to the left.   Two integer number lines one placed above the other. Dashed arrows in between illustrate the movement of all numbers steps to the left. This is what adding does to the number line.    Adding, for instance, is the entire line stepping to the right.   Two integer number lines one placed above the other. Dashed arrows in between illustrate the movement of all numbers steps to the right. This is what adding does to the number line.    Mathematicians liking to have too many names for things, we call these translations or shifts . In summary, the geometric meaning is translation. Adding by shifts the entire number line units, with the sign of telling which direction—left for negative, right for positive.  Now let's think about multiplication. Consider . This takes the starting position at and moves it times as far away from , namely to . Or consider . Like before, this moves the starting position times as far away from , ending at . Before this movement, our two starting points were only steps apart, but at the end they were steps apart. Multiplying stretched the number line so the points become farther apart.  In general, multiplying by a positive number stretches out the number line. If you multiply by the positive number you stretch the line so points are times farther apart. More formally, we call this a scaling .   Two integer number lines one placed above the other. Dashed arrows in between illustrate a scaling by a factor of , corresponding to multiplication by . All numbers are moved to be twice as far away from .    How should we understand multiplication by a negative number? Let's focus on the simplest case, namely multiplication by . Multiplying by should be the same as putting a minus sign in front of the number; more formally, multiplying by should give you the additive inverse of . What this amounts to is changing which side of the number line you are on. For example, , so it gets moved from the right side to the left, while , so it gets moved from the left side to the right.  Altogether, what multiplication by does is flip the number line, swapping the left and right sides. More formally, we call this a reflection . You should think of this as swapping the two directions.   Two integer number lines one placed above the other. Dashed arrows in between illustrate a reflection, corresponding to multiplication by . All numbers are flipped to be on the other side of . For legibility half of the dashed lines are not shown.    Here's an algebraic way to convince yourself that multiplying by should give the additive inverse. Consider the formula . On the one hand, and so the product will be . On the other hand, the distributivity property lets us rewrite this as . Putting those together we get , whence we get that is the thing you add to to get —in other words, its additive inverse.  Consider now mulitplication by, say, . Think of this multiplication as a two-step process: . Geometrically, we reflect the number line and then scale by a factor of . Or we could scale first and then reflect; the order doesn't matter.   Three integer number lines one placed above each other in order. Dashed arrows in between the top and middle lines illustrate multiplication by , a scaling so all points are twice as far from the center. Dashed arrows in between the middle and bottom lines illustrate a reflection, corresponding to multiplication by .    Multiplication by is a special case. Anything multiplied by becomes , so multiplying by collapses the entire number line down to a point. This usually isn't interesting or useful.   An illustration of the entire number being sent to the point at .    To sum up this section, addition corresponds to translation , where the magnitude tells you how far to translate and the sign tells you what direction. Multiplication corresponds to scaling and reflection , where the magnitude tells you how much to scale by and the sign tells you whether to reflect.  "
 },
 {
   "id": "sec4-geometry-3",
@@ -1819,45 +1819,45 @@ var ptx_lunr_docs = [
   "body": "integer line "
 },
 {
-  "id": "sec4-geometry-7",
+  "id": "sec4-geometry-8",
   "level": "2",
-  "url": "sec4-geometry.html#sec4-geometry-7",
+  "url": "sec4-geometry.html#sec4-geometry-8",
   "type": "Definition",
   "number": "4.3.1",
   "title": "Order <span class=\"process-math\">\\(\\lt\\)<\/span> on integers.",
   "body": "Order on integers  For two integers and , we say if is to the left of on the number line. Put explicitly: Any negative number is less than any positive number.  If and are both then if and only if .  If and are both then if and only if .   As we did with natural numbers, we use , and . "
 },
 {
-  "id": "sec4-geometry-13",
+  "id": "sec4-geometry-16",
   "level": "2",
-  "url": "sec4-geometry.html#sec4-geometry-13",
+  "url": "sec4-geometry.html#sec4-geometry-16",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "translations shifts "
 },
 {
-  "id": "sec4-geometry-15",
+  "id": "sec4-geometry-18",
   "level": "2",
-  "url": "sec4-geometry.html#sec4-geometry-15",
+  "url": "sec4-geometry.html#sec4-geometry-18",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "scaling "
 },
 {
-  "id": "sec4-geometry-17",
+  "id": "sec4-geometry-21",
   "level": "2",
-  "url": "sec4-geometry.html#sec4-geometry-17",
+  "url": "sec4-geometry.html#sec4-geometry-21",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "reflection "
 },
 {
-  "id": "sec4-geometry-21",
+  "id": "sec4-geometry-28",
   "level": "2",
-  "url": "sec4-geometry.html#sec4-geometry-21",
+  "url": "sec4-geometry.html#sec4-geometry-28",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2203,7 +2203,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.3",
   "title": "Arithmetic of fractions",
-  "body": " Arithmetic of fractions  In this section we talk about how to perform arithmetic with fractions. As part of this, we will see the important fact that if you add, subtract, multiply, or divide two rational numbers then you get another rational number. This tells us that if we want to solve equations with rational numbers then we don't need to introduce yet more new numbers.  We will first talk about how to multiply and divide fractions. Adding and subtracting will come later, as those are in fact more difficult.  Algorithm for fraction multiplication  Consider two fractions and . Then their product is That is, to multiply fractions you multiply their numerators to get the product's numerator and you multiply their denominators to get the product's denominator.  Here's a way to think about this definition. When you multiply, you multiply the numerators, but why do you also multiply the denominators? Fractions, as a key point of this chapter that has been repeatedly emphasized, are a way to denote that division is happening. What you're asking is, if you divide twice what is the total amount by which you are dividing? The answer is, your total division is by the product of the two.  Because exponentiation is repeated multiplication, this definition also tells you how to compute exponents of fractions. Namely, The idea is, you multiply by itself many times. So that multiplication becomes multiplying by itself in the numerator and by itself in the denominator.  Next we discuss division. To understand it, let's first understand what it has to do with multiplicative inverses. Consider for example the division . This is equivalent to the multiplication . In general, division is the same as multiplication by the inverse.  Reciprocal of a fraction  The reciprocal or multiplicative inverse of a fraction is the fraction . That is, to take the reciprocal of a fraction swap the numerator and denominator.  You can check that is the multiplicative inverse of by multiplying them:   Algorithm for fraction division  Consider two fractions and . Then their quotient is That is, to divide fractions you multiply by the reciprocal, using the rule for how to multiply fractions.  Writing division of fractions can be annoying, since it involves fractions inside fractions! Good practice is to write the outer fraction in form and the inner fractions in form. If you write them both the same way it can be hard to tell the order. For example, which division happens first in    To calculate we turn it into a multiplication, namely the multiplication of the numerator by the reciprocal of the denominator:    Let's now turn to addition (and its sister subtraction). When the denominators are the same, the distributivity rule tells us what to do. Consider the following example. In general, if two fractions have the same denominator then their sum is obtained by adding their numerators and keeping the denominator. (And the rule for subtraction is similar.)    Write the rule for subtracting fractions with the same denominator.   But you shouldn't expect to only add fractions which already have the same denominator. In this case, you have to rewrite the fractions to get a common denominator. Note that if you have any fraction multiplying the top and bottom by the same value gives an equal fraction. For example, . If we want to rewrite two fractions to have the same denominator we can do this process for each.  Rewriting fractions to have a common denominator  Suppose you have two fractions and . Here are a few different ways you can rewrite them to have a common denominator. If one denominator is a multiple of the other, say , then is a common denominator. In this case, keep the same and multiply the other fraction by .   The smallest common denominator is always the least common multiple of the denominators, which you can find by the methods of . You then have to determine which you multiply each denomniator by the get this least common multiple. Give these names: and . These are what you multiply the fractions by.   If you don't want to find the least common multiple you can always take the product of the two denominators as a common denominator.    The different methods have different advantages. The first requires the least work but it doesn't always apply. The second gives you as small a common denominator as possible, but it might be a bit of work to find the least common multiple. The last method avoids that work but has the downside that your common denominator may be much larger than necessary.  Also useful is the opposite direction, namely simplifying a fraction by canceling out common terms from the numerator and denominator. After performing an addition you may have a fraction that can be written more simply, and it's good to know how to do that.  Reduced form of a fraction  A fraction is in reduced form if there are no common factors of the numerator and denominator, that is if . If a fraction is not already in reduced form, you can turn it into reduced form by dividing this GCD out from both parts: Note that in this second fraction both parts are whole numbers.   With these in hand, we can now see how to add\/subtract any two fractions.  Algorithm for fraction addition and subtraction  Consider two fractions and . To add (or subtract) them, first rewrite them to have a common denominator. Then add (or subtract) the two fractions with a common denominator. If you like, then simplify your result to reduced form.  Having a common denominator also lets us compare fractions. First however, let's observe that you can always rewrite a fraction to have a positive denominator.  Rewriting a fraction to have a positive denominator  Consider a fraction . If is already positive, there's nothing to be done.  If both and are negative, then the negatives cancel out. For example, .  If is positive but is negative, then you can move the negative to the numerator. For example, .  If two fractions have a positive denominator, then to compare them you simply compare their numerators. The larger numerator gives the larger fraction. If the fractions don't have a common denominator, rewrite them to have a common denominator and then compare.  Algorithm for comparing fractions  Consider two fractions and . Here's how you determine which one is larger. First ensure both denominators are positive.  Then rewrite the fractions, if necessary, to have the same denominator.  Once you have a common denominator, compare the fractions by comparing the numerator. The one with the larger numerator is the larger fraction, and if the numerators are equal the fractions are equal.  Note that this algorithm also gives you a way to check whether two fractions, probably written in different bases, are equal. First you rewrite them to have a common denominator, then they are equal if and only if the numerators are equal.  Now that we have an idea of how to compare fractions, let's think about what the number line of rational numbers looks like. Remember that the number line for integers consisted of equally spaced dots marching off to infinity in both directions.   With the rational numbers we are putting in more dots in the gaps. For instance, between any two adjacent integers and there are infinitely many rational numbers, such as In general, between any two dots on the rational number line you can find another dot. If and are two rational numbers then their average sits between them. Since you can repeat this process indefinitely, taking more and more averages to get more and more intermediate points, this means between and are infinitely many dots. Thus, the rational number line looks like an infinitely dense line of dots.   Let's close out this section by mentioning an important algebraic fact about the rational numbers. With integers, adding, subtracting, or multiplying always gave you another integer, but division might take you outside the integers. This doesn't happen with rational numbers.  Closure of the rational numbers under arithmetic operations  The rational numbers are closed under addition, subtraction, multiplication, and division. That is, if you take two rational numbers then their sum, difference, product, and quotient can all be written as a single fraction of integers. (Of course we exclude the case of division by zero.)  We will expand out number system again in the next chapter, but the reason for this expansion cannot be the basic arithmetic operations. It must be for something new.  "
+  "body": " Arithmetic of fractions  In this section we talk about how to perform arithmetic with fractions. As part of this, we will see the important fact that if you add, subtract, multiply, or divide two rational numbers then you get another rational number. This tells us that if we want to solve equations with rational numbers then we don't need to introduce yet more new numbers.  We will first talk about how to multiply and divide fractions. Adding and subtracting will come later, as those are in fact more difficult.  Algorithm for fraction multiplication  Consider two fractions and . Then their product is That is, to multiply fractions you multiply their numerators to get the product's numerator and you multiply their denominators to get the product's denominator.  Here's a way to think about this definition. When you multiply, you multiply the numerators, but why do you also multiply the denominators? Fractions, as a key point of this chapter that has been repeatedly emphasized, are a way to denote that division is happening. What you're asking is, if you divide twice what is the total amount by which you are dividing? The answer is, your total division is by the product of the two.  Because exponentiation is repeated multiplication, this definition also tells you how to compute exponents of fractions. Namely, The idea is, you multiply by itself many times. So that multiplication becomes multiplying by itself in the numerator and by itself in the denominator.  Next we discuss division. To understand it, let's first understand what it has to do with multiplicative inverses. Consider for example the division . This is equivalent to the multiplication . In general, division is the same as multiplication by the inverse.  Reciprocal of a fraction  The reciprocal or multiplicative inverse of a fraction is the fraction . That is, to take the reciprocal of a fraction swap the numerator and denominator.  You can check that is the multiplicative inverse of by multiplying them:   Algorithm for fraction division  Consider two fractions and . Then their quotient is That is, to divide fractions you multiply by the reciprocal, using the rule for how to multiply fractions.  Writing division of fractions can be annoying, since it involves fractions inside fractions! Good practice is to write the outer fraction in form and the inner fractions in form. If you write them both the same way it can be hard to tell the order. For example, which division happens first in    To calculate we turn it into a multiplication, namely the multiplication of the numerator by the reciprocal of the denominator:    Let's now turn to addition (and its sister subtraction). When the denominators are the same, the distributivity rule tells us what to do. Consider the following example. In general, if two fractions have the same denominator then their sum is obtained by adding their numerators and keeping the denominator. (And the rule for subtraction is similar.)    Write the rule for subtracting fractions with the same denominator.   But you shouldn't expect to only add fractions which already have the same denominator. In this case, you have to rewrite the fractions to get a common denominator. Note that if you have any fraction multiplying the top and bottom by the same value gives an equal fraction. For example, . If we want to rewrite two fractions to have the same denominator we can do this process for each.  Rewriting fractions to have a common denominator  Suppose you have two fractions and . Here are a few different ways you can rewrite them to have a common denominator. If one denominator is a multiple of the other, say , then is a common denominator. In this case, keep the same and multiply the other fraction by .   The smallest common denominator is always the least common multiple of the denominators, which you can find by the methods of . You then have to determine which you multiply each denomniator by the get this least common multiple. Give these names: and . These are what you multiply the fractions by.   If you don't want to find the least common multiple you can always take the product of the two denominators as a common denominator.    The different methods have different advantages. The first requires the least work but it doesn't always apply. The second gives you as small a common denominator as possible, but it might be a bit of work to find the least common multiple. The last method avoids that work but has the downside that your common denominator may be much larger than necessary.  Also useful is the opposite direction, namely simplifying a fraction by canceling out common terms from the numerator and denominator. After performing an addition you may have a fraction that can be written more simply, and it's good to know how to do that.  Reduced form of a fraction  A fraction is in reduced form if there are no common factors of the numerator and denominator, that is if . If a fraction is not already in reduced form, you can turn it into reduced form by dividing this GCD out from both parts: Note that in this second fraction both parts are whole numbers.   With these in hand, we can now see how to add\/subtract any two fractions.  Algorithm for fraction addition and subtraction  Consider two fractions and . To add (or subtract) them, first rewrite them to have a common denominator. Then add (or subtract) the two fractions with a common denominator. If you like, then simplify your result to reduced form.  Having a common denominator also lets us compare fractions. First however, let's observe that you can always rewrite a fraction to have a positive denominator.  Rewriting a fraction to have a positive denominator  Consider a fraction . If is already positive, there's nothing to be done.  If both and are negative, then the negatives cancel out. For example, .  If is positive but is negative, then you can move the negative to the numerator. For example, .  If two fractions have a positive denominator, then to compare them you simply compare their numerators. The larger numerator gives the larger fraction. If the fractions don't have a common denominator, rewrite them to have a common denominator and then compare.  Algorithm for comparing fractions  Consider two fractions and . Here's how you determine which one is larger. First ensure both denominators are positive.  Then rewrite the fractions, if necessary, to have the same denominator.  Once you have a common denominator, compare the fractions by comparing the numerator. The one with the larger numerator is the larger fraction, and if the numerators are equal the fractions are equal.  Note that this algorithm also gives you a way to check whether two fractions, probably written in different bases, are equal. First you rewrite them to have a common denominator, then they are equal if and only if the numerators are equal.  Now that we have an idea of how to compare fractions, let's think about what the number line of rational numbers looks like. Remember that the number line for integers consisted of equally spaced dots marching off to infinity in both directions.   The integer number line. Numbers, represented here as dots, march out infinitely in both directions. Infinitely many dots is a lot to draw, so arrows are placed on the line to encourage the viewer to imagine this finite image continuing on forever.    With the rational numbers we are putting in more dots in the gaps. For instance, between any two adjacent integers and there are infinitely many rational numbers, such as In general, between any two dots on the rational number line you can find another dot. If and are two rational numbers then their average sits between them. Since you can repeat this process indefinitely, taking more and more averages to get more and more intermediate points, this means between and are infinitely many dots. Thus, the rational number line looks like an infinitely dense line of dots.   The rational number line. The dots representing numbers are now infinitely dense rather than being spaced out. Visually this is represented as a line but drawn thicker. Only some of the numbers are labeled because there are too many to fit.    Let's close out this section by mentioning an important algebraic fact about the rational numbers. With integers, adding, subtracting, or multiplying always gave you another integer, but division might take you outside the integers. This doesn't happen with rational numbers.  Closure of the rational numbers under arithmetic operations  The rational numbers are closed under addition, subtraction, multiplication, and division. That is, if you take two rational numbers then their sum, difference, product, and quotient can all be written as a single fraction of integers. (Of course we exclude the case of division by zero.)  We will expand out number system again in the next chapter, but the reason for this expansion cannot be the basic arithmetic operations. It must be for something new.  "
 },
 {
   "id": "sec5-arithmetic-4",
@@ -2296,9 +2296,9 @@ var ptx_lunr_docs = [
   "body": "Algorithm for comparing fractions  Consider two fractions and . Here's how you determine which one is larger. First ensure both denominators are positive.  Then rewrite the fractions, if necessary, to have the same denominator.  Once you have a common denominator, compare the fractions by comparing the numerator. The one with the larger numerator is the larger fraction, and if the numerators are equal the fractions are equal. "
 },
 {
-  "id": "sec5-arithmetic-30",
+  "id": "sec5-arithmetic-32",
   "level": "2",
-  "url": "sec5-arithmetic.html#sec5-arithmetic-30",
+  "url": "sec5-arithmetic.html#sec5-arithmetic-32",
   "type": "Theorem",
   "number": "5.3.11",
   "title": "Closure of the rational numbers under arithmetic operations.",
@@ -2888,6 +2888,2796 @@ var ptx_lunr_docs = [
   "number": "6.6.10",
   "title": "",
   "body": " Consider the two numbers and given by the following patterns for their decimal expansions. Each number has an integer part of . The digits after the decimal point for are obtained by writing the integers through in order one after another, looping back to whenever they reach .  The digits after the decimal point for are obtained by writing the integers starting at in order one after another, never looping back.  For each of these numbers, is it rational or irrational? Explain your answers.   If you are not sure, begin by writing out the decimal expansion of the number. What patterns can you notice?  "
+},
+{
+  "id": "sec7-shapes",
+  "level": "1",
+  "url": "sec7-shapes.html",
+  "type": "Section",
+  "number": "7.1",
+  "title": "Shapes on a plane",
+  "body": " Shapes on a plane  Arithmetic, as we studied in , has numbers as its primary object of interest. Geometry, which we now begin studying, has shapes as its central focus.  To give a definition, a shape is a region of two-dimensional space enclosed by a boundary . The boundary consists of one or more edges —curved or straight lines—with edges meeting at vertices .   You might ask, why two dimensional? Is the number two special? Later we will talk about what shapes mean in other dimensions.    There are many shapes, and some of them are given names. Let's catalogue some common shapes.  The circle is a shape with a single curved edge. Every point on this edge is the same distance from the center of the circle. This distance is called the radius of the circle. You can specify a circle by giving its center and radius; from that information you can uniquely draw it. Doing so produces a very symmetric object.  If two circles have the same center we call them concentric .   Three circles. Two are concentric, meaning they have the same center, while the other has a different center. All three radii are different.    Note that the boundary of a circle is a one dimensional object. If you live on the boundary and can't leave, you only have one dimension of movement available—clockwise or counterclockwise. On the other hand, the interior of a circle is two dimensional. If you're inside the circle you have two independent direction of movement available. This is a general pattern. The boundary of a shape is one dimension smaller.  Another shape with a single curved edge the ellipse . This shape can be thought of as what you get by starting with a circle and stretching it outward from opposite points. If you prefer a stuffy definition, the edge of an ellipse consists of points whose distance to two focus points sum to the same number. In common language, one hears the word oval (literally: egg-shaped). This is not a mathematically precise term. Indeed, it refers also to shapes that aren't symmetrical enough to be ellipses, such as the shape of an egg.   Two ellipses. One has its major axis, the longest distance from edge to edge, vertical while the others is horizontal. Their minor axes, the shortest distance from edge to edge, are respcetively horizontal and vertical. Note that the shapes are symmetric across both minor and major axes. Contrast to a lopsided egg which only has one axis of symmetry.  A circle is also included, as a special case of an ellipse.    Other interesting shapes have all edges being straight lines. We call shapes will all edges straight polygons . A triangle is any shape with exactly three straight edges. Between these three edges sit three angles , hence the name. If you draw dots and three different points in two-dimensional space, as long as those three dots aren't all on the same straight line, if you connect the dots you will draw a triangle. To say that briefly, colinear means the points are on the same line, so any three non-colinear points form a triangle.   Three triangles. One has its edges drawn in as dashed lines between dots for its corners, to make you think of it as formed from taking three non-colinear points and drawing edges between them.    A square is a shape with four straight edges whose edges all have the same length and whose angles all have the same measure. If you only require all angles to be the same the shape is called a rectangle .   Two squares. One has horizontal and vertical sides. The other is oriented diagonally to guard against the mistaken idea that the sides of a square must be verical\/horizontal. Also two rectangles of different dimensions. One rectangle is wider than it is tall and the other is taller than it is wide. Both rectangles happen to be aligned with the vertical\/horizontal axes, but the square example is enough to tell you that they needn't be, correct?    This is a good place to detour to a question. In many distiplines you want to categorize objects—numbers or shapes in mathematics, chemical substances in chemistry, organisms in biology, and so on. Do you want your categories to overlap? Or should each object belong to only one category? In this case, are squares and rectangles disjoint classes of objects, or can a shape be both? After all, a rectangle is a four-sided shape whose angles are all the same, and that applies to squares.  In ordinary speech, the answer might be yes, these are different shapes. If a shape were a square you'd simply call it a square, so if you call something a rectangle that implies it's not a square. Mathematically, however, it is convenient to have the answer be that all squares are rectangles. In general in mathematics, when categorizing things we like our categories to overlap. Thus, a fact about rectangles is for free a fact about squares. For instance, rather than have to memorize different formulas for the areas of squares versus rectangles you can just remember the formula for rectangles.  For another example of this, every circle is also an ellipse. (But not vice versa.) You can think of this in a couple ways. First, if an ellipse is a stretched circle then a circle is the ellipse you get by doing the do nothing stretch. If you prefer the focus point definition, a circle is an ellipse whose focus points are the same point.  To close this section let's clear up an ambiguity. Is a shape its interior , the area enclosed, or its boundary ? The answer is, kinda both. You can be more careful and make this distinction; for instance, in advanced fields of mathematics such as topology it's important to distinguish the interior of a shape from its boundary. In that context mathematicians will distinguish the circle (the boundary) from the disk (the boundary and the interior together). But in ordinary use people aren't so precise. We will also not be so precise.  "
+},
+{
+  "id": "sec7-shapes-2",
+  "level": "2",
+  "url": "sec7-shapes.html#sec7-shapes-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "numbers shapes "
+},
+{
+  "id": "sec7-shapes-3",
+  "level": "2",
+  "url": "sec7-shapes.html#sec7-shapes-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "shape boundary edges vertices "
+},
+{
+  "id": "sec7-shapes-6",
+  "level": "2",
+  "url": "sec7-shapes.html#sec7-shapes-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "circle center radius "
+},
+{
+  "id": "sec7-shapes-7",
+  "level": "2",
+  "url": "sec7-shapes.html#sec7-shapes-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "concentric "
+},
+{
+  "id": "sec7-shapes-10",
+  "level": "2",
+  "url": "sec7-shapes.html#sec7-shapes-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "ellipse focus points oval "
+},
+{
+  "id": "sec7-shapes-12",
+  "level": "2",
+  "url": "sec7-shapes.html#sec7-shapes-12",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "polygons triangle angles colinear "
+},
+{
+  "id": "sec7-shapes-14",
+  "level": "2",
+  "url": "sec7-shapes.html#sec7-shapes-14",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "square rectangle "
+},
+{
+  "id": "sec7-shapes-19",
+  "level": "2",
+  "url": "sec7-shapes.html#sec7-shapes-19",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "interior boundary topology "
+},
+{
+  "id": "sec7-triangles",
+  "level": "1",
+  "url": "sec7-triangles.html",
+  "type": "Section",
+  "number": "7.2",
+  "title": "Triangles and quadrilaterals",
+  "body": " Triangles and quadrilaterals  Having seen some shapes let's now do a deeper dive into two important kinds of shapes, triangles —those shapes with three straight sides—and quadrilaterals —those with four straight sides.  Let's begin with triangles. One way we can classify triangles is by their largest angle.  An angle is a measure of rotational distance. The angle between two lines is the amount you need to rotate one to overlap the other. We will talk in more detail in about angles, but for now we just need a coarse classification. To start, we only look at angles smaller than a half turn of the circle. Note that if two non-parallel lines meet at a point the shortest angular distance from one to the other is less than a half turn of the circle.  Acute, right, and obtuse angles  A right angle is one formed by two perpendicular lines, like adjacent sides of a rectangle. That is, a right angle is equal to one quarter turn of a circle. An acute angle is one which is smaller than a right angle. An obtuse angle is one which is larger than a right angle but smaller than a half turn of a circle.   Three angles formed by pairs of lines meeting. One is right, one is acute, one is obtuse. For the acute and obtuse angles an arc is drawn across the angle to show its position. For the right angle a box is used instead. The box is an indication that this really is a right angle and not something that's merely close to right.    When drawing angles, circular arcs are used to show the corresponding turn of a circle. The exception is with right angles, where a small rectangular box is draw instead. The reason for this convention is to make it clear that the angle is exactly right, and not an obtuse or acute angle that happens to be close to right.    An important fact about triangles in the plane is that their angles always add up to a half turn of a circle. This implies that at most one of the angles can be right or obtuse, and the other two angles are always acute.  Acute, right, and obtuse triangles  A triangle is called an acute triangle , right triangle , or obtuse triangle if its largest angle is, respectively, acute, right, or obtuse.   A right, acute, and obtuse triangle. For the right and obtuse triangles the largest angle is marked. The acute triangle has all three angles the same.      Angles and sides of a triangle  Label the three sides of a triangle from largest to smallest as , so that . Then the angles opposite those sides have the same order. That is, if we call the opposite angles then , where equality holds for two angles if and only if it holds for the corresponding sides.   A right triangle. Its hypotenuse is labeled and its two legs are labeled and . The right angle is labeled and the two acute angles are labeled and , each opposite the correspondingly labeled side.    Let's make explicit a few features of this fact. The largest angle is opposite the largest side. Thus, if a triangle is right or obtuse its largest side is the one opposite the right\/obtuse angle. For a right triangle this side has a special name. We call it the hypotenuse .  The smallest angle is opposite the smallest side.  If two angles are the same then the opposite sides are the same length, and vice versa.     A consequence of this fact is that if you want to classify triangles by how many sides are equal, it's equivalent to asking how many angles are equal.  Equilateral, isosceles, and scalene triangles  An equilateral triangle is one whose sides are all the same size. An isosceles triangle is one with two sides the same size, and the other different. A scalene triangle is one where all sides are different sizes.    Explain why an equilateral triangle must be acute but an isosceles triangle and scalene triangle can be right or obtuse. Draw pictures to give examples of isosceles\/scalene right\/obtuse triangles.   Next let's talk about different kinds of quadrilaterals. We have already seen rectangles and squares. Those were the quadrilaterals with all angles the same and with all angles the same and all sides the same. Note that this is unlike triangles; for triangles all angles being the same was enough to imply all sides are the same. Whereas with four sides you now have to separate the two notions.  Indeed, with quadrilaterals all sides having the same length doesn't imply the angles are the same. Picture a square whose sides are rigid but loosely attached at the corners. So you can gently push it to create a diamond shape. We call these quadrilaterals with all sides the same rhobmuses .   A couple rhombuses. One is oriented so it has a pair of horizontal sides, the other is oriented in a diagonal diamond-like shape.     True or false: if a shape is both a rhombus and a rectangle, then it is a square. Explain.   Opposite sides of rhombuses are always parallel. Just like you can imagine forming a rectangle from a square by stretching two opposite sides, you can do the same with a rhombus. The shape you produce is a parallelogram , a quadrilateral whose opposite sides are parallel. Observe that opposite sides of a parallelogram are equal in length.   A couple parallelograms. One is oriented so it has a pair of horizontal sides, the other is oriented so it has a pair of vertical sides.    If just one pair of opposite sides are parallel we call the quadrilateral a trapezoid .   Three trapezoids. Following an earlier theme, they vary in orientation. By now you should have internalized that things don't have to be nicely aligned in an -grid. One trapezoid has its middle side attached at right angles to the parallel sides. One has diagonal sides of the same slope. One has diagonal sides of different slope. They are all trapezoids and they are all beautiful.     Is a rectangle a trapezoid? Make a case for your anwer.   "
+},
+{
+  "id": "sec7-triangles-2",
+  "level": "2",
+  "url": "sec7-triangles.html#sec7-triangles-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "triangles quadrilaterals "
+},
+{
+  "id": "sec7-triangles-4",
+  "level": "2",
+  "url": "sec7-triangles.html#sec7-triangles-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "angle "
+},
+{
+  "id": "sec7-triangles-5",
+  "level": "2",
+  "url": "sec7-triangles.html#sec7-triangles-5",
+  "type": "Definition",
+  "number": "7.2.1",
+  "title": "Acute, right, and obtuse angles.",
+  "body": "Acute, right, and obtuse angles  A right angle is one formed by two perpendicular lines, like adjacent sides of a rectangle. That is, a right angle is equal to one quarter turn of a circle. An acute angle is one which is smaller than a right angle. An obtuse angle is one which is larger than a right angle but smaller than a half turn of a circle.   Three angles formed by pairs of lines meeting. One is right, one is acute, one is obtuse. For the acute and obtuse angles an arc is drawn across the angle to show its position. For the right angle a box is used instead. The box is an indication that this really is a right angle and not something that's merely close to right.    When drawing angles, circular arcs are used to show the corresponding turn of a circle. The exception is with right angles, where a small rectangular box is draw instead. The reason for this convention is to make it clear that the angle is exactly right, and not an obtuse or acute angle that happens to be close to right.   "
+},
+{
+  "id": "sec7-triangles-7",
+  "level": "2",
+  "url": "sec7-triangles.html#sec7-triangles-7",
+  "type": "Definition",
+  "number": "7.2.2",
+  "title": "Acute, right, and obtuse triangles.",
+  "body": "Acute, right, and obtuse triangles  A triangle is called an acute triangle , right triangle , or obtuse triangle if its largest angle is, respectively, acute, right, or obtuse.   A right, acute, and obtuse triangle. For the right and obtuse triangles the largest angle is marked. The acute triangle has all three angles the same.     "
+},
+{
+  "id": "sec7-triangles-8",
+  "level": "2",
+  "url": "sec7-triangles.html#sec7-triangles-8",
+  "type": "Theorem",
+  "number": "7.2.3",
+  "title": "Angles and sides of a triangle.",
+  "body": "Angles and sides of a triangle  Label the three sides of a triangle from largest to smallest as , so that . Then the angles opposite those sides have the same order. That is, if we call the opposite angles then , where equality holds for two angles if and only if it holds for the corresponding sides.   A right triangle. Its hypotenuse is labeled and its two legs are labeled and . The right angle is labeled and the two acute angles are labeled and , each opposite the correspondingly labeled side.    Let's make explicit a few features of this fact. The largest angle is opposite the largest side. Thus, if a triangle is right or obtuse its largest side is the one opposite the right\/obtuse angle. For a right triangle this side has a special name. We call it the hypotenuse .  The smallest angle is opposite the smallest side.  If two angles are the same then the opposite sides are the same length, and vice versa.    "
+},
+{
+  "id": "sec7-triangles-10",
+  "level": "2",
+  "url": "sec7-triangles.html#sec7-triangles-10",
+  "type": "Definition",
+  "number": "7.2.4",
+  "title": "Equilateral, isosceles, and scalene triangles.",
+  "body": "Equilateral, isosceles, and scalene triangles  An equilateral triangle is one whose sides are all the same size. An isosceles triangle is one with two sides the same size, and the other different. A scalene triangle is one where all sides are different sizes.  "
+},
+{
+  "id": "sec7-triangles-11",
+  "level": "2",
+  "url": "sec7-triangles.html#sec7-triangles-11",
+  "type": "Checkpoint",
+  "number": "7.2.5",
+  "title": "",
+  "body": " Explain why an equilateral triangle must be acute but an isosceles triangle and scalene triangle can be right or obtuse. Draw pictures to give examples of isosceles\/scalene right\/obtuse triangles.  "
+},
+{
+  "id": "sec7-triangles-13",
+  "level": "2",
+  "url": "sec7-triangles.html#sec7-triangles-13",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "rhobmuses "
+},
+{
+  "id": "sec7-triangles-15",
+  "level": "2",
+  "url": "sec7-triangles.html#sec7-triangles-15",
+  "type": "Checkpoint",
+  "number": "7.2.6",
+  "title": "",
+  "body": " True or false: if a shape is both a rhombus and a rectangle, then it is a square. Explain.  "
+},
+{
+  "id": "sec7-triangles-16",
+  "level": "2",
+  "url": "sec7-triangles.html#sec7-triangles-16",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "parallelogram "
+},
+{
+  "id": "sec7-triangles-18",
+  "level": "2",
+  "url": "sec7-triangles.html#sec7-triangles-18",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "trapezoid "
+},
+{
+  "id": "sec7-triangles-20",
+  "level": "2",
+  "url": "sec7-triangles.html#sec7-triangles-20",
+  "type": "Checkpoint",
+  "number": "7.2.7",
+  "title": "",
+  "body": " Is a rectangle a trapezoid? Make a case for your anwer.  "
+},
+{
+  "id": "sec7-polygons",
+  "level": "1",
+  "url": "sec7-polygons.html",
+  "type": "Section",
+  "number": "7.3",
+  "title": "Polygons",
+  "body": " Polygons  A shape whose sides are all straight is called a polygon . Polygons with three sides are triangles, which we've already talked about. Those with four sides are also called quadrilaterals , and include squares, rectangles, rhombuses, parallelograms, and trapezoids. As we increase the number of sides we use Greek prefixes. Pentagons have five sides.  Hexagons have six sides.  Heptagons have seven sides.  Octagons have eight sides.  And so on. If you talk about a heptakaidecagon no one will know what you mean. After about six to eight sides it's better to just say -gon to refer to a polygon with sides. In this case, -gon is more likely to get the point across to another human.   Five regular polygons. In a two by two grid are a pentagon, hexagon, heptagon, and octagon. Off to the side is a heptakaidecagon. Observe that due to its large number of sides it is close to circular.    Polygons are particularly nice shapes, and we can say a lot about them. Let's begin by talking about angles, in more detail than before.  Angles and degrees  An angle is a measure of rotation. More precisely, if two line segments and meet at a vertex the angle between them is a measure of how far you'd have to rotate to overlap with .  A common unit of measurement for angles is degrees , which divide up a full circle of rotation into degrees. We write for the angle of degrees. Thus, is the measure of a straight line (half turn of a circle) and is the measure of a right angle , a quarter turn of a circle, like the angles of a square.  Given an angle smaller than , its supplementary angle is the angle you add to it to get . That is, two supplementary angles put next to each other will travel a half circle. Given an angle smaller than its complementary angle is the angle you add to it to get . That is, two complementary angles form a right angle when put together.   A pair of supplementary angles which add up to . The angle on the left is obtuse while the one on the right is acute. Also a pair of complementary angles which add up to . Both of these angles necessarily are acute to fit inside a right angle.       What is the supplementary angle for a right angle? What angle is its own complementary angle?   Interior and exterior angles  In a polygon an interior angle is the angular measure on the inside of the shape from one side to the next. A polygon is convex if all of its interior angles are . For a convex polygon, the corresponding exterior angle to an interior angle is its supplemantary angle. You can think, if you are traveling along the outside of a polygon in one direction the exterior angle is how far you have to turn at the corner to continue along the next side.   A regular hexagon with an interior angle and exterior angle marked. Although they are drawn at different vertices for visual clarity, because all angles of the hexagon are the same you can see that they are supplementary angles.      Here's another way to think about convexity. A shape is convex if and only if whenever you take two points in its interior the line between them is entirely inside the interior. This way of thinking about convexity also applies to shapes with curves.   Two quadrilaterals. One is kite-shaped and convex. The other is arrowhead-shaped and not convex. You can tell it's not convex because if you take two points in the tails at the back end of the arrowhead the line between them will pass outside the shape into the notch.    Interior angles of a polygon  The interior angles of a triangle sum to . The interior angles of a quadrilateral sum to . In general, the interior angles of an -gon sum to .  The fact for triangles requires a geometric construction, which I omit. To get from that to the general fact, note that you can divide a polygon into triangles by drawing lines to connect non-adjacent vertices. In this way you can divide a polygon with sides into triangles. The angles of these triangles together compose the interior angles of the polygon, so add them all up to get the sum of the interior angles to be .   Exterior angles of a polygon  The exterior angles of a convex polygon sum to .  If you start at a point on the boundary of a convex polygon and travel all the way around, you will have turned a full circle to get back to the direction you started. Since you only turn at corners (exterior angles), this means the exterior angles sum to a full circle, namely .   There's a lot of variation in polygons. Especially pleasing are those with lots of symmetry.  Regular polygons  A regular polygon is one whose sides are all the same length and whose angles are all the same length.   Most the pictures in this section have been of regular polygons.   You know other names for a regular triangle and a regular quadrilateral. What are they? Explain.    Draw a regular hexagon and two non-regular hexagons. Make one of the non-regular hexagons convex and the other non-convex.    Must a regular polygon be convex? Explain.    "
+},
+{
+  "id": "sec7-polygons-2",
+  "level": "2",
+  "url": "sec7-polygons.html#sec7-polygons-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "polygon quadrilaterals -gon "
+},
+{
+  "id": "sec7-polygons-5",
+  "level": "2",
+  "url": "sec7-polygons.html#sec7-polygons-5",
+  "type": "Definition",
+  "number": "7.3.1",
+  "title": "Angles and degrees.",
+  "body": "Angles and degrees  An angle is a measure of rotation. More precisely, if two line segments and meet at a vertex the angle between them is a measure of how far you'd have to rotate to overlap with .  A common unit of measurement for angles is degrees , which divide up a full circle of rotation into degrees. We write for the angle of degrees. Thus, is the measure of a straight line (half turn of a circle) and is the measure of a right angle , a quarter turn of a circle, like the angles of a square.  Given an angle smaller than , its supplementary angle is the angle you add to it to get . That is, two supplementary angles put next to each other will travel a half circle. Given an angle smaller than its complementary angle is the angle you add to it to get . That is, two complementary angles form a right angle when put together.   A pair of supplementary angles which add up to . The angle on the left is obtuse while the one on the right is acute. Also a pair of complementary angles which add up to . Both of these angles necessarily are acute to fit inside a right angle.     "
+},
+{
+  "id": "sec7-polygons-6",
+  "level": "2",
+  "url": "sec7-polygons.html#sec7-polygons-6",
+  "type": "Checkpoint",
+  "number": "7.3.2",
+  "title": "",
+  "body": " What is the supplementary angle for a right angle? What angle is its own complementary angle?  "
+},
+{
+  "id": "sec7-polygons-7",
+  "level": "2",
+  "url": "sec7-polygons.html#sec7-polygons-7",
+  "type": "Definition",
+  "number": "7.3.3",
+  "title": "Interior and exterior angles.",
+  "body": "Interior and exterior angles  In a polygon an interior angle is the angular measure on the inside of the shape from one side to the next. A polygon is convex if all of its interior angles are . For a convex polygon, the corresponding exterior angle to an interior angle is its supplemantary angle. You can think, if you are traveling along the outside of a polygon in one direction the exterior angle is how far you have to turn at the corner to continue along the next side.   A regular hexagon with an interior angle and exterior angle marked. Although they are drawn at different vertices for visual clarity, because all angles of the hexagon are the same you can see that they are supplementary angles.     "
+},
+{
+  "id": "sec7-polygons-10",
+  "level": "2",
+  "url": "sec7-polygons.html#sec7-polygons-10",
+  "type": "Theorem",
+  "number": "7.3.4",
+  "title": "Interior angles of a polygon.",
+  "body": "Interior angles of a polygon  The interior angles of a triangle sum to . The interior angles of a quadrilateral sum to . In general, the interior angles of an -gon sum to .  The fact for triangles requires a geometric construction, which I omit. To get from that to the general fact, note that you can divide a polygon into triangles by drawing lines to connect non-adjacent vertices. In this way you can divide a polygon with sides into triangles. The angles of these triangles together compose the interior angles of the polygon, so add them all up to get the sum of the interior angles to be .  "
+},
+{
+  "id": "sec7-polygons-11",
+  "level": "2",
+  "url": "sec7-polygons.html#sec7-polygons-11",
+  "type": "Theorem",
+  "number": "7.3.5",
+  "title": "Exterior angles of a polygon.",
+  "body": "Exterior angles of a polygon  The exterior angles of a convex polygon sum to .  If you start at a point on the boundary of a convex polygon and travel all the way around, you will have turned a full circle to get back to the direction you started. Since you only turn at corners (exterior angles), this means the exterior angles sum to a full circle, namely .  "
+},
+{
+  "id": "sec7-polygons-13",
+  "level": "2",
+  "url": "sec7-polygons.html#sec7-polygons-13",
+  "type": "Definition",
+  "number": "7.3.6",
+  "title": "Regular polygons.",
+  "body": "Regular polygons  A regular polygon is one whose sides are all the same length and whose angles are all the same length.  "
+},
+{
+  "id": "sec7-polygons-15",
+  "level": "2",
+  "url": "sec7-polygons.html#sec7-polygons-15",
+  "type": "Checkpoint",
+  "number": "7.3.7",
+  "title": "",
+  "body": " You know other names for a regular triangle and a regular quadrilateral. What are they? Explain.  "
+},
+{
+  "id": "sec7-polygons-16",
+  "level": "2",
+  "url": "sec7-polygons.html#sec7-polygons-16",
+  "type": "Checkpoint",
+  "number": "7.3.8",
+  "title": "",
+  "body": " Draw a regular hexagon and two non-regular hexagons. Make one of the non-regular hexagons convex and the other non-convex.  "
+},
+{
+  "id": "sec7-polygons-17",
+  "level": "2",
+  "url": "sec7-polygons.html#sec7-polygons-17",
+  "type": "Checkpoint",
+  "number": "7.3.9",
+  "title": "",
+  "body": " Must a regular polygon be convex? Explain.  "
+},
+{
+  "id": "sec7-solids",
+  "level": "1",
+  "url": "sec7-solids.html",
+  "type": "Section",
+  "number": "7.4",
+  "title": "Solids and three-dimensional space",
+  "body": " Solids and three-dimensional space  In this section we make a move many a flagging movie series has resorted to in desperation: we go to space. Specifically, we stop talking about shapes in the two-dimensional plane and start talking about shapes in three-dimensional space. We call them solids .  An example of a solid is a sphere . This is the same idea as a circle, but one dimension up. Remember that a circle's boundary consists of all the points in the plane with the same distance from its center. Similarly, a sphere's boundary consists of all the points in space the same distance from its center. As with circles, we call this distance the radius .   A sphere. More honestly, we are looking at a two-dimensional representation and not really a three dimensional object. It looks like a circle, except some shading was done to give the illusion of three dimensionality.    Imagine living on the surface of a sphere, for example as many humans on earth do. Locally, the surface looks like a plane. You can move independently in two different directions. The surface eventually curves around, but on the local level it looks flat.  This is a general fact about solids. Their boundaries are two-dimensional surfaces , one dimension lower than their interior. Compare to how shapes in the plane have a two-dimensional interior and a one-dimensional boundary.  Another example of a solid is a cube . This is like like a square but in three dimensions. The surface of a cube consists of multiple polygonal faces , namely six squares of equal side length positioned at right angles to each other. Two squares meet at an edge and the vertices are the corners where edges meet. In this case, three edges with the three faces between them meet at a vertex.   A cube. More accurately, a two dimensional representation of a cube. It takes the form of four parallelograms joined at a common vertex. One represents the top of the cube and the other two represent two of the the vertical sides of the cube. The remaining two vertical sides and the bottom side are not visible, as they are blocked by the three sides we can see. The sides are colored different shades of gray to suggest a light source and help sell the illusion that this is a three dimensional object.     You already know a cube has six faces. Count how many edges and vertices it has.  Twelve edges and eight vertices.   Those are the two most important solids. Before we look at more let's mention an important bifurcation of solids. A polyhedron (plural polyhedra) is a solid whose faces are all polygons. That is, a polyhedron consists only of flat faces with straight edges between them. They are the higher dimensional analogue of polygons. A cube is an example of a polyhedron. On the other hand, a sphere is not a polyhedron.  Both spheres and cubes, however, are convex . The easiest way to say this in three dimensions is, if you take two points in their interior and draw a line between them the line is entirely in the interior. It doesn't pass outside. Consider on the other hand a bean-shaped solid whose curve leaves an indent through which such a line could pass. This solid would not be convex.  Some solids you can think of as being like three dimensional versions of two dimensional shapes you know and love. For example, in two dimensions a rectangle is like a square but you don't require all sides to be the same length. You can similarly relax the definition of a cube. A cuboid is a solid whose faces are rectangles that all meet at right angles. It's like a cube but you can stretch out the faces. Note that opposite faces must be same-sized rectangles. Like a rectangle is composed of two pairs of equal sides, a cuboid is composed of three pairs of equal faces.  Cuboids go by other names. You may also see them called rectangular cuboids , rectangular prisms , or rectangular parallelepipeds . In this book we go by cuboid for reason that it is the shortest name.   A cuboid. Continuing a theme, I will elaborate that actually this is a two dimensional representation of a cuboid. It looks much like the earlier cube, except the three dimensions aren't all the same length. Again, the sides are shaded to help sell the illusion of a three dimensional object.    Another way to think about a cuboid is you start with a horizontal rectangle as a base. You grab the base and raise it upward, thickening it to have a height. A way to think of this is, imagine having many copies of the rectangle cut in paper and you stack them to have a three dimensional shape. If the paper copies are infinitely thin and you stack them perfectly to have straight vertical sides, that is a cuboid.  This same idea can be applied to any two dimensional shape to produce a three dimensional solid. Such solids are variously called prisms —think like a prism used to separate white light into its constituent colors—or cylinders . However, we will reserve the word cylinder to refer just to these solids formed with a circle as base.  A cylinder is a solid formed by taking a circle and thickening it in a perpendicular direction to create a three dimensional shape.   Two (two dimensional representations of) cylinders. One is oriented vertically, as when we think of the circular sides as being the top and bottom of the shape. The second is diagonal, so as to warn against the mistake of thinking orientation matters. They are both cylinders no matter their orientation.  Neither cylinder is shaded. Perhaps by now we are confident in using our imaginations to see them in three dimensions without artistic aid. Or perhaps the author's artistic skills have surpassed their limits.    We can tweak this idea for building solids. Again we start with a two dimensional shape as the base, and we want to thicken it into the third dimension to create a solid. But now instead of keeping the same shape as we go up we will gradually shrink it down to a point. That is, instead of vertical sides rising to a top side identical to the bottom, diagonal sides rise to a point at the top. Often the point is in the middle so that things are symmetric, but that isn't necessary. A shape like this formed from a circular base is called a cone . A shape like this formed from a polygonal base is called a pyramid .   A cone, inverted so its point is at the bottom. To reiterate a repeated point: the orientation doesn't matter for classifying a shape. Tilt your head upside down if you must see the circle on the bottom. Also present is a pyramid with a rectangular base. It is oriented with the base on the bottom.  You didn't need to be told that these were not a cone and a pyramid but rather two dimensional representations thereof.    In plane geometry the most symmetric polygons were the regular polygons. Their solid counterparts are called the regular polyhedra . The convex regular polyhedra are called platonic solids . To be maximally symmetric their faces must be regular polygons of the same size, and how the faces meet at each vertex look the same.  Unlike with the two dimensional plane where there's a regular -gon for every , there are only five platonic solids. Namely they are the regular tetrahedron with four faces, hexahedron with six faces, octahedron with eight faces, dodecahedron with twelve faces, and icosahedron with twenty faces. The regular tetrahedron, octahedron, and icosahedron have triangular faces, the hexahedron has square faces, and the dodecahedron has regular pentagonal faces.   The five platonic solids. Starting at one o'clock and going clockwise, there is the icosahedron, the octahedron, the dedecahedron, the hexahedron, and the tetrahedron. The solids are a pleasant dark green with gold numbers etched on the surface, on account of the author being exactly the sort of nerd to own polyhedral dice.   You can describe the platonic solids by giving two numbers, together known as their Schläfli symbols : the number of sides of their faces and the number of faces which meet at each vertex. The regular tetrahedron has Schläfli symbol : triangular faces with three meeting at each vertex.   The regular hexahedron has Schläfli symbol : square faces with three meeting at each vertex.   The regular octahedron has Schläfli symbol : triangular faces with four meeting at each vertex.   The regular dodecahedron has Schläfli symbol : pentagonal faces with three meeting at each vertex.   The regular icosahedron has Schläfli symbol : triangular faces with five meeting at each vertex.     You know another name for the regular hexahedron. What is it? Explain.   There is an interesting fact about platonic solids and, more generally, convex polyhedra. Let's close the section with it.  Euler characteristic  Given a convex polyhedron you can compute its Euler characteristic  where is the number of vertices, is the number of edges, and is the number of faces. No matter which convex polyhedron you pick, its Euler characteristic will always be .   Explaining why you always get is too difficult and involved for us to go into. Another cool fact is, you can also compute Euler characteristic for non-convex polyhedra. For instance, if you cut a hole through a cube from one side to the opposite the resulting solid is no longer convex, but you can still calculate for it, with a new number of vertices, edges, and faces coming from the hole you bored through. It will be . If you cut two holes through a cube the Euler characteristic will be . In fact, the Euler characteristic is counting holes.  This is quite amazing. You take a counting problem about a solid—do a little calculation based on the number of vertices, edges, and faces—and it somehow tells you large scale geometric features about the solid. Whoa.   Of the various solids we've seen in this section, which ones are polyhedra and which are not?   To close out this section, let's spend time on a point that's been repeatedly emphasized in the image descriptions. Three dimensional solids are three dimensional. Any time you see one on a two dimensional surface like a computer monitor or a piece of paper, you are really seeing a representation of the solid, not the solid itself.  There's a few ways to do these representations. One is a perspective drawing , such as many of the images in this section have been. This technique, innovated in Renaissance Italy, aims to represent an image how it would look to the human eye. There is a lot of geometry know-how that goes into getting perspective correct, and it's a rich subject for exploring the connection between mathematics and art.  Related to perspective drawing is isometric projection . This is a simplified variation to make things clearer for technical and engineering drawings. There are three axes for three directions, usually called the - and -axes in the horizontal plane and the -axis facing vertically. Things are drawn in line with these axes. This differs from perspective drawing in that parallel edges of the solid appear parallel. Whereas with perspective drawing they aren't actually parallel, because that's not how our vision works.  Another example of where you see isometric projection is in 2D video games. Originally, it was computationally expensive to do true 3D graphics, and this was a way to make things look 3D while keeping everything 2D. With advances in technology now this is more an artistic choice than one forced by hardware limitations.  In hand with isometric projection comes other projections onto planes. Specifically, the idea is you imagine a plane and you smoosh down the shape to lie flat on the plane. If the plane is horizontal you get a top-down view of the solid. Also useful are front and side views, such as you might see with architectural drawings.  These various kinds of projections don't show you the full picture of a solid, but are useful simplifications to represent complex shapes in an understandable way. Perhaps it'd be better to have a 3D model of the shape, but that won't fit on a piece of paper.  Another, more abstract representation of a solid, especially used for polyhedra, is to draw a network of how the vertices are connected by edges. These vertex graphs can look a lot like a perspective or projection drawing of the shape, but sometimes it helps to stretch and move things to make them clearer.   Suppose a projection of a solid has a curved line in it. Can you draw any conclusion about whether the solid is a polyhedron? Explain.   "
+},
+{
+  "id": "sec7-solids-2",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "solids "
+},
+{
+  "id": "sec7-solids-3",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "sphere radius "
+},
+{
+  "id": "sec7-solids-6",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "surfaces "
+},
+{
+  "id": "sec7-solids-7",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "cube faces edge vertices "
+},
+{
+  "id": "sec7-solids-9",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-9",
+  "type": "Checkpoint",
+  "number": "7.4.1",
+  "title": "",
+  "body": " You already know a cube has six faces. Count how many edges and vertices it has.  Twelve edges and eight vertices.  "
+},
+{
+  "id": "sec7-solids-10",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "polyhedron "
+},
+{
+  "id": "sec7-solids-11",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "convex "
+},
+{
+  "id": "sec7-solids-12",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-12",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "cuboid "
+},
+{
+  "id": "sec7-solids-13",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-13",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "rectangular cuboids rectangular prisms rectangular parallelepipeds "
+},
+{
+  "id": "sec7-solids-16",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-16",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "prisms cylinders "
+},
+{
+  "id": "sec7-solids-17",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-17",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "cylinder "
+},
+{
+  "id": "sec7-solids-19",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-19",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "cone pyramid "
+},
+{
+  "id": "sec7-solids-21",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-21",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "regular polyhedra platonic solids "
+},
+{
+  "id": "sec7-solids-22",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-22",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "tetrahedron hexahedron octahedron dodecahedron icosahedron "
+},
+{
+  "id": "sec7-solids-24",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-24",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Schläfli symbols "
+},
+{
+  "id": "sec7-solids-25",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-25",
+  "type": "Checkpoint",
+  "number": "7.4.2",
+  "title": "",
+  "body": " You know another name for the regular hexahedron. What is it? Explain.  "
+},
+{
+  "id": "sec7-solids-27",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-27",
+  "type": "Theorem",
+  "number": "7.4.3",
+  "title": "Euler characteristic.",
+  "body": "Euler characteristic  Given a convex polyhedron you can compute its Euler characteristic  where is the number of vertices, is the number of edges, and is the number of faces. No matter which convex polyhedron you pick, its Euler characteristic will always be .  "
+},
+{
+  "id": "sec7-solids-30",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-30",
+  "type": "Checkpoint",
+  "number": "7.4.4",
+  "title": "",
+  "body": " Of the various solids we've seen in this section, which ones are polyhedra and which are not?  "
+},
+{
+  "id": "sec7-solids-32",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-32",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "perspective drawing "
+},
+{
+  "id": "sec7-solids-33",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-33",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "isometric projection "
+},
+{
+  "id": "sec7-solids-37",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-37",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "vertex graphs "
+},
+{
+  "id": "sec7-solids-38",
+  "level": "2",
+  "url": "sec7-solids.html#sec7-solids-38",
+  "type": "Checkpoint",
+  "number": "7.4.5",
+  "title": "",
+  "body": " Suppose a projection of a solid has a curved line in it. Can you draw any conclusion about whether the solid is a polyhedron? Explain.  "
+},
+{
+  "id": "sec7-exercises",
+  "level": "1",
+  "url": "sec7-exercises.html",
+  "type": "Section",
+  "number": "7.5",
+  "title": "Exercises",
+  "body": " Exercises      Parallelograms have two pairs of sides of equal length, namely pairs of opposite sides. There's another way to have a quadrilateral with two pairs of sides with equal length, namely having the equal sides be adjacent. Such a quadrilateral is called a kite . Draw a picture of a kite. Describe any ways in which the shape is symmetric.  Draw a shape to demonstrate that a quadrilateral can have three sides of the same length with the fourth a different length.  Draw a quadrilateral with exactly three sides of the same length and with both angles between sides of the same length being the same. Is this a type of quadrilateral we've already defined? Explain.      Draw a quadrilateral with an interior angle greater than . Can a quadrilateral have two angles each greater than ? Either provide an example or explain why not.    What is the largest number of interior angles greater than can a pentagon have? What about a hexagon? Draw examples to demonstrate the correctness of your answers. Can you give a general answer for an -gon for any , or at least give an upper bound?  You know a formula for the sum of the interior angles. How can you use that?  In case it is not clear, an upper bound is a formula that tells you the count is that value, but it might be . That is, you aren't getting an exact count just knowing that it is at most that amount. Often when counting it's easier to get an upper bound than an exact count. This is such a case.    Come up with a formula which gives the measure of the interior angle of a regular -gon, in terms of the number of sides . Use this formula to list the interior angles of equilateral triangles, squares, regular pentagons, regular hexagons, and regular octogons. As the number of sides gets larger and larger, what measure do the interior angles approach? Explain, and give a geometric meaning to your answer.    Navigating the surface of a sphere is a historically important topic in mathematics, for the reason that humans live on the surface of a sphere. A common way to do this uses lines of latitude and longitude . Latitude measures north\/south positions. Lines of latitude are horizontal circles, parallel to the circle around the equator , the middle of the sphere. Longitude measures east\/west positions. Lines of longitude stretch down from the north pole (the point at the top of the sphere) to the south pole (the ponit at the bottom of the sphere).  Draw a sphere. On its surface draw some lines of longitude and some lines of latitude. Geometrically, do these two look the same? Explain why or explain how they differ.    Draw a pyramid with a rectangular base. Draw its projections into three different planes. Draw its vertex graph. Of these various representations, which do you find most helpful in understanding the solid? Reflect.    Many solids can be thought of as higher dimensional versions of shapes in the plane. The sphere is a higher dimensional circle, the cube is a higher dimensional square, the cuboid is a higher dimensional rectangle, and so on. Come up with a definition of what a higher dimensional parallelogram should be. Draw a couple examples, and draw projections. Explain why you think your definition is a higher dimensional version of a parallelogram.    Pick three platonic solids and draw their vertex graphs.    It's difficult to show that five platonic solids really do have the symmetry necessary to be regular polyhedra. Indeed, this fact is the crowning accomplishment of Book 13 of Euclid's Elements , an ancient Greek geometry textbook. On the other hand, it's not too difficult to explain why those five are the only options. Do that.  Here's the key observation. If multiple polygonal faces meet at a vertex of a convex polygon then the angles that meet must add up to less than . The reason is, if they added up to they would lie flat in the same plane, and so not be separate faces. And if they added up to more than they would overlap.  Using this key observation your task becomes: explain why the five combinations of which regular polygon and how many meet at a vertex are the only ones which add up to less than .    Look up the 1929 painting The Treachery of Images by surrealist painter René Magritte. Translate its caption into English. Reflect on how this relates to the question of representing three dimensional solids in a two dimensional medium.    "
+},
+{
+  "id": "sec7-exercises-2-1",
+  "level": "2",
+  "url": "sec7-exercises.html#sec7-exercises-2-1",
+  "type": "Exercise",
+  "number": "7.5.1",
+  "title": "",
+  "body": "   Parallelograms have two pairs of sides of equal length, namely pairs of opposite sides. There's another way to have a quadrilateral with two pairs of sides with equal length, namely having the equal sides be adjacent. Such a quadrilateral is called a kite . Draw a picture of a kite. Describe any ways in which the shape is symmetric.  Draw a shape to demonstrate that a quadrilateral can have three sides of the same length with the fourth a different length.  Draw a quadrilateral with exactly three sides of the same length and with both angles between sides of the same length being the same. Is this a type of quadrilateral we've already defined? Explain.    "
+},
+{
+  "id": "sec7-exercises-2-2",
+  "level": "2",
+  "url": "sec7-exercises.html#sec7-exercises-2-2",
+  "type": "Exercise",
+  "number": "7.5.2",
+  "title": "",
+  "body": " Draw a quadrilateral with an interior angle greater than . Can a quadrilateral have two angles each greater than ? Either provide an example or explain why not.  "
+},
+{
+  "id": "sec7-exercises-2-3",
+  "level": "2",
+  "url": "sec7-exercises.html#sec7-exercises-2-3",
+  "type": "Exercise",
+  "number": "7.5.3",
+  "title": "",
+  "body": " What is the largest number of interior angles greater than can a pentagon have? What about a hexagon? Draw examples to demonstrate the correctness of your answers. Can you give a general answer for an -gon for any , or at least give an upper bound?  You know a formula for the sum of the interior angles. How can you use that?  In case it is not clear, an upper bound is a formula that tells you the count is that value, but it might be . That is, you aren't getting an exact count just knowing that it is at most that amount. Often when counting it's easier to get an upper bound than an exact count. This is such a case.  "
+},
+{
+  "id": "sec7-exercises-2-4",
+  "level": "2",
+  "url": "sec7-exercises.html#sec7-exercises-2-4",
+  "type": "Exercise",
+  "number": "7.5.4",
+  "title": "",
+  "body": " Come up with a formula which gives the measure of the interior angle of a regular -gon, in terms of the number of sides . Use this formula to list the interior angles of equilateral triangles, squares, regular pentagons, regular hexagons, and regular octogons. As the number of sides gets larger and larger, what measure do the interior angles approach? Explain, and give a geometric meaning to your answer.  "
+},
+{
+  "id": "sec7-exercises-2-5",
+  "level": "2",
+  "url": "sec7-exercises.html#sec7-exercises-2-5",
+  "type": "Exercise",
+  "number": "7.5.5",
+  "title": "",
+  "body": " Navigating the surface of a sphere is a historically important topic in mathematics, for the reason that humans live on the surface of a sphere. A common way to do this uses lines of latitude and longitude . Latitude measures north\/south positions. Lines of latitude are horizontal circles, parallel to the circle around the equator , the middle of the sphere. Longitude measures east\/west positions. Lines of longitude stretch down from the north pole (the point at the top of the sphere) to the south pole (the ponit at the bottom of the sphere).  Draw a sphere. On its surface draw some lines of longitude and some lines of latitude. Geometrically, do these two look the same? Explain why or explain how they differ.  "
+},
+{
+  "id": "sec7-exercises-2-6",
+  "level": "2",
+  "url": "sec7-exercises.html#sec7-exercises-2-6",
+  "type": "Exercise",
+  "number": "7.5.6",
+  "title": "",
+  "body": " Draw a pyramid with a rectangular base. Draw its projections into three different planes. Draw its vertex graph. Of these various representations, which do you find most helpful in understanding the solid? Reflect.  "
+},
+{
+  "id": "sec7-exercises-2-7",
+  "level": "2",
+  "url": "sec7-exercises.html#sec7-exercises-2-7",
+  "type": "Exercise",
+  "number": "7.5.7",
+  "title": "",
+  "body": " Many solids can be thought of as higher dimensional versions of shapes in the plane. The sphere is a higher dimensional circle, the cube is a higher dimensional square, the cuboid is a higher dimensional rectangle, and so on. Come up with a definition of what a higher dimensional parallelogram should be. Draw a couple examples, and draw projections. Explain why you think your definition is a higher dimensional version of a parallelogram.  "
+},
+{
+  "id": "sec7-exercises-2-8",
+  "level": "2",
+  "url": "sec7-exercises.html#sec7-exercises-2-8",
+  "type": "Exercise",
+  "number": "7.5.8",
+  "title": "",
+  "body": " Pick three platonic solids and draw their vertex graphs.  "
+},
+{
+  "id": "sec7-exercises-2-9",
+  "level": "2",
+  "url": "sec7-exercises.html#sec7-exercises-2-9",
+  "type": "Exercise",
+  "number": "7.5.9",
+  "title": "",
+  "body": " It's difficult to show that five platonic solids really do have the symmetry necessary to be regular polyhedra. Indeed, this fact is the crowning accomplishment of Book 13 of Euclid's Elements , an ancient Greek geometry textbook. On the other hand, it's not too difficult to explain why those five are the only options. Do that.  Here's the key observation. If multiple polygonal faces meet at a vertex of a convex polygon then the angles that meet must add up to less than . The reason is, if they added up to they would lie flat in the same plane, and so not be separate faces. And if they added up to more than they would overlap.  Using this key observation your task becomes: explain why the five combinations of which regular polygon and how many meet at a vertex are the only ones which add up to less than .  "
+},
+{
+  "id": "sec7-exercises-2-10",
+  "level": "2",
+  "url": "sec7-exercises.html#sec7-exercises-2-10",
+  "type": "Exercise",
+  "number": "7.5.10",
+  "title": "",
+  "body": " Look up the 1929 painting The Treachery of Images by surrealist painter René Magritte. Translate its caption into English. Reflect on how this relates to the question of representing three dimensional solids in a two dimensional medium.  "
+},
+{
+  "id": "sec8-length",
+  "level": "1",
+  "url": "sec8-length.html",
+  "type": "Section",
+  "number": "8.1",
+  "title": "Length and perimeter",
+  "body": " Length and perimeter   Length is the measure of the size or quantity of a one-dimensional shape such as a line or curve. To give a number you must say what the unit of the measurement is. When you measure a distance, are you measuring in meters, feet, miles, what? Depending on your choice of unit you will get different answers. When working abstractly, we not talk about units and assume we know what a distance of means. For example, when talking about a rectangular track of land it might measure meters by meters. But when talking about a rectangle as an abstract shape we would say it's by .  For lines you can imagine measuring length as having a yardstick. You put the yardstick up against the line from end to end and the measuring stick tells you the length. For curves that won't work, since your measuring device is a line. You could use a flexible measuring tape. Alternatively, you can approximate the measure by measuring lots of short, approximately linear pieces and adding them all up. As the pieces get shorter and shorter—and you get more and more pieces to measure—you will get a more and more accurate measure. If the pieces are infinitely small then the error in your measurement will also be infinitely small.  This process is not practical. No one wants to measure the length of, say, a circle by using trillions of tiny rulers and adding up the little lengths. Fortunately there are formulas we can use to determine the length around the outside of a shape.  Perimeter  The perimeter of a shape is the length of its boundary. For circles we also call the perimeter the circumference .   Perimeter of a polygon  The perimeter of a polygon is the sum of its side lengths. Here are a few special cases of this. If a square has side length its perimeter is .  If a rectangle has length and width its perimeter is .  If a regular -gon has side length its perimeter is .   The perimeters are found by adding side lengths together.   You can memorize the formulas for the special cases, but they all come from the same idea: you're adding up side lengths. So if you ever forget a formula you can rediscover by remembering that key idea.  For shapes with curves the perimeter isn't based on this one idea and you need a different way to get at the formula.  Radius and diameter  The radius of a circle is the distance from its center to its boundary. The diameter is the distance from a point on the boundary to the opposite point, equal to twice the radius.   Circumference of a circle  If the radius of a circle is then its circumference is Equivalently, if the diameter is then the circumference is .  There is some number so that the circumference is times the radius. We define so that that number is .   This proof is not enlightening. While a mathematician might accept it's true by definition as an explanation a normal person will not. To satisfy the normal person then let's talk a little.  First off it'd be nice to have a value for we can write down. The best we can do is give an approximation. The number turns out to be an irrational number, so it cannot be written exactly as a fraction of whole numbers and its decimal expansion never repeats. Here's the first many digits of ; for practical purposes it's almost always enough to stop at two digits past the decimal point. One way you can approximate , first used by the ancient Greek mathematician Archimedes, is by fitting a circle of radius between regular polygons.   A circle with an inscribed square and a circumscribed square. inscribed square, the largest possible square entirely contained inside the circle, touches the circumference of the circle at its vertices. The circumscribed square, the smallest square which entirely contains the circle, touches the circumference of the circle at the midpoints of its sides. The area of the circle sits between the more easily calculated areas of the circles.    The perimeters of these polygons can be calculated with some effort. This gives both an upper and lower bound for the circumference , whence you get bounds for the value of . Early precursors to calculus were used by Indian mathematicians in the 16th century to produce yet better approximations. These methods were improved upon with later European work in calculus to determine yet more digits of . With digital computers coming into the scene in the 20th century tedious human calculations could now be done by machine. Modern work has determined the digits of out to billions of places.  This quest for more digits is, one must admit, quixotic. For accurate real world calculations only a few digits are needed.  For other curved shapes, methods similar to those used for the circle can be applied to approximate perimeters. Throwing in tools from calculus you can sometimes work out exact formulas. Suffice it to say, in general determining perimeters can be difficult.  But if things stay straight then we can know a lot with just one formula. This formula is so important it deserves its own section.  "
+},
+{
+  "id": "sec8-length-2",
+  "level": "2",
+  "url": "sec8-length.html#sec8-length-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Length unit "
+},
+{
+  "id": "sec8-length-5",
+  "level": "2",
+  "url": "sec8-length.html#sec8-length-5",
+  "type": "Definition",
+  "number": "8.1.1",
+  "title": "Perimeter.",
+  "body": "Perimeter  The perimeter of a shape is the length of its boundary. For circles we also call the perimeter the circumference .  "
+},
+{
+  "id": "sec8-length-6",
+  "level": "2",
+  "url": "sec8-length.html#sec8-length-6",
+  "type": "Theorem",
+  "number": "8.1.2",
+  "title": "Perimeter of a polygon.",
+  "body": "Perimeter of a polygon  The perimeter of a polygon is the sum of its side lengths. Here are a few special cases of this. If a square has side length its perimeter is .  If a rectangle has length and width its perimeter is .  If a regular -gon has side length its perimeter is .   The perimeters are found by adding side lengths together.  "
+},
+{
+  "id": "sec8-length-9",
+  "level": "2",
+  "url": "sec8-length.html#sec8-length-9",
+  "type": "Definition",
+  "number": "8.1.3",
+  "title": "Radius and diameter.",
+  "body": "Radius and diameter  The radius of a circle is the distance from its center to its boundary. The diameter is the distance from a point on the boundary to the opposite point, equal to twice the radius.  "
+},
+{
+  "id": "sec8-length-10",
+  "level": "2",
+  "url": "sec8-length.html#sec8-length-10",
+  "type": "Theorem",
+  "number": "8.1.4",
+  "title": "Circumference of a circle.",
+  "body": "Circumference of a circle  If the radius of a circle is then its circumference is Equivalently, if the diameter is then the circumference is .  There is some number so that the circumference is times the radius. We define so that that number is .  "
+},
+{
+  "id": "sec8-pythagorean",
+  "level": "1",
+  "url": "sec8-pythagorean.html",
+  "type": "Section",
+  "number": "8.2",
+  "title": "The Pythagorean theorem",
+  "body": " The Pythagorean theorem  If you remember the cartesian plane from high school mathematics with its and axes, then you are familiar with the idea of determining position by decomposing it into horizontal and vertical components. As you recall, you pick a point to be the origin from which you will start. Any point in two dimensional space can be reached from the origin by first moving left or right a distance and then moving up or down a distance. In this way we can use a pair of numbers to represent where the point is. The number represents your movement in the horizontal direction while is the movement in the vertical direction. Sign is used to determine direction; positive for right and up, negative for left and down. For example, the pair represents the location you get by moving units to the right then units down. We call these two numbers the - and - coordinates of the point.  This same idea can be used for looking at diagonal lines. To describe the span of a diagonal line it is enough to say its movement in both the and directions. Call these two movements, respectively, and . ( is the capital Greek letter Delta, the counterpart of the Latin D and stands for Difference . The idea is, the movement is the difference between the ending coordinate and the starting coordinate.) Then, any diagonal line can be seen as the hypotenuse of a right triangle whose legs have length and .   A diagonal line moving up and to the right. The horizontal and vertical movements are represented with dashed lines. The horizontal movement is labeled and the vertical movement is labeled . Note that these three together form a right triangle with the diagonal line as the hypotenuse.    You can think of a line segment as being drawn between two points. The length of the line segment is the distance between those two points. So talking about the length of lines is the same thing as talking about distance between points. In this context, and are the differences of their - and -coordinates.  It'd be nice to have a formula which relates the length of the diagonal line to these two distances and . Phrased in terms of points, if the differences and in the horizontal and vertical directions are known, can you determine the distance between the points. Using the right triangle picture, we are asking for a formula which relates the side lengths of a right triangle.  The Pythagorean theorem  Suppose a right triangle has legs of length and and a hypotenuse of length . Then the three side lengths are related by the formula   Applied to distances, if and are the horizontal and vertical distances between two points, then the distance between the points is given by the following formula.      Perhaps you think of the Pythagorean theorem as being primarily about triangles and you don't understand why it would be approached from the angle of distance. The reason for this choice is, this application is the most important use of the Pythagorean theorem in contemporary mathematics. Indeed, it explains in part why triangles are such an important shape, more so than almost any other polygon. If you are doing analytic geometry —geometry with cartesian coordinates—then triangles show up all over the place. This can also be seen in applications of mathematics; for example, triangles and the Pythagorean theorem get used in physics.  The theorem is still important and useful without that application—after all, it was known to ancient Greek mathematicians while cartesian coordinates originate in the 17th century. Here is one practical, purely geometric use of it.  If a triangle is not a right triangle, then its side lengths won't obey the Pythagorean theorem. Thus you can check if a triangle has a right angle by seeing whether the sum of the squares of the smaller side lengths equals the square of the longest side length. For example, suppose a triangle has sides of length . You can check this is a right triangle because This gives you a way find a right angle using just a rope. Take a loop of rope with equally spaced knots in it dividing the rope into equally sized regions. Stretch it out into a triangle with regions on one side, on another, and on the last. Then the angle opposite the longest side will be a right angle.  Here's another use. The area of mathematics known as trigonometry studies circles and angles. In a circle, you can think of a diagonal radius as the hypotenuse of a right triangle with a horizontal and vertical side. So the Pythagorean theorem relates the radius to the horizontal and vertical distances.    A circle has radius . The diagonal radius corresponding to a certain angle gives a horizontal distance of . What is the vertical distance?  By the Pythagorean theorem, we know that . Plugging in the known values and we get the equation Solving this equation we get So the vertical distance is .    A circle has radius . An angle gives a right triangle with a horizontal distance of . What is the vertical distance on the triangle?  Your answer should be in terms of a square root.   Here is another application of the Pythagorean theorem. A cycloid is the curve traced by a point on the rim of a rolling wheel. The point starts maybe at ground level on the bottom of the wheel. As the wheel rolls forward the point moves forward and upward until it reaches the top of the rotating wheel. Then it moves forward and downward until it reaches the ground again. How long is one segment of a cycloid?   Two segments of a cycloid. Behind the second segment is the wheel at seven different spots in its rotation. It begins with the point touching the ground at the bottom of the wheel, and procedes forward by an eighth-turn each step, ending at the three-fourths point in the rotation. When the point is on the bottom half of the wheel, the rotational motion goes against the forward motion of the wheel. These parts of the curve thus have minor forward motion, moving mostly upward\/downward. When the point is on the top half of the wheel the rotational motion is in the same direction as the forward motion. Thus the point moves more quickly to the right.    You could approximate the curve with a bunch of short diagonal lines. These diagonal lines you could calculate the lengths of using the Pythagorean theorem. The wheel rolls forward at a constant speed, so all the diagonal lines have the same horizontal length. Using trigonometry you can get a formula for the vertical lengths. So you can calculate the diagonal lengths and add them up to get close to the true length of the curve. Do this process with smaller and smaller diagonal lines and you get a better and better approximation. Combine this idea with the calculus concept of the integral and you can produce a formula which gives you exactly the length of the cycloid. If the radius of the wheel is then the length of one segment of the cycloid is .  This same process of combining the Pythagorean theorem with ideas from calculus can be used for similar questions about lengths of curves. These tools, however, are not the topic of this class so I will do no more than point at the existence of this application.  "
+},
+{
+  "id": "sec8-pythagorean-2",
+  "level": "2",
+  "url": "sec8-pythagorean.html#sec8-pythagorean-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "cartesian plane origin coordinates "
+},
+{
+  "id": "sec8-pythagorean-7",
+  "level": "2",
+  "url": "sec8-pythagorean.html#sec8-pythagorean-7",
+  "type": "Theorem",
+  "number": "8.2.1",
+  "title": "The Pythagorean theorem.",
+  "body": "The Pythagorean theorem  Suppose a right triangle has legs of length and and a hypotenuse of length . Then the three side lengths are related by the formula   Applied to distances, if and are the horizontal and vertical distances between two points, then the distance between the points is given by the following formula.    "
+},
+{
+  "id": "sec8-pythagorean-8",
+  "level": "2",
+  "url": "sec8-pythagorean.html#sec8-pythagorean-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "analytic geometry "
+},
+{
+  "id": "sec8-pythagorean-11",
+  "level": "2",
+  "url": "sec8-pythagorean.html#sec8-pythagorean-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "trigonometry "
+},
+{
+  "id": "sec8-pythagorean-12",
+  "level": "2",
+  "url": "sec8-pythagorean.html#sec8-pythagorean-12",
+  "type": "Example",
+  "number": "8.2.2",
+  "title": "",
+  "body": " A circle has radius . The diagonal radius corresponding to a certain angle gives a horizontal distance of . What is the vertical distance?  By the Pythagorean theorem, we know that . Plugging in the known values and we get the equation Solving this equation we get So the vertical distance is .  "
+},
+{
+  "id": "sec8-pythagorean-13",
+  "level": "2",
+  "url": "sec8-pythagorean.html#sec8-pythagorean-13",
+  "type": "Checkpoint",
+  "number": "8.2.3",
+  "title": "",
+  "body": " A circle has radius . An angle gives a right triangle with a horizontal distance of . What is the vertical distance on the triangle?  Your answer should be in terms of a square root.  "
+},
+{
+  "id": "sec8-pythagorean-14",
+  "level": "2",
+  "url": "sec8-pythagorean.html#sec8-pythagorean-14",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "cycloid "
+},
+{
+  "id": "sec8-pythagorean-16",
+  "level": "2",
+  "url": "sec8-pythagorean.html#sec8-pythagorean-16",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "integral "
+},
+{
+  "id": "sec8-area",
+  "level": "1",
+  "url": "sec8-area.html",
+  "type": "Section",
+  "number": "8.3",
+  "title": "Area",
+  "body": " Area  In the previous two sections we were living a one dimensional life, concerned only with one dimensional measurements. In this section we add a second dimension and with it get a more complicated but also more fun quantity to measure.  The basic picture for area is the same as the basic picture for multiplication. If you multiply two (positive) quantities and together their product is the area of a rectangle with side lengths and .   This will be our basic definition for area , the measure of how much two dimensional space a shape takes up. Area is measured in square units . For example, if the sides of a rectangle are given in meters then the area would be in square meters. Think: when you multiply the lengths you multiply both the quantities and the units. So meters times meters is meters squared.  Area of a rectangle  Suppose a rectangle has width and height . Then its area is .   We can build on rectangles to get formulas for areas of other shapes. To do so, it's helpful to know some basic properties of area.  Properties of area  Area enjoys the following nice properties. Additivity If a shape is made up of smaller shapes which only touch on their boundaries then the area of the shape is the sum of the areas of the smaller shapes.  Subtraction If a shape is formed by removing a shape with area from a larger shape with area then its area is .  Invariance The area of a shape doesn't change if you move it around, rotate it, or reflect it.     A basic use of the additivity property lets you calculate areas of oddly shaped regions.  An L-shaped couch has the following measurements, in feet.   A hexagonal couch in the shape of an L. In clockwise order the vertices go: up , right , down , left , up an unspecified amount, and then left an unspecified amount to arrive back at the starting vertex.    To find the area this couch takes up think of it as being composed of two rectangles placed against each other. One rectangle measures and the other measures . So in total the area is square feet.  Combining additivity with invariance can get you quite far. For example, think of a rectangle with area as being sliced in half diagonally from one corner to the opposite. The cuts the rectangles into two equally sized triangles—you can rotate and reflect one of them to see they're the same. Let stand for the area of the triangle. By additivity, the area of the rectangle must be the sum of the triangles' areas: . Solving for we get that .  Knowing the formula for a rectangle we thus get a formula for the area of a right triangle.  Area of a triangle  Suppose a right triangle has legs of length and . Then its area is More generally, if a rectangle has a base of and a height of then its area is   We've already seen why this works for right triangles. To get from right triangles to triangles in general want to use the additivity and subtraction properties. You do this in one of the exercises for this chapter.   A similar idea works for other shapes.  Area of a parallelogram  A parallelogram with base and height has area   A parallelogram is formed from a rectangle by cutting a right triangle from the corner and moving it to the other side. So they have the same area.   A rectangle is cut and rearranged to form a parallelogram. Namely, a triangle is cut from the left side of the rectangle. It is then moved, without rotation nor reflection, to the right edge of the rectangle. In this way it forms a parellelogram whose two diagonal sides are the two sides of the cut, the hypotenuse of the triangle.      Area of a trapezoid  Suppose a trapezoid has a height and its parallel sides have lengths and . Then the area of the trapezoid is    A trapezoid. The top side is labeled , the bottom side is labeled , and the height is labeled .     The trapezoid can be broken up into two triangles by cutting from corner to opposite corner. Now add the areas of those triangles.   You can use this same idea of cutting up and rearranging to get area formulas for other kinds of polygons. The important thing to remember is not a host of formulas but rather this process. If you remember how the pictures work you can rederive the formula on the spot if you forget it.  Curved shapes present more of a problem. There's no way to cut up a circle into shapes with only straight lines. After all, any cut will leave part of the curved circumference connected. The best we can do is get pieces that are approximately straight. Constructions such as the following can be made rigorous using ideas from calculus.   We want to get a formula for the area of a circle. To do this we will cut up a circle and rearrange it into (approximately) a rectangle, a shape which we already know an area formula for. Imagine cutting a circle with radius into four equally sized wedges, the rearrange them so that the slices alternate facing up then down, as in this picture.   A circle cut into four equal wedges. Two wedges are repositioned so the curved side is down while the points face upward, and they touch at a single point. The other wedges are positioned opposite facing downward, and the teeth-like wedges fit between each other with no gap nor overlap. In this way they look approximately like a parallelogram, except with a wavy bottom and top. As the number of wedges increases, the same construction produces smaller and smaller bumps on the top\/bottom and diagonal sides get closer and closer to vertical, so that it gets closer and closer to a true rectangle.    This shape looks like a parallelogram with a very wavy bottom and top. Its height is and its width is half the circumference, namely . If you cut the circle up into a much larger (even) number of wedges and rearrange them to alternate facing up and down you get a parallelogram whose top and bottom has more but smaller bumps. And since the anglular size of the wedge determines the angle of the diagonal walls of the parallelogram, it also gets closer to a rectangle. If the wedges are infinitely small then you are infinitely close to a rectangle. The width times height area formula for a rectangle gives that the area is Since this shape was formed by cutting up and rearranging a circle the circle must have the same area.  This construction was independently discovered by a few mathematicians, among them Leonardo da Vinci of Italy (15th century) and Satō Moshun of Japan (17th century). Satō's construction is below.   Satō's construction. Similar to my version of the picture but in a document surrounded by Japanese text. His illustration divides the circle into equally sized wedges and rearranges them into a near-rectangle shape. His wedges are oriented left-right instead of my up-down, but that of course doesn't matter.    Area of a circle  A circle with radius has area    You can get formulas for areas of other curved shapes by similar processes. In general, however, you quickly need tools from calculus to figure them out. Indeed, determining areas of curved shapes is one of the problems calculus was invented to solve. (In jargon, this is what a integral does.) Given that, we will not look at any examples beyond the circle.  The point I want to leave you with is that advanced fields of math such as calculus can sometimes be used to answer questions even an elementary student can understand. They are more difficult and more abstract—which is why we don't teach them to elementary students!—and so understanding how the answers work isn't easy. But questions like how do you figure out areas of curved shapes? are a starting point to modern developments in mathematics.  "
+},
+{
+  "id": "sec8-area-4",
+  "level": "2",
+  "url": "sec8-area.html#sec8-area-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "area square units "
+},
+{
+  "id": "sec8-area-5",
+  "level": "2",
+  "url": "sec8-area.html#sec8-area-5",
+  "type": "Definition",
+  "number": "8.3.1",
+  "title": "Area of a rectangle.",
+  "body": "Area of a rectangle  Suppose a rectangle has width and height . Then its area is .  "
+},
+{
+  "id": "sec8-area-7",
+  "level": "2",
+  "url": "sec8-area.html#sec8-area-7",
+  "type": "Definition",
+  "number": "8.3.2",
+  "title": "Properties of area.",
+  "body": "Properties of area  Area enjoys the following nice properties. Additivity If a shape is made up of smaller shapes which only touch on their boundaries then the area of the shape is the sum of the areas of the smaller shapes.  Subtraction If a shape is formed by removing a shape with area from a larger shape with area then its area is .  Invariance The area of a shape doesn't change if you move it around, rotate it, or reflect it.    "
+},
+{
+  "id": "sec8-area-9",
+  "level": "2",
+  "url": "sec8-area.html#sec8-area-9",
+  "type": "Example",
+  "number": "8.3.3",
+  "title": "",
+  "body": "An L-shaped couch has the following measurements, in feet.   A hexagonal couch in the shape of an L. In clockwise order the vertices go: up , right , down , left , up an unspecified amount, and then left an unspecified amount to arrive back at the starting vertex.    To find the area this couch takes up think of it as being composed of two rectangles placed against each other. One rectangle measures and the other measures . So in total the area is square feet. "
+},
+{
+  "id": "sec8-area-12",
+  "level": "2",
+  "url": "sec8-area.html#sec8-area-12",
+  "type": "Theorem",
+  "number": "8.3.4",
+  "title": "Area of a triangle.",
+  "body": "Area of a triangle  Suppose a right triangle has legs of length and . Then its area is More generally, if a rectangle has a base of and a height of then its area is   We've already seen why this works for right triangles. To get from right triangles to triangles in general want to use the additivity and subtraction properties. You do this in one of the exercises for this chapter.  "
+},
+{
+  "id": "sec8-area-14",
+  "level": "2",
+  "url": "sec8-area.html#sec8-area-14",
+  "type": "Theorem",
+  "number": "8.3.5",
+  "title": "Area of a parallelogram.",
+  "body": "Area of a parallelogram  A parallelogram with base and height has area   A parallelogram is formed from a rectangle by cutting a right triangle from the corner and moving it to the other side. So they have the same area.   A rectangle is cut and rearranged to form a parallelogram. Namely, a triangle is cut from the left side of the rectangle. It is then moved, without rotation nor reflection, to the right edge of the rectangle. In this way it forms a parellelogram whose two diagonal sides are the two sides of the cut, the hypotenuse of the triangle.     "
+},
+{
+  "id": "sec8-area-15",
+  "level": "2",
+  "url": "sec8-area.html#sec8-area-15",
+  "type": "Theorem",
+  "number": "8.3.6",
+  "title": "Area of a trapezoid.",
+  "body": "Area of a trapezoid  Suppose a trapezoid has a height and its parallel sides have lengths and . Then the area of the trapezoid is    A trapezoid. The top side is labeled , the bottom side is labeled , and the height is labeled .     The trapezoid can be broken up into two triangles by cutting from corner to opposite corner. Now add the areas of those triangles.  "
+},
+{
+  "id": "sec8-area-18",
+  "level": "2",
+  "url": "sec8-area.html#sec8-area-18",
+  "type": "Example",
+  "number": "8.3.7",
+  "title": "",
+  "body": " We want to get a formula for the area of a circle. To do this we will cut up a circle and rearrange it into (approximately) a rectangle, a shape which we already know an area formula for. Imagine cutting a circle with radius into four equally sized wedges, the rearrange them so that the slices alternate facing up then down, as in this picture.   A circle cut into four equal wedges. Two wedges are repositioned so the curved side is down while the points face upward, and they touch at a single point. The other wedges are positioned opposite facing downward, and the teeth-like wedges fit between each other with no gap nor overlap. In this way they look approximately like a parallelogram, except with a wavy bottom and top. As the number of wedges increases, the same construction produces smaller and smaller bumps on the top\/bottom and diagonal sides get closer and closer to vertical, so that it gets closer and closer to a true rectangle.    This shape looks like a parallelogram with a very wavy bottom and top. Its height is and its width is half the circumference, namely . If you cut the circle up into a much larger (even) number of wedges and rearrange them to alternate facing up and down you get a parallelogram whose top and bottom has more but smaller bumps. And since the anglular size of the wedge determines the angle of the diagonal walls of the parallelogram, it also gets closer to a rectangle. If the wedges are infinitely small then you are infinitely close to a rectangle. The width times height area formula for a rectangle gives that the area is Since this shape was formed by cutting up and rearranging a circle the circle must have the same area.  This construction was independently discovered by a few mathematicians, among them Leonardo da Vinci of Italy (15th century) and Satō Moshun of Japan (17th century). Satō's construction is below.   Satō's construction. Similar to my version of the picture but in a document surrounded by Japanese text. His illustration divides the circle into equally sized wedges and rearranges them into a near-rectangle shape. His wedges are oriented left-right instead of my up-down, but that of course doesn't matter.   "
+},
+{
+  "id": "sec8-area-19",
+  "level": "2",
+  "url": "sec8-area.html#sec8-area-19",
+  "type": "Theorem",
+  "number": "8.3.8",
+  "title": "Area of a circle.",
+  "body": "Area of a circle  A circle with radius has area   "
+},
+{
+  "id": "sec8-area-20",
+  "level": "2",
+  "url": "sec8-area.html#sec8-area-20",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "integral "
+},
+{
+  "id": "sec8-volume",
+  "level": "1",
+  "url": "sec8-volume.html",
+  "type": "Section",
+  "number": "8.4",
+  "title": "Volume and surface area",
+  "body": " Volume and surface area  Continuing our progression of looking at more dimensions we now look at three dimensions. With solids we can ask how much volume (that is, three dimensional space) they contain. We can also ask about the size of their boundaries. For two dimensional shapes the boundaries were one dimensional perimeters. With three dimensional solids the boundaries are one step lower, being two dimensional surfaces. Naturally we call the size of these boundaries surface area .  Surface area is two dimensional—it's a kind of area!—and so is measured in square units. Volume is three dimensional and is measured in cubic units: cubic inches, cubic meters, etc.  In two dimensions we started to brush up against calculus to determine area formulas. If you expect that three dimensions are even more difficult you would be correct. As such, this section will have to skip explanations for some formulas. Sadly, sometimes the best that can be said is, there is no easier path to a full explanation than studying mathematics for a few more years.  We do volume first then talk surface area.  In two dimensions we started with the rectangle. One dimension up we start with its three dimensional counterpart. In two dimensions we get the area by multiplying the side lengths. The same idea works for rectangular cuboids, except now there are three sides to multiply.   Volume of a rectangular cuboid  Consider a rectangular cuboid whose side lengths are , , and . Its volume is    More generally, some solids are formed by taking a two dimensional shape as the base and thickening it upward to form a solid. For example, a cylinder is formed by taking a circle as the base and thickening it to become a solid. For any such shape, the volume can be determined by multiplying the area of the base by the height. For example, a rectangular cuboid has a base area of and a height of . Multiplying those gives the volume formula.  You can do the same process for a cylinder with radius and height . The base has an area of so we multiply by the height to get the volume.  Volume of a cylinder  Consider a cylinder whose base has radius and height . Then its volume is    Pyramids are to rectangular cuboids as cones are to cylinders. That is, a rectangular cuboid is formed by starting with a rectangle base and raising it with vertical walls to a solid. Whereas a pyramid is formed by starting with a rectangle base and raising it toward a point. The walls of the pyramid lean diagonally, and as you go up the area of the horizontal cross sections decrease down to zero at the point. Similarly, a cylinder is formed by raising a circular base with vertical walls while a cone is formed by raising a circular point to taper toward a point.  Because of this analogous feature the two solids have similar formulas. Namely, each has volume one third of the corresponding solid with vertical walls.  Volume of a pyramid  Consider a pyramid with a rectangular base with side lengths and and height . Its volume is    Volume of a cone  Consider a cone with a circular base with radius and height . Its volume is    The in these is maybe mysterious. A key idea to explain this that you don't change the volume of a solid by sliding its cross sections around. Imagine a deck of cards, stacked straight so that each card is exactly on top of the one below. If you slide the cards so that they don't perfectly aline the solid is now askew—it no longer has perfectly vertical edges. But this doesn't change the overall volume of the deck.  Think of a solid as being composed of infinitely thin cards stacked atop each other. With a rectangular cuboid or a cylinder the cards all exactly line up. With a cone or pyramid the cards get smaller as you go up. No matter the size of each card, if you slide cards to the side you don't change the volume of the solid. For example, imagine a skew cylinder , obtained by taking a cylinder a pushing all the cards to the side so that the axis of the cylider that goes through the center of each circular card is a diagonal line. This skew cylinder will have the same volume as the original right cylinder, namely the area of the base times the height.  The two dimensional analogue of this is taking a rectangle and pushing its horizontal slices to the side to form a parallelogram. The two shapes have the same area formula, namely base times height.  The fact about volume, known as Cavalieri's principle , lets you compute volumes of skewed solids without needing to memorize a special formula. If you can understand a solid as coming from sliding around the slices of a better-known type of solid then they have the same volume. This works even if the edges are curves or otherwise complicated.   A parallelpiped is a solid with six faces which are each parallelograms. You can think of it as obtained from a rectangular cuboid by skewing it. As such the formula for the volume of a cuboid—width times depth times height—also works for a parallelpiped.   This principle doesn't work for every kind of solid, however, and so you are forced to know more formulas for volume.  Volume of a sphere  Consider a sphere with radius . Then its volume is     A solid consists of a cylinder with hemispherical caps of each end. If the cylinder's height is and its radius, the same as the radii of the hemispheres, is , what is the overall volume of the solid?  The additivity property of area also applies to volume!   The hint for this checkpoint is a good time to make explicit that the additivity, subtraction, and invariance properties of area also apply to volume. Indeed, they apply to geometric size in any number of dimensions.  Enough about volume, let's talk surface area.  For many solids, their surface area can be computed knowing a few principles.  Principles of surface area   If a solid's boundaries consists of multiple faces, its surface area is the sum of the areas of the faces.  If a face is formed by taking a curve in a plane and extending it perpendicularly into the third dimension, then its area is the length of the curve times its height.      A cube with side length has its boundary consisting of six squares. Each square has area , so the overall surface area is .    Consider a cylinder with radius and height . Its boundary consists of two circles plus its vertical side. The vertical side is obtained by thickening a circle into the third dimension, so its area is the circumfenece times the height: . The circles each have area . Thus the overall surface area is .   Again, the sphere is a solid which requires its own approach and its own formula.  Surface area of a sphere  Consider a sphere with radius . Its surface area is     "
+},
+{
+  "id": "sec8-volume-2",
+  "level": "2",
+  "url": "sec8-volume.html#sec8-volume-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "volume surface area "
+},
+{
+  "id": "sec8-volume-7",
+  "level": "2",
+  "url": "sec8-volume.html#sec8-volume-7",
+  "type": "Definition",
+  "number": "8.4.1",
+  "title": "Volume of a rectangular cuboid.",
+  "body": "Volume of a rectangular cuboid  Consider a rectangular cuboid whose side lengths are , , and . Its volume is   "
+},
+{
+  "id": "sec8-volume-10",
+  "level": "2",
+  "url": "sec8-volume.html#sec8-volume-10",
+  "type": "Theorem",
+  "number": "8.4.2",
+  "title": "Volume of a cylinder.",
+  "body": "Volume of a cylinder  Consider a cylinder whose base has radius and height . Then its volume is   "
+},
+{
+  "id": "sec8-volume-13",
+  "level": "2",
+  "url": "sec8-volume.html#sec8-volume-13",
+  "type": "Theorem",
+  "number": "8.4.3",
+  "title": "Volume of a pyramid.",
+  "body": "Volume of a pyramid  Consider a pyramid with a rectangular base with side lengths and and height . Its volume is   "
+},
+{
+  "id": "sec8-volume-14",
+  "level": "2",
+  "url": "sec8-volume.html#sec8-volume-14",
+  "type": "Theorem",
+  "number": "8.4.4",
+  "title": "Volume of a cone.",
+  "body": "Volume of a cone  Consider a cone with a circular base with radius and height . Its volume is   "
+},
+{
+  "id": "sec8-volume-16",
+  "level": "2",
+  "url": "sec8-volume.html#sec8-volume-16",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "skew cylinder "
+},
+{
+  "id": "sec8-volume-18",
+  "level": "2",
+  "url": "sec8-volume.html#sec8-volume-18",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Cavalieri's principle "
+},
+{
+  "id": "sec8-volume-19",
+  "level": "2",
+  "url": "sec8-volume.html#sec8-volume-19",
+  "type": "Example",
+  "number": "8.4.5",
+  "title": "",
+  "body": " A parallelpiped is a solid with six faces which are each parallelograms. You can think of it as obtained from a rectangular cuboid by skewing it. As such the formula for the volume of a cuboid—width times depth times height—also works for a parallelpiped.  "
+},
+{
+  "id": "sec8-volume-22",
+  "level": "2",
+  "url": "sec8-volume.html#sec8-volume-22",
+  "type": "Checkpoint",
+  "number": "8.4.6",
+  "title": "",
+  "body": " A solid consists of a cylinder with hemispherical caps of each end. If the cylinder's height is and its radius, the same as the radii of the hemispheres, is , what is the overall volume of the solid?  The additivity property of area also applies to volume!  "
+},
+{
+  "id": "sec8-volume-26",
+  "level": "2",
+  "url": "sec8-volume.html#sec8-volume-26",
+  "type": "Theorem",
+  "number": "8.4.7",
+  "title": "Principles of surface area.",
+  "body": "Principles of surface area   If a solid's boundaries consists of multiple faces, its surface area is the sum of the areas of the faces.  If a face is formed by taking a curve in a plane and extending it perpendicularly into the third dimension, then its area is the length of the curve times its height.    "
+},
+{
+  "id": "sec8-volume-27",
+  "level": "2",
+  "url": "sec8-volume.html#sec8-volume-27",
+  "type": "Example",
+  "number": "8.4.8",
+  "title": "",
+  "body": " A cube with side length has its boundary consisting of six squares. Each square has area , so the overall surface area is .  "
+},
+{
+  "id": "sec8-volume-28",
+  "level": "2",
+  "url": "sec8-volume.html#sec8-volume-28",
+  "type": "Example",
+  "number": "8.4.9",
+  "title": "",
+  "body": " Consider a cylinder with radius and height . Its boundary consists of two circles plus its vertical side. The vertical side is obtained by thickening a circle into the third dimension, so its area is the circumfenece times the height: . The circles each have area . Thus the overall surface area is .  "
+},
+{
+  "id": "sec8-volume-30",
+  "level": "2",
+  "url": "sec8-volume.html#sec8-volume-30",
+  "type": "Theorem",
+  "number": "8.4.10",
+  "title": "Surface area of a sphere.",
+  "body": "Surface area of a sphere  Consider a sphere with radius . Its surface area is   "
+},
+{
+  "id": "sec8-exercises",
+  "level": "1",
+  "url": "sec8-exercises.html",
+  "type": "Section",
+  "number": "8.5",
+  "title": "Exercises",
+  "body": " Exercises    Come up with formulas for the perimeters of the following shapes. Explain why your formulas work. The semicircle of radius .  The wedge of the circle of radius with angle .  The shape obtained by attaching a semicircle on each side of a square with side length .    Drawing a picture is always a good first step. Here's some additional hints for each part. Don't forget the line across the base!  To determine the length of the curved side ask yourself what fraction of the circumference it is.  This is not simply four times your formula for the perimeter of a semicircle.     A quad on a college campus consists of a rectangle of lawn, yards by yards, surrounded by walkways. As a busy student rushing between classes you do not have time to take the long way and cut straight across the quad, from one corner to the opposite. How much shorter is this path instead of walking along the edge of the quad?  Draw a picture! You should recognize you're looking at a right triangle.    A parallelogram has a base of and an area of . Its angles are and . What is its perimeter?  You know two of the side lengths of the parallelogram, so you need to find the other two. Draw a picture! Can you use the Pythagorean theorem to figure out the remaining side lengths?    In this chapter we talked about how you can approximate lengths of curves by replacing them with lots of small lines that are close to the curve. This works for most curves you see in the real world, but it doesn't work for fractal -like shapes. Read the wikipedia article on the coastline paradox . Give a short definition of a fractal and summarize the difficulty in measuring the lengths of coastlines.         Draw pictures that show why the formula for area works for any triangle, not just right triangles. Explain your pictures. Demonstrate them by giving calculation following the pictures for both an acute and obtuse triangle.  Think of an acute triangle as formed from two smaller right triangles joined at the height of the acute triangle. Think of an obtuse triangle as formed by removing a smaller triangle from the corner of a right triangle.    Come up with a formula for the area of an equilateral triangle based only on its side length . Provide an explanation of how you know your formula works. Demonstrate your formula by computing the area of an equilateral triangle with side length .  If you cut the triangle in half along its height each half is a right triangle. Can you use this to determine the height so you can use the one half base times height formula?    Come up with a formula for the area of a regular hexagon based only on its side length . Provide an explanation of how you know your formula works. Demonstrate your formula by computing the area of a regular hexagon with side length .  As a first step, explain why a regular hexagon is composed of six equally sized equilateral triangles.    A sphere of radius is contained within the smallest cylinder than encloses it. That is, the top and bottom of the cylinder touches the top and bottom poles of the sphere and the side of the cylinder touches the equator of the sphere. What is the volume of the cylinder?  Instead of a sphere inside that cylinder the largest cone that fits inside is contained. That is, the bottom of the cone is the bottom of the cylinder and the top point of the cone touches the top of the cylinder. What is the volume of the cone? How many of these cones do you need to have the same volume as the sphere?    Determine a formula for the volume of the regular octahedron with side length . Show the work you used to get the formula.  The regular octahedron is two equal pyramids, one upside down, joined at their base. Can you determine the height of these pyramids?    Come up with formulas for the surface areas of each Platonic solid except the regular dodecagon, given its side length . Show the work you used to get the formulas.  The reason the dodecagon is excluded is because you'd have to first get a formula for the area of a regular pentagon, and that's a more difficult problem than is fair to give you for homework.    "
+},
+{
+  "id": "sec8-exercises-2-1",
+  "level": "2",
+  "url": "sec8-exercises.html#sec8-exercises-2-1",
+  "type": "Exercise",
+  "number": "8.5.1",
+  "title": "",
+  "body": " Come up with formulas for the perimeters of the following shapes. Explain why your formulas work. The semicircle of radius .  The wedge of the circle of radius with angle .  The shape obtained by attaching a semicircle on each side of a square with side length .    Drawing a picture is always a good first step. Here's some additional hints for each part. Don't forget the line across the base!  To determine the length of the curved side ask yourself what fraction of the circumference it is.  This is not simply four times your formula for the perimeter of a semicircle.   "
+},
+{
+  "id": "sec8-exercises-2-2",
+  "level": "2",
+  "url": "sec8-exercises.html#sec8-exercises-2-2",
+  "type": "Exercise",
+  "number": "8.5.2",
+  "title": "",
+  "body": " A quad on a college campus consists of a rectangle of lawn, yards by yards, surrounded by walkways. As a busy student rushing between classes you do not have time to take the long way and cut straight across the quad, from one corner to the opposite. How much shorter is this path instead of walking along the edge of the quad?  Draw a picture! You should recognize you're looking at a right triangle.  "
+},
+{
+  "id": "sec8-exercises-2-3",
+  "level": "2",
+  "url": "sec8-exercises.html#sec8-exercises-2-3",
+  "type": "Exercise",
+  "number": "8.5.3",
+  "title": "",
+  "body": " A parallelogram has a base of and an area of . Its angles are and . What is its perimeter?  You know two of the side lengths of the parallelogram, so you need to find the other two. Draw a picture! Can you use the Pythagorean theorem to figure out the remaining side lengths?  "
+},
+{
+  "id": "sec8-exercises-2-4",
+  "level": "2",
+  "url": "sec8-exercises.html#sec8-exercises-2-4",
+  "type": "Exercise",
+  "number": "8.5.4",
+  "title": "",
+  "body": " In this chapter we talked about how you can approximate lengths of curves by replacing them with lots of small lines that are close to the curve. This works for most curves you see in the real world, but it doesn't work for fractal -like shapes. Read the wikipedia article on the coastline paradox . Give a short definition of a fractal and summarize the difficulty in measuring the lengths of coastlines.  "
+},
+{
+  "id": "sec8-exercises-2-5",
+  "level": "2",
+  "url": "sec8-exercises.html#sec8-exercises-2-5",
+  "type": "Exercise",
+  "number": "8.5.5",
+  "title": "",
+  "body": " Draw pictures that show why the formula for area works for any triangle, not just right triangles. Explain your pictures. Demonstrate them by giving calculation following the pictures for both an acute and obtuse triangle.  Think of an acute triangle as formed from two smaller right triangles joined at the height of the acute triangle. Think of an obtuse triangle as formed by removing a smaller triangle from the corner of a right triangle.  "
+},
+{
+  "id": "sec8-exercises-2-6",
+  "level": "2",
+  "url": "sec8-exercises.html#sec8-exercises-2-6",
+  "type": "Exercise",
+  "number": "8.5.6",
+  "title": "",
+  "body": " Come up with a formula for the area of an equilateral triangle based only on its side length . Provide an explanation of how you know your formula works. Demonstrate your formula by computing the area of an equilateral triangle with side length .  If you cut the triangle in half along its height each half is a right triangle. Can you use this to determine the height so you can use the one half base times height formula?  "
+},
+{
+  "id": "sec8-exercises-2-7",
+  "level": "2",
+  "url": "sec8-exercises.html#sec8-exercises-2-7",
+  "type": "Exercise",
+  "number": "8.5.7",
+  "title": "",
+  "body": " Come up with a formula for the area of a regular hexagon based only on its side length . Provide an explanation of how you know your formula works. Demonstrate your formula by computing the area of a regular hexagon with side length .  As a first step, explain why a regular hexagon is composed of six equally sized equilateral triangles.  "
+},
+{
+  "id": "sec8-exercises-2-8",
+  "level": "2",
+  "url": "sec8-exercises.html#sec8-exercises-2-8",
+  "type": "Exercise",
+  "number": "8.5.8",
+  "title": "",
+  "body": " A sphere of radius is contained within the smallest cylinder than encloses it. That is, the top and bottom of the cylinder touches the top and bottom poles of the sphere and the side of the cylinder touches the equator of the sphere. What is the volume of the cylinder?  Instead of a sphere inside that cylinder the largest cone that fits inside is contained. That is, the bottom of the cone is the bottom of the cylinder and the top point of the cone touches the top of the cylinder. What is the volume of the cone? How many of these cones do you need to have the same volume as the sphere?  "
+},
+{
+  "id": "sec8-exercises-2-9",
+  "level": "2",
+  "url": "sec8-exercises.html#sec8-exercises-2-9",
+  "type": "Exercise",
+  "number": "8.5.9",
+  "title": "",
+  "body": " Determine a formula for the volume of the regular octahedron with side length . Show the work you used to get the formula.  The regular octahedron is two equal pyramids, one upside down, joined at their base. Can you determine the height of these pyramids?  "
+},
+{
+  "id": "sec8-exercises-2-10",
+  "level": "2",
+  "url": "sec8-exercises.html#sec8-exercises-2-10",
+  "type": "Exercise",
+  "number": "8.5.10",
+  "title": "",
+  "body": " Come up with formulas for the surface areas of each Platonic solid except the regular dodecagon, given its side length . Show the work you used to get the formulas.  The reason the dodecagon is excluded is because you'd have to first get a formula for the area of a regular pentagon, and that's a more difficult problem than is fair to give you for homework.  "
+},
+{
+  "id": "sec9-rigid",
+  "level": "1",
+  "url": "sec9-rigid.html",
+  "type": "Section",
+  "number": "9.1",
+  "title": "Rigid motions: translations and rotations",
+  "body": " Rigid motions: translations and rotations  Imagine cutting out a piece of paper into your favorite shape. You set it down on the table and move it around without picking it up from the surface. What are the different types of movement you can do?   Do this. If you don't have scissors at hand, it's okay to tear with your hands. Categorize the different movements you can do.   Your movements can be understood as combinations of two basic kinds. Translation Keeping the orientation of the shape fixed you slide it around. Perhaps you move it horizontally, perhaps vertically, perhaps diagonally.  Rotation Keeping the position of the shape fixed you twist it in a circular motion.  Perhaps you did both of these at the same time. But whatever complicated movement you did, you'd have the same change from start to finish if you first rotated your shape to its final orientation and then translated it to the final position. (Or you could translate and then rotate; the order doesn't matter.) This is the sense in which any movement of your shape can be understood as a combination of a translation plus a rotation.   An arrowhead-shaped quadrilateral. Off to the side are two rotated copies of it. This picture also illustrates translation, as these two arrowheads are translated to the right from the original arrowhead.    An important property of these movements— geometric transformations , to drop some jargon—is that they are distance-preserving . If you drew two dots on your shape, then as you moved it the distance between the dots would stay the same. This is because the shape is rigid. On the other hand, if your shape was made of rubber and you stretched it then the dots would get farther apart. If you lift up your shape from the surface you can accomplish a similar thing in three dimensional space by folding the paper to bring the dots closer together.  Similarly these transformations are angle-preserving . If you draw an angle on your shape then rotating and translating it won't change the measure of the angle. On the other hand, stretching an elastic surface can change angles.  A third important property of these transformations is that they preserve orientation or handedness . To illustrate this, imagine two ell-shaped objects that are reflections of each other. No matter how you rotate you can't make one look like the other. But if you're allowed to pick up your shape and flip it upside down then you change the handedness of your shape.   Two ell-shaped objects that are reflections of each other. You can transform one into the other by a reflection—imagine picking it up off your screen and flipping it upside down. But if you just slide it around and rotate it you can never make it look like its twin.    This phenomenon is familiar to anyone who has played the video game Tetris. In this video game you translate and rotate shapes made out of blocks. But you cannot reflect them. Some of the shapes are mirror images of each other, and their different handedness ensures they can fit into different places.   Cut a shape out of paper. Rotate it different amounts and trace around its border to draw copies of it. Are there any amounts you can rotate it so that it looks the same? Can you describe a general pattern for the angles you can rotate it so that it looks the same?   "
+},
+{
+  "id": "sec9-rigid-3",
+  "level": "2",
+  "url": "sec9-rigid.html#sec9-rigid-3",
+  "type": "Checkpoint",
+  "number": "9.1.1",
+  "title": "",
+  "body": " Do this. If you don't have scissors at hand, it's okay to tear with your hands. Categorize the different movements you can do.  "
+},
+{
+  "id": "sec9-rigid-6",
+  "level": "2",
+  "url": "sec9-rigid.html#sec9-rigid-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "geometric transformations distance-preserving "
+},
+{
+  "id": "sec9-rigid-7",
+  "level": "2",
+  "url": "sec9-rigid.html#sec9-rigid-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "angle-preserving "
+},
+{
+  "id": "sec9-rigid-8",
+  "level": "2",
+  "url": "sec9-rigid.html#sec9-rigid-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "orientation handedness "
+},
+{
+  "id": "sec9-rigid-11",
+  "level": "2",
+  "url": "sec9-rigid.html#sec9-rigid-11",
+  "type": "Checkpoint",
+  "number": "9.1.2",
+  "title": "",
+  "body": " Cut a shape out of paper. Rotate it different amounts and trace around its border to draw copies of it. Are there any amounts you can rotate it so that it looks the same? Can you describe a general pattern for the angles you can rotate it so that it looks the same?  "
+},
+{
+  "id": "sec9-symmetry",
+  "level": "1",
+  "url": "sec9-symmetry.html",
+  "type": "Section",
+  "number": "9.2",
+  "title": "Symmetry and reflection",
+  "body": " Symmetry and reflection   Find or make some small objects in the shape of a square, a circle, and a triangle. Ignoring any pattern or design and looking only at the shape, how far do you have to rotate the shape to make it look the same as how it started?   You should have made the following observations. The square looks the same if you rotate any number of quarter turns ( ). The circle looks the same under any rotation. For the triangle it depends on what type of triangle you had. If it's an equilateral triangle where all sides and angles are the same then rotating any number of third turns ( ) will give you the same shape back. If it's a different kind of triangle then it will only look the same after a full turn ( ).  These are examples of rotational symmetry , where a shape looks the same after doing a rotation. We would say, for instance, that a square is symmetric under a rotation by , a circle is symmetric under any rotation, and so on.  Any shape is symmetric under a rotation by , which is the same as a rotation by . We call this the identity transformation because it is the do nothing transformation. Compare the terminology of multiplicative identity and additive identity . Multiplying a number by or adding doesn't change its value, like how the identity transformation never changes a shape. In general, mathematicians use the word identity to refer to something that keeps things unchanged.  I say identity transformation rather than identity rotation because the do nothing rotation is the same as the do nothing translation. Since it's the do nothing version of both these kinds of transformations I don't want to pick out just one of them in the name.  On that note, you might wonder about symmetries under translations. Can you have a shape that looks the same after a (non-identity) translation? It depends on what you mean. If you don't care where your shape is, then every translation produces a shape that looks the same. But if you do care where your shape is, then any non-identity translation moves where it is so it wouldn't count. Both answers are boring so we won't care to talk about them.   With the square, there are four different rotational symmetries, namely the rotations by , , , and . Note that if you do two of these in a row you could've equivalently just done one. For example, a rotation followed by a is the same as a single rotation. Or a rotation followed by a rotation is the same a single rotation. Also note that every symmetry has an inverse symmetry, the rotation by the same amount in the opposite direction. For example, rotating by is the same as rotating by , that is by in the negative direction. So doing a rotation followed by a rotation is the same as doing nothing, the identity transformation.  Any regular polygon will behave similarly. A regular -gon will have different rotational symmetries, namely the rotations by multiples of degrees. Like with the square doing one rotation after another is equivalent to a single symmetry, and each symmetry has an inverse.  A more general statement can be made, but before doing so let's address another kind of symmetry. Consider the following shape.   A kite-shaped quadrilateral. If you reflected across a vertical line down its middle it would look the same.    You probably would say this kite shape is symmetric. But if you do any non-identity rotation then it looks different. (You can test this by rotating your head and\/or computer screen.) So its symmetry isn't of the rotational kind. Instead, imagine placing a mirror to the side of the kite. Reflected in the mirror it looks the same. This type of symmetry is a reflective symmetry , because the shape looks the same after a reflection .  In general, a reflection is a geometric transformation where you take a line, the axis of reflection , and reflect the shape across the line. If the axis is a vertical line then we call it a horizontal reflection and if the axis is a horizontal line we call it a vertical reflection .  One way to produce a shape with reflective symmetry is to fold a piece of paper, cut a shape out, then unfold it to a symmetric shape. Do this a couple times to produce symmetric shapes. Can you produce a shape with more than one reflective axis of symmetry?  Playing around with reflections you might observe that a horizontal reflection followed by a vertical reflection is equivalent to a rotation by . This is an indication that reflections and rotations can interact. Let's look at the example of the triangle.   An equilateral triangle has the following symmetries The identity transformation, the do nothing transformation.  Rotation by both in the forward and backward direction.  Three reflections, each going through a vertex of the triangle.     An equilateral triangle. Drawn over it are its three axes of symmetry, as dashed lines. These are the lines which go through a vertex and the midpoint of the opposite side. Equivalently, these are the lines which go through a vertex and the center.    Are there any others?  One way to answer this is, notice that you can describe what's going on entirely by looking at vertices. An equilateral triangle is entirely determined by the position of its vertices, and any symmetry must send each vertex to a vertex. So to catalog the symmetries you just need to keep track of where the vertices go. To do this, label each vertex, say as . We're now asking how many ways there are to map these labels to each other.   An equilateral triangle. The three vertices are labeled , , and .    With a little work you can write down all possibilities. Drawing pictures to help out, you can see that these transformations are, in order: the identity, the two rotations, and the three reflections. So these are in fact the only six possibilities. There are no others.  What this tells us is, if you do a rotation followed by a reflection, it's equivalent to doing one of the other symmetries. We can use the label mappings to figure out which one we get, following one then the next. For example, let's do the counterclockwise rotation followed by the reflection across the line through vertex . This is the same label mapping as the reflection across the line through vertex . Thus we see that a rotation followed by a reflection is equivalent to doing a different reflection once.   In general, with any regular polygon a way to understand its symmetries is to label the vertices and keep track of where they go. Thus we reduce a geometry problem—what are the transformations that keep this shape looking the same?—with a problem of symbol pushing—what are the ways to map the labels to each other? This is a common pattern in mathematics. Algebra—the mathematics of symbol pushing—is a powerful tool to understand things.  A detail to watch out for in the general case, however, is that while every symmetry corresponds to a shuffling of the vertices there can be shufflings of vertices which don't give a symmetry. This happens as early as the square, as you check in an exercise for this chapter. When you move beyond triangles you also have to deal with the complication of determining which shufflings of vertices correspond to symmetries.  This is the sort of question that motivates the area of mathematics known as group theory . You want to understand what the symmetries of an object are like—whether this be a geometric object or some other, more abstract object. A question which an elementary school student can investigate—how many different ways are there to transform a triangle and keep it looking the same?—can lead into more advanced mathematics. Indeed, group theory is a core tool of modern mathematics. A broad variety of problems in mathematics makes use of more difficult versions of the symmetry analysis we did in this section.  To drop some jargon to give you keywords in case you want to learn more: the symmetries of regular polygons are called the dihedral groups . That they correspond to shufflings of vertices amounts to saying they are subgroups of symmetric groups .  "
+},
+{
+  "id": "sec9-symmetry-2",
+  "level": "2",
+  "url": "sec9-symmetry.html#sec9-symmetry-2",
+  "type": "Checkpoint",
+  "number": "9.2.1",
+  "title": "",
+  "body": " Find or make some small objects in the shape of a square, a circle, and a triangle. Ignoring any pattern or design and looking only at the shape, how far do you have to rotate the shape to make it look the same as how it started?  "
+},
+{
+  "id": "sec9-symmetry-4",
+  "level": "2",
+  "url": "sec9-symmetry.html#sec9-symmetry-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "rotational symmetry "
+},
+{
+  "id": "sec9-symmetry-5",
+  "level": "2",
+  "url": "sec9-symmetry.html#sec9-symmetry-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "identity multiplicative identity additive identity "
+},
+{
+  "id": "sec9-symmetry-6-1",
+  "level": "2",
+  "url": "sec9-symmetry.html#sec9-symmetry-6-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "transformation rotation "
+},
+{
+  "id": "sec9-symmetry-7",
+  "level": "2",
+  "url": "sec9-symmetry.html#sec9-symmetry-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "inverse "
+},
+{
+  "id": "sec9-symmetry-11",
+  "level": "2",
+  "url": "sec9-symmetry.html#sec9-symmetry-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "reflective symmetry reflection "
+},
+{
+  "id": "sec9-symmetry-12",
+  "level": "2",
+  "url": "sec9-symmetry.html#sec9-symmetry-12",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "reflection axis of reflection horizontal reflection vertical reflection "
+},
+{
+  "id": "sec9-symmetry-13",
+  "level": "2",
+  "url": "sec9-symmetry.html#sec9-symmetry-13",
+  "type": "Checkpoint",
+  "number": "9.2.2",
+  "title": "",
+  "body": "One way to produce a shape with reflective symmetry is to fold a piece of paper, cut a shape out, then unfold it to a symmetric shape. Do this a couple times to produce symmetric shapes. Can you produce a shape with more than one reflective axis of symmetry? "
+},
+{
+  "id": "sec9-symmetry-15",
+  "level": "2",
+  "url": "sec9-symmetry.html#sec9-symmetry-15",
+  "type": "Example",
+  "number": "9.2.3",
+  "title": "",
+  "body": " An equilateral triangle has the following symmetries The identity transformation, the do nothing transformation.  Rotation by both in the forward and backward direction.  Three reflections, each going through a vertex of the triangle.     An equilateral triangle. Drawn over it are its three axes of symmetry, as dashed lines. These are the lines which go through a vertex and the midpoint of the opposite side. Equivalently, these are the lines which go through a vertex and the center.    Are there any others?  One way to answer this is, notice that you can describe what's going on entirely by looking at vertices. An equilateral triangle is entirely determined by the position of its vertices, and any symmetry must send each vertex to a vertex. So to catalog the symmetries you just need to keep track of where the vertices go. To do this, label each vertex, say as . We're now asking how many ways there are to map these labels to each other.   An equilateral triangle. The three vertices are labeled , , and .    With a little work you can write down all possibilities. Drawing pictures to help out, you can see that these transformations are, in order: the identity, the two rotations, and the three reflections. So these are in fact the only six possibilities. There are no others.  What this tells us is, if you do a rotation followed by a reflection, it's equivalent to doing one of the other symmetries. We can use the label mappings to figure out which one we get, following one then the next. For example, let's do the counterclockwise rotation followed by the reflection across the line through vertex . This is the same label mapping as the reflection across the line through vertex . Thus we see that a rotation followed by a reflection is equivalent to doing a different reflection once.  "
+},
+{
+  "id": "sec9-symmetry-18",
+  "level": "2",
+  "url": "sec9-symmetry.html#sec9-symmetry-18",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "group theory "
+},
+{
+  "id": "sec9-symmetry-19",
+  "level": "2",
+  "url": "sec9-symmetry.html#sec9-symmetry-19",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "dihedral groups subgroups symmetric groups "
+},
+{
+  "id": "sec9-tilings",
+  "level": "1",
+  "url": "sec9-tilings.html",
+  "type": "Section",
+  "number": "9.3",
+  "title": "Tilings",
+  "body": " Tilings  One use of symmetries is understanding tilings . Just like different shaped tiles might be used to cover a courtyard, you can ask what shapes can be used to tile the plane. How do you fit them together?  The simplest possible tiling is one with squares, such as the cheap linoleum tiles you might see on the floor of a public school classroom or on a sheet of graph paper. Four squares meet at a corner, in a pattern that repeats infinitely (or at least, to the edge of the floor or paper). What other shapes can we do this with?   A grid of squares tiling the plane. More precisely, they fill up a circle, with the unfinished edge hopefully suggesting that the pattern can be continued indefinitely. The squares alternate white and black to make the grid pattern easier to see.    A natural place to start is with regular polygons. These shapes enjoy a high degree of symmetry, so you have fewer ways to try to fit them together. Experimenting around with different numbers of sides, you might see that you can replicate the feat with regular hexagons, achieving something like a honeycomb pattern.   A grid of hexagons tiling the plane, akin to a honeycomb pattern. Each hexagon is surrounded by six other hexagons of equal size, one for each side.    Trying some more you make it work for equilateral triangles. In fact, you can get this from the hexagon tiling. Namely, any hexagon can be subdivided into six equilateral triangles. So you can turn the honeycomb tiling into a triangle tiling by replacing each hexagon with triangles.  Can you do it with any other regular polygon? You might try a few and fail, but that's not a proof. How do you show it's impossible?  Here's a key observation. In any tiling the angles meeting at a corner must add up to a full circle, namely, . If all the shapes meeting at a corner have the same angle, this means that the angle must evenly divide . That works with triangles ( ), squares ( ) and hexagons ( ). But it won't work with any other regular polygon.  Remember from that the angles in an -gon must add up to . If all angles are the same, then they are each When does this evenly go into ? For the pentagon, this is , which you can arithmetically check doesn't work. For many sides there's a quick trick to see at once they all don't work. Namely, these angles are all larger than , the angle for the hexagon. And , so that is precisely the angle for which three shapes meet at a corner. On the other side, these angles are all less than , the angle measure of a straight line. And , so that would be splitting the full circle into two equal pieces. So for sides their angles split into a fraction between and many pieces. That's not a whole number of pieces, so you can't make them fit!  This maybe seems boring—there's only three possibilities. But from these three we can get more. One way is by stretching out tiles. Imagine taking all your squares and stretching them out to be rectangles. The squares fit together, so the rectangles will as well. You can do the same to triangles or hexagons. If you stretch all the tiles the same way, they'll still fit together. With rectangles you also can translate where they attach to each other to create more patterns.   A grid of rectangles tiling the plane in a brick-like pattern. That is, there are rows of rectangles with the rows offset from each other. In that way, the vertical edges between rectangles don't line up across multiple rows.    Similarly, you can create a new tiling by skewing them to affect the angles. Imagine taking a square and pushing the vertical sides so they face diagonally, giving you a rhombus. If you do this to all the squares in a tiling, they'll still fit together, giving you a rhombus tiling. If you both skew and stretch you get a tiling of parallelograms.   Draw two different tilings with parallelograms or rhombuses.   Mathematically, this suffices to produce multiple kinds of tessellations. But artistically they are maybe dull, being confined to simple geometric shapes. There is a way to take these tilings and make them more artistically interesting. Namely, start with your basic shape you are useing to tile the plane. You are going to modify it into a more complicated shape that still tessellates. Cut out a region from one side of the shape and then glue it to the other side that fits in that space in the tiling. In this way the tiles still fit together. You can do this with the other sides as well. If you do this right you can create organic shapes that tessellate. And you can further fill in details in each tile.   A square tile that has been cut up to make a more interesting tessellating shape, like a fat jagged ess-shape. The top and bottom edges are untouched (though you could also cut them up). The left and right edges, represented as dashed lines, were cut up with the same pattern on both sides so the tile still fits together. The design isn't very interesting—some jagged diagonal lines that slash left and right. Someone more artistically sophisticated could make a more interesting design.    An artist known for these tessellations is M. C. Escher. As a homework exercise you look at some of his tessellations and analyze how they come from basic geometric shapes.  There are many other tilings. For example, there's no need to have all shapes in the tessellation be the same. Instead you can use multiple different shapes. For example, if you try to fit just regular octogons together they will leave square gaps. But if you fill those gaps with squares you get a tessellation using octogon and square tiles.  There are many other, yet more sophisticated tilings. As a homework exercise you will research aperiodic tilings, those which have a non-repeating pattern.  "
+},
+{
+  "id": "sec9-tilings-2",
+  "level": "2",
+  "url": "sec9-tilings.html#sec9-tilings-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "tilings "
+},
+{
+  "id": "sec9-tilings-14",
+  "level": "2",
+  "url": "sec9-tilings.html#sec9-tilings-14",
+  "type": "Checkpoint",
+  "number": "9.3.1",
+  "title": "",
+  "body": " Draw two different tilings with parallelograms or rhombuses.  "
+},
+{
+  "id": "sec9-exercises",
+  "level": "1",
+  "url": "sec9-exercises.html",
+  "type": "Section",
+  "number": "9.4",
+  "title": "Exercises",
+  "body": " Exercises    Draw a shape that has rotational symmetry but not reflective symmetry. Draw a shape that has reflective symmetry but not rotational symmetry. For each, identify the symmetry—what rotation, or reflected across what line. Explain why the shape doesn't have the other kind of symmetry.    Explain why any diagonal translation is equivalent to a horizontal translation followed by a vertical translation. Explain how to determine the distance covered by the diagonal translation if you know the distances for the horizontal and vertical components.  A picture is a good place to start, but you should explain what your picture is showing!  If you're struggling with the part about distance, revisit .    Draw a shape whose only symmetry is the identity symmetry. Explain why it has no reflective nor rotational symmetries.    Go outside and find three natural objects that exhibit some kind of symmetry. (That is, human-made objects don't count, but animals, plants, mineral, celestial objects, etc. are all fair game.) Explain what the objects are and what symmetries they have. Do you think the symmetry is just coincidence, or is there a reason they are symmetric? If you like, include pictures of these symmetric objects.  If the symmetry isn't perfect but it's close that's fine. It's unreasonable to expect total mathematical precision in nature.    The circle has infinitely many symmetries; a rotation by any angle is a symmetry and a reflection across any line through the center is a symmetry. Can a polygon have infinitely many symmetries? Explain your answer.  The answer is no.  You need to explain two things: why only a few rotations are symmetries, and why only a few reflections are symmetries. Can you identify which rotations and reflections are allowed?  An alternative approach is to think about vertex labelings, like we did with the triangle.    Look at the symmetries of the triangle, as analyzed in . Determine which single symmetry each of the following is equivalent to. For each give a short explanation. Two rotations in a row.  Three rotations in a row.  A reflection followed by itself again.  Two different reflections in a row.    Some of these you may be able to figure out purely geometrically, which is a fine way to do it. If you're having trouble with geometric reasoning, you can use the label mappings like we did earlier for an alternative method.  This is a common trick in mathematics. A problem might be hard to tackle directly, but if you can transform it into a problem about pushing symbols around you can solve it. This is what algebra is about.    In we analyzed the symmetries of the triangle by looking at how they moved the vertices around. Explain why that idea is by itself not enough to understand symmetries of the square by exhibiting a rearrangement of the vertices of the square which doesn't correspond to a symmetry.  If you're not sure how to start, write down a few shuffling of the four vertices and draw the corresponding shape you get. Remember, there's sides between vertices and , between and , between and , and between and . But there aren't sides between any other pairs of vertices.    The Dutch artist M. C. Escher created prints that explored multiple mathematical ideas, among them tessellation. Look up three tessellations by Escher—such as Crab Canon (1963), Bird Fish (1938), Symmetry Drawing (1948), Symmetry Watercolor 55 Fish (1942), Pegasus (No. 105) (1959), Regular Division of the Plane IV (1957), or any others you find. For your three tessellations, describe the basic geometric shape the tessellation is based on and any rotations or reflections that are applied to make the tiles fit.    Pick a simple quadrilateral which tiles the plane. Cut out that shape from an index card. Cut out from one side and tape to the opposite side to create a shape which forms a tessellation. Use your card as something to trace around to draw multiple interlocked tiles in this tessellation. Include enough shapes to clearly see how they fit together. If you're feeling artistic, draw in the interiors to create a repeated design.    Read the wikipedia page on Penrose tilings . Write a few paragraphs to explain what an aperiodic tiling is and explain an example of a specific aperiodic tiling and how it works.    "
+},
+{
+  "id": "sec9-exercises-2-1",
+  "level": "2",
+  "url": "sec9-exercises.html#sec9-exercises-2-1",
+  "type": "Exercise",
+  "number": "9.4.1",
+  "title": "",
+  "body": " Draw a shape that has rotational symmetry but not reflective symmetry. Draw a shape that has reflective symmetry but not rotational symmetry. For each, identify the symmetry—what rotation, or reflected across what line. Explain why the shape doesn't have the other kind of symmetry.  "
+},
+{
+  "id": "sec9-exercises-2-2",
+  "level": "2",
+  "url": "sec9-exercises.html#sec9-exercises-2-2",
+  "type": "Exercise",
+  "number": "9.4.2",
+  "title": "",
+  "body": " Explain why any diagonal translation is equivalent to a horizontal translation followed by a vertical translation. Explain how to determine the distance covered by the diagonal translation if you know the distances for the horizontal and vertical components.  A picture is a good place to start, but you should explain what your picture is showing!  If you're struggling with the part about distance, revisit .  "
+},
+{
+  "id": "sec9-exercises-2-3",
+  "level": "2",
+  "url": "sec9-exercises.html#sec9-exercises-2-3",
+  "type": "Exercise",
+  "number": "9.4.3",
+  "title": "",
+  "body": " Draw a shape whose only symmetry is the identity symmetry. Explain why it has no reflective nor rotational symmetries.  "
+},
+{
+  "id": "sec9-exercises-2-4",
+  "level": "2",
+  "url": "sec9-exercises.html#sec9-exercises-2-4",
+  "type": "Exercise",
+  "number": "9.4.4",
+  "title": "",
+  "body": " Go outside and find three natural objects that exhibit some kind of symmetry. (That is, human-made objects don't count, but animals, plants, mineral, celestial objects, etc. are all fair game.) Explain what the objects are and what symmetries they have. Do you think the symmetry is just coincidence, or is there a reason they are symmetric? If you like, include pictures of these symmetric objects.  If the symmetry isn't perfect but it's close that's fine. It's unreasonable to expect total mathematical precision in nature.  "
+},
+{
+  "id": "sec9-exercises-2-5",
+  "level": "2",
+  "url": "sec9-exercises.html#sec9-exercises-2-5",
+  "type": "Exercise",
+  "number": "9.4.5",
+  "title": "",
+  "body": " The circle has infinitely many symmetries; a rotation by any angle is a symmetry and a reflection across any line through the center is a symmetry. Can a polygon have infinitely many symmetries? Explain your answer.  The answer is no.  You need to explain two things: why only a few rotations are symmetries, and why only a few reflections are symmetries. Can you identify which rotations and reflections are allowed?  An alternative approach is to think about vertex labelings, like we did with the triangle.  "
+},
+{
+  "id": "sec9-exercises-2-6",
+  "level": "2",
+  "url": "sec9-exercises.html#sec9-exercises-2-6",
+  "type": "Exercise",
+  "number": "9.4.6",
+  "title": "",
+  "body": " Look at the symmetries of the triangle, as analyzed in . Determine which single symmetry each of the following is equivalent to. For each give a short explanation. Two rotations in a row.  Three rotations in a row.  A reflection followed by itself again.  Two different reflections in a row.    Some of these you may be able to figure out purely geometrically, which is a fine way to do it. If you're having trouble with geometric reasoning, you can use the label mappings like we did earlier for an alternative method.  This is a common trick in mathematics. A problem might be hard to tackle directly, but if you can transform it into a problem about pushing symbols around you can solve it. This is what algebra is about.  "
+},
+{
+  "id": "sec9-exercises-2-7",
+  "level": "2",
+  "url": "sec9-exercises.html#sec9-exercises-2-7",
+  "type": "Exercise",
+  "number": "9.4.7",
+  "title": "",
+  "body": " In we analyzed the symmetries of the triangle by looking at how they moved the vertices around. Explain why that idea is by itself not enough to understand symmetries of the square by exhibiting a rearrangement of the vertices of the square which doesn't correspond to a symmetry.  If you're not sure how to start, write down a few shuffling of the four vertices and draw the corresponding shape you get. Remember, there's sides between vertices and , between and , between and , and between and . But there aren't sides between any other pairs of vertices.  "
+},
+{
+  "id": "sec9-exercises-2-8",
+  "level": "2",
+  "url": "sec9-exercises.html#sec9-exercises-2-8",
+  "type": "Exercise",
+  "number": "9.4.8",
+  "title": "",
+  "body": " The Dutch artist M. C. Escher created prints that explored multiple mathematical ideas, among them tessellation. Look up three tessellations by Escher—such as Crab Canon (1963), Bird Fish (1938), Symmetry Drawing (1948), Symmetry Watercolor 55 Fish (1942), Pegasus (No. 105) (1959), Regular Division of the Plane IV (1957), or any others you find. For your three tessellations, describe the basic geometric shape the tessellation is based on and any rotations or reflections that are applied to make the tiles fit.  "
+},
+{
+  "id": "sec9-exercises-2-9",
+  "level": "2",
+  "url": "sec9-exercises.html#sec9-exercises-2-9",
+  "type": "Exercise",
+  "number": "9.4.9",
+  "title": "",
+  "body": " Pick a simple quadrilateral which tiles the plane. Cut out that shape from an index card. Cut out from one side and tape to the opposite side to create a shape which forms a tessellation. Use your card as something to trace around to draw multiple interlocked tiles in this tessellation. Include enough shapes to clearly see how they fit together. If you're feeling artistic, draw in the interiors to create a repeated design.  "
+},
+{
+  "id": "sec9-exercises-2-10",
+  "level": "2",
+  "url": "sec9-exercises.html#sec9-exercises-2-10",
+  "type": "Exercise",
+  "number": "9.4.10",
+  "title": "",
+  "body": " Read the wikipedia page on Penrose tilings . Write a few paragraphs to explain what an aperiodic tiling is and explain an example of a specific aperiodic tiling and how it works.  "
+},
+{
+  "id": "sec10-congruent",
+  "level": "1",
+  "url": "sec10-congruent.html",
+  "type": "Section",
+  "number": "10.1",
+  "title": "Congruent triangles",
+  "body": " Congruent triangles  Most of this chapter will be focused on the question when are two triangles the same? One reason for this is that triangles are a top three most important shape (only the circle and the rectangle compete). Another is that triangles are in the sweet spot where there's enough variety that you can make useful inferences but not so much complexity that everything is hopeless. Compare to other shapes. Some are too simple; for example, all circles look the same just zoomed in or out. Others are too wild; it's hopeless to try to classify all possible species of heptakaidecagons ( -gons). Triangles are just right.  Before we talk about how to tell when two triangles are the same, we need to make clear what we mean by two things being the same. There's more than one way to answer this question. Two answers are mathematically useful. We will look at them in this section and the next.  One answer to this question is, if you move a shape around it's the same shape. If you rotate it then it's the same shape. If you reflect it then it's still the same shape. As long as what you are doing isn't stretching it or warping it or changing distances then it's the same shape. This idea can be phrased in mathematician language.  Congruency  Two triangles are congruent if one shape can be sent to the other by a Euclidean transformation. That is, two triangles are congruent if doing some series of translations, reflections, and rotations makes the two shapes exactly overlap.   Note that stretching and resizing is not allowed. As a consequence, two congruent shapes will always have the same area. This immediately gives us an easy criterion to check for when two shapes are different (meaning non-congruent).   If two shapes have different area then they are non-congruent.   Caution! Two shapes can have the same area but not be congruent.   Come up with two non-congruent triangles which both have an area of .  If you're not sure how to tell that two triangles are congruent, peak ahead to the next theorem.   The following is a useful way to think about what congruence means for triangles.   Suppose two triangles are congruent. Then they have the same angles and side lengths. That is, there is a way to label their angles A,B,C and and opposite sides and so that: The corresponding angles are the same: , , and .  The corresponding sides have the same length: , , and .  The converse is also true. If two triangles have the same angles and sides then the two triangles are congruent.   Two congruent isosceles right triangles. The three corresponding sides are labeled and . Note that in this case there is more than one way the label could be done; these are isoceles triangles, so we could swap labels on two equal sides and still have everything line up between the two triangles.     For the first statement, translations, rotations, and reflections don't change angles nor distances. For the converse, if two triangles have the same angles and sides then you can make them exactly overlap. Namely, translate, reflect, and\/or rotate as necessary to make the angles and exactly overlap, with and both on, say, the left side of the angle. Because the side lengths are the same the angles and and and will exactly overlap. So the three vertices are in the locations, so the triangles exactly overlap.   One thing this theorem says if that you know all six data about a triangle—the three side lengths and the three angles—then that data uniquely specifies the triangle. Any triangle with the same data must be the same (congruent).  Surely you don't need all six data. If you know two angles, then the third is determined. This is because the three angles must add up to . For example, if you know a triangle has angles of measure and then you can calculate the remaining angle is . So five data is enough to uniquely specify a triangle.  Can you go lower? How few of these six data are needed to identify a triangle?  It turns that, with a couple exceptions, any specification of three data is enough to identify a triangle up to congruence.  It's helpful to have a notation for talking about data to specify a triangle.   We can specify a triangle by (most) three letter sequences of A s and S s. A stands for angle and S stands for side. This specification starts at an angle or a side, depending on the first letter, and proceeds either counterclockwise or clockwise. As you go around the second then the third letter specify either the next angle or side length.  For example, AAS specifies that you know an angle, then the next angle, then side, all going in the same direction from the start. Or SSS specifies that you know one side, then the next, then the next (that is, you know all three sides).    Because order doesn't matter—you can go either counterclockwise or clockwise—if you reverse the order of the letters you get the same specification. This only applies to two cases: AAS is the same specification as SAA and ASS is the same specification as SSA. All other specifications are palindromes, so reversing the order gives the same thing. Knowing this redundancy, there are six different specifications.  Specifying triangles up to congruence  The following data each specify a triangle up to congruence. SSS  SAS  SAA  ASA The following data do not specify a triangle up to congruence. AAA  ASS   Most of these can be explained by drawing pictures. I will give you two positive cases and the negative cases, with the remanining two positive cases left as homework.  Let's start with the easiest. AAA doesn't specify a triangle up to congruence because you can scale a triangle to be larger or smaller and not change the angles.  Now let's do a positive instance, namely SAS. The data that SAS gives is two fixed lengths of line with a fixed angle between them. If you draw this, it is immediate that there's only one possible triangle they could form, namely the one you get by connecting the opposite ends of the line segments.   SAS data specifying a triangle up to congruence. An explained in the preceeding paragraph, two fixed lines with a fixed angle are drawn. There's only one possible third side, which is represented as a dashed line between the opposite endpoints of the two fixed lines.    Next let's do SSS. You can think of what this tells you this way. You know the length of one side, which you may as well fix as the reference point for the other two sides. You don't know the angles for the other two sides, but you know their lengths. So you can draw circles at the vertices of your fixed side representing where those other sides can point. It's a standard fact about plane geometry that two circles intersect in at most two points. Those two points are the possible third vertex for the triangle. That may look like there's two possible triangles. But whichever you pick, they are reflections of each other. So they are the same (meaning congruent).   SSS data specifying a triangle up to congruence. One side is fixed in space. The possible endpoints for the other two are represented by circles centered at each endpoint of the fixed side. Radii are drawn to meet at one of the two points the circle intersect, above the fixed line. The second point of intersection is the mirror of this one below the circle, so if we had instead connected to there we'd get a congruent triangle.    The remaining two positive cases—ASA and AAS—are left as homework for you. They can be handled by similar geometric reasoning. Think about what the data tells you and draw a corresponding picture.  To close this out, let's do the negative case of ASS. I saved it for last because it's the trickiest. We know an angle and in succession two side lengths coming out from it. But we are missing one side length attached to that angle. Fix the angle as our reference point for everything else. We can represent the possible missing side lengths as a ray coming out from the angle. The side we know adjacent to the angle has no choice on where to go; it's a known angle from our reference point and a known distance. The second side, however, we don't know where to place. We know its length but not which direction it's going. It must, however, connect to the ray representing the possible lengths for the third side. But we run into a problem here, as there can be more than one place it hits that ray.   ASS data that admits two possible triangles. As described in the preceeding paragraph, the direction of the unknown side is shown as a dashed ray going out from the fixed angle. The side adjacent to the fixed angle has its location entirely fixed. The next side is swinging from it, as represented by a circle showing its possbile locations. Two of those locations intersect the dashed ray, with the corresponding possible sides shown in red and blue.    The two possible triangles are clearly not congruent; the angles are different. As such, this data did not uniquely determine a triangle.  Except, sometimes it does. If the known angle is right or obtuse, then there is only one possible place to attach to the third side. So sometimes ASS does uniquely specify a triangle.   ASS data for a right triangle. Very similar to the previous picture. But unlike it there's only one place the circle for possible second side locations intersects the ray for possible third side locations. The corresponding location of the second side is drawn there in red.    Note that the special case in this picture is what you are facing if you know one leg and the hypotenuse of a right triangle. In this case you can use the Pythagorean theorem to find the length of the remaining leg, and this picture confirms that there is a unique thing you are solving for.    That one of the negative cases is ASS lends itself to mnemonics. This is especially when teaching children, who almost always will giggle at their teaching saying that word. Here's one of many possible mnemonics to remember which cases are negative: AAA video games are ASS.   It should be noted that in the SSS case, some triples of side lengths don't specify any triangle. Namely, the side lengths of a triangle must obey what's known as the triangle inequality : any side length must be less than the sum of the other two. (Think of it this way. You can take a direct route—one side of the triangle—or a detour—go along the other two lines. The triangle inequality says you can't get a shorter route by taking a detour.) So if one side is too much larger than the other two then you aren't specifying any triangle at all. For example, the side lengths don't specify a triangle at all, because is too large to fit the other two sides on.  Unlike the ASS case, however, the SSS case will never admit more than one possible triangle. It's either a unique triangle, or else it doesn't specify any triangle at all.   A failure of an SSS triple of data to specify a triangle. The long horizontal side labeled with a length of is simply too big for the arms of length and to touch. You can see by the dashed circles representing their possible endpoints that no angle will do to get them close enough. They are doomed to be forever apart, like star-crossed lovers.    You should be familiar with using partial information about a triangle to know you can get the rest of the data from the Pythagorean theorem. If you know you're dealing with a right triangle—that is, you know one angle—and you know two sides, you can calculate the remaining side. Indeed, using the law of sines and law of cosines from trigonemetry, you can do a similar process with non-right triangles. This process requires, of course, that you know trigonometry, which is a more difficult area of mathematics than what we are looking at. So we won't talk about how you actually calculate the missing info. Suffice it to say, the four triples of data SSS, SAS, ASA, and SAA are enough to both uniquely specify a triangle and allow you to calculate the missing information. It's not just a theoretical fact, it's also a practical one.  In general in mathematics, the questions of does an answer exist? and if so, can you calculate it? are not the same. Often answering the second question is much harder than answering the first and requires more advanced techniques. This is one reason mathematics can be frustrating; it is easy to run into questions without having the tools to answer them.   "
+},
+{
+  "id": "sec10-congruent-5",
+  "level": "2",
+  "url": "sec10-congruent.html#sec10-congruent-5",
+  "type": "Definition",
+  "number": "10.1.1",
+  "title": "Congruency.",
+  "body": "Congruency  Two triangles are congruent if one shape can be sent to the other by a Euclidean transformation. That is, two triangles are congruent if doing some series of translations, reflections, and rotations makes the two shapes exactly overlap.  "
+},
+{
+  "id": "sec10-congruent-7",
+  "level": "2",
+  "url": "sec10-congruent.html#sec10-congruent-7",
+  "type": "Theorem",
+  "number": "10.1.2",
+  "title": "",
+  "body": " If two shapes have different area then they are non-congruent.  "
+},
+{
+  "id": "sec10-congruent-9",
+  "level": "2",
+  "url": "sec10-congruent.html#sec10-congruent-9",
+  "type": "Checkpoint",
+  "number": "10.1.3",
+  "title": "",
+  "body": " Come up with two non-congruent triangles which both have an area of .  If you're not sure how to tell that two triangles are congruent, peak ahead to the next theorem.  "
+},
+{
+  "id": "sec10-congruent-11",
+  "level": "2",
+  "url": "sec10-congruent.html#sec10-congruent-11",
+  "type": "Theorem",
+  "number": "10.1.4",
+  "title": "",
+  "body": " Suppose two triangles are congruent. Then they have the same angles and side lengths. That is, there is a way to label their angles A,B,C and and opposite sides and so that: The corresponding angles are the same: , , and .  The corresponding sides have the same length: , , and .  The converse is also true. If two triangles have the same angles and sides then the two triangles are congruent.   Two congruent isosceles right triangles. The three corresponding sides are labeled and . Note that in this case there is more than one way the label could be done; these are isoceles triangles, so we could swap labels on two equal sides and still have everything line up between the two triangles.     For the first statement, translations, rotations, and reflections don't change angles nor distances. For the converse, if two triangles have the same angles and sides then you can make them exactly overlap. Namely, translate, reflect, and\/or rotate as necessary to make the angles and exactly overlap, with and both on, say, the left side of the angle. Because the side lengths are the same the angles and and and will exactly overlap. So the three vertices are in the locations, so the triangles exactly overlap.  "
+},
+{
+  "id": "sec10-congruent-17",
+  "level": "2",
+  "url": "sec10-congruent.html#sec10-congruent-17",
+  "type": "Definition",
+  "number": "10.1.5",
+  "title": "",
+  "body": " We can specify a triangle by (most) three letter sequences of A s and S s. A stands for angle and S stands for side. This specification starts at an angle or a side, depending on the first letter, and proceeds either counterclockwise or clockwise. As you go around the second then the third letter specify either the next angle or side length.  For example, AAS specifies that you know an angle, then the next angle, then side, all going in the same direction from the start. Or SSS specifies that you know one side, then the next, then the next (that is, you know all three sides).   "
+},
+{
+  "id": "sec10-congruent-19",
+  "level": "2",
+  "url": "sec10-congruent.html#sec10-congruent-19",
+  "type": "Theorem",
+  "number": "10.1.6",
+  "title": "Specifying triangles up to congruence.",
+  "body": "Specifying triangles up to congruence  The following data each specify a triangle up to congruence. SSS  SAS  SAA  ASA The following data do not specify a triangle up to congruence. AAA  ASS   Most of these can be explained by drawing pictures. I will give you two positive cases and the negative cases, with the remanining two positive cases left as homework.  Let's start with the easiest. AAA doesn't specify a triangle up to congruence because you can scale a triangle to be larger or smaller and not change the angles.  Now let's do a positive instance, namely SAS. The data that SAS gives is two fixed lengths of line with a fixed angle between them. If you draw this, it is immediate that there's only one possible triangle they could form, namely the one you get by connecting the opposite ends of the line segments.   SAS data specifying a triangle up to congruence. An explained in the preceeding paragraph, two fixed lines with a fixed angle are drawn. There's only one possible third side, which is represented as a dashed line between the opposite endpoints of the two fixed lines.    Next let's do SSS. You can think of what this tells you this way. You know the length of one side, which you may as well fix as the reference point for the other two sides. You don't know the angles for the other two sides, but you know their lengths. So you can draw circles at the vertices of your fixed side representing where those other sides can point. It's a standard fact about plane geometry that two circles intersect in at most two points. Those two points are the possible third vertex for the triangle. That may look like there's two possible triangles. But whichever you pick, they are reflections of each other. So they are the same (meaning congruent).   SSS data specifying a triangle up to congruence. One side is fixed in space. The possible endpoints for the other two are represented by circles centered at each endpoint of the fixed side. Radii are drawn to meet at one of the two points the circle intersect, above the fixed line. The second point of intersection is the mirror of this one below the circle, so if we had instead connected to there we'd get a congruent triangle.    The remaining two positive cases—ASA and AAS—are left as homework for you. They can be handled by similar geometric reasoning. Think about what the data tells you and draw a corresponding picture.  To close this out, let's do the negative case of ASS. I saved it for last because it's the trickiest. We know an angle and in succession two side lengths coming out from it. But we are missing one side length attached to that angle. Fix the angle as our reference point for everything else. We can represent the possible missing side lengths as a ray coming out from the angle. The side we know adjacent to the angle has no choice on where to go; it's a known angle from our reference point and a known distance. The second side, however, we don't know where to place. We know its length but not which direction it's going. It must, however, connect to the ray representing the possible lengths for the third side. But we run into a problem here, as there can be more than one place it hits that ray.   ASS data that admits two possible triangles. As described in the preceeding paragraph, the direction of the unknown side is shown as a dashed ray going out from the fixed angle. The side adjacent to the fixed angle has its location entirely fixed. The next side is swinging from it, as represented by a circle showing its possbile locations. Two of those locations intersect the dashed ray, with the corresponding possible sides shown in red and blue.    The two possible triangles are clearly not congruent; the angles are different. As such, this data did not uniquely determine a triangle.  Except, sometimes it does. If the known angle is right or obtuse, then there is only one possible place to attach to the third side. So sometimes ASS does uniquely specify a triangle.   ASS data for a right triangle. Very similar to the previous picture. But unlike it there's only one place the circle for possible second side locations intersects the ray for possible third side locations. The corresponding location of the second side is drawn there in red.    Note that the special case in this picture is what you are facing if you know one leg and the hypotenuse of a right triangle. In this case you can use the Pythagorean theorem to find the length of the remaining leg, and this picture confirms that there is a unique thing you are solving for.   "
+},
+{
+  "id": "sec10-congruent-21",
+  "level": "2",
+  "url": "sec10-congruent.html#sec10-congruent-21",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "triangle inequality "
+},
+{
+  "id": "sec10-congruent-24",
+  "level": "2",
+  "url": "sec10-congruent.html#sec10-congruent-24",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "law of sines law of cosines "
+},
+{
+  "id": "sec10-similar",
+  "level": "1",
+  "url": "sec10-similar.html",
+  "type": "Section",
+  "number": "10.2",
+  "title": "Similar triangles",
+  "body": " Similar triangles  At the beginning of the previous section I promised you we would look at two different notions of when triangles are the same. Last section we looked at one notion, congruence. In this section we look at the second, called similarity.  Remember that congruence captured the idea of a shape being the same even if you move it around. If you take a triangle and translate it, rotate it, or reflect it then it's still the same triangle. Same lengths, same angles, same everything, just in a different place. Similarity takes that idea and says, what if you could also zoom in or out.  Scalings  A uniform scaling is a transformation of a shape that enlarges or shrinks it the same amount in all directions. This is as opposed to a (non-uniform) scaling , which only scales in one direction. The scale factor is the amount by which all distances are scaled. For example, a uniform scaling with a scale factor of would triple the size of the shape in all directions. while a non-uniform scaling in a horizontal direction would scale the shape by only in the left-right direction.  You also see the word dilation used for a scaling with a scale factor and the word contraction used for a scaling with scale factor . We allow scaling by a factor of —that is, the do nothing scaling that doesn't change sizes.   A cloud shape being scaled both uniformly and non-uniformly. The uniform scaling, by a factor of , is shown to the right. This amounts to blowing up it to be twice as big in every direction. There are two non-unform scaling, both by a factor of . One, a vertical scaling, is shown above right. The original cloud was a little wider than it was tall, and this scaling reverses that comparison. The other, a horizontal scaling, is below right. It stretches out the cloud to be even more wider than it is tall. You can think of the uniform scaling, appropriately seen in between the horizontal and vertical scalings, as the combination of the two.      One way to think about a uniform scaling is that it is a combination of two non-uniform scalings by the same scaling factor. If you scale horizontally by, say, a factor of and then scale vertically by that same factor, it is equivalent to a uniform scaling by a factor of . The reason you need to combine two (non-uniform) scalings in two perpendicular directions is that these shapes live in two dimensional space: one scaling for each dimension. If you wanted to talk about scalings in three dimensional space you'd need three non-uniform scalings together to make up a uniform scaling. And similarly for more dimensions, though this gets difficult to visualize.  Scaling can also be understood by thinking about its affect on area. A non-uniform scaling by a factor of will scale area by . Thus, a uniform scaling by a factor of will scale area by , because it amounts to scaling by twice in two different directions.  Similar triangles  A similarity is a transformation that consists of a sequence of uniform scalings, translations, rotations, or reflections. Two triangles are similar if you can transform one into the other by means of a similarity. That is, if you take a triangle and translate, rotate, reflection, and\/or uniformly scale it, the result is similar to the triangle you started with.   Three similar isosceles right triangles. One is larger than the other. The angles between the three triangles all match but the sides are different sizes. The angles are marked so you can see the right angle in each triangle as well as the angles.       This definition captures the idea that two triangles look the same, but maybe rotated, moved about, reflected, or zoomed in\/out.  Are congruent triangles similar? That is, if two triangles have the same size do we still count them as similar? Or do we only want to count them when they're different sizes?  The mathematician's answer is yes, triangles that are the same size are still counted as similar. In most cases, they won't be. But we want to include the edge case. In general, mathematicians like to include edge cases in definitions because it makes things easier to talk about. For example, it makes facts like the following nicer to state.   If two triangles are similar then they have the same angles. That is, there is a way to label their angles and so that , , and . Conversely, if two triangles have the same angles then they are similar.  For the first if-then : Because none of the transformations in a similarity—uniform scalings, translations, rotations, reflections—change angles. For the converse do like what we did with congruence. Use translations, reflections, and\/or rotations to make the angles and exactly line up with the other two angles each on the same side. Then rescale so the side lengths are the same to make the triangles overlap exactly.   Compare to the result about congruence, namely that two triangles are congruent if and only if their angles and sides are the same. Similarity is a less stringent notion of sameness, where only the angles have to be the same.  It might seem that this notion of sameness isn't restrictive enough to be helpful—what good is it to know that two triangles have the same angles? But in fact we get some good information out of triangles being similar.   If two triangles are similar then the ratios of side lengths are the same. That is, if the sides correspond, respectively, to the sides on the other triangle, then any ratio of sides on the left is the same as the corresponding ratio of sides on the right. For example,   Let be the scaling factor of the uniform scaling to transform the first triangle to the other. Then, for example, and . Thus,    Indeed, this ratio facts holds not just for side lengths but any pair of measurements you can make of the triangles. For example, if is the scaling factor and is the height of one triangle then the height of the other triangle will be .   Shadows are cast at the same angle, so that triangles made from a vertical object and its shadow on horizontal ground are all similar. You know that you are exactly feet tall and your friend measures that your shadow is feet long. A flagpole casts a shadow you measure to be feet long. How tall is the flagpole?   A human and a flagpole casting shadows on the ground. Imagining a line drawn from the top of the human (respectively flagpole) diagonally down to the edge of the shadow these form similar right triangles. Both the human and the flagpole are depicted as vertical lines. This is to emphasize that all that matters here is their height—geometrically, a simple vertical line segment—and not because a more accurate depiction would challenge the artistically disinclined mathematician writing this textbook. The shadows are grey ellipses. I nailed them.     Let denote the height of the flagpole. Using the fact that the triangles are similar you know that Solving this equation for you get feet for the height of the flagpole.   This fact about similar triangles is one of the key truths on which the mathematical field of trigonometry is built. This field is the study of circles, triangles, and their angles. If two right triangles have the same (non-right) angle , then they have the same ratios of side lengths. Thus we can think of ratios like as functions of the angle . (For this ratio, the function is the sine function.) We can then study these functions and use them to get information about triangles and circles.  One place similar triangle show up is when two triangles share an angle but one is a shrunken\/enlarged copy of the other.   A conical vat has a depth of meters and a radius at the top of meters. It is filled with water to a depth of meters. What is the volume of water?   An inverted cone. Dashed lines label the height— —and radius at the top— . Placed inside the inverted cone is a smaller blue cone with the same point, representing the water. Off to the side a ruler marks its height as .     If you draw the view of the vat and water from the side it looks like two similar triangles. Thus the ratio of the depth to the radius must be the same for both the vat and the water.   The cone from the previous image, but seen straight on so that it looks like an inverted triangle with a smaller similar blue triangle inside. The height of the big triangle is labeled , the height of the blue triangle is labeled . Half the length of the top of the big triangle, corresponding to the radius of the top of the cone, is labeled . Similarly, half the top of the blue triangle is labeled .     Let denote the radius of the cone of water. By similar triangles, we know Solving for we get meters. Now knowing the radius and height of the water cone we can apply the formula for the volume of a cone. Namely, the volume is cubic meters.    An hourglass takes the shape of two pyramids touching at their tips, each having a square base. At a moment in time, the sand in the top pyramid has a depth of inches. If the glass pyramid has a depth of inches and a side length at the top of inches what is the volume of sand in the top of the hourglass?  Draw a picture! A two dimensional cross section will be more helpful than just a three dimensional sketch.   To pick things apart, there's two ideas we're using here. One is that if a shape A is a uniform scaling of another shape B by a factor of then all measurements of A are times the corresponding measurement of B. In particular, this means that ratios between two measurements are the same across shapes.  The second idea is that for triangles, having the same angles is a sufficient condition to guarantee similarity. In general, it might not be obvious that two shapes are similar. But with triangles there's an easy way to check, and it shows up often. A case that shows up a lot is when one triangle is an initial piece of a larger triangle, sharing a common vertex. A bit more formally, consider two triangles sharing a vertex with the same angle and their respective sides opposite the angle are parallel. Then elementary plane geometry says all three angles are the same between the triangles, so they are similar.   Two rays coming out diagonally down from a point. This point forms one vertex of two similar triangles, each of which is formed by drawing a horizontal line between the two rays. The two triangles have the same angles, so they are similar.    On the other hand, this phenomenon doesn't happen with, for instance, rectangles. If one rectangle is an initial segment of another then they won't be similar.   Two rectangles. The smaller, actually a square, is an initial left segment of the other. The two rectangles share their left side and their tops and bottoms are parts of the same ray. The rectangles are not similar. You can tell because one is a square but the other is not.    That being said, similarity is still a powerful concept in general. It just doesn't happen to be so easy to notice.  "
+},
+{
+  "id": "sec10-similar-4",
+  "level": "2",
+  "url": "sec10-similar.html#sec10-similar-4",
+  "type": "Definition",
+  "number": "10.2.1",
+  "title": "Scalings.",
+  "body": "Scalings  A uniform scaling is a transformation of a shape that enlarges or shrinks it the same amount in all directions. This is as opposed to a (non-uniform) scaling , which only scales in one direction. The scale factor is the amount by which all distances are scaled. For example, a uniform scaling with a scale factor of would triple the size of the shape in all directions. while a non-uniform scaling in a horizontal direction would scale the shape by only in the left-right direction.  You also see the word dilation used for a scaling with a scale factor and the word contraction used for a scaling with scale factor . We allow scaling by a factor of —that is, the do nothing scaling that doesn't change sizes.   A cloud shape being scaled both uniformly and non-uniformly. The uniform scaling, by a factor of , is shown to the right. This amounts to blowing up it to be twice as big in every direction. There are two non-unform scaling, both by a factor of . One, a vertical scaling, is shown above right. The original cloud was a little wider than it was tall, and this scaling reverses that comparison. The other, a horizontal scaling, is below right. It stretches out the cloud to be even more wider than it is tall. You can think of the uniform scaling, appropriately seen in between the horizontal and vertical scalings, as the combination of the two.     "
+},
+{
+  "id": "sec10-similar-7",
+  "level": "2",
+  "url": "sec10-similar.html#sec10-similar-7",
+  "type": "Definition",
+  "number": "10.2.2",
+  "title": "Similar triangles.",
+  "body": "Similar triangles  A similarity is a transformation that consists of a sequence of uniform scalings, translations, rotations, or reflections. Two triangles are similar if you can transform one into the other by means of a similarity. That is, if you take a triangle and translate, rotate, reflection, and\/or uniformly scale it, the result is similar to the triangle you started with.   Three similar isosceles right triangles. One is larger than the other. The angles between the three triangles all match but the sides are different sizes. The angles are marked so you can see the right angle in each triangle as well as the angles.      "
+},
+{
+  "id": "sec10-similar-11",
+  "level": "2",
+  "url": "sec10-similar.html#sec10-similar-11",
+  "type": "Theorem",
+  "number": "10.2.3",
+  "title": "",
+  "body": " If two triangles are similar then they have the same angles. That is, there is a way to label their angles and so that , , and . Conversely, if two triangles have the same angles then they are similar.  For the first if-then : Because none of the transformations in a similarity—uniform scalings, translations, rotations, reflections—change angles. For the converse do like what we did with congruence. Use translations, reflections, and\/or rotations to make the angles and exactly line up with the other two angles each on the same side. Then rescale so the side lengths are the same to make the triangles overlap exactly.  "
+},
+{
+  "id": "sec10-similar-14",
+  "level": "2",
+  "url": "sec10-similar.html#sec10-similar-14",
+  "type": "Theorem",
+  "number": "10.2.4",
+  "title": "",
+  "body": " If two triangles are similar then the ratios of side lengths are the same. That is, if the sides correspond, respectively, to the sides on the other triangle, then any ratio of sides on the left is the same as the corresponding ratio of sides on the right. For example,   Let be the scaling factor of the uniform scaling to transform the first triangle to the other. Then, for example, and . Thus,   "
+},
+{
+  "id": "sec10-similar-16",
+  "level": "2",
+  "url": "sec10-similar.html#sec10-similar-16",
+  "type": "Checkpoint",
+  "number": "10.2.5",
+  "title": "",
+  "body": " Shadows are cast at the same angle, so that triangles made from a vertical object and its shadow on horizontal ground are all similar. You know that you are exactly feet tall and your friend measures that your shadow is feet long. A flagpole casts a shadow you measure to be feet long. How tall is the flagpole?   A human and a flagpole casting shadows on the ground. Imagining a line drawn from the top of the human (respectively flagpole) diagonally down to the edge of the shadow these form similar right triangles. Both the human and the flagpole are depicted as vertical lines. This is to emphasize that all that matters here is their height—geometrically, a simple vertical line segment—and not because a more accurate depiction would challenge the artistically disinclined mathematician writing this textbook. The shadows are grey ellipses. I nailed them.     Let denote the height of the flagpole. Using the fact that the triangles are similar you know that Solving this equation for you get feet for the height of the flagpole.  "
+},
+{
+  "id": "sec10-similar-17",
+  "level": "2",
+  "url": "sec10-similar.html#sec10-similar-17",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "trigonometry sine "
+},
+{
+  "id": "sec10-similar-19",
+  "level": "2",
+  "url": "sec10-similar.html#sec10-similar-19",
+  "type": "Checkpoint",
+  "number": "10.2.6",
+  "title": "",
+  "body": " A conical vat has a depth of meters and a radius at the top of meters. It is filled with water to a depth of meters. What is the volume of water?   An inverted cone. Dashed lines label the height— —and radius at the top— . Placed inside the inverted cone is a smaller blue cone with the same point, representing the water. Off to the side a ruler marks its height as .     If you draw the view of the vat and water from the side it looks like two similar triangles. Thus the ratio of the depth to the radius must be the same for both the vat and the water.   The cone from the previous image, but seen straight on so that it looks like an inverted triangle with a smaller similar blue triangle inside. The height of the big triangle is labeled , the height of the blue triangle is labeled . Half the length of the top of the big triangle, corresponding to the radius of the top of the cone, is labeled . Similarly, half the top of the blue triangle is labeled .     Let denote the radius of the cone of water. By similar triangles, we know Solving for we get meters. Now knowing the radius and height of the water cone we can apply the formula for the volume of a cone. Namely, the volume is cubic meters.  "
+},
+{
+  "id": "sec10-similar-20",
+  "level": "2",
+  "url": "sec10-similar.html#sec10-similar-20",
+  "type": "Checkpoint",
+  "number": "10.2.7",
+  "title": "",
+  "body": " An hourglass takes the shape of two pyramids touching at their tips, each having a square base. At a moment in time, the sand in the top pyramid has a depth of inches. If the glass pyramid has a depth of inches and a side length at the top of inches what is the volume of sand in the top of the hourglass?  Draw a picture! A two dimensional cross section will be more helpful than just a three dimensional sketch.  "
+},
+{
+  "id": "sec10-shapes",
+  "level": "1",
+  "url": "sec10-shapes.html",
+  "type": "Section",
+  "number": "10.3",
+  "title": "Other shapes",
+  "body": " Other shapes  The previous two sections focused on triangles. The concepts of congruence and similarity make sense for other shapes. Let's start by reiterating the two definitions but not restricting them to triangles.  Congruence and similarity  Two shapes are congruent if one can be transformed into the other by a Euclidean transformation—a sequence of translations, rotations, and\/or reflections. Two shapes are similar if one can be transformed into the other by a similarity—a sequence of uniform scalings, translations, rotations, and\/or reflections.   For some shapes, such as circles, these are trivial concepts because there's not enough diversity for how the shapes can look.   Any two circles are similar. Two circles are congruent if and only if they have the same radius.  If you have two circles, a translation moves one so that their centers are the same point. If they have the same radius, they exactly overlap. If not, a uniform rescaling makes them exactly overlap.   You can think of this fact like this. If you are okay with zooming in or out, then any two circles look the same. If you don't want to allow zooming, then two circles look the same only when they have the same radius. That is, the radius of a circle determines everything about a circle and there is no information beyond the radius. Contrast to triangles, which require multiple data to specify.   Explain why any two squares are similar. When are two squares congruent?  This is very similar to circles.   The same is true for regular polygons of any number of sides, as you will explain for homework.  For other shapes, these aren't useful concepts because there's too many possibilities for how the shapes can look. Nonetheless we will say what we can.  Let's start with an observation. If two shapes are similar, then they have the same number of sides. Moreover, they have the same number of curved sides and same number of straight sides. This is because none of the transformations which compose a similarity—namely uniform scalings, translations, rotations, and reflections—can create a bend or corner. The converse is badly false. If you draw two random shapes with the same number of sides they almost certainly will not be similar.   Draw two random pentagons. Explain why they aren't similar.   Another observation: If two shapes are similar then they have the same angles. That is, there is a way to label the angles and in order either clockwise or counterclockwise so that , , and so on. This is because the transformations which comprise a similarity cannot change angles.  With triangles, the converse was true. Triangles with the same angles are similar. This isn't the case in general. For example, a square and a (non-square) rectangle have the same angles but aren't similar.  Similarly, if two shapes are congruent then they have the same angles and the same sides. This is because Euclidean transformations cannot change angles nor distances. That is, there is a way to label the angles and and sides and in order either clockwise or counterclockwise so that , , , , and so on.  Similarity is a useful concept because knowing one shape is an enlarged version of another gives you information about its measurements.   Suppose a shape A is a uniform scaling of shape B by a factor of . Then any one dimensional measurement of A, for example height or perimeter, is times the corresponding measurement of B. And any two dimensional measurement of A, for example area, is times the corresponding measurement of .    A genie tells you that the area of a regular pentagon with side length is Without knowing how the genie came up with that complicated formula, figure out the area of a regular pentagon with side length .  Regular pentagons are all similar, so the one with side length is a uniform scaling of the one with side length by a factor of . Thus we simply need to multiply the area by :    On this topic it's also worth noting the affect of non-uniform scalings. Suppose you non-uniformly scale a shape by a factor of . If a one dimensional measurement is entirely in the direction of the scaling then it is multiplied by . If the measurement is entirely perpendicular to the direction of the scaling then it doesn't change. If it's in between, then it's changed by an amount between and , but it's not simple to determine the exact value. On the other hand, the area of the shape is scaled by .   You can think of any rectangle as coming from two non-uniform scalings of the unit square with side lengths . Namely, a rectangle with width and height came from the unit square by doing a horizontal scaling by a factor of and a vertical scaling by a factor of . Note that the horizontal scaling doesn't affect the length of the vertical side and the vertical scaling doesn't affect the length of the horizontal side.  Knowing that the area of the unit square is , you can get the formula for the area of this rectangle. Namely, the area is scaled by and by , for a total scaling of . Since the starting area was , the area of the rectangle is .   "
+},
+{
+  "id": "sec10-shapes-3",
+  "level": "2",
+  "url": "sec10-shapes.html#sec10-shapes-3",
+  "type": "Definition",
+  "number": "10.3.1",
+  "title": "Congruence and similarity.",
+  "body": "Congruence and similarity  Two shapes are congruent if one can be transformed into the other by a Euclidean transformation—a sequence of translations, rotations, and\/or reflections. Two shapes are similar if one can be transformed into the other by a similarity—a sequence of uniform scalings, translations, rotations, and\/or reflections.  "
+},
+{
+  "id": "sec10-shapes-5",
+  "level": "2",
+  "url": "sec10-shapes.html#sec10-shapes-5",
+  "type": "Theorem",
+  "number": "10.3.2",
+  "title": "",
+  "body": " Any two circles are similar. Two circles are congruent if and only if they have the same radius.  If you have two circles, a translation moves one so that their centers are the same point. If they have the same radius, they exactly overlap. If not, a uniform rescaling makes them exactly overlap.  "
+},
+{
+  "id": "sec10-shapes-7",
+  "level": "2",
+  "url": "sec10-shapes.html#sec10-shapes-7",
+  "type": "Checkpoint",
+  "number": "10.3.3",
+  "title": "",
+  "body": " Explain why any two squares are similar. When are two squares congruent?  This is very similar to circles.  "
+},
+{
+  "id": "sec10-shapes-11",
+  "level": "2",
+  "url": "sec10-shapes.html#sec10-shapes-11",
+  "type": "Checkpoint",
+  "number": "10.3.4",
+  "title": "",
+  "body": " Draw two random pentagons. Explain why they aren't similar.  "
+},
+{
+  "id": "sec10-shapes-16",
+  "level": "2",
+  "url": "sec10-shapes.html#sec10-shapes-16",
+  "type": "Theorem",
+  "number": "10.3.5",
+  "title": "",
+  "body": " Suppose a shape A is a uniform scaling of shape B by a factor of . Then any one dimensional measurement of A, for example height or perimeter, is times the corresponding measurement of B. And any two dimensional measurement of A, for example area, is times the corresponding measurement of .  "
+},
+{
+  "id": "sec10-shapes-17",
+  "level": "2",
+  "url": "sec10-shapes.html#sec10-shapes-17",
+  "type": "Checkpoint",
+  "number": "10.3.6",
+  "title": "",
+  "body": " A genie tells you that the area of a regular pentagon with side length is Without knowing how the genie came up with that complicated formula, figure out the area of a regular pentagon with side length .  Regular pentagons are all similar, so the one with side length is a uniform scaling of the one with side length by a factor of . Thus we simply need to multiply the area by :   "
+},
+{
+  "id": "sec10-shapes-19",
+  "level": "2",
+  "url": "sec10-shapes.html#sec10-shapes-19",
+  "type": "Example",
+  "number": "10.3.7",
+  "title": "",
+  "body": " You can think of any rectangle as coming from two non-uniform scalings of the unit square with side lengths . Namely, a rectangle with width and height came from the unit square by doing a horizontal scaling by a factor of and a vertical scaling by a factor of . Note that the horizontal scaling doesn't affect the length of the vertical side and the vertical scaling doesn't affect the length of the horizontal side.  Knowing that the area of the unit square is , you can get the formula for the area of this rectangle. Namely, the area is scaled by and by , for a total scaling of . Since the starting area was , the area of the rectangle is .  "
+},
+{
+  "id": "sec10-exercises",
+  "level": "1",
+  "url": "sec10-exercises.html",
+  "type": "Section",
+  "number": "10.4",
+  "title": "Exercises",
+  "body": " Exercises     Imagine you have a student who is struggling to understand what congruence means. Give an intuitive explanation. Demonstrate your explanation by drawing three shapes, two of which are congruent but the third is not. Follow your intuitive explanation to say why the (non)congruence happens for the three shapes.    Explain why knowing only two data about a triangle is never enough to uniquely specify it up to congruence.    Draw a picture and use it to explain why ASA uniquely specifies a triangle up to congruence.    Draw a picture and use it to explain why SAA uniquely specifies a triangle up to congruence.    Explain why any four data about a triangle—that is, knowing a total of four of the angles and\/or side lengths—is enough to specify the triangle up to congruence.  If you know four data you can forget one and get a triple of data. Can you show that you can always pick one to forget to get a triple which specifies the triangle?  If you know four data it's one of three cases: all angles and one side, all sides and one angle, two angles and two sides. Is it easier to tackle these three cases separately?     At a certain time of day, your shadow is exactly feet long. You are feet tall. Come up with a formula that tells you the height of an object based on the length of its shadow. Apply your formula to calculate the height of a building which casts a foot long shadow. Are there any practical obstacles to using your formula to calculate the height of an object? Explain.    Write a problem which requires the use of similar triangles to calculate an area or volume. Your problem should include a picture. Solve your own problem, showing all your work.    Place a right triangle so that its hypotenuse is horizontal and slice it in half along its height, as in the picture below. Explain why those two smaller triangles are each similar to the original right triangle. Use this fact to determine the height of a right triangle whose legs have length and .      Explain why any two regular pentagons are similar. For a fixed number , are any two regular -gons similar? Explain your answer. When are regular pentagons congruent? When are regular -gons congruent? Explain.    Similar to how a circle can be specified by a single measurement, namely its radius, an ellipse can be specified by a pair of measurements. Namely, the major axis of an ellipse is the longest distance from one point on the edge to another. It's the length of the line which goes through the two focus points. The minor axis is the shortest distance from one point on the edge to another. It's the length of the line through the center perpendicular to the major axis. The semi-major axis and semi-minor axis are half of the major axis and minor axis.   An ellipse. The major axis, in the horizontal direction, is labeled. So is the minor axis, in the vertical direction. One could have a different orientation, such as the major axis being vertical or diagonal, but a choice must be made to draw an example.    Use what you know about scalings to give a formula for the area of an ellipse with semi-major axis and semi-minor axis . Explain why your formula works and demonstrate it by calculating the area of an ellipse with semi-major axis and semi-minor axis . Discuss the edge case where the semi-major axis and semi-minor axis are the same.   Think of an ellipse as coming from a circle by doing two non-uniform scalings.    "
+},
+{
+  "id": "sec10-exercises-2-1",
+  "level": "2",
+  "url": "sec10-exercises.html#sec10-exercises-2-1",
+  "type": "Exercise",
+  "number": "10.4.1",
+  "title": "",
+  "body": " Imagine you have a student who is struggling to understand what congruence means. Give an intuitive explanation. Demonstrate your explanation by drawing three shapes, two of which are congruent but the third is not. Follow your intuitive explanation to say why the (non)congruence happens for the three shapes.  "
+},
+{
+  "id": "sec10-exercises-2-2",
+  "level": "2",
+  "url": "sec10-exercises.html#sec10-exercises-2-2",
+  "type": "Exercise",
+  "number": "10.4.2",
+  "title": "",
+  "body": " Explain why knowing only two data about a triangle is never enough to uniquely specify it up to congruence.  "
+},
+{
+  "id": "sec10-exercises-2-3",
+  "level": "2",
+  "url": "sec10-exercises.html#sec10-exercises-2-3",
+  "type": "Exercise",
+  "number": "10.4.3",
+  "title": "",
+  "body": " Draw a picture and use it to explain why ASA uniquely specifies a triangle up to congruence.  "
+},
+{
+  "id": "sec10-exercises-2-4",
+  "level": "2",
+  "url": "sec10-exercises.html#sec10-exercises-2-4",
+  "type": "Exercise",
+  "number": "10.4.4",
+  "title": "",
+  "body": " Draw a picture and use it to explain why SAA uniquely specifies a triangle up to congruence.  "
+},
+{
+  "id": "sec10-exercises-2-5",
+  "level": "2",
+  "url": "sec10-exercises.html#sec10-exercises-2-5",
+  "type": "Exercise",
+  "number": "10.4.5",
+  "title": "",
+  "body": " Explain why any four data about a triangle—that is, knowing a total of four of the angles and\/or side lengths—is enough to specify the triangle up to congruence.  If you know four data you can forget one and get a triple of data. Can you show that you can always pick one to forget to get a triple which specifies the triangle?  If you know four data it's one of three cases: all angles and one side, all sides and one angle, two angles and two sides. Is it easier to tackle these three cases separately?  "
+},
+{
+  "id": "sec10-exercises-2-6",
+  "level": "2",
+  "url": "sec10-exercises.html#sec10-exercises-2-6",
+  "type": "Exercise",
+  "number": "10.4.6",
+  "title": "",
+  "body": " At a certain time of day, your shadow is exactly feet long. You are feet tall. Come up with a formula that tells you the height of an object based on the length of its shadow. Apply your formula to calculate the height of a building which casts a foot long shadow. Are there any practical obstacles to using your formula to calculate the height of an object? Explain.  "
+},
+{
+  "id": "sec10-exercises-2-7",
+  "level": "2",
+  "url": "sec10-exercises.html#sec10-exercises-2-7",
+  "type": "Exercise",
+  "number": "10.4.7",
+  "title": "",
+  "body": " Write a problem which requires the use of similar triangles to calculate an area or volume. Your problem should include a picture. Solve your own problem, showing all your work.  "
+},
+{
+  "id": "sec10-exercises-2-8",
+  "level": "2",
+  "url": "sec10-exercises.html#sec10-exercises-2-8",
+  "type": "Exercise",
+  "number": "10.4.8",
+  "title": "",
+  "body": " Place a right triangle so that its hypotenuse is horizontal and slice it in half along its height, as in the picture below. Explain why those two smaller triangles are each similar to the original right triangle. Use this fact to determine the height of a right triangle whose legs have length and .    "
+},
+{
+  "id": "sec10-exercises-2-9",
+  "level": "2",
+  "url": "sec10-exercises.html#sec10-exercises-2-9",
+  "type": "Exercise",
+  "number": "10.4.9",
+  "title": "",
+  "body": " Explain why any two regular pentagons are similar. For a fixed number , are any two regular -gons similar? Explain your answer. When are regular pentagons congruent? When are regular -gons congruent? Explain.  "
+},
+{
+  "id": "sec10-exercises-2-10",
+  "level": "2",
+  "url": "sec10-exercises.html#sec10-exercises-2-10",
+  "type": "Exercise",
+  "number": "10.4.10",
+  "title": "",
+  "body": " Similar to how a circle can be specified by a single measurement, namely its radius, an ellipse can be specified by a pair of measurements. Namely, the major axis of an ellipse is the longest distance from one point on the edge to another. It's the length of the line which goes through the two focus points. The minor axis is the shortest distance from one point on the edge to another. It's the length of the line through the center perpendicular to the major axis. The semi-major axis and semi-minor axis are half of the major axis and minor axis.   An ellipse. The major axis, in the horizontal direction, is labeled. So is the minor axis, in the vertical direction. One could have a different orientation, such as the major axis being vertical or diagonal, but a choice must be made to draw an example.    Use what you know about scalings to give a formula for the area of an ellipse with semi-major axis and semi-minor axis . Explain why your formula works and demonstrate it by calculating the area of an ellipse with semi-major axis and semi-minor axis . Discuss the edge case where the semi-major axis and semi-minor axis are the same.   Think of an ellipse as coming from a circle by doing two non-uniform scalings.  "
+},
+{
+  "id": "sec11-data",
+  "level": "1",
+  "url": "sec11-data.html",
+  "type": "Section",
+  "number": "11.1",
+  "title": "Representing data",
+  "body": " Representing data  Many interesting data sets —qualitative and quantitative information about a group of people or things—are large. For example, maybe you are a sociologist who wants to understand how poverty impacts relationships. You are studying a population that consists of millions of people. Each of them has various relevant data attached—income, debt, marriage status, number of children, occupation, etc. If you had this entire data set arrayed in front of you it would be unsurveyable. What you want is some way to make what these data say understandable to humans.  This is a point only pedantic nerds care about, but data is a plural noun, with datum being the singular. Hence pedantic nerds write these data say instead of this data says .  There's many aspects of making data understandable to humans. Here are a few. You want ways to visualize the data or represent it graphically. Tables of numbers are great for calculations, but how do you get an overview? If you want your sociological research to move policymakers, you need to make it quick for them to understand what it shows.  You want ways to measure a typical member of your data set. There's variation, but can you locate where the data are centered? What does the average person in your data set look like?  You want ways to measure how much variation there is. Are different members close, or are they far apart? How spread out are the data?  You want ways to test hypotheses. Perhaps you expect that poverty will correlate with lower marriage rates. Does your data support that hypothesis?  In this chapter we will talk about all of these. We begin in this section by talking about how you can represent data.  A useful distinction to draw is between quantitative data, those which can be expressed numerically, versus qualitative data, those which merely categorize. For example, suppose your school district is looking at trends in student performance. This data set would consist of information about students. Each student would have various data associated with them. Quantitative data could include scores on standardized exams, number of absences, and grade level. Qualitative data could include gender, race, and whether their overall performace is satisfactory.  Note that quantitative data can be used to categorize; for instance, for this example it makes a lot of sense to categorize students by grade level. This is most useful, however, when there are relatively few values the data might have. If you were looking at exam scores, it would be more sensible to categorize by ranges of scores, rather than by individual scores.  On the other hand, qualitative data can't meaningfully be made quantitites. You might assign numbers to the various options for the race of a student, but those numbers don't have any meaning. It doesn't make sense to add them, compare them, multiply them. Good practice when you see data represented as numbers is to ask yourself, do these make sense as numbers? Does it make sense to say one is larger or smaller than another? Does it makes sense to add them? Does it make sense to multiply them?  An example where numbers can be misleading is with satisfaction surveys, like those rank the quality of on a to scale . You see this used in many places, from movie reviews to student evaluations of teaching. These are numbers, but are they truly quantitative data? Some properties of numbers make sense. It makes sense to say that a four star movie is better than a two star movie. But other properties of numbers don't make sense. It doesn't make sense to say that a four star movie is twice as good as a two star movie.  So these are in an in-between space. It makes sense to order them, but not add them nor measure distance between them. These kinds of in-between data show the limit of the quantitative versus qualitative categorization of data. For this reason, a more careful analysis would include more data types. In this case, these would be ordinal data—they have a meaningful order but not further numerical properties.  Here's an example of a different flavor. Consider temperature, as expressed in degrees centigrade or degrees Fahrenheit. These data are ordinal; it's sensible to talk about colder versus warmer temperatures. And it makes sense to talk about distances between temperatures, for instance if you say the temperature dropped C overnight. But it doesn't make sense to multiply. It doesn't have any physical meaning to say that F is twice as warm as F. (If you think this does make sense, consider that F is approximately C and F is the same as C but is not twice .)  (The problem here is that on these temperature scales doesn't refer to zero temperature. Instead, they're just positions to be the start of the scale. In contrast, there are temperature scale where represents absolute zero, the absence of temperature, such as Kelvin. For these scales, there is physical meaning to say that Kelvin is twice the temperature as Kelvin.)  As these examples show, one place it is useful to think critically about data is what the meaning of numbers are. Just because someone reports a number to you means that all the mathematics you can do with numbers makes sense to do with that datum.   You can visualize a data set as a big spread sheet. Each row corresponds to an individual in the data set with the columns representing the values of the various data associate to that individual. With our student example, each row would represent a student. Then there would be columns for grade level, exam performance, etc.  This representation of data is useful for doing calculations, especially with computers. But if you're communicating to a human, they probably want something easier to comprehend.  One option is to stick with tables, but have them be summaries. For example, if you are at a pre-semester all-staff meeting and your principal is presenting on student success rates, she's not going to show you a raw spreadsheet. Instead you'll get a summary table like the following.   Number of students passing standardized exams by teacher    Teacher  Number passing    Ms. Adams  21    Mr. Baker  24    Ms. Chan  26    Ms. Diaz  25    Mr. Edwards  19     This example—hopefully!—isn't realistic. If you ever have a boss who singles out specific teachers for critique in a meeting you should look for a new job elsewhere.  Tables can be useful, but they are often slow to read. You can take advantage of humans' evolved ability to quickly compare lengths by representing data visually. A table summarizing the number of instances of each category can be straightforwardly turned into a bar graph where the length of a bar gives the number for each category. A longer bar means more and a shorter bar means fewer. This enables a viewer to easily see the relative rates at which they occur. The downside is method of summarizing data doesn't give precise values. This downside can be mitigated by using both summarization methods.  You can present the bars either vertically or horizontally. For consistency I will orient everything vertically. That is, the horizontal axis will represent the different categories and the vertical axis will represent the quantities. For a horizontal orientation you merely swap the role of the two axes.   The same data as in the above table, but presented in a bar plot. The plot has five bars, for the five teachers Adams, Baker, Chan, Diaz, and Edwards. The heights of the bars correspond to the number of passing students for each teacher.  The visual pizazz is at a minimum. The bars alternate colors to ease readability, but otherwise things are basic.   The same summary can be visually presented in different ways. Some people like bars, but it's not the only way to do it. For example, you could instead use a dot graph . Rather than representing quantities by lengths of bars, you represent them by the height of a dot.   The same data as in the above table, but presented in a dot plot. Rather than five bars for the five teachers there are five dots.   In this case, there isn't a meaningful order for the data on the -axis. The names are ordered alphabetically, but that isn't relevant to the data being presented. In cases where there is a meaningful order, it makes sense to connect the dots with lines to make a line graph . A common example is when the categories are dates. If the categories aren't ordered then the lines between dots can wrongly suggest trends, and it's better to simply graph disconnected points.  Regardless, here's the same data as a line graph. You can tell the lines aren't providing meaningful info because they suggest a connection between adjacent names. But the meaning of the data would be the same if you shuffled the order of the names.   The same data as in the above dot plot, but now with lines connecting the dots. It's not a good graph, the lines aren't adding any useful visual information.   Another kind of chart you sometimes see is a circle chart , also called a pie chart . Rather than represent quantitis by distances or lengths, a circle represents the overall population and it is divided into wedges based on the proportions of the population. For example, if fall into category then the wedge for would claim just over half the pie.   The same data as in the above table, but presented in a circle chart. There are five wedges for the five teachers corresponding to their share of the passing students.  This is an awful visualization of this data. But that is typical of circle charts.   Presumably there is someone out there who likes circle charts. But they are morally and objectively wrong. Human vision is good at comparing distances; it is quick to see which of two bars are longer. But it's not so good at comparing angular measures. Converting a circle chart to an equivalent bar chart will make things easier for your audience. An exception is if there are only two categories. In that case, the circle is divided into two pieces so it's easy to compare them.  In this example, the circle chart is especially nonsense. Circle charts are at their best when you want to see what proportion of a total population fits into each category. That's not what these data are about. What's relevant, if anything, is how many passing students each teacher has from among those they teach, not from among the total population of passing students.  The theme of this chapter is thinking critically about data. With that in mind, a good rule of thumb is, when you see a circle chart ask yourself, what would this look like if presented as a bar or line graph?   Consider the summary given in the following table. Which type of chart do you think is the best way to visualize these data? Explain your choice. Sketch a version of your favored chart, as well as one other kind of chart for comparison.  Survey of people's favorite music genre    Genre  Number    Pop  2131    Rock  1940    Rap  2056    Country  1659    Jazz  1141    Dance  1457    Classical  319       Earlier data visualizations focused on a single type of quantity. Also important is how two different types of quantities are related. For example, maybe you want to analyze how student grades correspond to performance on standardized exams. You don't want to look at two different data sets of grades and and exam scores. Instead, you want to look at the correlation between students' numbers for the two kinds of quantities.  We can use a two dimensional coordinate grid for this. The horizontal axis, also called the -axis, is used to represent one of the kinds of qantities. The vertical axis, also called the -axis, represents the other. Often but not always we pick the -axis to represent the independent variable and the -axis to represent the dependent variable , meaning that that we think of the dependent variable as being a function of the independent variable.  We use cartesian coordinates , such as you may have seen in high school algebra. That is, each point in the two dimensional space represents a pair of numbers. We fix a starting point, which we usually draw as where the axes intersect. Here, is the left-right distance and represents the value on the -axis and is up-down distance and represents the value on the -axis.  One way to represent correspondence of data in cartesian coordinates is via a scatter plot . The data are pairs of numbers plotted as points. One type of quantity gets represented with -coordinates and the other with -coordinates, so that you can see relations between the two types of data.   Two scatter plots showing the same data. Both show class sizes of various classes versus the percentage of passing students from those classes. The difference between the two scatter plots is how the axes are drawn. The first plot has both axes start at . This creates a lot of empty space in the graph, since the data are not near . The second has the axes start at larger numbers so there's less empty space.  Whichever one you look at, it probably appears that there is a negative correlation between class size and pass rates. That is, smaller classes tend to have higher pass rates and larger classes tend to have lower pass rates.   In the above image the same scatter plot is shown twice to illustrate the effect choosing your axes has on the visualization. In the top plot, the axes both start at . This way, proportions on the graph are accurate; if a dot is twice as high as another it represents twice the value. In the bottom plot, the axes start at and . In this way we get a zoomed in view of the plot, and can more easily see distances between points. However, we lose the meaning of proportions. For instance, there is a dot near the bottom at . Above it are two more dots, about three or four times high on the graph. But they don't represent values three or four times higher.  The lesson is, the choice of where axes starts can affect the visualization. You should be careful to look at the axes to make sure you are correctly interpreting the graph. You can also think about this from a defensive posture. One way to present a misleading graph is to choose where the axes start. If you want to make differences look negligible, pick a far away starting point. If you want to magnify them, don't start the axis at . When reading and interpreting others' graphs you should critically engage with the presentation. Ask yourself: what purpose is there for the choice of presentation? Is it misleading? Or does it let me better understand the data?   Look again at the two graphs about class size and pass rate. Which one do you think gives you a better, more honest view into the data? Explain your answer.          "
+},
+{
+  "id": "sec11-data-2",
+  "level": "2",
+  "url": "sec11-data.html#sec11-data-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "data sets "
+},
+{
+  "id": "sec11-data-5",
+  "level": "2",
+  "url": "sec11-data.html#sec11-data-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "quantitative qualitative "
+},
+{
+  "id": "sec11-data-8",
+  "level": "2",
+  "url": "sec11-data.html#sec11-data-8",
+  "type": "Example",
+  "number": "11.1.1",
+  "title": "",
+  "body": "An example where numbers can be misleading is with satisfaction surveys, like those rank the quality of on a to scale . You see this used in many places, from movie reviews to student evaluations of teaching. These are numbers, but are they truly quantitative data? Some properties of numbers make sense. It makes sense to say that a four star movie is better than a two star movie. But other properties of numbers don't make sense. It doesn't make sense to say that a four star movie is twice as good as a two star movie.  So these are in an in-between space. It makes sense to order them, but not add them nor measure distance between them. These kinds of in-between data show the limit of the quantitative versus qualitative categorization of data. For this reason, a more careful analysis would include more data types. In this case, these would be ordinal data—they have a meaningful order but not further numerical properties.  Here's an example of a different flavor. Consider temperature, as expressed in degrees centigrade or degrees Fahrenheit. These data are ordinal; it's sensible to talk about colder versus warmer temperatures. And it makes sense to talk about distances between temperatures, for instance if you say the temperature dropped C overnight. But it doesn't make sense to multiply. It doesn't have any physical meaning to say that F is twice as warm as F. (If you think this does make sense, consider that F is approximately C and F is the same as C but is not twice .)  (The problem here is that on these temperature scales doesn't refer to zero temperature. Instead, they're just positions to be the start of the scale. In contrast, there are temperature scale where represents absolute zero, the absence of temperature, such as Kelvin. For these scales, there is physical meaning to say that Kelvin is twice the temperature as Kelvin.)  As these examples show, one place it is useful to think critically about data is what the meaning of numbers are. Just because someone reports a number to you means that all the mathematics you can do with numbers makes sense to do with that datum.  "
+},
+{
+  "id": "sec11-data-12",
+  "level": "2",
+  "url": "sec11-data.html#sec11-data-12",
+  "type": "Table",
+  "number": "11.1.2",
+  "title": "Number of students passing standardized exams by teacher",
+  "body": " Number of students passing standardized exams by teacher    Teacher  Number passing    Ms. Adams  21    Mr. Baker  24    Ms. Chan  26    Ms. Diaz  25    Mr. Edwards  19    "
+},
+{
+  "id": "sec11-data-14",
+  "level": "2",
+  "url": "sec11-data.html#sec11-data-14",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "bar graph "
+},
+{
+  "id": "sec11-data-17",
+  "level": "2",
+  "url": "sec11-data.html#sec11-data-17",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "dot graph "
+},
+{
+  "id": "sec11-data-19",
+  "level": "2",
+  "url": "sec11-data.html#sec11-data-19",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "line graph "
+},
+{
+  "id": "sec11-data-22",
+  "level": "2",
+  "url": "sec11-data.html#sec11-data-22",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "circle chart pie chart "
+},
+{
+  "id": "sec11-data-27",
+  "level": "2",
+  "url": "sec11-data.html#sec11-data-27",
+  "type": "Checkpoint",
+  "number": "11.1.3",
+  "title": "",
+  "body": " Consider the summary given in the following table. Which type of chart do you think is the best way to visualize these data? Explain your choice. Sketch a version of your favored chart, as well as one other kind of chart for comparison.  Survey of people's favorite music genre    Genre  Number    Pop  2131    Rock  1940    Rap  2056    Country  1659    Jazz  1141    Dance  1457    Classical  319      "
+},
+{
+  "id": "sec11-data-29",
+  "level": "2",
+  "url": "sec11-data.html#sec11-data-29",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "independent variable dependent variable "
+},
+{
+  "id": "sec11-data-30",
+  "level": "2",
+  "url": "sec11-data.html#sec11-data-30",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "cartesian coordinates "
+},
+{
+  "id": "sec11-data-31",
+  "level": "2",
+  "url": "sec11-data.html#sec11-data-31",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "scatter plot "
+},
+{
+  "id": "sec11-data-35",
+  "level": "2",
+  "url": "sec11-data.html#sec11-data-35",
+  "type": "Checkpoint",
+  "number": "11.1.5",
+  "title": "",
+  "body": " Look again at the two graphs about class size and pass rate. Which one do you think gives you a better, more honest view into the data? Explain your answer.  "
+},
+{
+  "id": "sec11-center",
+  "level": "1",
+  "url": "sec11-center.html",
+  "type": "Section",
+  "number": "11.2",
+  "title": "Measures of center",
+  "body": " Measures of center  Suppose you have a collection of numbers representing measurements. For example, perhaps you are a marine biologist tagging sharks that make it to Cape Cod. For each shark you measure its body length. After a summer of work your team has a few dozen measurements. You want to summarize these measurements. What is the length of a typical or average shark?  First let's fix some notation for talking about this. A data set in this context is just a collection of numbers. Think of it like a column in a spreadsheet. If we're talking abstractly where we don't necessarily know in advance the specific numbers, we can write this collection of numbers like That is, each entry in the data set gets an index (think its row number in a spreadsheet). The size of the data set is . The indices only make sense for .  With that in mind, let's talk about measures for the center of a data set. There are a few different notions of an average , with their own advantages and disadvantages. We will discuss them in turn. We start with the one with the most complicated definition.  Mean  Suppose you have a collection of numbers . Their mean , commonly denoted , measures their center of gravity. Imagine the number line as a balancing beam with a weight placed at each number in the data set. The mean is where you would place a fulcrum so that the two sides would be balanced. Mathematically, we can describe it with the following formula. That is, to calculate the mean you add up all the values in the data set and divide by the number of values.  The notation , called summation notation , means to sum up all the s. It is a shorthand for writing the longer . The symbol is the Greek letter Sigma ; think of Sigma as the Greek S, with S for sum .  Another way of thinking about the mean is, imagine the values plotted on a number line. If you want the location which miniminizes the total distance to the numbers, that location is the mean.   The mean is the most important notion of an average, to the point where often people will say average to mean the mean. The main reason for the mean's importance is it has nice mathematical properties that enable more complicated uses of statistics. Indeed, the central limit theorem , which we will touch on later, says that for many applications the mean is one of two pieces of information you need to describe a distribution.  Here is a joke. You see a mathematician scrambling around on the ground under a streetlamp late a night. You ask her what she's doing, and she replies that she's looking for her lost glasses. You are a kind person, so you offer to help. You ask where she dropped them. She gestures and replies that she lost them half a block down the street. You ask why she's searching under the streetlamp. She says that the street lamp has nice mathematical properties and so it's easier to prove theorems here than over in the dark.  Median  Suppose you have a collection of numbers . Their median is the value in the middle if you list them in order. Phrased differently, the median is the position where half the values are smaller and half the values are larger. To give a precise, we have to split into two cases. Assume for convenience the numbers are already listed in increasing order:  If is odd, then the median is the value exactly in the middle, namely, .  If is even, then the median will be the average of the two values closest to the middle. Namely, it will be      Mode  Suppose you have a collection of numbers . Their mode is the value that occurs the most often in the list. If there is a tie for the value that occurs the most, the data have multiple modes.   A way to understand the mode is, if you plotted a frequency chart then the mode would be the value with the longest bar.   Consider the collection of nine numbers We can calculate their mean, median, and mode. Note that the mean is greater than the median. This is because the data set is weighted toward larger numbers; there are a bunch of small numbers clustered close together and then it starts spacing out more and more. With the median you don't care about the distance between values, only their order. Whereas the mean is all about distances.    Come up with your own data set whose mean, median, and mode are all different. Come up with a data set where they are all the same. Come up with a data set where the median and the mode are the same but the mean is different.   You might ask, why have three different notions of the center of a data set? Why not just have one notion that's the best?  The trouble is, life isn't so neat as to have a single option that's always the best. We have to make do with different options for different circumstances.  A nice feature of the mode is that it makes sense for qualitative data. For example, suppose a survey asks respondants their religion. This isn't quantitative data; it doesn't make sense to say that someone's religion is . But you can still use mode to get an idea of what a typical response is. If of respondants answer Islam, that being the mode gives you an idea of the average. (Note, of course, you can get better info by reporting more detail, say by giving the percentages for the top answers.) You can't use median or mean in this context, because they rely on numerical properties. For median, there's no meaningful ordering of the answers, and for mean you need to be able to add and divide.  When dealing with quantitative data, mean and median are typically more useful measures than mode. One advantage of the mean is, as mentioned above, its nice properties. Let me mention a couple of them, to give you a taste.  Linearity of mean  The mean has the following two properties, collectively known as linearity . If you multiply all values in a data set by the same constant , then the mean of the new data set is times the mean of the original data set.  Suppose you mix two data sets and as follows. To make the new data set, you take every possible way to add values from the two data sets together, that is all possible . The mean of this new data set is then the sum of the means of the two data sets.    This property is helpful if you are combining data sets together to create more complicated data sets, because it lets you calculate the mean of the complicated data set by knowing what's going on with the simpler ones. This is valuable for theoretical work.  One case where median is a more useful measure of the center is when there are outliers. For example, maybe you are studying housing costs to get an idea of how (un)affordable greater Boston is as a place to live. Most people will have housing costs affordable on a normal salary. But there will be a few outliers—the ultrarich. Although small in number, their presence in the data set will skew the mean upward. However, due to their small number they will have minimal impact on the median. If you want an idea of the typical person's housing costs, median will give a better measure.  Because different measures have different advantages, it's helpful to have multiple tools at you disposal. And from the other direction, a consumer of others' statistical analysis, it's useful to know about these tools so you can critically assess what is said to you.  "
+},
+{
+  "id": "sec11-center-4",
+  "level": "2",
+  "url": "sec11-center.html#sec11-center-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "average "
+},
+{
+  "id": "sec11-center-5",
+  "level": "2",
+  "url": "sec11-center.html#sec11-center-5",
+  "type": "Definition",
+  "number": "11.2.1",
+  "title": "Mean.",
+  "body": "Mean  Suppose you have a collection of numbers . Their mean , commonly denoted , measures their center of gravity. Imagine the number line as a balancing beam with a weight placed at each number in the data set. The mean is where you would place a fulcrum so that the two sides would be balanced. Mathematically, we can describe it with the following formula. That is, to calculate the mean you add up all the values in the data set and divide by the number of values.  The notation , called summation notation , means to sum up all the s. It is a shorthand for writing the longer . The symbol is the Greek letter Sigma ; think of Sigma as the Greek S, with S for sum .  Another way of thinking about the mean is, imagine the values plotted on a number line. If you want the location which miniminizes the total distance to the numbers, that location is the mean.  "
+},
+{
+  "id": "sec11-center-6",
+  "level": "2",
+  "url": "sec11-center.html#sec11-center-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "central limit theorem "
+},
+{
+  "id": "sec11-center-8",
+  "level": "2",
+  "url": "sec11-center.html#sec11-center-8",
+  "type": "Definition",
+  "number": "11.2.2",
+  "title": "Median.",
+  "body": "Median  Suppose you have a collection of numbers . Their median is the value in the middle if you list them in order. Phrased differently, the median is the position where half the values are smaller and half the values are larger. To give a precise, we have to split into two cases. Assume for convenience the numbers are already listed in increasing order:  If is odd, then the median is the value exactly in the middle, namely, .  If is even, then the median will be the average of the two values closest to the middle. Namely, it will be     "
+},
+{
+  "id": "sec11-center-9",
+  "level": "2",
+  "url": "sec11-center.html#sec11-center-9",
+  "type": "Definition",
+  "number": "11.2.3",
+  "title": "Mode.",
+  "body": "Mode  Suppose you have a collection of numbers . Their mode is the value that occurs the most often in the list. If there is a tie for the value that occurs the most, the data have multiple modes.  "
+},
+{
+  "id": "sec11-center-11",
+  "level": "2",
+  "url": "sec11-center.html#sec11-center-11",
+  "type": "Example",
+  "number": "11.2.4",
+  "title": "",
+  "body": " Consider the collection of nine numbers We can calculate their mean, median, and mode. Note that the mean is greater than the median. This is because the data set is weighted toward larger numbers; there are a bunch of small numbers clustered close together and then it starts spacing out more and more. With the median you don't care about the distance between values, only their order. Whereas the mean is all about distances.  "
+},
+{
+  "id": "sec11-center-12",
+  "level": "2",
+  "url": "sec11-center.html#sec11-center-12",
+  "type": "Checkpoint",
+  "number": "11.2.5",
+  "title": "",
+  "body": " Come up with your own data set whose mean, median, and mode are all different. Come up with a data set where they are all the same. Come up with a data set where the median and the mode are the same but the mean is different.  "
+},
+{
+  "id": "sec11-center-17",
+  "level": "2",
+  "url": "sec11-center.html#sec11-center-17",
+  "type": "Definition",
+  "number": "11.2.6",
+  "title": "Linearity of mean.",
+  "body": "Linearity of mean  The mean has the following two properties, collectively known as linearity . If you multiply all values in a data set by the same constant , then the mean of the new data set is times the mean of the original data set.  Suppose you mix two data sets and as follows. To make the new data set, you take every possible way to add values from the two data sets together, that is all possible . The mean of this new data set is then the sum of the means of the two data sets.   "
+},
+{
+  "id": "sec11-spread",
+  "level": "1",
+  "url": "sec11-spread.html",
+  "type": "Section",
+  "number": "11.3",
+  "title": "Measures of spread",
+  "body": " Measures of spread  In the last section we discussed how to summarize a complicated data set by measuring where its center is. But that's not the full story. To illustrate this, consider the following three data sets. These data sets all have the same mean, namely . (They also have median .) But they are quite different in terms of spread. With the first one you know the values are all close to , but with the last one some of the values are quite far from . Just the mean alone isn't a good summary of the data.  A quick way to calculate the mean on these: instead of using the sum formula, think about mean as being the balancing point. Looking at you can see that it's balanced at , with the other two points each being away. In general, if you notice that a collection of three numbers has the form then you can immediately tell that their mean is .  In this section we discuss some measures for how spread out a data set is.  Maximum, minimum, and range  Consider a data set of numbers The minimum of the data set is the least number in it and the maximum of the data set is the greatest number in it. That is, the minimum is the value so that for every and the maximum is the value so that for every . The range of the data set is the maximum minus the minimum. The range is the total distance of the interval in which values from the data set lie.   Using the same three data sets above, we can distinguish them via their ranges. Though they all have a mean of , the ranges are, in order, , , . In that way we can distinguish how spread out they are.   You give students an exam and they get the following scores: The maximum is , the minimum is . Thus the range is .    Explain the following facts. If a list of numbers is given in increasing order, then the minimum is the first number and the maximum is the last number .  The range of a data set is always .  The range of a data set can be . When does this happen?     While the range gives some information about how spread out a data set is, it has some severe limitations.   Consider the following two data sets. They are very similar, differing only in one of the eleven values. However, their ranges are quite different. The first has a range of and the second has a range of , almost twenty times as much. If you were just looking at range as a summary you'd think these data sets are much more different than they actually are.  This is similar to the issue, discussed in the last section, of how the mean is affected by outliers. Indeed, for this example both data sets have the same median of . On the other hand, the first data set has its mean as also but the mean of the second data set is approximately . Just like the outlier of blew up the range it also increased the mean.   For a measure of spread which isn't so sensitive to outliers, we don't want to look at the minimum and the maximum.  Quartiles  Quartiles are a measure of where a data set is broken up into four equally sized chunks. That is, the first quartile is where of values are to its left, the second quartile is another name for the mean, where of values are to the left and are to the right, and the third quartile is where of values are to the right.  We can make this a bit more precise, like we did with the mean. One way to do this is, to uniquely specify the locations of the first and third quantile we can order the values in the data set and look for the two values closest to of the way through and of the way through, and define the quartiles to be the average of those two values.   Annoyingly, different statistical software will use slightly different methods to determine the quartiles of a discrete data set, not all the same as how I described above. For the data set consisting of whole numbers from to , the statistical programming language R computes the first and third quartiles as and while the spreadsheet program Excel computes them as and . In either case, changing to the outlier doesn't affect the calculation.  This is the sort of annoying detail that you might have to care about if you are using computer tools to do statistics. You need some specified method for giving quartiles, but different programs pick different methods. However, for normal use of interpreting statistics this detail doesn't matter. Except on very small data sets, the different methods give very close answers and the slight variation doesn't matter. For example, if you want to know about the first and third quartiles for incomes in Massachusetts, you are looking at a data set of millions of values. It doesn't matter any for interpreting that data if a different method would produce a number differing by a fraction of a dollar.   Now that we know about quartiles and medians, we can talk about a convenient visual device for summarizing a data set. A box and whisker plot is a visual that shows the median, first and third quartiles, and minimum and maximum of a data set. In this way you can quickly see the center and spread of the data.  In this example, box and whisker plots are given for a data set of exam performance by students in various grade levels. A different box and whisker is given for each grade, so that you can easily compare them. A second version of the plot is given to the side, with dots representing the various exam scores for each grade level. This extra level of information is only sometimes helpful. Here, it's included to help you visualize what a box and whisker plot is showing.   Two box and whisker plots, as described in the paragraph before the image.   These various notions tell us something about the spread of a data set, but it'd be nice to have a single quantity we could point to. Here's an idea of how you might go about that. First identify the center of the data set. Next, determine the average distance of a datum from the center. This will give you a single number which represents how spread out the data are. A small value says that the average distance to the center is small while a large value says the average distance to the center is large.  At core, this is a good idea for a measure of spread. However, for technical reasons we want to slightly tweak it to get something that is better behaved mathematically. Instead of looking at the average distance to the center we get the average of the squares of the distances. Then to get back to the correct units we take the square root.  Standard deviation  Consider a data set of many data with mean . The variance  of the data set is the average of the squares of the distances from the mean, and the standard deviation  is the square root of that. As formulas:    The more important of these two notions is the standard deviation. You can think of the variance as a step to computing the standard deviation—first compute the variance, that is the average of the squares of the distances from the mean, and then take its square root to get the standard deviation. As said earlier, the reason to take squares of distances instead of distances is that it has nicer mathematical properties which eases more advanced uses. Taking the square root at the end returns us to the original unit. If, for example, our data are weights of fish in pounds, then the mean is also in pounds. Because we square, the units for the variance is square pounds. Taking a square root gets us back to pounds, the same units we started with.   Consider the three data sets from earlier: Let's compute their standard deviations in turn. We do the first in detail. Before you can do anything else you need to know the mean, in this case we already saw that . Now we need to take the average of the squares of the distances from the mean: We then divide that by the number of data and take the square root, to get the standard deviation is For the other two data sets we do the same process. The second data set has standard deviation and the third data set has standard devation .   Warning! Due to technical considerations (the keyword to search is Bessel's correction ) most statistical software packages will use a slightly different formula for their standard deviation function. Namely, they will divide by instead of . This is the so-called corrected standard deviation or unbiased estimator of the standard deviation, as upposed to the uncorrected standard deviation I gave. This is something to watch out for if you use computer tools to check your work. They might give a slightly different answer because they used a slightly different formula.  This is an example of something that will likely come up when you are teaching elementary school mathematics. Mostly it can be avoided, but occasionally you touch on some detail that is difficult to explain without a lengthy diversion to teach a later, more advanced math class. What do you say to a student who asks about the detail?  It is unsatisfying to simply say I can't explain that —both for the instructor and the student. You can give a brief, high-level gloss. In this case, something like the correction makes it so the formula gives a more accurate estimation of the true statistic when sampling from a real world distribution . That's maybe enough to satisfy the casually curious. If that doesn't suffice, you can engage the student in a one-on-one conversation to give more information. (This is an invitation, to be clear: if you want to know more, talk to me).  To bring it back to a lesson for teaching: to effectively teach class you have to understand the subject at a deeper level than what one gets leaving the class.   I promised you that the standard deviation has some nice mathematical properties. Let me mention one. Consider the following two data sets: Note that the second data set came from the first one by multiplying everything by . Both data sets have the same mean, namely . If you compute their standard deviations you get and . That is, multiplying everything by gave you a standard deviation times as large.  In general, if a data set has standard deviation , then if you multiply every datum by the new data set has standard deviation . This is similar to a property enjoyed by the mean—multiplying all values by multiplies the mean by .    "
+},
+{
+  "id": "sec11-spread-5",
+  "level": "2",
+  "url": "sec11-spread.html#sec11-spread-5",
+  "type": "Definition",
+  "number": "11.3.1",
+  "title": "Maximum, minimum, and range.",
+  "body": "Maximum, minimum, and range  Consider a data set of numbers The minimum of the data set is the least number in it and the maximum of the data set is the greatest number in it. That is, the minimum is the value so that for every and the maximum is the value so that for every . The range of the data set is the maximum minus the minimum. The range is the total distance of the interval in which values from the data set lie.  "
+},
+{
+  "id": "sec11-spread-7",
+  "level": "2",
+  "url": "sec11-spread.html#sec11-spread-7",
+  "type": "Example",
+  "number": "11.3.2",
+  "title": "",
+  "body": " You give students an exam and they get the following scores: The maximum is , the minimum is . Thus the range is .  "
+},
+{
+  "id": "sec11-spread-8",
+  "level": "2",
+  "url": "sec11-spread.html#sec11-spread-8",
+  "type": "Checkpoint",
+  "number": "11.3.3",
+  "title": "",
+  "body": " Explain the following facts. If a list of numbers is given in increasing order, then the minimum is the first number and the maximum is the last number .  The range of a data set is always .  The range of a data set can be . When does this happen?    "
+},
+{
+  "id": "sec11-spread-10",
+  "level": "2",
+  "url": "sec11-spread.html#sec11-spread-10",
+  "type": "Example",
+  "number": "11.3.4",
+  "title": "",
+  "body": " Consider the following two data sets. They are very similar, differing only in one of the eleven values. However, their ranges are quite different. The first has a range of and the second has a range of , almost twenty times as much. If you were just looking at range as a summary you'd think these data sets are much more different than they actually are.  This is similar to the issue, discussed in the last section, of how the mean is affected by outliers. Indeed, for this example both data sets have the same median of . On the other hand, the first data set has its mean as also but the mean of the second data set is approximately . Just like the outlier of blew up the range it also increased the mean.  "
+},
+{
+  "id": "sec11-spread-12",
+  "level": "2",
+  "url": "sec11-spread.html#sec11-spread-12",
+  "type": "Definition",
+  "number": "11.3.5",
+  "title": "Quartiles.",
+  "body": "Quartiles  Quartiles are a measure of where a data set is broken up into four equally sized chunks. That is, the first quartile is where of values are to its left, the second quartile is another name for the mean, where of values are to the left and are to the right, and the third quartile is where of values are to the right.  We can make this a bit more precise, like we did with the mean. One way to do this is, to uniquely specify the locations of the first and third quantile we can order the values in the data set and look for the two values closest to of the way through and of the way through, and define the quartiles to be the average of those two values.  "
+},
+{
+  "id": "sec11-spread-14",
+  "level": "2",
+  "url": "sec11-spread.html#sec11-spread-14",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "box and whisker plot "
+},
+{
+  "id": "sec11-spread-19",
+  "level": "2",
+  "url": "sec11-spread.html#sec11-spread-19",
+  "type": "Definition",
+  "number": "11.3.6",
+  "title": "Standard deviation.",
+  "body": "Standard deviation  Consider a data set of many data with mean . The variance  of the data set is the average of the squares of the distances from the mean, and the standard deviation  is the square root of that. As formulas:   "
+},
+{
+  "id": "sec11-spread-21",
+  "level": "2",
+  "url": "sec11-spread.html#sec11-spread-21",
+  "type": "Example",
+  "number": "11.3.7",
+  "title": "",
+  "body": " Consider the three data sets from earlier: Let's compute their standard deviations in turn. We do the first in detail. Before you can do anything else you need to know the mean, in this case we already saw that . Now we need to take the average of the squares of the distances from the mean: We then divide that by the number of data and take the square root, to get the standard deviation is For the other two data sets we do the same process. The second data set has standard deviation and the third data set has standard devation .  "
+},
+{
+  "id": "sec11-spread-22",
+  "level": "2",
+  "url": "sec11-spread.html#sec11-spread-22",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "corrected unbiased estimator uncorrected "
+},
+{
+  "id": "sec11-inference",
+  "level": "1",
+  "url": "sec11-inference.html",
+  "type": "Section",
+  "number": "11.4",
+  "title": "Statistical inference",
+  "body": " Statistical inference  The previous sections have been about various ways to summarize data sets. These are useful, but we have yet to touch on an important use of statistics. Namely, we want to be able to make inferences and predictions.  Here is a typical example. A pharmaceutical company produces a new drug to treat a condition. Does it actually work? The human body and biochemistry are complicated, so it's unreasonable to hope for the drug curing everyone. The best you can expect is statistical evidence: on average those who took the drug did better. To measure the effectiveness of the drug, the company runs trials where they compare outcomes of a group who takes the drug versus a control group —a group given a placebo which does nothing. The scientists then do some statistical work to get a measure of whether it's reasonable to reject the null hypothesis that the drug performs no better than a placebo. This process is called hypothesis testing .  The mathematics of how hypothesis testing works and how to carry out the calculations is rather complicated. For that reason, this section will focus on a high level overview. You don't need to understand the mathematical details in order to know enough to critically engage with public discourse.  Step zero of doing statistics is to get something you can quantify. There is an unknown distribution of the quantities across a population. Doing an experiment you get a data set which is a sample from the population. You then want to use that sample to make inferences about the distribution.   Perhaps you are a entomologist studying centipedes. As part of larger work you want to know the size of a species. The distribution is the different lengths across members of the species. As a sample you look at some centipedes and measure their lengths.    You are a pharmaceutical researcher studying a potential new blood pressure medication. The distribution you want to know about is blood pressures of people who take the medication versus those who don't. Your samples come from a drug trial where you measure what happens with a group given the drug versus a control group.   Given a distribution a statistic is some number that can be calculated from it. Typical examples are the mean or standard deviation. Because the overall distribution is unknown, you don't know the value. You want to use your sample to calculate an estimator , something you can calculate from your sample data which estimates the true value of the statistic.   You don't know the true average length of your centipede species. To estimate this unknown value, you compute the mean length of centipedes in your sample. If your sampling method is unbiased and your sample is large enough, this estimator will give a good estimate of the true mean.  On the other hand, if your sampling method is biased it will produce a poor estimate. For example, if your method of catching centipedes only grabs those above a certain length, you will overestimate the true mean length.   With these concepts in hand, we can now say how the process of hypothesis testing goes. The simplest scenario is you know something about the shape of your distribution. Perhaps, with the centipede example, this species is well studied and so you already know its mean length. You do some kind of intervention you expect to have an impact on what you observe. Maybe in your lab you feed centipedes a special diet you expect will cause them to grow bigger. You measure the results from this intervention, and you want to know, do these results give reason to think the intervention has effect?  Suppose you measure and find the centipedes with the special diet are larger than the mean. But it's possible that this is just happenstance. If you flip a coin a few times, it might come up heads every time. That's unlikely, but not impossible. So you can't get surety that the intervention had effect. Instead, statisticians use a proxy known as a p-value . The way this works is, you take a null hypothesis you wish to reject. In this example, the null hypothesis is that the special diet won't make the centipedes grow longer. You then calculate, based on some knowledge of the shape of the distribution, how likely it is, assuming that null hypothesis, to see results at least as extreme as what you measured. This probability is the p-value for the hypothesis test. If the p-value is very low, that is taken reason to reject the null hypothesis. A common threshold is . If you run the hypothesis test and calculate this is taken as acceptable evidence. Scientific journals will publish your results (assuming the rest is methodologically sound).   You know the mean length for this species of centipede is centimeters. You measured that the mean length of your centipedes after the special diet is centimeters. You do a hypothesis test and calculate a p-value of . That is, under the assumption that the special diet has no effect, there's only a chance of getting a sample mean at least centimeters above the mean. This p-value is small, so you have some confidence your intervention has effect.    Warning! A common misunderstanding of p-values is that they are the probability that the hypothesis is correct. This is not the case. That is not something you can measure directly. Instead, this measure of how likely it is to see such extreme results assuming the null hypothesis is used as a proxy. It's not directly saying that there's only a chance the hypothesis is correct, but it does give us some confidence in rejecting the null hypothesis.  Performing the probability calculation in a hypothesis test requires you to know something about the shape of your distribution. This is where theoretical results in statistics come in. People mathematically proved that the data must look approximately like such-and-such, and so we can leverage some knowledge even if we don't know the specifics. Let's talk about one of the most important examples.  Normal distributions  A normal distribution is a kind of distribution which is shaped like a bell curve. If you randomly sample, most values will be near the mean, with farther away outliers being more and more unlikely. A normal distribution is specified by two parameters, its mean and standard deviation.   A normal distribution. A bell-shaped curve with a mean at . As you go out from the mean the curve gets closer and closer to the axis. The height of the curve above the horizontal axis represents the likelihood of that value. That is, values close to the mean are more likely and outliers are less likely.      Normal distributions are important because we know many things in practice are normal, or approximately normal. Consider the example of repeatedly rolling a (six-sided) die and averaging the results. If you roll it once, any of the six outcomes are equally likely. But if you roll it many times then you expect to see high rolls counterbalance low rolls. It's not likely to roll a long string of s. As such, if you roll the die a lot and take the mean of the results, it's most likely to be close to the true mean of the results, namely Outliers are possible, but the farther you get from the less likely it is to see that result.  The central limit theorem  Suppose you take an unbiased random sample from any distribution. Call the mean of this distribution and its standard deviation . (These are the Greek letters mu and sigma , the counterparts to the Latin m and s, for mean and standard deviation.) You sample times and calculate the mean of the sample. This mean sample mean is itself a random variable; different samples will produce a different mean according to chance.  The distribution of this random value is approximately a normal distribution, provided the number of samples is large enough. Indeed, this normal distribution has mean and standard deviation .   This is a bit mathy, so let's lay it out in plain language. No matter what distribution you are sampling from, no matter how it's laid out, if you calculate the sample mean you know what the distribution for that result looks like. It is a normal distribution with the same mean, and its spread (standard deviation) decreases as the sample size increases. That is, the larger your sample the more closely clustered you expect the outcome to be.  In terms of the dice rolling example, if you only roll the die once the spread is quite large. Any of six possible values are equally likely. But the more you roll, the more likely it is that the sample is close to the true mean of .  This theoretical result is the basis for hypothesis tests about sample means. No matter what the true distribution is for lengths of centipedes, we know approximately what the distribution is for taking a sample and calculating the average. This can be leveraged for probability calculations; if we know the distribution, we can calculate how likely it is to see an outcome.  There are multiple different hypothesis tests used, based on what's known about the shape of the data and what statistic you're measuring. Part of the statistical training budding scientists undergo is understanding these different tests and when they can be applied. But they come back to this same general phenomenon. Theoretical results tell you something about the distribution for an estimator for the statistic. You do an experiment and calculate the estimator. Then you calculate how likely it is to see a result at least that extreme, under the assumption of the null hypothesis. If this probability, called a p-value, is low, that is taken as reason to reject the null hypothesis.  You might think this is a bit loose. Isn't statistics supposed to be about getting precision in our knowledge? We might not know perfectly, but we want to say we're probably very close.  But there's a lot of assumptions going into all of this work, and what we're measuring isn't even the thing we want in the first place. There's some arbitrariness. For example, why pick as the threshold for p-values? Why not ?  Ultimately, statistics is a very human affair. The promise of avoiding all bias and setting out an Objective Truth That All Can Agree Upon is a false one. We can get information, and we can become more sure than before in our knowledge. But we must not be misled by numbers into thinking we have more than we do.  This then was the goal of this section: for you to understand enough about hypothesis testing to not be taken in by misconceptions as to its capabilities. This goal goes in hand with the larger goal in this chapter of critical engagement with statistics. Part of the homework for this chapter will ask you to practice this.  "
+},
+{
+  "id": "sec11-inference-3",
+  "level": "2",
+  "url": "sec11-inference.html#sec11-inference-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "control group placebo null hypothesis hypothesis testing "
+},
+{
+  "id": "sec11-inference-5",
+  "level": "2",
+  "url": "sec11-inference.html#sec11-inference-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "distribution sample "
+},
+{
+  "id": "sec11-inference-6",
+  "level": "2",
+  "url": "sec11-inference.html#sec11-inference-6",
+  "type": "Example",
+  "number": "11.4.1",
+  "title": "",
+  "body": " Perhaps you are a entomologist studying centipedes. As part of larger work you want to know the size of a species. The distribution is the different lengths across members of the species. As a sample you look at some centipedes and measure their lengths.  "
+},
+{
+  "id": "sec11-inference-7",
+  "level": "2",
+  "url": "sec11-inference.html#sec11-inference-7",
+  "type": "Example",
+  "number": "11.4.2",
+  "title": "",
+  "body": " You are a pharmaceutical researcher studying a potential new blood pressure medication. The distribution you want to know about is blood pressures of people who take the medication versus those who don't. Your samples come from a drug trial where you measure what happens with a group given the drug versus a control group.  "
+},
+{
+  "id": "sec11-inference-8",
+  "level": "2",
+  "url": "sec11-inference.html#sec11-inference-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "statistic estimator "
+},
+{
+  "id": "sec11-inference-9",
+  "level": "2",
+  "url": "sec11-inference.html#sec11-inference-9",
+  "type": "Example",
+  "number": "11.4.3",
+  "title": "",
+  "body": " You don't know the true average length of your centipede species. To estimate this unknown value, you compute the mean length of centipedes in your sample. If your sampling method is unbiased and your sample is large enough, this estimator will give a good estimate of the true mean.  On the other hand, if your sampling method is biased it will produce a poor estimate. For example, if your method of catching centipedes only grabs those above a certain length, you will overestimate the true mean length.  "
+},
+{
+  "id": "sec11-inference-11",
+  "level": "2",
+  "url": "sec11-inference.html#sec11-inference-11",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "p-value "
+},
+{
+  "id": "sec11-inference-12",
+  "level": "2",
+  "url": "sec11-inference.html#sec11-inference-12",
+  "type": "Example",
+  "number": "11.4.4",
+  "title": "",
+  "body": " You know the mean length for this species of centipede is centimeters. You measured that the mean length of your centipedes after the special diet is centimeters. You do a hypothesis test and calculate a p-value of . That is, under the assumption that the special diet has no effect, there's only a chance of getting a sample mean at least centimeters above the mean. This p-value is small, so you have some confidence your intervention has effect.  "
+},
+{
+  "id": "sec11-inference-15",
+  "level": "2",
+  "url": "sec11-inference.html#sec11-inference-15",
+  "type": "Definition",
+  "number": "11.4.5",
+  "title": "Normal distributions.",
+  "body": "Normal distributions  A normal distribution is a kind of distribution which is shaped like a bell curve. If you randomly sample, most values will be near the mean, with farther away outliers being more and more unlikely. A normal distribution is specified by two parameters, its mean and standard deviation.   A normal distribution. A bell-shaped curve with a mean at . As you go out from the mean the curve gets closer and closer to the axis. The height of the curve above the horizontal axis represents the likelihood of that value. That is, values close to the mean are more likely and outliers are less likely.     "
+},
+{
+  "id": "sec11-inference-17",
+  "level": "2",
+  "url": "sec11-inference.html#sec11-inference-17",
+  "type": "Theorem",
+  "number": "11.4.6",
+  "title": "The central limit theorem.",
+  "body": "The central limit theorem  Suppose you take an unbiased random sample from any distribution. Call the mean of this distribution and its standard deviation . (These are the Greek letters mu and sigma , the counterparts to the Latin m and s, for mean and standard deviation.) You sample times and calculate the mean of the sample. This mean sample mean is itself a random variable; different samples will produce a different mean according to chance.  The distribution of this random value is approximately a normal distribution, provided the number of samples is large enough. Indeed, this normal distribution has mean and standard deviation .  "
+},
+{
+  "id": "sec11-exercises",
+  "level": "1",
+  "url": "sec11-exercises.html",
+  "type": "Section",
+  "number": "11.5",
+  "title": "Exercises",
+  "body": " Exercises    Find two different visualizations of data from an online or print media organization. Anything from a newspaper to a blog is fair game. One of the visualizations should be good. Explain why you think it effectively and accurately conveys its message. The other visualization should be misleading. Explain what about it is misleading, and how it gives an inaccurate view of the underlying data.  Please list your sources and include screenshots\/pictures of the graphics.    Consider the following two data sets. Calculate the means of the two, and explain what the different means tell you about how the two data sets differ.     Consider the following data set. Compute its mean, median, and mode. Explain what these tell you about how the data set is distributed.     Consider the following graphic listing various Christian denominations, ordered by the modal age of members of the denomination.   Twenty plots arranged into two rows. Each plot is a set of dots in a violin plot shape. The vertical axis represents age and each dot represents a quantity of people, with more dots in a row corresponding to more people of that age in the denomination. The twenty plots are ordered by the modal age of the denomination. They are, in order: Nondenominational Fundamentalist (72), Interdenominational (71) Lutheron-Missouri Synod (70), National Baptist Convention (69), United Methodist (67), ELCA (67), PCUSA (67), ABCUSA (65), United Church of Christ (65), Community Church (63), TEC (63), Nondenominational Charismatic (63), Southern Baptist (62), Baptist Miss. Association (62), Nondenominational Evangelical (61), Independent Baptist (61), Pentecostal Church of God (61), General Association of Regular Baptists (59), PC (59), and Free Will Baptist (54).   Image copyright Ryan Burge. Data taken from the Cooperative Election Study 2022–2024.   Reflect on the following, based on these plots. In these plots, what is the graphical meaning of the mode?  Does the mode provide a good measure of the center or average age of a congregation? Explain.  Does it make sense to order these by mode? That is, does it make sense to say that a denomination with a higher modal age is older than one with a lower modal age? Explain    In case it is not clear, modal is the adjective form of the noun mode .    Suppose you are dealing with a data set about housing costs. Your data set of monthly rents has the following summary statistics. Maximum .  Third quartile .  Median .  First quartile .  Minimum .  Based on this information, create a box and whisker plot to visualize your data. (You can either draw it by hand or use software.) Write a paragraph or two explaining what your plot tells you about housing costs.    Consider the following two data sets. Calculate their means then use that to calculate their standard deviations. Explain what the different standard deviations tell you about how the two data sets differ.     Use the internet to determine the following values about household income in Massachusetts: mean, median, first quartile, third quartile. Give those values, as well as the year they are for. Write a paragraph or two explaining the real world meaning of those numbers.  Please list your source(s). Note that an AI-generated summary, such as you might get from google, does not count as a source. Click through to links to find the original source being summarized via LLM.    Read the xkcd comic Significant . Explain the joke.    Read the American Statistical Association's statement on -values . Pick one of its six principles and explain in your own words what it expresses about the uses and limitations of -values.    This exercise is about the article Teaching the difficult past of statistics to improve the future . Read the abstract and the introduction, then read one of the following: section 2.1 about Francis Galton, section 2.2 about Karl Pearson, or section 2.3 about R. A. Fisher. Write a few paragraphs covering the following. What statistical work is the person you read about known for?  What work in eugenics did he do?  Does knowing this context about this founder of statistics inform how you think about the use of statistics? Expound.      "
+},
+{
+  "id": "sec11-exercises-2-1",
+  "level": "2",
+  "url": "sec11-exercises.html#sec11-exercises-2-1",
+  "type": "Exercise",
+  "number": "11.5.1",
+  "title": "",
+  "body": " Find two different visualizations of data from an online or print media organization. Anything from a newspaper to a blog is fair game. One of the visualizations should be good. Explain why you think it effectively and accurately conveys its message. The other visualization should be misleading. Explain what about it is misleading, and how it gives an inaccurate view of the underlying data.  Please list your sources and include screenshots\/pictures of the graphics.  "
+},
+{
+  "id": "sec11-exercises-2-2",
+  "level": "2",
+  "url": "sec11-exercises.html#sec11-exercises-2-2",
+  "type": "Exercise",
+  "number": "11.5.2",
+  "title": "",
+  "body": " Consider the following two data sets. Calculate the means of the two, and explain what the different means tell you about how the two data sets differ.   "
+},
+{
+  "id": "sec11-exercises-2-3",
+  "level": "2",
+  "url": "sec11-exercises.html#sec11-exercises-2-3",
+  "type": "Exercise",
+  "number": "11.5.3",
+  "title": "",
+  "body": " Consider the following data set. Compute its mean, median, and mode. Explain what these tell you about how the data set is distributed.   "
+},
+{
+  "id": "sec11-exercises-2-4",
+  "level": "2",
+  "url": "sec11-exercises.html#sec11-exercises-2-4",
+  "type": "Exercise",
+  "number": "11.5.4",
+  "title": "",
+  "body": " Consider the following graphic listing various Christian denominations, ordered by the modal age of members of the denomination.   Twenty plots arranged into two rows. Each plot is a set of dots in a violin plot shape. The vertical axis represents age and each dot represents a quantity of people, with more dots in a row corresponding to more people of that age in the denomination. The twenty plots are ordered by the modal age of the denomination. They are, in order: Nondenominational Fundamentalist (72), Interdenominational (71) Lutheron-Missouri Synod (70), National Baptist Convention (69), United Methodist (67), ELCA (67), PCUSA (67), ABCUSA (65), United Church of Christ (65), Community Church (63), TEC (63), Nondenominational Charismatic (63), Southern Baptist (62), Baptist Miss. Association (62), Nondenominational Evangelical (61), Independent Baptist (61), Pentecostal Church of God (61), General Association of Regular Baptists (59), PC (59), and Free Will Baptist (54).   Image copyright Ryan Burge. Data taken from the Cooperative Election Study 2022–2024.   Reflect on the following, based on these plots. In these plots, what is the graphical meaning of the mode?  Does the mode provide a good measure of the center or average age of a congregation? Explain.  Does it make sense to order these by mode? That is, does it make sense to say that a denomination with a higher modal age is older than one with a lower modal age? Explain    In case it is not clear, modal is the adjective form of the noun mode .  "
+},
+{
+  "id": "sec11-exercises-2-5",
+  "level": "2",
+  "url": "sec11-exercises.html#sec11-exercises-2-5",
+  "type": "Exercise",
+  "number": "11.5.5",
+  "title": "",
+  "body": " Suppose you are dealing with a data set about housing costs. Your data set of monthly rents has the following summary statistics. Maximum .  Third quartile .  Median .  First quartile .  Minimum .  Based on this information, create a box and whisker plot to visualize your data. (You can either draw it by hand or use software.) Write a paragraph or two explaining what your plot tells you about housing costs.  "
+},
+{
+  "id": "sec11-exercises-2-6",
+  "level": "2",
+  "url": "sec11-exercises.html#sec11-exercises-2-6",
+  "type": "Exercise",
+  "number": "11.5.6",
+  "title": "",
+  "body": " Consider the following two data sets. Calculate their means then use that to calculate their standard deviations. Explain what the different standard deviations tell you about how the two data sets differ.   "
+},
+{
+  "id": "sec11-exercises-2-7",
+  "level": "2",
+  "url": "sec11-exercises.html#sec11-exercises-2-7",
+  "type": "Exercise",
+  "number": "11.5.7",
+  "title": "",
+  "body": " Use the internet to determine the following values about household income in Massachusetts: mean, median, first quartile, third quartile. Give those values, as well as the year they are for. Write a paragraph or two explaining the real world meaning of those numbers.  Please list your source(s). Note that an AI-generated summary, such as you might get from google, does not count as a source. Click through to links to find the original source being summarized via LLM.  "
+},
+{
+  "id": "sec11-exercises-2-8",
+  "level": "2",
+  "url": "sec11-exercises.html#sec11-exercises-2-8",
+  "type": "Exercise",
+  "number": "11.5.8",
+  "title": "",
+  "body": " Read the xkcd comic Significant . Explain the joke.  "
+},
+{
+  "id": "sec11-exercises-2-9",
+  "level": "2",
+  "url": "sec11-exercises.html#sec11-exercises-2-9",
+  "type": "Exercise",
+  "number": "11.5.9",
+  "title": "",
+  "body": " Read the American Statistical Association's statement on -values . Pick one of its six principles and explain in your own words what it expresses about the uses and limitations of -values.  "
+},
+{
+  "id": "sec11-exercises-2-10",
+  "level": "2",
+  "url": "sec11-exercises.html#sec11-exercises-2-10",
+  "type": "Exercise",
+  "number": "11.5.10",
+  "title": "",
+  "body": " This exercise is about the article Teaching the difficult past of statistics to improve the future . Read the abstract and the introduction, then read one of the following: section 2.1 about Francis Galton, section 2.2 about Karl Pearson, or section 2.3 about R. A. Fisher. Write a few paragraphs covering the following. What statistical work is the person you read about known for?  What work in eugenics did he do?  Does knowing this context about this founder of statistics inform how you think about the use of statistics? Expound.    "
+},
+{
+  "id": "sec12-frequentism",
+  "level": "1",
+  "url": "sec12-frequentism.html",
+  "type": "Section",
+  "number": "12.1",
+  "title": "The meaning of probability: frequentism",
+  "body": " The meaning of probability: frequentism   Probability theory is the area of mathematics which studies probability , the quantification of uncertainty. Many things in life are uncertain; no one needs to be told what uncertainty is. But if you want to quantify it then need to think a little about what that means.  As toy examples we will look at games of chance, such as those with dice or playing cards. These make a good setting for starting probability because they have clear rules that enable an unambiguous mathematicization of what's going on. Other, more important instances of uncertainty in our lives are more difficult. For instance, if you want to model uncertain outcomes after a medical diagnosis there are a lot of complicated, non-mathematical details to understand.  With that in mind let me describe these toy examples.  Dice  Some games of chance are played with numerical dice , solids whose sides are each labeled with a number from to the number of sides of the die. Thus, the result of a roll of a die is a number. By far the most commonly used dice are six-sided dice, shaped like a cube (that is, a regular hexahedron). Less commonly used are dice shaped like other Platonic solids: the four-sided tetrahedron, the eight-sided octahedron, the twelve-sided dodecahedron and the twenty-sided icosahedron. One also sees non-Platonic dice with other numbers of sides. Or one can think of a coin as a two-sided die. Abstractly, a die is a device for generating a random number from to .  We will write to refer to a die with sides, or to the outcome of rolling such a die. We will write to refer to the outcome of rolling many s and adding together the results. Expressions like have the meaning you expect—in this case, the result of rolling two s adding the results plus .   An image of five dice with different number of sides. Starting at one o'clock and going clockwise, therea is a , a , a , a , and a .      In the Anglophone world, the most commonly used playing cards are the card deck with French suits (hearts, diamonds, clubs, spades). Other decks use different suits or a different number of cards. But we will use the one you are most likely to have seen before.  Cards  The standard playing cards deck consists of cards, plus sometimes extra joker cards. The cards are divided into four suits : hearts , diamonds , clubs , and spades . Each suit has cards of different ranks within it. Ten numbered cards , numbered from to . The is commonly called the ace .  Three face cards , namely the jack , queen , and king .     With these examples in hand we are now ready to give a meaning to the quantification of uncertainty.  The frequentist interpretation of probability  The frequentist interpretation of probability gives the following meaning. A random trial is a repeatable process with an uncertain outcome, such as rolling a die or picking a card from a deck. The probability of an outcome, expressed as a fraction or percent, is a measure of the frequency of that outcome given a large number of independent trials. Specifically, an outcome has probability , where , if given a large number of trials on average you see about fraction of them have that outcome.    If you roll the probability of getting a is , because if you rolled a large number of dice on average about one in six will be a .  If you draw a card at random from a deck, the probability of getting a heart is , because if you do this a lot on average about one in four will be a heart.  If you draw a card at random from a deck, the probability of getting a queen is , because if you do this many times you get a queen about one in thirteen times.  If you draw a card at random from a deck, the probability of getting the queen of hearts is , because doing this many times you get the queer of hearts about that fraction of times.    Notation for probability  For a random trial, the sample space is the set of possible atomic outcomes . An event is a set of atomic outcomes; think of an event as being something you might measure or look for in the outcome. We write to refer to the probability of an event . We call this whole combination of data, sample space to probability function, a probability space .    The trial of rolling the sample space is the set Example events includes the result is even  or the result is    If you roll the sample space is the set of all possible pairs of outcomes for the two dice. Example events include the sum is or the sum is .  If you draw a card from a deck, the sample space consists of all cards you might draw. Example events include the card is clubs or the card is a face card .   From this idea of what probability means you can extract some mathematical properties.   Because events are sets it is useful to use set theoretic notation when talking about them. If this notation is not fresh in your memory look at for a reminder.   Properties of probability  Here let be the sample space and and be events. Always .   and . That is, the event something happens has a probability of and the event nothing happens has a probability of .  If and are disjoint events, meaning they have no atomic outcomes in common, then . That is, if events are disjoint the probability that at least one of them happens is the sum of their individual probabilities.     The first property says that negative probabilities don't make sense and that probabilities can't exceed . Thinking in terms of percents, this says something can't have less than a chance of happening nor more than a chance of happening. The second property tells you events which reach the smallest and largest possible probabilities. Namely the empty event  of nothing happens has probability and the entire sample space—think something happens —has probability .  The third property, call it additivity is a key one. It says that you can calculate probabilities by adding them together, provided the events don't overlap. As we will see in the next session, this property enables us to do calculations.   "
+},
+{
+  "id": "sec12-frequentism-2",
+  "level": "2",
+  "url": "sec12-frequentism.html#sec12-frequentism-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Probability theory probability "
+},
+{
+  "id": "sec12-frequentism-5",
+  "level": "2",
+  "url": "sec12-frequentism.html#sec12-frequentism-5",
+  "type": "Definition",
+  "number": "12.1.1",
+  "title": "Dice.",
+  "body": "Dice  Some games of chance are played with numerical dice , solids whose sides are each labeled with a number from to the number of sides of the die. Thus, the result of a roll of a die is a number. By far the most commonly used dice are six-sided dice, shaped like a cube (that is, a regular hexahedron). Less commonly used are dice shaped like other Platonic solids: the four-sided tetrahedron, the eight-sided octahedron, the twelve-sided dodecahedron and the twenty-sided icosahedron. One also sees non-Platonic dice with other numbers of sides. Or one can think of a coin as a two-sided die. Abstractly, a die is a device for generating a random number from to .  We will write to refer to a die with sides, or to the outcome of rolling such a die. We will write to refer to the outcome of rolling many s and adding together the results. Expressions like have the meaning you expect—in this case, the result of rolling two s adding the results plus .   An image of five dice with different number of sides. Starting at one o'clock and going clockwise, therea is a , a , a , a , and a .     "
+},
+{
+  "id": "sec12-frequentism-7",
+  "level": "2",
+  "url": "sec12-frequentism.html#sec12-frequentism-7",
+  "type": "Definition",
+  "number": "12.1.2",
+  "title": "Cards.",
+  "body": "Cards  The standard playing cards deck consists of cards, plus sometimes extra joker cards. The cards are divided into four suits : hearts , diamonds , clubs , and spades . Each suit has cards of different ranks within it. Ten numbered cards , numbered from to . The is commonly called the ace .  Three face cards , namely the jack , queen , and king .    "
+},
+{
+  "id": "sec12-frequentism-9",
+  "level": "2",
+  "url": "sec12-frequentism.html#sec12-frequentism-9",
+  "type": "Definition",
+  "number": "12.1.3",
+  "title": "The frequentist interpretation of probability.",
+  "body": "The frequentist interpretation of probability  The frequentist interpretation of probability gives the following meaning. A random trial is a repeatable process with an uncertain outcome, such as rolling a die or picking a card from a deck. The probability of an outcome, expressed as a fraction or percent, is a measure of the frequency of that outcome given a large number of independent trials. Specifically, an outcome has probability , where , if given a large number of trials on average you see about fraction of them have that outcome.  "
+},
+{
+  "id": "sec12-frequentism-10",
+  "level": "2",
+  "url": "sec12-frequentism.html#sec12-frequentism-10",
+  "type": "Example",
+  "number": "12.1.4",
+  "title": "",
+  "body": " If you roll the probability of getting a is , because if you rolled a large number of dice on average about one in six will be a .  If you draw a card at random from a deck, the probability of getting a heart is , because if you do this a lot on average about one in four will be a heart.  If you draw a card at random from a deck, the probability of getting a queen is , because if you do this many times you get a queen about one in thirteen times.  If you draw a card at random from a deck, the probability of getting the queen of hearts is , because doing this many times you get the queer of hearts about that fraction of times.   "
+},
+{
+  "id": "sec12-frequentism-11",
+  "level": "2",
+  "url": "sec12-frequentism.html#sec12-frequentism-11",
+  "type": "Definition",
+  "number": "12.1.5",
+  "title": "Notation for probability.",
+  "body": "Notation for probability  For a random trial, the sample space is the set of possible atomic outcomes . An event is a set of atomic outcomes; think of an event as being something you might measure or look for in the outcome. We write to refer to the probability of an event . We call this whole combination of data, sample space to probability function, a probability space .  "
+},
+{
+  "id": "sec12-frequentism-12",
+  "level": "2",
+  "url": "sec12-frequentism.html#sec12-frequentism-12",
+  "type": "Example",
+  "number": "12.1.6",
+  "title": "",
+  "body": " The trial of rolling the sample space is the set Example events includes the result is even  or the result is    If you roll the sample space is the set of all possible pairs of outcomes for the two dice. Example events include the sum is or the sum is .  If you draw a card from a deck, the sample space consists of all cards you might draw. Example events include the card is clubs or the card is a face card .  "
+},
+{
+  "id": "sec12-frequentism-15",
+  "level": "2",
+  "url": "sec12-frequentism.html#sec12-frequentism-15",
+  "type": "Definition",
+  "number": "12.1.7",
+  "title": "Properties of probability.",
+  "body": "Properties of probability  Here let be the sample space and and be events. Always .   and . That is, the event something happens has a probability of and the event nothing happens has a probability of .  If and are disjoint events, meaning they have no atomic outcomes in common, then . That is, if events are disjoint the probability that at least one of them happens is the sum of their individual probabilities.    "
+},
+{
+  "id": "sec12-frequentism-16",
+  "level": "2",
+  "url": "sec12-frequentism.html#sec12-frequentism-16",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "empty event "
+},
+{
+  "id": "sec12-frequentism-17",
+  "level": "2",
+  "url": "sec12-frequentism.html#sec12-frequentism-17",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "additivity "
+},
+{
+  "id": "sec12-counting",
+  "level": "1",
+  "url": "sec12-counting.html",
+  "type": "Section",
+  "number": "12.2",
+  "title": "Counting and probability",
+  "body": " Counting and probability  The previous section was heavy with definitions. Now that we've established what we're talking about with probability the next task is how do we actually calculate things.  More advanced applications of probability use sample spaces with infinitely many possible outcomes. For example, if you want to model getting the weight of a random fish from Cape Cod then it makes sense to use (positive) real numbers as the possible weights. There are infinitely many real numbers, even if you restrict to a range of numbers, so the sample space will have infinitely many atomic outcomes in it.  These applications are more difficult and require ideas from calculus to fully handle. As such we will set them aside and only look at finite sample spaces. That is, we will only consider scenarios where there are finitely many atomic outcomes.  The calculus idea used here is one that we touched against when talking about geometry, namely the integral . A beautiful thing about mathematics is how disparate fields—in this case, geometry and probability—can make use of the same concepts.  Calculations are easiest in the scenario when all atomic outcomes are equally likely, and by happy coincidence this is a common scenario.  Uniform probability  A probability space is said to be uniform if all atomic outcomes have the same probability.  For a sample space , we use the set-theoretic notation to denote the number of atomic outcomes in . Thus, the probability of an atomic outcome will be     The reason the probability of each atomic outcome must be is that the probability of the total space is always . Since that total probability mass is divided equally between pieces we can get their individual probabilities.  When talking about uniform probability, it's common for people to say something like a card is picked at random from a deck , with the phrase at random indicating that the selection process is uniform. This is perhaps a misnomer—after all, a weighted dice produces a random outcome but some results are more common than others—which is why in stuffier contexts you will see it more clearly said as uniformly at random .  Fundamental property of uniform probability  Consider an event in a finite, uniform probability space. Let denote the sample space. Then, That is, calculating probabilities in a uniform probability space amounts to doing two counting problems: count the number of outcomes in the event and count the total number of possible outcomes.  Use the additivity property of probability. The event consists of many atomic outcomes. Because they are atomic, these outcomes don't overlap at all. Thus must be what you get when you add many copies of .   In a slogan, uniform probability is about counting.   You roll a . How likely are you to roll a prime number? What if you roll a ? A ?  The prime numbers up to are . To calculate these probabilities we need to count the number of primes and the number of sides on the die. The second count is easy, as it's given to us.     You draw a card at random from a deck of playing cards. How likely is it that you draw a face card?    You roll . How likely is it that they sum to ?  The easiest way to think about this is to consider as your sample space all possible rolls of the two dice. Thus there are different atomic outcomes. That gives the denominator for the probability. It remains to get the count for the numerator. To do this, we can list out all outcomes which sum to : Thus the probability of rolling a is     You are playing poker with a single deck. You and your two friends have the following hands. You are the first to get a chance to discard and redraw to complete your five card hand. You decide to discard your to attempt to get a second to complete a full house of three s and two s. How likely are you to succeed? How likely are you to either get your full house or instead draw the final for a four of a kind?  While the full deck has cards in it, you can't draw a card that's already on the table.   In theory, you can always calculate a (uniform) probability by counting up the number of outcomes in the event and dividing by the total number of possible outcomes. In practice, however, this is not always feasible. We want to have some shortcuts that allow us simplify counting problems. We can use facts about probability to enable these shortcuts.  Complementary events  The complement of an event is the event  doesn't happen . In set theoretic language, this is saying that , where is the sample space. We write for the complement of .   For example, in the probability space of rolling a , the complement of the event rolling an even number is rolling an odd number . Note that the complement of the complement of is always itself.   What is the complement of the empty event ? What is the complement of the sample space ?   Probability of complements  If is an event then   Use the additivity property of probability. The events and are disjoint and their union is the entire sample space . Thus     You roll . How likely is it that you don't roll a ?  Earlier we calculated that the probability of rolling a was . Thus the probability of not rolling a is    Independence  Two events and are independent if, intuitively, whether one happens doesn't affect the likelihood of the other. Formally, this idea is captured by the equation That is, two events are independent if the probability they both happen is the product of their individual probabilities.   Most often, the utility of independence is that it lets you use that equation. If it's clear from the definition of events that they are independent then that equation lets you replace a more difficult count with two easier counts.   You roll two s. How likely is it that both results are at least ? How likely is it that at least one result is at least ?  You could solve these by listing out all possible pairs of results and counting from them. But is a big number and that sounds like a lot of work. Instead let's use independence. It's clear that the result of one die is independent of the result of the other.  For the first question, to apply independence we first need to calculate how likely it is that one has a result . This is a quick count: there are numbers which are and , so it is . Then, For the second question, it's easiest to also use complements. Letting denote the event rolling at least one it's easier to directly calculate the probability of the event  both rolling . Again, independence makes this easy. There are results which are . Thus Finally, .    You draw a card from a deck, replace it and reshuffle, then draw again. How likely is it that you draw two spades?   Be careful when you apply independence. If your events aren't actually independent you can't use the product equation. It'll give you wrong answers.   You draw a card from a deck, then draw another card without replacing the original. How likely is it that you draw the jack of spades both times?  If you naively try to use independence, you might calculate like this. For the first draw, there's outcome in you are looking for, so the probability is . For the second draw it's , because there's one fewer draw. Therefore, the probability is A small chance, but still a chance!.  If you think for a moment longer, however, you see that actually the probability is . You can't draw the same card twice, since you didn't replace after the first draw! That is, the two draws weren't actually independent.   The product equation is so helpful we'd like it to work even when things aren't quite independent. Fortunately, there's a way to make it happen.  Sometimes you can think of an event as a two step process—first happens then happens. If you want to know how likely is it that and both happen you can follow this two step process. First calculate how likely is it that happens. Then, under the assumption that has already happened, calculate how likely is it that also happens.   Let's use the same example of drawing the jack of spades twice. Think of it as a two step process. The first step is, drawing the jack of spades from cards. This has probability . For the second step, how likely is it to draw the jack of spades from the remaining cards? The answer is , because none of the remaining cards is the jack of spades. So the overall probability is     You draw two cards from a deck, without replacement. How likely is it they are both face cards?  Think of it as a two step process. For the first step, of cards are face cards, so the probability is . For the second step, if you already drew one face card then of the remaining are face cards. So the probability you draw two face cards is     You draw three cards from a deck, without replacement. How likely is it they are all black cards (that is, either spades or clubs)?  You know what to do for a two step process. How do you generalize that to three steps?    Explain how to calculate the probability of a four step process. Can you also do five steps? Six steps? What is the most general thing you can say?   Here's an explanation for why this way of thinking about two step processes gives you correct calculations. Imagine the sample space as a big rectangle. First you pick the row (the first step), then you pick the column (the second step), to pick a spot in the rectangle. (Note that this is exactly the cartesian product picture from .) We are only interested in spots in the rectangle with the correct first step. Inside these rows we only care those with the correct second step. Those might differ from row to row. For example, the row for the first draw was will have as a valid second choice, whereas the row for the first draw was will not. But so long as there's the same number in each row, we can rearrange the rows to form a rectangle. And the area of a rectangle is found by multiplying.   "
+},
+{
+  "id": "sec12-counting-5-1",
+  "level": "2",
+  "url": "sec12-counting.html#sec12-counting-5-1",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "integral "
+},
+{
+  "id": "sec12-counting-7",
+  "level": "2",
+  "url": "sec12-counting.html#sec12-counting-7",
+  "type": "Definition",
+  "number": "12.2.1",
+  "title": "Uniform probability.",
+  "body": "Uniform probability  A probability space is said to be uniform if all atomic outcomes have the same probability.  For a sample space , we use the set-theoretic notation to denote the number of atomic outcomes in . Thus, the probability of an atomic outcome will be    "
+},
+{
+  "id": "sec12-counting-10",
+  "level": "2",
+  "url": "sec12-counting.html#sec12-counting-10",
+  "type": "Theorem",
+  "number": "12.2.2",
+  "title": "Fundamental property of uniform probability.",
+  "body": "Fundamental property of uniform probability  Consider an event in a finite, uniform probability space. Let denote the sample space. Then, That is, calculating probabilities in a uniform probability space amounts to doing two counting problems: count the number of outcomes in the event and count the total number of possible outcomes.  Use the additivity property of probability. The event consists of many atomic outcomes. Because they are atomic, these outcomes don't overlap at all. Thus must be what you get when you add many copies of .  "
+},
+{
+  "id": "sec12-counting-12",
+  "level": "2",
+  "url": "sec12-counting.html#sec12-counting-12",
+  "type": "Checkpoint",
+  "number": "12.2.3",
+  "title": "",
+  "body": " You roll a . How likely are you to roll a prime number? What if you roll a ? A ?  The prime numbers up to are . To calculate these probabilities we need to count the number of primes and the number of sides on the die. The second count is easy, as it's given to us.   "
+},
+{
+  "id": "sec12-counting-13",
+  "level": "2",
+  "url": "sec12-counting.html#sec12-counting-13",
+  "type": "Checkpoint",
+  "number": "12.2.4",
+  "title": "",
+  "body": " You draw a card at random from a deck of playing cards. How likely is it that you draw a face card?  "
+},
+{
+  "id": "sec12-counting-14",
+  "level": "2",
+  "url": "sec12-counting.html#sec12-counting-14",
+  "type": "Checkpoint",
+  "number": "12.2.5",
+  "title": "",
+  "body": " You roll . How likely is it that they sum to ?  The easiest way to think about this is to consider as your sample space all possible rolls of the two dice. Thus there are different atomic outcomes. That gives the denominator for the probability. It remains to get the count for the numerator. To do this, we can list out all outcomes which sum to : Thus the probability of rolling a is   "
+},
+{
+  "id": "sec12-counting-15",
+  "level": "2",
+  "url": "sec12-counting.html#sec12-counting-15",
+  "type": "Checkpoint",
+  "number": "12.2.6",
+  "title": "",
+  "body": " You are playing poker with a single deck. You and your two friends have the following hands. You are the first to get a chance to discard and redraw to complete your five card hand. You decide to discard your to attempt to get a second to complete a full house of three s and two s. How likely are you to succeed? How likely are you to either get your full house or instead draw the final for a four of a kind?  While the full deck has cards in it, you can't draw a card that's already on the table.  "
+},
+{
+  "id": "sec12-counting-17",
+  "level": "2",
+  "url": "sec12-counting.html#sec12-counting-17",
+  "type": "Definition",
+  "number": "12.2.7",
+  "title": "Complementary events.",
+  "body": "Complementary events  The complement of an event is the event  doesn't happen . In set theoretic language, this is saying that , where is the sample space. We write for the complement of .  "
+},
+{
+  "id": "sec12-counting-19",
+  "level": "2",
+  "url": "sec12-counting.html#sec12-counting-19",
+  "type": "Checkpoint",
+  "number": "12.2.8",
+  "title": "",
+  "body": " What is the complement of the empty event ? What is the complement of the sample space ?  "
+},
+{
+  "id": "sec12-counting-20",
+  "level": "2",
+  "url": "sec12-counting.html#sec12-counting-20",
+  "type": "Theorem",
+  "number": "12.2.9",
+  "title": "Probability of complements.",
+  "body": "Probability of complements  If is an event then   Use the additivity property of probability. The events and are disjoint and their union is the entire sample space . Thus   "
+},
+{
+  "id": "sec12-counting-21",
+  "level": "2",
+  "url": "sec12-counting.html#sec12-counting-21",
+  "type": "Checkpoint",
+  "number": "12.2.10",
+  "title": "",
+  "body": " You roll . How likely is it that you don't roll a ?  Earlier we calculated that the probability of rolling a was . Thus the probability of not rolling a is   "
+},
+{
+  "id": "sec12-counting-22",
+  "level": "2",
+  "url": "sec12-counting.html#sec12-counting-22",
+  "type": "Definition",
+  "number": "12.2.11",
+  "title": "Independence.",
+  "body": "Independence  Two events and are independent if, intuitively, whether one happens doesn't affect the likelihood of the other. Formally, this idea is captured by the equation That is, two events are independent if the probability they both happen is the product of their individual probabilities.  "
+},
+{
+  "id": "sec12-counting-24",
+  "level": "2",
+  "url": "sec12-counting.html#sec12-counting-24",
+  "type": "Checkpoint",
+  "number": "12.2.12",
+  "title": "",
+  "body": " You roll two s. How likely is it that both results are at least ? How likely is it that at least one result is at least ?  You could solve these by listing out all possible pairs of results and counting from them. But is a big number and that sounds like a lot of work. Instead let's use independence. It's clear that the result of one die is independent of the result of the other.  For the first question, to apply independence we first need to calculate how likely it is that one has a result . This is a quick count: there are numbers which are and , so it is . Then, For the second question, it's easiest to also use complements. Letting denote the event rolling at least one it's easier to directly calculate the probability of the event  both rolling . Again, independence makes this easy. There are results which are . Thus Finally, .  "
+},
+{
+  "id": "sec12-counting-25",
+  "level": "2",
+  "url": "sec12-counting.html#sec12-counting-25",
+  "type": "Checkpoint",
+  "number": "12.2.13",
+  "title": "",
+  "body": " You draw a card from a deck, replace it and reshuffle, then draw again. How likely is it that you draw two spades?  "
+},
+{
+  "id": "sec12-counting-27",
+  "level": "2",
+  "url": "sec12-counting.html#sec12-counting-27",
+  "type": "Checkpoint",
+  "number": "12.2.14",
+  "title": "",
+  "body": " You draw a card from a deck, then draw another card without replacing the original. How likely is it that you draw the jack of spades both times?  If you naively try to use independence, you might calculate like this. For the first draw, there's outcome in you are looking for, so the probability is . For the second draw it's , because there's one fewer draw. Therefore, the probability is A small chance, but still a chance!.  If you think for a moment longer, however, you see that actually the probability is . You can't draw the same card twice, since you didn't replace after the first draw! That is, the two draws weren't actually independent.  "
+},
+{
+  "id": "sec12-counting-30",
+  "level": "2",
+  "url": "sec12-counting.html#sec12-counting-30",
+  "type": "Example",
+  "number": "12.2.15",
+  "title": "",
+  "body": " Let's use the same example of drawing the jack of spades twice. Think of it as a two step process. The first step is, drawing the jack of spades from cards. This has probability . For the second step, how likely is it to draw the jack of spades from the remaining cards? The answer is , because none of the remaining cards is the jack of spades. So the overall probability is   "
+},
+{
+  "id": "sec12-counting-31",
+  "level": "2",
+  "url": "sec12-counting.html#sec12-counting-31",
+  "type": "Checkpoint",
+  "number": "12.2.16",
+  "title": "",
+  "body": " You draw two cards from a deck, without replacement. How likely is it they are both face cards?  Think of it as a two step process. For the first step, of cards are face cards, so the probability is . For the second step, if you already drew one face card then of the remaining are face cards. So the probability you draw two face cards is   "
+},
+{
+  "id": "sec12-counting-32",
+  "level": "2",
+  "url": "sec12-counting.html#sec12-counting-32",
+  "type": "Checkpoint",
+  "number": "12.2.17",
+  "title": "",
+  "body": " You draw three cards from a deck, without replacement. How likely is it they are all black cards (that is, either spades or clubs)?  You know what to do for a two step process. How do you generalize that to three steps?  "
+},
+{
+  "id": "sec12-counting-33",
+  "level": "2",
+  "url": "sec12-counting.html#sec12-counting-33",
+  "type": "Checkpoint",
+  "number": "12.2.18",
+  "title": "",
+  "body": " Explain how to calculate the probability of a four step process. Can you also do five steps? Six steps? What is the most general thing you can say?  "
+},
+{
+  "id": "sec12-perm",
+  "level": "1",
+  "url": "sec12-perm.html",
+  "type": "Section",
+  "number": "12.3",
+  "title": "Permutations and combinations",
+  "body": " Permutations and combinations  A key idea we ended on in the last section is that if an event can be thought of as a multistep process, you can determine its event by multiplying. In this section we build on that idea by looking at some common counting problems.  We begin with a well-known example, known as the birthday problem .   You are at a party with people total. Is it more likely that two people share a birthday or that everyone has different birthdays?  To answer this, we will make a couple simplifying assumptions. First, we will exclude leap day birthdays, which occur approximately every four years. Second, we will assume that all birthdays are equally likely. These assumptions will mean our probability calculation won't be correct. But it will be close enough to know which outcome is more likely.  We are dealing with complementary events, so knowing one's probability lets us easily compute the other. As such we should ask, which of the two is easier to calculate? Take a moment to ask that.  Perhaps you answered that it's easier to calculate how likely it is that everyone has a different birthday. I agree. We can think of this as a twenty step process—pick the first birthday, then the second one, and so on, each time having to pick a different one. On the other hand, it's hard to model two people sharing a birthday as a multi-step process—which two?  For the first step, there are birthdays and are free to claim without conflict. For the second person, there are birthdays and are free to claim without conflict. After all, there's only one day that's off-limit so far. Each step we get one fewer allowed birthday while still having to choose from. Thus we get the following big product to calculate: At this point we pull out a computer because this is tedious to do by hand. The probability is That is it is only slightly more likely that all birthdays are different than that two people share a birthday. This is even though there's only twenty people at the party, much less than the possible birthdays.  If there's instead people at the party, you can run a similar calculation. In this case, the probability everyone has a different birthday is . That is, with only people it's much more likely to have two people share a birthday than it is otherwise. It's at people that this tipping point occurs and it becomes more likely to have a shared birthday.  Some people call this the birthday paradox, because they think it doesn't make sense for a shared birthday to be more common than not when you have so much fewer people than days in the year. But our calculations show this expectation is flawed.   Let's introduce some notation for this kind of counting problem.  Factorials and permutations  A permutation of a finite list of things is a way to order those things. The factorial function, written , counts how many permutations there are for a list of many things.  We can calculate factorials using the rule that is the product of all whole numbers from down to : Alternatively, we can use these rules    To understand the formula, think of picking a permutation as an step process. First you pick the first object, then the second, then the third, and so on until there are none left. You start with choices, and each step has one fewer. For example, if you want to order things there are ways to do it.  That is the sort of thing that mathematicians think is natural and obvious but makes normal people upset. Let me defend the choice. How many ways are there to order zero things? The answer, of course, is one. There is only one way to do it, namely to do nothing. Think, how many ways are there to order zero books on a shelf: just one, namely leaving the shelf bare.  If you don't find that satsifactory, here are two more arguments. First, is the product of zero many numbers, and if you multiple zero numbers together you should get the multiplicative identity . This is the same reasoning as why for any base . Second, there are useful formulas involving factorials that make sense when to talk about with . For these formulas, having gives the correct answer. (We will see one of these formulas soon when we talk about combinatins.) So this is a practical choice.  Not so secretly this practical choice is the original answer in a beaglepuss. Why do these formulas give the correct answer when we say ? Because what we are counting is the number of ways to order zero things.  With the birthday problem example, we didn't calculate but rather something close to it. We weren't asking how many ways to order birthdays but rather only picked twenty of them. Let's also give a name to this concept.  Falling factorial  Consider nonnegative numbers and with . Define the falling factorial  as the product of many integers in sequence counting down from : Note that to have many numbers multiplied, the last one should be , not .  The falling factorial counts the number of ways to order many things from options. Note that .   Note that But the latter formula isn't helpful in practice since it requires you to divide two large numbers. For example, it's easier to compute rather than compute    Explain the equality in the above paragraph. Why is     There are eight swimmers in a race. How many different possible outcomes are there for who takes the top three positions?  To count this, we can think of it as a three step process. There's many possibliities for who gets first. Once that's chosen, there's many possibilities for second, and then many possibilities for third. So in all there are possible outcomes for the top three.  Note that if you want to know about the order of all eight swimmers there's many more possible outcomes, namely many. If we only care about the top three then, for instance, we aren't going to count it as a different outcome if seventh and eighth swap places. As such there are much fewer outcomes to count.    There are twenty people at a party. How many different ways are there for them to all have different birthdays? (Discount leap days.)  We've seen this counting problem before. There's options for the first person, then as we go along there's one fewer option for each person. Thus in total there are many possibilities.    You choose a PIN at random for your ATM card. If the PIN is four digits, how likely is it that every digit differs?  This is a question about uniform probability, so it reduces to two counting problems. We want to calculate Let's count the denominator first. Choosing a PIN is a four step process, with each step having options: the digits through . So in total there are many possible PINs.  The numerator is also chosen by a four step process, except this time each step you have one fewer option than before. Thus the numerator is counted by In all, the probability a random PIN doesn't repeat a digit is    Note that this was essentially the same as the birthday problem. The numbers were different— choices from options rather than choices from options. But it's the same general formula of falling factorial over an exponent:   Factorials and falling factorials count selection processes where the order matters—you care about what comes first versus second. Many selection processes are not like that. For example, maybe you need to select three students from a class of twenty to do a group project. It doesn't make sense to say who is picked first versus second versus third. If you tried to count this as you would be way overcounting, since that would count picking Alice then Bob then Carol and different from picking Bob then Alice then Carol.  We need a different device to count this.  Binomial coefficients  Consider nonnegative numbers and with . Define the binomial coefficient , also called a combination , as The binomial coefficient counts the number of ways to choose many things from options, where you don't care about order.   The binomial coefficient is so named for its connection to coefficients of the binomial power , but explaining this connection would be too far a detour for us.   You are picking three students from a class of twenty to do a group project. How many ways are there to do this?  We use the binomial coefficient to count this:    Let's see where this formula comes from. Here's a way to think about this counting problem. To pick three students from twenty, pick a way to order all twenty students, then pick the first three in the order. There's ways to do this. However, there's not different outcomes. If you swap the first and second student you get the same group of three. Or if you swap the thirteenth and nineteenth. So we need to divide out by the amount we are overcounting. One way we overcount is that rearranging the first three students doesn't change the outcome. There's ways to order them, so we need to divide by . The other way we overcount is the rearring the last seventeen students doesn't change the outcome. So we also need to divide by , the number of ways to do that. In all, our count is   In general, if you are choosing things from where you don't care about order, you can think of the process as ordering all things and keeping the first . There's ways to do this, but we're overcounting by factors of (you can reorder the first ) and (you can reorder the last ). In all the count is    You are choosing three students from a class of twenty to do a group project. How likely is it that Alice is in the group?  We need to calculate We've already counted that the denominator is . It remains to count the numerator. For this, we ask how ways are there to pick a group that includes Alice? For this, Alice's place is already fixed so we just need to pick the remaining two students. There's ninteen options for them (you already picked Alice). So the numerator is . Thus the likelihood you put Alice in the group is     Your department of people is picking people to form a committee. This committee will have a chairperson. If all choices are made randomly, how likely is it that you end up on the committee? How likely is it that you are the chairperson?  The first question is similar to the previous exercise. For the second, think of it as a two step process: first pick the committee, then pick the chair. So to calculate the probabliity that you are on the committee and are the chair you can multiply the probablity that you are on the committee by the probability that, assuming you're on the committee, you are chosen as chair.    You randomly divide a class of ten students into two equally sized groups. In this class are Alice and Bob, who hate each other. How likely is it that Alice and Bob end up in the same group?  You can't count this directly using binomial coefficients. Instead, you need to think similar to how we got the formula for . Think of your choice as being made by ordering the ten students and splitting the first five from the last five. How likely is it that Alice and Bob are on the same side? Is it easier to do the count if you assume you put Alice first and then ordered the remaining students?   "
+},
+{
+  "id": "sec12-perm-3",
+  "level": "2",
+  "url": "sec12-perm.html#sec12-perm-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "birthday problem "
+},
+{
+  "id": "sec12-perm-4",
+  "level": "2",
+  "url": "sec12-perm.html#sec12-perm-4",
+  "type": "Example",
+  "number": "12.3.1",
+  "title": "",
+  "body": " You are at a party with people total. Is it more likely that two people share a birthday or that everyone has different birthdays?  To answer this, we will make a couple simplifying assumptions. First, we will exclude leap day birthdays, which occur approximately every four years. Second, we will assume that all birthdays are equally likely. These assumptions will mean our probability calculation won't be correct. But it will be close enough to know which outcome is more likely.  We are dealing with complementary events, so knowing one's probability lets us easily compute the other. As such we should ask, which of the two is easier to calculate? Take a moment to ask that.  Perhaps you answered that it's easier to calculate how likely it is that everyone has a different birthday. I agree. We can think of this as a twenty step process—pick the first birthday, then the second one, and so on, each time having to pick a different one. On the other hand, it's hard to model two people sharing a birthday as a multi-step process—which two?  For the first step, there are birthdays and are free to claim without conflict. For the second person, there are birthdays and are free to claim without conflict. After all, there's only one day that's off-limit so far. Each step we get one fewer allowed birthday while still having to choose from. Thus we get the following big product to calculate: At this point we pull out a computer because this is tedious to do by hand. The probability is That is it is only slightly more likely that all birthdays are different than that two people share a birthday. This is even though there's only twenty people at the party, much less than the possible birthdays.  If there's instead people at the party, you can run a similar calculation. In this case, the probability everyone has a different birthday is . That is, with only people it's much more likely to have two people share a birthday than it is otherwise. It's at people that this tipping point occurs and it becomes more likely to have a shared birthday.  Some people call this the birthday paradox, because they think it doesn't make sense for a shared birthday to be more common than not when you have so much fewer people than days in the year. But our calculations show this expectation is flawed.  "
+},
+{
+  "id": "sec12-perm-6",
+  "level": "2",
+  "url": "sec12-perm.html#sec12-perm-6",
+  "type": "Definition",
+  "number": "12.3.2",
+  "title": "Factorials and permutations.",
+  "body": "Factorials and permutations  A permutation of a finite list of things is a way to order those things. The factorial function, written , counts how many permutations there are for a list of many things.  We can calculate factorials using the rule that is the product of all whole numbers from down to : Alternatively, we can use these rules   "
+},
+{
+  "id": "sec12-perm-12",
+  "level": "2",
+  "url": "sec12-perm.html#sec12-perm-12",
+  "type": "Definition",
+  "number": "12.3.3",
+  "title": "Falling factorial.",
+  "body": "Falling factorial  Consider nonnegative numbers and with . Define the falling factorial  as the product of many integers in sequence counting down from : Note that to have many numbers multiplied, the last one should be , not .  The falling factorial counts the number of ways to order many things from options. Note that .  "
+},
+{
+  "id": "sec12-perm-14",
+  "level": "2",
+  "url": "sec12-perm.html#sec12-perm-14",
+  "type": "Checkpoint",
+  "number": "12.3.4",
+  "title": "",
+  "body": " Explain the equality in the above paragraph. Why is   "
+},
+{
+  "id": "sec12-perm-15",
+  "level": "2",
+  "url": "sec12-perm.html#sec12-perm-15",
+  "type": "Example",
+  "number": "12.3.5",
+  "title": "",
+  "body": " There are eight swimmers in a race. How many different possible outcomes are there for who takes the top three positions?  To count this, we can think of it as a three step process. There's many possibliities for who gets first. Once that's chosen, there's many possibilities for second, and then many possibilities for third. So in all there are possible outcomes for the top three.  Note that if you want to know about the order of all eight swimmers there's many more possible outcomes, namely many. If we only care about the top three then, for instance, we aren't going to count it as a different outcome if seventh and eighth swap places. As such there are much fewer outcomes to count.  "
+},
+{
+  "id": "sec12-perm-16",
+  "level": "2",
+  "url": "sec12-perm.html#sec12-perm-16",
+  "type": "Example",
+  "number": "12.3.6",
+  "title": "",
+  "body": " There are twenty people at a party. How many different ways are there for them to all have different birthdays? (Discount leap days.)  We've seen this counting problem before. There's options for the first person, then as we go along there's one fewer option for each person. Thus in total there are many possibilities.  "
+},
+{
+  "id": "sec12-perm-17",
+  "level": "2",
+  "url": "sec12-perm.html#sec12-perm-17",
+  "type": "Checkpoint",
+  "number": "12.3.7",
+  "title": "",
+  "body": " You choose a PIN at random for your ATM card. If the PIN is four digits, how likely is it that every digit differs?  This is a question about uniform probability, so it reduces to two counting problems. We want to calculate Let's count the denominator first. Choosing a PIN is a four step process, with each step having options: the digits through . So in total there are many possible PINs.  The numerator is also chosen by a four step process, except this time each step you have one fewer option than before. Thus the numerator is counted by In all, the probability a random PIN doesn't repeat a digit is   "
+},
+{
+  "id": "sec12-perm-21",
+  "level": "2",
+  "url": "sec12-perm.html#sec12-perm-21",
+  "type": "Definition",
+  "number": "12.3.8",
+  "title": "Binomial coefficients.",
+  "body": "Binomial coefficients  Consider nonnegative numbers and with . Define the binomial coefficient , also called a combination , as The binomial coefficient counts the number of ways to choose many things from options, where you don't care about order.  "
+},
+{
+  "id": "sec12-perm-23",
+  "level": "2",
+  "url": "sec12-perm.html#sec12-perm-23",
+  "type": "Example",
+  "number": "12.3.9",
+  "title": "",
+  "body": " You are picking three students from a class of twenty to do a group project. How many ways are there to do this?  We use the binomial coefficient to count this:   "
+},
+{
+  "id": "sec12-perm-26",
+  "level": "2",
+  "url": "sec12-perm.html#sec12-perm-26",
+  "type": "Checkpoint",
+  "number": "12.3.10",
+  "title": "",
+  "body": " You are choosing three students from a class of twenty to do a group project. How likely is it that Alice is in the group?  We need to calculate We've already counted that the denominator is . It remains to count the numerator. For this, we ask how ways are there to pick a group that includes Alice? For this, Alice's place is already fixed so we just need to pick the remaining two students. There's ninteen options for them (you already picked Alice). So the numerator is . Thus the likelihood you put Alice in the group is   "
+},
+{
+  "id": "sec12-perm-27",
+  "level": "2",
+  "url": "sec12-perm.html#sec12-perm-27",
+  "type": "Checkpoint",
+  "number": "12.3.11",
+  "title": "",
+  "body": " Your department of people is picking people to form a committee. This committee will have a chairperson. If all choices are made randomly, how likely is it that you end up on the committee? How likely is it that you are the chairperson?  The first question is similar to the previous exercise. For the second, think of it as a two step process: first pick the committee, then pick the chair. So to calculate the probabliity that you are on the committee and are the chair you can multiply the probablity that you are on the committee by the probability that, assuming you're on the committee, you are chosen as chair.  "
+},
+{
+  "id": "sec12-perm-28",
+  "level": "2",
+  "url": "sec12-perm.html#sec12-perm-28",
+  "type": "Checkpoint",
+  "number": "12.3.12",
+  "title": "",
+  "body": " You randomly divide a class of ten students into two equally sized groups. In this class are Alice and Bob, who hate each other. How likely is it that Alice and Bob end up in the same group?  You can't count this directly using binomial coefficients. Instead, you need to think similar to how we got the formula for . Think of your choice as being made by ordering the ten students and splitting the first five from the last five. How likely is it that Alice and Bob are on the same side? Is it easier to do the count if you assume you put Alice first and then ordered the remaining students?  "
+},
+{
+  "id": "sec12-bayes",
+  "level": "1",
+  "url": "sec12-bayes.html",
+  "type": "Section",
+  "number": "12.4",
+  "title": "The meaning of probability: Bayesianism",
+  "body": " The meaning of probability: Bayesianism  In the previous sections, we talked about probability as coming from counting. This fits nicely with the frequentist interpretation of probability from . Recall that this interpretation gave the meaning as , the probability of an event , is the fraction of outcomes in you expect to see with many identitcal repeated random trials. If all atomic outcomes in the sample space are equally likely then you expect to see fraction of them in , so that is the probability.  While this view of what probability can be used in many places, it struggles in some important applications. For example, in we talked about statistical inference. This amounted to asking about probability: assuming the null hypothesis we want to reject, how likely is it to see outcomes this extreme?  It's difficult to put this into the frequentist framework of repeated random trials. Many statistical experiments are not repeatable. For example, perhaps you are trying to forecast an election and determine the odds for who wins. You can't run the election over and over to see how likely each outcome is. So a statement like Senator Example has a chance of winning reelection can't have the frequentist meaning.  In this section we will discuss a different interpretation of probability which better handles these cases. Along the way we will talk about conditional probability , which is the key concept in this interpretation.  We have seen conditional probability before, though not by that name. With statistical inference in we asked questions like assuming the null hypothesis , how likely is it to see an outcome this extreme? In when talking about multi-step processes we asked questions like assuming the outcome of the first step is known , how likely is the second step to be ? Conditional probability is about these sorts of calculations; assuming you have partial information, how does that determine the likelihood of outcomes?  Conditional probability  Suppose and are events in a probability space with sample space . The conditional probability of assuming , written , is the likelihood that happens assuming you know that happens. It can be calculated as In case you are dealing with uniform probability, it can equivalently be calculated by counting: Like many important concepts, this one goes by many names. You see people talk about the probabability of given or the the probability of conditional on or other ways to express conditional probability.   To explain the formulas. If you assume happens, there are many possible outcomes. How many of those are in ? It would overcount to say , since some of may be outside of . The correct count is , the number of outcomes in both and .  Note that conditional probability only makes sense if . If never happens then it doesn't make sense to ask how likely something is assuming happens.   You roll . Assuming the first die rolls a , how likely is it that the results sum to at least ?  This is a conditional probability. We could look at all outcomes of rolling three dice, but it's easier to think only about the outcomes where the first die is . There are outcomes to look at, since the remaining two dice rolls independently have outcomes each. We need to count how many of these outcomes sum to at least . We can do list them: These are outcomes, so the conditional probability is     Suppose and are events in a probability space. Then we can calculate their joint probability as   This falls out from writing these various probabilities as fractions. First let's write them as counts for uniform probability, where is the sample space: Alternatively you can write solely in terms of probabilities:     You roll . How likely is it that the first die rolls a and they sum to at least ?  Use conditional probability! You want to calculate , where  the first die is and  the sum is at least . In an earlier checkpoint we already calculated so what remains is to calculate .   You might wonder if there's any relationship between the two directions of conditional probability— versus . An important probability fact tells us they are related.  Bayes's theorem  Consider events and in a sample space, where both events have nonzero probability. Then   This is surprisingly straightforward. The key idea is to unpack the definition of conditional probability: . Substituting this into the righthand side of the equation we get Now note that is by definition of conditional probabilty, the same as . But that's the lefthand side of the equation.   A classic example of the use of Bayes's theorem is determining the reliability of a test. Suppose you are tested for a rare disease, and it comes up positive. How likely is it you actually have the disease? You might say it's very likely, since the test usually gets the correct answer. That is, false positives —the test wrongly coming up positive—and false negatives —the test wrongly coming up negative—are rare.  Let's do an example calculation to test this gut reaction.   Disease has a incidence rate, meaning it occurs in of the population. A test for disease has a chance of giving the correct diagnosis, whether positive or negative. You test positive. How likely is it you have disease ?  Let's give some names to these events. Call the event you have the disease and the event the test came back positive . What we are trying to calculate is the conditional probability . We know a few probabilities: The first is the incidence rate, the second is the true positive rate, and the last is the false positive rate. Because we know the conditional probability in the opposite direction, you might think we could use Bayes's theorem. You are correct. We will calculate You can think of the fraction on the right as follows. The numerator is what fraction of the population both has disease and has a positive test, while the denominator is how many have a positive test. We have to do a small amount of work to calculate the denominator, since we aren't given it directly. To calculate what fraction of the population have a positive test, we add together the true positives with the false positives. The true positives are given by the formula Similarly, the false negatives are given by the formula (We know because that's how many don't have the disease, namely .) Adding those together we get Now we plug the three values into Bayes's theorem: That is, there's only about a chance you have the disease.   Maybe you are surprised by this calculation. If the test is accurate, why is it overwhelming likely it gave the wrong answer? The reason is, the accuracy of the test was less than the incidence rate of the disease. As such, the false positives outnumbered the true positives. The lesson here is, the accuracy of a test needs to match or succeed the incidence rate to give good info.   Some details are being swept under the rug for simplicity. Let me highlight one. In practice, the incidence rate across the entire population isn't what you want to look at. Rather, you want to look at a subpopulation, such as only women over the age of or only people exhibiting XYZ symptom. The reason is, if it's a rare disease the test isn't being given to everyone. Instead, it's only given to people particularly at risk or for whom there's already reason to suspect they might have it.  So the level of accuracy you need for the test is lower than what you'd think you need if you looked at the incidence rate across the entire population. In this example, maybe the disease only occurs in of the population but is in of the relevant subpopulation. If you rerun the calculation with you'll get a much higher chance that you actally have the disease.   This example illustrates one practical use of Bayes's theorem. The main purpose in mentioning it, however, is to set up the discussion for an interpretation of probability different from the frequentist's.  The Bayesian interpretation of probability  The Bayesian interpretation of probability , also called the subjective interpretation , gives the following meaning. A probability represents a degree of confidence that the event will happen. For example, if is the event of a coin flip coming up heads you might assign . However, if you happen to know that the coin is biased to come up tails most of the time you'd assign it a much lower chance.  For a more interesting example, suppose is the event that your preferred candidate wins the upcoming election. This is something it's hard to make sense of with frequentism, but here is your degree of confidence in this outcome. You could be more or less rational about this. Maybe it's based entirely on your conviction that your candidate is the best one so everyone should agree, or maybe it's based on rigorous polling and election simulation. Either way, the number is a measure of your subjective confidence.   A feature of this interpretation is that, as one of the names for it suggests, probability is subjective. Rather than being an objective fact, the degree of confidence can vary from person to person. Some might find this uncomfortable—isn't mathematics about uncovering objective truths about reality? Perhaps you find this reason to reject this view of what probability is.  If you do you are not alone. The interpretation of what probability means is a difficult topic that has been the subject of much scholarly debate, with many arguments slung for many different conclusions. A good introduction to this topic is the Stanford Encyclopedia of Philosophy article on interpretations of philosophy . But this is too big a topic and too big a detour for us to go into.  A distinctive feature of Bayesianism is its use of Bayes's theorem to give a rule for updating your probabilities (that is, degrees of confidence). Take coin flipping as an example. Without any further information, your prior probability that a coin comes up heads is probably . But if you flip in multiple times and it repeatedly comes up heads, you'll suspect the coin is weighted and want to update your confidence to have a different posterior probability .  The calculations get involved, so let's skip over them to focus on the big picture. The key point is, Bayes's theorem provides a process you can use to update beliefs based on new evidence. This process, called Bayesian inference , has many applications. One of them is spam filtering for email. The problem is, you want to determine whether an email is spam, but you can't know with certainty. Instead, the idea is that certain features adjust the likelihood that an email is spam—coming from a contact lowers the likelihood, the existence of common spam phrases increases it. You train the filter, going through repeated cycles of updating probabilities. At the end you have a program that identifies spam with a high degree of accuracy.  There are many other applications of Bayesian inference. This is a an instance where you can point to a topic in elementary mathematics (probability) and tell students how it gets used in technology they see every day.  "
+},
+{
+  "id": "sec12-bayes-5",
+  "level": "2",
+  "url": "sec12-bayes.html#sec12-bayes-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "conditional probability "
+},
+{
+  "id": "sec12-bayes-7",
+  "level": "2",
+  "url": "sec12-bayes.html#sec12-bayes-7",
+  "type": "Definition",
+  "number": "12.4.1",
+  "title": "Conditional probability.",
+  "body": "Conditional probability  Suppose and are events in a probability space with sample space . The conditional probability of assuming , written , is the likelihood that happens assuming you know that happens. It can be calculated as In case you are dealing with uniform probability, it can equivalently be calculated by counting: Like many important concepts, this one goes by many names. You see people talk about the probabability of given or the the probability of conditional on or other ways to express conditional probability.  "
+},
+{
+  "id": "sec12-bayes-10",
+  "level": "2",
+  "url": "sec12-bayes.html#sec12-bayes-10",
+  "type": "Checkpoint",
+  "number": "12.4.2",
+  "title": "",
+  "body": " You roll . Assuming the first die rolls a , how likely is it that the results sum to at least ?  This is a conditional probability. We could look at all outcomes of rolling three dice, but it's easier to think only about the outcomes where the first die is . There are outcomes to look at, since the remaining two dice rolls independently have outcomes each. We need to count how many of these outcomes sum to at least . We can do list them: These are outcomes, so the conditional probability is   "
+},
+{
+  "id": "sec12-bayes-11",
+  "level": "2",
+  "url": "sec12-bayes.html#sec12-bayes-11",
+  "type": "Theorem",
+  "number": "12.4.3",
+  "title": "",
+  "body": " Suppose and are events in a probability space. Then we can calculate their joint probability as   This falls out from writing these various probabilities as fractions. First let's write them as counts for uniform probability, where is the sample space: Alternatively you can write solely in terms of probabilities:   "
+},
+{
+  "id": "sec12-bayes-12",
+  "level": "2",
+  "url": "sec12-bayes.html#sec12-bayes-12",
+  "type": "Checkpoint",
+  "number": "12.4.4",
+  "title": "",
+  "body": " You roll . How likely is it that the first die rolls a and they sum to at least ?  Use conditional probability! You want to calculate , where  the first die is and  the sum is at least . In an earlier checkpoint we already calculated so what remains is to calculate .  "
+},
+{
+  "id": "sec12-bayes-14",
+  "level": "2",
+  "url": "sec12-bayes.html#sec12-bayes-14",
+  "type": "Theorem",
+  "number": "12.4.5",
+  "title": "Bayes’s theorem.",
+  "body": "Bayes's theorem  Consider events and in a sample space, where both events have nonzero probability. Then   This is surprisingly straightforward. The key idea is to unpack the definition of conditional probability: . Substituting this into the righthand side of the equation we get Now note that is by definition of conditional probabilty, the same as . But that's the lefthand side of the equation.  "
+},
+{
+  "id": "sec12-bayes-15",
+  "level": "2",
+  "url": "sec12-bayes.html#sec12-bayes-15",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "false positives false negatives "
+},
+{
+  "id": "sec12-bayes-17",
+  "level": "2",
+  "url": "sec12-bayes.html#sec12-bayes-17",
+  "type": "Example",
+  "number": "12.4.6",
+  "title": "",
+  "body": " Disease has a incidence rate, meaning it occurs in of the population. A test for disease has a chance of giving the correct diagnosis, whether positive or negative. You test positive. How likely is it you have disease ?  Let's give some names to these events. Call the event you have the disease and the event the test came back positive . What we are trying to calculate is the conditional probability . We know a few probabilities: The first is the incidence rate, the second is the true positive rate, and the last is the false positive rate. Because we know the conditional probability in the opposite direction, you might think we could use Bayes's theorem. You are correct. We will calculate You can think of the fraction on the right as follows. The numerator is what fraction of the population both has disease and has a positive test, while the denominator is how many have a positive test. We have to do a small amount of work to calculate the denominator, since we aren't given it directly. To calculate what fraction of the population have a positive test, we add together the true positives with the false positives. The true positives are given by the formula Similarly, the false negatives are given by the formula (We know because that's how many don't have the disease, namely .) Adding those together we get Now we plug the three values into Bayes's theorem: That is, there's only about a chance you have the disease.  "
+},
+{
+  "id": "sec12-bayes-21",
+  "level": "2",
+  "url": "sec12-bayes.html#sec12-bayes-21",
+  "type": "Definition",
+  "number": "12.4.7",
+  "title": "The Bayesian interpretation of probability.",
+  "body": "The Bayesian interpretation of probability  The Bayesian interpretation of probability , also called the subjective interpretation , gives the following meaning. A probability represents a degree of confidence that the event will happen. For example, if is the event of a coin flip coming up heads you might assign . However, if you happen to know that the coin is biased to come up tails most of the time you'd assign it a much lower chance.  For a more interesting example, suppose is the event that your preferred candidate wins the upcoming election. This is something it's hard to make sense of with frequentism, but here is your degree of confidence in this outcome. You could be more or less rational about this. Maybe it's based entirely on your conviction that your candidate is the best one so everyone should agree, or maybe it's based on rigorous polling and election simulation. Either way, the number is a measure of your subjective confidence.  "
+},
+{
+  "id": "sec12-bayes-24",
+  "level": "2",
+  "url": "sec12-bayes.html#sec12-bayes-24",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "prior probability posterior probability "
+},
+{
+  "id": "sec12-bayes-25",
+  "level": "2",
+  "url": "sec12-bayes.html#sec12-bayes-25",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Bayesian inference "
+},
+{
+  "id": "sec12-exercises",
+  "level": "1",
+  "url": "sec12-exercises.html",
+  "type": "Section",
+  "number": "12.5",
+  "title": "Exercises",
+  "body": " Exercises    Give an example of a random trial. What is the associated sample space? Give a couple example of events in the sample space. Is this a uniform probability space? Explain.    Imagine the random trial of a polling company calling random numbers until someone picks up and answers some questions, with the outcome of the trial being the set of answers. Is this uniform or not? Explain your answer.    You roll and add them. For each possible sum from to compute its probability.  You can represent the sample space as a square, with each cell corresponding to a possible roll for the first and second die. Does this picture help you to see a pattern?    You draw two cards from a deck. How likely is it that they have the same suit? How likely is it they have the same rank?  A good way to think about this is, imagine you have already drawn the first card. How likely is it that the second card matches it in suit\/rank?    You choose a six digit PIN at random for unlocking your phone. How likely is it that a digit occurs at least twice in your PIN?    For your IRS tax returns you choose a four digit PIN randomly so that all digits are different. How likely is it that all four digits are odd?    Explain why the following facts about binomial coefficients are true. Here, are whole numbers. For at least one fact, give an explanation based on the formula definition. For at least one fact, give an explanation based on the counting definition (that is, counts how many ways there are to choose things from options where you don't care about order).              A facet of conditional probability which sometimes causes confusion for people is that getting information can change a probability. To illustrate this, imagine your friend draws a card and asks you to guess what it is. No matter your guess, your probability of being correct is . Explain why that is. Give an example of information about the card your friend could give that would allow you to improve your odds of success. Calculate the new, improved probability and explain why the information changes the probability of a correct guess.    Which interpretation of probability do you personally find most convincing, frequentism or Bayesianism? Write a few paragraphs to convince a reader to agree with you on the question.    Go to the wikipedia page on Bayesian inference and read the applications section. Pick one of the applications and research it further. Write a few paragraphs explaining this application of Bayesian inference.    "
+},
+{
+  "id": "sec12-exercises-2-1",
+  "level": "2",
+  "url": "sec12-exercises.html#sec12-exercises-2-1",
+  "type": "Exercise",
+  "number": "12.5.1",
+  "title": "",
+  "body": " Give an example of a random trial. What is the associated sample space? Give a couple example of events in the sample space. Is this a uniform probability space? Explain.  "
+},
+{
+  "id": "sec12-exercises-2-2",
+  "level": "2",
+  "url": "sec12-exercises.html#sec12-exercises-2-2",
+  "type": "Exercise",
+  "number": "12.5.2",
+  "title": "",
+  "body": " Imagine the random trial of a polling company calling random numbers until someone picks up and answers some questions, with the outcome of the trial being the set of answers. Is this uniform or not? Explain your answer.  "
+},
+{
+  "id": "sec12-exercises-2-3",
+  "level": "2",
+  "url": "sec12-exercises.html#sec12-exercises-2-3",
+  "type": "Exercise",
+  "number": "12.5.3",
+  "title": "",
+  "body": " You roll and add them. For each possible sum from to compute its probability.  You can represent the sample space as a square, with each cell corresponding to a possible roll for the first and second die. Does this picture help you to see a pattern?  "
+},
+{
+  "id": "sec12-exercises-2-4",
+  "level": "2",
+  "url": "sec12-exercises.html#sec12-exercises-2-4",
+  "type": "Exercise",
+  "number": "12.5.4",
+  "title": "",
+  "body": " You draw two cards from a deck. How likely is it that they have the same suit? How likely is it they have the same rank?  A good way to think about this is, imagine you have already drawn the first card. How likely is it that the second card matches it in suit\/rank?  "
+},
+{
+  "id": "sec12-exercises-2-5",
+  "level": "2",
+  "url": "sec12-exercises.html#sec12-exercises-2-5",
+  "type": "Exercise",
+  "number": "12.5.5",
+  "title": "",
+  "body": " You choose a six digit PIN at random for unlocking your phone. How likely is it that a digit occurs at least twice in your PIN?  "
+},
+{
+  "id": "sec12-exercises-2-6",
+  "level": "2",
+  "url": "sec12-exercises.html#sec12-exercises-2-6",
+  "type": "Exercise",
+  "number": "12.5.6",
+  "title": "",
+  "body": " For your IRS tax returns you choose a four digit PIN randomly so that all digits are different. How likely is it that all four digits are odd?  "
+},
+{
+  "id": "sec12-exercises-2-7",
+  "level": "2",
+  "url": "sec12-exercises.html#sec12-exercises-2-7",
+  "type": "Exercise",
+  "number": "12.5.7",
+  "title": "",
+  "body": " Explain why the following facts about binomial coefficients are true. Here, are whole numbers. For at least one fact, give an explanation based on the formula definition. For at least one fact, give an explanation based on the counting definition (that is, counts how many ways there are to choose things from options where you don't care about order).            "
+},
+{
+  "id": "sec12-exercises-2-8",
+  "level": "2",
+  "url": "sec12-exercises.html#sec12-exercises-2-8",
+  "type": "Exercise",
+  "number": "12.5.8",
+  "title": "",
+  "body": " A facet of conditional probability which sometimes causes confusion for people is that getting information can change a probability. To illustrate this, imagine your friend draws a card and asks you to guess what it is. No matter your guess, your probability of being correct is . Explain why that is. Give an example of information about the card your friend could give that would allow you to improve your odds of success. Calculate the new, improved probability and explain why the information changes the probability of a correct guess.  "
+},
+{
+  "id": "sec12-exercises-2-9",
+  "level": "2",
+  "url": "sec12-exercises.html#sec12-exercises-2-9",
+  "type": "Exercise",
+  "number": "12.5.9",
+  "title": "",
+  "body": " Which interpretation of probability do you personally find most convincing, frequentism or Bayesianism? Write a few paragraphs to convince a reader to agree with you on the question.  "
+},
+{
+  "id": "sec12-exercises-2-10",
+  "level": "2",
+  "url": "sec12-exercises.html#sec12-exercises-2-10",
+  "type": "Exercise",
+  "number": "12.5.10",
+  "title": "",
+  "body": " Go to the wikipedia page on Bayesian inference and read the applications section. Pick one of the applications and research it further. Write a few paragraphs explaining this application of Bayesian inference.  "
 },
 {
   "id": "backmatter-2",

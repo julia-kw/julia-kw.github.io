@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Permutations and combinations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="Explorations in Elementary Mathematics">
+<meta property="og:title" content="Explorations in Elementary Mathematics">
+<meta property="book:title" content="Explorations in Elementary Mathematics">
+<meta name="twitter:description" content="An exploration of the mathematical ideas behind elementary school mathematics, intended for those who plan to teach elementary school.">
+<meta property="og:description" content="An exploration of the mathematical ideas behind elementary school mathematics, intended for those who plan to teach elementary school.">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.44"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.2.10';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="jwilliams-ece" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead" role="banner"><div class="ptx-banner"><div class="title-container">
+<div class="heading ptx-banner-heading"><a href="ece-book.html"><span class="title">Explorations in Elementary Mathematics</span></a></div>
+<p class="byline">Julia Kameryn Williams</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button id="ptx-toc-toggle" type="button" aria-controls="ptx-sidebar" class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="ptx-search-box">
+<div class="ptx-search-widget"><button id="ptx-search-button" type="button" class="ptx-search-button button" title="Search Book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<dialog id="ptx-search-dialog" class="ptx-dialog ptx-search-dialog"><div class="ptx-search-dialog-controls">
+<input aria-label="Search term" id="ptx-search-terms" class="ptx-search-terms" type="text" name="terms" placeholder="Search terms"><button aria-label="Close" id="ptx-search-close" class="ptx-search-close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div id="ptx-search-status" class="ptx-search-status" aria-live="polite" aria-atomic="true"></div>
+<h2 class="heading ptx-search-results-heading">Search Results: </h2>
+<div id="ptx-search-empty" class="ptx-search-empty"><span>No results.</span></div>
+<ol id="ptx-search-results" class="ptx-search-results"></ol></dialog>
+</div>
+<span class="nav-other-controls"><button id="ptx-readability-options-button" class="ptx-readability-options-button button" title="Readability settings"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf6f1;</span><span class="name">Readability settings</span></button><dialog class="ptx-dialog ptx-readability-options-popup" id="ptx-readability-options-popup"><div class="ptx-readability-options-popup-controls">
+<h2 class="heading">Readability settings</h2>
+<button class="ptx-readability-options-close-button button" id="ptx-readability-options-close-button" title="Close"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cd;</span></button>
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-line-height"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe240;</span><span>Line height</span><output id="ptx-readability-line-height-value" for="ptx-readability-line-height">1.35</output></label><input type="range" id="ptx-readability-line-height" min="1.10" max="3" step="0.05" value="1.35">
+</div>
+<div class="ptx-readability-options-group">
+<label class="ptx-readability-slider-label" for="ptx-readability-font-size"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe245;</span><span>Content font size</span><output id="ptx-readability-font-size-value" for="ptx-readability-font-size">100%</output></label><input type="range" id="ptx-readability-font-size" min="0.8" max="1.5" step="0.05" value="1">
+</div>
+<fieldset class="ptx-readability-options-group ptx-readability-options-group-theme">
+<legend>Theme</legend>
+<label for="ptx-readability-theme-system"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-system" value="system"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe1ab;</span><span>System</span></label><label for="ptx-readability-theme-light"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-light" value="light"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe518;</span><span>Light</span></label><label for="ptx-readability-theme-dark"><input type="radio" name="ptx-readability-theme" id="ptx-readability-theme-dark" value="dark"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span>Dark</span></label>
+</fieldset>
+<fieldset class="ptx-readability-options-group">
+<legend>Assistive technologies</legend>
+<label for="ptx-readability-accessible-permalinks"><input type="checkbox" id="ptx-readability-accessible-permalinks"><span>🔗</span><span>Expose permalinks</span></label>
+</fieldset>
+<div class="ptx-readability-options-group"><button type="button" class="ptx-readability-reset-button button" id="ptx-readability-reset-button"><span class="icon material-symbols-outlined" aria-hidden="true">&#xf053;</span><span class="name">Reset All</span></button></div></dialog></span><span class="treebuttons"><a class="previous-button button" href="sec12-counting.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch12.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec12-bayes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\drm}{\mathrm d} \newcommand{\Nbb}{\mathbb N} \newcommand{\Zbb}{\mathbb Z} \newcommand{\Qbb}{\mathbb Q} \newcommand{\Rbb}{\mathbb R} \newcommand{\Cbb}{\mathbb C} \newcommand\mand{\text{ and }} \newcommand\mor{\text{ or }} \newcommand\abs[1]{\lvert #1 \rvert} \newcommand\card[1]{\abs{#1}} \DeclareMathOperator\lcm{lcm}
+ \newcommand\simplecuboid[3]{
+ \fill[gray!80!white] (tpp cs:x=0,y=0,z=#3)
+   -- (tpp cs:x=0,y=#2,z=#3)
+   -- (tpp cs:x=#1,y=#2,z=#3)
+   -- (tpp cs:x=#1,y=0,z=#3) -- cycle;
+ \fill[gray]  (tpp cs:x=0,y=0,z=0)
+   -- (tpp cs:x=0,y=0,z=#3)
+   -- (tpp cs:x=0,y=#2,z=#3)
+   -- (tpp cs:x=0,y=#2,z=0) -- cycle;
+ \fill[gray!50!white] (tpp cs:x=0,y=0,z=0)
+   -- (tpp cs:x=0,y=0,z=#3)
+   -- (tpp cs:x=#1,y=0,z=#3)
+   -- (tpp cs:x=#1,y=0,z=0) -- cycle;}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" role="complementary" class="ptx-sidebar"><nav id="ptx-toc" tabindex="-1" aria-label="Contents" class="ptx-toc depth3 parts focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="prefaceX.html" class="internal"><span class="title">Preface: To the student</span></a></div></li>
+<li class="toc-item toc-part">
+<div class="toc-title-box"><a href="part1.html" class="internal"><span class="codenumber">I</span> <span class="title">Arithmetic</span></a></div>
+<ul id="ptx-toc-group-part1" class="structural toc-item-list">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch0.html" class="internal"><span class="codenumber">0</span> <span class="title">Critical Thinking</span></a></div>
+<ul id="ptx-toc-group-ch0" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec0-howto.html" class="internal"><span class="codenumber">0.1</span> <span class="title">Reading mathematics</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec0-problems.html" class="internal"><span class="codenumber">0.2</span> <span class="title">Problem solving</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec0-exercises.html" class="internal"><span class="codenumber">0.3</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec0-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec0-exercises.html#sec0-exercises-2" class="internal"><span class="codenumber">0.3</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch1.html" class="internal"><span class="codenumber">1</span> <span class="title">The Natural Numbers</span></a></div>
+<ul id="ptx-toc-group-ch1" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-what-is.html" class="internal"><span class="codenumber">1.1</span> <span class="title">What even is counting?</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-sets.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Sets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-counting.html" class="internal"><span class="codenumber">1.3</span> <span class="title">The meaning of the natural numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-operations.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Operations on sets</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-numbers.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Number classes</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-arithmetic.html" class="internal"><span class="codenumber">1.6</span> <span class="title">The arithmetic of natural numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-div.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Division</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec1-ooo.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Order of Operations</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec1-exercises.html" class="internal"><span class="codenumber">1.9</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec1-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec1-exercises.html#sec1-exercises-2" class="internal"><span class="codenumber">1.9</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch2.html" class="internal"><span class="codenumber">2</span> <span class="title">Numeration</span></a></div>
+<ul id="ptx-toc-group-ch2" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-roman.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Roman Numerals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-hindu-arabic.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The Hindu–Arabic numeral system</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-algorithms.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Algorithms for adding, subtracting, and multiplying</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec2-bases.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Other bases</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec2-exercises.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec2-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec2-exercises.html#sec2-exercises-2" class="internal"><span class="codenumber">2.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch3.html" class="internal"><span class="codenumber">3</span> <span class="title">Number Theory</span></a></div>
+<ul id="ptx-toc-group-ch3" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec3-prime.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Prime numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec3-divisibility.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Divisibility Rules</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec3-gcd.html" class="internal"><span class="codenumber">3.3</span> <span class="title">GCD and LCM</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec3-exercises.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec3-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec3-exercises.html#sec3-exercises-2" class="internal"><span class="codenumber">3.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch4.html" class="internal"><span class="codenumber">4</span> <span class="title">The Integers</span></a></div>
+<ul id="ptx-toc-group-ch4" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-motivation.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Some motivation</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-definition.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Defining the integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-geometry.html" class="internal"><span class="codenumber">4.3</span> <span class="title">The geometric meaning of integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-arithmetic.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Arithmetic with integers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec4-clocks.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Clocks and modular arithmetic</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec4-exercises.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec4-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec4-exercises.html#sec4-exercises-2" class="internal"><span class="codenumber">4.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch5.html" class="internal"><span class="codenumber">5</span> <span class="title">The Rational Numbers</span></a></div>
+<ul id="ptx-toc-group-ch5" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-motivation.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Motivating the rational numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-definition.html" class="internal"><span class="codenumber">5.2</span> <span class="title">The definition of the rational numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-arithmetic.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Arithmetic of fractions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec5-percents.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Percents</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec5-exercises.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec5-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec5-exercises.html#sec5-exercises-2" class="internal"><span class="codenumber">5.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch6.html" class="internal"><span class="codenumber">6</span> <span class="title">The Real Numbers</span></a></div>
+<ul id="ptx-toc-group-ch6" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-decimal.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Writing fractions in decimal</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-arithmetic.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The arithmetic of Hindu–Arabic numerals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-approx.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Approximations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-definition.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Defining the real numbers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec6-characterizations.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Characterizing rational and irrational numbers</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec6-exercises.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec6-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec6-exercises.html#sec6-exercises-2" class="internal"><span class="codenumber">6.6</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-part">
+<div class="toc-title-box"><a href="part2.html" class="internal"><span class="codenumber">II</span> <span class="title">Geometry</span></a></div>
+<ul id="ptx-toc-group-part2" class="structural toc-item-list">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch7.html" class="internal"><span class="codenumber">7</span> <span class="title">Shapes and solids</span></a></div>
+<ul id="ptx-toc-group-ch7" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec7-shapes.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Shapes on a plane</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec7-triangles.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Triangles and quadrilaterals</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec7-polygons.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Polygons</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec7-solids.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Solids and three-dimensional space</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec7-exercises.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec7-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec7-exercises.html#sec7-exercises-2" class="internal"><span class="codenumber">7.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch8.html" class="internal"><span class="codenumber">8</span> <span class="title">Measurement.</span></a></div>
+<ul id="ptx-toc-group-ch8" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec8-length.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Length and perimeter</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec8-pythagorean.html" class="internal"><span class="codenumber">8.2</span> <span class="title">The Pythagorean theorem</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec8-area.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Area</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec8-volume.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Volume and surface area</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec8-exercises.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec8-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec8-exercises.html#sec8-exercises-2" class="internal"><span class="codenumber">8.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch9.html" class="internal"><span class="codenumber">9</span> <span class="title">Symmetry and transformations</span></a></div>
+<ul id="ptx-toc-group-ch9" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec9-rigid.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Rigid motions: translations and rotations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec9-symmetry.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Symmetry and reflection</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec9-tilings.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Tilings</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec9-exercises.html" class="internal"><span class="codenumber">9.4</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec9-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec9-exercises.html#sec9-exercises-2" class="internal"><span class="codenumber">9.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch10.html" class="internal"><span class="codenumber">10</span> <span class="title">Congruence and Similarity</span></a></div>
+<ul id="ptx-toc-group-ch10" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec10-congruent.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Congruent triangles</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec10-similar.html" class="internal"><span class="codenumber">10.2</span> <span class="title">Similar triangles</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec10-shapes.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Other shapes</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec10-exercises.html" class="internal"><span class="codenumber">10.4</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec10-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec10-exercises.html#sec10-exercises-2" class="internal"><span class="codenumber">10.4</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-part contains-active">
+<div class="toc-title-box"><a href="part3.html" class="internal"><span class="codenumber">III</span> <span class="title">Statistics</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-part3">
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch11.html" class="internal"><span class="codenumber">11</span> <span class="title">Interpreting Data</span></a></div>
+<ul id="ptx-toc-group-ch11" class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec11-data.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Representing data</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec11-center.html" class="internal"><span class="codenumber">11.2</span> <span class="title">Measures of center</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec11-spread.html" class="internal"><span class="codenumber">11.3</span> <span class="title">Measures of spread</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec11-inference.html" class="internal"><span class="codenumber">11.4</span> <span class="title">Statistical inference</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec11-exercises.html" class="internal"><span class="codenumber">11.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec11-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec11-exercises.html#sec11-exercises-2" class="internal"><span class="codenumber">11.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch12.html" class="internal"><span class="codenumber">12</span> <span class="title">Probability</span></a></div>
+<ul class="structural toc-item-list contains-active" id="ptx-toc-group-ch12">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec12-frequentism.html" class="internal"><span class="codenumber">12.1</span> <span class="title">The meaning of probability: frequentism</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec12-counting.html" class="internal"><span class="codenumber">12.2</span> <span class="title">Counting and probability</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec12-perm.html" class="internal"><span class="codenumber">12.3</span> <span class="title">Permutations and combinations</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec12-bayes.html" class="internal"><span class="codenumber">12.4</span> <span class="title">The meaning of probability: Bayesianism</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec12-exercises.html" class="internal"><span class="codenumber">12.5</span> <span class="title">Exercises</span></a></div>
+<ul id="ptx-toc-group-sec12-exercises" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec12-exercises.html#sec12-exercises-2" class="internal"><span class="codenumber">12.5</span> <span class="title">Exercises</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sec12-perm">
+<h1 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Permutations and combinations</span>
+</h1>
+<div class="para" id="sec12-perm-2">A key idea we ended on in the last section is that if an event can be thought of as a multistep process, you can determine its event by multiplying. In this section we build on that idea by looking at some common counting problems.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec12-perm-3">We begin with a well-known example, known as the <dfn class="terminology">birthday problem</dfn>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec12-perm-4" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="sec12-perm-4-1">You are at a party with <span class="process-math">\(20\)</span> people total. Is it more likely that two people share a birthday or that everyone has different birthdays?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec12-perm-4-2">To answer this, we will make a couple simplifying assumptions. First, we will exclude leap day birthdays, which occur approximately every four years. Second, we will assume that all <span class="process-math">\(365\)</span> birthdays are equally likely. These assumptions will mean our probability calculation won’t be <span class="process-math">\(100\%\)</span> correct. But it will be close enough to know which outcome is more likely.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec12-perm-4-3">We are dealing with complementary events, so knowing one’s probability lets us easily compute the other. As such we should ask, which of the two is easier to calculate? Take a moment to ask that.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec12-perm-4-4">Perhaps you answered that it’s easier to calculate how likely it is that everyone has a different birthday. I agree. We can think of this as a twenty step process—pick the first birthday, then the second one, and so on, each time having to pick a different one. On the other hand, it’s hard to model two people sharing a birthday as a multi-step process—which two?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec12-perm-4-5">
+<div class="para">For the first step, there are <span class="process-math">\(365\)</span> birthdays and <span class="process-math">\(365\)</span> are free to claim without conflict. For the second person, there are <span class="process-math">\(365\)</span> birthdays and <span class="process-math">\(364\)</span> are free to claim without conflict. After all, there’s only one day that’s off-limit so far. Each step we get one fewer allowed birthday while still having <span class="process-math">\(365\)</span> to choose from. Thus we get the following big product to calculate:</div>
+<div class="displaymath process-math" id="sec12-perm-4-5-6">
+\begin{equation*}
+\frac{365}{365} \cdot \frac{364}{365} \cdot \frac{363}{365} \cdot \cdots \cdot \frac{346}{365}.
+\end{equation*}
+</div>
+<div class="para">At this point we pull out a computer because this is tedious to do by hand. The probability is</div>
+<div class="displaymath process-math" id="sec12-perm-4-5-7">
+\begin{equation*}
+{\tiny \frac{1,036,690,753,342,460,944,844,102,991,873,410,166,195,245,875,200,000}
+{1,761,397,149,289,626,339,965,899,029,490,128,250,217,437,744,140,625}}
+\approx 58.9\%.
+\end{equation*}
+</div>
+<div class="para">That is it is only slightly more likely that all birthdays are different than that two people share a birthday. This is even though there’s only twenty people at the party, much less than the <span class="process-math">\(365\)</span> possible birthdays.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec12-perm-4-6">If there’s instead <span class="process-math">\(30\)</span> people at the party, you can run a similar calculation. In this case, the probability everyone has a different birthday is <span class="process-math">\(\approx 29.4\%\text{.}\)</span> That is, with only <span class="process-math">\(30\)</span> people it’s much more likely to have two people share a birthday than it is otherwise. It’s at <span class="process-math">\(23\)</span> people that this tipping point occurs and it becomes more likely to have a shared birthday.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec12-perm-4-7">Some people call this the birthday paradox, because they think it doesn’t make sense for a shared birthday to be more common than not when you have so much fewer people than days in the year. But our calculations show this expectation is flawed.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 12.3.1"><a tabindex="-1" href="#sec12-perm-4" title="Copy heading and permalink for Example 12.3.1" aria-label="Copy heading and permalink for Example 12.3.1">🔗</a></div>
+</article></details>
+<div class="para" id="sec12-perm-5">Let’s introduce some notation for this kind of counting problem.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="sec12-perm-6"><h2 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Factorials and permutations.</span>
+</h2>
+<div class="para" id="sec12-perm-6-2-1">A <dfn class="terminology">permutation</dfn> of a finite list of things is a way to order those things. The <dfn class="terminology">factorial</dfn> function, written <span class="process-math">\(n!\text{,}\)</span> counts how many permutations there are for a list of <span class="process-math">\(n\)</span> many things.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="sec12-perm-6-2-2">
+<div class="para">We can calculate factorials using the rule that <span class="process-math">\(n!\)</span> is the product of all whole numbers from <span class="process-math">\(n\)</span> down to <span class="process-math">\(1\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec12-perm-6-2-2-4">
+\begin{equation*}
+n! = n(n-1)(n-2) \cdots 1.
+\end{equation*}
+</div>
+<div class="para">Alternatively, we can use these rules</div>
+<div class="displaymath process-math" id="sec12-perm-6-2-2-5">
+\begin{align*}
+n! \amp = n \cdot (n-1)!\\
+0! \amp = 1.
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 12.3.2: Factorials and permutations"><a tabindex="-1" href="#sec12-perm-6" title="Copy heading and permalink for Definition 12.3.2: Factorials and permutations" aria-label="Copy heading and permalink for Definition 12.3.2: Factorials and permutations">🔗</a></div>
+</article>
+<div class="para logical" id="sec12-perm-7">
+<div class="para">To understand the formula, think of picking a permutation as an <span class="process-math">\(n\)</span> step process. First you pick the first object, then the second, then the third, and so on until there are none left. You start with <span class="process-math">\(n\)</span> choices, and each step has one fewer. For example, if you want to order <span class="process-math">\(5\)</span> things there are</div>
+<div class="displaymath process-math" id="sec12-perm-7-4">
+\begin{equation*}
+5! = 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120
+\end{equation*}
+</div>
+<div class="para">ways to do it.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec12-perm-8">That <span class="process-math">\(0! = 1\)</span> is the sort of thing that mathematicians think is natural and obvious but makes normal people upset. Let me defend the choice. How many ways are there to order zero things? The answer, of course, is one. There is only one way to do it, namely to do nothing. Think, how many ways are there to order zero books on a shelf: just one, namely leaving the shelf bare.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec12-perm-9">If you don’t find that satsifactory, here are two more arguments. First, <span class="process-math">\(0!\)</span> is the product of zero many numbers, and if you multiple zero numbers together you should get the multiplicative identity <span class="process-math">\(1\text{.}\)</span> This is the same reasoning as why <span class="process-math">\(a^0 = 1 \)</span> for any base <span class="process-math">\(a\text{.}\)</span> Second, there are useful formulas involving factorials that make sense when to talk about with <span class="process-math">\(0!\text{.}\)</span> For these formulas, having <span class="process-math">\(0! = 1\)</span> gives the correct answer. (We will see one of these formulas soon when we talk about combinatins.) So this is a practical choice.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec12-perm-10" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading"><span class="type">Aside</span></h2></summary>
+<aside class="aside aside-like knowl__content">
+<div class="para" id="sec12-perm-10-1">Not so secretly this practical choice is the original answer in a beaglepuss. Why do these formulas give the correct answer when we say <span class="process-math">\(0! = 1\text{?}\)</span> Because what we are counting is the number of ways to order zero things.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</aside></details>
+<div class="para" id="sec12-perm-11">With the birthday problem example, we didn’t calculate <span class="process-math">\(365!\)</span> but rather something close to it. We weren’t asking how many ways to order <span class="process-math">\(365\)</span> birthdays but rather only picked twenty of them. Let’s also give a name to this concept.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="sec12-perm-12"><h2 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Falling factorial.</span>
+</h2>
+<div class="para logical" id="sec12-perm-12-2-1">
+<div class="para">Consider nonnegative numbers <span class="process-math">\(n\)</span> and <span class="process-math">\(k\)</span> with <span class="process-math">\(k \le n\text{.}\)</span> Define the <dfn class="terminology">falling factorial</dfn> <span class="process-math">\((n)_k\)</span> as the product of <span class="process-math">\(k\)</span> many integers in sequence counting down from <span class="process-math">\(n\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec12-perm-12-2-1-8">
+\begin{equation*}
+(n)_k = n \cdot (n-1) \cdot \cdots (n-k+1).
+\end{equation*}
+</div>
+<div class="para">Note that to have <span class="process-math">\(k\)</span> many numbers multiplied, the last one should be <span class="process-math">\(n - (k-1)\text{,}\)</span> not <span class="process-math">\(n-k\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-12-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="sec12-perm-12-2-2">The falling factorial <span class="process-math">\((n)_k\)</span> counts the number of ways to order <span class="process-math">\(k\)</span> many things from <span class="process-math">\(n\)</span> options. Note that <span class="process-math">\((n)_n = n!\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-12-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 12.3.3: Falling factorial"><a tabindex="-1" href="#sec12-perm-12" title="Copy heading and permalink for Definition 12.3.3: Falling factorial" aria-label="Copy heading and permalink for Definition 12.3.3: Falling factorial">🔗</a></div>
+</article>
+<div class="para logical" id="sec12-perm-13">
+<div class="para">Note that</div>
+<div class="displaymath process-math" id="sec12-perm-13-1">
+\begin{equation*}
+(n)_k = \frac{n!}{(n-k)!}.
+\end{equation*}
+</div>
+<div class="para">But the latter formula isn’t helpful in practice since it requires you to divide two large numbers. For example, it’s easier to compute <span class="process-math">\((10)_2 = 10 \cdot 9 = 90\)</span> rather than compute</div>
+<div class="displaymath process-math" id="sec12-perm-13-3">
+\begin{equation*}
+\frac{10!}{8!} = \frac{3628800}{40320}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec12-perm-14" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para logical" id="sec12-perm-14-1">
+<div class="para">Explain the equality in the above paragraph. Why is</div>
+<div class="displaymath process-math" id="sec12-perm-14-1-1">
+\begin{equation*}
+(n)_k = \frac{n!}{(n-k)!}?
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-14-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 12.3.4"><a tabindex="-1" href="#sec12-perm-14" title="Copy heading and permalink for Checkpoint 12.3.4" aria-label="Copy heading and permalink for Checkpoint 12.3.4">🔗</a></div>
+</article></details>
+<details id="sec12-perm-15" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="sec12-perm-15-1">There are eight swimmers in a race. How many different possible outcomes are there for who takes the top three positions?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-15-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec12-perm-15-2">
+<div class="para">To count this, we can think of it as a three step process. There’s <span class="process-math">\(8\)</span> many possibliities for who gets first. Once that’s chosen, there’s <span class="process-math">\(7\)</span> many possibilities for second, and then <span class="process-math">\(6\)</span> many possibilities for third. So in all there are</div>
+<div class="displaymath process-math" id="sec12-perm-15-2-4">
+\begin{equation*}
+(8)_3 = 8 \cdot 7 \cdot 6 = 336
+\end{equation*}
+</div>
+<div class="para">possible outcomes for the top three.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-15-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec12-perm-15-3">Note that if you want to know about the order of all eight swimmers there’s many more possible outcomes, namely <span class="process-math">\(8! = 40320\)</span> many. If we only care about the top three then, for instance, we aren’t going to count it as a different outcome if seventh and eighth swap places. As such there are much fewer outcomes to count.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-15-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 12.3.5"><a tabindex="-1" href="#sec12-perm-15" title="Copy heading and permalink for Example 12.3.5" aria-label="Copy heading and permalink for Example 12.3.5">🔗</a></div>
+</article></details>
+<details id="sec12-perm-16" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="sec12-perm-16-1">There are twenty people at a party. How many different ways are there for them to all have different birthdays? (Discount leap days.)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-16-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec12-perm-16-2">
+<div class="para">We’ve seen this counting problem before. There’s <span class="process-math">\(365\)</span> options for the first person, then as we go along there’s one fewer option for each person. Thus in total there are</div>
+<div class="displaymath process-math" id="sec12-perm-16-2-2">
+\begin{equation*}
+(365)_{20} = 365 \cdot 364 \cdot \cdots \cdot 346
+\end{equation*}
+</div>
+<div class="para">many possibilities.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-16-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 12.3.6"><a tabindex="-1" href="#sec12-perm-16" title="Copy heading and permalink for Example 12.3.6" aria-label="Copy heading and permalink for Example 12.3.6">🔗</a></div>
+</article></details>
+<details id="sec12-perm-17" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="sec12-perm-17-1-1">You choose a PIN at random for your ATM card. If the PIN is four digits, how likely is it that every digit differs?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-17-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec12-perm-17-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec12-perm-17-2-1">
+<div class="para">This is a question about uniform probability, so it reduces to two counting problems. We want to calculate</div>
+<div class="displaymath process-math" id="sec12-perm-17-2-1-1">
+\begin{equation*}
+\frac{\text{number of PINs with no repeat}}{\text{number of PINs}}.
+\end{equation*}
+</div>
+<div class="para">Let’s count the denominator first. Choosing a PIN is a four step process, with each step having <span class="process-math">\(10\)</span> options: the digits <span class="process-math">\(0\)</span> through <span class="process-math">\(9\text{.}\)</span> So in total there are</div>
+<div class="displaymath process-math" id="sec12-perm-17-2-1-5">
+\begin{equation*}
+10 \cdot 10 \cdot 10 \cdot 10 = 10^4
+\end{equation*}
+</div>
+<div class="para">many possible PINs.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-17-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec12-perm-17-2-2">
+<div class="para">The numerator is also chosen by a four step process, except this time each step you have one fewer option than before. Thus the numerator is counted by</div>
+<div class="displaymath process-math" id="sec12-perm-17-2-2-1">
+\begin{equation*}
+(10)_4 = 10 \cdot 9 \cdot 8 \cdot 7.
+\end{equation*}
+</div>
+<div class="para">In all, the probability a random PIN doesn’t repeat a digit is</div>
+<div class="displaymath process-math" id="sec12-perm-17-2-2-2">
+\begin{equation*}
+\frac{(10)_4}{10^4} = \frac{5040}{10000} = \frac{63}{125} = 50.4\%.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-17-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 12.3.7.1"><a tabindex="-1" href="#sec12-perm-17-2" title="Copy heading and permalink for Solution 12.3.7.1" aria-label="Copy heading and permalink for Solution 12.3.7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 12.3.7"><a tabindex="-1" href="#sec12-perm-17" title="Copy heading and permalink for Checkpoint 12.3.7" aria-label="Copy heading and permalink for Checkpoint 12.3.7">🔗</a></div>
+</article></details>
+<div class="para logical" id="sec12-perm-18">
+<div class="para">Note that this was essentially the same as the birthday problem. The numbers were different—<span class="process-math">\(4\)</span> choices from <span class="process-math">\(10\)</span> options rather than <span class="process-math">\(20\)</span> choices from <span class="process-math">\(365\)</span> options. But it’s the same general formula of falling factorial over an exponent:</div>
+<div class="displaymath process-math" id="sec12-perm-18-5">
+\begin{equation*}
+\frac{(n)_k}{n^k}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec12-perm-19">Factorials and falling factorials count selection processes where the order matters—you care about what comes first versus second. Many selection processes are not like that. For example, maybe you need to select three students from a class of twenty to do a group project. It doesn’t make sense to say who is picked first versus second versus third. If you tried to count this as <span class="process-math">\((20)_3 = 6840\)</span> you would be way overcounting, since that would count picking Alice then Bob then Carol and different from picking Bob then Alice then Carol.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec12-perm-20">We need a different device to count this.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-20" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="sec12-perm-21"><h2 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Binomial coefficients.</span>
+</h2>
+<div class="para logical" id="sec12-perm-21-2-1">
+<div class="para">Consider nonnegative numbers <span class="process-math">\(n\)</span> and <span class="process-math">\(k\)</span> with <span class="process-math">\(k \le n\text{.}\)</span> Define the <dfn class="terminology">binomial coefficient</dfn>, also called a <dfn class="terminology">combination</dfn>, <span class="process-math">\(n \choose k\)</span> as</div>
+<div class="displaymath process-math" id="sec12-perm-21-2-1-7">
+\begin{equation*}
+{n \choose k} = \frac{(n)_k}{k!} = \frac{n!}{k!(n-k)!}.
+\end{equation*}
+</div>
+<div class="para">The binomial coefficient <span class="process-math">\(n \choose k\)</span> counts the number of ways to choose <span class="process-math">\(k\)</span> many things from <span class="process-math">\(n\)</span> options, where you don’t care about order.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-21-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 12.3.8: Binomial coefficients"><a tabindex="-1" href="#sec12-perm-21" title="Copy heading and permalink for Definition 12.3.8: Binomial coefficients" aria-label="Copy heading and permalink for Definition 12.3.8: Binomial coefficients">🔗</a></div>
+</article>
+<div class="para" id="sec12-perm-22">The binomial coefficient is so named for its connection to coefficients of the binomial power <span class="process-math">\((x + y)^n\text{,}\)</span> but explaining this connection would be too far a detour for us.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec12-perm-23" class="example example-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="example example-like knowl__content">
+<div class="para" id="sec12-perm-23-1">You are picking three students from a class of twenty to do a group project. How many ways are there to do this?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-23-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec12-perm-23-2">
+<div class="para">We use the binomial coefficient to count this:</div>
+<div class="displaymath process-math" id="sec12-perm-23-2-1">
+\begin{equation*}
+{20 \choose 3} = \frac{(20)_3}{3!} = \frac{20 \cdot 19 \cdot 18}{3 \cdot 2 \cdot 1} = 1140.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-23-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 12.3.9"><a tabindex="-1" href="#sec12-perm-23" title="Copy heading and permalink for Example 12.3.9" aria-label="Copy heading and permalink for Example 12.3.9">🔗</a></div>
+</article></details>
+<div class="para logical" id="sec12-perm-24">
+<div class="para">Let’s see where this formula comes from. Here’s a way to think about this counting problem. To pick three students from twenty, pick a way to order all twenty students, then pick the first three in the order. There’s <span class="process-math">\(20!\)</span> ways to do this. However, there’s not <span class="process-math">\(20!\)</span> different outcomes. If you swap the first and second student you get the same group of three. Or if you swap the thirteenth and nineteenth. So we need to divide out by the amount we are overcounting. One way we overcount is that rearranging the first three students doesn’t change the outcome. There’s <span class="process-math">\(3!\)</span> ways to order them, so we need to divide by <span class="process-math">\(3!\text{.}\)</span> The other way we overcount is the rearring the last seventeen students doesn’t change the outcome. So we also need to divide by <span class="process-math">\(17!\text{,}\)</span> the number of ways to do that. In all, our count is</div>
+<div class="displaymath process-math" id="sec12-perm-24-6">
+\begin{equation*}
+\frac{20!}{3!17!} = {20 \choose 3}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec12-perm-25">
+<div class="para">In general, if you are choosing <span class="process-math">\(k\)</span> things from <span class="process-math">\(n\)</span> where you don’t care about order, you can think of the process as ordering all <span class="process-math">\(n\)</span> things and keeping the first <span class="process-math">\(k\text{.}\)</span> There’s <span class="process-math">\(n!\)</span> ways to do this, but we’re overcounting by factors of <span class="process-math">\(k!\)</span> (you can reorder the first <span class="process-math">\(k\)</span>) and <span class="process-math">\((n-k)!\)</span> (you can reorder the last <span class="process-math">\(n-k\)</span>). In all the count is</div>
+<div class="displaymath process-math" id="sec12-perm-25-10">
+\begin{equation*}
+\frac{n!}{k!(n-k)!} = {n \choose k}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-25" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec12-perm-26" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="sec12-perm-26-1-1">You are choosing three students from a class of twenty to do a group project. How likely is it that Alice is in the group?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-26-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec12-perm-26-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec12-perm-26-2-1">
+<div class="para">We need to calculate</div>
+<div class="displaymath process-math" id="sec12-perm-26-2-1-1">
+\begin{equation*}
+\frac{\text{number of groups with Alice}}{\text{number of groups}}.
+\end{equation*}
+</div>
+<div class="para">We’ve already counted that the denominator is <span class="process-math">\({20 \choose 3} = 1140\text{.}\)</span> It remains to count the numerator. For this, we ask how ways are there to pick a group that includes Alice? For this, Alice’s place is already fixed so we just need to pick the remaining two students. There’s ninteen options for them (you already picked Alice). So the numerator is <span class="process-math">\({19 \choose 2} = 171 \text{.}\)</span> Thus the likelihood you put Alice in the group is</div>
+<div class="displaymath process-math" id="sec12-perm-26-2-1-4">
+\begin{equation*}
+\frac{{19 \choose 2}}{{20 \choose 3}} = \frac{171}{1140} = \frac{3}{20} = 15\%.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-26-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 12.3.10.1"><a tabindex="-1" href="#sec12-perm-26-2" title="Copy heading and permalink for Solution 12.3.10.1" aria-label="Copy heading and permalink for Solution 12.3.10.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 12.3.10"><a tabindex="-1" href="#sec12-perm-26" title="Copy heading and permalink for Checkpoint 12.3.10" aria-label="Copy heading and permalink for Checkpoint 12.3.10">🔗</a></div>
+</article></details>
+<details id="sec12-perm-27" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="sec12-perm-27-1-1">Your department of <span class="process-math">\(10\)</span> people is picking <span class="process-math">\(5\)</span> people to form a committee. This committee will have a chairperson. If all choices are made randomly, how likely is it that you end up on the committee? How likely is it that you are the chairperson?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-27-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec12-perm-27-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="para" id="sec12-perm-27-2-1">The first question is similar to the previous exercise. For the second, think of it as a two step process: first pick the committee, then pick the chair. So to calculate the probabliity that you are on the committee and are the chair you can multiply the probablity that you are on the committee by the probability that, assuming you’re on the committee, you are chosen as chair.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-27-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Hint 12.3.11.1"><a tabindex="-1" href="#sec12-perm-27-2" title="Copy heading and permalink for Hint 12.3.11.1" aria-label="Copy heading and permalink for Hint 12.3.11.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 12.3.11"><a tabindex="-1" href="#sec12-perm-27" title="Copy heading and permalink for Checkpoint 12.3.11" aria-label="Copy heading and permalink for Checkpoint 12.3.11">🔗</a></div>
+</article></details>
+<details id="sec12-perm-28" class="exercise exercise-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading">
+<span class="type">Checkpoint</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.3.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h2></summary>
+<article class="exercise exercise-like knowl__content">
+<div class="para" id="sec12-perm-28-1-1">You randomly divide a class of ten students into two equally sized groups. In this class are Alice and Bob, who hate each other. How likely is it that Alice and Bob end up in the same group?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-28-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec12-perm-28-2" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="hint solution-like knowl__content">
+<div class="para" id="sec12-perm-28-2-1">You can’t count this directly using binomial coefficients. Instead, you need to think similar to how we got the formula for <span class="process-math">\(n \choose k\text{.}\)</span> Think of your choice as being made by ordering the ten students and splitting the first five from the last five. How likely is it that Alice and Bob are on the same side? Is it easier to do the count if you assume you put Alice first and then ordered the remaining students?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec12-perm-28-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Hint 12.3.12.1"><a tabindex="-1" href="#sec12-perm-28-2" title="Copy heading and permalink for Hint 12.3.12.1" aria-label="Copy heading and permalink for Hint 12.3.12.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Checkpoint 12.3.12"><a tabindex="-1" href="#sec12-perm-28" title="Copy heading and permalink for Checkpoint 12.3.12" aria-label="Copy heading and permalink for Checkpoint 12.3.12">🔗</a></div>
+</article></details><div class="autopermalink" aria-hidden="true" data-description="Section 12.3: Permutations and combinations"><a tabindex="-1" href="#sec12-perm" title="Copy heading and permalink for Section 12.3: Permutations and combinations" aria-label="Copy heading and permalink for Section 12.3: Permutations and combinations">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec12-counting.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec12-bayes.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

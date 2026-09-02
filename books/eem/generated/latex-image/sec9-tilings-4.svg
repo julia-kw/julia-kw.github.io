@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="173" height="173" viewBox="0 0 173 173">
+<defs>
+<clipPath id="clip_1">
+<path transform="matrix(1.00008,0,0,-1.00008,86.943439,86.64565)" d="M85.04045 0C85.04045 46.96715 46.96715 85.04045 0 85.04045-46.96715 85.04045-85.04045 46.96715-85.04045 0-85.04045-46.96715-46.96715-85.04045 0-85.04045 46.96715-85.04045 85.04045-46.96715 85.04045 0ZM0 0"/>
+</clipPath>
+<g id="pattern_tile_2">
+<path transform="matrix(1,0,0,-1,-153,736)" d="M0 0H5.66934V5.66934H0ZM5.66934 5.66934H11.33868V11.33868H5.66934Z"/>
+</g>
+<pattern id="pattern_2" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse" x="0" y="0" width="11.33871" height="11.33871">
+<g transform="matrix(1,0,0,-1,153,736)">
+<use x="0" y="0" xlink:href="#pattern_tile_2"/>
+</g>
+</pattern>
+</defs>
+<g clip-path="url(#clip_1)">
+<rect transform="matrix(1,0,0,-1,-153,736)" fill="url(#pattern_2)" x="154.89618" y="564.3071" width="170.09452" height="170.09449"/>
+</g>
+</svg>
