@@ -3,7 +3,7 @@ layout: page
 title: "Math 130 Syllabus (Fall 2026)"
 permalink: /teaching/2026/math130fall/syllabus/
 parentlink: /teaching/2026/math130fall/
-booklink: /books/reasoning
+booklink: /books/reasoning	
 ---
 
 
