@@ -11,6 +11,8 @@ booklink: /books/reasoning
 Announcements
 -------------
 
+* (9/10) [Here]({{ page.url }}ws09-10.pdf) is today's worksheet.
+
 * (9/8) [Here]({{ page.url }}day1.pdf) are the slides from day 1 of unit 1.
 
 Homework
