@@ -18,7 +18,7 @@ Announcements
 Homework
 --------
 
-* Week 1 *Due Monday 9/15*: Section 1.1 Exercises 1–4.
+* Week 1 *Due Tuesday 9/15*: Section 1.1 Exercises 1–4.
 
 Textbook
 --------

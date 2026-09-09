@@ -15,7 +15,7 @@ Announcements
 Homework
 --------
 
-* Week 1 *Due Monday 9/15*: All problems from the 9/8 worksheet; Section 3.2 #1, 3, 5, 6, 8, 10, 14, 16, 22, 54, 56, 60, 92.
+* Week 1 *Due Tuesd 9/15*: All problems from the 9/8 worksheet; Section 3.2 #1, 3, 5, 6, 8, 10, 14, 16, 22, 54, 56, 60, 92.
 
 Schedule
 --------
