@@ -10,6 +10,8 @@ permalink: /teaching/2026/math195fall/
 Announcements
 -------------
 
+* (9/10) [Here]({{ page.url }}ws09.10.pdf) is today's worksheet about quadratic functions.
+
 * (9/8) [Here]({{ page.url }}ws09.08.pdf) is today's review worksheet.
 
 Homework
