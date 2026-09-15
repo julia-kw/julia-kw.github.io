@@ -11,12 +11,18 @@ booklink: /books/reasoning
 Announcements
 -------------
 
+* (9/17) [Here]({{ page.url }}ws09-17.pdf) is today's worksheet.
+
+* (9/15) [Here]({{ page.url }}ws09-15.pdf) is today's worksheet.
+
 * (9/10) [Here]({{ page.url }}ws09-10.pdf) is today's worksheet.
 
 * (9/8) [Here]({{ page.url }}day1.pdf) are the slides from day 1 of unit 1.
 
 Homework
 --------
+
+* Week 2 *Due Tuesday 9/22*: Section 1.2 Exercises 1–5; Section 1.3 Exercises 1–6.
 
 * Week 1 *Due Tuesday 9/15*: Section 1.1 Exercises 1–4.
 

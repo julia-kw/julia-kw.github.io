@@ -10,6 +10,10 @@ permalink: /teaching/2026/math195fall/
 Announcements
 -------------
 
+* (9/17) [Here]({{ page.url }}ws09.17.pdf) is today's worksheet about reciprocals of power functions.
+
+* (9/15) [Here]({{ page.url }}ws09.15.pdf) is today's worksheet about power functions.
+
 * (9/10) [Here]({{ page.url }}ws09.10.pdf) is today's worksheet about quadratic functions.
 
 * (9/8) [Here]({{ page.url }}ws09.08.pdf) is today's review worksheet.
@@ -17,7 +21,11 @@ Announcements
 Homework
 --------
 
-* Week 1 *Due Tuesd 9/15*: All problems from the 9/8 worksheet; Section 3.2 #1, 3, 5, 6, 8, 10, 14, 16, 22, 54, 56, 60, 92.
+Problems from the textbook are those given as from Section *N*.*X*.
+
+* Week 2 *Due Tuesday 9/22*: 9/15 worksheet second box #1–4, 8–12; Section 3.3 #17–20, 27, 28; 9/17 worksheet second box #1–3, 7–8, third box #1–7; Section 3.7 #10, 35–38, 41.
+
+* Week 1 *Due Tuesday 9/15*: All problems from the 9/8 worksheet; Section 3.2 #1, 3, 5, 6, 8, 10, 14, 16, 22, 54, 56, 60, 92.
 
 Schedule
 --------
