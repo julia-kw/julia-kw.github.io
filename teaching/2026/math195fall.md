@@ -10,6 +10,10 @@ permalink: /teaching/2026/math195fall/
 Announcements
 -------------
 
+* (9/24) [Here]({{ page.url }}ws09.24.pdf) is today's worksheet about radical functions.
+
+* (9/22) [Here]({{ page.url }}ws09.22.pdf) is today's worksheet about inverses.
+
 * (9/17) [Here]({{ page.url }}ws09.17.pdf) is today's worksheet about reciprocals of power functions.
 
 * (9/15) [Here]({{ page.url }}ws09.15.pdf) is today's worksheet about power functions.
@@ -22,6 +26,8 @@ Homework
 --------
 
 Problems from the textbook are those given as from Section *N*.*X*.
+
+* Week 3 *Due Tuesday 9/29*: 9/22 worksheet second box #1–3, third box #1–5; 9/24 worksheet first box #1–3, second box #1–8; Section 3.8 #13–16, 18, 20, 22, 36, 52, 55.
 
 * Week 2 *Due Tuesday 9/22*: 9/15 worksheet second box #1–4, 8–12; Section 3.3 #17–20, 27, 28; 9/17 worksheet second box #1–3, 7–8, third box #1–7; Section 3.7 #10, 35–38, 41.
 

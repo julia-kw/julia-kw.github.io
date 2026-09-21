@@ -11,6 +11,8 @@ booklink: /books/reasoning
 Announcements
 -------------
 
+* (9/24) [Here]({{ page.url }}ws09-24.pdf) is today's worksheet.
+
 * (9/17) There is an adjustment on the schedule. We will be taking another day to cover Section 1.3 about truth tables. The Unit 1 quiz will still be on the same date, but we will not get through the final section.
 
 * (9/17) [Here]({{ page.url }}ws09-17.pdf) is today's worksheet.
@@ -23,6 +25,8 @@ Announcements
 
 Homework
 --------
+
+* Week 3 *Due Tuesday 9/29*: Section 1.3 Exercises 5–6; Section 1.4 Exercises 1–3.
 
 * Week 2 *Due Tuesday 9/22*: Section 1.2 Exercises 1–5; Section 1.3 Exercises 1–4.
 
