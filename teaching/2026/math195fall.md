@@ -10,6 +10,10 @@ permalink: /teaching/2026/math195fall/
 Announcements
 -------------
 
+* (10/1) [Here]({{ page.url }}ws10.01.pdf) is today's worksheet about exponential models.
+
+* (9/29) [Here]({{ page.url }}ws09.29.pdf) is today's worksheet about exponential functions.
+
 * (9/24) [Here]({{ page.url }}ws09.24.pdf) is today's worksheet about radical functions.
 
 * (9/22) [Here]({{ page.url }}ws09.22.pdf) is today's worksheet about inverses.
@@ -26,6 +30,10 @@ Homework
 --------
 
 Problems from the textbook are those given as from Section *N*.*X*.
+
+* Week 4 *Due Tuesday 10/6*: 9/29 worksheet exercises #1–10; Section 4.2 #1, 3, 6, 8, 10, 13–18, 19–22; 10/1 worksheet all boxes; Section 4.7 #6, 43–45.
+
+    Some worksheet problems ask you to use a graphing calculator to make observations and estimations. You don't need to submit pictures from the calculator, just write down what you get from them. For the Section 4.7 problems, read the explanation in the chapter of Newton's law of cooling for another application of exponential functions. It is okay to use a graphing calculator for #45; you don't need to use logarithms, since we haven't talked about them yet.
 
 * Week 3 *Due Tuesday 9/29*: 9/22 worksheet second box #1–3, third box #1–5; 9/24 worksheet first box #1–3, second box #1–8; Section 3.8 #13–16, 18, 20, 22, 36, 52, 55.
 

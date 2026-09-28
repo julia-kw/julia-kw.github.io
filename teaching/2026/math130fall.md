@@ -11,6 +11,12 @@ booklink: /books/reasoning
 Announcements
 -------------
 
+* (10/1) Reminder, the unit 1 exam is next Thursday, October 8th.
+
+* (10/1) [Here]({{ page.url }}ws10-01.pdf) is today's worksheet.
+
+* (9/29) [Here]({{ page.url }}ws09-29.pdf) is today's worksheet.
+
 * (9/24) [Here]({{ page.url }}ws09-24.pdf) is today's worksheet.
 
 * (9/17) There is an adjustment on the schedule. We will be taking another day to cover Section 1.3 about truth tables. The Unit 1 quiz will still be on the same date, but we will not get through the final section.
@@ -25,6 +31,8 @@ Announcements
 
 Homework
 --------
+
+* Week 4 *Due Tuesday 10/6*: Section 1.5 Exercises 1–5; Section 1.6 Exercises 1–4.
 
 * Week 3 *Due Tuesday 9/29*: Section 1.3 Exercises 5–6; Section 1.4 Exercises 1–3.
 
