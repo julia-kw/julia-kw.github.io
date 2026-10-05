@@ -32,6 +32,8 @@ Announcements
 Homework
 --------
 
+* Week 5 *No homework. Study for the exam instead!*
+
 * Week 4 *Due Tuesday 10/6*: Section 1.5 Exercises 1–5; Section 1.6 Exercises 1–4.
 
 * Week 3 *Due Tuesday 9/29*: Section 1.3 Exercises 5–6; Section 1.4 Exercises 1–3.
