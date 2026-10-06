@@ -96,4 +96,3 @@ Important dates:
 	
 * 11/19: Midterm 2
 
-
