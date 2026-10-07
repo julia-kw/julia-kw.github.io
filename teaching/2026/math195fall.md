@@ -10,7 +10,7 @@ permalink: /teaching/2026/math195fall/
 Announcements
 -------------
 
-* (10/8) Remember that midterm 1 is next Thursday, October 15!
+* (10/8) Remember that midterm 1 is next Thursday, October 15! You can find a study guide [here]({{ page.url }}sg1.pdf).
 
 * (10/8) [Here]({{ page.url }}ws10.08.pdf) is today's worksheet about change of base formulas.
 
