@@ -37,6 +37,8 @@ Homework
 
 Problems from the textbook are those given as from Section *N*.*X*.
 
+* Week 6 *No homework.* Study for the exam instead!
+
 * Week 5 *Due Tuesday 10/13*: 10/6 worksheet exercises #1–21; 10/8 worksheet exercises #1–11.
 
 * Week 4 *Due Tuesday 10/6*: 9/29 worksheet exercises #1–10; Section 4.2 #1, 3, 6, 8, 10, 13–18, 19–22; 10/1 worksheet all boxes; Section 4.7 #6, 43–45.

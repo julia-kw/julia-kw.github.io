@@ -322,7 +322,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Truth tables",
-  "body": " Truth tables  Now that we know how to write logically, let's talk about the meaning—as logicians would say, the semantics —of the symbols. We will do this through the device of a truth table , invented by the Austrian philosophy Ludwig Wittgenstein. The idea is, a truth table lays out how a symbol behaves for any possible combination of inputs. This exhaustive listing of all possibilities constitutes a complete description of its meaning.  This is a truth-functional explanation of the meaning of the connectives. That is, if we want to know whether a statement is true or false the meaning of the input doesn't matter, only their truth values.  Let's see truth tables for the five connectives. We begin with conjunction (and) and disjunction (or). These each take two inputs, on the left and right. Each input has two possible truth values, namely true ( ) or false ( ). So in total we need rows to represent all possibilities.  Remember, we're looking at propositions, statements which are unambiguously true or false. So those are the only possible truth values. You might say, what about statements are only kinda true? For instance, someone might be kinda tall so John is tall isn't totally true but nor is it totally false.  You can do logic allowing for intermediate truth values. But things get more complicated. We focus on the two-valued logic with only true and false to make the analysis less difficult. I hope you forgive the trade-off.   We organize the table so that the leftmost columns give the values of the inputs, while on the right the values of the output are given.   Truth table for conjunction                                                What this table says is, is true just in case both and are true. We take the common sense definition of and and write it in tabular form.   Truth table for disjunction                                                Here, is true when at least one of the two is true. Recall that or is inclusive-or, allowing the possibility of both disjuncts being true.  For (not) there is only one input, written on the right. Accordingly we only need two rows for the table.   Truth table for negation                         Negation acts as a toggle flipping the value of its input to the opposite.  For the biconditional ( ), what it is saying is that the two sides are equivalent. From that you can deduce the rule for filling out the table: the output should be true just when the two inputs are the same.   Truth table for biconditional                                                The conditional was saved for last because it's the most subtle and controversial. An issue is, the ordinary use of if-then statements aren't truth-functional. Instead, they are used to imply some kind of connection between the statements. Consider a statement like if it is sunny out you should wear sunscreen . There is a causal connection; the weather presents a minor health risk and so there is prudential reason to take steps to minimize that risk. In contrast imagine someone saying if it is sunny out then Mars has two moons . Probably your reaction is to be confused. What is the connection between those two things?  But if the meaning of can only depend upon their truth values, then we can't require a connection. That would require information beyond whether they are true or false. Subject to that restriction, the best we can do is the following.   Truth table for conditional                                                A second, more substantive use of truth tables is to analyze more complicated logical sentences. We can use the truth tables defining the connectives as rules for how to determine the behavior of more complicated sentences, and thereby understand what they are saying.  When you are doing this, you want to think of how the logical sentence is built up. For example, suppose you are trying to fill out the truth table for The last connective to be evaluated is the . You can evaluate it what it does by using the rule given in the truth table for conjunction (and). But to do this you need to know the inputs on both sides. You know the input on the left, since it's just . But you have to do some work to figure out the input on the right. How do you do that? The right conjunct is an or statement. You can evaluate that using the truth table for , but first you need to know the pattern for its two inputs. The left disjunct you already know, but to figure out the right disjunct you need to apply the rule for . So building up this truth table is a multi-step process. The following table represents the process, where going from left to right gives you the information needed for the next step.   Truth table for                                                                       To explain the first row, as a representative example: to fill out the first column, you look at the column and apply the rule for . Namely, you flip to become . Then to fill out the columns you use the rule for , looking at the and columns for input. In this case, you have an instance of which evaluates to . Finally, to fill out the column you use the rule for , looking at the and columns for inputs. Namely, you have an instance of which evaluates to . This finishes the first row, and the other three are done similarly.  When filling these out, you may prefer to save on space by not writing every subformula separately and just filling in the value below it in the one big formula. That is fine, but you should make it clear what the final output is.    Fill out a truth table for .    Fill out truth tables for and . What do you observe about the two truth tables? Take a stab at explaining the meaning of what you see.    Fill out truth tables for and . What do you observe about the two truth tables? Take a stab at explaining the meaning of what you see.    Fill out a truth table for . Explain why the pattern on the truth table is the pattern for exclusive-or.    How many rows do you need in a truth table for a proposition with three variables? Fill out a truth table for .    Fill out a truth table for .    "
+  "body": " Truth tables  Now that we know how to write logically, let's talk about the meaning—as logicians would say, the semantics —of the symbols. We will do this through the device of a truth table , invented by the Austrian philosopher Ludwig Wittgenstein. The idea is, a truth table lays out how a symbol behaves for any possible combination of inputs. This exhaustive listing of all possibilities constitutes a complete description of its meaning.  This is a truth-functional explanation of the meaning of the connectives. That is, if we want to know whether a statement is true or false the meaning of the input doesn't matter, only their truth values.  Let's see truth tables for the five connectives. We begin with conjunction (and) and disjunction (or). These each take two inputs, on the left and right. Each input has two possible truth values, namely true ( ) or false ( ). So in total we need rows to represent all possibilities.  Remember, we're looking at propositions, statements which are unambiguously true or false. So those are the only possible truth values. You might say, what about statements are only kinda true? For instance, someone might be kinda tall so John is tall isn't totally true but nor is it totally false.  You can do logic allowing for intermediate truth values. But things get more complicated. We focus on the two-valued logic with only true and false to make the analysis less difficult. I hope you forgive the trade-off.   We organize the table so that the leftmost columns give the values of the inputs, while on the right the values of the output are given.   Truth table for conjunction                                                What this table says is, is true just in case both and are true. We take the common sense definition of and and write it in tabular form.   Truth table for disjunction                                                Here, is true when at least one of the two is true. Recall that or is inclusive-or, allowing the possibility of both disjuncts being true.  For (not) there is only one input, written on the right. Accordingly we only need two rows for the table.   Truth table for negation                         Negation acts as a toggle flipping the value of its input to the opposite.  For the biconditional ( ), what it is saying is that the two sides are equivalent. From that you can deduce the rule for filling out the table: the output should be true just when the two inputs are the same.   Truth table for biconditional                                                The conditional was saved for last because it's the most subtle and controversial. An issue is, the ordinary use of if-then statements aren't truth-functional. Instead, they are used to imply some kind of connection between the statements. Consider a statement like if it is sunny out you should wear sunscreen . There is a causal connection; the weather presents a minor health risk and so there is prudential reason to take steps to minimize that risk. In contrast imagine someone saying if it is sunny out then Mars has two moons . Probably your reaction is to be confused. What is the connection between those two things?  But if the meaning of can only depend upon their truth values, then we can't require a connection. That would require information beyond whether they are true or false. Subject to that restriction, the best we can do is the following.   Truth table for conditional                                                A second, more substantive use of truth tables is to analyze more complicated logical sentences. We can use the truth tables defining the connectives as rules for how to determine the behavior of more complicated sentences, and thereby understand what they are saying.  When you are doing this, you want to think of how the logical sentence is built up. For example, suppose you are trying to fill out the truth table for The last connective to be evaluated is the . You can evaluate it what it does by using the rule given in the truth table for conjunction (and). But to do this you need to know the inputs on both sides. You know the input on the left, since it's just . But you have to do some work to figure out the input on the right. How do you do that? The right conjunct is an or statement. You can evaluate that using the truth table for , but first you need to know the pattern for its two inputs. The left disjunct you already know, but to figure out the right disjunct you need to apply the rule for . So building up this truth table is a multi-step process. The following table represents the process, where going from left to right gives you the information needed for the next step.   Truth table for                                                                       To explain the first row, as a representative example: to fill out the first column, you look at the column and apply the rule for . Namely, you flip to become . Then to fill out the columns you use the rule for , looking at the and columns for input. In this case, you have an instance of which evaluates to . Finally, to fill out the column you use the rule for , looking at the and columns for inputs. Namely, you have an instance of which evaluates to . This finishes the first row, and the other three are done similarly.  When filling these out, you may prefer to save on space by not writing every subformula separately and just filling in the value below it in the one big formula. That is fine, but you should make it clear what the final output is.    Fill out a truth table for .    Fill out truth tables for and . What do you observe about the two truth tables? Take a stab at explaining the meaning of what you see.    Fill out truth tables for and . What do you observe about the two truth tables? Take a stab at explaining the meaning of what you see.    Fill out a truth table for . Explain why the pattern on the truth table is the pattern for exclusive-or.    How many rows do you need in a truth table for a proposition with three variables? Fill out a truth table for .    Fill out a truth table for .    "
 },
 {
   "id": "sec1-tt-2",
@@ -871,16 +871,133 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Visualizing data",
-  "body": " Visualizing data  Check back later!        "
+  "body": " Visualizing data  Data are useful to look at for understanding the world and making predictions about it. However, most interesting data sets —collections of data about a group of people are things—are too large to be easily surveyed. We need a way to make these data understandable to humans. One way this is done is by visualizing the data—producing a graphical representation of it. There are multiple ways to do this.  This is a point only pedantic nerds care about, but data is a plural noun, with datum being the singular. Hence pedantic nerds write these data say instead of this data says .  Quantitative and qualitative data  Data is quantitative if it can be expressed numerically. Qualitative data, on the other hand, merely categorizes.  For example, age is quantitative data while gender is qualitative.   Quantitative data can be used to categorize. For example, a researcher doing education on college students might categorize them by how many years they've been in college. Often it is best to categorize with a range of quantities, not a single one. For example, if you want to categorize people by annual income you probably want to treat and as close enough.  On the other hand, qualitative data can't meaningfully be made quantitites. You might assign numbers to the various options for race, but those numbers don't have any meaning. It doesn't make sense to add them, compare them, multiply them. Good practice when you see data represented as numbers is to ask yourself, do these make sense as numbers? Does it make sense to say one is larger or smaller than another? Does it makes sense to add them? Does it make sense to multiply them?  One way to visualize data is via a summary table. For example, suppose you work at a school district and are presenting on pass rates of students. Part of your data summary might look like the following table.   Number of students passing standardized exams by teacher    Teacher  Number passing    Ms. Adams  21    Mr. Baker  24    Ms. Chan  26    Ms. Diaz  25    Mr. Edwards  19     Tables can be useful, but they are often slow to read. You can take advantage of humans' evolved ability to quickly compare lengths by representing data visually. Let's see a few exmaples of how to present this table in a more graphical manner. A bar graph represents quantities by the length of bars, so that they can be quickly compared. A longer bar means more and a shorter bar means fewer. The downside is this method of summarizing data doesn't give precise values. This downside can be mitigated by also providing the numbers with the bars.  You can present the bars either vertically or horizontally. For consistency I will orient everything vertically. That is, the horizontal axis will represent the different categories and the vertical axis will represent the quantities. For a horizontal orientation you merely swap the role of the two axes.   The same data as in the above table, but presented in a bar plot. The plot has five bars, for the five teachers Adams, Baker, Chan, Diaz, and Edwards. The heights of the bars correspond to the number of passing students for each teacher.  The visual pizazz is at a minimum. The bars alternate colors to ease readability, but otherwise things are basic.   The same summary could be presented as a dot graph . Rather than representing quantities by lengths of bars, you represent them by the height of a dot.   The same data as in the above table, but presented in a dot plot. Rather than five bars for the five teachers there are five dots.   In this case, there isn't a meaningful order for the data on the -axis. The names are ordered alphabetically, but that isn't relevant to the data being presented. In cases where there is a meaningful order, it makes sense to connect the dots with lines to make a line graph . A common example is when the categories are dates. If the categories aren't ordered then the lines between dots can wrongly suggest trends, and it's better to simply graph disconnected points.  Regardless, here's the same data as a line graph. You can tell the lines aren't providing meaningful info because they suggest a connection between adjacent names. But the meaning of the data would be the same if you shuffled the order of the names.   The same data as in the above dot plot, but now with lines connecting the dots. It's not a good graph, the lines aren't adding any useful visual information.   Another kind of chart you sometimes see is a circle chart , also called a pie chart . Rather than represent quantitis by distances or lengths, a circle represents the overall population and it is divided into wedges based on the proportions of the population. For example, if fall into category then the wedge for would claim just over half the pie.   The same data as in the above table, but presented in a circle chart. There are five wedges for the five teachers corresponding to their share of the passing students.  This is an awful visualization of this data. But that is typical of circle charts.   Presumably there is someone out there who likes circle charts. But they are morally and objectively wrong. Human vision is good at comparing distances; it is quick to see which of two bars are longer. But it's not so good at comparing angular measures. Converting a circle chart to an equivalent bar chart will make things easier for your audience. An exception is if there are only two categories. In that case, the circle is divided into two pieces so it's easy to compare them.  In this example, the circle chart is especially nonsense. Circle charts are at their best when you want to see what proportion of a total population fits into each category. That's not what these data are about. What's relevant, if anything, is how many passing students each teacher has from among those they teach, not from among the total population of passing students.  The data visualizations we've seen so far each focused on a single type of quantity, corresponding to categories. Also important is how two different types of quantities are related. For example, suppose you are interested in understanding the relationship between class size and pass rates. You could compare these by plotting, say, two bar graphs, one for class size and one for pass rate across various teachers. But it's more direct to plot the two quantities against each other.  We can use a two dimensional coordinate grid for this. The horizontal axis, also called the -axis, is used to represent one of the kinds of qantities. The vertical axis, also called the -axis, represents the other. Often but not always we pick the -axis to represent the independent variable and the -axis to represent the dependent variable , meaning that that we think of the dependent variable as being a function of the independent variable.  We use cartesian coordinates , such as you may have seen in high school algebra. That is, each point in the two dimensional space represents a pair of numbers. We fix a starting point, which we usually draw as where the axes intersect. Here, is the left-right distance and represents the value on the -axis and is up-down distance and represents the value on the -axis.  One way to represent correspondence of data in cartesian coordinates is via a scatter plot . The data are pairs of numbers plotted as points. One type of quantity gets represented with -coordinates and the other with -coordinates, so that you can see relations between the two types of data.   Two scatter plots showing the same data. Both show class sizes of various classes versus the percentage of passing students from those classes. The difference between the two scatter plots is how the axes are drawn. The first plot has both axes start at . This creates a lot of empty space in the graph, since the data are not near . The second has the axes start at larger numbers so there's less empty space.  Whichever one you look at, it probably appears that there is a negative correlation between class size and pass rates. That is, smaller classes tend to have higher pass rates and larger classes tend to have lower pass rates.   In the above image the same scatter plot is shown twice to illustrate the effect choosing your axes has on the visualization. In the top plot, the axes both start at . This way, proportions on the graph are accurate; if a dot is twice as high as another it represents twice the value. In the bottom plot, the axes start at and . In this way we get a zoomed in view of the plot, and can more easily see distances between points. However, we lose the meaning of proportions. For instance, there is a dot near the bottom at . Above it are two more dots, about three or four times high on the graph. But they don't represent values three or four times higher.  The lesson is, the choice of where axes starts can affect the visualization. You should be careful to look at the axes to make sure you are correctly interpreting the graph. You can also think about this from a defensive posture. One way to present a misleading graph is to choose where the axes start. If you want to make differences look negligible, pick a far away starting point. If you want to magnify them, don't start the axis at . When reading and interpreting others' graphs you should critically engage with the presentation. Ask yourself: what purpose is there for the choice of presentation? Is it misleading? Or does it let me better understand the data?    Consider the summary given in the following table. Which type of chart do you think is the best way to visualize these data? Explain your choice. Sketch a version of your favored chart, as well as one other kind of chart for comparison.  Survey of people's favorite music genre    Genre  Number    Pop  2131    Rock  1940    Rap  2056    Country  1659    Jazz  1141    Dance  1457    Classical  319        Find a data visualization from an online or print media organization. Summarize what the visualization shows. Do you think it effectively and honestly conveys information? Explain. Please include a copy of the visualization and give a citation or url for where you got it.    Consider the following collection of violin plots , showing ages of members of different religious denominations. Each dot in a plot represents a set number of people, so that more dots in one row represent a larger number of members of that age.   Twenty plots arranged into two rows. Each plot is a set of dots in a violin plot shape. The vertical axis represents age and each dot represents a quantity of people, with more dots in a row corresponding to more people of that age in the denomination. The twenty plots are ordered by the modal age of the denomination. They are, in order: Nondenominational Fundamentalist (72), Interdenominational (71) Lutheron-Missouri Synod (70), National Baptist Convention (69), United Methodist (67), ELCA (67), PCUSA (67), ABCUSA (65), United Church of Christ (65), Community Church (63), TEC (63), Nondenominational Charismatic (63), Southern Baptist (62), Baptist Miss. Association (62), Nondenominational Evangelical (61), Independent Baptist (61), Pentecostal Church of God (61), General Association of Regular Baptists (59), PC (59), and Free Will Baptist (54).   Image copyright Ryan Burge. Data taken from the Cooperative Election Study 2022–2024.   Summarize what you think this data visualization is saying.    Look again at the two scatter plots about class size and pass rate, reproduced below. Which one do you think gives you a better, more honest view into the data? Explain your answer.   Two scatter plots showing the same data. Both show class sizes of various classes versus the percentage of passing students from those classes. The difference between the two scatter plots is how the axes are drawn. The first plot has both axes start at . This creates a lot of empty space in the graph, since the data are not near . The second has the axes start at larger numbers so there's less empty space.  Whichever one you look at, it probably appears that there is a negative correlation between class size and pass rates. That is, smaller classes tend to have higher pass rates and larger classes tend to have lower pass rates.     "
 },
 {
-  "id": "sec2-data-3-1",
+  "id": "sec2-data-2",
   "level": "2",
-  "url": "sec2-data.html#sec2-data-3-1",
+  "url": "sec2-data.html#sec2-data-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Data data sets "
+},
+{
+  "id": "sec2-data-4",
+  "level": "2",
+  "url": "sec2-data.html#sec2-data-4",
+  "type": "Definition",
+  "number": "2.1.1",
+  "title": "Quantitative and qualitative data.",
+  "body": "Quantitative and qualitative data  Data is quantitative if it can be expressed numerically. Qualitative data, on the other hand, merely categorizes.  For example, age is quantitative data while gender is qualitative.  "
+},
+{
+  "id": "sec2-data-8",
+  "level": "2",
+  "url": "sec2-data.html#sec2-data-8",
+  "type": "Table",
+  "number": "2.1.2",
+  "title": "Number of students passing standardized exams by teacher",
+  "body": " Number of students passing standardized exams by teacher    Teacher  Number passing    Ms. Adams  21    Mr. Baker  24    Ms. Chan  26    Ms. Diaz  25    Mr. Edwards  19    "
+},
+{
+  "id": "sec2-data-9",
+  "level": "2",
+  "url": "sec2-data.html#sec2-data-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "bar graph "
+},
+{
+  "id": "sec2-data-12",
+  "level": "2",
+  "url": "sec2-data.html#sec2-data-12",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "dot graph "
+},
+{
+  "id": "sec2-data-14",
+  "level": "2",
+  "url": "sec2-data.html#sec2-data-14",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "line graph "
+},
+{
+  "id": "sec2-data-17",
+  "level": "2",
+  "url": "sec2-data.html#sec2-data-17",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "circle chart pie chart "
+},
+{
+  "id": "sec2-data-22",
+  "level": "2",
+  "url": "sec2-data.html#sec2-data-22",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "independent variable dependent variable "
+},
+{
+  "id": "sec2-data-23",
+  "level": "2",
+  "url": "sec2-data.html#sec2-data-23",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "cartesian coordinates "
+},
+{
+  "id": "sec2-data-24",
+  "level": "2",
+  "url": "sec2-data.html#sec2-data-24",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "scatter plot "
+},
+{
+  "id": "sec2-data-28-1",
+  "level": "2",
+  "url": "sec2-data.html#sec2-data-28-1",
   "type": "Exercise",
   "number": "2.1.1",
   "title": "",
-  "body": "   "
+  "body": " Consider the summary given in the following table. Which type of chart do you think is the best way to visualize these data? Explain your choice. Sketch a version of your favored chart, as well as one other kind of chart for comparison.  Survey of people's favorite music genre    Genre  Number    Pop  2131    Rock  1940    Rap  2056    Country  1659    Jazz  1141    Dance  1457    Classical  319      "
+},
+{
+  "id": "sec2-data-28-2",
+  "level": "2",
+  "url": "sec2-data.html#sec2-data-28-2",
+  "type": "Exercise",
+  "number": "2.1.2",
+  "title": "",
+  "body": " Find a data visualization from an online or print media organization. Summarize what the visualization shows. Do you think it effectively and honestly conveys information? Explain. Please include a copy of the visualization and give a citation or url for where you got it.  "
+},
+{
+  "id": "sec2-data-28-3",
+  "level": "2",
+  "url": "sec2-data.html#sec2-data-28-3",
+  "type": "Exercise",
+  "number": "2.1.3",
+  "title": "",
+  "body": " Consider the following collection of violin plots , showing ages of members of different religious denominations. Each dot in a plot represents a set number of people, so that more dots in one row represent a larger number of members of that age.   Twenty plots arranged into two rows. Each plot is a set of dots in a violin plot shape. The vertical axis represents age and each dot represents a quantity of people, with more dots in a row corresponding to more people of that age in the denomination. The twenty plots are ordered by the modal age of the denomination. They are, in order: Nondenominational Fundamentalist (72), Interdenominational (71) Lutheron-Missouri Synod (70), National Baptist Convention (69), United Methodist (67), ELCA (67), PCUSA (67), ABCUSA (65), United Church of Christ (65), Community Church (63), TEC (63), Nondenominational Charismatic (63), Southern Baptist (62), Baptist Miss. Association (62), Nondenominational Evangelical (61), Independent Baptist (61), Pentecostal Church of God (61), General Association of Regular Baptists (59), PC (59), and Free Will Baptist (54).   Image copyright Ryan Burge. Data taken from the Cooperative Election Study 2022–2024.   Summarize what you think this data visualization is saying.  "
+},
+{
+  "id": "sec2-data-28-4",
+  "level": "2",
+  "url": "sec2-data.html#sec2-data-28-4",
+  "type": "Exercise",
+  "number": "2.1.4",
+  "title": "",
+  "body": " Look again at the two scatter plots about class size and pass rate, reproduced below. Which one do you think gives you a better, more honest view into the data? Explain your answer.   Two scatter plots showing the same data. Both show class sizes of various classes versus the percentage of passing students from those classes. The difference between the two scatter plots is how the axes are drawn. The first plot has both axes start at . This creates a lot of empty space in the graph, since the data are not near . The second has the axes start at larger numbers so there's less empty space.  Whichever one you look at, it probably appears that there is a negative correlation between class size and pass rates. That is, smaller classes tend to have higher pass rates and larger classes tend to have lower pass rates.   "
 },
 {
   "id": "sec2-average",
@@ -889,16 +1006,115 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Averages",
-  "body": " Averages  Check back later!        "
+  "body": " Averages  Suppose you have a collection of numbers representing measurements. For example, perhaps you are a marine biologist tagging sharks that make it to Cape Cod. For each shark you measure its body length. After a summer of work your team has a few dozen measurements. You want to summarize these measurements. What is the length of a typical or average shark?  First let's fix some notation for talking about this. A data set in this context is just a collection of numbers. Think of it like a column in a spreadsheet. If we're talking abstractly where we don't necessarily know in advance the specific numbers, we can write this collection of numbers like That is, each entry in the data set gets an index (think: its row number in a spreadsheet). The size of the data set is . The indices only make sense for .  With that in mind, let's talk about measures for the center of a data set. There are a few different notions of an average , with their own advantages and disadvantages. We will discuss them in turn. We start with the one with the most complicated definition.  Mean  Suppose you have a collection of numbers . Their mean , commonly denoted , measures their center of gravity. Imagine the number line as a balancing beam with a weight placed at each number in the data set. The mean is where you would place a fulcrum so that the two sides would be balanced. Mathematically, we can describe it with the following formula. That is, to calculate the mean you add up all the values in the data set and divide by the number of values.  The notation , called summation notation , means to sum up all the s. It is a shorthand for writing the longer . The symbol is the Greek letter Sigma ; think of Sigma as the Greek S, with S for sum .  Another way of thinking about the mean is, imagine the values plotted on a number line. If you want the location which miniminizes the total distance to the numbers, that location is the mean.   The mean is the most important notion of an average, to the point where often people will say average to mean the mean. The main reason for the mean's importance is it has nice mathematical properties that enable more complicated uses of statistics.  Here is a joke. You see a mathematician scrambling around on the ground under a streetlamp late at night. You ask her what she's doing, and she replies that she's looking for her lost glasses. You are a kind person, so you offer to help. You ask where she dropped them. She gestures and replies that she lost them half a block down the street. You ask why she's searching under the streetlamp. She says that the street lamp has nice mathematical properties and so it's easier to prove theorems here than over in the dark.  Median  Suppose you have a collection of numbers . Their median is the value in the middle if you list them in order. Phrased differently, the median is the position where half the values are smaller and half the values are larger. To give a precise, we have to split into two cases. Assume for convenience the numbers are already listed in increasing order:  If is odd, then the median is the value exactly in the middle, namely, .  If is even, then the median will be the average of the two values closest to the middle. Namely, it will be      Mode  Suppose you have a collection of numbers . Their mode is the value that occurs the most often in the list. If there is a tie for the value that occurs the most, the data have multiple modes.   A way to understand the mode is, if you plotted a frequency chart then the mode would be the value with the longest bar.   Consider the collection of nine numbers We can calculate their mean, median, and mode. Note that the mean is greater than the median. This is because the data set is weighted toward larger numbers; there are a bunch of small numbers clustered close together and then it starts spacing out more and more. With the median you don't care about the distance between values, only their order. Whereas the mean is all about distances.   You might ask, why have three different notions of the center of a data set? Why not just have one notion that's the best?  The trouble is, life isn't so neat as to have a single option that's always the best. We have to make do with different options for different circumstances.  A nice feature of the mode is that it makes sense for qualitative data. For example, suppose a survey asks respondants their religion. This isn't quantitative data; it doesn't make sense to say that someone's religion is . But you can still use mode to get an idea of what a typical response is. If of respondants answer Islam, that being the mode gives you an idea of the average. (Note, of course, you can get better info by reporting more detail, say by giving the percentages for the top answers.) You can't use median or mean in this context, because they rely on numerical properties. For median, there's no meaningful ordering of the answers, and for mean you need to be able to add and divide.  When dealing with quantitative data, mean and median are typically more useful measures than mode. One advantage of the mean is, as mentioned above, its nice properties. Let me mention a couple of them, to give you a taste.  Linearity of mean  The mean has the following two properties, collectively known as linearity . If you multiply all values in a data set by the same constant , then the mean of the new data set is times the mean of the original data set.  Suppose you mix two data sets and as follows. To make the new data set, you take every possible way to add values from the two data sets together, that is all possible . The mean of this new data set is then the sum of the means of the two data sets.    This property is helpful if you are combining data sets together to create more complicated data sets, because it lets you calculate the mean of the complicated data set by knowing what's going on with the simpler ones. This is valuable for theoretical work.  One case where median is a more useful measure of the center is when there are outliers. For example, maybe you are studying housing costs to get an idea of how (un)affordable greater Boston is as a place to live. Most people will have housing costs affordable on a normal salary. But there will be a few outliers—the ultrarich. Although small in number, their presence in the data set will skew the mean upward. However, due to their small number they will have minimal impact on the median. If you want an idea of the typical person's housing costs, median will give a better measure.  Because different measures have different advantages, it's helpful to have multiple tools at you disposal. And from the other direction, a consumer of others' statistical analysis, it's useful to know about these tools so you can critically assess what is said to you.    Consider the following two data sets. Calculate the means of the two, and explain what the different means tell you about how the two data sets differ.     Consider the following data set. Compute its mean, median, and mode. Explain what these tell you about how the data set is distributed.     Come up with your own data set whose mean, median, and mode are all different. Come up with a data set where they are all the same. Come up with a data set where the median and the mode are the same but the mean is different.    Consider the data set and the data set you get by multiplying every number by  Check that, as asserted by the linearity of mean, that the mean of the second data set is times the mean of the first.    Consider the two data sets Write down the data set you get by looking at possible ways of adding a value from the first data set to the second data set. Check that, as asserted by the linearity of mean, that its mean is the sum of the means of the two data sets.    Consider again the following collection of violin plots , showing ages of members of different religious denominations. Each dot in a plot represents a set number of people, so that more dots in one row represent a larger number of members of that age.   Twenty plots arranged into two rows. Each plot is a set of dots in a violin plot shape. The vertical axis represents age and each dot represents a quantity of people, with more dots in a row corresponding to more people of that age in the denomination. The twenty plots are ordered by the modal age of the denomination. They are, in order: Nondenominational Fundamentalist (72), Interdenominational (71) Lutheron-Missouri Synod (70), National Baptist Convention (69), United Methodist (67), ELCA (67), PCUSA (67), ABCUSA (65), United Church of Christ (65), Community Church (63), TEC (63), Nondenominational Charismatic (63), Southern Baptist (62), Baptist Miss. Association (62), Nondenominational Evangelical (61), Independent Baptist (61), Pentecostal Church of God (61), General Association of Regular Baptists (59), PC (59), and Free Will Baptist (54).   Image copyright Ryan Burge. Data taken from the Cooperative Election Study 2022–2024.   Reflect on the following, based on these plots. In these plots, what is the graphical meaning of the mode?  Does the mode provide a good measure of the center or average age of a congregation? Explain.  Does it make sense to order these by mode? That is, does it make sense to say that a denomination with a higher modal age is older than one with a lower modal age? Explain    In case it is not clear, modal is the adjective form of the noun mode .    "
 },
 {
-  "id": "sec2-average-3-1",
+  "id": "sec2-average-4",
   "level": "2",
-  "url": "sec2-average.html#sec2-average-3-1",
+  "url": "sec2-average.html#sec2-average-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "average "
+},
+{
+  "id": "sec2-average-5",
+  "level": "2",
+  "url": "sec2-average.html#sec2-average-5",
+  "type": "Definition",
+  "number": "2.2.1",
+  "title": "Mean.",
+  "body": "Mean  Suppose you have a collection of numbers . Their mean , commonly denoted , measures their center of gravity. Imagine the number line as a balancing beam with a weight placed at each number in the data set. The mean is where you would place a fulcrum so that the two sides would be balanced. Mathematically, we can describe it with the following formula. That is, to calculate the mean you add up all the values in the data set and divide by the number of values.  The notation , called summation notation , means to sum up all the s. It is a shorthand for writing the longer . The symbol is the Greek letter Sigma ; think of Sigma as the Greek S, with S for sum .  Another way of thinking about the mean is, imagine the values plotted on a number line. If you want the location which miniminizes the total distance to the numbers, that location is the mean.  "
+},
+{
+  "id": "sec2-average-8",
+  "level": "2",
+  "url": "sec2-average.html#sec2-average-8",
+  "type": "Definition",
+  "number": "2.2.2",
+  "title": "Median.",
+  "body": "Median  Suppose you have a collection of numbers . Their median is the value in the middle if you list them in order. Phrased differently, the median is the position where half the values are smaller and half the values are larger. To give a precise, we have to split into two cases. Assume for convenience the numbers are already listed in increasing order:  If is odd, then the median is the value exactly in the middle, namely, .  If is even, then the median will be the average of the two values closest to the middle. Namely, it will be     "
+},
+{
+  "id": "sec2-average-9",
+  "level": "2",
+  "url": "sec2-average.html#sec2-average-9",
+  "type": "Definition",
+  "number": "2.2.3",
+  "title": "Mode.",
+  "body": "Mode  Suppose you have a collection of numbers . Their mode is the value that occurs the most often in the list. If there is a tie for the value that occurs the most, the data have multiple modes.  "
+},
+{
+  "id": "sec2-average-11",
+  "level": "2",
+  "url": "sec2-average.html#sec2-average-11",
+  "type": "Example",
+  "number": "2.2.4",
+  "title": "",
+  "body": " Consider the collection of nine numbers We can calculate their mean, median, and mode. Note that the mean is greater than the median. This is because the data set is weighted toward larger numbers; there are a bunch of small numbers clustered close together and then it starts spacing out more and more. With the median you don't care about the distance between values, only their order. Whereas the mean is all about distances.  "
+},
+{
+  "id": "sec2-average-16",
+  "level": "2",
+  "url": "sec2-average.html#sec2-average-16",
+  "type": "Definition",
+  "number": "2.2.5",
+  "title": "Linearity of mean.",
+  "body": "Linearity of mean  The mean has the following two properties, collectively known as linearity . If you multiply all values in a data set by the same constant , then the mean of the new data set is times the mean of the original data set.  Suppose you mix two data sets and as follows. To make the new data set, you take every possible way to add values from the two data sets together, that is all possible . The mean of this new data set is then the sum of the means of the two data sets.   "
+},
+{
+  "id": "sec2-average-20-1",
+  "level": "2",
+  "url": "sec2-average.html#sec2-average-20-1",
   "type": "Exercise",
   "number": "2.2.1",
   "title": "",
-  "body": "   "
+  "body": " Consider the following two data sets. Calculate the means of the two, and explain what the different means tell you about how the two data sets differ.   "
+},
+{
+  "id": "sec2-average-20-2",
+  "level": "2",
+  "url": "sec2-average.html#sec2-average-20-2",
+  "type": "Exercise",
+  "number": "2.2.2",
+  "title": "",
+  "body": " Consider the following data set. Compute its mean, median, and mode. Explain what these tell you about how the data set is distributed.   "
+},
+{
+  "id": "sec2-average-20-3",
+  "level": "2",
+  "url": "sec2-average.html#sec2-average-20-3",
+  "type": "Exercise",
+  "number": "2.2.3",
+  "title": "",
+  "body": " Come up with your own data set whose mean, median, and mode are all different. Come up with a data set where they are all the same. Come up with a data set where the median and the mode are the same but the mean is different.  "
+},
+{
+  "id": "sec2-average-20-4",
+  "level": "2",
+  "url": "sec2-average.html#sec2-average-20-4",
+  "type": "Exercise",
+  "number": "2.2.4",
+  "title": "",
+  "body": " Consider the data set and the data set you get by multiplying every number by  Check that, as asserted by the linearity of mean, that the mean of the second data set is times the mean of the first.  "
+},
+{
+  "id": "sec2-average-20-5",
+  "level": "2",
+  "url": "sec2-average.html#sec2-average-20-5",
+  "type": "Exercise",
+  "number": "2.2.5",
+  "title": "",
+  "body": " Consider the two data sets Write down the data set you get by looking at possible ways of adding a value from the first data set to the second data set. Check that, as asserted by the linearity of mean, that its mean is the sum of the means of the two data sets.  "
+},
+{
+  "id": "sec2-average-20-6",
+  "level": "2",
+  "url": "sec2-average.html#sec2-average-20-6",
+  "type": "Exercise",
+  "number": "2.2.6",
+  "title": "",
+  "body": " Consider again the following collection of violin plots , showing ages of members of different religious denominations. Each dot in a plot represents a set number of people, so that more dots in one row represent a larger number of members of that age.   Twenty plots arranged into two rows. Each plot is a set of dots in a violin plot shape. The vertical axis represents age and each dot represents a quantity of people, with more dots in a row corresponding to more people of that age in the denomination. The twenty plots are ordered by the modal age of the denomination. They are, in order: Nondenominational Fundamentalist (72), Interdenominational (71) Lutheron-Missouri Synod (70), National Baptist Convention (69), United Methodist (67), ELCA (67), PCUSA (67), ABCUSA (65), United Church of Christ (65), Community Church (63), TEC (63), Nondenominational Charismatic (63), Southern Baptist (62), Baptist Miss. Association (62), Nondenominational Evangelical (61), Independent Baptist (61), Pentecostal Church of God (61), General Association of Regular Baptists (59), PC (59), and Free Will Baptist (54).   Image copyright Ryan Burge. Data taken from the Cooperative Election Study 2022–2024.   Reflect on the following, based on these plots. In these plots, what is the graphical meaning of the mode?  Does the mode provide a good measure of the center or average age of a congregation? Explain.  Does it make sense to order these by mode? That is, does it make sense to say that a denomination with a higher modal age is older than one with a lower modal age? Explain    In case it is not clear, modal is the adjective form of the noun mode .  "
 },
 {
   "id": "sec2-range",
@@ -907,16 +1123,97 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.3",
   "title": "Range and quantiles",
-  "body": " Range and quantiles  Check back later!        "
+  "body": " Range and quantiles  In the last section we discussed how to summarize a complicated data set by measuring where its center is. But that's not the full story. To illustrate this, consider the following three data sets. These data sets all have the same mean, namely . (They also have median .) But they are quite different in terms of spread. With the first one you know the values are all close to , but with the last one some of the values are quite far from . Just the mean alone isn't a good summary of the data.  A quick way to calculate the mean on these: instead of using the sum formula, think about mean as being the balancing point. Looking at you can see that it's balanced at , with the other two points each being away. In general, if you notice that a collection of three numbers has the form then you can immediately tell that their mean is .  In this section we discuss some measures for how spread out a data set is.  Maximum, minimum, and range  Consider a data set of numbers The minimum of the data set is the least number in it and the maximum of the data set is the greatest number in it. That is, the minimum is the value so that for every and the maximum is the value so that for every . The range of the data set is the maximum minus the minimum. The range is the total distance of the interval in which values from the data set lie.   Using the same three data sets above, we can distinguish them via their ranges. Though they all have a mean of , the ranges are, in order, , , . In that way we can distinguish how spread out they are.   Students in a math class take an exam and get the following scores: The maximum is , the minimum is . Thus the range is .   While the range gives some information about how spread out a data set is, it has some severe limitations.   Consider the following two data sets. They are very similar, differing only in one of the eleven values. However, their ranges are quite different. The first has a range of and the second has a range of , almost twenty times as much. If you were just looking at range as a summary you'd think these data sets are much more different than they actually are.  This is similar to the issue, discussed in the last section, of how the mean is affected by outliers. Indeed, for this example both data sets have the same median of . On the other hand, the first data set has its mean as also but the mean of the second data set is approximately . Just like the outlier of blew up the range it also increased the mean.   For a measure of spread which isn't so sensitive to outliers, we don't want to look at the minimum and the maximum.  Quartiles  Quartiles are a measure of where a data set is broken up into four equally sized chunks. That is, the first quartile is where of values are to its left, the second quartile is another name for the mean, where of values are to the left and are to the right, and the third quartile is where of values are to the right.  We can make this a bit more precise, like we did with the mean. One way to do this is, to uniquely specify the locations of the first and third quantile we can order the values in the data set and look for the two values closest to of the way through and of the way through, and define the quartiles to be the average of those two values.     According to data from the US Bureau of Labor Statistics , the weekly wage of full-time workers in the second quarter of 2026 had: First quartile at per week.  Second quartile, that is median, at per week.  Third quartile at per week.  That is, if your weekly wage is you make more than of the population, if your weekly wage is you make more than half of the population, and if your weekly wage is you make more than of the population.   In addition to quartiles dividing a data set into four intervals, you can split a data set into other numbers of pieces. Other common choices are quantiles (five pieces) and deciles (ten pieces).    Determine the minimum, maximum, and range of the following data set:     Explain the following facts. If a list of numbers is given in increasing order, then the minimum is the first number and the maximum is the last number .  The range of a data set is always .  The range of a data set can be . When does this happen?      Use the internet to determine the following values about household income in Massachusetts: mean, median, first quartile, third quartile. Give those values, as well as the year they are for. Write a paragraph or two explaining the real world meaning of those numbers.  Please list your source(s). Note that an AI-generated summary, such as you might get from google, does not count as a source. Click through to links to find the original source being summarized via LLM.    Write definitions of the first, second, and third deciles, similar to the definitions in the text for quartiles. Which decile is the same as the median?    "
 },
 {
-  "id": "sec2-range-3-1",
+  "id": "sec2-range-5",
   "level": "2",
-  "url": "sec2-range.html#sec2-range-3-1",
+  "url": "sec2-range.html#sec2-range-5",
+  "type": "Definition",
+  "number": "2.3.1",
+  "title": "Maximum, minimum, and range.",
+  "body": "Maximum, minimum, and range  Consider a data set of numbers The minimum of the data set is the least number in it and the maximum of the data set is the greatest number in it. That is, the minimum is the value so that for every and the maximum is the value so that for every . The range of the data set is the maximum minus the minimum. The range is the total distance of the interval in which values from the data set lie.  "
+},
+{
+  "id": "sec2-range-7",
+  "level": "2",
+  "url": "sec2-range.html#sec2-range-7",
+  "type": "Example",
+  "number": "2.3.2",
+  "title": "",
+  "body": " Students in a math class take an exam and get the following scores: The maximum is , the minimum is . Thus the range is .  "
+},
+{
+  "id": "sec2-range-9",
+  "level": "2",
+  "url": "sec2-range.html#sec2-range-9",
+  "type": "Example",
+  "number": "2.3.3",
+  "title": "",
+  "body": " Consider the following two data sets. They are very similar, differing only in one of the eleven values. However, their ranges are quite different. The first has a range of and the second has a range of , almost twenty times as much. If you were just looking at range as a summary you'd think these data sets are much more different than they actually are.  This is similar to the issue, discussed in the last section, of how the mean is affected by outliers. Indeed, for this example both data sets have the same median of . On the other hand, the first data set has its mean as also but the mean of the second data set is approximately . Just like the outlier of blew up the range it also increased the mean.  "
+},
+{
+  "id": "sec2-range-11",
+  "level": "2",
+  "url": "sec2-range.html#sec2-range-11",
+  "type": "Definition",
+  "number": "2.3.4",
+  "title": "Quartiles.",
+  "body": "Quartiles  Quartiles are a measure of where a data set is broken up into four equally sized chunks. That is, the first quartile is where of values are to its left, the second quartile is another name for the mean, where of values are to the left and are to the right, and the third quartile is where of values are to the right.  We can make this a bit more precise, like we did with the mean. One way to do this is, to uniquely specify the locations of the first and third quantile we can order the values in the data set and look for the two values closest to of the way through and of the way through, and define the quartiles to be the average of those two values.   "
+},
+{
+  "id": "sec2-range-12",
+  "level": "2",
+  "url": "sec2-range.html#sec2-range-12",
+  "type": "Example",
+  "number": "2.3.5",
+  "title": "",
+  "body": " According to data from the US Bureau of Labor Statistics , the weekly wage of full-time workers in the second quarter of 2026 had: First quartile at per week.  Second quartile, that is median, at per week.  Third quartile at per week.  That is, if your weekly wage is you make more than of the population, if your weekly wage is you make more than half of the population, and if your weekly wage is you make more than of the population.  "
+},
+{
+  "id": "sec2-range-13",
+  "level": "2",
+  "url": "sec2-range.html#sec2-range-13",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "quantiles deciles "
+},
+{
+  "id": "sec2-range-14-1",
+  "level": "2",
+  "url": "sec2-range.html#sec2-range-14-1",
   "type": "Exercise",
   "number": "2.3.1",
   "title": "",
-  "body": "   "
+  "body": " Determine the minimum, maximum, and range of the following data set:   "
+},
+{
+  "id": "sec2-range-14-2",
+  "level": "2",
+  "url": "sec2-range.html#sec2-range-14-2",
+  "type": "Exercise",
+  "number": "2.3.2",
+  "title": "",
+  "body": " Explain the following facts. If a list of numbers is given in increasing order, then the minimum is the first number and the maximum is the last number .  The range of a data set is always .  The range of a data set can be . When does this happen?    "
+},
+{
+  "id": "sec2-range-14-3",
+  "level": "2",
+  "url": "sec2-range.html#sec2-range-14-3",
+  "type": "Exercise",
+  "number": "2.3.3",
+  "title": "",
+  "body": " Use the internet to determine the following values about household income in Massachusetts: mean, median, first quartile, third quartile. Give those values, as well as the year they are for. Write a paragraph or two explaining the real world meaning of those numbers.  Please list your source(s). Note that an AI-generated summary, such as you might get from google, does not count as a source. Click through to links to find the original source being summarized via LLM.  "
+},
+{
+  "id": "sec2-range-14-4",
+  "level": "2",
+  "url": "sec2-range.html#sec2-range-14-4",
+  "type": "Exercise",
+  "number": "2.3.4",
+  "title": "",
+  "body": " Write definitions of the first, second, and third deciles, similar to the definitions in the text for quartiles. Which decile is the same as the median?  "
 },
 {
   "id": "sec2-box",
@@ -925,16 +1222,70 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.4",
   "title": "Box and whisker plots",
-  "body": " Box and whisker plots  Check back later!        "
+  "body": " Box and whisker plots  Now that we know about quartiles and medians, we can talk about a convenient visual device for summarizing a data set. A box and whisker plot , also called a box plot , is a visual that shows the median, first and third quartiles, and minimum and maximum of a data set. In this way you can quickly see the center and spread of the data.  In this example, box and whisker plots are given for a data set of exam performance by students in various grade levels. A different box and whisker is given for each grade, so that you can easily compare them. A second version of the plot is given to the side, with dots representing the various exam scores for each grade level. This extra level of information is only sometimes helpful. Here, it's included to help you visualize what a box and whisker plot is showing.   Two box and whisker plots, as described in the paragraph before the image.   Note that the boundary lines of the box part of the plot shows the first quartile and the third quartile, while the median is the line across the middle of the box. Half of the data points fall into the box. The remaining half are in the whiskers, extending out from the quartiles to the minimum and maximum.  In this way, a box and whisker plot gives a quick visual summary of the five-number summary of a data set: the minimum, first quartile, median, third quartile, and maximum. From this you can also determine the range—the maximum minus the minimum—and the interquartile range —namely, the third quartile minus the first quartile.  A common variation is to visually separate outliers from the whiskers. The reasoning is, it's misleading to have a really long whisker to reach out to an outlier; it makes the data look more spread out than they are.  Here is a version of the earlier plot, but with outliers added to the data.   Slight variations on the previous box and whisker plots, but now with low score outliers added to each grade level. The whiskers don't extend to reach these outliers, which are instead plotted as points. This is good, because if the bottom whiskers did reach to the outliers they would be overly long and wrongly give the impression that the data are spread out so far!   Box and whisker plots can be decorated with additional information. One common choice is to plot the means with the boxes. Here is the same plot as before but with means added.   The box plot on the left from before, but now with little diamonds on each plot marking the mean. The plot with the dots for scores isn't shown, as that much data all at once gets messy and hard to read.   Another common variation is to include information about a confidence interval for the median. In many real-world applications, we don't know the exact value of the median or other summary because we don't have access to the whole data set. Instead, we can say that it is probably in a certain range. While we won't talk about the methods needed to determine that range, we can see it visually.  Here is the same plot again but with notches in the boxes to show the confidence intervals for the medians. If your plot has just the medians, it may look like you can confidently order them. But with the notches you can see that might not be so clear; boxes with overlapping notches have overlap in the confidence intervals in the mean, so there is a reasonable likelihood that the order is actually different. In jargon, we'd say the difference is not statistically significant .   The box plots from before, but now with notches on each plot box marking the confidence interval of the median. This is a bit fatuous of an example, since in this case we know of the data: it's a small number of exam scores. But if these represented random samples from a larger population then this would be more meaningful.   As these examples illustrate, one advantage of box plots is that they enable quick comparisons of different data sets. You can visually see how they differ in their different summaries. A less detailed plot wouldn't give you enough info, while a more detailed plot might give so much information that it's hard to quickly read off and compare different plots. Box and whisker plots sit in a nice sweet spot.    A data set has the following five-number summary: minimum , first quartile , median , third quartile , maximum . Draw a box and whisker plot for this data set. Write a sentence or two explaining what this plot tells you about how the data set is distributed.    As an exercise in the last section you used the internet to determine the following values about household income in Massachusetts: mean, median, first quartile, third quartile. Further determine the first and ninth deciles of household income. Use this information to create a box and whisker plot, where the whiskers go out to the first and ninth deciles.    Find an online or print media source which uses multiple box and whisker plots to compare data sets. Summarize what this data visualization is showing. Include a copy of the visualization and give a url or citation for your source.    "
 },
 {
-  "id": "sec2-box-3-1",
+  "id": "sec2-box-2",
   "level": "2",
-  "url": "sec2-box.html#sec2-box-3-1",
+  "url": "sec2-box.html#sec2-box-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "box and whisker plot box plot "
+},
+{
+  "id": "sec2-box-6",
+  "level": "2",
+  "url": "sec2-box.html#sec2-box-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "five-number summary interquartile range "
+},
+{
+  "id": "sec2-box-12",
+  "level": "2",
+  "url": "sec2-box.html#sec2-box-12",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "confidence interval "
+},
+{
+  "id": "sec2-box-13",
+  "level": "2",
+  "url": "sec2-box.html#sec2-box-13",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "statistically significant "
+},
+{
+  "id": "sec2-box-16-1",
+  "level": "2",
+  "url": "sec2-box.html#sec2-box-16-1",
   "type": "Exercise",
   "number": "2.4.1",
   "title": "",
-  "body": "   "
+  "body": " A data set has the following five-number summary: minimum , first quartile , median , third quartile , maximum . Draw a box and whisker plot for this data set. Write a sentence or two explaining what this plot tells you about how the data set is distributed.  "
+},
+{
+  "id": "sec2-box-16-2",
+  "level": "2",
+  "url": "sec2-box.html#sec2-box-16-2",
+  "type": "Exercise",
+  "number": "2.4.2",
+  "title": "",
+  "body": " As an exercise in the last section you used the internet to determine the following values about household income in Massachusetts: mean, median, first quartile, third quartile. Further determine the first and ninth deciles of household income. Use this information to create a box and whisker plot, where the whiskers go out to the first and ninth deciles.  "
+},
+{
+  "id": "sec2-box-16-3",
+  "level": "2",
+  "url": "sec2-box.html#sec2-box-16-3",
+  "type": "Exercise",
+  "number": "2.4.3",
+  "title": "",
+  "body": " Find an online or print media source which uses multiple box and whisker plots to compare data sets. Summarize what this data visualization is showing. Include a copy of the visualization and give a url or citation for your source.  "
 },
 {
   "id": "sec2-stddev",
@@ -943,16 +1294,70 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.5",
   "title": "The standard deviation",
-  "body": " The standard deviation  Check back later!        "
+  "body": " The standard deviation  The past two classes we've been looking at different ways of understanding the spread of a data set. It'd be nice if there were a single number we could use to summarize how spread out a data set is, akin to how there is a single number (the mean) we can use to summarize the center of a data set. Of course, we shouldn't expect this single number to tell us everything about the spread, much like the mean isn't the full story. But it'd be nice to have regardless.  Good news. We can do this. That's what this section is about.  Here's an idea of how you might go about that. First identify the center of the data set. Next, determine the average distance of a datum from the center. This will give you a single number which represents how spread out the data are. A small value says that the average distance to the center is small while a large value says the average distance to the center is large.  At core, this is a good idea for a measure of spread. However, for technical reasons we want to slightly tweak it to get something that is better behaved mathematically. Instead of looking at the average distance to the center we get the average of the squares of the distances. Then to get back to the correct units we take the square root.  Standard deviation  Consider a data set of many data with mean . The variance  of the data set is the average of the squares of the distances from the mean, and the standard deviation  is the square root of that. As formulas:    The more important of these two notions is the standard deviation. You can think of the variance as a step to computing the standard deviation—first compute the variance, that is the average of the squares of the distances from the mean, and then take its square root to get the standard deviation. As said earlier, the reason to take squares of distances instead of distances is that it has nicer mathematical properties which eases more advanced uses. Taking the square root at the end returns us to the original unit. If, for example, our data are weights of fish in pounds, then the mean is also in pounds. Because we square, the units for the variance is square pounds. Taking a square root gets us back to pounds, the same units we started with.   Consider the three data sets from earlier: Let's compute their standard deviations in turn. We do the first in detail. Before you can do anything else you need to know the mean, in this case we already saw that . Now we need to take the average of the squares of the distances from the mean: We then divide that by the number of data and take the square root, to get the standard deviation is For the other two data sets we do the same process. The second data set has standard deviation and the third data set has standard devation .   Warning! Due to technical considerations (the keyword to search is Bessel's correction ) most statistical software packages will use a slightly different formula for their standard deviation function. Namely, they will divide by instead of . This is the so-called corrected standard deviation or unbiased estimator of the standard deviation, as upposed to the uncorrected standard deviation I gave. This is something to watch out for if you use computer tools to check your work. They might give a slightly different answer because they used a slightly different formula.  I promised you that the standard deviation has some nice mathematical properties. Let me mention one. Consider the following two data sets: Note that the second data set came from the first one by multiplying everything by . Both data sets have the same mean, namely . If you compute their standard deviations you get and . That is, multiplying everything by gave you a standard deviation times as large.  In general, if a data set has standard deviation , then if you multiply every datum by the new data set has standard deviation . This is similar to a property enjoyed by the mean—multiplying all values by multiplies the mean by .    Compute the mean and standard deviation of the following data set.     Consider the following two data sets. Calculate their means then use that to calculate their standard deviations. Explain what the different standard deviations tell you about how the two data sets differ.     You are comparing two data sets. They both have a mean of , but the first data set has a standard deviation of while the second data set has a standard deviation of . Explain what this tells you about how the two data sets are differently distributed.    You are comparing two data sets. They both have a standard deviation of , but the first data set has a mean of while the second data set has a mean of . Explain what this tells you about how the two data sets are differently distributed.    "
 },
 {
-  "id": "sec2-stddev-3-1",
+  "id": "sec2-stddev-6",
   "level": "2",
-  "url": "sec2-stddev.html#sec2-stddev-3-1",
+  "url": "sec2-stddev.html#sec2-stddev-6",
+  "type": "Definition",
+  "number": "2.5.1",
+  "title": "Standard deviation.",
+  "body": "Standard deviation  Consider a data set of many data with mean . The variance  of the data set is the average of the squares of the distances from the mean, and the standard deviation  is the square root of that. As formulas:   "
+},
+{
+  "id": "sec2-stddev-8",
+  "level": "2",
+  "url": "sec2-stddev.html#sec2-stddev-8",
+  "type": "Example",
+  "number": "2.5.2",
+  "title": "",
+  "body": " Consider the three data sets from earlier: Let's compute their standard deviations in turn. We do the first in detail. Before you can do anything else you need to know the mean, in this case we already saw that . Now we need to take the average of the squares of the distances from the mean: We then divide that by the number of data and take the square root, to get the standard deviation is For the other two data sets we do the same process. The second data set has standard deviation and the third data set has standard devation .  "
+},
+{
+  "id": "sec2-stddev-9",
+  "level": "2",
+  "url": "sec2-stddev.html#sec2-stddev-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "corrected unbiased estimator uncorrected "
+},
+{
+  "id": "sec2-stddev-12-1",
+  "level": "2",
+  "url": "sec2-stddev.html#sec2-stddev-12-1",
   "type": "Exercise",
   "number": "2.5.1",
   "title": "",
-  "body": "   "
+  "body": " Compute the mean and standard deviation of the following data set.   "
+},
+{
+  "id": "sec2-stddev-12-2",
+  "level": "2",
+  "url": "sec2-stddev.html#sec2-stddev-12-2",
+  "type": "Exercise",
+  "number": "2.5.2",
+  "title": "",
+  "body": " Consider the following two data sets. Calculate their means then use that to calculate their standard deviations. Explain what the different standard deviations tell you about how the two data sets differ.   "
+},
+{
+  "id": "sec2-stddev-12-3",
+  "level": "2",
+  "url": "sec2-stddev.html#sec2-stddev-12-3",
+  "type": "Exercise",
+  "number": "2.5.3",
+  "title": "",
+  "body": " You are comparing two data sets. They both have a mean of , but the first data set has a standard deviation of while the second data set has a standard deviation of . Explain what this tells you about how the two data sets are differently distributed.  "
+},
+{
+  "id": "sec2-stddev-12-4",
+  "level": "2",
+  "url": "sec2-stddev.html#sec2-stddev-12-4",
+  "type": "Exercise",
+  "number": "2.5.4",
+  "title": "",
+  "body": " You are comparing two data sets. They both have a standard deviation of , but the first data set has a mean of while the second data set has a mean of . Explain what this tells you about how the two data sets are differently distributed.  "
 },
 {
   "id": "sec2-normal",
@@ -961,16 +1366,133 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.6",
   "title": "Normal distributions",
-  "body": " Normal distributions  Check back later!        "
+  "body": " Normal distributions  In the previous sections we looked at various methods of summarizing data. An important use of statistics is to go beyond summaries and make inferences about not-yet known data. This is a huge topic, and we will not explore it fully. Nonetheless, in this section we move toward that use.  Step zero of doing statistics is to get something you can quantify. There is an unknown distribution of the quantities across a population. Doing an experiment you get a data set which is a sample from the population. You then want to use that sample to make inferences about the distribution.   Perhaps you are a entomologist studying centipedes. As part of larger work you want to know the size of a species. The distribution is the different lengths across members of the species. As a sample you look at some centipedes and measure their lengths.    You are a pharmaceutical researcher studying a potential new blood pressure medication. The distribution you want to know about is blood pressures of people who take the medication versus those who don't. Your samples come from a drug trial where you measure what happens with a group given the drug versus a control group.   Given a distribution a statistic is some number that can be calculated from it. Typical examples are the mean or standard deviation. Because the overall distribution is unknown, you don't know the value. You want to use your sample to calculate an estimator , something you can calculate from your sample data which estimates the true value of the statistic. For example, you might estimate the population mean by calculating the sample mean .   You don't know the true average length of your centipede species. To estimate this unknown value, you compute the mean length of centipedes in your sample. If your sampling method is unbiased and your sample is large enough, this estimator will give a good estimate of the true mean.  On the other hand, if your sampling method is biased it will produce a poor estimate. For example, if your method of catching centipedes only grabs those above a certain length, you will overestimate the true mean length.   There are many different shapes a distribution can take. Often real-world applications are best modeled as continuous distributions, those which can take on a continuous range of values. We represent these with a graph showing the likelihood of different values. If you randomly sample to measure a value, the likelihood it sits between a minimum and a maximum is the area under the graph between and .   A normal distribution given by a bell-shaped curve. (See below for more about normal distributions.) A region symmetric across the mean is filled in. The area of this region represents the likelihood that a randomly chosen sample falls into the range. In this case, the range happens to be within one standard deviation of the mean.      A uniform distribution is one where all outcomes in a range are equally likely. These are represented by graphs which are horizontal lines from the minimum to the maximum of the range. The total area must be , because there is a chance the value falls somewhere in the range.   The uniform distribution between and , represented by a horizontal line. A region is shaded in, to represent the likelihood a random sample is between and .    For example, a uniform distribution with values ranging from to would be represented by a horizontal line of height . The likelihood a randomly sampled value falls between and is the area of the region between and , namely   In general, a uniform distribution with values ranging from to is represented by a horizontal line of height .   The uniform distribution between and , represented by a horizontal line. A region is shaded in, to represent the likelihood a random sample falls into a certain subrange.     Often in practice you can know that a population fits (approximately) a distribution of a certain shape, even if you don't know the specifics. When this happens it is quite helpful in making predictions about the population, as it narrows down the possibilities. The most common case of this is with the normal distribution.  Normal distributions  A normal distribution is a kind of distribution which is shaped like a bell curve. If you randomly sample, most values will be near the mean, with farther away outliers being more and more unlikely. A normal distribution is specified by two parameters, its mean and standard deviation.   A normal distribution. A bell-shaped curve with a mean at . As you go out from the mean the curve gets closer and closer to the axis. The height of the curve above the horizontal axis represents the likelihood of that value. That is, values close to the mean are more likely and outliers are less likely.      Normal distributions are important because we know many things in practice are normal, or approximately normal. Consider the example of repeatedly rolling a (six-sided) die and averaging the results. If you roll it once, any of the six outcomes are equally likely. But if you roll it many times then you expect to see high rolls counterbalance low rolls. It's not likely to roll a long string of s. As such, if you roll the die a lot and take the mean of the results, it's most likely to be close to the true mean of the results, namely Outliers are possible, but the farther you get from the less likely it is to see that result.  The central limit theorem  Suppose you take an unbiased random sample from any distribution. Call the mean of this distribution and its standard deviation . (These are the Greek letters mu and sigma , the counterparts to the Latin m and s, for mean and standard deviation.) You sample times and calculate the mean of the sample. This sample mean is itself a random variable; different samples will produce a different mean according to chance.  The distribution of this random value is approximately a normal distribution, provided the number of samples is large enough. Indeed, this normal distribution has mean and standard deviation .   This is a bit mathy, so let's lay it out in plain language. No matter what distribution you are sampling from, no matter how it's laid out, if you calculate the sample mean you know what the distribution for that result looks like. It is a normal distribution with the same mean, and its spread (standard deviation) decreases as the sample size increases. That is, the larger your sample the more closely clustered you expect the outcome to be.   Let's look at the dice example more carefully. This is a distribution with six possible values, each equally likely. We already calculated its mean: With a little effort we can also calculate its standard deviation: What this means is, if you roll a die once on average the value will be but the results are spread out. It's reasonably likely to be far from .  On the other hand, if you repeatedly roll the die and take the average result, the central limit theorem tells us the distribution for the result is a bell curve. Moreover, we can calculate its standard deviation. For example, if you roll times then the standard deviation is That is, most of the time your result from rolling thirty times will be very close to the mean of .   Calculating likelihoods in general using a bell curve requires computer tools. But there's a few common ranges you can remember. of values are within standard deviation of the mean.  of values are within standard deviations of the mean.  of values are within standard deviations of the mean.  Another useful fact is that bell curves are symmetric across their mean. This implies that the mean is also the median, but it has other consequences. For example, if a region is symmetric across the mean then half its area is above the mean and half is below.  Going back to our dice rolling example, if you roll a die times and take the average of the results, about of the time that average will be between and .    Suppose a population is distributed like a uniform distribution from a minimum of to a maximum of . Determine the likelihood that a random sample will be between and .    Suppose a population is distributed like in the following graph.   A distribution shaped like a diagonal line going from the origin to the point .    Check that the total area under this distribution is . Then determine the likelihood that a random sample from this population falls between and .    Suppose a distribution is normally distributed. Compute the following likelihoods for a value of a random sample. The sample is greater than the mean.  The sample is between the mean and one standard deviation above the mean.  The sample is greater than one standard deviation above the mean.  The sample is greater than two standard deviations above the mean.  The sample is greater than three standard deviations above the mean.  The sample is more than one standard deviation from the mean.  The sample is more than one but less than two standard deviations from the mean.  The sample is more than one standard deviation but less than three standard deviations from the mean.      Suppose you know that a distribution has a mean and a standard deviation . You take random samples from the distribution and calculate their mean . What is the standard deviation for the distribution of the possible values of ? What is the likelihood that is within of ?    "
 },
 {
-  "id": "sec2-normal-3-1",
+  "id": "sec2-normal-3",
   "level": "2",
-  "url": "sec2-normal.html#sec2-normal-3-1",
+  "url": "sec2-normal.html#sec2-normal-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "distribution sample "
+},
+{
+  "id": "sec2-normal-4",
+  "level": "2",
+  "url": "sec2-normal.html#sec2-normal-4",
+  "type": "Example",
+  "number": "2.6.1",
+  "title": "",
+  "body": " Perhaps you are a entomologist studying centipedes. As part of larger work you want to know the size of a species. The distribution is the different lengths across members of the species. As a sample you look at some centipedes and measure their lengths.  "
+},
+{
+  "id": "sec2-normal-5",
+  "level": "2",
+  "url": "sec2-normal.html#sec2-normal-5",
+  "type": "Example",
+  "number": "2.6.2",
+  "title": "",
+  "body": " You are a pharmaceutical researcher studying a potential new blood pressure medication. The distribution you want to know about is blood pressures of people who take the medication versus those who don't. Your samples come from a drug trial where you measure what happens with a group given the drug versus a control group.  "
+},
+{
+  "id": "sec2-normal-6",
+  "level": "2",
+  "url": "sec2-normal.html#sec2-normal-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "statistic estimator sample mean "
+},
+{
+  "id": "sec2-normal-7",
+  "level": "2",
+  "url": "sec2-normal.html#sec2-normal-7",
+  "type": "Example",
+  "number": "2.6.3",
+  "title": "",
+  "body": " You don't know the true average length of your centipede species. To estimate this unknown value, you compute the mean length of centipedes in your sample. If your sampling method is unbiased and your sample is large enough, this estimator will give a good estimate of the true mean.  On the other hand, if your sampling method is biased it will produce a poor estimate. For example, if your method of catching centipedes only grabs those above a certain length, you will overestimate the true mean length.  "
+},
+{
+  "id": "sec2-normal-8",
+  "level": "2",
+  "url": "sec2-normal.html#sec2-normal-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "continuous "
+},
+{
+  "id": "sec2-normal-10",
+  "level": "2",
+  "url": "sec2-normal.html#sec2-normal-10",
+  "type": "Example",
+  "number": "2.6.4",
+  "title": "",
+  "body": " A uniform distribution is one where all outcomes in a range are equally likely. These are represented by graphs which are horizontal lines from the minimum to the maximum of the range. The total area must be , because there is a chance the value falls somewhere in the range.   The uniform distribution between and , represented by a horizontal line. A region is shaded in, to represent the likelihood a random sample is between and .    For example, a uniform distribution with values ranging from to would be represented by a horizontal line of height . The likelihood a randomly sampled value falls between and is the area of the region between and , namely   In general, a uniform distribution with values ranging from to is represented by a horizontal line of height .   The uniform distribution between and , represented by a horizontal line. A region is shaded in, to represent the likelihood a random sample falls into a certain subrange.    "
+},
+{
+  "id": "sec2-normal-12",
+  "level": "2",
+  "url": "sec2-normal.html#sec2-normal-12",
+  "type": "Definition",
+  "number": "2.6.5",
+  "title": "Normal distributions.",
+  "body": "Normal distributions  A normal distribution is a kind of distribution which is shaped like a bell curve. If you randomly sample, most values will be near the mean, with farther away outliers being more and more unlikely. A normal distribution is specified by two parameters, its mean and standard deviation.   A normal distribution. A bell-shaped curve with a mean at . As you go out from the mean the curve gets closer and closer to the axis. The height of the curve above the horizontal axis represents the likelihood of that value. That is, values close to the mean are more likely and outliers are less likely.     "
+},
+{
+  "id": "sec2-normal-14",
+  "level": "2",
+  "url": "sec2-normal.html#sec2-normal-14",
+  "type": "Theorem",
+  "number": "2.6.6",
+  "title": "The central limit theorem.",
+  "body": "The central limit theorem  Suppose you take an unbiased random sample from any distribution. Call the mean of this distribution and its standard deviation . (These are the Greek letters mu and sigma , the counterparts to the Latin m and s, for mean and standard deviation.) You sample times and calculate the mean of the sample. This sample mean is itself a random variable; different samples will produce a different mean according to chance.  The distribution of this random value is approximately a normal distribution, provided the number of samples is large enough. Indeed, this normal distribution has mean and standard deviation .  "
+},
+{
+  "id": "sec2-normal-16",
+  "level": "2",
+  "url": "sec2-normal.html#sec2-normal-16",
+  "type": "Example",
+  "number": "2.6.7",
+  "title": "",
+  "body": " Let's look at the dice example more carefully. This is a distribution with six possible values, each equally likely. We already calculated its mean: With a little effort we can also calculate its standard deviation: What this means is, if you roll a die once on average the value will be but the results are spread out. It's reasonably likely to be far from .  On the other hand, if you repeatedly roll the die and take the average result, the central limit theorem tells us the distribution for the result is a bell curve. Moreover, we can calculate its standard deviation. For example, if you roll times then the standard deviation is That is, most of the time your result from rolling thirty times will be very close to the mean of .  "
+},
+{
+  "id": "sec2-normal-19-1",
+  "level": "2",
+  "url": "sec2-normal.html#sec2-normal-19-1",
   "type": "Exercise",
   "number": "2.6.1",
   "title": "",
-  "body": "   "
+  "body": " Suppose a population is distributed like a uniform distribution from a minimum of to a maximum of . Determine the likelihood that a random sample will be between and .  "
+},
+{
+  "id": "sec2-normal-19-2",
+  "level": "2",
+  "url": "sec2-normal.html#sec2-normal-19-2",
+  "type": "Exercise",
+  "number": "2.6.2",
+  "title": "",
+  "body": " Suppose a population is distributed like in the following graph.   A distribution shaped like a diagonal line going from the origin to the point .    Check that the total area under this distribution is . Then determine the likelihood that a random sample from this population falls between and .  "
+},
+{
+  "id": "sec2-normal-19-3",
+  "level": "2",
+  "url": "sec2-normal.html#sec2-normal-19-3",
+  "type": "Exercise",
+  "number": "2.6.3",
+  "title": "",
+  "body": " Suppose a distribution is normally distributed. Compute the following likelihoods for a value of a random sample. The sample is greater than the mean.  The sample is between the mean and one standard deviation above the mean.  The sample is greater than one standard deviation above the mean.  The sample is greater than two standard deviations above the mean.  The sample is greater than three standard deviations above the mean.  The sample is more than one standard deviation from the mean.  The sample is more than one but less than two standard deviations from the mean.  The sample is more than one standard deviation but less than three standard deviations from the mean.    "
+},
+{
+  "id": "sec2-normal-19-4",
+  "level": "2",
+  "url": "sec2-normal.html#sec2-normal-19-4",
+  "type": "Exercise",
+  "number": "2.6.4",
+  "title": "",
+  "body": " Suppose you know that a distribution has a mean and a standard deviation . You take random samples from the distribution and calculate their mean . What is the standard deviation for the distribution of the possible values of ? What is the likelihood that is within of ?  "
 },
 {
   "id": "sec2-test",
@@ -979,16 +1501,70 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.7",
   "title": "Hypothesis testing",
-  "body": " Hypothesis testing  Check back later!        "
+  "body": " Hypothesis testing  In the previous section we talked about distributions. These describe the shape of the overall data about a population. Directly measuring distributions in the real world is impractical. For instance, if you were a scientist studying childhood nutrition, one distribution you may be interested in is the weights of children across the nation. This consists of millions of people, and it's infeasible to measure every child.  Despite this limitation, we can still make inferences about populations. For example, you might be trying to confirm a hypothesis a government program to give money to parents improves childhood nutrition. You could test this by looking at a sample of children whose parents were part of the program versus those who weren't. If your hypothesis is correct, you would expect to see a lower rate of underweight children among those in the program, and if your hypothesis is wrong you'd expect to see similar rights of underweightedness.  Of course, there is always some randomness involved, since you aren't surveying the entire, too large population of all children. Complete surety is thereby impossible. What you want is a measure of how likely it is that your hypothesis is correct. Unfortunately, that is also difficult to determine. Instead you rely on statistical proxies to give you some evidence.  This is the basics of what statisticians call hypothesis testing . This is a large, complicated topic. So we will not go over it in detail. Instead, let's talk through an overview. The goal is not to be able to go out and do hypothesis testing yourself. Rather, the goal is to understand it well enough that you can critically evaluate others use of it.  Perhaps the most used proxy used as evidence for a hypothesis is the p-value . If you have looked at a scientific or medical article ever, you may have seen little parentheticals like or . These are the p-values for the associated claim. A low p-value is taken as reason to believe a claim, with a common threshold of .  A common misconception is that a p-value is the chance that a claim is wrong. So, for example, would mean there's a less than one in twenty chance the claim is wrong. But that is not something we can measure, so that can't be what a p-value means.  Instead, this is the meaning. You oppose your hypothesis to a null hypothesis you wish to reject. Usually, the null hypothesis is that there is no change or difference. You do your random sampling or experiment and collect your sample results, and compute an estimator based on that sample. You then calculate, based on some knowledge of the shape of the distribution, how likely it is, assuming the null hypothesis, to see results at least as extreme as what you measured. This probability is the p-value.   You know the mean length for this species of centipede is centimeters. You measured that the mean length of centipedes fed a special diet as part of an experiment is centimeters. You do a hypothesis test and calculate a p-value of . That is, under the assumption that the special diet has no effect, there's only a chance of getting a sample mean at least centimeters above the mean. This p-value is small, so you have some confidence your intervention has effect.   Performing the probability calculation in a hypothesis test requires you to know something about the shape of your distribution. This is where theoretical results in statistics come in. People mathematically proved that the data must look approximately like such-and-such, and so we can leverage some knowledge even if we don't know the specifics. For example, the central limit theorem from the previous section tells us that if you are doing a hypothesis test about a sample mean then you know the data are (approximately) normally distributed. This enables statisticians to use tools about normal distributions to make the calculations for finding p-values. Depending on how much is known about the data, different tests are appropriate, such as z-test or a t-test .  Other distributions also arise in practice, with their own associated hypothesis tests. Part of the task of learning statistics is learning the different tests and when they are applicable. But they come back to this same general phenomenon. Theoretical results tell you something about the distribution for an estimator for the statistic. You do an experiment and calculate the estimator. Then you calculate how likely it is to see a result at least that extreme, under the assumption of the null hypothesis. If this probability, called a p-value, is low, that is taken as reason to reject the null hypothesis.  You might think this is a bit loose. Isn't statistics supposed to be about getting precision in our knowledge? We might not know perfectly, but we want to say we're probably very close.  But there's a lot of assumptions going into all of this work, and what we're measuring isn't even the thing we want in the first place. There's some arbitrariness. For example, why pick as the threshold for p-values? Why not ?  Ultimately, statistics is a very human affair. The promise of avoiding all bias and setting out an Objective Truth That All Can Agree Upon is a false one. We can get information, and we can become more sure than before in our knowledge. But we must not be misled by numbers into thinking we have more than we do.  This then was the goal of this section: for you to understand enough about hypothesis testing to not be taken in by misconceptions as to its capabilities. This goal goes in hand with the larger goal in this chapter of critical engagement with statistics. Part of the homework for this section will ask you to practice this.    Read the xkcd comic Significant . Explain the joke.    Read the American Statistical Association's statement on -values . Pick one of its six principles and explain in your own words what it expresses about the uses and limitations of -values.    "
 },
 {
-  "id": "sec2-test-3-1",
+  "id": "sec2-test-5",
   "level": "2",
-  "url": "sec2-test.html#sec2-test-3-1",
+  "url": "sec2-test.html#sec2-test-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "hypothesis testing "
+},
+{
+  "id": "sec2-test-6",
+  "level": "2",
+  "url": "sec2-test.html#sec2-test-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "p-value "
+},
+{
+  "id": "sec2-test-8",
+  "level": "2",
+  "url": "sec2-test.html#sec2-test-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "null hypothesis "
+},
+{
+  "id": "sec2-test-9",
+  "level": "2",
+  "url": "sec2-test.html#sec2-test-9",
+  "type": "Example",
+  "number": "2.7.1",
+  "title": "",
+  "body": " You know the mean length for this species of centipede is centimeters. You measured that the mean length of centipedes fed a special diet as part of an experiment is centimeters. You do a hypothesis test and calculate a p-value of . That is, under the assumption that the special diet has no effect, there's only a chance of getting a sample mean at least centimeters above the mean. This p-value is small, so you have some confidence your intervention has effect.  "
+},
+{
+  "id": "sec2-test-10",
+  "level": "2",
+  "url": "sec2-test.html#sec2-test-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "z-test t-test "
+},
+{
+  "id": "sec2-test-16-1",
+  "level": "2",
+  "url": "sec2-test.html#sec2-test-16-1",
   "type": "Exercise",
   "number": "2.7.1",
   "title": "",
-  "body": "   "
+  "body": " Read the xkcd comic Significant . Explain the joke.  "
+},
+{
+  "id": "sec2-test-16-2",
+  "level": "2",
+  "url": "sec2-test.html#sec2-test-16-2",
+  "type": "Exercise",
+  "number": "2.7.2",
+  "title": "",
+  "body": " Read the American Statistical Association's statement on -values . Pick one of its six principles and explain in your own words what it expresses about the uses and limitations of -values.  "
 },
 {
   "id": "sec3-functions",
