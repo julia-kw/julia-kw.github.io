@@ -10,6 +10,10 @@ permalink: /teaching/2026/math195fall/
 Announcements
 -------------
 
+* (10/22) [Here]({{ page.url }}ws10.22.pdf) is today's worksheet about trig functions.
+
+* (10/20) [Here]({{ page.url }}ws10.20.pdf) is today's worksheet about circles and angles.
+
 * (10/8) Remember that midterm 1 is next Thursday, October 15! You can find a study guide [here]({{ page.url }}sg1.pdf).
 
 * (10/8) [Here]({{ page.url }}ws10.08.pdf) is today's worksheet about change of base formulas.
@@ -36,6 +40,8 @@ Homework
 --------
 
 Problems from the textbook are those given as from Section *N*.*X*.
+
+* Week 7 *Due Tuesday 10/27*: Section 5.1 #2, 26–30, 33–36, 54, 55; 10/22 worksheet exercises #1–16; Section 5.2 #4, 5, 6–9, 50–53; Section 5.3 #1, 3, 6–9, 15–17, 18, 20, 21.
 
 * Week 6 *No homework.* Study for the exam instead!
 
