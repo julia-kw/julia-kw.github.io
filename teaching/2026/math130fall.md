@@ -36,7 +36,7 @@ Announcements
 Homework
 --------
 
-* Week 7 *Due Tuesday 10/27*: Section 2.2 Exercises 1–6, Section 1.3 Exercises 1–4.
+* Week 7 *Due Tuesday 10/27*: Section 2.2 Exercises 1–6, Section 2.3 Exercises 1–4.
 
 * Week 6 *Due Tuesday 10/20*: Section 2.1 Exercises 1–4.
 
