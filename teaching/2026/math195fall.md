@@ -10,6 +10,10 @@ permalink: /teaching/2026/math195fall/
 Announcements
 -------------
 
+* (10/29) [Here]({{ page.url }}ws10.29.pdf) is today's worksheet about trig and general triangles.
+
+* (10/27) [Here]({{ page.url }}ws10.27.pdf) is today's worksheet about right triangle trig.
+
 * (10/22) [Here]({{ page.url }}ws10.22.pdf) is today's worksheet about trig functions.
 
 * (10/20) [Here]({{ page.url }}ws10.20.pdf) is today's worksheet about circles and angles.
@@ -40,6 +44,8 @@ Homework
 --------
 
 Problems from the textbook are those given as from Section *N*.*X*.
+
+* Week 8 *Due Tuesday 11/3*: 10/27 worksheet exercises #1–11; Section 5.4 #1, 6–9, 10, 12, 16, 29, 32, 42–45; 10/29 worksheet exercises #1–12; Section 8.1 #3, 4, 31, 36, 50, 60; Section 8.2 #1, 2, 34, 42, 55.
 
 * Week 7 *Due Tuesday 10/27*: Section 5.1 #2, 26–30, 33–36, 54, 55; 10/22 worksheet exercises #1–16; Section 5.2 #4, 5, 6–9, 50–53; Section 5.3 #1, 3, 6–9, 15–17, 18, 20, 21.
 

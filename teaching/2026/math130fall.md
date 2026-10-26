@@ -11,6 +11,8 @@ booklink: /books/reasoning
 Announcements
 -------------
 
+* (10/29) [Here]({{ page.url }}ws10-29.pdf) is today's worksheet.
+
 * (10/22) [Here]({{ page.url }}ws10-22.pdf) is today's worksheet.
 
 * (10/20) [Here]({{ page.url }}ws10-20.pdf) is today's worksheet.
@@ -35,6 +37,8 @@ Announcements
 
 Homework
 --------
+
+* Week 8 *DueTuesday 11/3*: Section 2.4 Exercises 1–3, Section 2.5 Exercises 1–4.
 
 * Week 7 *Due Tuesday 10/27*: Section 2.2 Exercises 1–6, Section 2.3 Exercises 1–4.
 
