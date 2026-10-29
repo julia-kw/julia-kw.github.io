@@ -110,3 +110,4 @@ Important dates:
 	
 * 11/19: Midterm 2
 
+* Cumulative Final: 12/22, 1:00–3:00pm

@@ -106,6 +106,7 @@ Important dates:
 
 * Exam 3: 12/10
 
+* Cumulative Final: 12/22, 10:30am–12:30pm
 
 
 
