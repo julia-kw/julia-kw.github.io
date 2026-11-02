@@ -38,6 +38,8 @@ Announcements
 Homework
 --------
 
+* Week 9 *Due Tuesday 11/10*: Section 2.6 Exercises 1–4, Section 2.7 Exercises 1–2.
+
 * Week 8 *Due Tuesday 11/3*: Section 2.4 Exercises 1–3, Section 2.5 Exercises 1–4.
 
 * Week 7 *Due Tuesday 10/27*: Section 2.2 Exercises 1–6, Section 2.3 Exercises 1–4.

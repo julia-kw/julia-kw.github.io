@@ -10,6 +10,10 @@ permalink: /teaching/2026/math195fall/
 Announcements
 -------------
 
+* (11/5) [Here]({{ page.url }}ws11.04.pdf) is today's worksheet about graphs of trig functions.
+
+* (11/3) [Here]({{ page.url }}ws11.02.pdf) is today's worksheet about waves and the graphs of sine and cosine.
+
 * (10/29) [Here]({{ page.url }}ws10.29.pdf) is today's worksheet about trig and general triangles.
 
 * (10/27) [Here]({{ page.url }}ws10.27.pdf) is today's worksheet about right triangle trig.
@@ -44,6 +48,18 @@ Homework
 --------
 
 Problems from the textbook are those given as from Section *N*.*X*.
+
+* Week 8 *Due Tuesday 11/10*: Section 6.1 #2, 3, 5, 6–12, 14–16, 23, 25, 30, 31, 32, 33, 35, 36, 48; Section 6.2 #1–5, 6–9, 55; Section 6.3 #1, 2, 6, 22, 23, 56, 58; Supplemental Exercises:
+
+    1. Find two different solutions to $\tan x = 1$.
+
+    2. Find two different solutions to $\cos x = \frac12$.
+
+    3. Find the general solution to $\sin x = 0$.
+
+    4. Find the general solution to $\cos x = -1$.
+
+    5. Find the general solution to $\tan x = \sqrt 3$.
 
 * Week 8 *Due Tuesday 11/3*: 10/27 worksheet exercises #1–11; Section 5.4 #1, 6–9, 10, 12, 16, 29, 32, 42–45; 10/29 worksheet exercises #1–12; Section 8.1 #3, 4, 31, 36, 50, 60; Section 8.2 #1, 2, 34, 42, 55.
 
