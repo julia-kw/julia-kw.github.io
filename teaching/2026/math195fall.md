@@ -10,6 +10,10 @@ permalink: /teaching/2026/math195fall/
 Announcements
 -------------
 
+* (11/12) [Here]({{ page.url }}ws11.12.pdf) is today's worksheet about trig identities.
+
+* (11/10) [Here]({{ page.url }}ws11.10.pdf) is today's worksheet about solving trig equations.
+
 * (11/5) [Here]({{ page.url }}ws11.04.pdf) is today's worksheet about graphs of trig functions.
 
 * (11/3) [Here]({{ page.url }}ws11.02.pdf) is today's worksheet about waves and the graphs of sine and cosine.
