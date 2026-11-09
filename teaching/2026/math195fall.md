@@ -49,7 +49,9 @@ Homework
 
 Problems from the textbook are those given as from Section *N*.*X*.
 
-* Week 8 *Due Tuesday 11/10*: Section 6.1 #2, 3, 5, 6–12, 14–16, 23, 25, 30, 31, 32, 33, 35, 36, 48; Section 6.2 #1–5, 6–9, 55; Section 6.3 #1, 2, 6, 22, 23, 56, 58; Supplemental Exercises:
+* Week 10 *Due Tuesday 11/17*: 11/10 worksheet exercises part 1 #1–9, part 2 #1–13; 11/12 worksheet exercises part 1 #1–7, part 2 #1–5, part 3 #1–7.
+
+* Week 9 *Due Tuesday 11/10*: Section 6.1 #2, 3, 5, 6–12, 14–16, 23, 25, 30, 31, 32, 33, 35, 36, 48; Section 6.2 #1–5, 6–9, 55; Section 6.3 #1, 2, 6, 22, 23, 56, 58; Supplemental Exercises:
 
     1. Find two different solutions to $\tan x = 1$.
 

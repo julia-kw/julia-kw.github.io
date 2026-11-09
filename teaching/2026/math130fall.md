@@ -38,6 +38,8 @@ Announcements
 Homework
 --------
 
+* Week 10 *No homework. Study for the exam instead!*
+
 * Week 9 *Due Tuesday 11/10*: Section 2.6 Exercises 1–4, Section 2.7 Exercises 1–2.
 
 * Week 8 *Due Tuesday 11/3*: Section 2.4 Exercises 1–3, Section 2.5 Exercises 1–4.
