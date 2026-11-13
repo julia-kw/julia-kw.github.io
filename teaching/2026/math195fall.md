@@ -10,6 +10,8 @@ permalink: /teaching/2026/math195fall/
 Announcements
 -------------
 
+* (11/13) Remember that midterm 2 is next November, 19! You can find a study guide [here]({{ page.url }}sg2.pdf).
+
 * (11/12) [Here]({{ page.url }}ws11.12.pdf) is today's worksheet about trig identities.
 
 * (11/10) [Here]({{ page.url }}ws11.10.pdf) is today's worksheet about solving trig equations.
