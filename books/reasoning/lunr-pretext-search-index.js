@@ -1006,7 +1006,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.2",
   "title": "Averages",
-  "body": " Averages  Suppose you have a collection of numbers representing measurements. For example, perhaps you are a marine biologist tagging sharks that make it to Cape Cod. For each shark you measure its body length. After a summer of work your team has a few dozen measurements. You want to summarize these measurements. What is the length of a typical or average shark?  First let's fix some notation for talking about this. A data set in this context is just a collection of numbers. Think of it like a column in a spreadsheet. If we're talking abstractly where we don't necessarily know in advance the specific numbers, we can write this collection of numbers like That is, each entry in the data set gets an index (think: its row number in a spreadsheet). The size of the data set is . The indices only make sense for .  With that in mind, let's talk about measures for the center of a data set. There are a few different notions of an average , with their own advantages and disadvantages. We will discuss them in turn. We start with the one with the most complicated definition.  Mean  Suppose you have a collection of numbers . Their mean , commonly denoted , measures their center of gravity. Imagine the number line as a balancing beam with a weight placed at each number in the data set. The mean is where you would place a fulcrum so that the two sides would be balanced. Mathematically, we can describe it with the following formula. That is, to calculate the mean you add up all the values in the data set and divide by the number of values.  The notation , called summation notation , means to sum up all the s. It is a shorthand for writing the longer . The symbol is the Greek letter Sigma ; think of Sigma as the Greek S, with S for sum .  Another way of thinking about the mean is, imagine the values plotted on a number line. If you want the location which miniminizes the total distance to the numbers, that location is the mean.   The mean is the most important notion of an average, to the point where often people will say average to mean the mean. The main reason for the mean's importance is it has nice mathematical properties that enable more complicated uses of statistics.  Here is a joke. You see a mathematician scrambling around on the ground under a streetlamp late at night. You ask her what she's doing, and she replies that she's looking for her lost glasses. You are a kind person, so you offer to help. You ask where she dropped them. She gestures and replies that she lost them half a block down the street. You ask why she's searching under the streetlamp. She says that the street lamp has nice mathematical properties and so it's easier to prove theorems here than over in the dark.  Median  Suppose you have a collection of numbers . Their median is the value in the middle if you list them in order. Phrased differently, the median is the position where half the values are smaller and half the values are larger. To give a precise, we have to split into two cases. Assume for convenience the numbers are already listed in increasing order:  If is odd, then the median is the value exactly in the middle, namely, .  If is even, then the median will be the average of the two values closest to the middle. Namely, it will be      Mode  Suppose you have a collection of numbers . Their mode is the value that occurs the most often in the list. If there is a tie for the value that occurs the most, the data have multiple modes.   A way to understand the mode is, if you plotted a frequency chart then the mode would be the value with the longest bar.   Consider the collection of nine numbers We can calculate their mean, median, and mode. Note that the mean is greater than the median. This is because the data set is weighted toward larger numbers; there are a bunch of small numbers clustered close together and then it starts spacing out more and more. With the median you don't care about the distance between values, only their order. Whereas the mean is all about distances.   You might ask, why have three different notions of the center of a data set? Why not just have one notion that's the best?  The trouble is, life isn't so neat as to have a single option that's always the best. We have to make do with different options for different circumstances.  A nice feature of the mode is that it makes sense for qualitative data. For example, suppose a survey asks respondants their religion. This isn't quantitative data; it doesn't make sense to say that someone's religion is . But you can still use mode to get an idea of what a typical response is. If of respondants answer Islam, that being the mode gives you an idea of the average. (Note, of course, you can get better info by reporting more detail, say by giving the percentages for the top answers.) You can't use median or mean in this context, because they rely on numerical properties. For median, there's no meaningful ordering of the answers, and for mean you need to be able to add and divide.  When dealing with quantitative data, mean and median are typically more useful measures than mode. One advantage of the mean is, as mentioned above, its nice properties. Let me mention a couple of them, to give you a taste.  Linearity of mean  The mean has the following two properties, collectively known as linearity . If you multiply all values in a data set by the same constant , then the mean of the new data set is times the mean of the original data set.  Suppose you mix two data sets and as follows. To make the new data set, you take every possible way to add values from the two data sets together, that is all possible . The mean of this new data set is then the sum of the means of the two data sets.    This property is helpful if you are combining data sets together to create more complicated data sets, because it lets you calculate the mean of the complicated data set by knowing what's going on with the simpler ones. This is valuable for theoretical work.  One case where median is a more useful measure of the center is when there are outliers. For example, maybe you are studying housing costs to get an idea of how (un)affordable greater Boston is as a place to live. Most people will have housing costs affordable on a normal salary. But there will be a few outliers—the ultrarich. Although small in number, their presence in the data set will skew the mean upward. However, due to their small number they will have minimal impact on the median. If you want an idea of the typical person's housing costs, median will give a better measure.  Because different measures have different advantages, it's helpful to have multiple tools at you disposal. And from the other direction, a consumer of others' statistical analysis, it's useful to know about these tools so you can critically assess what is said to you.    Consider the following two data sets. Calculate the means of the two, and explain what the different means tell you about how the two data sets differ.     Consider the following data set. Compute its mean, median, and mode. Explain what these tell you about how the data set is distributed.     Come up with your own data set whose mean, median, and mode are all different. Come up with a data set where they are all the same. Come up with a data set where the median and the mode are the same but the mean is different.    Consider the data set and the data set you get by multiplying every number by  Check that, as asserted by the linearity of mean, that the mean of the second data set is times the mean of the first.    Consider the two data sets Write down the data set you get by looking at possible ways of adding a value from the first data set to the second data set. Check that, as asserted by the linearity of mean, that its mean is the sum of the means of the two data sets.    Consider again the following collection of violin plots , showing ages of members of different religious denominations. Each dot in a plot represents a set number of people, so that more dots in one row represent a larger number of members of that age.   Twenty plots arranged into two rows. Each plot is a set of dots in a violin plot shape. The vertical axis represents age and each dot represents a quantity of people, with more dots in a row corresponding to more people of that age in the denomination. The twenty plots are ordered by the modal age of the denomination. They are, in order: Nondenominational Fundamentalist (72), Interdenominational (71) Lutheron-Missouri Synod (70), National Baptist Convention (69), United Methodist (67), ELCA (67), PCUSA (67), ABCUSA (65), United Church of Christ (65), Community Church (63), TEC (63), Nondenominational Charismatic (63), Southern Baptist (62), Baptist Miss. Association (62), Nondenominational Evangelical (61), Independent Baptist (61), Pentecostal Church of God (61), General Association of Regular Baptists (59), PC (59), and Free Will Baptist (54).   Image copyright Ryan Burge. Data taken from the Cooperative Election Study 2022–2024.   Reflect on the following, based on these plots. In these plots, what is the graphical meaning of the mode?  Does the mode provide a good measure of the center or average age of a congregation? Explain.  Does it make sense to order these by mode? That is, does it make sense to say that a denomination with a higher modal age is older than one with a lower modal age? Explain    In case it is not clear, modal is the adjective form of the noun mode .    "
+  "body": " Averages  Suppose you have a collection of numbers representing measurements. For example, perhaps you are a marine biologist tagging sharks that make it to Cape Cod. For each shark you measure its body length. After a summer of work your team has a few dozen measurements. You want to summarize these measurements. What is the length of a typical or average shark?  First let's fix some notation for talking about this. A data set in this context is just a collection of numbers. Think of it like a column in a spreadsheet. If we're talking abstractly where we don't necessarily know in advance the specific numbers, we can write this collection of numbers like That is, each entry in the data set gets an index (think: its row number in a spreadsheet). The size of the data set is . The indices only make sense for .  With that in mind, let's talk about measures for the center of a data set. There are a few different notions of an average , with their own advantages and disadvantages. We will discuss them in turn. We start with the one with the most complicated definition.  Mean  Suppose you have a collection of numbers . Their mean , commonly denoted , measures their center of gravity. Imagine the number line as a balancing beam with a weight placed at each number in the data set. The mean is where you would place a fulcrum so that the two sides would be balanced. Mathematically, we can describe it with the following formula. That is, to calculate the mean you add up all the values in the data set and divide by the number of values.  The notation , called summation notation , means to sum up all the s. It is a shorthand for writing the longer . The symbol is the Greek letter Sigma ; think of Sigma as the Greek S, with S for sum .  Another way of thinking about the mean is, imagine the values plotted on a number line. If you want the location which miniminizes the total distance to the numbers, that location is the mean.   The mean is the most important notion of an average, to the point where often people will say average to mean the mean. The main reason for the mean's importance is it has nice mathematical properties that enable more complicated uses of statistics.  Here is a joke. You see a mathematician scrambling around on the ground under a streetlamp late at night. You ask her what she's doing, and she replies that she's looking for her lost glasses. You are a kind person, so you offer to help. You ask where she dropped them. She gestures and replies that she lost them half a block down the street. You ask why she's searching under the streetlamp. She says that the street lamp has nice mathematical properties and so it's easier to prove theorems here than over in the dark.  Median  Suppose you have a collection of numbers . Their median is the value in the middle if you list them in order. Phrased differently, the median is the position where half the values are smaller and half the values are larger. To give a precise definition, we have to split into two cases. Assume for convenience the numbers are already listed in increasing order:  If is odd, then the median is the value exactly in the middle, namely, .  If is even, then the median will be the average of the two values closest to the middle. Namely, it will be      Mode  Suppose you have a collection of numbers . Their mode is the value that occurs the most often in the list. If there is a tie for the value that occurs the most, the data have multiple modes.   A way to understand the mode is, if you plotted a frequency chart then the mode would be the value with the longest bar.   Consider the collection of nine numbers We can calculate their mean, median, and mode. Note that the mean is greater than the median. This is because the data set is weighted toward larger numbers; there are a bunch of small numbers clustered close together and then it starts spacing out more and more. With the median you don't care about the distance between values, only their order. Whereas the mean is all about distances.   You might ask, why have three different notions of the center of a data set? Why not just have one notion that's the best?  The trouble is, life isn't so neat as to have a single option that's always the best. We have to make do with different options for different circumstances.  A nice feature of the mode is that it makes sense for qualitative data. For example, suppose a survey asks respondants their religion. This isn't quantitative data; it doesn't make sense to say that someone's religion is . But you can still use mode to get an idea of what a typical response is. If of respondants answer Islam, that being the mode gives you an idea of the average. (Note, of course, you can get better info by reporting more detail, say by giving the percentages for the top answers.) You can't use median or mean in this context, because they rely on numerical properties. For median, there's no meaningful ordering of the answers, and for mean you need to be able to add and divide.  When dealing with quantitative data, mean and median are typically more useful measures than mode. One advantage of the mean is, as mentioned above, its nice properties. Let me mention a couple of them, to give you a taste.  Linearity of mean  The mean has the following two properties, collectively known as linearity . If you multiply all values in a data set by the same constant , then the mean of the new data set is times the mean of the original data set.  Suppose you mix two data sets and as follows. To make the new data set, you take every possible way to add values from the two data sets together, that is all possible . The mean of this new data set is then the sum of the means of the two data sets.     This property is helpful if you are combining data sets together to create more complicated data sets, because it lets you calculate the mean of the complicated data set by knowing what's going on with the simpler ones. This is valuable for theoretical work.  One case where median is a more useful measure of the center is when there are outliers. For example, maybe you are studying housing costs to get an idea of how (un)affordable greater Boston is as a place to live. Most people will have housing costs affordable on a normal salary. But there will be a few outliers—the ultrarich. Although small in number, their presence in the data set will skew the mean upward. However, due to their small number they will have minimal impact on the median. If you want an idea of the typical person's housing costs, median will give a better measure.  Because different measures have different advantages, it's helpful to have multiple tools at you disposal. And from the other direction, a consumer of others' statistical analysis, it's useful to know about these tools so you can critically assess what is said to you.    Consider the following two data sets. Calculate the means of the two, and explain what the different means tell you about how the two data sets differ.     Consider the following data set. Compute its mean, median, and mode. Explain what these tell you about how the data set is distributed.     Come up with your own data set whose mean, median, and mode are all different. Come up with a data set where they are all the same. Come up with a data set where the median and the mode are the same but the mean is different.    Consider the data set and the data set you get by multiplying every number by  Check that, as asserted by the linearity of mean, that the mean of the second data set is times the mean of the first.    Consider the two data sets Write down the data set you get by looking at possible ways of adding a value from the first data set to the second data set. Check that, as asserted by the linearity of mean, that its mean is the sum of the means of the two data sets.    Consider again the following collection of violin plots , showing ages of members of different religious denominations. Each dot in a plot represents a set number of people, so that more dots in one row represent a larger number of members of that age.   Twenty plots arranged into two rows. Each plot is a set of dots in a violin plot shape. The vertical axis represents age and each dot represents a quantity of people, with more dots in a row corresponding to more people of that age in the denomination. The twenty plots are ordered by the modal age of the denomination. They are, in order: Nondenominational Fundamentalist (72), Interdenominational (71) Lutheron-Missouri Synod (70), National Baptist Convention (69), United Methodist (67), ELCA (67), PCUSA (67), ABCUSA (65), United Church of Christ (65), Community Church (63), TEC (63), Nondenominational Charismatic (63), Southern Baptist (62), Baptist Miss. Association (62), Nondenominational Evangelical (61), Independent Baptist (61), Pentecostal Church of God (61), General Association of Regular Baptists (59), PC (59), and Free Will Baptist (54).   Image copyright Ryan Burge. Data taken from the Cooperative Election Study 2022–2024.   Reflect on the following, based on these plots. In these plots, what is the graphical meaning of the mode?  Does the mode provide a good measure of the center or average age of a congregation? Explain.  Does it make sense to order these by mode? That is, does it make sense to say that a denomination with a higher modal age is older than one with a lower modal age? Explain    In case it is not clear, modal is the adjective form of the noun mode .    "
 },
 {
   "id": "sec2-average-4",
@@ -1033,7 +1033,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "2.2.2",
   "title": "Median.",
-  "body": "Median  Suppose you have a collection of numbers . Their median is the value in the middle if you list them in order. Phrased differently, the median is the position where half the values are smaller and half the values are larger. To give a precise, we have to split into two cases. Assume for convenience the numbers are already listed in increasing order:  If is odd, then the median is the value exactly in the middle, namely, .  If is even, then the median will be the average of the two values closest to the middle. Namely, it will be     "
+  "body": "Median  Suppose you have a collection of numbers . Their median is the value in the middle if you list them in order. Phrased differently, the median is the position where half the values are smaller and half the values are larger. To give a precise definition, we have to split into two cases. Assume for convenience the numbers are already listed in increasing order:  If is odd, then the median is the value exactly in the middle, namely, .  If is even, then the median will be the average of the two values closest to the middle. Namely, it will be     "
 },
 {
   "id": "sec2-average-9",
@@ -1060,7 +1060,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "2.2.5",
   "title": "Linearity of mean.",
-  "body": "Linearity of mean  The mean has the following two properties, collectively known as linearity . If you multiply all values in a data set by the same constant , then the mean of the new data set is times the mean of the original data set.  Suppose you mix two data sets and as follows. To make the new data set, you take every possible way to add values from the two data sets together, that is all possible . The mean of this new data set is then the sum of the means of the two data sets.   "
+  "body": "Linearity of mean  The mean has the following two properties, collectively known as linearity . If you multiply all values in a data set by the same constant , then the mean of the new data set is times the mean of the original data set.  Suppose you mix two data sets and as follows. To make the new data set, you take every possible way to add values from the two data sets together, that is all possible . The mean of this new data set is then the sum of the means of the two data sets.    "
 },
 {
   "id": "sec2-average-20-1",
@@ -1123,7 +1123,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.3",
   "title": "Range and quantiles",
-  "body": " Range and quantiles  In the last section we discussed how to summarize a complicated data set by measuring where its center is. But that's not the full story. To illustrate this, consider the following three data sets. These data sets all have the same mean, namely . (They also have median .) But they are quite different in terms of spread. With the first one you know the values are all close to , but with the last one some of the values are quite far from . Just the mean alone isn't a good summary of the data.  A quick way to calculate the mean on these: instead of using the sum formula, think about mean as being the balancing point. Looking at you can see that it's balanced at , with the other two points each being away. In general, if you notice that a collection of three numbers has the form then you can immediately tell that their mean is .  In this section we discuss some measures for how spread out a data set is.  Maximum, minimum, and range  Consider a data set of numbers The minimum of the data set is the least number in it and the maximum of the data set is the greatest number in it. That is, the minimum is the value so that for every and the maximum is the value so that for every . The range of the data set is the maximum minus the minimum. The range is the total distance of the interval in which values from the data set lie.   Using the same three data sets above, we can distinguish them via their ranges. Though they all have a mean of , the ranges are, in order, , , . In that way we can distinguish how spread out they are.   Students in a math class take an exam and get the following scores: The maximum is , the minimum is . Thus the range is .   While the range gives some information about how spread out a data set is, it has some severe limitations.   Consider the following two data sets. They are very similar, differing only in one of the eleven values. However, their ranges are quite different. The first has a range of and the second has a range of , almost twenty times as much. If you were just looking at range as a summary you'd think these data sets are much more different than they actually are.  This is similar to the issue, discussed in the last section, of how the mean is affected by outliers. Indeed, for this example both data sets have the same median of . On the other hand, the first data set has its mean as also but the mean of the second data set is approximately . Just like the outlier of blew up the range it also increased the mean.   For a measure of spread which isn't so sensitive to outliers, we don't want to look at the minimum and the maximum.  Quartiles  Quartiles are a measure of where a data set is broken up into four equally sized chunks. That is, the first quartile is where of values are to its left, the second quartile is another name for the mean, where of values are to the left and are to the right, and the third quartile is where of values are to the right.  We can make this a bit more precise, like we did with the mean. One way to do this is, to uniquely specify the locations of the first and third quantile we can order the values in the data set and look for the two values closest to of the way through and of the way through, and define the quartiles to be the average of those two values.     According to data from the US Bureau of Labor Statistics , the weekly wage of full-time workers in the second quarter of 2026 had: First quartile at per week.  Second quartile, that is median, at per week.  Third quartile at per week.  That is, if your weekly wage is you make more than of the population, if your weekly wage is you make more than half of the population, and if your weekly wage is you make more than of the population.   In addition to quartiles dividing a data set into four intervals, you can split a data set into other numbers of pieces. Other common choices are quantiles (five pieces) and deciles (ten pieces).    Determine the minimum, maximum, and range of the following data set:     Explain the following facts. If a list of numbers is given in increasing order, then the minimum is the first number and the maximum is the last number .  The range of a data set is always .  The range of a data set can be . When does this happen?      Use the internet to determine the following values about household income in Massachusetts: mean, median, first quartile, third quartile. Give those values, as well as the year they are for. Write a paragraph or two explaining the real world meaning of those numbers.  Please list your source(s). Note that an AI-generated summary, such as you might get from google, does not count as a source. Click through to links to find the original source being summarized via LLM.    Write definitions of the first, second, and third deciles, similar to the definitions in the text for quartiles. Which decile is the same as the median?    "
+  "body": " Range and quantiles  In the last section we discussed how to summarize a complicated data set by measuring where its center is. But that's not the full story. To illustrate this, consider the following three data sets. These data sets all have the same mean, namely . (They also have median .) But they are quite different in terms of spread. With the first one you know the values are all close to , but with the last one some of the values are quite far from . Just the mean alone isn't a good summary of the data.  A quick way to calculate the mean on these: instead of using the sum formula, think about mean as being the balancing point. Looking at you can see that it's balanced at , with the other two points each being away. In general, if you notice that a collection of three numbers has the form then you can immediately tell that their mean is .  In this section we discuss some measures for how spread out a data set is.  Maximum, minimum, and range  Consider a data set of numbers The minimum of the data set is the least number in it and the maximum of the data set is the greatest number in it. That is, the minimum is the value so that for every and the maximum is the value so that for every . The range of the data set is the maximum minus the minimum. The range is the total distance of the interval in which values from the data set lie.   Using the same three data sets above, we can distinguish them via their ranges. Though they all have a mean of , the ranges are, in order, , , . In that way we can distinguish how spread out they are.   Students in a math class take an exam and get the following scores: The maximum is , the minimum is . Thus the range is .   While the range gives some information about how spread out a data set is, it has some severe limitations.   Consider the following two data sets. They are very similar, differing only in one of the eleven values. However, their ranges are quite different. The first has a range of and the second has a range of , almost twenty times as much. If you were just looking at range as a summary you'd think these data sets are much more different than they actually are.  This is similar to the issue, discussed in the last section, of how the mean is affected by outliers. Indeed, for this example both data sets have the same median of . On the other hand, the first data set has its mean as also but the mean of the second data set is approximately . Just like the outlier of blew up the range it also increased the mean.   For a measure of spread which isn't so sensitive to outliers, we don't want to look at the minimum and the maximum.  Quartiles  Quartiles are a measure of where a data set is broken up into four equally sized chunks. That is, the first quartile is where of values are to its left, the second quartile is another name for the median, where of values are to the left and are to the right, and the third quartile is where of values are to the right.  We can make this a bit more precise, like we did with the mean. One way to do this is, to uniquely specify the locations of the first and third quantile we can order the values in the data set and look for the two values closest to of the way through and of the way through, and define the quartiles to be the average of those two values.     According to data from the US Bureau of Labor Statistics , the weekly wage of full-time workers in the second quarter of 2026 had: First quartile at per week.  Second quartile, that is median, at per week.  Third quartile at per week.  That is, if your weekly wage is you make more than of the population, if your weekly wage is you make more than half of the population, and if your weekly wage is you make more than of the population.   In addition to quartiles dividing a data set into four intervals, you can split a data set into other numbers of pieces. Other common choices are quantiles (five pieces) and deciles (ten pieces).    Determine the minimum, maximum, and range of the following data set:     Explain the following facts. If a list of numbers is given in increasing order, then the minimum is the first number and the maximum is the last number .  The range of a data set is always .  The range of a data set can be . When does this happen?      Use the internet to determine the following values about household income in Massachusetts: mean, median, first quartile, third quartile. Give those values, as well as the year they are for. Write a paragraph or two explaining the real world meaning of those numbers.  Please list your source(s). Note that an AI-generated summary, such as you might get from google, does not count as a source. Click through to links to find the original source being summarized via LLM.    Write definitions of the first, second, and third deciles, similar to the definitions in the text for quartiles. Which decile is the same as the median?    "
 },
 {
   "id": "sec2-range-5",
@@ -1159,7 +1159,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "2.3.4",
   "title": "Quartiles.",
-  "body": "Quartiles  Quartiles are a measure of where a data set is broken up into four equally sized chunks. That is, the first quartile is where of values are to its left, the second quartile is another name for the mean, where of values are to the left and are to the right, and the third quartile is where of values are to the right.  We can make this a bit more precise, like we did with the mean. One way to do this is, to uniquely specify the locations of the first and third quantile we can order the values in the data set and look for the two values closest to of the way through and of the way through, and define the quartiles to be the average of those two values.   "
+  "body": "Quartiles  Quartiles are a measure of where a data set is broken up into four equally sized chunks. That is, the first quartile is where of values are to its left, the second quartile is another name for the median, where of values are to the left and are to the right, and the third quartile is where of values are to the right.  We can make this a bit more precise, like we did with the mean. One way to do this is, to uniquely specify the locations of the first and third quantile we can order the values in the data set and look for the two values closest to of the way through and of the way through, and define the quartiles to be the average of those two values.   "
 },
 {
   "id": "sec2-range-12",
@@ -1573,16 +1573,124 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "Functions",
-  "body": " Functions  Check back later!        "
+  "body": " Functions  There is a pattern which repeats in many, many places where quantities are interesting and useful to us. We are interested not in a single quantity, but in how two quantities are related. As one quantity changes, so does the other. It is fruitful to think of one quantity as the independent variable whose changes determine what happens to the other quantity, the dependent variable .  The mathematical device to package this relationship is called a function . This is one of the most important and most general concepts in mathematics. We will look only at the case of functions which relate numbers. Recall that a real number is a number which expresses a quantity you can write as a decimal expansion of digits. That is, real numbers are always finite, can be positive or negative, and you can compare them as larger or smaller.  Functions of real numbers  A function is a way of associating a single output to each input . When talking abstractly it is common to give names like . When working with an application often the name is chosen to stand for the quantity in the application. We write to refer to the output associated to the input . When working with an application, we often pick a different variable for the input to stand for its meaning.  For our use, the inputs and outputs to functions will be real numbers. The domain of a function is the set of possible inputs and the range is the set of possible outputs.  Functions can be given in many ways. You might have a formula or equation which describes how to calculate the output knowing the input . Or it might be given as an algorithm or process for computing outputs. Or it might be specified by pointing to some real world situation; outputs are associated with inputs but we don't necessarily have a process or formula to specify how it's done.   A key detail in the definition is that a function assigns a single output to each input. While it is okay for multiple inputs to get sent to the same output, it is not allowed to send one input to multiple outputs.   The conversion between temperature in Celsius versus Fahrenheit can be expressed as a function, given by a formula: Here, is a temperature in Celsius and is the corresponding temperature in Fahrenheit.  expresses that Celsius, the freezing point of water, is Fahrenheit.   expresses that C, the boiling point of water, is F.   expresses that is where both scales give the same number for the temperature.      The height of an object dropped from a height of meters can be modeled with a function. The input is the time in, say, seconds after the object was dropped. And the output is the height above the ground, say in meters, of the object at that time. Making some simplifying assumptions, we can describe this function by a formula which approximates the real association. Explaining where this formula comes from requires some work in physics. Briefly, meters per square second represents the acceleration due to gravity, which is the only force acting to change the object's position.  That the initial height of the object is meters is represented by the fact that . That the object hits the ground after seconds is represented by the fact that .   Note that in this second example, the formula only approximates the function associating heights to moments of time. The simplified formula ignores considerations like air resistance, and thereby gives slightly inaccurate values. This is typical for applications of mathematics. We get a good enough or close enough picture. If it's not actually good enough we can search for a better, probably more complicated model.  A convenient fact about functions is that there is a uniform process for visualizing them. This is done using Cartesian coordinates . Points in two-dimensional space are represented with pairs of coordinates . The -coordinate specifies the horizontal position of a point and the coordinate specifies the vertical position. The graph of a function is the curve formed by looking at all points of input-output pairs.   A graph of the function . Takes the form of the top half of a parabola opening to the right.    Visualizing a function via its graph, as in the above graph of the function , can let you get important information quickly.   Throughout consider a function . is increasing somewhere if the output increases as the input increases. Graphically, this means the slope or instantaneous rate of change is positive.  is decreasing somewhere if the output decreases as the input increases. Graphically, this means the slope is negative.  is constant somewhere if the output stays constant, neither increasing nor decreasing, as the input changes. Graphically, this means the graph is locally a horizontal line.  has a local maximum at an input if the output of the function is larger than nearby points. That is, for sufficiently close inputs .  has a local minimum at an input if the output of the function is smaller than nearby points. That is, for sufficiently close inputs .  is concave up somewhere if the function bends upward. Graphically, this means if you draw a line between two points on the graph the line sits above the graph. You can also understand this in terms of rates of change; it means that the slope is increasing as the input increases.  is concave down somewhere if the function bends downward. Graphically, this means if you draw a line between two points on the graph the line sits below the graph. You can also understand this in terms of rates of change; it means that the slope is decreasing as the input increases.  has an inflection point at an input if the concavity changes there, from concave up to concave down or vice versa.       Draw a graph of a function. Identify the local maximums and local minimums on the graph. Where is it increasing? Decreasing? Is it constant anywhere?    Sketch a graph of a function which has a single local maximum at and a single local minimum at .    Consider the following graph of a function. Copy this graph onto your own paper. On your graph identify where the local maximums, local minimums, and inflection points are.   A graph of a function.       Explain why a circle can never be the graph of a function.    Sketch graphs of functions with each of the following combinations of behavior. Increasing and concave up everywhere on its domain.  Increasing and concave down everywhere on its domain.  Decreasing and concave up everywhere on its domain.  Decreasing and concave down everywhere on its domain.      An inflection point is where a graph changes concavity. What kind of point is where a function changes from increasing to decreasing? What kind of point is where a function changes from decreasing to increasing? Explain your answers and give pictures as examples.    "
 },
 {
-  "id": "sec3-functions-3-1",
+  "id": "sec3-functions-2",
   "level": "2",
-  "url": "sec3-functions.html#sec3-functions-3-1",
+  "url": "sec3-functions.html#sec3-functions-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "independent variable dependent variable "
+},
+{
+  "id": "sec3-functions-3",
+  "level": "2",
+  "url": "sec3-functions.html#sec3-functions-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "function real number "
+},
+{
+  "id": "sec3-functions-4",
+  "level": "2",
+  "url": "sec3-functions.html#sec3-functions-4",
+  "type": "Definition",
+  "number": "3.1.1",
+  "title": "Functions of real numbers.",
+  "body": "Functions of real numbers  A function is a way of associating a single output to each input . When talking abstractly it is common to give names like . When working with an application often the name is chosen to stand for the quantity in the application. We write to refer to the output associated to the input . When working with an application, we often pick a different variable for the input to stand for its meaning.  For our use, the inputs and outputs to functions will be real numbers. The domain of a function is the set of possible inputs and the range is the set of possible outputs.  Functions can be given in many ways. You might have a formula or equation which describes how to calculate the output knowing the input . Or it might be given as an algorithm or process for computing outputs. Or it might be specified by pointing to some real world situation; outputs are associated with inputs but we don't necessarily have a process or formula to specify how it's done.  "
+},
+{
+  "id": "sec3-functions-6",
+  "level": "2",
+  "url": "sec3-functions.html#sec3-functions-6",
+  "type": "Example",
+  "number": "3.1.2",
+  "title": "",
+  "body": " The conversion between temperature in Celsius versus Fahrenheit can be expressed as a function, given by a formula: Here, is a temperature in Celsius and is the corresponding temperature in Fahrenheit.  expresses that Celsius, the freezing point of water, is Fahrenheit.   expresses that C, the boiling point of water, is F.   expresses that is where both scales give the same number for the temperature.    "
+},
+{
+  "id": "sec3-functions-7",
+  "level": "2",
+  "url": "sec3-functions.html#sec3-functions-7",
+  "type": "Example",
+  "number": "3.1.3",
+  "title": "",
+  "body": " The height of an object dropped from a height of meters can be modeled with a function. The input is the time in, say, seconds after the object was dropped. And the output is the height above the ground, say in meters, of the object at that time. Making some simplifying assumptions, we can describe this function by a formula which approximates the real association. Explaining where this formula comes from requires some work in physics. Briefly, meters per square second represents the acceleration due to gravity, which is the only force acting to change the object's position.  That the initial height of the object is meters is represented by the fact that . That the object hits the ground after seconds is represented by the fact that .  "
+},
+{
+  "id": "sec3-functions-9",
+  "level": "2",
+  "url": "sec3-functions.html#sec3-functions-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Cartesian coordinates graph "
+},
+{
+  "id": "sec3-functions-12",
+  "level": "2",
+  "url": "sec3-functions.html#sec3-functions-12",
+  "type": "Definition",
+  "number": "3.1.4",
+  "title": "",
+  "body": " Throughout consider a function . is increasing somewhere if the output increases as the input increases. Graphically, this means the slope or instantaneous rate of change is positive.  is decreasing somewhere if the output decreases as the input increases. Graphically, this means the slope is negative.  is constant somewhere if the output stays constant, neither increasing nor decreasing, as the input changes. Graphically, this means the graph is locally a horizontal line.  has a local maximum at an input if the output of the function is larger than nearby points. That is, for sufficiently close inputs .  has a local minimum at an input if the output of the function is smaller than nearby points. That is, for sufficiently close inputs .  is concave up somewhere if the function bends upward. Graphically, this means if you draw a line between two points on the graph the line sits above the graph. You can also understand this in terms of rates of change; it means that the slope is increasing as the input increases.  is concave down somewhere if the function bends downward. Graphically, this means if you draw a line between two points on the graph the line sits below the graph. You can also understand this in terms of rates of change; it means that the slope is decreasing as the input increases.  has an inflection point at an input if the concavity changes there, from concave up to concave down or vice versa.    "
+},
+{
+  "id": "sec3-functions-13-1",
+  "level": "2",
+  "url": "sec3-functions.html#sec3-functions-13-1",
   "type": "Exercise",
   "number": "3.1.1",
   "title": "",
-  "body": "   "
+  "body": " Draw a graph of a function. Identify the local maximums and local minimums on the graph. Where is it increasing? Decreasing? Is it constant anywhere?  "
+},
+{
+  "id": "sec3-functions-13-2",
+  "level": "2",
+  "url": "sec3-functions.html#sec3-functions-13-2",
+  "type": "Exercise",
+  "number": "3.1.2",
+  "title": "",
+  "body": " Sketch a graph of a function which has a single local maximum at and a single local minimum at .  "
+},
+{
+  "id": "sec3-functions-13-3",
+  "level": "2",
+  "url": "sec3-functions.html#sec3-functions-13-3",
+  "type": "Exercise",
+  "number": "3.1.3",
+  "title": "",
+  "body": " Consider the following graph of a function. Copy this graph onto your own paper. On your graph identify where the local maximums, local minimums, and inflection points are.   A graph of a function.     "
+},
+{
+  "id": "sec3-functions-13-4",
+  "level": "2",
+  "url": "sec3-functions.html#sec3-functions-13-4",
+  "type": "Exercise",
+  "number": "3.1.4",
+  "title": "",
+  "body": " Explain why a circle can never be the graph of a function.  "
+},
+{
+  "id": "sec3-functions-13-5",
+  "level": "2",
+  "url": "sec3-functions.html#sec3-functions-13-5",
+  "type": "Exercise",
+  "number": "3.1.5",
+  "title": "",
+  "body": " Sketch graphs of functions with each of the following combinations of behavior. Increasing and concave up everywhere on its domain.  Increasing and concave down everywhere on its domain.  Decreasing and concave up everywhere on its domain.  Decreasing and concave down everywhere on its domain.    "
+},
+{
+  "id": "sec3-functions-13-6",
+  "level": "2",
+  "url": "sec3-functions.html#sec3-functions-13-6",
+  "type": "Exercise",
+  "number": "3.1.6",
+  "title": "",
+  "body": " An inflection point is where a graph changes concavity. What kind of point is where a function changes from increasing to decreasing? What kind of point is where a function changes from decreasing to increasing? Explain your answers and give pictures as examples.  "
 },
 {
   "id": "sec3-linear",
@@ -1591,16 +1699,124 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Linear models",
-  "body": " Linear models  Check back later!        "
+  "body": " Linear models  In the last chapter we looked at functions. We can use functions to model relationships between real world quantities. For example, you might use a function to model the population of Boston over time . Or you might use a function to model the expected revenue for your business if you sell gadgets at price .  Almost certainly, the true relationship between quantities doesn't admit description via a simple mathematical formula. Instead, models give an approximation. We trade some accuracy for ease of calculation and the ability to make predictions. In practice, it is important to think about where inaccuracy seeps in, and thereby determine the limits of your model.  Perhaps the nicest and easiest to use functions are linear functions , those whose graphs are lines. Linear models of real world phenomena have the advantage of being easy to work with. But sometimes they aren't the appropriate choice, because the data don't look (approximately) like a line.  Linear functions and models  A linear function is a function whose graph is a line. As a formula, we can express a linear function in slope-intercept form  where is the slope of the line and is the -intercept. Alternatively, we can express a linear function in point-slope form  where is the slope and is any point on the line.  A linear model is a model using a linear function.     A factory manager estimates that the daily costs in materials is modeled by the function where is the number of widgets produced. That is, there is a constant cost of dollars plus a cost of dollars per widget.  Note that this slope tells you the rate of change of the function. Producing one more widget will always have the same marginal cost of dollars.    There is a connection to statistics, which we covered in the previous chapter. Consider data forming a scatter plot. That is, you have a bunch of points where each represents one kind of quantity and each represents another kind of quantity. A regression line is a line which gives the best fit for a line which the points in the scatter plot approximately align with. This regression line is formed by determining out of all possible lines you might draw, which one minimizes the total distance to the points?  Note that scatter plots very rarely look close to regression lines. This kind of model should be understood to have limited accuracy and predictive power. This is demonstrated in the following datasets, known as Anscombe's quartet. These were crafted by the statistician Francis Anscombe to demonstrate that different datasets can have similar numerical properties but look very different.   Four scatter plots with near identical regression lines yet the graphs look very different. Each regression line has a positive slope. They also have very similar means, standard deviations, and other summary statistics.  The first plot is scattered points that approximately increase linearly. The second plot's points form an arc shape, like, a ball moving through space. The third form a line with a smaller slope than the regression line, except for one outlier. The fourth is a series of points all with the same coordinate, with one outlier off to the upper left.  This image is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license . It was created by Wikipedia Commons user Schulz .    With linear models, an important feature is their rate of change , how quickly the dependent quantity changes with respect to the independent quantity. For lines, this rate of change is their slope . If you are given a formula for the line, the slope can be read off from the formula. Otherwise, you can calculate the slope as the ratio For convenience, let's call the dependent variable and the independent variable . A positive slope means that increases as increases and a negative slope means that decreases and increases.  Regression lines are a good example to understand this meaning. A positive slope for the regression lines means the two variables are positively correlated : when one increases you expect the other to as well. A negative slope means the variables are negatively correlated : when one increases you expect the other to decrease.  For example, suppose you made a dataset of renters where you plotted annual income versus amount of money spent on rent. You would expect that those with a higher income can afford and thus pay more on rent. This is saying the two variables are positive correlated.  Rate of change is also important to note for lines that aren't regression lines. The course categorization of positive versus negative versus zero is important, and for finer applications you can want to quantify it.    A line passes through the points and . Write an equation for the line.    Two lines are parallel if they have the same slope. You know a line has a -intercept of and is parallel to the line with a -intercept of which also passes through the point . Write an equation for your line.    Two lines are perpendicular if they meet at a right angle. If you know a line has the formula how do you determine the slope for a line perpendicular to it? Explain and demonstrate your answer by giving the slope of a line perpendicular to .    Come up an example of two quantities which are positively correlated. Come up with an example which are negatively correlated. Explain why they have these correlations.    In the year , the global population was estimated to be approximately billion people. In , that increased to approximately billion. Use these two data points to make a linear model which predicts the population of the earth years after . Use your model to predict the population in . Look up the true value and compare your prediction to it. Was it an overestimate or an underestimate? Why do you think it was off in that direction? What would you need to do to create a more accurate model.    Suppose you currently are single, so you have zero spouses. Your wedding is tomorrow, upon which you will have one spouse. Use these two data points to create a linear model for how many spouses you will have in days. Is this a good or useful model? Explain.    "
 },
 {
-  "id": "sec3-linear-3-1",
+  "id": "sec3-linear-3",
   "level": "2",
-  "url": "sec3-linear.html#sec3-linear-3-1",
+  "url": "sec3-linear.html#sec3-linear-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "models "
+},
+{
+  "id": "sec3-linear-4",
+  "level": "2",
+  "url": "sec3-linear.html#sec3-linear-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "linear functions Linear models "
+},
+{
+  "id": "sec3-linear-5",
+  "level": "2",
+  "url": "sec3-linear.html#sec3-linear-5",
+  "type": "Definition",
+  "number": "3.2.1",
+  "title": "Linear functions and models.",
+  "body": "Linear functions and models  A linear function is a function whose graph is a line. As a formula, we can express a linear function in slope-intercept form  where is the slope of the line and is the -intercept. Alternatively, we can express a linear function in point-slope form  where is the slope and is any point on the line.  A linear model is a model using a linear function.   "
+},
+{
+  "id": "sec3-linear-6",
+  "level": "2",
+  "url": "sec3-linear.html#sec3-linear-6",
+  "type": "Example",
+  "number": "3.2.2",
+  "title": "",
+  "body": " A factory manager estimates that the daily costs in materials is modeled by the function where is the number of widgets produced. That is, there is a constant cost of dollars plus a cost of dollars per widget.  Note that this slope tells you the rate of change of the function. Producing one more widget will always have the same marginal cost of dollars.  "
+},
+{
+  "id": "sec3-linear-7",
+  "level": "2",
+  "url": "sec3-linear.html#sec3-linear-7",
+  "type": "Example",
+  "number": "3.2.3",
+  "title": "",
+  "body": " There is a connection to statistics, which we covered in the previous chapter. Consider data forming a scatter plot. That is, you have a bunch of points where each represents one kind of quantity and each represents another kind of quantity. A regression line is a line which gives the best fit for a line which the points in the scatter plot approximately align with. This regression line is formed by determining out of all possible lines you might draw, which one minimizes the total distance to the points?  Note that scatter plots very rarely look close to regression lines. This kind of model should be understood to have limited accuracy and predictive power. This is demonstrated in the following datasets, known as Anscombe's quartet. These were crafted by the statistician Francis Anscombe to demonstrate that different datasets can have similar numerical properties but look very different.   Four scatter plots with near identical regression lines yet the graphs look very different. Each regression line has a positive slope. They also have very similar means, standard deviations, and other summary statistics.  The first plot is scattered points that approximately increase linearly. The second plot's points form an arc shape, like, a ball moving through space. The third form a line with a smaller slope than the regression line, except for one outlier. The fourth is a series of points all with the same coordinate, with one outlier off to the upper left.  This image is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license . It was created by Wikipedia Commons user Schulz .   "
+},
+{
+  "id": "sec3-linear-8",
+  "level": "2",
+  "url": "sec3-linear.html#sec3-linear-8",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "rate of change slope "
+},
+{
+  "id": "sec3-linear-9",
+  "level": "2",
+  "url": "sec3-linear.html#sec3-linear-9",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "positively correlated negatively correlated "
+},
+{
+  "id": "sec3-linear-12-1",
+  "level": "2",
+  "url": "sec3-linear.html#sec3-linear-12-1",
   "type": "Exercise",
   "number": "3.2.1",
   "title": "",
-  "body": "   "
+  "body": " A line passes through the points and . Write an equation for the line.  "
+},
+{
+  "id": "sec3-linear-12-2",
+  "level": "2",
+  "url": "sec3-linear.html#sec3-linear-12-2",
+  "type": "Exercise",
+  "number": "3.2.2",
+  "title": "",
+  "body": " Two lines are parallel if they have the same slope. You know a line has a -intercept of and is parallel to the line with a -intercept of which also passes through the point . Write an equation for your line.  "
+},
+{
+  "id": "sec3-linear-12-3",
+  "level": "2",
+  "url": "sec3-linear.html#sec3-linear-12-3",
+  "type": "Exercise",
+  "number": "3.2.3",
+  "title": "",
+  "body": " Two lines are perpendicular if they meet at a right angle. If you know a line has the formula how do you determine the slope for a line perpendicular to it? Explain and demonstrate your answer by giving the slope of a line perpendicular to .  "
+},
+{
+  "id": "sec3-linear-12-4",
+  "level": "2",
+  "url": "sec3-linear.html#sec3-linear-12-4",
+  "type": "Exercise",
+  "number": "3.2.4",
+  "title": "",
+  "body": " Come up an example of two quantities which are positively correlated. Come up with an example which are negatively correlated. Explain why they have these correlations.  "
+},
+{
+  "id": "sec3-linear-12-5",
+  "level": "2",
+  "url": "sec3-linear.html#sec3-linear-12-5",
+  "type": "Exercise",
+  "number": "3.2.5",
+  "title": "",
+  "body": " In the year , the global population was estimated to be approximately billion people. In , that increased to approximately billion. Use these two data points to make a linear model which predicts the population of the earth years after . Use your model to predict the population in . Look up the true value and compare your prediction to it. Was it an overestimate or an underestimate? Why do you think it was off in that direction? What would you need to do to create a more accurate model.  "
+},
+{
+  "id": "sec3-linear-12-6",
+  "level": "2",
+  "url": "sec3-linear.html#sec3-linear-12-6",
+  "type": "Exercise",
+  "number": "3.2.6",
+  "title": "",
+  "body": " Suppose you currently are single, so you have zero spouses. Your wedding is tomorrow, upon which you will have one spouse. Use these two data points to create a linear model for how many spouses you will have in days. Is this a good or useful model? Explain.  "
 },
 {
   "id": "sec3-exp",
@@ -1609,16 +1825,115 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.3",
   "title": "Exponential functions",
-  "body": " Exponential functions  Check back later!        "
+  "body": " Exponential functions  Last section we looked at linear models. These are useful for many things, but they are based on the assumption that the rate of change is constant, or at least is approximately constant. Sometimes this assumption doesn't hold. For example, suppose you want to model algae growth in a pond. How fast the area of algae is growing won't be constant; if there is more algae that is more algae to grow so the total amount will grow even faster.  When dealing with phenomena like this, where the rate of change is proportional to the size, we need a different tool. In this section we discuss that tool.  Exponentiation  Suppose that is a number and is another number. We define the exponential  based on the kind of number the exponent  is. For some of these, they only make sense when is non-negative. If the exponent is a positive whole number then is many s multiplied together:   If then .  If the exponent is a reciprocal of a positive integer we take a root: This might not make sense if is negative.  If the exponent is a fraction of integers we combine the previous rules: Again, this might not make sense if is negative.  If the exponent is negative we divide instead of multiply:     Left unsaid is what we do if the exponent is an irrational number, such as or . That case can be handled, but it takes ideas from calculus. So for our purposes we will sweep that under the table. I just want to highlight that for this case, it only makes sense when is non-negative; we can't get a sensible real number value for, say, .   The following properties are key to the use of exponentials. You can check by counting that they hold for positive integer exponents. You can think of expanding the definition of exponentiation to more exponents as expanding the domain while keeping these important properties; if you want these properties to continue to hold this is the only way to expand the definitions.  Properties of exponentiation  The following are true for any bases and any exponents .                Exponential functions  An exponential function is one of the form where the base is positive and not equal to .  Here any number makes sense for an input, so the domain is the entire real line.   The reason to require the base to be non-negative is because doesn't make sense for most exponents when is negative. The reason to require the base to be neither zero nor one is that those are boring. Zero to any power is zero and one to any power is one.  A nice fact about exponential functions is that their graphs all look similar. More precisely, there are two possible shapes, based on whether the base is or . And these two shapes are mirror images of each other.   Two exponential functions. The one on the left has a base and the one on the right has a base .    Of course, the base has an effect on the shape. A larger base will give a steeper graph, that is a function which changes more rapidly. Think of how powers of , namely , grow more quickly than powers of , namely . The growth rates may different, but the basic shape is the same.  Let's explore more closely some important features of that shape. Our main focus will be on when the base is ; for the base case we flip everything sideways.  Let's start with something basic. The initial value of , the value it has at is always . In the next section when we look at exponential models we will see that if you want to model something with an initial value of it's as easy as multiplying the exponential by .  An important feature to notice is what happens as the input increases to infinity. As the input increases, blows up very fast. This is a striking feature of exponential functions. If you graph, for instance, and on the same graph you will see that the exponential grows much faster. Indeed, if you graph for any base , no matter how small, on the same axes as for any value of , if you zoom out enough you will see that eventually the exponential grows much faster.   You win an international chess tournament and are awarded prize money. You are given two options for your prize. The first is that you will be given a million dollars immediately. The second is that you will get a chess piece and one dollar. A week later you will get another chess piece and two dollars. This will continue each week with a new chess piece and double the previous week's money until you've received all thirty-two chess pieces. Which option should you pick?  The payout of the first option is easy to calculate. It's one million. The second option requires some work. On week you get dollars. (It's and not because it starts at dollars.) This means on week you will receive Unless you absolutely need a million dollars tomorrow, the second option is by far the better one.   If we look at what happens as the input decreases to we see an opposite behavior. Instead of getting larger and larger, gets smaller and smaller, getting closer and closer to . It will never actually equal , but it will get arbitrarily close.  When we look at modeling, this behavior will be useful for modeling quantities that asymptotically decrease down to zero.  We've saved for last the essential property of exponential functions, the one that explains why they are so helpful for modeling. Namely, this property has to do with the rate of change of exponentials.  For linear functions, their rate of change was given by their slopes. With lines we have a straightforward method to calculate slope, namely the rise over run fraction. For other functions whose graphs are curves, it is not so easy to calculate rates of change. Indeed, this is so difficult a problem that it took Leibniz and Newton inventing calculus to solve this problem.  We won't learn how to calculate general rates of change—we'd need calculus for that. But we can get an idea of what it means. If you take a graph of a function and zoom in, such as on a graphing calculator, then eventually the graph starts to look like a line. This line, called the tangent line has a slope. That slope is the rate of change of the function at that input.  For linear functions, the entire graph is a line and so has the same slope and the same rate of change. For other functions, the rate of change itself changes across different inputs. Think, for example, of a graph representing the speed of a train during your commute. The rate of change in this context is the acceleration of the train. Sometimes this rate of change is zero, when the train is up to speed and not changing. Other times this rate of change is positive; when the train takes off from a stop it needs to speed up. Yet other times this rate of change is negative; the train needs to slow down to approach a stop.  While it takes sophisticated technology to precisely quantify rates of change, there is a nice visual meaning for positive versus zero versus negative rate of change. The rate of change being positive means the function is increasing ; the graph moves up as you move to the right.  The rate of change being negative means the function is decreasing ; the graph moves down as you move to the right.  The rate of change being zero means the function is neither increasing nor decreasing. This might be because the function is constant for a time, or it might be at a moment where the function changes between increasing and decreasing.    Exponential functions are useful and interesting because they are the functions whose rate of change is always proportional to the current value. Stated precisely, suppose that is a function whose rate of change at an input is always for a fixed number . Then, is of the form for some base and some initial value . This property is why exponential models are so common.  As a coda, let me mention the most common base one sees for exponential functions in applications. This base, which is written as can be thought of as similar to . It is an irrational number—so its decimal expansion goes forever without repeating, and it can't be written as a fraction of whole numbers. It doesn't admit a simple formula defining it, and the best we can do is give it a letter as a name. The importance of base can be explained by citing a fact from calculus. As said above, exponential functions are important because they are those functions whose rate of change is proportional to their size. The rate of change of the exponential at an input is , where is a constant which depends on the base . The base is the unique base where this constant . That is, the rate of change of is itself.  This fact makes it convenient to use base for calculations, and this is what is commonly done.   For some of these exercises you will be asked to use a graphing calculator. You can use a graphing calculator if you own one or you can use an online calculator such as the one at desmos.com\/calculator .   Use a graphing calculator to graph for different values of . List and explain your observations, which should include answers to the following. What happens when you increase versus decrease ?  What happens when is positive versus negative?  What happens when is zero?      Use a graphing calculator to graph for different values of . List and explain your observations, which should include answers to the following. What happens when you increase versus decrease ?  What happens when is positive versus negative?  What happens when is zero?      Use a graphing calculator to graph and on the same axes. What do you observe? More generally, use a graphing calculator to graph and on the same axes, for different bases . What do you observe? Give an explanation for what you see based on algebraic facts about exponentiation.    Calculate all of the following by hand, that is without using a calculator or other electronic device.                       Use a counting argument to explain why and for positive integers .  Each side of each equation represents some number of s multiplied together. Your task is to explain why the count is the same on each side.    Some say that should be because zero to any power is zero. Others say that should be because anything to the zeroth power is one. Yet others might have a third opinion. What do you think should be? Make a case for your choice.    "
 },
 {
-  "id": "sec3-exp-3-1",
+  "id": "sec3-exp-4",
   "level": "2",
-  "url": "sec3-exp.html#sec3-exp-3-1",
+  "url": "sec3-exp.html#sec3-exp-4",
+  "type": "Definition",
+  "number": "3.3.1",
+  "title": "Exponentiation.",
+  "body": "Exponentiation  Suppose that is a number and is another number. We define the exponential  based on the kind of number the exponent  is. For some of these, they only make sense when is non-negative. If the exponent is a positive whole number then is many s multiplied together:   If then .  If the exponent is a reciprocal of a positive integer we take a root: This might not make sense if is negative.  If the exponent is a fraction of integers we combine the previous rules: Again, this might not make sense if is negative.  If the exponent is negative we divide instead of multiply:     Left unsaid is what we do if the exponent is an irrational number, such as or . That case can be handled, but it takes ideas from calculus. So for our purposes we will sweep that under the table. I just want to highlight that for this case, it only makes sense when is non-negative; we can't get a sensible real number value for, say, .  "
+},
+{
+  "id": "sec3-exp-6",
+  "level": "2",
+  "url": "sec3-exp.html#sec3-exp-6",
+  "type": "Theorem",
+  "number": "3.3.2",
+  "title": "Properties of exponentiation.",
+  "body": "Properties of exponentiation  The following are true for any bases and any exponents .               "
+},
+{
+  "id": "sec3-exp-7",
+  "level": "2",
+  "url": "sec3-exp.html#sec3-exp-7",
+  "type": "Definition",
+  "number": "3.3.3",
+  "title": "Exponential functions.",
+  "body": "Exponential functions  An exponential function is one of the form where the base is positive and not equal to .  Here any number makes sense for an input, so the domain is the entire real line.  "
+},
+{
+  "id": "sec3-exp-15",
+  "level": "2",
+  "url": "sec3-exp.html#sec3-exp-15",
+  "type": "Example",
+  "number": "3.3.4",
+  "title": "",
+  "body": " You win an international chess tournament and are awarded prize money. You are given two options for your prize. The first is that you will be given a million dollars immediately. The second is that you will get a chess piece and one dollar. A week later you will get another chess piece and two dollars. This will continue each week with a new chess piece and double the previous week's money until you've received all thirty-two chess pieces. Which option should you pick?  The payout of the first option is easy to calculate. It's one million. The second option requires some work. On week you get dollars. (It's and not because it starts at dollars.) This means on week you will receive Unless you absolutely need a million dollars tomorrow, the second option is by far the better one.  "
+},
+{
+  "id": "sec3-exp-20",
+  "level": "2",
+  "url": "sec3-exp.html#sec3-exp-20",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "tangent line "
+},
+{
+  "id": "sec3-exp-22",
+  "level": "2",
+  "url": "sec3-exp.html#sec3-exp-22",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "increasing decreasing constant "
+},
+{
+  "id": "sec3-exp-26-2",
+  "level": "2",
+  "url": "sec3-exp.html#sec3-exp-26-2",
   "type": "Exercise",
   "number": "3.3.1",
   "title": "",
-  "body": "   "
+  "body": " Use a graphing calculator to graph for different values of . List and explain your observations, which should include answers to the following. What happens when you increase versus decrease ?  What happens when is positive versus negative?  What happens when is zero?    "
+},
+{
+  "id": "sec3-exp-26-3",
+  "level": "2",
+  "url": "sec3-exp.html#sec3-exp-26-3",
+  "type": "Exercise",
+  "number": "3.3.2",
+  "title": "",
+  "body": " Use a graphing calculator to graph for different values of . List and explain your observations, which should include answers to the following. What happens when you increase versus decrease ?  What happens when is positive versus negative?  What happens when is zero?    "
+},
+{
+  "id": "sec3-exp-26-4",
+  "level": "2",
+  "url": "sec3-exp.html#sec3-exp-26-4",
+  "type": "Exercise",
+  "number": "3.3.3",
+  "title": "",
+  "body": " Use a graphing calculator to graph and on the same axes. What do you observe? More generally, use a graphing calculator to graph and on the same axes, for different bases . What do you observe? Give an explanation for what you see based on algebraic facts about exponentiation.  "
+},
+{
+  "id": "sec3-exp-26-5",
+  "level": "2",
+  "url": "sec3-exp.html#sec3-exp-26-5",
+  "type": "Exercise",
+  "number": "3.3.4",
+  "title": "",
+  "body": " Calculate all of the following by hand, that is without using a calculator or other electronic device.                     "
+},
+{
+  "id": "sec3-exp-26-6",
+  "level": "2",
+  "url": "sec3-exp.html#sec3-exp-26-6",
+  "type": "Exercise",
+  "number": "3.3.5",
+  "title": "",
+  "body": " Use a counting argument to explain why and for positive integers .  Each side of each equation represents some number of s multiplied together. Your task is to explain why the count is the same on each side.  "
+},
+{
+  "id": "sec3-exp-26-7",
+  "level": "2",
+  "url": "sec3-exp.html#sec3-exp-26-7",
+  "type": "Exercise",
+  "number": "3.3.6",
+  "title": "",
+  "body": " Some say that should be because zero to any power is zero. Others say that should be because anything to the zeroth power is one. Yet others might have a third opinion. What do you think should be? Make a case for your choice.  "
 },
 {
   "id": "sec3-exponential",
@@ -1627,34 +1942,124 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.4",
   "title": "Exponential models",
-  "body": " Exponential models  Check back later!        "
+  "body": " Exponential models  Exponential functions are useful for model phenomena where the rate of change of a quantity is proportional to its current size. In this section we look at several such applications.  One example of this is population models. Suppose you have a population of organisms, such as bacteria cells or humans. These organisms reproduce. The specifics—how long does it take? how many new organisms are produced?—differ by species, and there's a simultaneous process of death happening. If there are sufficient resources to support the entire population then the rate of change of the population will be approximately proportional to its size. If you, say, doubled the population that would be twice as many organisms to reproduce and die, so the rate of change would be doubled.  This isn't exact, of course. But it can make a useful model if we keep in mind its limitations.  Population growth via an exponential model  A population over time can be modeled by the function where is the initial value of the population, at the time we start from, and and is a constant which expresses the rate of change.    In the year , the global population was estimated to be approximately billion people. In , that increased to approximately billion. We can use this to make an exponential model. We need to determine the values of the two parameters and . The first is straightforward: is the initial value. Once we know we can find using a little algebra. To solve for we use the device of a logarithm . Logarithms are the opposites of exponential functions, akin to how square roots are the opposite of squaring. In this case we use the natural logarithm  , the logarithm with base , in order to match the base of the exponential. Any scientific calculator will have a button for . If we take the natural logarithm of both sides of the equation we get an equation where we can solve for . Plugging in these values we get our exponential model. We can use this to make predictions. For instance, this model estimates the population at to be This is a little higher than the actual population in of billion. The reason for the mismatch is that the rate of change as a percentile hasn't been the same year by year. The we calculated is accurate for the decade of the s, but the rate of change has slightly declined in the years after. Thus using this value leads to an overestimate.  A more accurate model would take into account the change in the rate of change over time. But that comes at the cost of being more complicated to work with.   Our next use of exponential models is one where a quantity is decreasing over time.  Exponential decay  A quantity which is decreasing at a rate proportional to its size is said to be undergoing exponential decay and can be modeled with an exponential function. where is the initial value, the value at time , and is a positive number giving the rate of change. That is, the exponent is negative, representing that the quantity gets smaller over time, not larger.   One example of exponential decay is radioactive decay. For chemistry reasons we won't go into, some substances are radioactive. What this means is that they emit subatomic particles, so that the atoms decay into a different element. For example, the isotope Uranium-235 decays into Thorium-231.  Different substances decay at different rates. The usual measure is called the half-life , how long it takes for half of the original substance to decay.   U-235 has a half-life of million years. We can use this to determine an exponential model for how much U-235 will remain starting from, say, one kilogram. We only have to determine the value for . We do this similar to what we did with the population model. Thus we get that we can model the quantity of U-235 with   Note that the value we got for depended on our choice of units for time. If we had measured in millions of years or in years we'd get a different value for . Intuitively, I hope this makes sense. This constant is a measure of the rate of change. Of course the rate of change will depend on your choice of units for time. The choice of a smaller unit for time will result in a smaller , because the amount of change is smaller in a smaller unit of time. In this case, measuring in millions of years or in years will increase the number of zeroes after the decimal point in .   Next let's look at a step more complicated model based on exponential functions. Experience tells you that if you place a hot object in a reservoir of cold water, then it will cool down. If the reservoir is made colder, the object will cool down faster. And the same works in reverse; if you place a cold object in a hot reservoir then it will heat up, with the rate increasing if the reservoir is hotter.  This experience is the starting point for a principle Isaac Newton discover and which now bears his name. Newton's law of cooling states that the rate of heat transfer between an object and its environment is proportional to the difference in the temperatures. This proportion depends upon the material of the object and the environment it is in.  This heat transfer goes both ways; a hot object gets cooler while the cold reservoir gets warmer. If, however, the reservoir is large enough then the heat must be spread across a large volume and so the temperature change is minimal. In this case we can assume as a simplification that the reservoir's temperature is constant and so the only thing changing is the temperature of the object.  Since the rate of change of the object's temperature is proportional to a quantity—namely, its difference with the ambient temperature—you might expect that to model this we use an exponential function. You might be correct.  Newton's law of cooling  Suppose an object with temperature in terms of time is placed in a reservoir with ambient temperature . We assume that is constant. Then we can model the temperature as follows. where is the initial value and is a positive constant which determines the rate of change. That is, the exponent is negative, representing that the difference in temperatures decreases down to zero as time goes forward.   It's known that Newton's law of cooling is only accurate in specific circumstances. This is a common phenomenon with applications of mathematics. There are other models that are more applicable, but the physics that goes into them is more involved. For our purposes we will only look at this one, relatively simple model.   You have a pot of water at Celsius, just on the verge of boiling. You place an egg from the refrigerator into the water. When you put the egg in, its temperature is C. After one minute its temperature has increased to C. How long until the egg reaches a temperature of at least ?  We can use Newton's law of cooling to model this and thereby calculate a prediction. We are given and . Plugging these in, we get The way you can think of this is, the term approaches as increases to infinity. So the amount we are subtracting decreases over time, so that the temperature of the egg approaches degrees C.  The remaining parameter, , needs to be calculated. We can do this by using the measurement of the temperature at one minute. Our model is thus . We can determine when the egg reaches degrees by plugging that in for and solving for . This is much like how we just solved for , so I omit the steps. That is, it takes a little less than eight and three quarters minutes for the egg to reach degrees.   Graphing is instructive. It shows you that as increases the temperature asymptotically approaches , the ambient temperature. If instead you modeled a case of an object starting at a higher temperature than the reservoir, you would get the opposite behavior. You would get a graph that asymptotically decreases toward .    A bacteria culture in a petri dish starts with cells. After five hours it has grown to cells. Create an exponential model for the number of cells in the culture. Use your model to predict how many cells there will be after hours. Also predict how long it will be until there are cells.    Lily pads overtake a pond one spring. On March the lily pads cover two square meters of the pond. On March they cover six square meters. Create an exponential growth model which models the size of the lily pad coverage. Use your model to predict how much of the pond they will cover by April .    Does it make sense to have an exponential model for a population which is decreasing over time? Explain. As part of your explanation, say which aspect of the formula for the model you would look at to identify a population decrease versus increase.    The isotope Carbon-15 (C-15) has a half-life of seconds. Create an exponential growth model for a quantity of C-15 starting with kilograms. How long will it take for there to be less than one gram of C-15 remaining?  In case the SI prefixes are unclear, a gram is kilograms.    A metal rod is heated to C. It is placed inside a water bath at a temperature of C. After one minute the rod's temperature has decreased to C. Use Newton's law of cooling to model the temperature of the rod. Use your model to predict how long it will take for the rod to get below C.    Use the global population model from earlier in this section. Based on this model, what does it predict the population to be in ? In ? In ? In ? In ? Do you think these are realistic predictions. Either explain why, or else explain why the assumptions going into the model are limited and write a sentence or two about what would be needed for a more accurate model?    "
 },
 {
-  "id": "sec3-exponential-3-1",
+  "id": "sec3-exponential-5",
   "level": "2",
-  "url": "sec3-exponential.html#sec3-exponential-3-1",
+  "url": "sec3-exponential.html#sec3-exponential-5",
+  "type": "Definition",
+  "number": "3.4.1",
+  "title": "Population growth via an exponential model.",
+  "body": "Population growth via an exponential model  A population over time can be modeled by the function where is the initial value of the population, at the time we start from, and and is a constant which expresses the rate of change.  "
+},
+{
+  "id": "sec3-exponential-6",
+  "level": "2",
+  "url": "sec3-exponential.html#sec3-exponential-6",
+  "type": "Example",
+  "number": "3.4.2",
+  "title": "",
+  "body": " In the year , the global population was estimated to be approximately billion people. In , that increased to approximately billion. We can use this to make an exponential model. We need to determine the values of the two parameters and . The first is straightforward: is the initial value. Once we know we can find using a little algebra. To solve for we use the device of a logarithm . Logarithms are the opposites of exponential functions, akin to how square roots are the opposite of squaring. In this case we use the natural logarithm  , the logarithm with base , in order to match the base of the exponential. Any scientific calculator will have a button for . If we take the natural logarithm of both sides of the equation we get an equation where we can solve for . Plugging in these values we get our exponential model. We can use this to make predictions. For instance, this model estimates the population at to be This is a little higher than the actual population in of billion. The reason for the mismatch is that the rate of change as a percentile hasn't been the same year by year. The we calculated is accurate for the decade of the s, but the rate of change has slightly declined in the years after. Thus using this value leads to an overestimate.  A more accurate model would take into account the change in the rate of change over time. But that comes at the cost of being more complicated to work with.  "
+},
+{
+  "id": "sec3-exponential-8",
+  "level": "2",
+  "url": "sec3-exponential.html#sec3-exponential-8",
+  "type": "Definition",
+  "number": "3.4.3",
+  "title": "Exponential decay.",
+  "body": "Exponential decay  A quantity which is decreasing at a rate proportional to its size is said to be undergoing exponential decay and can be modeled with an exponential function. where is the initial value, the value at time , and is a positive number giving the rate of change. That is, the exponent is negative, representing that the quantity gets smaller over time, not larger.  "
+},
+{
+  "id": "sec3-exponential-10",
+  "level": "2",
+  "url": "sec3-exponential.html#sec3-exponential-10",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "half-life "
+},
+{
+  "id": "sec3-exponential-11",
+  "level": "2",
+  "url": "sec3-exponential.html#sec3-exponential-11",
+  "type": "Example",
+  "number": "3.4.4",
+  "title": "",
+  "body": " U-235 has a half-life of million years. We can use this to determine an exponential model for how much U-235 will remain starting from, say, one kilogram. We only have to determine the value for . We do this similar to what we did with the population model. Thus we get that we can model the quantity of U-235 with   Note that the value we got for depended on our choice of units for time. If we had measured in millions of years or in years we'd get a different value for . Intuitively, I hope this makes sense. This constant is a measure of the rate of change. Of course the rate of change will depend on your choice of units for time. The choice of a smaller unit for time will result in a smaller , because the amount of change is smaller in a smaller unit of time. In this case, measuring in millions of years or in years will increase the number of zeroes after the decimal point in .  "
+},
+{
+  "id": "sec3-exponential-16",
+  "level": "2",
+  "url": "sec3-exponential.html#sec3-exponential-16",
+  "type": "Definition",
+  "number": "3.4.5",
+  "title": "Newton’s law of cooling.",
+  "body": "Newton's law of cooling  Suppose an object with temperature in terms of time is placed in a reservoir with ambient temperature . We assume that is constant. Then we can model the temperature as follows. where is the initial value and is a positive constant which determines the rate of change. That is, the exponent is negative, representing that the difference in temperatures decreases down to zero as time goes forward.  "
+},
+{
+  "id": "sec3-exponential-18",
+  "level": "2",
+  "url": "sec3-exponential.html#sec3-exponential-18",
+  "type": "Example",
+  "number": "3.4.6",
+  "title": "",
+  "body": " You have a pot of water at Celsius, just on the verge of boiling. You place an egg from the refrigerator into the water. When you put the egg in, its temperature is C. After one minute its temperature has increased to C. How long until the egg reaches a temperature of at least ?  We can use Newton's law of cooling to model this and thereby calculate a prediction. We are given and . Plugging these in, we get The way you can think of this is, the term approaches as increases to infinity. So the amount we are subtracting decreases over time, so that the temperature of the egg approaches degrees C.  The remaining parameter, , needs to be calculated. We can do this by using the measurement of the temperature at one minute. Our model is thus . We can determine when the egg reaches degrees by plugging that in for and solving for . This is much like how we just solved for , so I omit the steps. That is, it takes a little less than eight and three quarters minutes for the egg to reach degrees.  "
+},
+{
+  "id": "sec3-exponential-20-1",
+  "level": "2",
+  "url": "sec3-exponential.html#sec3-exponential-20-1",
   "type": "Exercise",
   "number": "3.4.1",
   "title": "",
-  "body": "   "
+  "body": " A bacteria culture in a petri dish starts with cells. After five hours it has grown to cells. Create an exponential model for the number of cells in the culture. Use your model to predict how many cells there will be after hours. Also predict how long it will be until there are cells.  "
 },
 {
-  "id": "sec3-logistic",
-  "level": "1",
-  "url": "sec3-logistic.html",
-  "type": "Section",
-  "number": "3.5",
-  "title": "Logistic models",
-  "body": " Logistic models  Check back later!        "
-},
-{
-  "id": "sec3-logistic-3-1",
+  "id": "sec3-exponential-20-2",
   "level": "2",
-  "url": "sec3-logistic.html#sec3-logistic-3-1",
+  "url": "sec3-exponential.html#sec3-exponential-20-2",
   "type": "Exercise",
-  "number": "3.5.1",
+  "number": "3.4.2",
   "title": "",
-  "body": "   "
+  "body": " Lily pads overtake a pond one spring. On March the lily pads cover two square meters of the pond. On March they cover six square meters. Create an exponential growth model which models the size of the lily pad coverage. Use your model to predict how much of the pond they will cover by April .  "
+},
+{
+  "id": "sec3-exponential-20-3",
+  "level": "2",
+  "url": "sec3-exponential.html#sec3-exponential-20-3",
+  "type": "Exercise",
+  "number": "3.4.3",
+  "title": "",
+  "body": " Does it make sense to have an exponential model for a population which is decreasing over time? Explain. As part of your explanation, say which aspect of the formula for the model you would look at to identify a population decrease versus increase.  "
+},
+{
+  "id": "sec3-exponential-20-4",
+  "level": "2",
+  "url": "sec3-exponential.html#sec3-exponential-20-4",
+  "type": "Exercise",
+  "number": "3.4.4",
+  "title": "",
+  "body": " The isotope Carbon-15 (C-15) has a half-life of seconds. Create an exponential growth model for a quantity of C-15 starting with kilograms. How long will it take for there to be less than one gram of C-15 remaining?  In case the SI prefixes are unclear, a gram is kilograms.  "
+},
+{
+  "id": "sec3-exponential-20-5",
+  "level": "2",
+  "url": "sec3-exponential.html#sec3-exponential-20-5",
+  "type": "Exercise",
+  "number": "3.4.5",
+  "title": "",
+  "body": " A metal rod is heated to C. It is placed inside a water bath at a temperature of C. After one minute the rod's temperature has decreased to C. Use Newton's law of cooling to model the temperature of the rod. Use your model to predict how long it will take for the rod to get below C.  "
+},
+{
+  "id": "sec3-exponential-20-6",
+  "level": "2",
+  "url": "sec3-exponential.html#sec3-exponential-20-6",
+  "type": "Exercise",
+  "number": "3.4.6",
+  "title": "",
+  "body": " Use the global population model from earlier in this section. Based on this model, what does it predict the population to be in ? In ? In ? In ? In ? Do you think these are realistic predictions. Either explain why, or else explain why the assumptions going into the model are limited and write a sentence or two about what would be needed for a more accurate model?  "
 },
 {
   "id": "backmatter-2",
