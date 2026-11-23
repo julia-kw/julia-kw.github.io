@@ -10,6 +10,8 @@ permalink: /teaching/2026/math195fall/
 Announcements
 -------------
 
+* (11/24) [Here]({{ page.url }}ws11.24.pdf) is today's worksheet about polynomials.
+
 * (11/13) Remember that midterm 2 is next November, 19! You can find a study guide [here]({{ page.url }}sg2.pdf).
 
 * (11/12) [Here]({{ page.url }}ws11.12.pdf) is today's worksheet about trig identities.
@@ -54,6 +56,8 @@ Homework
 --------
 
 Problems from the textbook are those given as from Section *N*.*X*.
+
+* Week 12 *Due Tuesday 12/1.* 11/24 worksheet graphing exercises #1–10, inequality exercises #1–7; Section 3.3 #12, 14, 21, 23; Section 3.4 #32, 36, 42, 45.
 
 * Week 11 *No homework.* Study for the exam instead!
 

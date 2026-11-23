@@ -38,6 +38,8 @@ Announcements
 Homework
 --------
 
+* Week 12 *Due Tuesday 12/1*: Section 3.2 Exercises 1–6.
+
 * Week 11 *Due Tuesday 11/24*: Section 3.1 Exercises 1–6.
 
 * Week 10 *No homework. Study for the exam instead!*
